@@ -27,6 +27,12 @@ obj/
 *.ilk
 *.exp
 
+# --- Redundant Generated HTML Duplicates (Keep only 3 standard deliverables) ---
+Projects/**/canteen-eval_20261026/**/*.html
+Projects/**/Resources/交付/**/*.html
+Projects/**/Resources/设计/**/*.html
+Projects/**/天科食客-期末评测全套交付包/T10d-*.html
+
 # --- Dependencies & Package Managers ---
 node_modules/
 **/node_modules/

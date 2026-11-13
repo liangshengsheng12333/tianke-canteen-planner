@@ -2,37 +2,28 @@
 # GitHub Linguist Overrides - Force C++ Primary Language
 # ==============================================================================
 
-# Exclude HTML, mockups and generated visual assets from language stats
-*.html -linguist-detectable
-*.html linguist-generated
-*.html linguist-vendored
-*.htm -linguist-detectable
-*.htm linguist-generated
-*.svg -linguist-detectable
-*.svg linguist-generated
-*.json -linguist-detectable
-*.xml -linguist-detectable
-*.wxml -linguist-detectable
-*.wxss -linguist-detectable
+# Exclude generated HTML diagrams, reports and large mockups
+*.html linguist-vendored linguist-generated
+*.htm linguist-vendored linguist-generated
+*.svg linguist-vendored linguist-generated
+*.json linguist-vendored
+*.xml linguist-vendored
+*.wxml linguist-vendored
+*.wxss linguist-vendored
 *.docx linguist-vendored
 *.pptx linguist-vendored
 *.zip linguist-vendored
 
-# Exclude deliveries, evaluations, resources and tool scripts
-Projects/食堂就餐优化系统/Resources/** -linguist-detectable
-Projects/食堂就餐优化系统/Resources/** linguist-vendored
-Projects/食堂就餐优化系统/canteen-eval_20261026/** -linguist-detectable
-Projects/食堂就餐优化系统/canteen-eval_20261026/** linguist-vendored
-Projects/食堂就餐优化系统/天科食客-期末评测全套交付包/** -linguist-detectable
-Projects/食堂就餐优化系统/天科食客-期末评测全套交付包/** linguist-vendored
-Projects/食堂就餐优化系统/tools/** -linguist-detectable
-Projects/食堂就餐优化系统/tools/** linguist-vendored
-Resources/** -linguist-detectable
+# Exclude tools, resources and evaluation scripts from stats
+tools/** linguist-vendored
 Resources/** linguist-vendored
+Projects/**/tools/** linguist-vendored
+Projects/**/Resources/** linguist-vendored
+Projects/**/canteen-eval_20261026/** linguist-vendored
+Projects/**/天科食客-期末评测全套交付包/** linguist-vendored
 
-# Ensure C++ core is prioritized and detectable
-Projects/食堂就餐优化系统/core/** linguist-detectable
-*.cpp linguist-detectable
+# Prioritize C++ as core language
 *.cpp linguist-language=C++
-*.h linguist-detectable
 *.h linguist-language=C++
+core/** linguist-detectable
+Projects/**/core/** linguist-detectable
