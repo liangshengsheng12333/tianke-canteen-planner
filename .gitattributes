@@ -1,24 +1,32 @@
 # ==============================================================================
-# GitHub Linguist Overrides
+# GitHub Linguist Overrides - Force C++ Primary Language
 # ==============================================================================
 
-# Exclude standalone HTML architecture diagrams and generated artifacts from language stats
-*.html linguist-vendored
-*.svg linguist-vendored
-*.json linguist-vendored
-*.docx linguist-vendored
-*.pptx linguist-vendored
-*.zip linguist-vendored
+# Completely exclude HTML diagrams, mockups, SVGs and generated artifacts from language stats
+*.html linguist-detectable=false
+*.html linguist-vendored=true
+*.htm linguist-detectable=false
+*.svg linguist-detectable=false
+*.json linguist-detectable=false
+*.xml linguist-detectable=false
+*.wxml linguist-detectable=false
+*.wxss linguist-detectable=false
 
-# Exclude deliveries, evaluations and resources from language statistics
-Projects/**/Resources/** linguist-vendored
-Projects/**/canteen-eval_20261026/** linguist-vendored
-Projects/**/天科食客-期末评测全套交付包/** linguist-vendored
-Resources/** linguist-vendored
-tools/** linguist-vendored
+# Exclude historical resources, deliveries, evaluations, and tooling scripts
+Resources/** linguist-detectable=false
+Resources/** linguist-vendored=true
+Projects/**/Resources/** linguist-detectable=false
+Projects/**/Resources/** linguist-vendored=true
+Projects/**/canteen-eval_20261026/** linguist-detectable=false
+Projects/**/canteen-eval_20261026/** linguist-vendored=true
+Projects/**/天科食客-期末评测全套交付包/** linguist-detectable=false
+Projects/**/天科食客-期末评测全套交付包/** linguist-vendored=true
+Projects/**/tools/** linguist-detectable=false
+Projects/**/tools/** linguist-vendored=true
 
 # Prioritize C++ and core frontend sources
+Projects/**/core/** linguist-detectable=true
+*.cpp linguist-detectable=true
 *.cpp linguist-language=C++
+*.h linguist-detectable=true
 *.h linguist-language=C++
-core/** linguist-detectable=true
-miniprogram/** linguist-detectable=true
