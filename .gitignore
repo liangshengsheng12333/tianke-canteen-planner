@@ -75,3 +75,6 @@ Desktop.ini
 *.log
 *.tmp
 *.bak
+
+Projects/**/canteen-architecture.html
+
