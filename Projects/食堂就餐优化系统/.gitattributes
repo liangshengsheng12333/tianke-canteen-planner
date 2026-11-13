@@ -1,0 +1,32 @@
+# ==============================================================================
+# GitHub Linguist Overrides - Force C++ Primary Language
+# ==============================================================================
+
+*.html linguist-vendored
+*.html linguist-documentation
+*.htm linguist-vendored
+*.htm linguist-documentation
+*.svg linguist-vendored
+*.svg linguist-documentation
+*.json linguist-vendored
+*.xml linguist-vendored
+*.wxml linguist-vendored
+*.wxss linguist-vendored
+*.docx linguist-vendored
+*.pptx linguist-vendored
+*.zip linguist-vendored
+
+Resources/** linguist-vendored
+Resources/** linguist-documentation
+canteen-eval_20261026/** linguist-vendored
+canteen-eval_20261026/** linguist-documentation
+天科食客-期末评测全套交付包/** linguist-vendored
+天科食客-期末评测全套交付包/** linguist-documentation
+tools/** linguist-vendored
+
+# Prioritize C++
+core/** linguist-detectable
+core/src/*.cpp linguist-language=C++
+core/cli/*.cpp linguist-language=C++
+core/tests/*.cpp linguist-language=C++
+core/include/mp/*.h linguist-language=C++

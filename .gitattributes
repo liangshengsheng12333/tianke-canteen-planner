@@ -2,31 +2,36 @@
 # GitHub Linguist Overrides - Force C++ Primary Language
 # ==============================================================================
 
-# Completely exclude HTML diagrams, mockups, SVGs and generated artifacts from language stats
-*.html linguist-detectable=false
-*.html linguist-vendored=true
-*.htm linguist-detectable=false
-*.svg linguist-detectable=false
-*.json linguist-detectable=false
-*.xml linguist-detectable=false
-*.wxml linguist-detectable=false
-*.wxss linguist-detectable=false
+# Exclude all HTML files (architecture diagrams, presentations, mockups) from language stats
+*.html linguist-vendored
+*.html linguist-documentation
+*.htm linguist-vendored
+*.htm linguist-documentation
+*.svg linguist-vendored
+*.svg linguist-documentation
+*.json linguist-vendored
+*.xml linguist-vendored
+*.wxml linguist-vendored
+*.wxss linguist-vendored
+*.docx linguist-vendored
+*.pptx linguist-vendored
+*.zip linguist-vendored
 
-# Exclude historical resources, deliveries, evaluations, and tooling scripts
-Resources/** linguist-detectable=false
-Resources/** linguist-vendored=true
-Projects/**/Resources/** linguist-detectable=false
-Projects/**/Resources/** linguist-vendored=true
-Projects/**/canteen-eval_20261026/** linguist-detectable=false
-Projects/**/canteen-eval_20261026/** linguist-vendored=true
-Projects/**/天科食客-期末评测全套交付包/** linguist-detectable=false
-Projects/**/天科食客-期末评测全套交付包/** linguist-vendored=true
-Projects/**/tools/** linguist-detectable=false
-Projects/**/tools/** linguist-vendored=true
+# Exclude generated deliverables, evaluations and resources from language statistics
+Projects/**/Resources/** linguist-vendored
+Projects/**/Resources/** linguist-documentation
+Projects/**/canteen-eval_20261026/** linguist-vendored
+Projects/**/canteen-eval_20261026/** linguist-documentation
+Projects/**/天科食客-期末评测全套交付包/** linguist-vendored
+Projects/**/天科食客-期末评测全套交付包/** linguist-documentation
+Projects/**/tools/** linguist-vendored
+Resources/** linguist-vendored
 
-# Prioritize C++ and core frontend sources
-Projects/**/core/** linguist-detectable=true
-*.cpp linguist-detectable=true
+# Prioritize C++ core
 *.cpp linguist-language=C++
-*.h linguist-detectable=true
 *.h linguist-language=C++
+Projects/**/core/** linguist-detectable
+Projects/**/core/src/*.cpp linguist-language=C++
+Projects/**/core/cli/*.cpp linguist-language=C++
+Projects/**/core/tests/*.cpp linguist-language=C++
+Projects/**/core/include/mp/*.h linguist-language=C++

@@ -61,6 +61,8 @@ Desktop.ini
 *~
 
 # --- Large Test Evidence & Snapshots (Keep summary .md reports, ignore huge snapshots) ---
+**/Resources/报告/*证据*
+**/Resources/报告/*证据*/
 **/Resources/报告/*-证据-*
 **/Resources/报告/*-证据*/
 **/Resources/报告/*快照*
