@@ -2,36 +2,37 @@
 # GitHub Linguist Overrides - Force C++ Primary Language
 # ==============================================================================
 
-# Exclude all HTML files (architecture diagrams, presentations, mockups) from language stats
+# Exclude HTML, mockups and generated visual assets from language stats
+*.html -linguist-detectable
+*.html linguist-generated
 *.html linguist-vendored
-*.html linguist-documentation
-*.htm linguist-vendored
-*.htm linguist-documentation
-*.svg linguist-vendored
-*.svg linguist-documentation
-*.json linguist-vendored
-*.xml linguist-vendored
-*.wxml linguist-vendored
-*.wxss linguist-vendored
+*.htm -linguist-detectable
+*.htm linguist-generated
+*.svg -linguist-detectable
+*.svg linguist-generated
+*.json -linguist-detectable
+*.xml -linguist-detectable
+*.wxml -linguist-detectable
+*.wxss -linguist-detectable
 *.docx linguist-vendored
 *.pptx linguist-vendored
 *.zip linguist-vendored
 
-# Exclude generated deliverables, evaluations and resources from language statistics
-Projects/**/Resources/** linguist-vendored
-Projects/**/Resources/** linguist-documentation
-Projects/**/canteen-eval_20261026/** linguist-vendored
-Projects/**/canteen-eval_20261026/** linguist-documentation
-Projects/**/天科食客-期末评测全套交付包/** linguist-vendored
-Projects/**/天科食客-期末评测全套交付包/** linguist-documentation
-Projects/**/tools/** linguist-vendored
+# Exclude deliveries, evaluations, resources and tool scripts
+Projects/食堂就餐优化系统/Resources/** -linguist-detectable
+Projects/食堂就餐优化系统/Resources/** linguist-vendored
+Projects/食堂就餐优化系统/canteen-eval_20261026/** -linguist-detectable
+Projects/食堂就餐优化系统/canteen-eval_20261026/** linguist-vendored
+Projects/食堂就餐优化系统/天科食客-期末评测全套交付包/** -linguist-detectable
+Projects/食堂就餐优化系统/天科食客-期末评测全套交付包/** linguist-vendored
+Projects/食堂就餐优化系统/tools/** -linguist-detectable
+Projects/食堂就餐优化系统/tools/** linguist-vendored
+Resources/** -linguist-detectable
 Resources/** linguist-vendored
 
-# Prioritize C++ core
+# Ensure C++ core is prioritized and detectable
+Projects/食堂就餐优化系统/core/** linguist-detectable
+*.cpp linguist-detectable
 *.cpp linguist-language=C++
+*.h linguist-detectable
 *.h linguist-language=C++
-Projects/**/core/** linguist-detectable
-Projects/**/core/src/*.cpp linguist-language=C++
-Projects/**/core/cli/*.cpp linguist-language=C++
-Projects/**/core/tests/*.cpp linguist-language=C++
-Projects/**/core/include/mp/*.h linguist-language=C++

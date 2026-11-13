@@ -2,31 +2,33 @@
 # GitHub Linguist Overrides - Force C++ Primary Language
 # ==============================================================================
 
+*.html -linguist-detectable
+*.html linguist-generated
 *.html linguist-vendored
-*.html linguist-documentation
-*.htm linguist-vendored
-*.htm linguist-documentation
-*.svg linguist-vendored
-*.svg linguist-documentation
-*.json linguist-vendored
-*.xml linguist-vendored
-*.wxml linguist-vendored
-*.wxss linguist-vendored
+*.htm -linguist-detectable
+*.htm linguist-generated
+*.svg -linguist-detectable
+*.svg linguist-generated
+*.json -linguist-detectable
+*.xml -linguist-detectable
+*.wxml -linguist-detectable
+*.wxss -linguist-detectable
 *.docx linguist-vendored
 *.pptx linguist-vendored
 *.zip linguist-vendored
 
+Resources/** -linguist-detectable
 Resources/** linguist-vendored
-Resources/** linguist-documentation
+canteen-eval_20261026/** -linguist-detectable
 canteen-eval_20261026/** linguist-vendored
-canteen-eval_20261026/** linguist-documentation
+天科食客-期末评测全套交付包/** -linguist-detectable
 天科食客-期末评测全套交付包/** linguist-vendored
-天科食客-期末评测全套交付包/** linguist-documentation
+tools/** -linguist-detectable
 tools/** linguist-vendored
 
 # Prioritize C++
 core/** linguist-detectable
-core/src/*.cpp linguist-language=C++
-core/cli/*.cpp linguist-language=C++
-core/tests/*.cpp linguist-language=C++
-core/include/mp/*.h linguist-language=C++
+*.cpp linguist-detectable
+*.cpp linguist-language=C++
+*.h linguist-detectable
+*.h linguist-language=C++
