@@ -1,0 +1,24 @@
+# ==============================================================================
+# GitHub Linguist Overrides
+# ==============================================================================
+
+# Exclude standalone HTML architecture diagrams and generated artifacts from language stats
+*.html linguist-vendored
+*.svg linguist-vendored
+*.json linguist-vendored
+*.docx linguist-vendored
+*.pptx linguist-vendored
+*.zip linguist-vendored
+
+# Exclude deliveries, evaluations and resources from language statistics
+Projects/**/Resources/** linguist-vendored
+Projects/**/canteen-eval_20261026/** linguist-vendored
+Projects/**/天科食客-期末评测全套交付包/** linguist-vendored
+Resources/** linguist-vendored
+tools/** linguist-vendored
+
+# Prioritize C++ and core frontend sources
+*.cpp linguist-language=C++
+*.h linguist-language=C++
+core/** linguist-detectable=true
+miniprogram/** linguist-detectable=true
