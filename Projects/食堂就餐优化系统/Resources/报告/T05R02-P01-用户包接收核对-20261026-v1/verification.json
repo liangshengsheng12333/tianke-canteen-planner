@@ -1,0 +1,44 @@
+{
+  "user": {
+    "treeDigest": "sha256:ada8d989f82f9cbd5c77824d416fa9b24a6c958f36bb8962b17ff220569910c4",
+    "files": 72,
+    "bytes": 929784,
+    "manifestMatch": true,
+    "fileMismatches": [],
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+    "menuSha256": "69748a5d72ad215040b16e8af4758cac0e207e7ff2c6d6bd4a7770583e95c7ab"
+  },
+  "dev": {
+    "treeDigest": "sha256:ece1cc4dbfafd8b803f8070e71b23762dbbd7a81030701107506b6a282bf66cd",
+    "files": 81,
+    "bytes": 1030448,
+    "manifestMatch": true,
+    "fileMismatches": [],
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+    "menuSha256": "69748a5d72ad215040b16e8af4758cac0e207e7ff2c6d6bd4a7770583e95c7ab"
+  },
+  "userExclusions": {
+    "src/pages/dev": true,
+    "src/pages/index": true,
+    "src/mock/simulated-inputs.ts": true
+  },
+  "getterReferences": {
+    "getLastPlanRaw": [
+      {
+        "file": "src/domain/store.ts",
+        "line": 2126,
+        "text": "getLastPlanRaw(): string | null {"
+      }
+    ],
+    "getLastPlanRequest": [
+      {
+        "file": "src/domain/store.ts",
+        "line": 2137,
+        "text": "getLastPlanRequest(): string | null {"
+      }
+    ]
+  },
+  "jsonEditorsPresent": false,
+  "pairedRequestMatch": true,
+  "pairedResponseMatch": true
+}

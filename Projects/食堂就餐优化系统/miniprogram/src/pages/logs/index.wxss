@@ -1,0 +1,317 @@
+/* pages/logs/index.wxss — 记餐页差异样式：一行日期操作、确认/修改/补记面板。
+   颜色一律走 app.wxss 的 --tk-* 令牌，深色模式不需要另写一份。 */
+
+.status-line {
+  margin-top: 24rpx;
+  padding: 16rpx 24rpx;
+  border-radius: 16rpx;
+  background: var(--tk-card-soft);
+}
+
+/* 一行日期操作：页面首行，替代原绿色 hero；放不下时（历史日期两个入口）自动换行，不挤压文字。 */
+.date-bar {
+  margin-top: 0;
+  padding: 16rpx 24rpx;
+  border-radius: 24rpx;
+  background: var(--tk-card);
+  box-shadow: var(--tk-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rpx 12rpx;
+}
+.date-bar-main {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+.date-primary {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: var(--tk-text);
+}
+.date-actions {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  padding: 4rpx 0;
+}
+/* 历史日期只读提示：与日期同一行组，压在日期条内部一行，不再单独占 hero 高度。 */
+.date-hint {
+  flex: 1 0 100%;
+  font-size: 26rpx;
+  line-height: 1.5;
+  color: var(--tk-muted);
+}
+
+/* 餐次标签（早餐/午餐/晚餐）：与首页 .meal-tabs 同一形态，只换查看范围。
+   颜色一律走 --tk-* 令牌，深浅色自动跟随，不另写深色分支。 */
+.meal-tabs {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 24rpx;
+}
+.meal-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rpx;
+  padding: 20rpx 0 18rpx;
+  border-radius: 28rpx;
+  background: var(--tk-card);
+  border: 2rpx solid transparent;
+  box-shadow: var(--tk-shadow);
+}
+.meal-tab.active {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.meal-tab-label {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.meal-tab.active .meal-tab-label {
+  color: var(--tk-accent);
+}
+.meal-tab-state {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.meal-tab.state-ok .meal-tab-state {
+  color: var(--tk-accent);
+  font-weight: 600;
+}
+.meal-tab.state-plan .meal-tab-state {
+  color: var(--tk-info);
+}
+
+/* 月历：周一起始，7 列扁平网格（空位不可点） */
+.cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+.cal-nav {
+  display: inline-flex;
+  align-items: center;
+  min-height: 88rpx;
+  padding: 0 24rpx;
+  border-radius: 20rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+  font-size: 28rpx;
+  color: var(--tk-accent);
+}
+.cal-title {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.cal-weekdays {
+  display: flex;
+  margin-top: 16rpx;
+}
+.cal-wd {
+  flex: 1 1 14.2857%;
+  text-align: center;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.cal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rpx;
+}
+.cal-cell {
+  width: 14.2857%;
+  padding: 6rpx 0;
+  box-sizing: border-box;
+}
+.cal-day {
+  height: 88rpx;
+  margin: 0;
+  border-radius: 18rpx;
+  border: 2rpx solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cal-num {
+  font-size: 28rpx;
+  color: var(--tk-text);
+}
+.cal-marks {
+  height: 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+/* 有记录：实心圆点；今天：文字“今”；选中：外框 + 底色。三者可同时出现，不靠颜色区分。 */
+.cal-dot {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: var(--tk-accent);
+  display: inline-block;
+}
+.cal-today {
+  font-size: 22rpx;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--tk-info);
+}
+.cal-day.has-records .cal-num {
+  font-weight: 600;
+}
+.cal-day.is-today {
+  border-color: var(--tk-line-strong);
+}
+.cal-day.is-selected {
+  background: var(--tk-accent-soft);
+  border-color: var(--tk-accent);
+  box-shadow: inset 0 0 0 2rpx var(--tk-accent);
+}
+.cal-day.is-selected .cal-num {
+  font-weight: 700;
+}
+.cal-legend {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+
+/* 月度汇总短卡 */
+.month-line {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.month-grid {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 16rpx;
+}
+.month-item {
+  flex: 1;
+  padding: 16rpx 20rpx;
+  border-radius: 20rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+}
+.month-label {
+  display: block;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.month-value {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+
+/* 空态：这天还没记餐（不显示“摄入 0”） */
+.empty-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+
+/* 确认面板 / 修改面板 / 补记面板 */
+.confirm-panel,
+.edit-panel,
+.manual-panel {
+  margin-top: 20rpx;
+  padding: 24rpx;
+  border-radius: 24rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx dashed var(--tk-line);
+}
+
+/* 记录块 */
+.record {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border-radius: 24rpx;
+  border: 1rpx solid var(--tk-line);
+  background: var(--tk-card-soft);
+}
+.record-history {
+  background: var(--tk-secondary);
+}
+.record-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12rpx;
+  padding-bottom: 8rpx;
+}
+
+/* 编辑/补记表单两列栅格 */
+.edit-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+.edit-grid .field {
+  flex: 1 1 280rpx;
+}
+.edit-item {
+  padding-top: 10rpx;
+  border-top: 1rpx dashed var(--tk-line);
+}
+.edit-item:first-child {
+  border-top: none;
+}
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24rpx;
+}
+.switch-row .field-label {
+  margin-bottom: 0;
+}
+
+/* 确认面板里的金额输入 */
+.price-input {
+  width: 220rpx;
+  height: 88rpx;
+  text-align: right;
+  font-size: 32rpx;
+}
+
+/* 记录内的“已知小计”行：app.wxss 里 .row-label 固定 210rpx、.row-value 用 break-all，
+   390px 下“营养（已知小计）”会在标签内折行、数值又被逐字切断，挤成多行。
+   这里让标签按内容定宽且不折行，数值独占剩余宽度，只在空格/标点处换行（keep-all 不拆“蛋白/脂肪/碳水”）。 */
+.row-nutrition .row-label {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.row-nutrition .row-value {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* 空日：三张未记餐卡收紧为“一行餐次 + 一行小按钮”，不再各占一张大卡片的上下两排按钮。 */
+.meal-card-slim {
+  margin-top: 16rpx;
+  padding: 24rpx 28rpx;
+}
+/* 补记食物 / 结束餐次 两个按钮组改为同行内联，空日时并排落在同一行（展开补记表单后自动换行）。 */
+.meal-card-slim .meal-actions {
+  display: inline-flex;
+  margin-top: 12rpx;
+  margin-right: 12rpx;
+}
+.meal-card-slim .meal-actions:last-child {
+  margin-right: 0;
+}

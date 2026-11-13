@@ -1,0 +1,18 @@
+{
+  "food_name": "油豆腐 / 炸北豆腐块",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，第三章 豆类及制品",
+  "food_code": "03.1.506",
+  "online_portal": "http://chinanutri.cn/",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 熟重可食部",
+  "nutrients_per_100g": {
+    "energy_kcal": 245.0,
+    "energy_kj": 1024.0,
+    "protein_g": 17.0,
+    "fat_g": 17.6,
+    "carbohydrate_g": 4.9,
+    "sodium_mg": 8.0
+  },
+  "canteen_portion_assumption": "泰式豆腐饭主菜为切块后油炸金黄的北豆腐块（炸豆腐块约 6~8 块），净重典型假设为 130g（波动范围 110 ~ 150g）"
+}

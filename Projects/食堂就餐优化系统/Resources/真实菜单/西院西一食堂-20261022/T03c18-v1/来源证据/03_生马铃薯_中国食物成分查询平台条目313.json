@@ -1,0 +1,31 @@
+{
+  "ingredientName": "生马铃薯(土豆丝净料)",
+  "dishId": "dish-shredded-pancake",
+  "sourceDatabase": "中国疾病预防控制中心营养与健康所·食物营养成分查询平台",
+  "foodCode": "313",
+  "bookCode": "02-1-101",
+  "officialName": "马铃薯(均值)",
+  "category": "薯类、淀粉及制品",
+  "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/313.html",
+  "officialOriginalPer100g": {
+    "edible": 94,
+    "waterG": 79.8,
+    "energyKj": 328.0,
+    "energyKcal": 78.3939,
+    "proteinG": 2.0,
+    "fatG": 0.2,
+    "carbG": 17.2,
+    "ashG": 0.8,
+    "sodiumMg": 2.7,
+    "alignNote": "彻底消除在线链接与纸本混写，统一采用官方可定位查询页面直查数值(328kJ/P2.0g/F0.2g/C17.2g)"
+  },
+  "portionAssumption": {
+    "description": "档口标准单勺熟土豆丝夹心对应的生马铃薯净料重按中心估计45g计(波动范围35~55g)；土豆丝纯净原料不含油，烹调吸附油统合归集于烹调大豆油条目；透明份量假设，非档口实称",
+    "portionG": 45.0,
+    "portionEnergyKcal": 35.2772,
+    "portionProteinG": 0.9000,
+    "portionFatG": 0.0900,
+    "portionCarbG": 7.7400,
+    "portionSodiumMg": 1.2150
+  }
+}

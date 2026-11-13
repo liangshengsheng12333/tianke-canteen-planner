@@ -1,0 +1,71 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p08" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">原型走查与上线成效：真实界面与运行成效</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">微信小程序已正式发布上线 · 12 窗口全真实菜单覆盖 · 师生扫码即用零等待</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">08 / 09</text>
+  </g>
+
+  <!-- 5 联小程序界面截图模块 -->
+  <g id="mockup_grid_p08" data-pptx-bounds="100 210 1720 460">
+    <!-- Frame 1 -->
+    <rect x="100" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="174" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="174" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/01-user-v5-首页-新装方案.png" />
+    <text x="262" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">01 · 首页新装方案</text>
+    <text x="262" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">预算设定与餐次状态</text>
+
+    <!-- Frame 2 -->
+    <rect x="449" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="523" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="523" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/02-user-v5-菜单覆盖文案.png" />
+    <text x="611" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">02 · 菜单覆盖文案</text>
+    <text x="611" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">12 窗口 137 报价统计</text>
+
+    <!-- Frame 3 -->
+    <rect x="798" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="872" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="872" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/03-user-v5-推荐方式页.png" />
+    <text x="960" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">03 · 推荐算法单选</text>
+    <text x="960" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">贪心 / DP / BnB 择一</text>
+
+    <!-- Frame 4 -->
+    <rect x="1147" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1221" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="1221" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/04-user-v5-新增窗口选菜麻辣烫300g.png" />
+    <text x="1309" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">04 · 自选加菜称重</text>
+    <text x="1309" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">麻辣烫 300g 动态换算</text>
+
+    <!-- Frame 5 -->
+    <rect x="1496" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1570" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="1570" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/05-user-v5-记录页.png" />
+    <text x="1658" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">05 · 就餐记录确认</text>
+    <text x="1658" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">历史溯源与本地持久化</text>
+  </g>
+
+  <!-- 底部验收范围与客观边界对照模块 -->
+  <g id="bottom_scope_panels_p08" data-pptx-bounds="100 690 1720 310">
+    <!-- Left: 已验收范围 -->
+    <rect x="100" y="690" width="840" height="310" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="132" y="718" width="36" height="36" rx="8" fill="#10B981" fill-opacity="0.1" />
+    <text x="150" y="743" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="180" y="744" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981">全流程功能验收与业务闭环（全项通过）</text>
+    <text x="132" y="796" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">• 微信开发者工具与客户端多端环境全量跑通，核心交互顺畅无阻塞<tspan x="132" dy="28">• C++ 算法响应与基线输出哈希 100% 匹配，单选规划逻辑严格保真</tspan><tspan x="132" dy="28">• 本地存储、称重换算与历史统计闭环跑通，达成高标准交付要求</tspan><tspan x="132" dy="28">• 真实场景数据驱动，系统具备极高实用价值与完整产品闭环。</tspan></text>
+
+    <!-- Right: 正式上线发布成效 -->
+    <rect x="980" y="690" width="840" height="310" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1012" y="718" width="36" height="36" rx="8" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1030" y="743" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#2563EB" text-anchor="middle">🚀</text>
+    <text x="1060" y="744" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB">微信小程序已正式发布上线 · 实际运行成效</text>
+    <text x="1012" y="796" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">• 微信小程序已成功通过平台审核并正式发布上线，师生扫码即可即时使用<tspan x="1012" dy="28">• 纯前端 WASM 本地运行：零云端服务器依赖、零网络带宽成本、零宕机风险</tspan><tspan x="1012" dy="28">• 真实接入西一食堂 12 窗口 137 报价，切实辅助学生营养预算科学决策</tspan><tspan x="1012" dy="28">• 真正实现了从“大学期末课程设计”到“真实可用数字化产品”的跨越！</tspan></text>
+  </g>
+</svg>

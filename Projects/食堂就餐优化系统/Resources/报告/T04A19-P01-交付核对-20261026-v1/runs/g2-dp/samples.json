@@ -1,0 +1,44 @@
+[
+  {
+    "iteration": 0,
+    "ms": 145.3379,
+    "pages": 562,
+    "clockCalls": 0,
+    "responseSha256": "4a6bb0d6235f23d972b8bc2a8dbb367061c41aaa7687cd29034052beb66acff4"
+  },
+  {
+    "iteration": 1,
+    "ms": 81.21879999999999,
+    "pages": 562,
+    "clockCalls": 0,
+    "responseSha256": "4a6bb0d6235f23d972b8bc2a8dbb367061c41aaa7687cd29034052beb66acff4"
+  },
+  {
+    "iteration": 2,
+    "ms": 84.53180000000003,
+    "pages": 562,
+    "clockCalls": 0,
+    "responseSha256": "4a6bb0d6235f23d972b8bc2a8dbb367061c41aaa7687cd29034052beb66acff4"
+  },
+  {
+    "iteration": 3,
+    "ms": 86.29989999999998,
+    "pages": 562,
+    "clockCalls": 0,
+    "responseSha256": "4a6bb0d6235f23d972b8bc2a8dbb367061c41aaa7687cd29034052beb66acff4"
+  },
+  {
+    "iteration": 4,
+    "ms": 91.37309999999997,
+    "pages": 562,
+    "clockCalls": 0,
+    "responseSha256": "4a6bb0d6235f23d972b8bc2a8dbb367061c41aaa7687cd29034052beb66acff4"
+  },
+  {
+    "iteration": 5,
+    "ms": 102.11400000000003,
+    "pages": 562,
+    "clockCalls": 0,
+    "responseSha256": "4a6bb0d6235f23d972b8bc2a8dbb367061c41aaa7687cd29034052beb66acff4"
+  }
+]

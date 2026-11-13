@@ -1,0 +1,34 @@
+{
+  "ingredientName": "云鹤手抓饼速冻生坯(代表替代基准)",
+  "dishId": "dish-shredded-pancake",
+  "sourceDatabase": "中国疾病预防控制中心预包装食品营养标签查询系统",
+  "portalUrl": "https://nlc.chinanutri.cn/food/03KqaiXHSPan6AjjRCOjWg.html",
+  "productInfo": {
+    "productName": "云鹤手抓饼",
+    "manufacturer": "新乡云鹤食品有限公司",
+    "barcode": "6921406808370",
+    "netWeight": "400g"
+  },
+  "substitutionStatement": {
+    "status": "国家官方权威标签库工业代表性替代产品",
+    "boundary": "档口现场门头实拍与后厨均未公示手抓饼生坯采购品牌(档口实际品牌未知)，严禁将云鹤认定为食堂实际采购品牌，此处仅作为国家官方权威标签库中的通用工业代表性替代基准"
+  },
+  "officialOriginalPer100g": {
+    "energyKj": 1360.0,
+    "energyKcal": 325.0478,
+    "proteinG": 6.6,
+    "fatG": 14.1,
+    "carbG": 42.7,
+    "sodiumMg": 446.0,
+    "errataNote": "纠正T03c14版本将钠446mg/100g误录为508mg/100g的摘录笔误，彻底对齐官方标签页面"
+  },
+  "portionAssumption": {
+    "description": "标准市售速冻手抓饼生坯单片净重90g(典型工程中心估计，波动范围85~95g)；生坯自身含丰富起酥油(12.69g脂肪)，受热自溶出油润滑铁板，煎烙饼皮自身物理上无需额外倒油",
+    "portionG": 90.0,
+    "portionEnergyKcal": 292.5430,
+    "portionProteinG": 5.9400,
+    "portionFatG": 12.6900,
+    "portionCarbG": 38.4300,
+    "portionSodiumMg": 401.4000
+  }
+}

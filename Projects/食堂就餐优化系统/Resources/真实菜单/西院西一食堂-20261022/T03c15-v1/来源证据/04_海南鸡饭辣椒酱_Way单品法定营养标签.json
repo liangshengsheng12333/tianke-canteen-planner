@@ -1,0 +1,32 @@
+{
+  "food_name": "海南鸡饭辣椒酱 (Hainanese Chicken Rice Chilli Sauce)",
+  "brand_name": "WAY 威牌 (Way Foods / Way Sauce)",
+  "producer": "Way Sauce Sdn Bhd (Malaysia)",
+  "product_title": "WAY Hainanese Chicken Rice Chilli Sauce (海南鸡饭辣椒酱 200g)",
+  "official_portal": "https://waysauce.com/",
+  "retail_product_url": "https://tuktukmart.co.uk/products/way-hainanese-chicken-rice-chilli-sauce-200g",
+  "access_date": "2026-10-23",
+  "ingredients_list": "红辣椒 (Red Chilli)、食用醋 (Vinegar)、白砂糖 (Sugar)、生姜 (Ginger)、大蒜 (Garlic)、芝麻油 (Sesame Oil)、食用盐 (Salt)",
+  "per_amount": "100g 调味汁",
+  "label_nutrients_per_100g": {
+    "energy_kj": 502.0,
+    "energy_kcal": 120.0,
+    "protein_g": 2.0,
+    "fat_g": 4.0,
+    "carbohydrate_g": 21.0,
+    "sugars_g": 17.0,
+    "dietary_fibre_g": 4.0,
+    "sodium_mg": 1220.0
+  },
+  "p09_review_status": "P09在T03V04报告中确认：Way Sauce厂商单品页列20g份量24 kcal、P 0.4g / F 0.8g / C 4.2g，折算到10g后与候选辣酱数值一致，证据具备坚实支撑。",
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "multiplier": 0.10,
+    "energy_kcal": 12.00,
+    "protein_g": 0.20,
+    "fat_g": 0.40,
+    "carbohydrate_g": 2.10,
+    "sodium_mg": 122.0
+  },
+  "assumption_note": "红碟盛装辣酱单份取 10g 为工艺假设，非现场称重证明。"
+}

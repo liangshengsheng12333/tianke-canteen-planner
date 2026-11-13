@@ -1,0 +1,23 @@
+{
+  "food_name": "海南鸡饭辣椒酱 (Hainanese Chicken Rice Chilli Sauce)",
+  "source": "市售经典南洋风味鸡饭辣酱标签（如Way / 广祥泰 / 李锦记蒜蓉辣椒酱综合）",
+  "standard": "GB 28050 预包装食品营养标签通则",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "nutrients_per_100g": {
+    "energy_kcal": 120.0,
+    "energy_kj": 502.0,
+    "protein_g": 2.0,
+    "fat_g": 4.0,
+    "carbohydrate_g": 21.0,
+    "sodium_mg": 1500.0
+  },
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "energy_kcal": 12.0,
+    "protein_g": 0.2,
+    "fat_g": 0.4,
+    "carbohydrate_g": 2.1,
+    "sodium_mg": 150.0
+  }
+}

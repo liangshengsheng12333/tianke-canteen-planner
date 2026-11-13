@@ -1,0 +1,861 @@
+{
+  "type": "Node mock wx + production AppStore + real a62 WASM",
+  "uniqueOffers": 62,
+  "rows": [
+    {
+      "meal": "breakfast",
+      "beforeUnknown": 12,
+      "loaded": {
+        "ok": true,
+        "message": "核心已返回 12 个报价的单份营养",
+        "offerCount": 12
+      },
+      "afterOffers": 12,
+      "afterUnknown": [],
+      "rows": [
+        {
+          "offerId": "offer-wuhan-hotdry-noodles",
+          "name": "热干面",
+          "energyKcal": 506,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-southern-wonton-small",
+          "name": "南方小馄饨小份",
+          "energyKcal": 263,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-southern-wonton-large",
+          "name": "南方小馄饨大份",
+          "energyKcal": 416,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shaomai",
+          "name": "烧麦",
+          "energyKcal": 435,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-egg-soup",
+          "name": "鸡蛋汤",
+          "energyKcal": 108,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shandong-pancake",
+          "name": "山东杂粮煎饼",
+          "energyKcal": 470,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-grilled-cold-noodles",
+          "name": "烤冷面",
+          "energyKcal": 398,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shredded-pancake",
+          "name": "手抓饼",
+          "energyKcal": 426,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-plain-changfen",
+          "name": "原味肠粉",
+          "energyKcal": 231,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-ham-changfen",
+          "name": "火腿肠粉（鸡肉）",
+          "energyKcal": 286,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-lean-pork-changfen",
+          "name": "瘦肉肠粉（猪瘦肉）",
+          "energyKcal": 274,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-grain-soymilk",
+          "name": "五谷杂粮豆浆",
+          "energyKcal": 114,
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "meal": "lunch",
+      "beforeUnknown": 62,
+      "loaded": {
+        "ok": true,
+        "message": "核心已返回 62 个报价的单份营养",
+        "offerCount": 62
+      },
+      "afterOffers": 62,
+      "afterUnknown": [],
+      "rows": [
+        {
+          "offerId": "offer-wuhan-hotdry-noodles",
+          "name": "热干面",
+          "energyKcal": 506,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-southern-wonton-small",
+          "name": "南方小馄饨小份",
+          "energyKcal": 263,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-southern-wonton-large",
+          "name": "南方小馄饨大份",
+          "energyKcal": 416,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shaomai",
+          "name": "烧麦",
+          "energyKcal": 435,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-egg-soup",
+          "name": "鸡蛋汤",
+          "energyKcal": 108,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shandong-pancake",
+          "name": "山东杂粮煎饼",
+          "energyKcal": 470,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-grilled-cold-noodles",
+          "name": "烤冷面",
+          "energyKcal": 398,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shredded-pancake",
+          "name": "手抓饼",
+          "energyKcal": 426,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-plain-changfen",
+          "name": "原味肠粉",
+          "energyKcal": 231,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-ham-changfen",
+          "name": "火腿肠粉（鸡肉）",
+          "energyKcal": 286,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-lean-pork-changfen",
+          "name": "瘦肉肠粉（猪瘦肉）",
+          "energyKcal": 274,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-grain-soymilk",
+          "name": "五谷杂粮豆浆",
+          "energyKcal": 114,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-hongyou-jiaomaji-fan",
+          "name": "红油椒麻鸡饭",
+          "energyKcal": 654,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-ningmengji-fan",
+          "name": "柠檬鸡饭",
+          "energyKcal": 620,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-jinpai-kaorou-fan",
+          "name": "金牌烤肉饭",
+          "energyKcal": 597,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-hainan-jifan",
+          "name": "海南鸡饭",
+          "energyKcal": 562,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-jipai-doufu-fan",
+          "name": "鸡排豆腐饭",
+          "energyKcal": 621,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-taishi-cuipiji-fan",
+          "name": "泰式脆皮鸡饭",
+          "energyKcal": 615,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-taishi-doufu-fan",
+          "name": "泰式豆腐饭",
+          "energyKcal": 633,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-shala-jifan",
+          "name": "沙拉鸡饭",
+          "energyKcal": 642,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-zha-xiannai",
+          "name": "炸鲜奶",
+          "energyKcal": 356,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-zhaopai-doufu",
+          "name": "招牌豆腐",
+          "energyKcal": 277,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-naiyou-xiaomantou",
+          "name": "奶油小馒头",
+          "energyKcal": 415,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-xiaoqingcai",
+          "name": "小青菜",
+          "energyKcal": 95,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-cuipi-kaoya-fan",
+          "name": "脆皮烤鸭饭",
+          "energyKcal": 607,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-aorliang-jipai-fan",
+          "name": "奥尔良鸡排饭",
+          "energyKcal": 522,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-wuxiang-yatui-fan",
+          "name": "五香鸭腿饭",
+          "energyKcal": 548,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-longjiang-zhuzhou-fan",
+          "name": "隆江猪肘饭",
+          "energyKcal": 619,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-roujuan-fan",
+          "name": "肉卷饭",
+          "energyKcal": 528,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-baiqieji-fan",
+          "name": "白切鸡饭",
+          "energyKcal": 493,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-mizhi-chashao-fan",
+          "name": "蜜汁叉烧饭",
+          "energyKcal": 588,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-guangshi-lachang-fan",
+          "name": "广式腊肠饭",
+          "energyKcal": 552,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-wuxiang-jitui-fan",
+          "name": "五香鸡腿饭",
+          "energyKcal": 477,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-lurou-fan",
+          "name": "卤肉饭",
+          "energyKcal": 531,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-renxuan-shuangpin-fan",
+          "name": "任选双拼饭",
+          "energyKcal": 568,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-yuxiang-rousi",
+          "name": "鱼香肉丝套餐",
+          "energyKcal": 563,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-xiangchang-jidan",
+          "name": "香肠鸡蛋套餐",
+          "energyKcal": 596,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-culiu-muxu",
+          "name": "醋溜木须套餐",
+          "energyKcal": 561,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-gongbao-jiding",
+          "name": "宫保鸡丁套餐",
+          "energyKcal": 648,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-mala-xiangguo",
+          "name": "麻辣香锅套餐",
+          "energyKcal": 541,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-aoerliang-jiding",
+          "name": "奥尔良鸡丁套餐",
+          "energyKcal": 571,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-ziran-roupian",
+          "name": "孜然肉片套餐",
+          "energyKcal": 532,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-sanxian-zhurouwan",
+          "name": "三鲜猪肉丸套餐",
+          "energyKcal": 527,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-heihujiao-jiliu",
+          "name": "黑胡椒鸡柳套餐",
+          "energyKcal": 529,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-hupi-jitui",
+          "name": "虎皮鸡腿套餐",
+          "energyKcal": 626,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-gali-jirou",
+          "name": "咖喱鸡肉套餐",
+          "energyKcal": 577,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-tudou-lachang",
+          "name": "土豆腊肠套餐",
+          "energyKcal": 630,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-lajiao-chaorou",
+          "name": "辣椒炒肉套餐",
+          "energyKcal": 620,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-xianggu-menji",
+          "name": "香菇焖鸡套餐",
+          "energyKcal": 559,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-ganbian-jikuai",
+          "name": "干煸鸡块套餐",
+          "energyKcal": 650,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-tangcu-liji",
+          "name": "糖醋里脊套餐",
+          "energyKcal": 677,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-ziran-jizhen",
+          "name": "孜然鸡胗套餐",
+          "energyKcal": 517,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-guobaorou",
+          "name": "锅包肉套餐",
+          "energyKcal": 696,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-heihujiao-rouli",
+          "name": "黑胡椒肉粒套餐",
+          "energyKcal": 528,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-zhaopai-yatui",
+          "name": "招牌鸭腿套餐",
+          "energyKcal": 620,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-zhaopai-koushuiji",
+          "name": "招牌口水鸡套餐",
+          "energyKcal": 692,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-tudou-hongshaorou",
+          "name": "土豆红烧肉套餐",
+          "energyKcal": 716,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-suancai-wuguyu",
+          "name": "酸菜无骨鱼套餐",
+          "energyKcal": 586,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-yumi-dun-paigu",
+          "name": "玉米炖排骨套餐",
+          "energyKcal": 682,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-meigancai-shaorou",
+          "name": "梅干菜烧肉套餐",
+          "energyKcal": 695,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-2veg-rice",
+          "name": "两素套餐（任选两素+米）",
+          "energyKcal": 333,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-3veg-rice",
+          "name": "三素套餐（任选三素+米）",
+          "energyKcal": 415,
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "meal": "dinner",
+      "beforeUnknown": 62,
+      "loaded": {
+        "ok": true,
+        "message": "核心已返回 62 个报价的单份营养",
+        "offerCount": 62
+      },
+      "afterOffers": 62,
+      "afterUnknown": [],
+      "rows": [
+        {
+          "offerId": "offer-wuhan-hotdry-noodles",
+          "name": "热干面",
+          "energyKcal": 506,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-southern-wonton-small",
+          "name": "南方小馄饨小份",
+          "energyKcal": 263,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-southern-wonton-large",
+          "name": "南方小馄饨大份",
+          "energyKcal": 416,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shaomai",
+          "name": "烧麦",
+          "energyKcal": 435,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-egg-soup",
+          "name": "鸡蛋汤",
+          "energyKcal": 108,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shandong-pancake",
+          "name": "山东杂粮煎饼",
+          "energyKcal": 470,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-grilled-cold-noodles",
+          "name": "烤冷面",
+          "energyKcal": 398,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-shredded-pancake",
+          "name": "手抓饼",
+          "energyKcal": 426,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-plain-changfen",
+          "name": "原味肠粉",
+          "energyKcal": 231,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-ham-changfen",
+          "name": "火腿肠粉（鸡肉）",
+          "energyKcal": 286,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-lean-pork-changfen",
+          "name": "瘦肉肠粉（猪瘦肉）",
+          "energyKcal": 274,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-grain-soymilk",
+          "name": "五谷杂粮豆浆",
+          "energyKcal": 114,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-hongyou-jiaomaji-fan",
+          "name": "红油椒麻鸡饭",
+          "energyKcal": 654,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-ningmengji-fan",
+          "name": "柠檬鸡饭",
+          "energyKcal": 620,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-jinpai-kaorou-fan",
+          "name": "金牌烤肉饭",
+          "energyKcal": 597,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-hainan-jifan",
+          "name": "海南鸡饭",
+          "energyKcal": 562,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-jipai-doufu-fan",
+          "name": "鸡排豆腐饭",
+          "energyKcal": 621,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-taishi-cuipiji-fan",
+          "name": "泰式脆皮鸡饭",
+          "energyKcal": 615,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-taishi-doufu-fan",
+          "name": "泰式豆腐饭",
+          "energyKcal": 633,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-shala-jifan",
+          "name": "沙拉鸡饭",
+          "energyKcal": 642,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-zha-xiannai",
+          "name": "炸鲜奶",
+          "energyKcal": 356,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-zhaopai-doufu",
+          "name": "招牌豆腐",
+          "energyKcal": 277,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-naiyou-xiaomantou",
+          "name": "奶油小馒头",
+          "energyKcal": 415,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-hnjf-xiaoqingcai",
+          "name": "小青菜",
+          "energyKcal": 95,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-cuipi-kaoya-fan",
+          "name": "脆皮烤鸭饭",
+          "energyKcal": 607,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-aorliang-jipai-fan",
+          "name": "奥尔良鸡排饭",
+          "energyKcal": 522,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-wuxiang-yatui-fan",
+          "name": "五香鸭腿饭",
+          "energyKcal": 548,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-longjiang-zhuzhou-fan",
+          "name": "隆江猪肘饭",
+          "energyKcal": 619,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-roujuan-fan",
+          "name": "肉卷饭",
+          "energyKcal": 528,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-baiqieji-fan",
+          "name": "白切鸡饭",
+          "energyKcal": 493,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-mizhi-chashao-fan",
+          "name": "蜜汁叉烧饭",
+          "energyKcal": 588,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-guangshi-lachang-fan",
+          "name": "广式腊肠饭",
+          "energyKcal": 552,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-wuxiang-jitui-fan",
+          "name": "五香鸡腿饭",
+          "energyKcal": 477,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-lurou-fan",
+          "name": "卤肉饭",
+          "energyKcal": 531,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-cpky-renxuan-shuangpin-fan",
+          "name": "任选双拼饭",
+          "energyKcal": 568,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-yuxiang-rousi",
+          "name": "鱼香肉丝套餐",
+          "energyKcal": 563,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-xiangchang-jidan",
+          "name": "香肠鸡蛋套餐",
+          "energyKcal": 596,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-culiu-muxu",
+          "name": "醋溜木须套餐",
+          "energyKcal": 561,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-gongbao-jiding",
+          "name": "宫保鸡丁套餐",
+          "energyKcal": 648,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-mala-xiangguo",
+          "name": "麻辣香锅套餐",
+          "energyKcal": 541,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-aoerliang-jiding",
+          "name": "奥尔良鸡丁套餐",
+          "energyKcal": 571,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-ziran-roupian",
+          "name": "孜然肉片套餐",
+          "energyKcal": 532,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-sanxian-zhurouwan",
+          "name": "三鲜猪肉丸套餐",
+          "energyKcal": 527,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-heihujiao-jiliu",
+          "name": "黑胡椒鸡柳套餐",
+          "energyKcal": 529,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-hupi-jitui",
+          "name": "虎皮鸡腿套餐",
+          "energyKcal": 626,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-gali-jirou",
+          "name": "咖喱鸡肉套餐",
+          "energyKcal": 577,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-tudou-lachang",
+          "name": "土豆腊肠套餐",
+          "energyKcal": 630,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-lajiao-chaorou",
+          "name": "辣椒炒肉套餐",
+          "energyKcal": 620,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-xianggu-menji",
+          "name": "香菇焖鸡套餐",
+          "energyKcal": 559,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-ganbian-jikuai",
+          "name": "干煸鸡块套餐",
+          "energyKcal": 650,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-tangcu-liji",
+          "name": "糖醋里脊套餐",
+          "energyKcal": 677,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-ziran-jizhen",
+          "name": "孜然鸡胗套餐",
+          "energyKcal": 517,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-guobaorou",
+          "name": "锅包肉套餐",
+          "energyKcal": 696,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-heihujiao-rouli",
+          "name": "黑胡椒肉粒套餐",
+          "energyKcal": 528,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-zhaopai-yatui",
+          "name": "招牌鸭腿套餐",
+          "energyKcal": 620,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-zhaopai-koushuiji",
+          "name": "招牌口水鸡套餐",
+          "energyKcal": 692,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-tudou-hongshaorou",
+          "name": "土豆红烧肉套餐",
+          "energyKcal": 716,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-suancai-wuguyu",
+          "name": "酸菜无骨鱼套餐",
+          "energyKcal": 586,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-yumi-dun-paigu",
+          "name": "玉米炖排骨套餐",
+          "energyKcal": 682,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-meigancai-shaorou",
+          "name": "梅干菜烧肉套餐",
+          "energyKcal": 695,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-2veg-rice",
+          "name": "两素套餐（任选两素+米）",
+          "energyKcal": 333,
+          "estimated": true
+        },
+        {
+          "offerId": "offer-chuanxiang-set-3veg-rice",
+          "name": "三素套餐（任选三素+米）",
+          "energyKcal": 415,
+          "estimated": true
+        }
+      ]
+    }
+  ]
+}

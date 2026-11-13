@@ -1,0 +1,42 @@
+{
+  "food_name": "猪肉(瘦)",
+  "english_name": "Pork, lean",
+  "book_title": "《中国食物成分表（标准版）》第6版第二册",
+  "editor_in_chief": "杨月欣",
+  "authoring_organization": "中国疾病预防控制中心营养与健康所",
+  "publisher": "北京大学医学出版社",
+  "publication_year": 2019,
+  "chapter": "第三章 畜肉类及其制品",
+  "food_code_standard": "081110",
+  "food_code_legacy": "08-1-110",
+  "page_reference": "第122页",
+  "online_source_url": "https://nlc.chinanutri.cn/fq/foodinfo/788.html",
+  "access_date": "2026-10-23",
+  "per_amount": "100g",
+  "edible_portion_ratio": 1.0,
+  "state": "生，鲜品 (raw)",
+  "nutrients_per_100g": {
+    "energy_kj": 600.0,
+    "energy_kcal": 143.0,
+    "protein_g": 20.3,
+    "fat_g": 6.2,
+    "carbohydrate_g": 1.5,
+    "sodium_mg": 57.9,
+    "water_g": 71.0,
+    "ash_g": 1.0
+  },
+  "energy_conversion_verification": {
+    "kj_to_kcal_calculated": 143.4,
+    "book_reported_kcal": 143.0,
+    "atwater_4_9_4_recalculation": "20.3 * 4 + 6.2 * 9 + 1.5 * 4 = 81.2 + 55.8 + 6.0 = 143.0 kcal",
+    "atwater_closure": "中国食物成分表标定能量(143 kcal)与Atwater 4/9/4复算(143.0 kcal)完全自洽，闭环无差值"
+  },
+  "single_portion_contribution_30g_raw": {
+    "portion_assumption_note": "生猪瘦肉碎30g为透明的中心投料份量假设，不冒称食堂实称",
+    "energy_kcal": 42.9,
+    "protein_g": 6.09,
+    "fat_g": 1.86,
+    "carbohydrate_g": 0.45,
+    "sodium_mg": 17.37
+  }
+}

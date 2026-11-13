@@ -1,0 +1,28 @@
+/* pages/dev/index.wxss — 开发诊断页差异样式：夹具卡与等宽原始输出。
+   颜色一律走 app.wxss 的 --tk-* 令牌，诊断页与正式页同一套主题。 */
+
+.status-line {
+  margin-top: 16rpx;
+  padding: 12rpx 18rpx;
+  border-radius: 12rpx;
+  background: var(--tk-card-soft);
+}
+
+.fixture {
+  margin-top: 16rpx;
+  padding: 14rpx;
+  border-radius: 14rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+}
+.fixture-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14rpx;
+}
+.fixture-result {
+  margin-top: 10rpx;
+  padding-top: 8rpx;
+  border-top: 1rpx dashed var(--tk-line);
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "dishId": "dish-hnjf-zha-xiannai",
+    "name": "炸鲜奶",
+    "kind": "single",
+    "category": "other",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 356,
+      "proteinDg": 44,
+      "fatDg": 165,
+      "carbDg": 475
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "典型出餐5条炸鲜奶(生坯净重约125g，油炸吸收烹调植物油约10g，单份成品净重约130g)",
+      "estimated": true,
+      "note": "依据照片2精品小菜盘装4-5条金黄长条鲜奶棒及高校食堂通用规格推导；单条生坯按25g计，参考商用脆皮炸鲜奶GB 28050法定标签(892 kJ/100g即213.19 kcal/100g，蛋白质3.5g，脂肪5.2g，碳水38.0g)；油炸吸油率按8.0%计(吸收烹调油10g，899 kcal/100g)；非食堂实测配方，实际能量受出餐条数(4-6条)及油温吸油率影响"
+    },
+    "scenarios": {
+      "low": {
+        "energyKcal": 276,
+        "proteinDg": 35,
+        "fatDg": 122,
+        "carbDg": 380,
+        "description": "份量偏小出餐4条(生坯100g)，高温控油吸油7g"
+      },
+      "mid": {
+        "energyKcal": 356,
+        "proteinDg": 44,
+        "fatDg": 165,
+        "carbDg": 475,
+        "description": "典型出餐5条(生坯125g)，标准吸油10g"
+      },
+      "high": {
+        "energyKcal": 455,
+        "proteinDg": 53,
+        "fatDg": 228,
+        "carbDg": 570,
+        "description": "份量偏大出餐6条(生坯150g)，油温偏低吸油15g"
+      }
+    }
+  },
+  {
+    "dishId": "dish-hnjf-zhaopai-doufu",
+    "name": "招牌豆腐",
+    "kind": "single",
+    "category": "protein",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 277,
+      "proteinDg": 191,
+      "fatDg": 172,
+      "carbDg": 116
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "北豆腐150g(约5-6厚块) + 煎制吸收烹调油10g + 调味黑褐烧汁25g(生抽8g+老抽3g+蚝油5g+白糖4g+淀粉2g+水3g，单份成品重约180g)",
+      "estimated": true,
+      "note": "依据照片2精品小菜盘装深色黑褐酱汁煎豆腐块及8元/份定价推导；北豆腐采用中国疾控中心查询平台编码03-1-101(415 kJ/100g即99.19 kcal/100g，蛋白质12.2g，脂肪4.8g，碳水2.0g)；煎制吸油按10g计；黑褐调味烧汁按生抽老抽蚝油白糖芡汁配方加权折算38 kcal、碳水8.57g；非食堂实测配方，主要误差来自后厨煎油用量及芡汁挂浆量"
+    },
+    "scenarios": {
+      "low": {
+        "energyKcal": 212,
+        "proteinDg": 153,
+        "fatDg": 128,
+        "carbDg": 93,
+        "description": "份量偏小(豆腐120g)，轻煎少油(油7g)，挂汁20g"
+      },
+      "mid": {
+        "energyKcal": 277,
+        "proteinDg": 191,
+        "fatDg": 172,
+        "carbDg": 116,
+        "description": "典型份量(豆腐150g)，标准煎油(油10g)，浓汁25g"
+      },
+      "high": {
+        "energyKcal": 350,
+        "proteinDg": 229,
+        "fatDg": 226,
+        "carbDg": 139,
+        "description": "份量充裕(豆腐180g)，宽油煎透(油14g)，浓芡汁30g"
+      }
+    }
+  },
+  {
+    "dishId": "dish-hnjf-naiyou-xiaomantou",
+    "name": "奶油小馒头",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 415,
+      "proteinDg": 95,
+      "fatDg": 128,
+      "carbDg": 661
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "刀切小馒头120g(约5个) + 油炸吸油10g + 全脂甜炼乳蘸料15g(标准味碟，单份成品重约145g)",
+      "estimated": true,
+      "note": "依据照片2精品小菜盘装金黄炸小馒头配独立炼乳味碟及6元/份定价推导；小馒头采用中国疾控中心查询平台编码01-1-101蒸馒头基准(933 kJ/100g即222.99 kcal/100g，蛋白质7.0g，脂肪1.1g，碳水47.0g)；油炸吸油率按8.3%计(吸油10g)；甜炼乳采用疾控中心官方收录雀巢鹰唛炼乳GB 28050标签(1601 kJ/100g即382.65 kcal/100g，蛋白质7.5g，脂肪10.0g，碳水64.9g)；非食堂实测配方，主要不确定性在于学生实际蘸取炼乳量及炸制吸油率"
+    },
+    "scenarios": {
+      "low": {
+        "energyKcal": 324,
+        "proteinDg": 78,
+        "fatDg": 91,
+        "carbDg": 535,
+        "description": "份量偏小出餐4个(馒头100g)，轻炸控油(油7g)，少蘸炼乳(10g)"
+      },
+      "mid": {
+        "energyKcal": 415,
+        "proteinDg": 95,
+        "fatDg": 128,
+        "carbDg": 661,
+        "description": "典型出餐5个(馒头120g)，标准吸油(油10g)，蘸料15g"
+      },
+      "high": {
+        "energyKcal": 526,
+        "proteinDg": 117,
+        "fatDg": 176,
+        "carbDg": 811,
+        "description": "份量充裕出餐6个(馒头145g)，吸油偏重(油14g)，炼乳蘸足(20g)"
+      }
+    }
+  },
+  {
+    "dishId": "dish-hnjf-xiaoqingcai",
+    "name": "小青菜",
+    "kind": "single",
+    "category": "vegetable",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 95,
+      "proteinDg": 28,
+      "fatDg": 68,
+      "carbDg": 65
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "生小青菜(油菜/上海青可食部)150g + 清炒烹调油6g + 蒜蓉3g + 食盐1.5g(炒熟出锅净重约130g)",
+      "estimated": true,
+      "note": "依据照片2精品小菜盘装清炒/蒜炒小油菜及6元/份定价推导；青菜采用中国疾控中心查询平台油菜编码04-1-101(104 kJ/100g即24.86 kcal/100g，蛋白质1.8g，脂肪0.5g，碳水3.8g)；烹调油按快炒用油6g计(53.9 kcal)；大蒜3g微量增香；非食堂实测配方，主要误差来自后厨炒菜实际倒油量(5-9g)及出餐生熟份量"
+    },
+    "scenarios": {
+      "low": {
+        "energyKcal": 68,
+        "proteinDg": 23,
+        "fatDg": 46,
+        "carbDg": 51,
+        "description": "生青菜120g，清淡少油(烹调油4g)，蒜蓉2g"
+      },
+      "mid": {
+        "energyKcal": 95,
+        "proteinDg": 28,
+        "fatDg": 68,
+        "carbDg": 65,
+        "description": "生青菜150g，标准用油(烹调油6g)，蒜蓉3g"
+      },
+      "high": {
+        "energyKcal": 131,
+        "proteinDg": 34,
+        "fatDg": 99,
+        "carbDg": 79,
+        "description": "生青菜180g，食堂油水较重(烹调油9g)，蒜蓉4g"
+      }
+    }
+  }
+]

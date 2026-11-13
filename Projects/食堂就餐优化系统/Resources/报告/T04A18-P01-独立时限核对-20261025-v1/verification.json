@@ -1,0 +1,685 @@
+{
+  "passed": true,
+  "controlledNativeWasmCases": [
+    {
+      "algorithm": "greedy",
+      "completePlanRetained": false,
+      "nativeWasmEqual": true,
+      "clockReads": 86
+    },
+    {
+      "algorithm": "greedy",
+      "completePlanRetained": true,
+      "nativeWasmEqual": true,
+      "clockReads": 87
+    },
+    {
+      "algorithm": "dp",
+      "completePlanRetained": false,
+      "nativeWasmEqual": true,
+      "clockReads": 70
+    },
+    {
+      "algorithm": "dp",
+      "completePlanRetained": true,
+      "nativeWasmEqual": true,
+      "clockReads": 71
+    },
+    {
+      "algorithm": "branchandbound",
+      "completePlanRetained": false,
+      "nativeWasmEqual": true,
+      "clockReads": 77
+    },
+    {
+      "algorithm": "branchandbound",
+      "completePlanRetained": true,
+      "nativeWasmEqual": true,
+      "clockReads": 78
+    }
+  ],
+  "nullClockReads": 0,
+  "realSolvePolledMs": 1.002200000000002,
+  "realCoreMs": 5.992199999999997,
+  "realClockCapsHit": [
+    {
+      "limit": "wallClockMs",
+      "limitValue": 1,
+      "observed": 1
+    }
+  ],
+  "badClockVisibleError": true,
+  "realNativeClockTriggered": true,
+  "notWeChatVerification": true,
+  "runs": [
+    {
+      "name": "greedy-without-native",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_clock_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_without_plan_greedy_wasm.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\greedy-without-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "clockReads=86\n",
+      "measurement": null
+    },
+    {
+      "name": "greedy-without-wasm",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_without_plan_greedy_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\greedy-without-wasm.resp.json",
+        "step",
+        "85"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":86,\"coreMs\":3.9050999999999902,\"bridgeMs\":5.571899999999999,\"preSolveMs\":2.8489999999999895,\"solvePolledMs\":0.777300000000011,\"postSolveMs\":0.2787999999999897,\"memoryBytes\":1179648,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"ResourceLimited\",\"search\":{\"algorithm\":\"greedy\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":2,\"lunch\":2,\"dinner\":2},\"nodesEvaluated\":6,\"statesEvaluated\":null,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":10,\"observed\":10}],\"approximations\":[{\"kind\":\"APPROXIMATE_CANDIDATES\",\"scope\":\"allMeals\",\"detail\":\"greedy per-meal local selection without full-day exhaustive search\"},{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 86,
+        "coreMs": 3.9050999999999902,
+        "bridgeMs": 5.571899999999999,
+        "preSolveMs": 2.8489999999999895,
+        "solvePolledMs": 0.777300000000011,
+        "postSolveMs": 0.2787999999999897,
+        "memoryBytes": 1179648,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "ResourceLimited",
+        "search": {
+          "algorithm": "greedy",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 2,
+            "lunch": 2,
+            "dinner": 2
+          },
+          "nodesEvaluated": 6,
+          "statesEvaluated": null,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 10,
+              "observed": 10
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_CANDIDATES",
+              "scope": "allMeals",
+              "detail": "greedy per-meal local selection without full-day exhaustive search"
+            },
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": []
+      }
+    },
+    {
+      "name": "greedy-with-native",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_clock_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_with_plan_greedy_wasm.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\greedy-with-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "clockReads=87\n",
+      "measurement": null
+    },
+    {
+      "name": "greedy-with-wasm",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_with_plan_greedy_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\greedy-with-wasm.resp.json",
+        "step",
+        "86"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":87,\"coreMs\":4.211299999999994,\"bridgeMs\":6.5771000000000015,\"preSolveMs\":2.792199999999994,\"solvePolledMs\":1.017700000000005,\"postSolveMs\":0.4013999999999953,\"memoryBytes\":1179648,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"OkPartial\",\"search\":{\"algorithm\":\"greedy\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":2,\"lunch\":2,\"dinner\":2},\"nodesEvaluated\":7,\"statesEvaluated\":null,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":10,\"observed\":10}],\"approximations\":[{\"kind\":\"APPROXIMATE_CANDIDATES\",\"scope\":\"allMeals\",\"detail\":\"greedy per-meal local selection without full-day exhaustive search\"},{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[\"plan:c40bc1de84759fb79d67628184ed77345f2e0c9d0dab76d6074d6755c3887e16\"]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 87,
+        "coreMs": 4.211299999999994,
+        "bridgeMs": 6.5771000000000015,
+        "preSolveMs": 2.792199999999994,
+        "solvePolledMs": 1.017700000000005,
+        "postSolveMs": 0.4013999999999953,
+        "memoryBytes": 1179648,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "OkPartial",
+        "search": {
+          "algorithm": "greedy",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 2,
+            "lunch": 2,
+            "dinner": 2
+          },
+          "nodesEvaluated": 7,
+          "statesEvaluated": null,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 10,
+              "observed": 10
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_CANDIDATES",
+              "scope": "allMeals",
+              "detail": "greedy per-meal local selection without full-day exhaustive search"
+            },
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": [
+          "plan:c40bc1de84759fb79d67628184ed77345f2e0c9d0dab76d6074d6755c3887e16"
+        ]
+      }
+    },
+    {
+      "name": "dp-without-native",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_clock_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_without_plan_dp_wasm.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\dp-without-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "clockReads=70\n",
+      "measurement": null
+    },
+    {
+      "name": "dp-without-wasm",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_without_plan_dp_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\dp-without-wasm.resp.json",
+        "step",
+        "69"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":70,\"coreMs\":4.0839,\"bridgeMs\":5.743299999999991,\"preSolveMs\":2.894199999999998,\"solvePolledMs\":0.8605000000000018,\"postSolveMs\":0.32920000000000016,\"memoryBytes\":1179648,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"ResourceLimited\",\"search\":{\"algorithm\":\"dp\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":2,\"lunch\":2,\"dinner\":2},\"nodesEvaluated\":null,\"statesEvaluated\":6,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":10,\"observed\":10}],\"approximations\":[{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 70,
+        "coreMs": 4.0839,
+        "bridgeMs": 5.743299999999991,
+        "preSolveMs": 2.894199999999998,
+        "solvePolledMs": 0.8605000000000018,
+        "postSolveMs": 0.32920000000000016,
+        "memoryBytes": 1179648,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "ResourceLimited",
+        "search": {
+          "algorithm": "dp",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 2,
+            "lunch": 2,
+            "dinner": 2
+          },
+          "nodesEvaluated": null,
+          "statesEvaluated": 6,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 10,
+              "observed": 10
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": []
+      }
+    },
+    {
+      "name": "dp-with-native",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_clock_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_with_plan_dp_wasm.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\dp-with-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "clockReads=71\n",
+      "measurement": null
+    },
+    {
+      "name": "dp-with-wasm",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_with_plan_dp_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\dp-with-wasm.resp.json",
+        "step",
+        "70"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":71,\"coreMs\":4.587900000000005,\"bridgeMs\":7.244599999999991,\"preSolveMs\":3.1244000000000085,\"solvePolledMs\":0.9042999999999921,\"postSolveMs\":0.5592000000000041,\"memoryBytes\":1179648,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"OkPartial\",\"search\":{\"algorithm\":\"dp\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":2,\"lunch\":2,\"dinner\":2},\"nodesEvaluated\":null,\"statesEvaluated\":7,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":10,\"observed\":10}],\"approximations\":[{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[\"plan:d411b85d71046867fc870b2fcd4f35fb44a676033ae50d2080b80f2ec5965636\"]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 71,
+        "coreMs": 4.587900000000005,
+        "bridgeMs": 7.244599999999991,
+        "preSolveMs": 3.1244000000000085,
+        "solvePolledMs": 0.9042999999999921,
+        "postSolveMs": 0.5592000000000041,
+        "memoryBytes": 1179648,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "OkPartial",
+        "search": {
+          "algorithm": "dp",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 2,
+            "lunch": 2,
+            "dinner": 2
+          },
+          "nodesEvaluated": null,
+          "statesEvaluated": 7,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 10,
+              "observed": 10
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": [
+          "plan:d411b85d71046867fc870b2fcd4f35fb44a676033ae50d2080b80f2ec5965636"
+        ]
+      }
+    },
+    {
+      "name": "branchandbound-without-native",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_clock_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_without_plan_branchandbound_wasm.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\branchandbound-without-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "clockReads=77\n",
+      "measurement": null
+    },
+    {
+      "name": "branchandbound-without-wasm",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_without_plan_branchandbound_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\branchandbound-without-wasm.resp.json",
+        "step",
+        "76"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":77,\"coreMs\":3.9783000000000044,\"bridgeMs\":5.8267999999999915,\"preSolveMs\":2.8470999999999975,\"solvePolledMs\":0.8085000000000093,\"postSolveMs\":0.32269999999999754,\"memoryBytes\":1179648,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"ResourceLimited\",\"search\":{\"algorithm\":\"branchAndBound\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":2,\"lunch\":2,\"dinner\":2},\"nodesEvaluated\":2,\"statesEvaluated\":null,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":10,\"observed\":10}],\"approximations\":[{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 77,
+        "coreMs": 3.9783000000000044,
+        "bridgeMs": 5.8267999999999915,
+        "preSolveMs": 2.8470999999999975,
+        "solvePolledMs": 0.8085000000000093,
+        "postSolveMs": 0.32269999999999754,
+        "memoryBytes": 1179648,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "ResourceLimited",
+        "search": {
+          "algorithm": "branchAndBound",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 2,
+            "lunch": 2,
+            "dinner": 2
+          },
+          "nodesEvaluated": 2,
+          "statesEvaluated": null,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 10,
+              "observed": 10
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": []
+      }
+    },
+    {
+      "name": "branchandbound-with-native",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_clock_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_with_plan_branchandbound_wasm.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\branchandbound-with-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "clockReads=78\n",
+      "measurement": null
+    },
+    {
+      "name": "branchandbound-with-wasm",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\timeout_with_plan_branchandbound_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\branchandbound-with-wasm.resp.json",
+        "step",
+        "77"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":78,\"coreMs\":4.276799999999994,\"bridgeMs\":6.424400000000006,\"preSolveMs\":2.8001000000000005,\"solvePolledMs\":1.0297000000000054,\"postSolveMs\":0.4469999999999885,\"memoryBytes\":1179648,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"OkPartial\",\"search\":{\"algorithm\":\"branchAndBound\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":2,\"lunch\":2,\"dinner\":2},\"nodesEvaluated\":3,\"statesEvaluated\":null,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":10,\"observed\":10}],\"approximations\":[{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[\"plan:c40bc1de84759fb79d67628184ed77345f2e0c9d0dab76d6074d6755c3887e16\"]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 78,
+        "coreMs": 4.276799999999994,
+        "bridgeMs": 6.424400000000006,
+        "preSolveMs": 2.8001000000000005,
+        "solvePolledMs": 1.0297000000000054,
+        "postSolveMs": 0.4469999999999885,
+        "memoryBytes": 1179648,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "OkPartial",
+        "search": {
+          "algorithm": "branchAndBound",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 2,
+            "lunch": 2,
+            "dinner": 2
+          },
+          "nodesEvaluated": 3,
+          "statesEvaluated": null,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 10,
+              "observed": 10
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": [
+          "plan:c40bc1de84759fb79d67628184ed77345f2e0c9d0dab76d6074d6755c3887e16"
+        ]
+      }
+    },
+    {
+      "name": "null-clock-forbidden",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\raw_io\\null_greedy_wasm.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\null-clock-forbidden.resp.json",
+        "forbidden",
+        "1000000000"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":0,\"coreMs\":8.6006,\"bridgeMs\":14.853499999999997,\"preSolveMs\":null,\"solvePolledMs\":null,\"postSolveMs\":null,\"memoryBytes\":2752512,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"OkPartial\",\"search\":{\"algorithm\":\"greedy\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":46,\"lunch\":186,\"dinner\":186},\"nodesEvaluated\":300,\"statesEvaluated\":null,\"capsHit\":[],\"approximations\":[{\"kind\":\"APPROXIMATE_CANDIDATES\",\"scope\":\"allMeals\",\"detail\":\"greedy per-meal local selection without full-day exhaustive search\"}]},\"keys\":[\"plan:26e39cf7dc82b8ab4ed3c96aa8dd117785e73a0b9c121d3cea916fc940a31391\",\"plan:876cd9e5363cf24c0c7db94d9c48bfd10f81e35082ac736ed8732af26778cb02\",\"plan:2a309563a7fc20b27868cac7c3f5c6c1a5cac3c0b9b2ed30247d2334a30b09da\"]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 0,
+        "coreMs": 8.6006,
+        "bridgeMs": 14.853499999999997,
+        "preSolveMs": null,
+        "solvePolledMs": null,
+        "postSolveMs": null,
+        "memoryBytes": 2752512,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "OkPartial",
+        "search": {
+          "algorithm": "greedy",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 46,
+            "lunch": 186,
+            "dinner": 186
+          },
+          "nodesEvaluated": 300,
+          "statesEvaluated": null,
+          "capsHit": [],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_CANDIDATES",
+              "scope": "allMeals",
+              "detail": "greedy per-meal local selection without full-day exhaustive search"
+            }
+          ]
+        },
+        "keys": [
+          "plan:26e39cf7dc82b8ab4ed3c96aa8dd117785e73a0b9c121d3cea916fc940a31391",
+          "plan:876cd9e5363cf24c0c7db94d9c48bfd10f81e35082ac736ed8732af26778cb02",
+          "plan:2a309563a7fc20b27868cac7c3f5c6c1a5cac3c0b9b2ed30247d2334a30b09da"
+        ]
+      }
+    },
+    {
+      "name": "real-one-ms",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\real-clock.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\real-one-ms.resp.json",
+        "real",
+        "1000000000"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":757,\"coreMs\":5.992199999999997,\"bridgeMs\":11.315100000000001,\"preSolveMs\":4.680099999999996,\"solvePolledMs\":1.002200000000002,\"postSolveMs\":0.30989999999999895,\"memoryBytes\":1703936,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":true,\"error\":null,\"status\":\"ResourceLimited\",\"search\":{\"algorithm\":\"dp\",\"searchComplete\":false,\"candidatesEnumerated\":{\"breakfast\":46,\"lunch\":16,\"dinner\":0},\"nodesEvaluated\":null,\"statesEvaluated\":null,\"capsHit\":[{\"limit\":\"wallClockMs\",\"limitValue\":1,\"observed\":1}],\"approximations\":[{\"kind\":\"APPROXIMATE_TIMEOUT\",\"scope\":\"allMeals\",\"detail\":\"monotonic solve deadline reached; optimality not proven\"}]},\"keys\":[]}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 757,
+        "coreMs": 5.992199999999997,
+        "bridgeMs": 11.315100000000001,
+        "preSolveMs": 4.680099999999996,
+        "solvePolledMs": 1.002200000000002,
+        "postSolveMs": 0.30989999999999895,
+        "memoryBytes": 1703936,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": true,
+        "error": null,
+        "status": "ResourceLimited",
+        "search": {
+          "algorithm": "dp",
+          "searchComplete": false,
+          "candidatesEnumerated": {
+            "breakfast": 46,
+            "lunch": 16,
+            "dinner": 0
+          },
+          "nodesEvaluated": null,
+          "statesEvaluated": null,
+          "capsHit": [
+            {
+              "limit": "wallClockMs",
+              "limitValue": 1,
+              "observed": 1
+            }
+          ],
+          "approximations": [
+            {
+              "kind": "APPROXIMATE_TIMEOUT",
+              "scope": "allMeals",
+              "detail": "monotonic solve deadline reached; optimality not proven"
+            }
+          ]
+        },
+        "keys": []
+      }
+    },
+    {
+      "name": "backwards-clock",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\worker.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\wasm\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\real-clock.req.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\backwards-clock.resp.json",
+        "backwards",
+        "1000000000"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"clockReads\":2,\"coreMs\":4.934299999999993,\"bridgeMs\":10.5775,\"preSolveMs\":4.646799999999999,\"solvePolledMs\":0.13889999999999247,\"postSolveMs\":0.14860000000000184,\"memoryBytes\":1572864,\"imports\":[{\"module\":\"env\",\"name\":\"mp_monotonic_ms\",\"kind\":\"function\"}],\"ok\":false,\"error\":{\"code\":\"INTERNAL_ERROR\",\"fieldPath\":\"$.plannerConfig.limits.wallClockMs\",\"message\":\"monotonic clock invalid or moved backwards\",\"details\":[]}}\n",
+      "stderr": "",
+      "measurement": {
+        "clockReads": 2,
+        "coreMs": 4.934299999999993,
+        "bridgeMs": 10.5775,
+        "preSolveMs": 4.646799999999999,
+        "solvePolledMs": 0.13889999999999247,
+        "postSolveMs": 0.14860000000000184,
+        "memoryBytes": 1572864,
+        "imports": [
+          {
+            "module": "env",
+            "name": "mp_monotonic_ms",
+            "kind": "function"
+          }
+        ],
+        "ok": false,
+        "error": {
+          "code": "INTERNAL_ERROR",
+          "fieldPath": "$.plannerConfig.limits.wallClockMs",
+          "message": "monotonic clock invalid or moved backwards",
+          "details": []
+        }
+      }
+    },
+    {
+      "name": "real-native-one-ms",
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-内部Sol-真实求解时限-证据-v1\\candidate\\build\\native\\mp_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\real-clock.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A18-P01-独立时限核对-20261025-v1\\real-native.resp.json"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+/* pages/data/index.wxss — 数据管理页差异样式：入口列表与徽标；颜色/卡片沿用 app.wxss。 */
+
+.banner {
+  margin-top: 24rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.banner-err {
+  background: var(--tk-danger-bg);
+  border: 1rpx solid var(--tk-danger-line);
+  color: var(--tk-danger);
+}
+
+.badge-sim {
+  background: var(--tk-warn-bg);
+  color: var(--tk-warn-text);
+}
+
+.action-list {
+  margin-top: 16rpx;
+}
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-top: 16rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+}
+.action-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.action-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.action-desc {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.action-arrow {
+  font-size: 32rpx;
+  color: var(--tk-muted);
+}

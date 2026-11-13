@@ -1,0 +1,1261 @@
+{
+  "contractVersion": "1.0",
+  "menuVersion": "west1-canteen-batch1-nutrition4-20261023",
+  "canteen": {
+    "canteenId": "canteen-west1",
+    "name": "西院西一食堂"
+  },
+  "windows": [
+    {
+      "windowId": "w-wuhan-hotdry-noodles",
+      "name": "武汉热干面",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "windowId": "w-shandong-pancake",
+      "name": "山东杂粮煎饼/烤冷面/手抓饼",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "windowId": "w-guangdong-changfen",
+      "name": "广东肠粉",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "windowId": "w-hainan-chicken-rice",
+      "name": "海南鸡饭",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "windowId": "w-roast-duck",
+      "name": "脆皮烤鸭",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ]
+    }
+  ],
+  "dishes": [
+    {
+      "dishId": "dish-wuhan-hotdry-noodles",
+      "name": "热干面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-southern-wonton-small",
+      "name": "南方小馄饨小份",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-southern-wonton-large",
+      "name": "南方小馄饨大份",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-shaomai",
+      "name": "烧麦",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-egg-soup",
+      "name": "鸡蛋汤",
+      "kind": "single",
+      "category": "soup",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-shandong-pancake",
+      "name": "山东杂粮煎饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-grilled-cold-noodles",
+      "name": "烤冷面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-shredded-pancake",
+      "name": "手抓饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 426,
+        "proteinDg": 135,
+        "fatDg": 202,
+        "carbDg": 476
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "云鹤手抓饼速冻生坯(代表替代)90g + 鲜鸡蛋(全蛋去壳)50g + 生马铃薯(土豆丝净料)45g + 烹调大豆油3g(单份成品净重约185g)",
+        "estimated": true,
+        "note": "严格依据门头标牌公示配料'面皮+鸡蛋+土豆丝'；采纳中国疾控中心官方营养标签查询系统云鹤手抓饼条目作为代表替代基准(食堂档口实际品牌未知)，修正钠标签摘录为446mg/100g；原料全面对齐官方公开可定位查询页面(鸡蛋978/马铃薯313/豆油1497)；饼皮生坯自带起酥油不重复加油，单份外加烹调大豆油3g统筹预炒土豆丝吸油(约1.5g)与铁板微量润锅防粘(约1.5g)；绝无非契约carbsDg字段；全份逐项十进制精算累加，非食堂化验值"
+      }
+    },
+    {
+      "dishId": "dish-plain-changfen",
+      "name": "原味肠粉",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 231,
+        "proteinDg": 25,
+        "fatDg": 22,
+        "carbDg": 531
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "熟肠粉皮200g + 调味甜豉油汁15g(单份成品净重中心估计约215g，非食堂实称)",
+        "estimated": true,
+        "note": "透明中心份量假设；熟粉皮采纳化验所测定样品总脂肪(2.2g/200g)，不武断断言全部来自防粘油，估算未额外追加未观测到的油脂；豉油采用官方每100g产品资料(注明与国内410ml SKU未证实同款)按15g重算，锁定采用官方标示209 kcal列作为计算基准；豉油标示脂肪<0.5g/100g使15g酱汁贡献[0, 0.075)g脂肪，整份理论总脂肪为[2.200, 2.275)g，按0.1g舍入可能为22dg(2.2g)或23dg(2.3g)；当前草案保留22dg为采用下界/选定点估的建模假设，并非标签唯一推出的中心值，完整保留22–23dg不确定性区间；CFS官方原表能量与4/9/4差异保留为公布数据固有差异"
+      }
+    },
+    {
+      "dishId": "dish-ham-changfen",
+      "name": "火腿肠粉（鸡肉）",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-lean-pork-changfen",
+      "name": "瘦肉肠粉（猪瘦肉）",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 274,
+        "proteinDg": 86,
+        "fatDg": 41,
+        "carbDg": 535
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "熟肠粉皮200g + 生猪瘦肉碎30g + 调味甜豉油汁15g(单份成品净重中心估计约245g，非食堂实称)",
+        "estimated": true,
+        "note": "透明中心份量假设；依据标牌原文'（猪瘦肉）'，生瘦肉投料30g按生重营养数据计算(600kJ/143kcal, P20.3, F6.2, C1.5)，不经熟重重复缩放；豉油依官方每100g产品资料按15g重算，锁定采用官方标示209 kcal列；粉皮总脂肪2.2g保留为化验基准；酱汁脂肪<0.5g/100g使整份理论总脂肪为[4.060, 4.135)g，在整个不确定性区间内四舍五入取整恒为41dg(4.1g)；保留207ml官方SKU替代410ml实际采购SKU未知边界；CFS原表能量与4/9/4差异保留为公布数据固有差异"
+      }
+    },
+    {
+      "dishId": "dish-grain-soymilk",
+      "name": "五谷杂粮豆浆",
+      "kind": "single",
+      "category": "drink",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-hongyou-jiaomaji-fan",
+      "name": "红油椒麻鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-ningmengji-fan",
+      "name": "柠檬鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-jinpai-kaorou-fan",
+      "name": "金牌烤肉饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-hainan-jifan",
+      "name": "海南鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-jipai-doufu-fan",
+      "name": "鸡排豆腐饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-taishi-cuipiji-fan",
+      "name": "泰式脆皮鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-taishi-doufu-fan",
+      "name": "泰式豆腐饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-shala-jifan",
+      "name": "沙拉鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-zha-xiannai",
+      "name": "炸鲜奶",
+      "kind": "single",
+      "category": "other",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-zhaopai-doufu",
+      "name": "招牌豆腐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-naiyou-xiaomantou",
+      "name": "奶油小馒头",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-xiaoqingcai",
+      "name": "小青菜",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-cuipi-kaoya-fan",
+      "name": "脆皮烤鸭饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-aorliang-jipai-fan",
+      "name": "奥尔良鸡排饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-wuxiang-yatui-fan",
+      "name": "五香鸭腿饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-longjiang-zhuzhou-fan",
+      "name": "隆江猪肘饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-roujuan-fan",
+      "name": "肉卷饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-baiqieji-fan",
+      "name": "白切鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 493,
+        "proteinDg": 332,
+        "fatDg": 148,
+        "carbDg": 542
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "熟白米饭200g + 熟白切鸡肉(带皮切块可食部)110g + 烧味豉油浇汁15g + 白灼菜心35g(单份成品净重约360g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5，SHA256前16位b30bd028d3128bc1)盘装切块白切鸡配青菜米饭推导。米饭200g系依据立柱规格牌(照片11)小份200g之明确中心假设，非食堂实测出餐；米饭基准采用官方可定位的493 kJ/100g按国标4.184换算为117.83 kcal/100g，彻底消除116 kcal冲突；带皮切块熟鸡肉110g为典型去大骨后可食部明确假设，非后厨称重；烧味豉油汁15g、白灼菜心35g均为透明工艺假设。单份仅计一次米饭，不含无限续饭；非食堂化学送检化验值"
+      }
+    },
+    {
+      "dishId": "dish-cpky-mizhi-chashao-fan",
+      "name": "蜜汁叉烧饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-guangshi-lachang-fan",
+      "name": "广式腊肠饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-wuxiang-jitui-fan",
+      "name": "五香鸡腿饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-lurou-fan",
+      "name": "卤肉饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-cpky-renxuan-shuangpin-fan",
+      "name": "任选双拼饭",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-wuhan-hotdry-noodles",
+      "dishId": "dish-wuhan-hotdry-noodles",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-southern-wonton-small",
+      "dishId": "dish-southern-wonton-small",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-southern-wonton-large",
+      "dishId": "dish-southern-wonton-large",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-shaomai",
+      "dishId": "dish-shaomai",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-egg-soup",
+      "dishId": "dish-egg-soup",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-shandong-pancake",
+      "dishId": "dish-shandong-pancake",
+      "windowId": "w-shandong-pancake",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 550,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-grilled-cold-noodles",
+      "dishId": "dish-grilled-cold-noodles",
+      "windowId": "w-shandong-pancake",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-shredded-pancake",
+      "dishId": "dish-shredded-pancake",
+      "windowId": "w-shandong-pancake",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 550,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-plain-changfen",
+      "dishId": "dish-plain-changfen",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ham-changfen",
+      "dishId": "dish-ham-changfen",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 700,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-lean-pork-changfen",
+      "dishId": "dish-lean-pork-changfen",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-grain-soymilk",
+      "dishId": "dish-grain-soymilk",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-hongyou-jiaomaji-fan",
+      "dishId": "dish-hnjf-hongyou-jiaomaji-fan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-ningmengji-fan",
+      "dishId": "dish-hnjf-ningmengji-fan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-jinpai-kaorou-fan",
+      "dishId": "dish-hnjf-jinpai-kaorou-fan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-hainan-jifan",
+      "dishId": "dish-hnjf-hainan-jifan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-jipai-doufu-fan",
+      "dishId": "dish-hnjf-jipai-doufu-fan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-taishi-cuipiji-fan",
+      "dishId": "dish-hnjf-taishi-cuipiji-fan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-taishi-doufu-fan",
+      "dishId": "dish-hnjf-taishi-doufu-fan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-shala-jifan",
+      "dishId": "dish-hnjf-shala-jifan",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-zha-xiannai",
+      "dishId": "dish-hnjf-zha-xiannai",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-zhaopai-doufu",
+      "dishId": "dish-hnjf-zhaopai-doufu",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-naiyou-xiaomantou",
+      "dishId": "dish-hnjf-naiyou-xiaomantou",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-hnjf-xiaoqingcai",
+      "dishId": "dish-hnjf-xiaoqingcai",
+      "windowId": "w-hainan-chicken-rice",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-cuipi-kaoya-fan",
+      "dishId": "dish-cpky-cuipi-kaoya-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-aorliang-jipai-fan",
+      "dishId": "dish-cpky-aorliang-jipai-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-wuxiang-yatui-fan",
+      "dishId": "dish-cpky-wuxiang-yatui-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-longjiang-zhuzhou-fan",
+      "dishId": "dish-cpky-longjiang-zhuzhou-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1400,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-roujuan-fan",
+      "dishId": "dish-cpky-roujuan-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-baiqieji-fan",
+      "dishId": "dish-cpky-baiqieji-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-mizhi-chashao-fan",
+      "dishId": "dish-cpky-mizhi-chashao-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1400,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-guangshi-lachang-fan",
+      "dishId": "dish-cpky-guangshi-lachang-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-wuxiang-jitui-fan",
+      "dishId": "dish-cpky-wuxiang-jitui-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-lurou-fan",
+      "dishId": "dish-cpky-lurou-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1400,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cpky-renxuan-shuangpin-fan",
+      "dishId": "dish-cpky-renxuan-shuangpin-fan",
+      "windowId": "w-roast-duck",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1500,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "comboRules": [],
+  "catalogHash": "sha256:020f904dcd3ba8cd3d017a588692b69adc4127aca98b56487a5c9d94bd0764b5"
+}

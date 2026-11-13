@@ -1,0 +1,326 @@
+{
+  "snapshotSourcesVerified": [
+    {
+      "path": "core/include/mp/api.h",
+      "bytes": 2055,
+      "sha256": "525D7B98FA3283A8E73867082A8EB1B76A87F858D992338CC62189C47BC6CF59"
+    },
+    {
+      "path": "core/include/mp/base.h",
+      "bytes": 7296,
+      "sha256": "E05F5AAD734717F6970E20C42641A0843CFEADA83C282A810075404D74568E9B"
+    },
+    {
+      "path": "core/include/mp/catalog.h",
+      "bytes": 7956,
+      "sha256": "747E79418427A7ED0CF1AD5690BE59FB5D3A053E9EFA95D2AFD09C1383227659"
+    },
+    {
+      "path": "core/include/mp/contract.h",
+      "bytes": 3430,
+      "sha256": "33242C59A59DF114476A7EB047F5D62F3776AF8FA85A1361BF2CFE1B3E3C2AB7"
+    },
+    {
+      "path": "core/include/mp/json.h",
+      "bytes": 3050,
+      "sha256": "BEC2FD366576AFFCB9FFB5F28236D0AFE903B3E5AD9D9D311AECC765C65E4E76"
+    },
+    {
+      "path": "core/include/mp/nutrition.h",
+      "bytes": 1194,
+      "sha256": "0CDB6B098C500C1CF08136CF2C83955A7EEB4283B5ED2BEBF51879128FEE8155"
+    },
+    {
+      "path": "core/include/mp/sha256.h",
+      "bytes": 831,
+      "sha256": "44B0C48E0A384F144DBCDFFD43CDB64A2BC91BDA34CD92CB8EBA1BCF900C44C8"
+    },
+    {
+      "path": "core/src/api.cpp",
+      "bytes": 3664,
+      "sha256": "94D1E8A86E81603F332E0C602FFE05CA2D6084CECC757238D479133E1A6BA0DA"
+    },
+    {
+      "path": "core/src/base.cpp",
+      "bytes": 16976,
+      "sha256": "2D6075CE09621670B34C24C0CA9A4791E9859B43E5C97B648C43A538E152E9F8"
+    },
+    {
+      "path": "core/src/catalog.cpp",
+      "bytes": 81753,
+      "sha256": "989D43CDF33C273B70D2372B0D2CF4E92D0CBCF55337AB4C3D140022CC507930"
+    },
+    {
+      "path": "core/src/contract.cpp",
+      "bytes": 14307,
+      "sha256": "C47BC48291F2C873307F9BDAB999A994C364342227EF5447FE0A935E96FA5F7A"
+    },
+    {
+      "path": "core/src/json.cpp",
+      "bytes": 40688,
+      "sha256": "683A472F8821D758051B475D59952E5BDD0E676FFAD944E402318171E7BB2105"
+    },
+    {
+      "path": "core/src/nutrition.cpp",
+      "bytes": 86479,
+      "sha256": "771AFBC811B3FDDC9F119E8865BD02CFA25587E5EA19F501266DBDFE50D260AF"
+    },
+    {
+      "path": "core/src/planner.cpp",
+      "bytes": 218007,
+      "sha256": "F58463994AB597164A23E59D7E6D2E050C459D8E74E88A0C6C06DA79EBC80609"
+    },
+    {
+      "path": "core/src/platform_native.cpp",
+      "bytes": 716,
+      "sha256": "A5946450C79E0D44DFB39492AB468E64F72E67F57B99825584DB9D09FD6E331C"
+    },
+    {
+      "path": "core/src/platform_wasm.cpp",
+      "bytes": 4595,
+      "sha256": "C25706E916E220CF2D6B89241BF4B39063681DF84544EDC8EE4A4FB21B602A1B"
+    },
+    {
+      "path": "core/src/sha256.cpp",
+      "bytes": 8516,
+      "sha256": "75F3B0F019E5E599E1AE613A8FD6066F02A2A5FD8C1E000AA197186F1DC71E6B"
+    },
+    {
+      "path": "core/cli/main.cpp",
+      "bytes": 5609,
+      "sha256": "20AC81E8B7A82B40AD4BB29FE19C58FD21DB2DC01E73A3A74DF87A5359082146"
+    },
+    {
+      "path": "tools/core/build_native.ps1",
+      "bytes": 4609,
+      "sha256": "3BC1B53EF7550D7D008DA9B948B6E468421115A58D16E74B0188E5909522939E"
+    }
+  ],
+  "bodyHashErrors": [
+    {
+      "path": "core/include/mp/base.h",
+      "body": "E05F5AAD734717F6A28C913076E51BA0FCE7D2847E31FD19C45F456720BC8220",
+      "actual": "E05F5AAD734717F6970E20C42641A0843CFEADA83C282A810075404D74568E9B"
+    },
+    {
+      "path": "core/include/mp/json.h",
+      "body": "BEC2FD366576AFFCC3B4DA115EB0D6D29A72283CA2F9E9CEB63CF367CE1C469D",
+      "actual": "BEC2FD366576AFFCB9FFB5F28236D0AFE903B3E5AD9D9D311AECC765C65E4E76"
+    },
+    {
+      "path": "core/include/mp/nutrition.h",
+      "body": "0CDB6B098C500C1CA4F29D4045EE7CFD2B52C7034ED6FF0A7B07AE36C29158EC",
+      "actual": "0CDB6B098C500C1CF08136CF2C83955A7EEB4283B5ED2BEBF51879128FEE8155"
+    },
+    {
+      "path": "core/include/mp/sha256.h",
+      "body": "44B0C48E0A384F14C7DC9ED6B09A18FDE0FF8AE19420D0C79DA15EB85A48DE2C",
+      "actual": "44B0C48E0A384F144DBCDFFD43CDB64A2BC91BDA34CD92CB8EBA1BCF900C44C8"
+    },
+    {
+      "path": "core/src/base.cpp",
+      "body": "2D6075CE09621670FE4328E95CE26E3743CBE627B73F3DEBF75416D34DA14545",
+      "actual": "2D6075CE09621670B34C24C0CA9A4791E9859B43E5C97B648C43A538E152E9F8"
+    },
+    {
+      "path": "core/src/contract.cpp",
+      "body": "C47BC48291F2C873A0C852D4B5320F7CE3BF1301F48006E1B6CEBD3B417E4FDF",
+      "actual": "C47BC48291F2C873307F9BDAB999A994C364342227EF5447FE0A935E96FA5F7A"
+    },
+    {
+      "path": "core/src/json.cpp",
+      "body": "683A472F8821D758F4A1439F57662973D54EB5346049BE0019C4A113702B1935",
+      "actual": "683A472F8821D758051B475D59952E5BDD0E676FFAD944E402318171E7BB2105"
+    },
+    {
+      "path": "core/src/nutrition.cpp",
+      "body": "771AFBC811B3FDDCC88BA8D3DDEB234F707A07BF31CF401B26955CF115F5EEB4",
+      "actual": "771AFBC811B3FDDC9F119E8865BD02CFA25587E5EA19F501266DBDFE50D260AF"
+    },
+    {
+      "path": "core/src/platform_native.cpp",
+      "body": "A5946450C79E0D44B84DF0DA55C8F2C747DC2AF7448B1B8A49280E1C59BA1998",
+      "actual": "A5946450C79E0D44DFB39492AB468E64F72E67F57B99825584DB9D09FD6E331C"
+    },
+    {
+      "path": "core/src/platform_wasm.cpp",
+      "body": "C25706E916E220CFCCEB110753BA9B83842AF4F9ED8C216C6CBE7E760E91DBA8",
+      "actual": "C25706E916E220CF2D6B89241BF4B39063681DF84544EDC8EE4A4FB21B602A1B"
+    },
+    {
+      "path": "core/src/sha256.cpp",
+      "body": "75F3B0F019E5E59986326E6F81B94C69EF58CA855F81D6D47CD8D45FD84DC804",
+      "actual": "75F3B0F019E5E599E1AE613A8FD6066F02A2A5FD8C1E000AA197186F1DC71E6B"
+    },
+    {
+      "path": "tools/core/build_native.ps1",
+      "body": "3BC1B53EF7550D7DB12ED6A820E64826CCED68BC20F5DFBBE74751BC4E42B10B",
+      "actual": "3BC1B53EF7550D7D008DA9B948B6E468421115A58D16E74B0188E5909522939E"
+    }
+  ],
+  "binaryHash": "1D06599C21838B81FCB806A2F0FAD6F3BB0DF0C1441149D234E3643A861091DF",
+  "targetedRuns": [
+    {
+      "case": "f6_restore",
+      "algorithm": "dp",
+      "planKey": "plan:7bd365ee3248bc340aa3a0cfb37e5622995dc0511a9f07dbf0415ae5cfcc9f8e",
+      "price": 100,
+      "overBudget": false,
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "lunch": 2
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 2,
+        "capsHit": [
+          {
+            "limit": "maxDpStates",
+            "limitValue": 1,
+            "observed": 2,
+            "meal": "lunch"
+          }
+        ],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_DISCRETIZATION",
+            "scope": "lunch",
+            "value": 20,
+            "limit": 1,
+            "detail": "DP state space quantized (step=20kcal/50dg) and capped at maxDpStates"
+          }
+        ]
+      }
+    },
+    {
+      "case": "better_budget_retained",
+      "algorithm": "dp",
+      "planKey": "plan:986cd22305a4689e3ca9b0b9576adcd12d7ed4e75ebcc72e2537cea31451e702",
+      "price": 95,
+      "overBudget": false,
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "lunch": 2
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 2,
+        "capsHit": [
+          {
+            "limit": "maxDpStates",
+            "limitValue": 1,
+            "observed": 2,
+            "meal": "lunch"
+          }
+        ],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_DISCRETIZATION",
+            "scope": "lunch",
+            "value": 20,
+            "limit": 1,
+            "detail": "DP state space quantized (step=20kcal/50dg) and capped at maxDpStates"
+          }
+        ]
+      }
+    },
+    {
+      "case": "two_meals_spent_unknown",
+      "algorithm": "dp",
+      "planKey": "plan:100946a5c5175100f761f90e82e2c384fff3106138a3e2690e694be450606d8f",
+      "price": 160,
+      "overBudget": false,
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "lunch": 2,
+          "dinner": 2
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 4,
+        "capsHit": [
+          {
+            "limit": "maxDpStates",
+            "limitValue": 1,
+            "observed": 2,
+            "meal": "lunch"
+          }
+        ],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_DISCRETIZATION",
+            "scope": "lunch",
+            "value": 20,
+            "limit": 1,
+            "detail": "DP state space quantized (step=20kcal/50dg) and capped at maxDpStates"
+          }
+        ]
+      }
+    },
+    {
+      "case": "already_over_budget",
+      "algorithm": "dp",
+      "planKey": "plan:986cd22305a4689e3ca9b0b9576adcd12d7ed4e75ebcc72e2537cea31451e702",
+      "price": 0,
+      "overBudget": true,
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "lunch": 1
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 1,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "case": "actual A07 4097-byte winner",
+      "result": "passed"
+    },
+    {
+      "case": "actual mp_offer_nutrition entry",
+      "result": {
+        "menuVersion": "menu-t04a04-v1",
+        "catalogHash": "sha256:8d8f55965a390d26d0f648118e94d33c78207f0897c80eb4bf1e4c318b27d8e2",
+        "meal": "lunch",
+        "offers": [
+          {
+            "offerId": "offer-rice-full",
+            "dishId": "dish-rice",
+            "windowId": "w-main",
+            "portionCode": "full",
+            "nutrition": {
+              "energyKcal": 232,
+              "proteinDg": 44,
+              "fatDg": 6,
+              "carbDg": 516
+            },
+            "nutritionComplete": true,
+            "estimated": false
+          },
+          {
+            "offerId": "offer-rice-half",
+            "dishId": "dish-rice",
+            "windowId": "w-main",
+            "portionCode": "half",
+            "nutrition": {
+              "energyKcal": 116,
+              "proteinDg": 22,
+              "fatDg": 3,
+              "carbDg": 258
+            },
+            "nutritionComplete": true,
+            "estimated": false
+          }
+        ]
+      }
+    }
+  ],
+  "runs": 6,
+  "originalRegressionLabelsNotAcceptedAsCoverage": true
+}

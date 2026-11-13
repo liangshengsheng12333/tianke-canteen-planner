@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "todokit_cpp": {
+      "type": "stdio",
+      "command": "C:/Users/link/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+      "args": [
+        "D:/项目/cpp/Resources/工具/todokit/node_modules/.pnpm/@j0hanz+todokit-mcp@2.1.0/node_modules/@j0hanz/todokit-mcp/dist/index.js",
+        "--todo-file",
+        "D:/项目/cpp/Resources/工具/todokit/任务数据.json"
+      ],
+      "cwd": "D:/项目/cpp",
+      "env": {
+        "TODOKIT_JSON_PRETTY": "true"
+      }
+    }
+  }
+}

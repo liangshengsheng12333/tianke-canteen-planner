@@ -1,0 +1,289 @@
+<!-- pages/menu/index.wxml — 菜单与备份页：当前菜单、导入预检、导出、恢复对照。 -->
+<view class="page {{themeClass}}">
+  <view class="hero">
+    <view class="hero-title">天科食客 · 菜单与备份</view>
+    <view class="hero-sub">本地菜单、备份导出与恢复；导入前先经核心预检，确认后才替换。</view>
+  </view>
+
+  <view class="status-line {{statusKind === 'error' ? 'note-warn' : (statusKind === 'warn' ? 'note-warn' : 'muted')}}" wx:if="{{statusText}}">
+    {{statusText}}
+  </view>
+
+  <!-- 当前菜单 -->
+  <view class="card" id="data-current" wx:if="{{loaded}}">
+    <view class="card-title">当前菜单</view>
+    <view class="banner-sim" wx:if="{{view.info.simulated}}">
+      <text class="tag tag-danger">模拟</text>
+      <text>{{view.info.banner}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">来源</text>
+      <text class="row-value">{{view.info.simulated ? '模拟菜单（非真实菜单）' : (west1Applied ? '西院西一食堂 · 六窗口菜单（内置真实菜单）' : '导入菜单')}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">菜单版本</text>
+      <text class="row-value">{{view.info.menuVersion}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">catalogHash</text>
+      <text class="row-value mono">{{view.info.catalogHash}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">食堂</text>
+      <text class="row-value">{{view.info.canteenName}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">导入文件</text>
+      <text class="row-value">{{view.info.importedFileName ? view.info.importedFileName : '—（内置真实菜单）'}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">导入时间</text>
+      <text class="row-value">{{view.info.importedAt ? view.info.importedAt : '—'}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">数量（窗口 / 菜品 / 报价）</text>
+      <text class="row-value">{{view.info.windowCount}} / {{view.info.dishCount}} / {{view.info.offerCount}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">comboRules 条数</text>
+      <text class="row-value">{{view.info.comboRuleCount}}</text>
+    </view>
+    <view class="note">当前支持 algorithm=greedy / dp / branchAndBound 且 comboRules=[]；非空 comboRules 暂不发送给核心。</view>
+    <view class="note" wx:if="{{view.lastImport}}">
+      最近导入记录：{{view.lastImport.fileName}} · {{view.lastImport.ok ? '成功' : '失败'}} · {{view.lastImport.message}} · {{view.lastImport.at}}
+    </view>
+  </view>
+
+  <!-- 导入 -->
+  <view class="card" id="data-import" wx:if="{{loaded}}">
+    <view class="card-title">导入菜单</view>
+
+    <!-- 内置真实菜单：只多一种读取来源，预检/确认替换仍走下面同一套流程 -->
+    <view class="west1-entry" id="data-west1">
+      <view class="west1-head">
+        <text class="west1-title">使用西一食堂菜单</text>
+        <text class="badge badge-ok" wx:if="{{west1Applied}}">当前已启用</text>
+      </view>
+      <view class="note">西院西一食堂 · 六窗口菜单</view>
+      <view class="note">{{view.info.windowCount}}个窗口 · {{view.info.dishCount}}款餐品 · {{view.info.offerCount}}条报价</view>
+      <view class="note note-warn">营养为估算值：按典型份量与配方估算，不是实测；未知不按 0 计，也不会因此开启营养推荐。</view>
+      <view class="note">仅覆盖当前录入的 {{view.info.windowCount}} 个窗口，不是全食堂所有窗口；启用前先预检并查看影响，确认后才替换。</view>
+      <view class="btn-group">
+        <button class="btn btn-sm btn-west1-use" data-action="west1-use" bindtap="onUseWest1Menu" disabled="{{importBusy}}">
+          {{west1Busy ? '预检中…' : (west1Applied ? '重新预检西一菜单' : '预检并启用西一菜单')}}
+        </button>
+        <button class="btn btn-ghost btn-sm" data-action="west1-cancel" wx:if="{{west1Pending}}" bindtap="onCancelImport" disabled="{{importBusy}}">取消</button>
+      </view>
+    </view>
+
+    <view class="sub-title">或手动导入</view>
+    <view class="note">{{view.importHint}}</view>
+    <view class="field">
+      <view class="field-label">粘贴菜单 JSON（MenuCatalog 或 {catalog:{...}} 包装）</view>
+      <textarea
+        class="textarea"
+        value="{{importText}}"
+        maxlength="-1"
+        placeholder="在此粘贴菜单 JSON…"
+        bindinput="onImportInput"
+      />
+    </view>
+    <view class="field">
+      <view class="field-label">文件名（用于记录来源，可留空）</view>
+      <input class="input" value="{{importFileName}}" placeholder="menu.json" bindinput="onImportFileNameInput" />
+    </view>
+    <view class="btn-group">
+      <button class="btn btn-ghost btn-sm" bindtap="onChooseMenuFile" disabled="{{importBusy}}">选择文件…</button>
+      <button class="btn btn-sm btn-import-preflight" bindtap="onPreflightMenu" disabled="{{importBusy}}">{{importBusy ? '预检中…' : '预检'}}</button>
+      <button class="btn btn-ghost btn-sm btn-import-cancel" bindtap="onCancelImport" disabled="{{importBusy}}">取消导入</button>
+    </view>
+
+    <view class="preflight-panel" id="data-import-preflight" wx:if="{{importStageLabel}}">
+      <view class="row">
+        <text class="row-label">预检阶段</text>
+        <text class="row-value">{{importStageLabel}}</text>
+      </view>
+      <view class="note {{importReady ? '' : 'note-warn'}}">{{importMessage}}</view>
+      <view class="error-text" wx:for="{{importErrors}}" wx:key="field" wx:for-item="err">{{err.field}}：{{err.message}}</view>
+      <view class="mono pre" wx:if="{{importRawError}}">核心错误原文：{{importRawError}}</view>
+
+      <!-- 影响分析（成功预检才有） -->
+      <view wx:if="{{importDiff}}">
+        <view class="sub-title">对当前数据的影响（确认前请核对）</view>
+        <view class="row">
+          <text class="row-label">菜单版本</text>
+          <text class="row-value">{{importDiff.oldMenuVersion}} → {{importDiff.newMenuVersion}}</text>
+        </view>
+        <view class="row">
+          <text class="row-label">旧计划</text>
+          <text class="row-value">{{importDiff.keepsPlan ? '不受影响（仍会失效，需重新规划）' : '将失效'}}</text>
+        </view>
+        <view class="note note-warn" wx:if="{{importDiff.impactedMeals.length > 0}}">
+          受影响餐次：{{importDiff.impactedMeals}}
+        </view>
+        <view class="row" wx:if="{{importDiff.windowsAdded.length > 0}}">
+          <text class="row-label">新增窗口</text>
+          <text class="row-value">{{importDiff.windowsAdded}}</text>
+        </view>
+        <view class="row" wx:if="{{importDiff.windowsRemoved.length > 0}}">
+          <text class="row-label">删除窗口</text>
+          <text class="row-value">{{importDiff.windowsRemoved}}</text>
+        </view>
+        <view class="row" wx:if="{{importDiff.dishesAdded.length > 0}}">
+          <text class="row-label">新增菜品</text>
+          <text class="row-value">{{importDiff.dishesAdded}}</text>
+        </view>
+        <view class="row" wx:if="{{importDiff.dishesRemoved.length > 0}}">
+          <text class="row-label">删除菜品</text>
+          <text class="row-value">{{importDiff.dishesRemoved}}</text>
+        </view>
+        <view class="row">
+          <text class="row-label">报价增删</text>
+          <text class="row-value">新增 {{importDiff.offersAdded}} / 删除 {{importDiff.offersRemoved}}</text>
+        </view>
+        <view wx:if="{{importDiff.priceChanges.length > 0}}">
+          <view class="sub-title">改价</view>
+          <view class="meal-item" wx:for="{{importDiff.priceChanges}}" wx:key="name" wx:for-item="change">
+            <text class="item-name">{{change.name}}</text>
+            <text class="row-value">{{change.before}} → {{change.after}}</text>
+          </view>
+        </view>
+        <view wx:if="{{importDiff.invalidLocks.length > 0}}">
+          <view class="sub-title">失效锁定（保留，需你显式解除或替换）</view>
+          <view class="note note-warn" wx:for="{{importDiff.invalidLocks}}" wx:key="label" wx:for-item="lock">
+            {{lock.label}}：{{lock.reason}}
+          </view>
+        </view>
+        <view wx:if="{{importDiff.droppedSoldOut.length > 0}}">
+          <view class="sub-title">将清理的售罄标记</view>
+          <view class="note note-warn" wx:for="{{importDiff.droppedSoldOut}}" wx:key="label" wx:for-item="mark">
+            {{mark.label}}：{{mark.reason}}
+          </view>
+        </view>
+        <view class="note">确认后才会原子替换；取消或失败保留原菜单、锁定与计划。</view>
+      </view>
+
+      <view class="btn-group" wx:if="{{importReady}}">
+        <button class="btn btn-warn btn-sm btn-import-apply" bindtap="onApplyMenu">确认替换菜单</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 导出 -->
+  <view class="card" id="data-export" wx:if="{{loaded}}">
+    <view class="card-title">导出备份</view>
+    <view class="note">导出由你主动触发；导出内容包含档案、菜单版本、日志与当日状态，不含秘密。</view>
+    <view class="btn-group">
+      <button class="btn btn-sm btn-export-run" bindtap="onExportBackup" disabled="{{exportBusy}}">{{exportBusy ? '导出中…' : '导出备份'}}</button>
+    </view>
+    <view wx:if="{{backupReady}}">
+      <view class="row">
+        <text class="row-label">导出时间</text>
+        <text class="row-value">{{backupTime}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">稳定摘要</text>
+        <text class="row-value mono">{{backupDigest}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">本地文件路径</text>
+        <text class="row-value mono">{{backupPath ? backupPath : '本次未写入本地文件'}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">文本长度</text>
+        <text class="row-value">{{backupTextLength}} 字符</text>
+      </view>
+      <view class="note">{{backupMessage}}</view>
+      <view class="btn-group">
+        <button class="btn btn-ghost btn-sm" bindtap="onCopyBackup">复制到剪贴板</button>
+        <button class="btn btn-ghost btn-sm" bindtap="onShareBackup" wx:if="{{backupPath}}">分享文件</button>
+      </view>
+    </view>
+    <view class="sub-title">最近一次导出 / 恢复记录</view>
+    <view class="row">
+      <text class="row-label">最近导出</text>
+      <text class="row-value">{{view.backup.lastExportedAt ? view.backup.lastExportedAt : '—'}}</text>
+    </view>
+    <view class="row" wx:if="{{view.backup.lastExportedDigest}}">
+      <text class="row-label">导出摘要</text>
+      <text class="row-value mono">{{view.backup.lastExportedDigest}}</text>
+    </view>
+    <view class="row">
+      <text class="row-label">最近恢复</text>
+      <text class="row-value">{{view.backup.lastRestoredAt ? view.backup.lastRestoredAt : '—'}}</text>
+    </view>
+    <view class="row" wx:if="{{view.backup.lastRestoredDigest}}">
+      <text class="row-label">恢复摘要</text>
+      <text class="row-value mono">{{view.backup.lastRestoredDigest}}</text>
+    </view>
+    <view class="note" wx:if="{{view.backup.lastMessage}}">{{view.backup.lastMessage}}</view>
+  </view>
+
+  <!-- 恢复 -->
+  <view class="card" id="data-restore">
+    <view class="card-title">恢复备份</view>
+    <view class="note">先预检格式/版本/摘要/结构，确认后才原子应用；取消或失败保留当前数据。</view>
+    <view class="field">
+      <view class="field-label">粘贴备份 JSON</view>
+      <textarea
+        class="textarea"
+        value="{{restoreText}}"
+        maxlength="-1"
+        placeholder="在此粘贴导出的备份 JSON…"
+        bindinput="onRestoreInput"
+      />
+    </view>
+    <view class="field" wx:if="{{restoreFileName}}">
+      <view class="field-label">已读取文件</view>
+      <view class="picker-value">{{restoreFileName}}</view>
+    </view>
+    <view class="btn-group">
+      <button class="btn btn-ghost btn-sm" bindtap="onChooseRestoreFile" disabled="{{restoreBusy}}">选择文件…</button>
+      <button class="btn btn-sm btn-restore-preflight" bindtap="onPreflightRestore" disabled="{{restoreBusy}}">{{restoreBusy ? '预检中…' : '预检'}}</button>
+      <button class="btn btn-ghost btn-sm btn-restore-cancel" bindtap="onCancelRestore" disabled="{{restoreBusy}}">取消恢复</button>
+    </view>
+
+    <view class="preflight-panel" wx:if="{{restoreStageLabel}}">
+      <view class="row">
+        <text class="row-label">预检阶段</text>
+        <text class="row-value">{{restoreStageLabel}}</text>
+      </view>
+      <view class="note {{restoreReady ? '' : 'note-warn'}}">{{restoreMessage}}</view>
+      <view class="error-text" wx:for="{{restoreErrors}}" wx:key="field" wx:for-item="rerr">{{rerr.field}}：{{rerr.message}}</view>
+      <view class="row" wx:if="{{restoreSummary}}">
+        <text class="row-label">备份摘要</text>
+        <text class="row-value">{{restoreSummary}}</text>
+      </view>
+      <view class="row" wx:if="{{restoreDigest}}">
+        <text class="row-label">文件摘要</text>
+        <text class="row-value mono">{{restoreDigest}}</text>
+      </view>
+      <view class="btn-group" wx:if="{{restoreReady}}">
+        <button class="btn btn-warn btn-sm btn-restore-apply" bindtap="onApplyRestore">确认恢复</button>
+      </view>
+    </view>
+
+    <!-- 恢复后逐项对照 -->
+    <view wx:if="{{restoreComparison.length > 0}}">
+      <view class="sub-title">恢复后逐项对照（恢复前 → 恢复后）</view>
+      <view class="note">{{restoreResultMessage}}</view>
+      <view class="row" wx:if="{{restoreDigestAfter}}">
+        <text class="row-label">恢复摘要</text>
+        <text class="row-value mono">{{restoreDigestAfter}}</text>
+      </view>
+      <view class="cmp-row" wx:for="{{restoreComparison}}" wx:key="label" wx:for-item="row">
+        <view class="cmp-head">
+          <text class="cmp-label">{{row.label}}</text>
+          <text class="badge {{row.equal ? 'badge-ok' : 'badge-warn'}}">{{row.equal ? '一致' : '不同'}}</text>
+        </view>
+        <view class="cmp-values"><text class="muted">恢复前：</text><text class="mono">{{row.before}}</text></view>
+        <view class="cmp-values"><text class="muted">恢复后：</text><text class="mono">{{row.after}}</text></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 次级页返回入口：不占主导航 -->
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回我的</text>
+  </view>
+</view>

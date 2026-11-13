@@ -1,0 +1,109 @@
+{
+  "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T10c-P02-期末评测PPT素材更新-20261026-v3.md",
+  "sha256": "b3fb010abe421a566b7d385d321cbee3ed359811b9a2b17c95c0e30b979cc5b4",
+  "qualityRows": [
+    {
+      "group": "G0",
+      "algorithm": "greedy",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "DP",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "BnB",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "greedy",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "DP",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "BnB",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "greedy",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "DP",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "BnB",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "greedy",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "DP",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "BnB",
+      "oneRow": true,
+      "priceMatches": true,
+      "deviationMatches": true
+    }
+  ],
+  "imagePaths": [
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T05R02-DSH-用户包补正-证据-v1\\05-用户场景\\128-user-v2-final-home.png",
+      "exists": true
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T05R02-DSH-用户包补正-证据-v1\\05-用户场景\\133-user-v2-final-selfpick-confirmed.png",
+      "exists": true
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T05R02-DSH-用户包补正-证据-v1\\05-用户场景\\141-user-v2-final-restore-applied.png",
+      "exists": true
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T05R02-DSH-用户包补正-证据-v1\\05-用户场景\\90-user-v2-logs-fresh.png",
+      "exists": true
+    }
+  ],
+  "allPassed": true
+}

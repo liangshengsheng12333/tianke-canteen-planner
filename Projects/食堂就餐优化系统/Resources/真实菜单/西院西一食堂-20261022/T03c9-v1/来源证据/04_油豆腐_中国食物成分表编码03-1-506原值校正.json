@@ -1,0 +1,30 @@
+{
+  "food_name": "油豆腐 / 炸豆腐块",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，第三章 豆类及制品 - 豆制品类",
+  "food_code": "03-1-506",
+  "direct_online_portal": "https://nlc.chinanutri.cn/fq/foodinfo/343.html",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 熟重可食部",
+  "official_nutrients_per_100g": {
+    "water_g": 58.8,
+    "energy_kj_official": 1018.0,
+    "energy_kcal_converted": 243.3078,
+    "energy_kcal_rounded": 243.0,
+    "protein_g": 17.0,
+    "fat_g": 17.6,
+    "carbohydrate_g": 4.9,
+    "ash_g": 1.7,
+    "sodium_mg": 32.5
+  },
+  "p09_correction_record": {
+    "defect_identified": "P09专项核验指出：原T03c4证据JSON中记录油豆腐能量为1024 kJ / 245 kcal，与官方食物营养成分查询平台（foodinfo/343.html）的公示原值1018 kJ存在引注差异，且旧JSON未给直达URL。",
+    "root_cause": "旧草案曾采用 4/9/4 粗算法反向推导估算（17*4 + 17.6*9 + 4.9*4 = 246 kcal，约1025 kJ），导致与疾控中心实测公布值1018 kJ轻微脱节。",
+    "rectification": "本T03c9版本彻底修正引注：以官方查询页直达条目公布值 1018 kJ 为绝对权威原值，化学标准换算为 243.3078 kcal/100g（整取为 243 kcal）。单份 130g 炸豆腐块实际能量为 1.30 × 243.3078 = 316.30 kcal（整取 316 kcal，相比旧版 318.5 kcal 修正 -2.2 kcal）。"
+  },
+  "cooking_oil_avoidance_clarification": {
+    "audit_requirement": "任务卡明确要求：'核已有油炸原料的油，避免重复'。",
+    "factual_determination": "《中国食物成分表》编码 03-1-506 收录的'油豆腐'本身即为经高温油炸膨化成熟的豆制品，其实测脂肪含量 17.6g/100g 中已完全涵盖了加工油炸吸油量（水分已由鲜北豆腐的80%降至58.8%，蛋白质与脂肪高度浓缩）。泰式豆腐饭档口现场仅是将炸好的豆腐块复热或拌入泰式甜辣酱出餐，因此在原料拆解中，绝不重复计入后厨油炸吸油量或底油，坚决杜绝油脂与热量双重重复计算。"
+  },
+  "canteen_portion_assumption": "单份泰式豆腐饭主菜为炸豆腐块约 5~7 块，净重典型假设为 130g（波动范围 110 ~ 150g）。"
+}

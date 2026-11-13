@@ -1,0 +1,53 @@
+{
+  "wasm": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\candidate\\mp_core.wasm",
+  "wasmSha256": "d1cec5268bb1bd05ea2719d776e4ceb17c68dc740e9cdbbba2de6df495825f65",
+  "request": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\inputs\\g1-dp.request.json",
+  "requestSha256": "ef254f7587a34eeb262be672bf114f40c4078950428d393378d343eeeb4b42ee",
+  "node": "v24.19.0",
+  "imports": [
+    {
+      "module": "env",
+      "name": "mp_monotonic_ms",
+      "kind": "function"
+    }
+  ],
+  "exports": [
+    {
+      "name": "memory",
+      "kind": "memory"
+    },
+    {
+      "name": "mp_api_version",
+      "kind": "function"
+    },
+    {
+      "name": "mp_contract_version",
+      "kind": "function"
+    },
+    {
+      "name": "mp_alloc",
+      "kind": "function"
+    },
+    {
+      "name": "mp_free",
+      "kind": "function"
+    },
+    {
+      "name": "mp_plan",
+      "kind": "function"
+    },
+    {
+      "name": "mp_nutrition_target",
+      "kind": "function"
+    },
+    {
+      "name": "mp_validate_menu",
+      "kind": "function"
+    },
+    {
+      "name": "mp_offer_nutrition",
+      "kind": "function"
+    }
+  ],
+  "initialPages": 17
+}

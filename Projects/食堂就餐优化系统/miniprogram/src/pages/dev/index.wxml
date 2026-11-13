@@ -1,0 +1,180 @@
+<!-- pages/dev/index.wxml — 开发诊断页：环境/WASM/存储、规划算法、ABI 探针、T02 夹具、最近 Plan 原始数据、清库。 -->
+<view class="page {{themeClass}}">
+  <view class="hero">
+    <view class="hero-title">天科食客 · 开发诊断</view>
+    <view class="hero-sub">技术字段集中在此页，正式页面不展示 planKey/requestId 等诊断信息。</view>
+  </view>
+
+  <view class="status-line {{statusKind === 'error' ? 'note-warn' : 'muted'}}" wx:if="{{statusText}}">
+    {{statusText}}
+  </view>
+
+  <!-- 环境与应用 -->
+  <view class="card" wx:if="{{loaded}}">
+    <view class="card-title">环境（{{appName}}）</view>
+    <view class="row" wx:for="{{envRows}}" wx:key="label" wx:for-item="env">
+      <text class="row-label">{{env.label}}</text>
+      <text class="row-value mono">{{env.value}}</text>
+    </view>
+  </view>
+
+  <!-- WASM 身份与存储 -->
+  <view class="card" wx:if="{{loaded}}">
+    <view class="card-title">WASM 身份与本地存储</view>
+    <view class="row" wx:for="{{devRows}}" wx:key="label" wx:for-item="row">
+      <text class="row-label">{{row.label}}</text>
+      <text class="row-value mono">{{row.value}}</text>
+    </view>
+  </view>
+
+  <!-- 规划算法：设置写入入口（默认贪心；只改 PlannerSettings，不在本页调用核心） -->
+  <view class="card" wx:if="{{loaded}}">
+    <view class="card-title">规划算法</view>
+    <view class="note">当前算法：{{algorithmLabel}}（{{algorithm}}）。默认贪心；选择后写入本地设置，并清空当天旧方案。</view>
+    <view class="btn-group">
+      <button
+        wx:for="{{algorithmOptions}}"
+        wx:key="value"
+        wx:for-item="opt"
+        class="btn btn-sm {{algorithm === opt.value ? '' : 'btn-ghost'}}"
+        data-value="{{opt.value}}"
+        bindtap="onSelectAlgorithm"
+        disabled="{{algorithmSaving}}"
+      >{{algorithm === opt.value ? '✓ ' : ''}}{{opt.label}}</button>
+    </view>
+    <view class="note">动态规划与分支限界都由包内冻结 WASM 执行；触限时按核心标记显示“近似/未证明最优”，无方案时显示“触及搜索限额（未证明无解）”，前端不自行判定或降级。保存后回“今日”页点“刷新方案”才会调用核心。</view>
+  </view>
+
+  <!-- ABI 探针 -->
+  <view class="card">
+    <view class="card-title">ABI 探针</view>
+    <view class="note">验证加载、导出、线性内存生命周期与结果块协议；结果块探针以 validate-menu 传入空对象。</view>
+    <view class="btn-group">
+      <button class="btn btn-sm" bindtap="onProbe" disabled="{{probeBusy}}">{{probeBusy ? '探针运行中…' : '运行 ABI 探针'}}</button>
+      <button class="btn btn-ghost btn-sm" bindtap="onCopyProbeRaw" disabled="{{!probeRaw}}">复制原始结果</button>
+    </view>
+    <view class="note {{probeOk ? '' : 'note-warn'}}" wx:if="{{probeMessage}}">{{probeMessage}}</view>
+    <view class="row" wx:for="{{probeRows}}" wx:key="label" wx:for-item="prow">
+      <text class="row-label">{{prow.label}}</text>
+      <text class="row-value mono">{{prow.value}}</text>
+    </view>
+    <view class="btn-group" wx:if="{{probeRaw}}">
+      <button class="btn btn-ghost btn-sm" bindtap="onToggleProbeRaw">{{probeExpanded ? '收起原始返回' : '展开原始返回'}}</button>
+    </view>
+    <view class="pre mono" wx:if="{{probeExpanded && probeRaw}}">
+      <text selectable>{{probeRaw}}</text>
+    </view>
+  </view>
+
+  <!-- T02 夹具 -->
+  <view class="card">
+    <view class="card-title">T02 四个夹具</view>
+    <view class="note">每个夹具真实调用 WASM mp_plan，展示 status、耗时与原始 JSON；不替代真机证据。</view>
+    <view class="fixture" wx:for="{{fixtures}}" wx:key="key" wx:for-item="fx">
+      <view class="fixture-head">
+        <view>
+          <view class="item-name">{{fx.label}}</view>
+          <view class="note">{{fx.desc}}</view>
+        </view>
+        <button class="btn btn-sm" bindtap="onRunFixture" data-key="{{fx.key}}" disabled="{{fixtureBusyKey !== ''}}">
+          {{fixtureBusyKey === fx.key ? '运行中…' : '运行'}}
+        </button>
+      </view>
+      <view class="fixture-result" wx:if="{{fx.hasRun}}">
+        <view class="row">
+          <text class="row-label">status</text>
+          <text class="row-value">
+            <text class="badge {{fx.ok ? 'badge-ok' : 'badge-err'}}">{{fx.status}}</text>
+          </text>
+        </view>
+        <view class="row">
+          <text class="row-label">耗时</text>
+          <text class="row-value">{{fx.durationMs}} ms</text>
+        </view>
+        <view class="note {{fx.ok ? '' : 'note-warn'}}">{{fx.message}}</view>
+        <view class="btn-group">
+          <button class="btn btn-ghost btn-sm" bindtap="onToggleFixtureRaw" data-key="{{fx.key}}">{{fx.expanded ? '收起原始 JSON' : '展开原始 JSON'}}</button>
+          <button class="btn btn-ghost btn-sm" bindtap="onCopyFixtureRaw" data-key="{{fx.key}}">复制原始 JSON</button>
+        </view>
+        <view class="pre mono" wx:if="{{fx.expanded}}">
+          <text selectable>{{fx.rawText}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 最近一次 Plan 请求 / 响应 -->
+  <view class="card">
+    <view class="card-title">最近一次 Plan 原始请求 / 响应</view>
+    <view class="note">请求原文只在本次进程内保存，重启后可能为空；响应原文来自本地存储的当前业务日计划。</view>
+    <view class="row">
+      <text class="row-label">请求长度</text>
+      <text class="row-value">{{planRequestText.length}} 字符</text>
+    </view>
+    <view class="btn-group">
+      <button class="btn btn-ghost btn-sm" bindtap="onTogglePlanRaw" data-kind="request" disabled="{{!planRequestText}}">
+        {{planRequestExpanded ? '收起请求原文' : '展开请求原文'}}
+      </button>
+      <button class="btn btn-ghost btn-sm" bindtap="onCopyPlanRaw" data-kind="request" disabled="{{!planRequestText}}">复制请求原文</button>
+    </view>
+    <view class="pre mono" wx:if="{{planRequestExpanded && planRequestText}}">
+      <text selectable>{{planRequestText}}</text>
+    </view>
+
+    <view class="row">
+      <text class="row-label">响应长度</text>
+      <text class="row-value">{{planResponseText.length}} 字符</text>
+    </view>
+    <view class="btn-group">
+      <button class="btn btn-ghost btn-sm" bindtap="onTogglePlanRaw" data-kind="response" disabled="{{!planResponseText}}">
+        {{planResponseExpanded ? '收起响应原文' : '展开响应原文'}}
+      </button>
+      <button class="btn btn-ghost btn-sm" bindtap="onCopyPlanRaw" data-kind="response" disabled="{{!planResponseText}}">复制响应原文</button>
+    </view>
+    <view class="pre mono" wx:if="{{planResponseExpanded && planResponseText}}">
+      <text selectable>{{planResponseText}}</text>
+    </view>
+  </view>
+
+  <!-- 计时（开发者工具/真机四口径） -->
+  <view class="card">
+    <view class="card-title">计时（开发者工具 / 真机四口径）</view>
+    <view class="note">
+      冷启动 = JS 启动→首页首次渲染完成；核心-only 与桥接各跑 5 次；页面端到端 = refreshPlan + setData 渲染回调，共 5 次。
+      Node 宿主四口径见证据 03；本页数值才是开发者工具/真机证据，门槛未冻结时只报数值。
+    </view>
+    <view class="row">
+      <text class="row-label">冷启动 / 首次加载</text>
+      <text class="row-value mono">{{coldStartText}}</text>
+    </view>
+    <view class="btn-group">
+      <button class="btn btn-sm" bindtap="onMeasurePerf" data-kind="core" disabled="{{perfBusy !== ''}}">
+        {{perfBusy === 'core' ? '运行中…' : '核心-only ×5'}}
+      </button>
+      <button class="btn btn-sm" bindtap="onMeasurePerf" data-kind="bridge" disabled="{{perfBusy !== ''}}">
+        {{perfBusy === 'bridge' ? '运行中…' : '桥接+复制释放 ×5'}}
+      </button>
+      <button class="btn btn-sm" bindtap="onMeasurePerf" data-kind="page" disabled="{{perfBusy !== ''}}">
+        {{perfBusy === 'page' ? '运行中…' : '页面端到端 ×5'}}
+      </button>
+    </view>
+    <view class="row" wx:for="{{perfRows}}" wx:key="label" wx:for-item="prow">
+      <text class="row-label">{{prow.label}}</text>
+      <text class="row-value mono">{{prow.value}}</text>
+    </view>
+  </view>
+
+  <!-- 清除本机数据 -->
+  <view class="card">
+    <view class="card-title">清除本机数据</view>
+    <view class="note note-warn">会删除本机档案、菜单、日志、锁定与备份记录，不可恢复；需要二次确认。</view>
+    <view class="btn-group">
+      <button class="btn btn-danger btn-sm" bindtap="onResetLocalData" disabled="{{resetBusy}}">{{resetBusy ? '清除中…' : '清除本机数据'}}</button>
+    </view>
+  </view>
+
+  <!-- 次级页返回入口：不占主导航 -->
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回我的</text>
+  </view>
+</view>

@@ -1,0 +1,725 @@
+{
+  "window": {
+    "windowId": "w-yilong-baozi",
+    "name": "忆笼手工鲜肉包",
+    "mealWindows": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  },
+  "dishes": [
+    {
+      "dishId": "dish-yl-xianrou-bao",
+      "name": "手工鲜肉包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 205,
+        "proteinDg": 68,
+        "fatDg": 82,
+        "carbDg": 260
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约85g，面皮50g配猪肉大葱馅35g",
+        "estimated": true,
+        "note": "顶图与列表同名菜品合并，实拍价1.5元/只"
+      }
+    },
+    {
+      "dishId": "dish-yl-tudou-niurou-bao",
+      "name": "土豆牛肉包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 215,
+        "proteinDg": 85,
+        "fatDg": 65,
+        "carbDg": 305
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约90g，熟牛肉丁、土豆丁馅料",
+        "estimated": true,
+        "note": "实拍价2.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-taiwan-lurou-bao",
+      "name": "台湾卤肉包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 220,
+        "proteinDg": 72,
+        "fatDg": 95,
+        "carbDg": 265
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约85g，五花肉丁卤汁香菇馅",
+        "estimated": true,
+        "note": "实拍价2.0元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-meicai-bao",
+      "name": "梅菜包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 195,
+        "proteinDg": 58,
+        "fatDg": 75,
+        "carbDg": 260
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约85g，绍兴梅干菜碎猪肉丁馅",
+        "estimated": true,
+        "note": "顶图与列表同名菜品合并，实拍价1.5元/只"
+      }
+    },
+    {
+      "dishId": "dish-yl-maxiang-jitui-bao",
+      "name": "麻香鸡腿包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 200,
+        "proteinDg": 78,
+        "fatDg": 70,
+        "carbDg": 265
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约85g，去骨麻香/麻辣鸡腿肉丁馅",
+        "estimated": true,
+        "note": "顶图麻辣鸡腿包与列表麻香鸡腿包异名合并，实拍价1.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-roumo-qiezi-bao",
+      "name": "肉沫茄子包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 185,
+        "proteinDg": 52,
+        "fatDg": 68,
+        "carbDg": 258
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约85g，肉末茄子馅",
+        "estimated": true,
+        "note": "顶图肉末与列表肉沫异文合并，实拍价1.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-xianggu-qingcai-bao",
+      "name": "香菇青菜包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 165,
+        "proteinDg": 45,
+        "fatDg": 42,
+        "carbDg": 272
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1只约85g，香菇碎与小白菜碎粉丝清真素馅",
+        "estimated": true,
+        "note": "顶图与列表一致，实拍价1.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-fensi-jianjiao",
+      "name": "粉丝煎饺",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 160,
+        "proteinDg": 38,
+        "fatDg": 62,
+        "carbDg": 222
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1个大底煎饺约70g，绿豆粉丝肉沫底部煎脆",
+        "estimated": true,
+        "note": "实拍价2.0元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-yumi-zhengjiao",
+      "name": "玉米蒸饺",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 145,
+        "proteinDg": 48,
+        "fatDg": 45,
+        "carbDg": 213
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1个大蒸饺约70g，甜玉米粒猪肉馅",
+        "estimated": true,
+        "note": "实拍价2.0元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-shaomai",
+      "name": "烧麦",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 155,
+        "proteinDg": 35,
+        "fatDg": 38,
+        "carbDg": 268
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1个约60g，酱香糯米肉丁香菇烧麦",
+        "estimated": true,
+        "note": "实拍价1.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-malagao",
+      "name": "马拉糕",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 275,
+        "proteinDg": 55,
+        "fatDg": 65,
+        "carbDg": 485
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1切块约100g，传统发酵红糖蛋香面点",
+        "estimated": true,
+        "note": "实拍价2.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-yumi",
+      "name": "熟玉米棒",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 157,
+        "proteinDg": 56,
+        "fatDg": 17,
+        "carbDg": 298
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1根毛重约200g，可食部约140g水煮甜糯玉米",
+        "estimated": true,
+        "note": "实拍价3.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-hongtang-mantou",
+      "name": "红糖馒头",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 218,
+        "proteinDg": 63,
+        "fatDg": 11,
+        "carbDg": 457
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1个约90g，红糖开花发酵蒸馒头",
+        "estimated": true,
+        "note": "实拍价1.5元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-nuomiji",
+      "name": "荷叶糯米鸡",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 320,
+        "proteinDg": 105,
+        "fatDg": 85,
+        "carbDg": 504
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1个约150g，荷叶裹蒸糯米配鸡肉香菇咸蛋黄",
+        "estimated": true,
+        "note": "实拍价4.0元/个"
+      }
+    },
+    {
+      "dishId": "dish-yl-guantang-xiaolongbao",
+      "name": "灌汤小笼包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 385,
+        "proteinDg": 142,
+        "fatDg": 175,
+        "carbDg": 428
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1笼约5只共160g，皮薄带肉皮冻汤汁",
+        "estimated": true,
+        "note": "实拍单位明确为6.0元/笼，按整笼报价"
+      }
+    },
+    {
+      "dishId": "dish-yl-yumizhi",
+      "name": "玉米汁",
+      "kind": "single",
+      "category": "drink",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 125,
+        "proteinDg": 24,
+        "fatDg": 15,
+        "carbDg": 255
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1杯约300ml温热现榨玉米汁饮料",
+        "estimated": true,
+        "note": "实拍价3.0元/杯"
+      }
+    },
+    {
+      "dishId": "dish-yl-hongzao-doujiang",
+      "name": "红枣豆浆",
+      "kind": "single",
+      "category": "drink",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 105,
+        "proteinDg": 68,
+        "fatDg": 32,
+        "carbDg": 123
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1杯约300ml黄豆红枣现磨豆浆",
+        "estimated": true,
+        "note": "实拍价2.0元/杯"
+      }
+    },
+    {
+      "dishId": "dish-yl-xiaomi-nanguazhou",
+      "name": "小米南瓜粥",
+      "kind": "single",
+      "category": "soup",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 98,
+        "proteinDg": 21,
+        "fatDg": 7,
+        "carbDg": 208
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1杯约300ml热熬小米南瓜稀粥",
+        "estimated": true,
+        "note": "实拍价2.0元/杯"
+      }
+    },
+    {
+      "dishId": "dish-yl-heimizhou",
+      "name": "黑米粥",
+      "kind": "single",
+      "category": "soup",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 112,
+        "proteinDg": 28,
+        "fatDg": 8,
+        "carbDg": 234
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1杯约300ml紫黑米软糯熬粥",
+        "estimated": true,
+        "note": "实拍价2.0元/杯"
+      }
+    },
+    {
+      "dishId": "dish-yl-niunai-yanmaizhou",
+      "name": "牛奶燕麦粥",
+      "kind": "single",
+      "category": "soup",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 148,
+        "proteinDg": 55,
+        "fatDg": 42,
+        "carbDg": 220
+      },
+      "nutritionBasis": {
+        "source": "照片f55ce01cc3857c9fec2d5ca6783ad55f与中国食物成分表",
+        "portionAssumption": "1杯约300ml纯牛奶配燕麦片熬煮",
+        "estimated": true,
+        "note": "实拍价2.5元/杯"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-yl-xianrou-bao",
+      "dishId": "dish-yl-xianrou-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-tudou-niurou-bao",
+      "dishId": "dish-yl-tudou-niurou-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 250,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-taiwan-lurou-bao",
+      "dishId": "dish-yl-taiwan-lurou-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-meicai-bao",
+      "dishId": "dish-yl-meicai-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-maxiang-jitui-bao",
+      "dishId": "dish-yl-maxiang-jitui-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-roumo-qiezi-bao",
+      "dishId": "dish-yl-roumo-qiezi-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-xianggu-qingcai-bao",
+      "dishId": "dish-yl-xianggu-qingcai-bao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-fensi-jianjiao",
+      "dishId": "dish-yl-fensi-jianjiao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-yumi-zhengjiao",
+      "dishId": "dish-yl-yumi-zhengjiao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-shaomai",
+      "dishId": "dish-yl-shaomai",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-malagao",
+      "dishId": "dish-yl-malagao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 250,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-yumi",
+      "dishId": "dish-yl-yumi",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 350,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-hongtang-mantou",
+      "dishId": "dish-yl-hongtang-mantou",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 150,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-nuomiji",
+      "dishId": "dish-yl-nuomiji",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 400,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-guantang-xiaolongbao",
+      "dishId": "dish-yl-guantang-xiaolongbao",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-yumizhi",
+      "dishId": "dish-yl-yumizhi",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-hongzao-doujiang",
+      "dishId": "dish-yl-hongzao-doujiang",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-xiaomi-nanguazhou",
+      "dishId": "dish-yl-xiaomi-nanguazhou",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-heimizhou",
+      "dishId": "dish-yl-heimizhou",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yl-niunai-yanmaizhou",
+      "dishId": "dish-yl-niunai-yanmaizhou",
+      "windowId": "w-yilong-baozi",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 250,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "metadata": {
+    "subtaskId": "H01",
+    "windowName": "忆笼手工鲜肉包",
+    "photoFiles": [
+      "f55ce01cc3857c9fec2d5ca6783ad55f.jpg"
+    ],
+    "itemCount": 20,
+    "priceEstimated": false,
+    "notes": "忆笼手工鲜肉包加急补录数据分包"
+  }
+}

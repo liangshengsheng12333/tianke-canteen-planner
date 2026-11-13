@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "1d80fa2f-6105-4976-977b-b0ad67852892",
+    "description": "安装本地待办MCP，验证读写与持久化并接入Codex",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-19T16:41:56.504Z",
+    "updatedAt": "2026-10-19T16:41:56.521Z",
+    "completedAt": "2026-10-19T16:41:56.521Z"
+  },
+  {
+    "id": "682e6f1b-bc09-4140-8598-db44f66aec5c",
+    "description": "按AGENTS、MEMORY、Resources和Projects规则整理目录并验证原件哈希",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-19T16:41:56.504Z",
+    "updatedAt": "2026-10-19T16:44:12.171Z",
+    "completedAt": "2026-10-19T16:44:12.171Z"
+  },
+  {
+    "id": "edf4e822-9259-41b9-a9c0-a95145738c0b",
+    "description": "完成P01、P09真实窗口只读报到和P00到P01交接",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-19T16:41:56.504Z",
+    "updatedAt": "2026-10-19T17:02:29.014Z",
+    "completedAt": "2026-10-19T17:02:29.014Z"
+  },
+  {
+    "id": "caefae27-9ade-4ece-9815-276c0106167a",
+    "description": "T00c 外部报到已由用户转交，P02查收完成",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-19T16:41:56.504Z",
+    "updatedAt": "2026-10-20T01:29:31.467Z",
+    "completedAt": "2026-10-20T00:54:27.780Z"
+  },
+  {
+    "id": "88a045bf-ee1e-4498-8f72-85e6c819f0ea",
+    "description": "准备反重力、DSH完整只读初始化包及反馈模板",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-19T16:52:17.796Z",
+    "updatedAt": "2026-10-19T16:52:17.803Z",
+    "completedAt": "2026-10-19T16:52:17.803Z"
+  },
+  {
+    "id": "e6b72f4a-c880-4035-acc0-c3985228c4f5",
+    "description": "R20-1 补齐P02与P04岗位规范和初始化任务卡",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:29:52.312Z",
+    "updatedAt": "2026-10-20T00:29:52.325Z",
+    "completedAt": "2026-10-20T00:29:52.325Z"
+  },
+  {
+    "id": "b574437f-71e1-4045-87b7-8a6a63381f74",
+    "description": "R20-2 创建P02与P04真实窗口并核实只读报到",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:29:52.312Z",
+    "updatedAt": "2026-10-20T00:32:13.282Z",
+    "completedAt": "2026-10-20T00:32:13.282Z"
+  },
+  {
+    "id": "da039eca-9d1e-4e02-b5a9-d331b39edaa9",
+    "description": "R20-3 登记身份与报到证据并补交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:29:52.312Z",
+    "updatedAt": "2026-10-20T00:33:07.942Z",
+    "completedAt": "2026-10-20T00:33:07.942Z"
+  },
+  {
+    "id": "c2978357-2b2c-4be6-9348-5ced10bceb1f",
+    "description": "S20-1 核对最新规则与资源，明确P01定位并形成今日简要计划",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T00:34:59.189Z",
+    "updatedAt": "2026-10-20T00:34:59.199Z",
+    "completedAt": "2026-10-20T00:34:59.199Z"
+  },
+  {
+    "id": "bdf13e4b-4699-46dd-95ac-35214a6244c2",
+    "description": "S20-2 用户已确认按完成版本优先推进今日T01→T02路线",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T00:34:59.189Z",
+    "updatedAt": "2026-10-20T01:29:31.487Z",
+    "completedAt": "2026-10-20T00:54:27.792Z"
+  },
+  {
+    "id": "942a1a7c-469e-4ab1-8ab4-31a9b15a5ac4",
+    "description": "S20-3 DSH v1.1与反重力T01提案已回传，P02查收完成并交P01整合",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T00:34:59.189Z",
+    "updatedAt": "2026-10-20T01:41:50.271Z",
+    "completedAt": "2026-10-20T01:41:50.271Z"
+  },
+  {
+    "id": "ee036a04-99e4-4b75-b524-230b9364959a",
+    "description": "S20-4 T01 v1.2最终查收与冻结完成：P09定向复核通过，三份候选SHA256匹配并依P01裁定冻结为实现输入。算法、性能、工具/WASM/真机仍分阶段验证；T04原生/T05页面存储可独立启动，WASM联接依赖T02。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T00:34:59.189Z",
+    "updatedAt": "2026-10-20T03:34:36.750Z",
+    "completedAt": "2026-10-20T03:34:36.750Z"
+  },
+  {
+    "id": "f86e0d40-9536-42c9-b551-6da9a75246b3",
+    "description": "S20-5 P01已接受DSH v2为greedy + 空comboRules联调版本；P02查收反重力A/B文件身份和哈希，但发现INVALID_INPUT响应AG 192B、DSH 208B且无AG原始载荷/hash，严格一致性与WX准入未闭环。重开存储、WX工具/真机证据仍待；不自动联系外部或轮询。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T00:34:59.189Z",
+    "updatedAt": "2026-10-20T11:14:58.915Z",
+    "completedAt": "2026-10-20T11:14:58.915Z"
+  },
+  {
+    "id": "7db4e0fb-7b5c-4fb8-8db2-49d856092d3e",
+    "description": "S20-6 日终汇总分层结果与障碍并同步MEMORY及待办",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T00:34:59.189Z",
+    "updatedAt": "2026-10-20T15:36:17.939Z",
+    "completedAt": "2026-10-20T15:36:17.939Z"
+  },
+  {
+    "id": "8c2a479a-5ca6-422f-977e-96e0ecfbeb66",
+    "description": "T00c DSH：核对主PRD哈希、T00c规格、P02/P04/DSH分工及旧包可复用正文",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:36:35.421Z",
+    "updatedAt": "2026-10-20T00:37:08.074Z",
+    "completedAt": "2026-10-20T00:37:08.074Z"
+  },
+  {
+    "id": "2eee291d-e35a-4d4e-82de-c1a61b2ee5ee",
+    "description": "T00c DSH：进行中；P04已接收并开始编写只读初始化提示词v2，交付后再由P01指定反重力版本",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:36:35.421Z",
+    "updatedAt": "2026-10-20T00:47:56.077Z",
+    "completedAt": "2026-10-20T00:47:56.077Z"
+  },
+  {
+    "id": "0eb74458-871b-489f-86d2-038259fdf48b",
+    "description": "T00c DSH：在任务卡仅补充当前DSH交付引用，保留反重力后续槽位",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:36:35.421Z",
+    "updatedAt": "2026-10-20T00:47:56.083Z",
+    "completedAt": "2026-10-20T00:47:56.083Z"
+  },
+  {
+    "id": "dbc3f9e8-1995-439f-95f1-8761b2f409cb",
+    "description": "T00c DSH报到核对及P02验收结论已交回P01",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:36:35.421Z",
+    "updatedAt": "2026-10-20T01:29:31.493Z",
+    "completedAt": "2026-10-20T00:54:27.799Z"
+  },
+  {
+    "id": "2b8ce49d-89b3-4a1c-b64c-9d88a872ec5e",
+    "description": "P02 T00c验收：核对反重力与DSH报到内容和只读范围",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:45:04.564Z",
+    "updatedAt": "2026-10-20T00:47:38.892Z",
+    "completedAt": "2026-10-20T00:47:38.892Z"
+  },
+  {
+    "id": "665f8aca-6045-4019-93d1-db81a9f7fa37",
+    "description": "P02 T00c验收：复算本地PRD、提示词及初始化旧包哈希",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:45:04.564Z",
+    "updatedAt": "2026-10-20T00:47:38.899Z",
+    "completedAt": "2026-10-20T00:47:38.899Z"
+  },
+  {
+    "id": "cfdc1357-5cdc-46c6-9fde-ae83e377bb69",
+    "description": "P02 T00c验收：记录逐项结论、范围偏差并同步两级MEMORY",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:45:04.564Z",
+    "updatedAt": "2026-10-20T00:47:38.904Z",
+    "completedAt": "2026-10-20T00:47:38.904Z"
+  },
+  {
+    "id": "88445574-081e-4e8b-8ccd-6e5454c3b81d",
+    "description": "P01复核DSH报告自述的ACL变更范围与回滚材料，决定保留或恢复",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T00:47:56.090Z",
+    "updatedAt": "2026-10-20T00:49:47.555Z",
+    "completedAt": "2026-10-20T00:49:47.555Z"
+  },
+  {
+    "id": "b6cf04e5-cd8c-4cd7-8ce9-808172304da3",
+    "description": "核对桌面插件支持方式与项目现有配置",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T03:03:05.914Z",
+    "updatedAt": "2026-10-20T03:03:44.657Z",
+    "completedAt": "2026-10-20T03:03:44.657Z"
+  },
+  {
+    "id": "b784ba9c-1bf7-43df-87bf-24ed71e36dce",
+    "description": "制作并登记本地 TodoWrite Codex 插件",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T03:03:05.914Z",
+    "updatedAt": "2026-10-20T03:04:09.289Z",
+    "completedAt": "2026-10-20T03:04:09.289Z"
+  },
+  {
+    "id": "1be4acb0-53f2-4f0f-9b6a-a3b1d755a6b3",
+    "description": "在Codex桌面新聊天确认六项TodoKit工具可见",
+    "completed": false,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T03:03:05.914Z",
+    "updatedAt": "2026-10-20T03:05:19.978Z"
+  },
+  {
+    "id": "681e8f65-0cc0-49aa-b8f8-e273370d3e4c",
+    "description": "同步项目 MEMORY 记录接入结果与未完成项",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-20T03:03:05.914Z",
+    "updatedAt": "2026-10-20T03:05:25.459Z",
+    "completedAt": "2026-10-20T03:05:25.459Z"
+  },
+  {
+    "id": "0f371a5f-5ce1-4bf7-847e-c2f817889106",
+    "description": "T01最终查收：读取P09 v1.2定向复核、v1.1报告及DSH小修查收，复核覆盖关系和候选哈希",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T03:29:51.007Z",
+    "updatedAt": "2026-10-20T03:30:41.304Z",
+    "completedAt": "2026-10-20T03:30:41.304Z"
+  },
+  {
+    "id": "273d5477-9171-4363-8752-525b3e2f093a",
+    "description": "按P01预先裁定判断T01冻结条件是否成立，记录适用范围及未闭环项",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T03:29:51.007Z",
+    "updatedAt": "2026-10-20T03:34:36.695Z",
+    "completedAt": "2026-10-20T03:34:36.695Z"
+  },
+  {
+    "id": "8611945b-5d33-4550-9eaf-4c14947af7d8",
+    "description": "保存T01-P02最终查收报告、P01冻结裁定报告并更新任务卡证据入口",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T03:29:51.007Z",
+    "updatedAt": "2026-10-20T03:34:36.722Z",
+    "completedAt": "2026-10-20T03:34:36.722Z"
+  },
+  {
+    "id": "c4cac2bd-0542-4abc-a868-dd5bdc1b6b3d",
+    "description": "同步根/项目MEMORY、待办、决策和TodoKit阶段状态",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T03:29:51.007Z",
+    "updatedAt": "2026-10-20T03:35:01.187Z",
+    "completedAt": "2026-10-20T03:35:01.187Z"
+  },
+  {
+    "id": "c8bb7003-327a-498e-bef7-ecce4a130f48",
+    "description": "T02进度查收：核对P04执行包、DSH固定反馈与T02卡覆盖范围",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T08:59:51.858Z",
+    "updatedAt": "2026-10-20T09:08:57.919Z",
+    "completedAt": "2026-10-20T09:08:57.919Z"
+  },
+  {
+    "id": "61779a98-50e2-4b9a-8fec-b57de843d679",
+    "description": "核实DSH报告列出的关键交付与证据文件存在、身份和哈希",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T08:59:51.858Z",
+    "updatedAt": "2026-10-20T09:08:57.926Z",
+    "completedAt": "2026-10-20T09:08:57.926Z"
+  },
+  {
+    "id": "c97bcc57-6a4e-4d8b-bc9a-25ffd9f55a88",
+    "description": "形成P02阶段查收记录并更新两级MEMORY与待办/TodoKit",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T08:59:51.858Z",
+    "updatedAt": "2026-10-20T09:08:57.932Z",
+    "completedAt": "2026-10-20T09:08:57.932Z"
+  },
+  {
+    "id": "9b57909a-7bd8-4b7d-8211-e59165392ffa",
+    "description": "将阶段结论、偏离与待P01裁定项转交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T08:59:51.858Z",
+    "updatedAt": "2026-10-20T09:08:57.938Z",
+    "completedAt": "2026-10-20T09:08:57.938Z"
+  },
+  {
+    "id": "799bd74d-a0e5-486d-9fde-df9789fb9908",
+    "description": "T02后续：DSH修订版PlanDay夹具/产物由用户手动转交并交付后，按用户或P01明确要求查收；与P04反重力接入包核对greedy + comboRules=[]联调依赖。未收到新交付前不自动轮询。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T09:08:57.943Z",
+    "updatedAt": "2026-10-20T10:19:01.173Z",
+    "completedAt": "2026-10-20T10:19:01.173Z"
+  },
+  {
+    "id": "000ca15c-c8f0-41e9-9180-b9429cd75d33",
+    "description": "查收DSH T02定点修正v2：对照P01裁定核验反馈、证据、四类夹具与产物哈希（不审源码、不重跑测试）",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T10:10:40.708Z",
+    "updatedAt": "2026-10-20T10:10:46.903Z",
+    "completedAt": "2026-10-20T10:10:46.903Z"
+  },
+  {
+    "id": "e23e3457-2e96-41ca-a942-d05bfd0f2a92",
+    "description": "形成P02 v2阶段查收记录，同步项目/根MEMORY与T02待办，保留PPT过程素材",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T10:10:40.708Z",
+    "updatedAt": "2026-10-20T10:11:43.104Z",
+    "completedAt": "2026-10-20T10:11:43.104Z"
+  },
+  {
+    "id": "460d419f-84c6-4bc1-b52b-492a329bc486",
+    "description": "将DSH v2查收结论、未覆盖项和待P01裁定点转交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T10:10:40.708Z",
+    "updatedAt": "2026-10-20T10:12:01.475Z",
+    "completedAt": "2026-10-20T10:12:01.475Z"
+  },
+  {
+    "id": "a2888d8a-89ee-423f-996d-9d4098a6663a",
+    "description": "查收反重力T02 A/B：核对固定反馈、19项文件哈希、WASM与四组输入夹具身份，以及节点/WX/存储证据边界",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T10:16:57.639Z",
+    "updatedAt": "2026-10-20T10:19:33.574Z",
+    "completedAt": "2026-10-20T10:19:33.574Z"
+  },
+  {
+    "id": "288dfb7f-4163-4bac-8e1b-5e0c409a663b",
+    "description": "记录AG A/B阶段查收与DSH 192B/208B非法输出差异、历史模型说明和未闭环证据，更新两级MEMORY/TodoKit",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T10:16:57.639Z",
+    "updatedAt": "2026-10-20T10:19:33.585Z",
+    "completedAt": "2026-10-20T10:19:33.585Z"
+  },
+  {
+    "id": "cfd0664d-5591-4af1-9b7d-4cfd0e34fca0",
+    "description": "按用户请求转交P01 A/B查收结论、字节差异及是否进入WX阶段的条件状态",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T10:16:57.639Z",
+    "updatedAt": "2026-10-20T10:19:42.621Z",
+    "completedAt": "2026-10-20T10:19:42.621Z"
+  },
+  {
+    "id": "79c94445-b097-4298-a1d3-3f5c2eec68f0",
+    "description": "等待P01处理反重力INVALID_INPUT 192B/208B载荷证据差异；未闭环前不记录四类逐字节一致或WX准入",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T10:19:01.179Z",
+    "updatedAt": "2026-10-20T11:14:58.921Z",
+    "completedAt": "2026-10-20T11:14:58.921Z"
+  },
+  {
+    "id": "f2c23d58-c5bb-4ed1-b382-e768d5bf4fa6",
+    "description": "T02阶段C：微信开发者工具/WXWebAssembly真实运行、用户扫码到红米；补本地持久化后关闭重开证据（ADB不作为扫码门槛）",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T10:19:01.179Z",
+    "updatedAt": "2026-10-20T11:14:58.927Z",
+    "completedAt": "2026-10-20T11:14:58.927Z"
+  },
+  {
+    "id": "0fa2357c-4e86-4158-9281-5a4acdc15043",
+    "description": "核对反重力T02阶段C交付反馈v2、原始记录、WASM与四类夹具身份并完成P02结论",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T11:13:25.117Z",
+    "updatedAt": "2026-10-20T11:14:58.900Z",
+    "completedAt": "2026-10-20T11:14:58.900Z"
+  },
+  {
+    "id": "acd98b0a-7138-48bf-bb74-06d93873ffbc",
+    "description": "已完成反重力T02阶段A/B/C材料查收并同步项目与根MEMORY、PPT过程素材；最终查收报告已发送P01。P01决定是否要求反重力补齐当前代码文件哈希清单。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T11:13:25.117Z",
+    "updatedAt": "2026-10-20T11:15:36.990Z",
+    "completedAt": "2026-10-20T11:15:36.990Z"
+  },
+  {
+    "id": "aa3c87d6-2746-4569-ad5f-621e05a75285",
+    "description": "将T02反重力查收结论及证据缺口转交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T11:13:25.117Z",
+    "updatedAt": "2026-10-20T11:15:37.001Z",
+    "completedAt": "2026-10-20T11:15:37.001Z"
+  },
+  {
+    "id": "67de7cef-ea08-45d1-ae25-ccdd58c0c8cf",
+    "description": "只读枚举core、tools/core、miniprogram、tools/miniprogram并重复核验哈希，保存稳定交接基线JSON",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T11:20:54.947Z",
+    "updatedAt": "2026-10-20T11:32:48.384Z",
+    "completedAt": "2026-10-20T11:32:48.384Z"
+  },
+  {
+    "id": "8449a322-8dfa-4563-8da5-c313fd0cda4d",
+    "description": "落盘P01的T02功能门禁与T04/T05派工裁定，补充任务卡和项目AGENTS路由授权",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T11:20:54.947Z",
+    "updatedAt": "2026-10-20T11:32:48.395Z",
+    "completedAt": "2026-10-20T11:32:48.395Z"
+  },
+  {
+    "id": "6b24c109-6834-4ee0-bbb4-5b3143f6fe88",
+    "description": "按当前证据整理项目事实、决策、索引和待办，保留历史报告引用",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T11:20:54.947Z",
+    "updatedAt": "2026-10-20T11:32:48.401Z",
+    "completedAt": "2026-10-20T11:32:48.401Z"
+  },
+  {
+    "id": "1dcaec92-e08f-4e42-8879-28f3fe1b3145",
+    "description": "验证文件、MEMORY与TodoKit状态一致并完成收尾",
+    "completed": true,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-20T11:20:54.947Z",
+    "updatedAt": "2026-10-20T11:32:48.408Z",
+    "completedAt": "2026-10-20T11:32:48.408Z"
+  },
+  {
+    "id": "fca3e0c6-905d-4a56-873c-10a0121f478c",
+    "description": "读取四个指定目录和T02源WASM的54项交接快照，并确认哈希稳定",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T11:21:41.115Z",
+    "updatedAt": "2026-10-20T11:21:41.133Z",
+    "completedAt": "2026-10-20T11:21:41.133Z"
+  },
+  {
+    "id": "73af8e85-fcd5-4be6-a486-54394dc9794d",
+    "description": "保存P01 T02功能门禁/模型路由裁定并更新T04、T05及项目AGENTS职责入口",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T11:21:41.115Z",
+    "updatedAt": "2026-10-20T11:21:41.139Z",
+    "completedAt": "2026-10-20T11:21:41.139Z"
+  },
+  {
+    "id": "915abab2-f367-4a0d-a7bc-3a87a610c18b",
+    "description": "修复两级项目MEMORY当前事实和待办索引，保留历史报告追溯",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T11:21:41.115Z",
+    "updatedAt": "2026-10-20T11:21:41.145Z",
+    "completedAt": "2026-10-20T11:21:41.145Z"
+  },
+  {
+    "id": "1a08f8f1-dd0d-44cc-acd7-9c6f492b25b2",
+    "description": "校验交接基线哈希、报告、任务卡及记录内容后收尾",
+    "completed": true,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-20T11:21:41.115Z",
+    "updatedAt": "2026-10-20T11:21:41.151Z",
+    "completedAt": "2026-10-20T11:21:41.151Z"
+  },
+  {
+    "id": "2a07a8b3-d5df-4ae9-98dd-29d042742c43",
+    "description": "天科食客（2026-10-21）：P01 v2含月历的UI设计/独立预览已完成，虚构数据，真实集成未做。P01授权P04提前串行准备五份独立UI提示词及索引（DeepSeek V4.1 Flash）：U01主题基础/最小设置入口、U02今日双模式、U03记录月历回看、U04我的设置、U05界面整合。提示词与索引待交付；用户未外发，DSH未开始，用户按依赖逐张外发。当前无核心/正式测试新派单。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T11:32:32.593Z",
+    "updatedAt": "2026-10-21T11:15:38.383Z",
+    "completedAt": "2026-10-21T11:15:38.383Z"
+  },
+  {
+    "id": "cc9abc32-18e2-4acf-bc30-fa4d6afa269a",
+    "description": "已完成：P01 v2 双模式设计和独立预览已交付，用户已审阅并肯定当前视觉方向。后续需补入本版月历入口和日详情，见新的TodoKit任务；本条不代表整版或业务验收。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T15:08:17.542Z",
+    "updatedAt": "2026-10-20T15:59:27.804Z",
+    "completedAt": "2026-10-20T15:59:27.804Z"
+  },
+  {
+    "id": "3c561abe-18d6-4c7e-a5e4-07ad1e1fc03d",
+    "description": "下一版本：增肌目标另行确认能量/营养目标及适用规则后，再调整核心与契约；本版不提供可用增肌入口，不以训练偏好冒充增肌。月历/月度回看已改为本版后续范围。",
+    "completed": false,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-20T15:21:06.510Z",
+    "updatedAt": "2026-10-20T15:59:27.774Z"
+  },
+  {
+    "id": "7d202af4-0989-4373-916e-e188f42ccbee",
+    "description": "核对最新交付与版本身份（依据P01本轮已完成）",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T15:31:04.091Z",
+    "updatedAt": "2026-10-20T15:31:09.900Z",
+    "completedAt": "2026-10-20T15:31:09.900Z"
+  },
+  {
+    "id": "e2153754-e501-4df0-8d62-6114e000916a",
+    "description": "完成P01当前进度总览（依据本轮任务及已实读资料）",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T15:31:04.091Z",
+    "updatedAt": "2026-10-20T15:31:09.915Z",
+    "completedAt": "2026-10-20T15:31:09.915Z"
+  },
+  {
+    "id": "f2f4293d-f8d5-42e3-be46-949f21db30c1",
+    "description": "统一同步根与项目MEMORY、待办入口并验证（进行中）",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T15:31:04.091Z",
+    "updatedAt": "2026-10-20T15:34:51.260Z",
+    "completedAt": "2026-10-20T15:34:51.260Z"
+  },
+  {
+    "id": "57e1bcde-4825-45fe-9905-e21945314f1a",
+    "description": "核对后续任务依赖并形成集中测试路线（P01本轮已完成）",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T15:35:56.233Z",
+    "updatedAt": "2026-10-20T15:35:56.252Z",
+    "completedAt": "2026-10-20T15:35:56.252Z"
+  },
+  {
+    "id": "e613fd08-5403-4059-b614-ce1e19d56a89",
+    "description": "保存路线文档并同步根/项目MEMORY与待办入口",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T15:35:56.233Z",
+    "updatedAt": "2026-10-20T15:35:56.261Z",
+    "completedAt": "2026-10-20T15:35:56.261Z"
+  },
+  {
+    "id": "65c13c4a-2e63-4ea1-835d-0f2696ef513e",
+    "description": "已完成：核对双模式 UI 需求并随 P01 v2 设计/独立预览确认当前视觉方向；本条不代表代码实现或整版验收。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T15:40:39.494Z",
+    "updatedAt": "2026-10-20T15:59:27.812Z",
+    "completedAt": "2026-10-20T15:59:27.812Z"
+  },
+  {
+    "id": "acfb0f26-fee2-4153-93bc-36fde7ecadbf",
+    "description": "已完成：P01 已完成双模式 UI v2 设计定稿与独立视觉预览。待补入本版月历入口和日详情，另见新增待办。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T15:40:39.494Z",
+    "updatedAt": "2026-10-20T15:59:27.819Z",
+    "completedAt": "2026-10-20T15:59:27.819Z"
+  },
+  {
+    "id": "d7079c2e-f895-4fcd-9dcd-7f3a76b36579",
+    "description": "已完成：P01 v2 定稿/预览入口已同步到项目报告和 MEMORY；月历入口/日详情补完后的新入口仍待 P01 提供。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T15:40:39.494Z",
+    "updatedAt": "2026-10-20T15:59:27.826Z",
+    "completedAt": "2026-10-20T15:59:27.826Z"
+  },
+  {
+    "id": "e8edaa32-fe39-4a7f-aff7-46140e9a5ddb",
+    "description": "已完成：P01已将本版月历入口、选日期、日详情和月汇总示例补入v2设计与独立预览，入口和截图已同步。仅设计完成；真实记录集成、UI实现和测试未做。后续P04提示词与实施按单卡待办跟踪。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T15:59:27.832Z",
+    "updatedAt": "2026-10-20T16:03:24.800Z",
+    "completedAt": "2026-10-20T16:03:24.800Z"
+  },
+  {
+    "id": "33856c21-1e42-4cb5-8326-0c734713d54a",
+    "description": "P04按P01授权提前串行编写五份独立UI提示词及索引，均请求 DeepSeek V4.1 Flash：T05U01主题基础/最小设置入口；U02今日双模式；U03记录月历回看；U04我的设置收口；U05界面整合。每份仅覆盖本任务，后续卡引用真实前序交付反馈或留空待外发时补入，不编造未知候选。当前五份与索引待交付；用户未外发，DSH未开始。用户按01→02→03→04→05逐张外发，不合成执行包。计划索引 Resources/任务提示词/天科食客-UI分卡派发顺序-v1.md 尚未生成。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T16:03:24.807Z",
+    "updatedAt": "2026-10-21T11:15:38.400Z",
+    "completedAt": "2026-10-21T11:15:38.400Z"
+  },
+  {
+    "id": "899c0e82-cb87-435c-981c-4af4e701a686",
+    "description": "查收DSH最新T05U01反馈与交付清单，固定实际候选和路径",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T17:19:59.381Z",
+    "updatedAt": "2026-10-21T11:15:38.411Z",
+    "completedAt": "2026-10-21T11:15:38.411Z"
+  },
+  {
+    "id": "d1bc51d0-bc30-4a42-974b-00e949d7d628",
+    "description": "对照T05U01已批准提示词/验收要求，逐项标记通过、缺证据或未完成",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T17:19:59.381Z",
+    "updatedAt": "2026-10-21T11:15:38.419Z",
+    "completedAt": "2026-10-21T11:15:38.420Z"
+  },
+  {
+    "id": "23cc3c40-893d-4ad6-b811-3dd293a1d118",
+    "description": "保存本轮P02查收报告并同步项目MEMORY与PPT过程素材",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T17:19:59.381Z",
+    "updatedAt": "2026-10-21T11:15:38.428Z",
+    "completedAt": "2026-10-21T11:15:38.428Z"
+  },
+  {
+    "id": "ff637a42-c714-4c65-9732-bde962b0e787",
+    "description": "将查收结论和阻塞点汇报给P01",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T17:19:59.381Z",
+    "updatedAt": "2026-10-21T11:15:38.437Z",
+    "completedAt": "2026-10-21T11:15:38.438Z"
+  },
+  {
+    "id": "688c240c-bb31-4940-b693-be49b5439fac",
+    "description": "【已完成】核对U01交付与未闭环点并记录P01裁定：darkmode:true遗漏待U01a修正，原“模拟器不可读”观察保留，不记作已修复。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T17:25:48.658Z",
+    "updatedAt": "2026-10-20T17:27:58.593Z",
+    "completedAt": "2026-10-20T17:27:58.593Z"
+  },
+  {
+    "id": "679a7faa-7475-4004-af15-2072a6dd30f2",
+    "description": "【已核对】检查T05U02—U05提示词及串行前置：U02依赖U01实际反馈/候选，U03依赖U02，U04依赖U03，U05依赖U04；逐张用户手动转交。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T17:25:48.658Z",
+    "updatedAt": "2026-10-20T17:26:35.220Z",
+    "completedAt": "2026-10-20T17:26:35.220Z"
+  },
+  {
+    "id": "f9d32811-fdd0-4903-b893-d0914f2518b0",
+    "description": "【已完成】同步P01对U01a→U02→U03→U04→U05的续行裁定、U03餐数去重口径、P04三份待修订文档及集中后测边界到MEMORY。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T17:25:48.658Z",
+    "updatedAt": "2026-10-20T17:27:58.601Z",
+    "completedAt": "2026-10-20T17:27:58.601Z"
+  },
+  {
+    "id": "38cfb131-bc8a-4a94-93ca-b2b51e19e984",
+    "description": "【重复项已合并】【进行中｜待P01核对】T05U01 DSH交付与未闭环点：P02阶段查收报告已完成，待P01核对U01证据、部分通过结论及未测项。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-20T17:26:04.839Z",
+    "updatedAt": "2026-10-20T17:26:35.181Z",
+    "completedAt": "2026-10-20T17:26:35.181Z"
+  },
+  {
+    "id": "33d84192-d7bf-4b0a-80a4-1770fc78ab6e",
+    "description": "【重复项已合并】【已核对】检查T05U02—U05提示词及串行前置：U02依赖U01实际反馈/候选，U03依赖U02，U04依赖U03，U05依赖U04；逐张用户手动转交。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-20T17:26:04.839Z",
+    "updatedAt": "2026-10-20T17:26:35.197Z",
+    "completedAt": "2026-10-20T17:26:35.197Z"
+  },
+  {
+    "id": "5b826a65-e931-415c-b226-640c610e337d",
+    "description": "【重复项已合并】【等待P01裁定】确定U01当前部分交付是否可作为U02输入及下一步，并按裁定同步项目记录；裁定前不改索引派发状态、不发送任务。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-20T17:26:04.839Z",
+    "updatedAt": "2026-10-20T17:26:35.213Z",
+    "completedAt": "2026-10-20T17:26:35.213Z"
+  },
+  {
+    "id": "dd2415bb-b870-4fdf-8b52-cfd13d71bcfd",
+    "description": "同步用户2026-10-21额度分配规则至项目AGENTS与MEMORY；保留历史、标注额度未知，不启动新任务或更新全局记忆。",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-20T17:31:49.000Z",
+    "updatedAt": "2026-10-20T17:31:54.498Z",
+    "completedAt": "2026-10-20T17:31:54.498Z"
+  },
+  {
+    "id": "028e3bca-2d15-4861-9e16-da65d36c5699",
+    "description": "核对DSH T05U01a最新交付反馈、任务卡与新候选身份",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-21T06:39:26.238Z",
+    "updatedAt": "2026-10-21T06:44:02.309Z",
+    "completedAt": "2026-10-21T06:44:02.309Z"
+  },
+  {
+    "id": "e85dcd7f-12c1-4bf6-b3cf-3e5e6a60fa05",
+    "description": "核对U01a微信实测原始记录、清单哈希及未测边界",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-21T06:39:26.238Z",
+    "updatedAt": "2026-10-21T06:44:02.325Z",
+    "completedAt": "2026-10-21T06:44:02.325Z"
+  },
+  {
+    "id": "be27e5a1-33a9-4405-9a4e-400fe2ddd609",
+    "description": "形成U01a P02查收结论并同步项目MEMORY/PPT素材",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T06:39:26.238Z",
+    "updatedAt": "2026-10-21T06:44:02.333Z",
+    "completedAt": "2026-10-21T06:44:02.333Z"
+  },
+  {
+    "id": "9876f903-dbc7-4561-b7ad-d81bd019e90e",
+    "description": "对照T05U02 v3任务卡与DSH最新反馈，固定交付候选",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T09:12:19.585Z",
+    "updatedAt": "2026-10-21T09:14:35.092Z",
+    "completedAt": "2026-10-21T09:14:35.092Z"
+  },
+  {
+    "id": "574c76e4-76ce-4e5b-b6ca-bbe1e62fc69c",
+    "description": "核验U02候选清单、变更范围和运行证据",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-21T09:12:19.585Z",
+    "updatedAt": "2026-10-21T09:14:35.107Z",
+    "completedAt": "2026-10-21T09:14:35.107Z"
+  },
+  {
+    "id": "56ff8af8-f6e0-4bf8-9a21-6e353a6bf02f",
+    "description": "形成P02查收记录、同步MEMORY/PPT素材并转交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T09:12:19.585Z",
+    "updatedAt": "2026-10-21T09:14:35.115Z",
+    "completedAt": "2026-10-21T09:14:35.115Z"
+  },
+  {
+    "id": "cf7a5d29-5503-4344-bbdb-0e41bd8d5527",
+    "description": "U02已知缺口核对完成：冻结模拟菜单导入后今日页“示例菜单”标记消失；自己选菜入口保留但核心能力缺失。两项均在U02查收报告中记录，待P01决定是否修正/后续处理。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-21T09:39:06.893Z",
+    "updatedAt": "2026-10-21T09:39:13.891Z",
+    "completedAt": "2026-10-21T09:39:13.891Z"
+  },
+  {
+    "id": "15beb2ee-8e1c-40ac-acdf-614391c10281",
+    "description": "依赖判断完成：上述U02缺口不涉及U03的日志快照、日期浏览或月度汇总，实现上不阻塞U03；U03仍须由P01另行决定放行，未记为已派发。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T09:39:06.893Z",
+    "updatedAt": "2026-10-21T09:39:13.914Z",
+    "completedAt": "2026-10-21T09:39:13.914Z"
+  },
+  {
+    "id": "b807db0a-88d3-4282-847c-ca280efd9c3f",
+    "description": "下一张卡：T05U03 DSH 记录月历与回看 v2。等待P01决定后再按用户手动转交；输入须绑定U02实际候选 sha256:483110d24346aaa4d8ba1ab44144dc38c5d3cabe35157b86e15fdd150f6b4c9e。遗留：模拟菜单标记缺失、手选能力缺失；后续固定候选集中做真机/回前台/冷启动/异常存储及T05全量回归。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T09:39:06.893Z",
+    "updatedAt": "2026-10-21T09:42:26.738Z",
+    "completedAt": "2026-10-21T09:42:26.738Z"
+  },
+  {
+    "id": "4dff5666-03bc-4949-9df2-0a4ebbda728f",
+    "description": "等待用户按P01放行手动转交T05U03 DSH记录月历与回看 v3；当前仅“准予转交”，无实际外发证据，不标DSH已开工。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T09:42:26.717Z",
+    "updatedAt": "2026-10-21T11:10:21.535Z",
+    "completedAt": "2026-10-21T11:10:21.535Z"
+  },
+  {
+    "id": "7e132663-6714-4956-8943-559be762531b",
+    "description": "P04待产：T05U05 DSH提示词 v2 与天科食客UI分卡索引 v4；P02不编辑索引、不与P04同写。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T09:42:26.717Z",
+    "updatedAt": "2026-10-21T11:15:38.446Z",
+    "completedAt": "2026-10-21T11:15:38.446Z"
+  },
+  {
+    "id": "c6e6c00c-dc0b-49da-b681-29052e74ab1b",
+    "description": "核对当前交付与缺口（进行中）：T05U05 DSH 阶段部分通过，待P01核对视觉偏差和候选；T05S01反重力只读方案通过，三项自选产品决策待P01裁定。仅维护状态，不启动明日业务或改派发状态。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T09:42:26.717Z",
+    "updatedAt": "2026-10-21T15:55:18.508Z",
+    "completedAt": "2026-10-21T15:55:18.509Z"
+  },
+  {
+    "id": "55db038c-ddd1-4a26-b304-3ec1238e18c9",
+    "description": "核对U03 v3反馈、候选清单及任务卡范围",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T11:08:18.581Z",
+    "updatedAt": "2026-10-21T11:10:21.495Z",
+    "completedAt": "2026-10-21T11:10:21.495Z"
+  },
+  {
+    "id": "7d27d518-1656-4f6b-996c-265040e06e91",
+    "description": "核对U03局部验证证据与遗留项（不重跑测试）",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T11:08:18.581Z",
+    "updatedAt": "2026-10-21T11:10:21.515Z",
+    "completedAt": "2026-10-21T11:10:21.515Z"
+  },
+  {
+    "id": "a94d3dcb-9bcd-4492-8e76-ca82a4d0b9fb",
+    "description": "保存P02查收报告、同步项目记录/PPT素材并转交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T11:08:18.581Z",
+    "updatedAt": "2026-10-21T11:10:21.525Z",
+    "completedAt": "2026-10-21T11:10:21.525Z"
+  },
+  {
+    "id": "b2e9d910-8f88-4c21-bc63-d76022c7cff6",
+    "description": "等待P01裁定U03整卡接收与是否派发U04 v1",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T11:10:21.543Z",
+    "updatedAt": "2026-10-21T11:15:38.455Z",
+    "completedAt": "2026-10-21T11:15:38.455Z"
+  },
+  {
+    "id": "365ed4f9-5bfb-4ce8-9211-b4ddc8eaea6d",
+    "description": "同步P01的U03接收与U04放行裁定到根/项目MEMORY和UI派发索引v5",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T11:13:43.023Z",
+    "updatedAt": "2026-10-21T11:15:38.463Z",
+    "completedAt": "2026-10-21T11:15:38.463Z"
+  },
+  {
+    "id": "1ef93eda-c105-4e58-b8ca-ea08050a06bd",
+    "description": "按P01裁定更新TodoKit：U03阶段接收、U04待用户转交、U05等待U04交付",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T11:13:43.023Z",
+    "updatedAt": "2026-10-21T11:15:38.472Z",
+    "completedAt": "2026-10-21T11:15:38.472Z"
+  },
+  {
+    "id": "b79eb42d-be81-4af5-9370-b924307d7812",
+    "description": "等待用户手动转交T05U04 DSH“我的与设置收口”v1；P01已放行，当前没有实际外发或执行证据",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T11:15:38.488Z",
+    "updatedAt": "2026-10-21T12:43:58.767Z",
+    "completedAt": "2026-10-21T12:43:58.767Z"
+  },
+  {
+    "id": "ef6b3012-4782-4822-9b5d-85823f364fe9",
+    "description": "核对DSH T05U04反馈、候选manifest及U04任务卡范围",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T12:41:51.815Z",
+    "updatedAt": "2026-10-21T12:43:58.735Z",
+    "completedAt": "2026-10-21T12:43:58.735Z"
+  },
+  {
+    "id": "f526ab3c-2ae6-49af-9286-9273f0e05bab",
+    "description": "核对U04局部路径证据、静态检查记录及未测项（不重跑测试）",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-21T12:41:51.815Z",
+    "updatedAt": "2026-10-21T12:43:58.749Z",
+    "completedAt": "2026-10-21T12:43:58.749Z"
+  },
+  {
+    "id": "9bc1bf4f-8151-4449-a861-692f7ee536f9",
+    "description": "保存U04 P02阶段查收和PPT素材、更新根/项目MEMORY及TodoKit并汇报P01",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T12:41:51.815Z",
+    "updatedAt": "2026-10-21T12:43:58.758Z",
+    "completedAt": "2026-10-21T12:43:58.758Z"
+  },
+  {
+    "id": "a0f3b0c9-c475-4a5d-8ccb-1099a91660ee",
+    "description": "等待P01核对并决定是否接收DSH T05U04候选为U05输入；U05仍未放行用户转交",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T12:43:58.775Z",
+    "updatedAt": "2026-10-21T12:47:07.796Z",
+    "completedAt": "2026-10-21T12:47:07.797Z"
+  },
+  {
+    "id": "50f178cc-99eb-492b-a16d-15c0722ef72c",
+    "description": "同步P01对U04的接收与U05v3放行决定到根/项目MEMORY及UI索引v7",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T12:45:48.977Z",
+    "updatedAt": "2026-10-21T12:47:07.810Z",
+    "completedAt": "2026-10-21T12:47:07.810Z"
+  },
+  {
+    "id": "56115082-84df-45f4-ac68-5ee47b39ae20",
+    "description": "更新TodoKit状态：U04阶段接收、U05v3待用户手动转交、U05后等P01核对及用户UI反馈",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T12:45:48.977Z",
+    "updatedAt": "2026-10-21T12:47:07.819Z",
+    "completedAt": "2026-10-21T12:47:07.819Z"
+  },
+  {
+    "id": "6ee40d61-35e2-43ae-95f6-a6d706240fe5",
+    "description": "等待用户手动转交已由P01放行的T05U05 DSH界面整合v3；当前无实际外发或执行证据",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T12:47:07.835Z",
+    "updatedAt": "2026-10-21T15:45:52.432Z",
+    "completedAt": "2026-10-21T15:45:52.432Z"
+  },
+  {
+    "id": "d06b350c-6034-41a5-8077-d09e5b9b80e5",
+    "description": "盘点已有P02阶段报告与PPT素材条目，按P01四组整理T10a来源索引",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T14:24:35.207Z",
+    "updatedAt": "2026-10-22T13:27:45.105Z",
+    "completedAt": "2026-10-22T13:27:45.105Z"
+  },
+  {
+    "id": "4094f079-1343-48df-a338-c47bf1f4a138",
+    "description": "保存T10a已有汇报素材索引v1并标注候选、数据真实性与证据层级",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T14:24:35.207Z",
+    "updatedAt": "2026-10-22T13:27:46.309Z",
+    "completedAt": "2026-10-22T13:27:46.309Z"
+  },
+  {
+    "id": "a4a6f745-4292-4343-9357-e975cb638030",
+    "description": "待用户手动转交P01已放行的T05U05a DSH视觉收口v1；当前无实际外发、开工或完成证据。转交后等待指定反馈文件，不自行监控或跟进。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T14:24:35.207Z",
+    "updatedAt": "2026-10-22T10:26:59.496Z",
+    "completedAt": "2026-10-22T10:26:59.496Z"
+  },
+  {
+    "id": "d74d616d-a61d-45fb-8d90-f91e3c8eaa92",
+    "description": "核对反重力 T05S01 与 DSH T05U05 交付反馈及任务卡范围",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T15:41:14.793Z",
+    "updatedAt": "2026-10-21T15:45:43.745Z",
+    "completedAt": "2026-10-21T15:45:43.745Z"
+  },
+  {
+    "id": "29312009-6c77-4b74-9458-1282e07f7d9e",
+    "description": "复核 DSH 输出候选清单、固定 WASM 与局部检查证据",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-21T15:41:14.793Z",
+    "updatedAt": "2026-10-21T15:45:43.761Z",
+    "completedAt": "2026-10-21T15:45:43.761Z"
+  },
+  {
+    "id": "2ba269f1-38be-4e6b-a500-f666402047ae",
+    "description": "形成两份 P02 阶段查收报告并同步项目记录",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T15:41:14.793Z",
+    "updatedAt": "2026-10-21T15:45:43.768Z",
+    "completedAt": "2026-10-21T15:45:43.768Z"
+  },
+  {
+    "id": "6daeb733-8eaa-4467-bf46-80f174098df3",
+    "description": "将验收结果汇报给 P01",
+    "completed": true,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-21T15:41:14.793Z",
+    "updatedAt": "2026-10-21T15:45:43.776Z",
+    "completedAt": "2026-10-21T15:45:43.776Z"
+  },
+  {
+    "id": "6275a002-3e98-457b-ad65-3175eaca767a",
+    "description": "P01制定2026-10-22明日任务的先后顺序、可并行项及自选菜产品取舍；等待P01定稿路径，不启动业务或改派发状态。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-21T15:48:45.446Z",
+    "updatedAt": "2026-10-21T15:55:18.525Z",
+    "completedAt": "2026-10-21T15:55:18.525Z"
+  },
+  {
+    "id": "cc7ebccf-8175-42e0-9cee-af86e0179921",
+    "description": "同步2026-10-22规划及当前交付/缺口记录到TodoKit；等待P01给定稿路径，不代写或改动项目记录。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-21T15:48:45.446Z",
+    "updatedAt": "2026-10-21T15:55:18.532Z",
+    "completedAt": "2026-10-21T15:55:18.532Z"
+  },
+  {
+    "id": "0cda3266-f86f-433a-84eb-14166367e53a",
+    "description": "核对U05a短卡内容、路径及当前外部状态口径",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T05:17:56.979Z",
+    "updatedAt": "2026-10-22T05:18:30.768Z",
+    "completedAt": "2026-10-22T05:18:30.768Z"
+  },
+  {
+    "id": "d6717e6b-f8cd-4b83-bcae-7ffcb510a868",
+    "description": "更新项目MEMORY索引/事实/待办及必要根索引：U05a待用户转交、S02/S03仅准备、菜单照片未收到",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T05:17:56.979Z",
+    "updatedAt": "2026-10-22T05:18:30.778Z",
+    "completedAt": "2026-10-22T05:18:30.778Z"
+  },
+  {
+    "id": "09e1a20e-f39f-49a8-95ce-226f780a7c5b",
+    "description": "收尾本轮TodoKit，仅完成记录更新，不标记外部实现已派发或开工",
+    "completed": true,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-22T05:17:56.979Z",
+    "updatedAt": "2026-10-22T05:18:30.789Z",
+    "completedAt": "2026-10-22T05:18:30.789Z"
+  },
+  {
+    "id": "77cc1d13-c223-4348-84f8-d728bf409641",
+    "description": "T05S03 DSH自选菜页/今日入口v2已交付；P02阶段查收报告已完成，输出候选ee6790e85ea2a5bc8ea251c9722d74eefb126db6020c97f76837b802490d2ca2，112项哈希复核通过。test-home-view仍有一处旧断言失败，待P01核对/裁定。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-22T05:18:30.755Z",
+    "updatedAt": "2026-10-22T11:36:30.888Z",
+    "completedAt": "2026-10-22T11:36:30.888Z"
+  },
+  {
+    "id": "f0e13d0f-9a56-4a78-80b5-6d778bf97a25",
+    "description": "T04A01专项研究交付完成；修复未开始、P09总审未做，已同步MEMORY",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-22T09:28:34.214Z",
+    "updatedAt": "2026-10-22T09:28:34.223Z",
+    "completedAt": "2026-10-22T09:28:34.223Z"
+  },
+  {
+    "id": "36542813-434d-4944-b01d-1be5c3217540",
+    "description": "T04续行：A09原身份冲突已确认，A09a短卡放行待手动转交，A10a仍未放行；c1a沿原单；c2a/c3a来源补正卡与c4提示词放行待转交；DSH N01提示词由P04准备中、尚未放行外部执行。P09总审、正式营养/WASM接合未完成，PPT由用户掌控。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T09:28:34.231Z",
+    "updatedAt": "2026-10-22T13:53:38.956Z"
+  },
+  {
+    "id": "3d3c5dcd-360c-4429-ae80-be4555deb118",
+    "description": "DSH S03a已由P01接收为继续开发基础；S03b短卡/DSH/DeepSeek V4.1 Flash待用户手动转交，当前仅见证据目录、未见正式反馈，沿原单不重复启动。T04A04已由P01接收为核心基础并放行A07；T03b部分接收，T03b-a身份更正短卡待用户转交。正式营养接合、真机和全量回归未完成。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T09:29:47.733Z",
+    "updatedAt": "2026-10-22T12:30:13.866Z"
+  },
+  {
+    "id": "c02ef15f-c107-4354-b411-b192a5c6e6bb",
+    "description": "同步P01最新T05裁定至TodoKit与MEMORY索引/事实/决策/待办",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-22T09:29:47.742Z",
+    "updatedAt": "2026-10-22T09:29:47.750Z",
+    "completedAt": "2026-10-22T09:29:47.750Z"
+  },
+  {
+    "id": "6bce6b81-bed6-4bef-8d68-c95751148b38",
+    "description": "待用户手动转交T04A03 v2：反重力Gemini 3.8主执行员独占修F1/F2；两名可选子代理分别只读分析与固定候选定向验证。A02仅阶段接收为开发基础，不代表算法总通过。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T09:44:10.586Z",
+    "updatedAt": "2026-10-22T10:26:59.488Z",
+    "completedAt": "2026-10-22T10:26:59.488Z"
+  },
+  {
+    "id": "a1d36fb6-3ccd-49b4-82c3-dbd2b6dba48c",
+    "description": "同步P01本轮A02阶段接收、A03放行和Gemini 3.8用户报告至TodoKit/MEMORY并更新多代理规则",
+    "completed": true,
+    "priority": "medium",
+    "category": "docs",
+    "createdAt": "2026-10-22T09:44:10.593Z",
+    "updatedAt": "2026-10-22T09:44:10.600Z",
+    "completedAt": "2026-10-22T09:44:10.600Z"
+  },
+  {
+    "id": "5e66c581-8f34-4862-9f5f-302ff30b4532",
+    "description": "查收T05S02a：读取DSH反馈与获批任务卡，确认本次边界",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T09:48:40.474Z",
+    "updatedAt": "2026-10-22T10:26:59.503Z",
+    "completedAt": "2026-10-22T10:26:59.503Z"
+  },
+  {
+    "id": "08ee453e-9358-46ce-9e44-294702633793",
+    "description": "核对T05S02a输出候选身份与清单哈希、冻结WASM及证据索引",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-22T09:48:40.474Z",
+    "updatedAt": "2026-10-22T10:26:59.510Z",
+    "completedAt": "2026-10-22T10:26:59.510Z"
+  },
+  {
+    "id": "21c11ccf-7728-45bb-9b86-bf3798aad922",
+    "description": "按任务卡逐项判断证据覆盖与未测范围，形成P02阶段查收报告（含PPT素材）",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T09:48:40.474Z",
+    "updatedAt": "2026-10-22T10:26:59.517Z",
+    "completedAt": "2026-10-22T10:26:59.517Z"
+  },
+  {
+    "id": "572e2faa-2cd8-41a4-ae2d-cf754f0f7ba1",
+    "description": "同步项目MEMORY/TodoKit状态并将查收报告转交P01",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T09:48:40.474Z",
+    "updatedAt": "2026-10-22T10:26:59.525Z",
+    "completedAt": "2026-10-22T10:26:59.525Z"
+  },
+  {
+    "id": "b437c7a9-144b-4caf-bd2d-90ae929d2683",
+    "description": "T03a反重力菜单转录卡已放行，等待用户手动转交；未转录，不监控。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T10:26:59.532Z",
+    "updatedAt": "2026-10-22T10:32:28.150Z",
+    "completedAt": "2026-10-22T10:32:28.150Z"
+  },
+  {
+    "id": "006f9fa8-3db3-4969-90fe-5c9509b1a31b",
+    "description": "已完成：A04由P01接收为核心开发基础；A07经P02查收、P01接收为A08开发基础。A08既有v1短卡已放行待用户手动转交，A09/A10a仍需后续单独放行。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T10:26:59.532Z",
+    "updatedAt": "2026-10-22T12:51:26.145Z",
+    "completedAt": "2026-10-22T12:51:26.145Z"
+  },
+  {
+    "id": "8321a6bd-09a3-4880-abed-c70989fe2ced",
+    "description": "等待内部T04A05 DP预算可行性只读专项按卡提交报告；不轮询，报告到达后再按授权处理。",
+    "completed": true,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-22T10:26:59.532Z",
+    "updatedAt": "2026-10-22T11:36:30.905Z",
+    "completedAt": "2026-10-22T11:36:30.905Z"
+  },
+  {
+    "id": "09a2917f-6954-47d0-8240-704ab101c595",
+    "description": "等待内部T04A06 长planKey精确比较只读专项按卡提交报告；不轮询，报告到达后再按授权处理。",
+    "completed": true,
+    "priority": "medium",
+    "category": "work",
+    "createdAt": "2026-10-22T10:26:59.532Z",
+    "updatedAt": "2026-10-22T11:36:30.914Z",
+    "completedAt": "2026-10-22T11:36:30.914Z"
+  },
+  {
+    "id": "2883b194-8bde-45f9-b184-ebec05b35524",
+    "description": "T03a查收：对照获批任务卡和唯一反馈，界定照片转录阶段范围。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T10:31:27.714Z",
+    "updatedAt": "2026-10-22T10:31:27.734Z",
+    "completedAt": "2026-10-22T10:31:27.734Z"
+  },
+  {
+    "id": "cd110495-4d80-4eb8-b4e6-c97c29174073",
+    "description": "复核T03a八份交付哈希与13张源照片字节/SHA256。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-22T10:31:27.714Z",
+    "updatedAt": "2026-10-22T10:31:27.745Z",
+    "completedAt": "2026-10-22T10:31:27.745Z"
+  },
+  {
+    "id": "1c1bbf07-362b-4937-a259-2149540d9752",
+    "description": "形成T03a P02阶段查收报告并更新项目MEMORY四文件与根摘要。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T10:31:27.714Z",
+    "updatedAt": "2026-10-22T10:32:28.130Z",
+    "completedAt": "2026-10-22T10:32:28.130Z"
+  },
+  {
+    "id": "b48879b8-0a3d-4004-904f-d0f7266a4655",
+    "description": "将T03a阶段查收和遗留限制转交P01。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T10:31:27.714Z",
+    "updatedAt": "2026-10-22T10:32:43.439Z",
+    "completedAt": "2026-10-22T10:32:43.439Z"
+  },
+  {
+    "id": "00d4ce97-6d2f-45e0-a393-94c7b5bd2739",
+    "description": "P01已接收T03b当前菜单及T03b-a身份更正为数据开发基础。菜单文件SHA256 ECC711034C2F438F2864D0987A0F4724CF42F5C844BDEDB20D20DA05FBD41CB5；旧反馈SHA差异归因仅作者说明、原因未核实，但不再阻塞推进或追索日志。营养仍未知null，不等于全食堂菜单完成。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T11:36:30.947Z",
+    "updatedAt": "2026-10-22T12:51:29.147Z",
+    "completedAt": "2026-10-22T12:51:29.147Z"
+  },
+  {
+    "id": "7b9407e3-f0d1-47bb-947e-93d8f9a0f920",
+    "description": "T05S03a DSH反馈已收。P02阶段查收通过并转交P01核对；报告 Resources/报告/T05S03a-P02-DSH自选入口断言收口阶段查收-20261022.md。等待P01后续裁定；本结论限指定Node测试与候选差异，不含微信开发者工具/真机/全量回归。",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-22T11:36:30.947Z",
+    "updatedAt": "2026-10-22T11:51:54.673Z",
+    "completedAt": "2026-10-22T11:51:54.673Z"
+  },
+  {
+    "id": "f117c7bb-e4d5-4b59-9a46-d54022cedf51",
+    "description": "P02阶段查收部分通过，P01已接收为后续前端整合基础。已核对模拟器编译/操作/截图；长菜名、套餐、未知价缺少实例，真机及全量回归留统一候选，不另开补测。DSH正式营养接合待A08→A09→A10a完成及统一候选明确。报告：Resources/报告/T05S03b-P02-DSH自选页微信预览阶段查收-20261022.md。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T11:51:54.722Z",
+    "updatedAt": "2026-10-22T12:51:30.262Z",
+    "completedAt": "2026-10-22T12:45:07.085Z"
+  },
+  {
+    "id": "ff93befb-8b3f-481f-b05b-4d508978ec05",
+    "description": "T04A10已实际派给内部core_pruning_research，请求gpt-6.1-sol/high；生产只读研究排序与剪枝一致性，隔离反例/补丁，等待该任务反馈；生产落地另行安排。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T11:51:54.722Z",
+    "updatedAt": "2026-10-22T12:14:20.314Z",
+    "completedAt": "2026-10-22T12:14:20.314Z"
+  },
+  {
+    "id": "dc1ebfea-0ab3-48c6-bf87-4967c047e6bd",
+    "description": "T04A10研究已由P01专项验收通过并接收为核心整合依据；补丁仍未合入生产、生产缺陷未关闭。等待P01单独放行后，才可在届时指定候选上局部整合四处删除并按新任务验证；不得整文件覆盖或自动启动。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T12:14:20.337Z",
+    "updatedAt": "2026-10-22T12:14:20.337Z"
+  },
+  {
+    "id": "1478959a-7419-48ce-9d85-0ed9fc543fbb",
+    "description": "P02阶段查收通过；P01已接收A07为A08开发基础并放行A08既有v1短卡待用户手动转交。核心顺序A08→核对后另行放行A09→A10a。报告：Resources/报告/T04A07-P02-反重力完整planKey修复阶段查收-20261022.md；P01裁定：Resources/报告/天科食客-P01-进度与续行安排-20261022-v2.md。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T12:30:13.891Z",
+    "updatedAt": "2026-10-22T12:51:27.113Z",
+    "completedAt": "2026-10-22T12:48:14.885Z"
+  },
+  {
+    "id": "2eb308ee-be3d-4a49-b455-81fcdad33e60",
+    "description": "已完成P02阶段查收并转交P01（部分通过）：v2所列菜单文件身份与保存校验记录一致；原哈希差异的笔误归因缺执行日志，待P01裁定。查收报告：Resources/报告/T03b-a-P02-反重力菜单交付身份更正阶段查收-20261022.md。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T12:30:13.891Z",
+    "updatedAt": "2026-10-22T12:37:10.485Z",
+    "completedAt": "2026-10-22T12:36:45.753Z"
+  },
+  {
+    "id": "3b21c9e5-f30b-414d-bbb7-3c8ca90f20ff",
+    "description": "T04A10a排序与剪枝对齐小卡已准备但未放行；等待A09交付并由P01逐项核对后另行放行。不得提前整合生产；沿用已验收隔离补丁，避免重复sol研究。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T12:30:13.891Z",
+    "updatedAt": "2026-10-22T12:30:13.891Z"
+  },
+  {
+    "id": "5a1e450f-2587-49c2-87dd-a12735b20025",
+    "description": "T04A08已吃超预算边界修正已由P02阶段查收并经P01接收为A09开发基础；P01独立7个关键请求符合预期，作者24矩阵+2回归与P01的7次运行分开登记。报告：Resources/报告/T04A08-T03c1-P01-核对与续行裁定-20261022-v1.md。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T12:51:31.312Z",
+    "updatedAt": "2026-10-22T13:15:32.659Z",
+    "completedAt": "2026-10-22T13:15:32.659Z"
+  },
+  {
+    "id": "22379a03-31a7-4afa-88e5-de3b966003ec",
+    "description": "T03c1原草案仍未核准/未并入菜单。P01确认来源与计算说明缺口，已放行T03c1a来源与计算补正卡，等待用户手动转交；P01十进制复核487.10/413.70/435.33 kcal，作者与P01运行次数分开记录。",
+    "completed": false,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T12:51:31.312Z",
+    "updatedAt": "2026-10-22T13:15:32.624Z"
+  },
+  {
+    "id": "d99f2b00-c2e0-4807-be8b-8a442f349541",
+    "description": "T05M01 DSH首批西一菜单接入已由P01阶段接收；裁定与独立核对证据已记录。真机、全量回归、正式营养数据及P09总审未完成；模拟器￥42记录保留且不作真实就餐。",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T12:55:14.467Z",
+    "updatedAt": "2026-10-22T13:41:09.088Z",
+    "completedAt": "2026-10-22T13:34:59.468Z"
+  },
+  {
+    "id": "0db02188-4732-4cb5-a320-aa3f0a9e8f86",
+    "description": "T03c2热干面五款估算草案及说明已交付；P02核对JSON条目/estimated标志与文件哈希后交P01/P09核验，未批准并入正式菜单。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T12:55:14.467Z",
+    "updatedAt": "2026-10-22T13:44:53.029Z",
+    "completedAt": "2026-10-22T13:44:53.029Z"
+  },
+  {
+    "id": "a0ad2c86-a92c-4242-afbf-a3f3901e1ada",
+    "description": "T03c3肠粉四款估算草案及说明已交付；P02核对JSON条目/estimated标志与文件哈希后交P01/P09核验，未批准并入正式菜单。",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T12:55:14.467Z",
+    "updatedAt": "2026-10-22T13:44:54.767Z",
+    "completedAt": "2026-10-22T13:44:54.767Z"
+  },
+  {
+    "id": "55f35670-954e-49e3-8dd6-0761b74d82f9",
+    "description": "T04A09a固定当前候选与隔离重建已交付，经双子代理PASS，待P01查收核对；A10a未放行。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:15:32.649Z",
+    "updatedAt": "2026-10-22T14:06:48.240Z"
+  },
+  {
+    "id": "cabcd516-28e4-4fe0-93b7-e7f6d8e147e8",
+    "description": "T03c1a三款营养来源与计算补正：既有短卡已由P01放行，待用户手动转交反重力Gemini 3.8；c1草案在补正并核准前不并入正式菜单。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:15:32.649Z",
+    "updatedAt": "2026-10-22T13:15:32.649Z"
+  },
+  {
+    "id": "1d86b951-9e5b-429f-8787-05f45db511a1",
+    "description": "查收反重力最新执行反馈与证据，区分新交付和已放行提示词",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:20:18.753Z",
+    "updatedAt": "2026-10-22T13:22:35.323Z",
+    "completedAt": "2026-10-22T13:22:35.324Z"
+  },
+  {
+    "id": "2cb832d9-41f0-43ab-930c-91d57118ec0c",
+    "description": "同步反重力最新状态到项目MEMORY与TodoKit计划入口",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:20:18.753Z",
+    "updatedAt": "2026-10-22T13:22:36.447Z",
+    "completedAt": "2026-10-22T13:22:36.447Z"
+  },
+  {
+    "id": "d336d3be-6ab4-4602-b838-1ed8f8c3a30e",
+    "description": "将查收结论及未核实边界转交P01",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:20:18.753Z",
+    "updatedAt": "2026-10-22T13:20:18.753Z"
+  },
+  {
+    "id": "daad820d-d433-4b48-9c43-75fe37e7b700",
+    "description": "P01加速安排：T10a素材索引已交付，PPT由用户掌控，10/24-10/27为目标节奏。T03c4提示词v1已放行待用户转交；A09a、c2a/c3a各独立卡已放行待转交。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:22:34.000Z",
+    "updatedAt": "2026-10-22T13:53:40.711Z"
+  },
+  {
+    "id": "19117722-35a6-494d-b208-f4b34246deae",
+    "description": "读取P01加速安排与7页汇报骨架，确认索引字段和交付范围",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:23:03.658Z",
+    "updatedAt": "2026-10-22T13:27:47.539Z",
+    "completedAt": "2026-10-22T13:27:47.539Z"
+  },
+  {
+    "id": "4ddc4078-87ae-4b6d-b26d-00d51abb2d17",
+    "description": "盘点现有菜单原图、S03b模拟器图、月历交付及核心过程材料",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:23:03.658Z",
+    "updatedAt": "2026-10-22T13:27:48.925Z",
+    "completedAt": "2026-10-22T13:27:48.925Z"
+  },
+  {
+    "id": "070199d4-42c4-45f4-b65b-f13292cf1627",
+    "description": "编写T10a已有汇报素材索引，逐页绑定证据与缺口",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:23:03.658Z",
+    "updatedAt": "2026-10-22T13:27:50.242Z",
+    "completedAt": "2026-10-22T13:27:50.242Z"
+  },
+  {
+    "id": "08b81612-f5b8-4023-b06d-b929d257b45b",
+    "description": "同步MEMORY和TodoKit时间安排并校验索引路径",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:23:03.658Z",
+    "updatedAt": "2026-10-22T13:27:51.533Z",
+    "completedAt": "2026-10-22T13:27:51.533Z"
+  },
+  {
+    "id": "e766b077-5902-4669-b1e0-c98b90eebcc5",
+    "description": "T03c4午晚餐三款估算：提示词v1已由P01全文核对放行，待用户手动转交Gemini 3.8；尚未外部执行。",
+    "completed": false,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:27:43.793Z",
+    "updatedAt": "2026-10-22T13:53:39.849Z"
+  },
+  {
+    "id": "2fa53935-e555-4928-ab0b-81d4078d6adf",
+    "description": "T03c2a热干面来源补正：P01短卡已放行待用户手动转交；只写T03c2-v2新目录，来源核准前不并入正式菜单。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:53:41.575Z",
+    "updatedAt": "2026-10-22T13:53:41.575Z"
+  },
+  {
+    "id": "45e2c18c-1f11-4928-b13d-02838ac7b865",
+    "description": "T03c3a肠粉来源补正：P01短卡已放行待用户手动转交；只写T03c3-v2新目录，来源核准前不并入正式菜单。",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:53:41.575Z",
+    "updatedAt": "2026-10-22T13:53:41.575Z"
+  },
+  {
+    "id": "bb64fb3f-3f5a-4dd1-bcaf-d09b5af91292",
+    "description": "DSH N01 Offer营养闭环：P04正在准备单张提示词；P01尚未放行外部执行，生产前端/WASM保持只读。",
+    "completed": false,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:53:41.575Z",
+    "updatedAt": "2026-10-22T13:53:41.575Z"
+  },
+  {
+    "id": "3ae67bee-df83-4b56-8656-27ba9f4b9f20",
+    "description": "T04A09a Step 1: 现场基线核验生产planner.cpp哈希与读卡",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:57:17.934Z",
+    "updatedAt": "2026-10-22T13:57:26.074Z",
+    "completedAt": "2026-10-22T13:57:26.074Z"
+  },
+  {
+    "id": "9ce8658a-a48f-4c4d-82fa-6386f91d569d",
+    "description": "T04A09a Step 2: 隔离证据目录建立与snapshot只读固定",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:57:17.934Z",
+    "updatedAt": "2026-10-22T13:58:18.584Z",
+    "completedAt": "2026-10-22T13:58:18.584Z"
+  },
+  {
+    "id": "075bb3b6-1c45-447a-81ed-79a5d85b8177",
+    "description": "T04A09a Step 3: 仅基于snapshot副本隔离原生构建mp_cli.exe",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T13:57:17.934Z",
+    "updatedAt": "2026-10-22T13:58:56.837Z",
+    "completedAt": "2026-10-22T13:58:56.837Z"
+  },
+  {
+    "id": "d986496a-7afb-44a5-800a-9ae326e757cd",
+    "description": "T04A09a Step 4: 运行verify_t04a09a.py执行10场景x3算法最少必要验证",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-22T13:57:17.934Z",
+    "updatedAt": "2026-10-22T14:00:10.550Z",
+    "completedAt": "2026-10-22T14:00:10.550Z"
+  },
+  {
+    "id": "a3994511-d876-42b3-97b2-26e7a727d761",
+    "description": "T04A09a Step 5: 调派同模型独立子代理完成只读代码复核与数据验证",
+    "completed": true,
+    "priority": "high",
+    "category": "testing",
+    "createdAt": "2026-10-22T13:57:17.934Z",
+    "updatedAt": "2026-10-22T14:03:58.727Z",
+    "completedAt": "2026-10-22T14:03:58.727Z"
+  },
+  {
+    "id": "67b8df87-b9f9-406b-9cc1-0a2cb4f0c05f",
+    "description": "T04A09a Step 6: 编写T04A09a交付反馈并完成MEMORY同步",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T13:57:17.934Z",
+    "updatedAt": "2026-10-22T14:06:48.222Z",
+    "completedAt": "2026-10-22T14:06:48.222Z"
+  },
+  {
+    "id": "cf14405e-9782-4143-9ce2-8a28bd7585ee",
+    "description": "验收本轮反重力 A09a、c1a、c2a、c3a、c4 与 DSH N01 交付反馈及身份/范围证据",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:21:21.884Z",
+    "updatedAt": "2026-10-22T15:21:21.884Z"
+  },
+  {
+    "id": "8b838713-86fa-4f74-97f5-683163445637",
+    "description": "形成统一 P02 查收报告并同步项目与根 MEMORY、更新相关任务状态",
+    "completed": false,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T15:21:21.884Z",
+    "updatedAt": "2026-10-22T15:21:21.884Z"
+  },
+  {
+    "id": "0bf75d1a-75b2-4713-9fd1-371572ccbe63",
+    "description": "将查收报告与待 P01 裁定项转交真实 P01 会话",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:21:21.884Z",
+    "updatedAt": "2026-10-22T15:21:21.884Z"
+  },
+  {
+    "id": "48e135a4-69f7-4459-92ae-704c7172ac4f",
+    "description": "验收本轮反重力 A09a、c1a、c2a、c3a、c4 与 DSH N01 交付反馈及身份/范围证据",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:21:38.488Z",
+    "updatedAt": "2026-10-22T15:23:52.513Z",
+    "completedAt": "2026-10-22T15:23:52.513Z"
+  },
+  {
+    "id": "456ad698-8304-462d-9e3a-fa638c351f36",
+    "description": "形成统一 P02 查收报告并同步项目与根 MEMORY、更新相关任务状态",
+    "completed": true,
+    "priority": "high",
+    "category": "docs",
+    "createdAt": "2026-10-22T15:21:44.186Z",
+    "updatedAt": "2026-10-22T15:23:52.527Z",
+    "completedAt": "2026-10-22T15:23:52.527Z"
+  },
+  {
+    "id": "d9365f34-28aa-43a6-a369-10b3dabb9345",
+    "description": "将查收报告与待 P01 裁定项转交真实 P01 会话",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:21:44.186Z",
+    "updatedAt": "2026-10-22T15:24:12.489Z",
+    "completedAt": "2026-10-22T15:24:12.489Z"
+  },
+  {
+    "id": "7aad3992-d927-44d8-a197-ed409d7e7bfb",
+    "description": "T04A10a 反重力策略排序与剪枝对齐：P01已放行，待用户手动转交并交付后查收",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:34:28.412Z",
+    "updatedAt": "2026-10-22T15:34:28.412Z"
+  },
+  {
+    "id": "944528bc-2c88-4a28-ace6-08a6ed53eb5a",
+    "description": "T05N01a DSH隔离套餐组件类型对齐：P01已放行，待用户手动转交并交付后查收",
+    "completed": false,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:34:28.412Z",
+    "updatedAt": "2026-10-22T15:34:28.412Z"
+  },
+  {
+    "id": "b6e40ef1-3381-4f5c-b15e-ebec1c09fdb8",
+    "description": "T03V01 P09首批六款营养来源专项：已由P01派发，等待交付后按卡查收",
+    "completed": true,
+    "priority": "high",
+    "category": "work",
+    "createdAt": "2026-10-22T15:34:28.412Z",
+    "updatedAt": "2026-10-22T15:44:55.349Z",
+    "completedAt": "2026-10-22T15:44:55.349Z"
+  }
+]

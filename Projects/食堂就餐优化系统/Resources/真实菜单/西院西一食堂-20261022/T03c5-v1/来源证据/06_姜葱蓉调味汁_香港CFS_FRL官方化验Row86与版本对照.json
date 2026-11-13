@@ -1,0 +1,32 @@
+{
+  "food_name": "薑蓉 / 姜葱蓉调味汁 (Ginger puree)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "excel_attachment": "Nutrient_profiles_FRL.xlsx (Sheet: Eng, Row: 86)",
+  "category": "Condiments and sauces - Condiments and sauces",
+  "row_index": 86,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "cfs_local_excel_row86_per_100g": {
+    "energy_kcal": 470.0,
+    "protein_g": 1.7,
+    "fat_g": 50.0,
+    "carbohydrate_g": 5.2,
+    "dietary_fibre_g": 1.2,
+    "sugars_g": 1.0,
+    "saturated_fat_g": 7.2,
+    "cholesterol_mg": 1.6,
+    "calcium_mg": 24.0,
+    "magnesium_mg": 8.2,
+    "phosphorus_mg": 15.0,
+    "potassium_mg": 110.0,
+    "sodium_mg": 2000.0
+  },
+  "cfs_version_comparison_clarification": {
+    "version_A_local_excel": "本地 CFS NIIS Excel (Nutrient_profiles_FRL.xlsx, Sheet: Eng, Row: 86): 能量 470 kcal/100g, 蛋白质 1.7g, 脂肪 50.0g, 碳水化合物 5.2g, 钠 2000mg。",
+    "version_B_old_public_report": "香港食物安全中心早期公开研究报告 (https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_01_nvic.html): 姜蓉标定能量为 480 kcal/100g, 蛋白质 1.7g, 脂肪 50g, 碳水化合物 6.4g, 钠 1900mg。",
+    "clarification_rule": "根据做事的原则与P09整改要求，明确记录上述两个版本的客观差异（470 kcal vs 480 kcal，碳水 5.2g vs 6.4g），绝不混作同一条数据。本地核验严格以当前本地附件 Row 86 (470 kcal) 为准。"
+  },
+  "p09_correction_note": "P09专项核验整改闭环：此前草案误标行号为 Row 88（实际 Row 88 为花生油 Peanut oil，900 kcal/100g）；现依据原始表格彻底纠正为 Row 86。尽管当前西一食堂白切鸡饭基准配方采用烧味豉油浇汁（Row 85），但因 P09 专项核验及 CFS 烧味辅料比对涉及姜蓉证据，特此提供完全纠偏后的正式凭证归档备查。"
+}

@@ -1,0 +1,143 @@
+{
+  "kind": "Recomputed existing author samples and response file hashes; no performance rerun",
+  "rows": [
+    {
+      "group": "DIAG",
+      "algorithm": "branchAndBound",
+      "medianMs": 3.812,
+      "minMs": 3.141,
+      "maxMs": 5.258,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "greedy",
+      "medianMs": 0.668,
+      "minMs": 0.549,
+      "maxMs": 0.789,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "dp",
+      "medianMs": 10.628,
+      "minMs": 7.299,
+      "maxMs": 12.615,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "branchAndBound",
+      "medianMs": 5.659,
+      "minMs": 5.128,
+      "maxMs": 9.063,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "greedy",
+      "medianMs": 6.737,
+      "minMs": 6.041,
+      "maxMs": 8.795,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "dp",
+      "medianMs": 9.072,
+      "minMs": 7.963,
+      "maxMs": 16.022,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "branchAndBound",
+      "medianMs": 8.625,
+      "minMs": 7.116,
+      "maxMs": 12.486,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "greedy",
+      "medianMs": 15.275,
+      "minMs": 13.421,
+      "maxMs": 19.567,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "dp",
+      "medianMs": 23455.864,
+      "minMs": 22000.157,
+      "maxMs": 24404.29,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "branchAndBound",
+      "medianMs": 265.056,
+      "minMs": 259.718,
+      "maxMs": 282.535,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "greedy",
+      "medianMs": 24.682,
+      "minMs": 23.943,
+      "maxMs": 25.311,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "dp",
+      "medianMs": 999.83,
+      "minMs": 973.029,
+      "maxMs": 1377.503,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "branchAndBound",
+      "medianMs": 1135.304,
+      "minMs": 1113.996,
+      "maxMs": 1523.986,
+      "sampleCount": 5,
+      "reportedMedianMatches": true,
+      "responseHashMatches": true
+    }
+  ],
+  "memorySummary": {
+    "initialPages": 2,
+    "maxPages": 505,
+    "finalPages": 505,
+    "bytesMax": 33095680,
+    "targetThresholdPages": 768,
+    "withinTarget": true
+  }
+}

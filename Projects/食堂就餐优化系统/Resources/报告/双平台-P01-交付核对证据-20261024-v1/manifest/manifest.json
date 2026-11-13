@@ -1,0 +1,593 @@
+{
+  "generatedAt": "2026-10-24T07:07:38.288Z",
+  "projectRoot": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统",
+  "candidate": {
+    "sourceTreeDigest": "sha256:29deba8f66e85207e7d0fdd87cdf18250b6d5acdfb2853ac42d34b3c86a78d8b",
+    "sourceFileCount": 75,
+    "sourceBytes": 882086,
+    "toolFileCount": 38,
+    "toolBytes": 447791
+  },
+  "frozenWasm": {
+    "relPath": "miniprogram/src/assets/wasm/mp_core.wasm",
+    "bytes": 107472,
+    "sha256": "B53C7405A643E8409071ED76D3CB4CCBDF1A37E6E5C408CE1D4A373D4CC00744",
+    "observed": {
+      "relPath": "miniprogram/src/assets/wasm/mp_core.wasm",
+      "bytes": 107472,
+      "sha256": "b53c7405a643e8409071ed76d3cb4ccbdf1a37e6e5c408ce1d4a373d4cc00744"
+    },
+    "matchesFrozen": true
+  },
+  "files": {
+    "miniprogramSrc": [
+      {
+        "relPath": "miniprogram/src/app.json",
+        "bytes": 540,
+        "sha256": "52dc32c61ea57019676b65de48bdf05c95a0a93cbef03eaa24d9c4ceb4310f58"
+      },
+      {
+        "relPath": "miniprogram/src/app.ts",
+        "bytes": 1634,
+        "sha256": "4a657c1bc136546504351b482be15d0b57e929717ac462cc5b8e34b8fc3ba0fc"
+      },
+      {
+        "relPath": "miniprogram/src/app.wxss",
+        "bytes": 12820,
+        "sha256": "17707a4ad9604b2f6e1e6acaca1b58904c815d6e137f861151e7fb4625b8e4b0"
+      },
+      {
+        "relPath": "miniprogram/src/assets/wasm/mp_core.wasm",
+        "bytes": 107472,
+        "sha256": "b53c7405a643e8409071ed76d3cb4ccbdf1a37e6e5c408ce1d4a373d4cc00744"
+      },
+      {
+        "relPath": "miniprogram/src/config/nutrition-config.ts",
+        "bytes": 3360,
+        "sha256": "5bf64711e04343398b6e302de11dbc7c65f831ee7da42cce7a953fcda6efdf15"
+      },
+      {
+        "relPath": "miniprogram/src/config/simulated-menu.ts",
+        "bytes": 3951,
+        "sha256": "b9833f75fa2fc752157cb5ab8a7c384bb4a0df9441a229fb48623863635846f9"
+      },
+      {
+        "relPath": "miniprogram/src/config/west1-menu.ts",
+        "bytes": 37814,
+        "sha256": "2550bdcfe2f075c65e6eaa73d3518febfb595d88d4e2b2e63df48be52f6fa26e"
+      },
+      {
+        "relPath": "miniprogram/src/domain/app-state.ts",
+        "bytes": 13380,
+        "sha256": "8e4745aa53f3348cbe435470f2e52f310cf879f71c73b0e89da8f75eaf9da26c"
+      },
+      {
+        "relPath": "miniprogram/src/domain/backup.ts",
+        "bytes": 11402,
+        "sha256": "72f8b4f943d06bbfbf4bd41ce5c00a61e75bf1dd296ab059ea1134f61279cb60"
+      },
+      {
+        "relPath": "miniprogram/src/domain/logs.ts",
+        "bytes": 19251,
+        "sha256": "255e80394397c587d84e332e302d4e90ad69614cff58d53098474bb24f69c8e3"
+      },
+      {
+        "relPath": "miniprogram/src/domain/menu.ts",
+        "bytes": 12698,
+        "sha256": "1dfcbd46f9bf61e9e27032f116864e17965c323139d6540e7df6e95684001f1e"
+      },
+      {
+        "relPath": "miniprogram/src/domain/plan.ts",
+        "bytes": 41123,
+        "sha256": "09c800f6e69b82cbdd607d129cf53695dcf6dceb102c2cbfa731cfded9e7c7af"
+      },
+      {
+        "relPath": "miniprogram/src/domain/profile.ts",
+        "bytes": 17388,
+        "sha256": "12aae185e20ea124d53e0f0d83b5cb1f1a0954dc7d2042f0c4b023566e71815e"
+      },
+      {
+        "relPath": "miniprogram/src/domain/self-pick.ts",
+        "bytes": 32161,
+        "sha256": "f198c6885fdd648bb0c5322a1f3f87a2763514f0b366b009084369df192d5f83"
+      },
+      {
+        "relPath": "miniprogram/src/domain/store.ts",
+        "bytes": 103608,
+        "sha256": "3629cbcd759f8ab34ec7600f964422c2c22b41e19b704e2c8cb7de7523a2e29c"
+      },
+      {
+        "relPath": "miniprogram/src/domain/types.ts",
+        "bytes": 20334,
+        "sha256": "c503bdd88875fbdef1220c2d85be3f1c774bc3dac5217c9237bd9331e406de70"
+      },
+      {
+        "relPath": "miniprogram/src/mock/simulated-inputs.ts",
+        "bytes": 32940,
+        "sha256": "a3d956b72f37ebc867ba32668c30b0c756e3c81c44aa28c26844298a36e3262b"
+      },
+      {
+        "relPath": "miniprogram/src/pages/appearance/index.json",
+        "bytes": 49,
+        "sha256": "b142c4702d411c4a63066c5ed1bb81eb39f14d470c8e79233378fe7a0d4cb2b9"
+      },
+      {
+        "relPath": "miniprogram/src/pages/appearance/index.ts",
+        "bytes": 3413,
+        "sha256": "5ab38bd7f487e8c0f71dbf09a13b3b7e897a1a4118efb3f0da6efc717ba170c7"
+      },
+      {
+        "relPath": "miniprogram/src/pages/appearance/index.wxml",
+        "bytes": 2062,
+        "sha256": "4737fad87ebfc75fd5182c021c7232f228be90c195d640c77f82375d68ed21ad"
+      },
+      {
+        "relPath": "miniprogram/src/pages/appearance/index.wxss",
+        "bytes": 1625,
+        "sha256": "c4173e5e9417a62c39c9eaa0f7600a377d31cf45f5fcfc8fad89568050f57035"
+      },
+      {
+        "relPath": "miniprogram/src/pages/budget/index.json",
+        "bytes": 49,
+        "sha256": "8bc17af5193ce31b06de8fa3aee5a6243e3bde27731a21d45f95e700e34e1f46"
+      },
+      {
+        "relPath": "miniprogram/src/pages/budget/index.ts",
+        "bytes": 9570,
+        "sha256": "96bbbf726647e72fdb61b843f21a973a1e90629c9e9bfdce8a9ad8830db84687"
+      },
+      {
+        "relPath": "miniprogram/src/pages/budget/index.wxml",
+        "bytes": 4104,
+        "sha256": "8f472de7fba9982b3bac0722a8c66f286f9a7659eeaa080030a0f95247b3265c"
+      },
+      {
+        "relPath": "miniprogram/src/pages/budget/index.wxss",
+        "bytes": 753,
+        "sha256": "1f18eccf03c939b3123fbe3356e92c20ee6584aff38b2e9840bb5cc0edeb3137"
+      },
+      {
+        "relPath": "miniprogram/src/pages/data/index.json",
+        "bytes": 46,
+        "sha256": "0279e22801f6e8b1021550aa9bbb5c6aa45e0301ce57aa542f07d8a29b155856"
+      },
+      {
+        "relPath": "miniprogram/src/pages/data/index.ts",
+        "bytes": 4069,
+        "sha256": "072981a707040280b232d6915990a1df3c0f6fa35553e1555cf694b7a24a52e1"
+      },
+      {
+        "relPath": "miniprogram/src/pages/data/index.wxml",
+        "bytes": 3101,
+        "sha256": "2b06b25282cf861763bd25ccedb31ebf1f4779c72f688aea0dbe4a8f90400558"
+      },
+      {
+        "relPath": "miniprogram/src/pages/data/index.wxss",
+        "bytes": 1020,
+        "sha256": "615ca37f8394a22ce5720e6739a526a1cec5ec02c4aaee9e2b2f4e4094ca2e6d"
+      },
+      {
+        "relPath": "miniprogram/src/pages/dev/index.json",
+        "bytes": 63,
+        "sha256": "d9c5e9249d71bbe539aacf79ce9e57b54f8ed6b5ce71a2e21f99e6495bfbfce1"
+      },
+      {
+        "relPath": "miniprogram/src/pages/dev/index.ts",
+        "bytes": 17985,
+        "sha256": "e5e8c0f08ecea96908cce897fba9e2f515598ff0cdd29fb1a3f6c6bc80007084"
+      },
+      {
+        "relPath": "miniprogram/src/pages/dev/index.wxml",
+        "bytes": 7926,
+        "sha256": "d55f92202e3494de6519045fa9caf5e78ee4f90734b4c82d928a2471c162eff1"
+      },
+      {
+        "relPath": "miniprogram/src/pages/dev/index.wxss",
+        "bytes": 666,
+        "sha256": "ad5fc5757450496601105b7cde6f7b63b170ec78ca9ca767180e113825347a84"
+      },
+      {
+        "relPath": "miniprogram/src/pages/home/index.json",
+        "bytes": 47,
+        "sha256": "d9cc84ea68d93f95683884eebbf680dab6d3ed56d511a00d060c6b944a4b4657"
+      },
+      {
+        "relPath": "miniprogram/src/pages/home/index.ts",
+        "bytes": 32926,
+        "sha256": "2e110b877c90db23245af4150d5e939349bd88dbab3cc36d27f0aff9b360e359"
+      },
+      {
+        "relPath": "miniprogram/src/pages/home/index.wxml",
+        "bytes": 17895,
+        "sha256": "beae3025c7ce2cdf3d1f00bbf8a941b3efd5b78ba34d292f13e6299cefdac763"
+      },
+      {
+        "relPath": "miniprogram/src/pages/home/index.wxss",
+        "bytes": 10697,
+        "sha256": "8bf9d4240d9ffdf3ed132b538ffc9658147b6a6386a3a2e77650d35e83bfda48"
+      },
+      {
+        "relPath": "miniprogram/src/pages/index/index.json",
+        "bytes": 63,
+        "sha256": "c7a1f037a562e83ca904dbb57f33ab4b55e18f3175ad30e04987743a3d5ac9a9"
+      },
+      {
+        "relPath": "miniprogram/src/pages/index/index.ts",
+        "bytes": 17289,
+        "sha256": "f431a8613f3a6b709679bbe49d3b8ec760b156da923ffe89c8a9d85793e089ce"
+      },
+      {
+        "relPath": "miniprogram/src/pages/index/index.wxml",
+        "bytes": 7309,
+        "sha256": "ff09b45a179fd735084c63bdc51645dd539eae3540f93017887d181b29359516"
+      },
+      {
+        "relPath": "miniprogram/src/pages/index/index.wxss",
+        "bytes": 3146,
+        "sha256": "be498dca52d94f4e6fc2767dd9fb83cf86c76af1ad52d52868c40289a03eb2b1"
+      },
+      {
+        "relPath": "miniprogram/src/pages/logs/index.json",
+        "bytes": 57,
+        "sha256": "52ad6e9db7960df688d9912e0dc60773bcaf2912c4144c982ecf856a1d8b1122"
+      },
+      {
+        "relPath": "miniprogram/src/pages/logs/index.ts",
+        "bytes": 42151,
+        "sha256": "768a6013960a4e4ce21195991771b9232e8ad146c6b4340de95abd86d7072cb9"
+      },
+      {
+        "relPath": "miniprogram/src/pages/logs/index.wxml",
+        "bytes": 20798,
+        "sha256": "3a44a1074c325cfb8cb135c9dae30fcc18b57ff19258ace97cb25b4e04cfce56"
+      },
+      {
+        "relPath": "miniprogram/src/pages/logs/index.wxss",
+        "bytes": 5937,
+        "sha256": "d15a9ae75786c43fc99a931c81a159f9b053edd2af608f34f4f4f17d35a93f86"
+      },
+      {
+        "relPath": "miniprogram/src/pages/menu/index.json",
+        "bytes": 66,
+        "sha256": "6296dbe03cc19d9281dec9c4629cbb5cfc34b8ad21cb8291acea3ff1cf6e487d"
+      },
+      {
+        "relPath": "miniprogram/src/pages/menu/index.ts",
+        "bytes": 23370,
+        "sha256": "7f1e261652dce9a0b402cc2edcba4d78c7159a137f9baea4b3c0874d9f3eb334"
+      },
+      {
+        "relPath": "miniprogram/src/pages/menu/index.wxml",
+        "bytes": 14739,
+        "sha256": "991ea0227c090c3a4fe8eacdebe6b8fe421bb3c05edbe9b107ad871cf21a69e7"
+      },
+      {
+        "relPath": "miniprogram/src/pages/menu/index.wxss",
+        "bytes": 2038,
+        "sha256": "f0a91bded2ec14621b807c07c5bd3f7a6724c3376fb925f40206514975eea443"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile-edit/index.json",
+        "bytes": 46,
+        "sha256": "97acdbd978e89e0f0dc0b67880d4423dab8c8962cdf03a6a93214cee134ef20c"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile-edit/index.ts",
+        "bytes": 28106,
+        "sha256": "64c6a120d0555c743ce593146445e21df31c3400f6bc03e529c2ebb634ec926e"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile-edit/index.wxml",
+        "bytes": 11048,
+        "sha256": "c8e73971dad2bfd0bd191a81b4e53951c557aaf59e7ca65e866523137e96de36"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile-edit/index.wxss",
+        "bytes": 1213,
+        "sha256": "1574e9e49ecece97f3c4f439d3ecfc6fb8cea1a95237db4919d986ebefcaf4e5"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile/index.json",
+        "bytes": 40,
+        "sha256": "14adf966498decbb9d25f9990e548c8d441bca57d19405c0fe601567b74d0fb8"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile/index.ts",
+        "bytes": 12092,
+        "sha256": "c7170a4be74c2e8020db54a2806da1358801dc543fb641ecdf306c20c48f704e"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile/index.wxml",
+        "bytes": 5323,
+        "sha256": "3dd2b9b61f1bfd0b0e8d2dfc241c9786f3c6fb69d6987cf5ded10d866aeebb4b"
+      },
+      {
+        "relPath": "miniprogram/src/pages/profile/index.wxss",
+        "bytes": 2728,
+        "sha256": "b0755846f807d13d74ac4788a350a463d1fa4a1a8dc57e37502a87d2bdcd5011"
+      },
+      {
+        "relPath": "miniprogram/src/pages/self-pick/index.json",
+        "bytes": 46,
+        "sha256": "0e34060671213e1a47ad9346262ea789e8fe7458a69e9f2e474721cb5cce2436"
+      },
+      {
+        "relPath": "miniprogram/src/pages/self-pick/index.ts",
+        "bytes": 18052,
+        "sha256": "6eb660c6a7576f8f995125f641f2fa5b78172a65dfe24126eb8db0deecf09196"
+      },
+      {
+        "relPath": "miniprogram/src/pages/self-pick/index.wxml",
+        "bytes": 7835,
+        "sha256": "93a41ff97183fb9d58acedee88f492ae331448c66666981eb8ba0afe268e43a8"
+      },
+      {
+        "relPath": "miniprogram/src/pages/self-pick/index.wxss",
+        "bytes": 4668,
+        "sha256": "b2b656380d344d98c9e99f2d31e358e1d0985f2aa264da867386068994f6b2b9"
+      },
+      {
+        "relPath": "miniprogram/src/sitemap.json",
+        "bytes": 123,
+        "sha256": "bddb8a12b81fba10f6e436783c7b6dbf563ba25b89f2965c712d070a5141cdbe"
+      },
+      {
+        "relPath": "miniprogram/src/types.d.ts",
+        "bytes": 329,
+        "sha256": "e5d16afa1aab06a57cbf4fce5514ceb10acb69d2f970582d1f84222b1a1a30d3"
+      },
+      {
+        "relPath": "miniprogram/src/utils/appearance.ts",
+        "bytes": 11504,
+        "sha256": "36088e6a38ca7b2d9d45c9876249aae712a7a1ae74561f3c23ba1a4a5f987c97"
+      },
+      {
+        "relPath": "miniprogram/src/utils/calendar.ts",
+        "bytes": 5422,
+        "sha256": "11f9206a6b590d804fbf6673bcf73764169a89db25b6afd9b6b14b9772c2a3ab"
+      },
+      {
+        "relPath": "miniprogram/src/utils/canonical-json.ts",
+        "bytes": 3108,
+        "sha256": "c3446eed4da6612e9403cc2a1b9883ef78893e00a806d521839f21b338e862a4"
+      },
+      {
+        "relPath": "miniprogram/src/utils/capability.ts",
+        "bytes": 1195,
+        "sha256": "ffbd1ae6f06df38cdcdfe42fc541bc4cf8a1644343e732e990d7487eea9f8f31"
+      },
+      {
+        "relPath": "miniprogram/src/utils/core-bridge.ts",
+        "bytes": 11645,
+        "sha256": "f5eb667c99fa395ae56d0d5c02088c7fac8197fb13e55a1ce29ce9450d9a28ac"
+      },
+      {
+        "relPath": "miniprogram/src/utils/core-runtime.ts",
+        "bytes": 3202,
+        "sha256": "12eece8dbcef9496efdf655756baf6513122cf8b49d3ac295f569c864a238669"
+      },
+      {
+        "relPath": "miniprogram/src/utils/display-mode.ts",
+        "bytes": 4156,
+        "sha256": "79915fcfeed2c4b80ddd41fd07485be490103fa06e9f2bdb0fb7b1104bcdefd4"
+      },
+      {
+        "relPath": "miniprogram/src/utils/money-display.ts",
+        "bytes": 2316,
+        "sha256": "cffd86357e62f1b2ba9a47b0f3a9f935cb60e82e3bdadea293aac2e4d22d4b2d"
+      },
+      {
+        "relPath": "miniprogram/src/utils/nutrition-display.ts",
+        "bytes": 9797,
+        "sha256": "04f5b24605e06e28aa86e34d7a55e2f1a86769c7b1697a96ff054af40fcb3ae4"
+      },
+      {
+        "relPath": "miniprogram/src/utils/sha256.ts",
+        "bytes": 4825,
+        "sha256": "afe88530d05bb2a26089fd6c1f5414b1e68cdd2fdb3ade0b0859ee6057e6c8c0"
+      },
+      {
+        "relPath": "miniprogram/src/utils/tabbar.ts",
+        "bytes": 1788,
+        "sha256": "3fc80c3172dc358809acfb7869cc7ef6c3668734b12d8d1453fb16c4fb8ec156"
+      },
+      {
+        "relPath": "miniprogram/src/utils/wx-runtime.ts",
+        "bytes": 4574,
+        "sha256": "b68234b80adbf4ec88bb47ed255414e8404f8f8d266c371be0792af5dde7b1fb"
+      }
+    ],
+    "toolsMiniprogram": [
+      {
+        "relPath": "tools/miniprogram/candidate-manifest.mjs",
+        "bytes": 4174,
+        "sha256": "851f78273587d7c7239b12d2e5a9f94d12931b50ab42468d5663410d83370338"
+      },
+      {
+        "relPath": "tools/miniprogram/capture-window.ps1",
+        "bytes": 3475,
+        "sha256": "fee8de977bbf4ef2c276f26f81e7023da38da21b356a8b96d34329170d7cd342"
+      },
+      {
+        "relPath": "tools/miniprogram/check-pages.mjs",
+        "bytes": 6326,
+        "sha256": "5e639b29567918cd70f147abb836ef3745bc544e6558cafd954d46497c48f223"
+      },
+      {
+        "relPath": "tools/miniprogram/copy-wasm.ps1",
+        "bytes": 1863,
+        "sha256": "c3466ed8ce3e74a697423466bab8b13b497045009a768960e0ce080533011d3d"
+      },
+      {
+        "relPath": "tools/miniprogram/count-comments.mjs",
+        "bytes": 3318,
+        "sha256": "16ea9d508b3eb01d8f3a4de4d6aae1be23ea2d9b896a6a89bb4e5babacae45cd"
+      },
+      {
+        "relPath": "tools/miniprogram/demo-storage-trace.mjs",
+        "bytes": 14353,
+        "sha256": "b9400620975823f2696e060c60dc328a79e1189204282e978b8fbdc6202b0cf3"
+      },
+      {
+        "relPath": "tools/miniprogram/gen-sim-inputs.mjs",
+        "bytes": 5711,
+        "sha256": "68aabb8c9b1f27483c487152256d13d1d91fca284c1b7253312896c80f1d96f5"
+      },
+      {
+        "relPath": "tools/miniprogram/list-windows.ps1",
+        "bytes": 2678,
+        "sha256": "03a0e689a8da3f1a311757588114aed93772ea518c9840954f8d8788f508bd56"
+      },
+      {
+        "relPath": "tools/miniprogram/make-choosefile-fixtures.mjs",
+        "bytes": 4359,
+        "sha256": "7ffb750302c08ae972f610c1fb28d14e903f6ee719a5d1b57d59dec90a557aa4"
+      },
+      {
+        "relPath": "tools/miniprogram/make-longname-menu.mjs",
+        "bytes": 5113,
+        "sha256": "8bfe14f5c7a77a5653017fbcee53eb2ba95e563915870af3e6b4525b94848dc6"
+      },
+      {
+        "relPath": "tools/miniprogram/make-u03-history-backup.mjs",
+        "bytes": 6552,
+        "sha256": "c363ce00b28b5b0a161b44525d0274c78fcbce6944777bb7ae5da26e16d93891"
+      },
+      {
+        "relPath": "tools/miniprogram/measure-t05.mjs",
+        "bytes": 15574,
+        "sha256": "07e7f896e834b764a178bc7935bee60bf0f0b9b2aaeb6d8c5ff5fda309ce94c7"
+      },
+      {
+        "relPath": "tools/miniprogram/probe-core-api.mjs",
+        "bytes": 4165,
+        "sha256": "686d98eb0f85ef9c911fbe02b7ce2f67ab2f28af8a97467b784dd227cfd76354"
+      },
+      {
+        "relPath": "tools/miniprogram/probe-t05-soldout-scope.mjs",
+        "bytes": 6227,
+        "sha256": "62f177bb3e7d9b504ad9a40fdf69d04ffe9564ad7f7f8e8c0936133c306e23dc"
+      },
+      {
+        "relPath": "tools/miniprogram/probe-wasm-real.mjs",
+        "bytes": 3306,
+        "sha256": "ba8949d6b2b21f7378a8f9998e81977330d82437e7951706156bc415528d8f26"
+      },
+      {
+        "relPath": "tools/miniprogram/register-ts.mjs",
+        "bytes": 2406,
+        "sha256": "827aa7540a123de687d7fdf9ee5d9c7763f565f17d0786d13552281f2feab05e"
+      },
+      {
+        "relPath": "tools/miniprogram/run-choosefile-evidence.ps1",
+        "bytes": 19942,
+        "sha256": "d11966c68060cc13a9f7e264b485ec0698be9533d440e8549f91cbfbea7b8d5a"
+      },
+      {
+        "relPath": "tools/miniprogram/run-t05-all.mjs",
+        "bytes": 3111,
+        "sha256": "edb2ec40e751862428ab04b8642ceba106cfe03b24543f600006cbfae82179d0"
+      },
+      {
+        "relPath": "tools/miniprogram/select-file-dialog.ps1",
+        "bytes": 7777,
+        "sha256": "817cbe5490187cb3561d61091f919eb800279f005cbb7141909e75f6e891151b"
+      },
+      {
+        "relPath": "tools/miniprogram/t05-simulated-multi-window-menu.mjs",
+        "bytes": 5094,
+        "sha256": "26dcc567705f5d0d9c86f4554d46fe0c55edc65b8fe423c4da443511e22c7ada"
+      },
+      {
+        "relPath": "tools/miniprogram/t05-test-helpers.mjs",
+        "bytes": 11183,
+        "sha256": "538eba2690f97f11811321ec3ee328b97bf152e80763cbe2f7f28fc4903080fc"
+      },
+      {
+        "relPath": "tools/miniprogram/test-appearance.mjs",
+        "bytes": 8520,
+        "sha256": "43977e3f8aec4e489f4dce99abda3a2831889ac4b3f5e5409b701a5782ef0a6c"
+      },
+      {
+        "relPath": "tools/miniprogram/test-calendar.mjs",
+        "bytes": 7114,
+        "sha256": "ee19164fd6473a91602db30f9a038690795de489a47355cd87eb4d746e70b4ad"
+      },
+      {
+        "relPath": "tools/miniprogram/test-core-bridge.mjs",
+        "bytes": 10120,
+        "sha256": "4fdfe0813d626f1123ec5f9998693cbced8e26a6e0525d0b6c767d54d837777b"
+      },
+      {
+        "relPath": "tools/miniprogram/test-home-view.mjs",
+        "bytes": 16621,
+        "sha256": "bc77bb94c56f9f406e807f169f9846bf188e4d58c7bd46697839e8e487acd9fa"
+      },
+      {
+        "relPath": "tools/miniprogram/test-logs-page.mjs",
+        "bytes": 21226,
+        "sha256": "965f203f7b28f30ec3c82677a77b0bd86382a7acfa5dcd446718d8d63591cb53"
+      },
+      {
+        "relPath": "tools/miniprogram/test-month-summary.mjs",
+        "bytes": 9591,
+        "sha256": "6dd06c8b7fea2b18712d859e40ab6f876cccd2d9dbe9fba259962a8a0126e75a"
+      },
+      {
+        "relPath": "tools/miniprogram/test-self-pick.mjs",
+        "bytes": 38985,
+        "sha256": "99a557849ee6cfdb20ae13be0a0ed73065045e4e267dda030aeae3c61decedc2"
+      },
+      {
+        "relPath": "tools/miniprogram/test-storage-snapshot.mjs",
+        "bytes": 6291,
+        "sha256": "756bcf4076112fb2efbddbfc3b4171b7ceeda02e5c38fa7f3bbffaac1d5edb3a"
+      },
+      {
+        "relPath": "tools/miniprogram/test-t05-modules.mjs",
+        "bytes": 14509,
+        "sha256": "6a178879f5b5542d95ba9d70fa700c2a4b9f09c65506ba99728ae44be1bd424f"
+      },
+      {
+        "relPath": "tools/miniprogram/test-t05-soldout-scope.mjs",
+        "bytes": 43166,
+        "sha256": "c99381e45e67f623cddc276d066ea14ae50ad535650fc4342e885d61a0c50d62"
+      },
+      {
+        "relPath": "tools/miniprogram/test-t05-store.mjs",
+        "bytes": 70763,
+        "sha256": "c28941e155434220f100993260f489bf8f29093953a1ab06e3b5e1aed33992bf"
+      },
+      {
+        "relPath": "tools/miniprogram/test-today-display.mjs",
+        "bytes": 9420,
+        "sha256": "24197ebc12f44ad258725235013aeff541d601849e01cda52ca10f3a81030a56"
+      },
+      {
+        "relPath": "tools/miniprogram/typecheck-src.mjs",
+        "bytes": 2937,
+        "sha256": "fd0dc7005f2e3af78bcebe8e955affa5cd71939fbc1b29fbdc585c3e2ce1587a"
+      },
+      {
+        "relPath": "tools/miniprogram/verify-t05-integration.mjs",
+        "bytes": 22079,
+        "sha256": "0792e3b3113652b39db4e0a4615f9f3f48f6bf4377c368ad3cfbf44e7c9ae2ce"
+      },
+      {
+        "relPath": "tools/miniprogram/verify-v2-integration.mjs",
+        "bytes": 9389,
+        "sha256": "48de92548b1fad1fedea7c66d6106a872e6b53c746e5a47a351ba56cd83efa2b"
+      },
+      {
+        "relPath": "tools/miniprogram/wechatide-simulator-evidence.ps1",
+        "bytes": 11563,
+        "sha256": "a96144de5f41505226529afb0443ab563f0d75e445e7794d486468acad9d0685"
+      },
+      {
+        "relPath": "tools/miniprogram/wxide.ps1",
+        "bytes": 8790,
+        "sha256": "16aa57b2497d5914cbf50f97b2db33a8a84ad9449bf144a349a4f351459de2d3"
+      }
+    ]
+  }
+}

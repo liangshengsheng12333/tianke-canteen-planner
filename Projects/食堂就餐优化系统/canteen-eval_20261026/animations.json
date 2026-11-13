@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "defaults": {
+    "transition": {
+      "effect": "fade",
+      "duration": 0.5,
+      "sound": null
+    },
+    "animation": {
+      "effect": "entrance_fade",
+      "duration": 0.4,
+      "stagger": 0.3,
+      "trigger": "after-previous"
+    }
+  },
+  "slides": {
+    "P01": {
+      "transition": {
+        "effect": "fade",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "cover_title_block": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "cover_feature_pills": {
+          "effect": "entrance_fly",
+          "duration": 0.4,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "cover_highlights_block": {
+          "effect": "entrance_float",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "cover_meta_panel": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P02": {
+      "transition": {
+        "effect": "push",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p02": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "col_pain_points_p02": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "col_data_scenario_p02": {
+          "effect": "entrance_zoom",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P03": {
+      "transition": {
+        "effect": "push",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p03": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "left_arch_diagram_p03": {
+          "effect": "entrance_zoom",
+          "duration": 0.6,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "right_arch_cards_p03": {
+          "effect": "entrance_float",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P04": {
+      "transition": {
+        "effect": "wipe",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p04": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "left_loop_diagram_p04": {
+          "effect": "entrance_zoom",
+          "duration": 0.6,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "right_loop_steps_p04": {
+          "effect": "entrance_fade",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P05": {
+      "transition": {
+        "effect": "zoom",
+        "duration": 0.6
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p05": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "left_algo_diagram_p05": {
+          "effect": "entrance_zoom",
+          "duration": 0.6,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "right_dof_analysis_p05": {
+          "effect": "entrance_float",
+          "duration": 0.6,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P06": {
+      "transition": {
+        "effect": "push",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p06": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "left_kpi_column_p06": {
+          "effect": "entrance_zoom",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "right_data_column_p06": {
+          "effect": "entrance_fade",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P07": {
+      "transition": {
+        "effect": "fade",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p07": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "left_facts_column_p07": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "right_qa_column_p07": {
+          "effect": "entrance_float",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P08": {
+      "transition": {
+        "effect": "split",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p08": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "mockup_grid_p08": {
+          "effect": "entrance_zoom",
+          "duration": 0.6,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "bottom_scope_panels_p08": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    },
+    "P09": {
+      "transition": {
+        "effect": "fade",
+        "duration": 0.5
+      },
+      "animation": {
+        "effect": "entrance_fade",
+        "duration": 0.4,
+        "stagger": 0.2,
+        "trigger": "after-previous"
+      },
+      "groups": {
+        "header_p09": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "trigger": "after-previous"
+        },
+        "four_pillars_grid_p09": {
+          "effect": "entrance_float",
+          "duration": 0.5,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        },
+        "closing_presenter_block_p09": {
+          "effect": "entrance_fade",
+          "duration": 0.4,
+          "delay": 0.1,
+          "trigger": "after-previous"
+        }
+      }
+    }
+  }
+}

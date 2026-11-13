@@ -1,0 +1,38 @@
+{
+  "food_name": "青瓜(連皮) / 生黄瓜片 (Cucumber with skin)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "Fruits and fruit products / Vegetables and vegetable products (Row 740)",
+  "sheet_name": "Eng",
+  "official_row_index": 740,
+  "original_file": "Nutrient_profiles_FRL.xlsx (Row 740)",
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 生鲜",
+  "nutrients_per_100g": {
+    "energy_kcal": 12.0,
+    "protein_g": 0.7,
+    "fat_g": 0.0,
+    "carbohydrate_g": 1.8,
+    "dietary_fibre_g": 0.7,
+    "sodium_mg": 2.0
+  },
+  "canteen_portion_assumption": {
+    "hainan_jifan_25g": {
+      "weight_g": 25.0,
+      "energy_kcal": 3.0,
+      "protein_g": 0.175,
+      "fat_g": 0.0,
+      "carbohydrate_g": 0.45,
+      "sodium_mg": 0.5
+    },
+    "taishi_doufu_fan_20g": {
+      "weight_g": 20.0,
+      "energy_kcal": 2.4,
+      "protein_g": 0.14,
+      "fat_g": 0.0,
+      "carbohydrate_g": 0.36,
+      "sodium_mg": 0.4
+    }
+  }
+}

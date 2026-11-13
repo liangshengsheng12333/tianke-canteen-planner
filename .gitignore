@@ -1,0 +1,69 @@
+# ==============================================================================
+# Git Ignore Rules for Canteen Optimal Planning System (天科食客)
+# ==============================================================================
+
+# --- Toolchains & Environments ---
+.toolchain/
+.agents/
+.codex/
+.archify/
+_backup_*.zip
+
+# --- Build Outputs & Binaries ---
+build/
+**/build/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.idb
+*.ilk
+*.exp
+
+# --- Dependencies & Package Managers ---
+node_modules/
+**/node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Python Cache ---
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+project.private.config.json
+**/project.private.config.json
+
+# --- OS Specific Files ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# --- Large Test Evidence & Snapshots (Keep summary .md reports, ignore huge snapshots) ---
+**/Resources/报告/*-证据-*
+**/Resources/报告/*-证据*/
+**/Resources/报告/*快照*
+*.log
+*.tmp
+*.bak

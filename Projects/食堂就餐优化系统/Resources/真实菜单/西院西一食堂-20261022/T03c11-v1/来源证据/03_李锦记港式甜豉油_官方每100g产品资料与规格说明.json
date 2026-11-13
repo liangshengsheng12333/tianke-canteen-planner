@@ -1,0 +1,57 @@
+{
+  "product_name": "李锦记港式甜豉油 (Lee Kum Kee Sweet Soy Sauce)",
+  "producer": "李锦记 (Lee Kum Kee)",
+  "official_source_url": "https://shopuk.lkk.com/products/sweet-soy-sauce",
+  "packaging_volume_official": "207ml (官方网页展示规格)",
+  "reference_sku_in_draft": "410ml 瓶装 (国内市售规格)",
+  "sku_correspondence_statement": "本数据严格来源于可定位、可公开查验的李锦记官方欧洲单品网页(per 100g标示)。特别客观声明：该207ml包装与国内食堂实际采购之410ml市售SKU在配方细节、工艺或水份上尚未获得第三方权威证实为完全同款；但二者均为主打肠粉点心淋汁的Sweet Soy Sauce，核心原料均为水、白砂糖、大豆、小麦粉等酿造酱油配基，是当前唯一具有直接厂商营养标示依据且标示单位为每100g的公开来源。将207ml官方SKU替代国内410ml实际采购SKU明确保留为已知未知边界。",
+  "per_amount": "100g",
+  "access_date": "2026-10-23",
+  "official_nutrients_per_100g": {
+    "energy_kj": 889.0,
+    "energy_kcal": 209.0,
+    "protein_g": 5.3,
+    "fat_g_reported": "<0.5",
+    "fat_g_upper_bound": 0.5,
+    "carbohydrate_g": 47.0,
+    "sugars_g": 42.0,
+    "salt_g": 13.6,
+    "sodium_mg_calculated": 5350.8,
+    "sodium_mg_reported_approx": 5350.0
+  },
+  "energy_conversion_discrepancy_and_baseline_selection": {
+    "official_kj": 889.0,
+    "official_kcal_reported": 209.0,
+    "physical_conversion_kcal": 212.48,
+    "discrepancy_kcal": 3.48,
+    "baseline_selection_rule": "官方页面同时标注889 kJ与209 kcal，二者按物理换算889/4.184≈212.48 kcal存在3.48 kcal差异。本草案明确锁定以厂商直接公布的209 kcal列为计算基准，15g酱汁贡献31.35 kcal，避免跨单位二次换算引入额外假设。"
+  },
+  "single_portion_calculation_15g": {
+    "portion_weight_g": 15.0,
+    "multiplication_factor": 0.15,
+    "energy_kcal": 31.35,
+    "energy_kcal_if_kj_converted": 31.87,
+    "protein_g": 0.795,
+    "fat_g_bound": "<0.075",
+    "fat_g_center_assumption": 0.0,
+    "carbohydrate_g": 7.05,
+    "salt_g": 2.04,
+    "sodium_mg_calculated": 802.6
+  },
+  "fat_precision_and_contract_analysis": {
+    "official_label_constraint": "官方标示脂肪为'<0.5g/100g'，属于法规范畴内的微量脂肪上限标示，不代表实际脂肪已知或精确为0.00g。",
+    "portion_15g_fat_range": "15g酱汁的脂肪理论贡献区间为 [0.000g, 0.075g)。",
+    "impact_on_plain_changfen": "熟肠粉皮200g含2.200g脂肪（CFS检测基线）。加15g豉油后整份理论总脂肪为 [2.200g, 2.275g)。按系统契约round_half_up取整到分克(0.1g)：当酱汁脂肪在 [0.000g, 0.050g) 区间时，总脂肪为 [2.200g, 2.250g)，四舍五入为 22 dg (2.2g)；当酱汁脂肪在 [0.050g, 0.075g) 区间时，总脂肪为 [2.250g, 2.275g)，四舍五入为 23 dg (2.3g)。当前草案保留22 dg是采用下界/选定点估的建模假设（基于酿造豉油主要原料为水、糖、大豆、小麦粉且未添加外来油脂，微量天然油脂趋近于0），并非标签本身能唯一推导出的中心值。在此完整保留22–23 dg的不确定性区间。",
+    "impact_on_lean_pork_changfen": "熟粉皮2.200g + 猪瘦肉1.860g = 4.060g。加15g豉油后整份理论总脂肪为 [4.060g, 4.135g)。按系统契约round_half_up取整到分克(0.1g)：下界4.060g对应41 dg，上界4.135g对应41 dg（进位阈值为4.150g）。在整个酱汁脂肪不确定性区间内，取整分克值恒为 41 dg (4.1g)，数值完全闭环确定，与既有P09接受结论完全一致。"
+  },
+  "sensitivity_comparison_volume_vs_mass": {
+    "note": "若采用草案国内410ml且声称按每100ml标示，15g按密度1.15g/ml折算为13.04ml：",
+    "volume_13_04ml_nutrients": {
+      "energy_kcal": 27.26,
+      "protein_g": 0.691,
+      "fat_g": 0.0,
+      "carbohydrate_g": 6.13
+    },
+    "comparison_vs_15g_mass": "两套方案在原味肠粉能量上差异仅4.09 kcal (227 kcal vs 231 kcal)，蛋白质差0.1g，碳水差0.9g；本卡遵从P09指导，统一采用官方可定位的每100g单品资料，杜绝混用per100ml与per100g乘法的算术矛盾。"
+  }
+}

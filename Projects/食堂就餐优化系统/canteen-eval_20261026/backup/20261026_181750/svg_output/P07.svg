@@ -1,0 +1,69 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#F59E0B" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p07" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">测量边界与严谨声明：实事求是的工程态度</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">客观承认指标边界 · 严格区分 PC 与手机真机环境 · 恪守学术诚信与工程纪律</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">07 / 09</text>
+  </g>
+
+  <!-- Left Column: 三大核心事实与边界声明 -->
+  <g id="left_facts_column_p07" data-pptx-bounds="100 220 820 780">
+    <rect x="100" y="220" width="820" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <rect x="136" y="256" width="36" height="36" rx="8" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="154" y="281" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B" text-anchor="middle">⚠</text>
+    <text x="188" y="282" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">关键事实界限声明</text>
+
+    <!-- Boundary Item 1 -->
+    <rect x="136" y="320" width="748" height="180" rx="12" fill="#F4F4F5" />
+    <text x="168" y="360" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B">界限一 · 原 ≤50 ms 目标客观未达，但达可用性能</text>
+    <text x="168" y="400" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">新核心实测 PC 中位数为 71.00 ms（P01 复测 86.30 ms），虽相比旧核心<tspan x="168" dy="28">23.46 秒提升达 330 倍，但距项目立项时激进设定的 ≤50 ms 仍有差距。</tspan><tspan x="168" dy="28">团队坚持求真务实原则，明确记录为“未达标”，不伪称达标。</tspan></text>
+
+    <!-- Boundary Item 2 -->
+    <rect x="136" y="520" width="748" height="180" rx="12" fill="#F4F4F5" />
+    <text x="168" y="560" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB">界限二 · 数据均为 PC/Node 计时，不代表手机速度</text>
+    <text x="168" y="600" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">当前所有 71 ms 与 86 ms 测试数据均在 PC 宿主机 Node.js WASM 环境下测得；<tspan x="168" dy="28">不同物理手机的芯片算力、V8/JavaScriptCore 引擎机制均存在差异，</tspan><tspan x="168" dy="28">电脑端基准数据绝不作为或等同于真实真机运行耗时结论。</tspan></text>
+
+    <!-- Boundary Item 3 -->
+    <rect x="136" y="720" width="748" height="240" rx="12" fill="#2563EB" fill-opacity="0.06" stroke="#2563EB" stroke-width="1.5" />
+    <text x="168" y="764" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB">界限三 · 内存指标属于 WASM 线性内存观察</text>
+    <text x="168" y="804" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">报告中所陈述的 562 页（约 35 MB）峰值，系 WebAssembly 32位线性内存池<tspan x="168" dy="28">在 Node 宿主下的观测值，用于论证算法未触碰 768 页（48 MB）沙箱红线，</tspan><tspan x="168" dy="28">不等同于微信客户端 App 的整体物理内存驻留开销。</tspan><tspan x="168" dy="28">严密的技术口径是工科软件工程答辩的核心素养。</tspan></text>
+  </g>
+
+  <!-- Right Column: 常见答辩质疑与客观解答 -->
+  <g id="right_qa_column_p07" data-pptx-bounds="960 220 860 780">
+    <rect x="960" y="220" width="860" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <rect x="996" y="256" width="36" height="36" rx="8" fill="#10B981" fill-opacity="0.1" />
+    <text x="1014" y="281" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="1048" y="282" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">答辩常见质疑预研与客观解答</text>
+
+    <!-- QA Item 1 -->
+    <rect x="996" y="320" width="788" height="140" rx="12" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1026" y="356" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B">Q1: 三个算法会同时在后台运行并投票决策吗？</text>
+    <text x="1026" y="392" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">不会。系统遵循轻量化原则，由用户主动选择单一种算法执行单次规划，<tspan x="1026" dy="26">避免同时运行多套算法造成移动端不必要的电池与算力开销。</tspan></text>
+
+    <!-- QA Item 2 -->
+    <rect x="996" y="480" width="788" height="140" rx="12" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1026" y="516" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B">Q2: 贪心算法是否能够保证找到全局最优解？</text>
+    <text x="1026" y="552" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">不能。贪心属于启发式局部搜索，在极其严苛的营养配比约束下<tspan x="1026" dy="26">不保证数学意义上的全局最优解，其核心价值在于亚毫秒级的瞬间生成。</tspan></text>
+
+    <!-- QA Item 3 -->
+    <rect x="996" y="640" width="788" height="140" rx="12" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1026" y="676" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B">Q3: DP 状态限额是否等于总计算工作量？</text>
+    <text x="1026" y="712" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">不等于。单/双餐 20,000 与三餐 32 仅为保留上限，实际计算包括候选扩展、<tspan x="1026" dy="26">剪枝去重与桶化截断全过程，状态数不直接等同于总算力开销。</tspan></text>
+
+    <!-- QA Item 4 -->
+    <rect x="996" y="800" width="788" height="160" rx="12" fill="#10B981" fill-opacity="0.08" stroke="#10B981" stroke-width="1" />
+    <text x="1026" y="840" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#10B981">Q4: BnB 节点上限是否能严格保证物理执行时间？</text>
+    <text x="1026" y="876" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">不能。节点上限限制了搜索树的最大步数，但单步评估与最坏情况搜索分支<tspan x="1026" dy="26">仍取决于具体候选集分布；节点上限不等于绝对墙钟时间保证。</tspan></text>
+  </g>
+</svg>

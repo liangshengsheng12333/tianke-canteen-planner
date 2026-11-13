@@ -1,0 +1,118 @@
+[
+  {
+    "dishId": "dish-cpky-baiqieji-fan",
+    "name": "白切鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 493,
+      "proteinDg": 332,
+      "fatDg": 148,
+      "carbDg": 542
+    },
+    "nutritionBasis": {
+      "source": "中国疾控中心营养与健康所食物成分查询平台(蒸米饭编码01-2-401/条目287标定493kJ按国标4.184换算)、USDA FoodData Central SR Legacy NDB #05010 / FDC ID 171051 (熟带皮白切鸡肉)及香港特别行政区政府食物安全中心(CFS)《食物研究化验所营养资料档案(FRL)》Excel Eng sheet (燒味汁Row 85/白灼菜心Row 705)原料累加，并与CFS本地档案白切鸡饭整份化验(Row 533)对照验证",
+      "portionAssumption": "熟白米饭200g + 熟白切鸡肉(带皮切块可食部)110g + 烧味豉油浇汁15g + 白灼菜心35g(单份成品净重约360g)",
+      "estimated": true,
+      "note": "依据脆皮烤鸭窗口现场实拍(照片5，SHA256前16位b30bd028d3128bc1)盘装切块白切鸡配青菜米饭推导。米饭200g系依据立柱规格牌(照片11)小份200g之明确中心假设，非食堂实测出餐；米饭基准采用官方可定位的493 kJ/100g按国标4.184换算为117.83 kcal/100g，彻底消除116 kcal冲突；带皮切块熟鸡肉110g为典型去大骨后可食部明确假设，非后厨称重；烧味豉油汁15g、白灼菜心35g均为透明工艺假设。单份仅计一次米饭，不含无限续饭；非食堂化学送检化验值",
+      "ingredients": [
+        {
+          "name": "熟白米饭",
+          "portionG": 200.0,
+          "source": "中国疾控中心营养与健康所食物成分查询平台",
+          "foodCode": "01-2-401 (蒸米饭)",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+          "per100g": {
+            "energyKj": 493.0,
+            "energyKcal": 117.83,
+            "proteinG": 2.6,
+            "fatG": 0.3,
+            "carbG": 25.9,
+            "sodiumMg": 2.5
+          },
+          "portionValues": {
+            "energyKcal": 235.66,
+            "proteinG": 5.2,
+            "fatG": 0.6,
+            "carbG": 51.8,
+            "sodiumMg": 5.0
+          }
+        },
+        {
+          "name": "熟白切鸡肉(带皮切块可食部)",
+          "portionG": 110.0,
+          "source": "美国农业部 USDA FoodData Central (SR Legacy)",
+          "ndbNumber": "05010",
+          "fdcId": 171051,
+          "itemDescription": "Chicken, broilers or fryers, meat and skin, cooked, stewed",
+          "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171051/nutrients",
+          "per100g": {
+            "energyKcal": 219.0,
+            "energyKj": 916.0,
+            "proteinG": 24.68,
+            "fatG": 12.56,
+            "carbG": 0.0,
+            "sodiumMg": 71.0
+          },
+          "portionValues": {
+            "energyKcal": 240.9,
+            "proteinG": 27.148,
+            "fatG": 13.816,
+            "carbG": 0.0,
+            "sodiumMg": 78.1
+          }
+        },
+        {
+          "name": "烧味豉油浇汁",
+          "portionG": 15.0,
+          "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+          "category": "Condiments and sauces",
+          "itemDescription": "Sauce for \"Siu Mei\"",
+          "excelSheet": "Eng",
+          "rowIndex": 85,
+          "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+          "per100g": {
+            "energyKcal": 63.0,
+            "proteinG": 1.7,
+            "fatG": 0.3,
+            "carbG": 13.0,
+            "sodiumMg": 1900.0
+          },
+          "portionValues": {
+            "energyKcal": 9.45,
+            "proteinG": 0.255,
+            "fatG": 0.045,
+            "carbG": 1.95,
+            "sodiumMg": 285.0
+          }
+        },
+        {
+          "name": "白灼菜心",
+          "portionG": 35.0,
+          "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+          "category": "Vegetables and vegetable products",
+          "itemDescription": "Boiled Chinese flowering cabbage",
+          "excelSheet": "Eng",
+          "rowIndex": 705,
+          "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+          "per100g": {
+            "energyKcal": 20.0,
+            "proteinG": 1.8,
+            "fatG": 0.91,
+            "carbG": 1.2,
+            "sodiumMg": 33.0
+          },
+          "portionValues": {
+            "energyKcal": 7.0,
+            "proteinG": 0.63,
+            "fatG": 0.3185,
+            "carbG": 0.42,
+            "sodiumMg": 11.55
+          }
+        }
+      ]
+    }
+  }
+]

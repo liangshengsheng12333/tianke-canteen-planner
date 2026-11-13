@@ -1,0 +1,468 @@
+{
+  "schema": "T02-current-handoff-baseline-v1",
+  "capturedAtLocal": "2026-10-20T19:19:15+08:00",
+  "workspace": "D:\\项目\\cpp",
+  "projectRoot": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统",
+  "scope": [
+    "core",
+    "tools\\core",
+    "miniprogram",
+    "tools\\miniprogram"
+  ],
+  "sourceWasm": "D:\\项目\\cpp\\.toolchain\\build\\wasm\\mp_core.wasm",
+  "method": "Read-only recursive file enumeration, byte length and SHA256; repeated after 500 ms to detect writes during snapshot. No file contents parsed.",
+  "snapshotStable": true,
+  "fileCount": 54,
+  "wasmArtifacts": [
+    {
+      "path": "D:\\项目\\cpp\\.toolchain\\build\\wasm\\mp_core.wasm",
+      "relativePath": "D:\\项目\\cpp\\.toolchain\\build\\wasm\\mp_core.wasm",
+      "bytes": 72881,
+      "sha256": "715CD7701B64D8F493A110C348B5F643979536578C7380C29837E05C4F31D52C",
+      "lastWriteTimeUtc": "2026-10-20T09:16:43.8483087Z",
+      "kind": "wasm-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+      "relativePath": "miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+      "bytes": 72881,
+      "sha256": "715CD7701B64D8F493A110C348B5F643979536578C7380C29837E05C4F31D52C",
+      "lastWriteTimeUtc": "2026-10-20T09:16:43.8483087Z",
+      "kind": "wasm"
+    }
+  ],
+  "files": [
+    {
+      "path": "D:\\项目\\cpp\\.toolchain\\build\\wasm\\mp_core.wasm",
+      "relativePath": "D:\\项目\\cpp\\.toolchain\\build\\wasm\\mp_core.wasm",
+      "bytes": 72881,
+      "sha256": "715CD7701B64D8F493A110C348B5F643979536578C7380C29837E05C4F31D52C",
+      "lastWriteTimeUtc": "2026-10-20T09:16:43.8483087Z",
+      "kind": "wasm-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\cli\\main.cpp",
+      "relativePath": "core\\cli\\main.cpp",
+      "bytes": 3914,
+      "sha256": "631E365AE2CBCF0E70C90F091DFC6D0527BF6FA51AF8D0F285E92215F39A8071",
+      "lastWriteTimeUtc": "2026-10-20T03:57:40.6236354Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\api.h",
+      "relativePath": "core\\include\\mp\\api.h",
+      "bytes": 1957,
+      "sha256": "A36BF81EE4310FDF1BB1FE4941C5EC7C1D1C0C69C004E96E8F7532B4A93891C9",
+      "lastWriteTimeUtc": "2026-10-20T03:53:47.2759967Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\base.h",
+      "relativePath": "core\\include\\mp\\base.h",
+      "bytes": 6854,
+      "sha256": "1AC04D58B0D4DD28493D218CC488588BD8842E6B62C89EC984D5DD7FA59EC159",
+      "lastWriteTimeUtc": "2026-10-20T03:50:59.6300807Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\catalog.h",
+      "relativePath": "core\\include\\mp\\catalog.h",
+      "bytes": 2450,
+      "sha256": "2B7D2675383D7A6DD8978AE0FC6B402F4BE50D29D150321A84F8A2FDBE332974",
+      "lastWriteTimeUtc": "2026-10-20T03:54:26.4322027Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\contract.h",
+      "relativePath": "core\\include\\mp\\contract.h",
+      "bytes": 3336,
+      "sha256": "C8717DD21643BAF2D17B0F206C323A2A04FB692AE4C46BD9777E034D4F0F7741",
+      "lastWriteTimeUtc": "2026-10-20T03:52:07.9545490Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\json.h",
+      "relativePath": "core\\include\\mp\\json.h",
+      "bytes": 2962,
+      "sha256": "D4A1C0462BA94977D7253CFFE588F04E1C626AD807C9114A899073786E8D8910",
+      "lastWriteTimeUtc": "2026-10-20T03:52:07.9037035Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\nutrition.h",
+      "relativePath": "core\\include\\mp\\nutrition.h",
+      "bytes": 1156,
+      "sha256": "53E8173E52A60761FD06DF804DFABB5F4153EB909238629ECA1AE70D036EBB93",
+      "lastWriteTimeUtc": "2026-10-20T03:54:56.7479535Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\include\\mp\\sha256.h",
+      "relativePath": "core\\include\\mp\\sha256.h",
+      "bytes": 831,
+      "sha256": "44B0C48E0A384F144DBCDFFD43CDB64A2BC91BDA34CD92CB8EBA1BCF900C44C8",
+      "lastWriteTimeUtc": "2026-10-20T03:48:59.9617960Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\api.cpp",
+      "relativePath": "core\\src\\api.cpp",
+      "bytes": 1973,
+      "sha256": "F4AD6851428BC729704FEB867698ADFF74E353FCD875826BB480633FDD03BBF3",
+      "lastWriteTimeUtc": "2026-10-20T03:53:47.2992348Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\base.cpp",
+      "relativePath": "core\\src\\base.cpp",
+      "bytes": 9879,
+      "sha256": "12BD39988361A5DC0DF402D5B919269A5F4B50B27E368C2ED36056A2FC95D60D",
+      "lastWriteTimeUtc": "2026-10-20T03:50:25.5851820Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\catalog.cpp",
+      "relativePath": "core\\src\\catalog.cpp",
+      "bytes": 24240,
+      "sha256": "11FE9AD2AB166B3ECFE5212DBEC679B3E38FD7DC1E22C4F272FAE8047154C6AA",
+      "lastWriteTimeUtc": "2026-10-20T03:56:28.3372234Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\contract.cpp",
+      "relativePath": "core\\src\\contract.cpp",
+      "bytes": 8121,
+      "sha256": "F9E4565CFE49FA4A8CE9B0C8064977410E6923243CEEFBE1CC5F5E5963B3A52D",
+      "lastWriteTimeUtc": "2026-10-20T03:52:19.8651974Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\json.cpp",
+      "relativePath": "core\\src\\json.cpp",
+      "bytes": 24088,
+      "sha256": "6C56BCD1FF983C133A268A059D85AEBA80E04117AA0CA192BB5910BAE2309E27",
+      "lastWriteTimeUtc": "2026-10-20T03:54:35.2688558Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\nutrition.cpp",
+      "relativePath": "core\\src\\nutrition.cpp",
+      "bytes": 49207,
+      "sha256": "AF9A454145B9C8A53C5279549B9B8F2A234EC9A3B49D5DF58700B472A3D4147A",
+      "lastWriteTimeUtc": "2026-10-20T04:13:31.2207758Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\planner.cpp",
+      "relativePath": "core\\src\\planner.cpp",
+      "bytes": 68276,
+      "sha256": "A2B4C05C49C5ACF0F5FDBD41672DBCFFDC2971555A0CE04095B866F60F56AF3B",
+      "lastWriteTimeUtc": "2026-10-20T09:14:12.2434582Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\platform_native.cpp",
+      "relativePath": "core\\src\\platform_native.cpp",
+      "bytes": 328,
+      "sha256": "7FAA6B85E7963958BEBF34F52960A61EDF10F59D4CD01D87D5CD959EA0A77154",
+      "lastWriteTimeUtc": "2026-10-20T03:50:20.2499274Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\platform_wasm.cpp",
+      "relativePath": "core\\src\\platform_wasm.cpp",
+      "bytes": 2836,
+      "sha256": "0A0D91F9DCC1F48DAA7BE76B737DE2237F8F7B4F73A20AD67DE699657DC274DF",
+      "lastWriteTimeUtc": "2026-10-20T03:50:25.6297116Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\sha256.cpp",
+      "relativePath": "core\\src\\sha256.cpp",
+      "bytes": 6322,
+      "sha256": "A86AE4E817AAFDCB100DEC57906418E314DA30B463C954B70FC41AE3F68AB846",
+      "lastWriteTimeUtc": "2026-10-20T03:52:56.8812697Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\data\\.probe",
+      "relativePath": "core\\tests\\data\\.probe",
+      "bytes": 159,
+      "sha256": "908F8AD9D82BFD778CA6CBF916F84C154D57AA25E3F68F4170660B8F695FF086",
+      "lastWriteTimeUtc": "2026-10-20T04:52:48.8926796Z",
+      "kind": "other"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\data\\nutrition-snapshot.canonical.txt",
+      "relativePath": "core\\tests\\data\\nutrition-snapshot.canonical.txt",
+      "bytes": 1110,
+      "sha256": "C93D2D91B13E54466E89D7D41EC50B1D93B6566CDEE699AF0CB81154A72DD288",
+      "lastWriteTimeUtc": "2026-10-20T03:55:50.8213949Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\test_core_main.cpp",
+      "relativePath": "core\\tests\\test_core_main.cpp",
+      "bytes": 52246,
+      "sha256": "96E394FBB6A0782CE7C309EC2E83E5A2BDED7BFD1930AF394AAA6577B11715CE",
+      "lastWriteTimeUtc": "2026-10-20T09:15:22.9166049Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\test_json_main.cpp",
+      "relativePath": "core\\tests\\test_json_main.cpp",
+      "bytes": 22270,
+      "sha256": "73BAE72F7C3DEC0BA47F58F3842D180E457CAE8D281FE4F3CCEAB30BB7A78221",
+      "lastWriteTimeUtc": "2026-10-20T03:56:49.3785334Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\test_sha256_main.cpp",
+      "relativePath": "core\\tests\\test_sha256_main.cpp",
+      "bytes": 8807,
+      "sha256": "4C8F6286882115045B8778115BC482DE058E35AB112EDD9D6009BC34F488C9EB",
+      "lastWriteTimeUtc": "2026-10-20T03:54:21.1515782Z",
+      "kind": "cpp-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\wasm\\README.md",
+      "relativePath": "core\\wasm\\README.md",
+      "bytes": 2169,
+      "sha256": "6356A7F4597CE8BB2BFE0512BD08C25253D6623D4BF3225EB7A3F82D59F4B940",
+      "lastWriteTimeUtc": "2026-10-20T04:19:05.7788030Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\project.config.json",
+      "relativePath": "miniprogram\\project.config.json",
+      "bytes": 905,
+      "sha256": "95CD9635E44B90ECAC2E1928CE93C6AAF02DB02EF96C699464757951D54051AC",
+      "lastWriteTimeUtc": "2026-10-20T11:03:56.6438661Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\project.private.config.json",
+      "relativePath": "miniprogram\\project.private.config.json",
+      "bytes": 604,
+      "sha256": "D94C2719D64748CF15910A4C9001F50547B88F5D37E3F2BC1006E52B33520AF7",
+      "lastWriteTimeUtc": "2026-10-20T11:03:56.6383882Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\README.md",
+      "relativePath": "miniprogram\\README.md",
+      "bytes": 1426,
+      "sha256": "5551620AB12613D1B5A85B2474110EF5389BA70C44BDA5593A034D70A92F55C1",
+      "lastWriteTimeUtc": "2026-10-20T09:28:03.0935080Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\app.json",
+      "relativePath": "miniprogram\\src\\app.json",
+      "bytes": 203,
+      "sha256": "F6CE044907B127C986BE1623F76BB8CA3408ED3109451C4B354182736B60189F",
+      "lastWriteTimeUtc": "2026-10-20T09:26:24.2892044Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\app.ts",
+      "relativePath": "miniprogram\\src\\app.ts",
+      "bytes": 9,
+      "sha256": "1AB645C73BCEA61604F9CC4805A752AB9BA8FB66813D8C57CAD34328C0CE4109",
+      "lastWriteTimeUtc": "2026-10-20T09:26:24.2962839Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\app.wxss",
+      "relativePath": "miniprogram\\src\\app.wxss",
+      "bytes": 70,
+      "sha256": "6C9A7FC0B0579D99860F505756C4A0E92CCDE31B2D792BD61B7843334FAE2994",
+      "lastWriteTimeUtc": "2026-10-20T09:26:24.3036364Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+      "relativePath": "miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+      "bytes": 72881,
+      "sha256": "715CD7701B64D8F493A110C348B5F643979536578C7380C29837E05C4F31D52C",
+      "lastWriteTimeUtc": "2026-10-20T09:16:43.8483087Z",
+      "kind": "wasm"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\mock\\simulated-inputs.ts",
+      "relativePath": "miniprogram\\src\\mock\\simulated-inputs.ts",
+      "bytes": 31997,
+      "sha256": "E3F0FBD410EBFEDEDBEB65E097A67BB64F9F1840739D56F0EE93DD74B40F6144",
+      "lastWriteTimeUtc": "2026-10-20T10:09:08.6326982Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\pages\\index\\index.json",
+      "relativePath": "miniprogram\\src\\pages\\index\\index.json",
+      "bytes": 63,
+      "sha256": "C7A1F037A562E83CA904DBB57F33AB4B55E18F3175AD30E04987743A3D5AC9A9",
+      "lastWriteTimeUtc": "2026-10-20T09:26:24.3205436Z",
+      "kind": "config-or-data"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\pages\\index\\index.ts",
+      "relativePath": "miniprogram\\src\\pages\\index\\index.ts",
+      "bytes": 11702,
+      "sha256": "34DBBD3E91BB4A67E14F41BE4673EF9E62F6F680425B94C2D2511D81D8DEDF9A",
+      "lastWriteTimeUtc": "2026-10-20T10:21:17.5602279Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\pages\\index\\index.wxml",
+      "relativePath": "miniprogram\\src\\pages\\index\\index.wxml",
+      "bytes": 7309,
+      "sha256": "FF09B45A179FD735084C63BDC51645DD539EAE3540F93017887D181B29359516",
+      "lastWriteTimeUtc": "2026-10-20T10:21:25.1023891Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\pages\\index\\index.wxss",
+      "relativePath": "miniprogram\\src\\pages\\index\\index.wxss",
+      "bytes": 3146,
+      "sha256": "7E7683CAC0931A71E13454D32878A35D3703F4C8D65322DF1CC66965F7CE966E",
+      "lastWriteTimeUtc": "2026-10-20T10:21:29.1828525Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\types.d.ts",
+      "relativePath": "miniprogram\\src\\types.d.ts",
+      "bytes": 254,
+      "sha256": "3A9F1A43982F927F95A74F2C3BDD9BC493D40EC4086B3958F199BC15A69BCFFA",
+      "lastWriteTimeUtc": "2026-10-20T09:26:24.3121996Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\utils\\capability.ts",
+      "relativePath": "miniprogram\\src\\utils\\capability.ts",
+      "bytes": 1195,
+      "sha256": "FFBD1AE6F06DF38CDCDFE42FC541BC4CF8A1644343E732E990D7487EEA9F8F31",
+      "lastWriteTimeUtc": "2026-10-20T09:25:55.5366555Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\utils\\core-bridge.ts",
+      "relativePath": "miniprogram\\src\\utils\\core-bridge.ts",
+      "bytes": 10072,
+      "sha256": "AEB0B1F1976A8E91D01C1DE0C658807BADE5569376895A4E6A1CC4D19DDAB7C6",
+      "lastWriteTimeUtc": "2026-10-20T09:25:55.5192706Z",
+      "kind": "miniprogram-source"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\build_native.ps1",
+      "relativePath": "tools\\core\\build_native.ps1",
+      "bytes": 4432,
+      "sha256": "8A026D337968186494FE9976E092884ED5EF56B1B41787DA2EB63C7EA7F88E2C",
+      "lastWriteTimeUtc": "2026-10-20T04:10:30.5793486Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\build_wasm.ps1",
+      "relativePath": "tools\\core\\build_wasm.ps1",
+      "bytes": 3043,
+      "sha256": "6B7D49870584D209C9F4ECC5B99CD51EB366EC1AD1C3025E06606E59560D7218",
+      "lastWriteTimeUtc": "2026-10-20T04:14:37.2710833Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\check_heap_growth.mjs",
+      "relativePath": "tools\\core\\check_heap_growth.mjs",
+      "bytes": 2006,
+      "sha256": "D3A269CE0888AC2BB37A0499679DF4482E78E94DF5045D8A0A96A972D7084B2A",
+      "lastWriteTimeUtc": "2026-10-20T04:18:18.1431623Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\count_comments.py",
+      "relativePath": "tools\\core\\count_comments.py",
+      "bytes": 3630,
+      "sha256": "1D34C761F9503F933177C823EAC852D3A221241CA21F3F63C47950447C4F43DA",
+      "lastWriteTimeUtc": "2026-10-20T04:15:55.5596094Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\host_wasm.mjs",
+      "relativePath": "tools\\core\\host_wasm.mjs",
+      "bytes": 4181,
+      "sha256": "C66CF8D89457122A250310110CA29A4906D016257629923ED1A26526A4FA1960",
+      "lastWriteTimeUtc": "2026-10-20T04:15:11.4473998Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\run_v2_cases.mjs",
+      "relativePath": "tools\\core\\run_v2_cases.mjs",
+      "bytes": 8148,
+      "sha256": "7BD9AE9C927A36AA3C500F4BF68CE15C0AE07601267DE7C0C6542407A8A80FC9",
+      "lastWriteTimeUtc": "2026-10-20T09:17:24.0441457Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\verify_planday.py",
+      "relativePath": "tools\\core\\verify_planday.py",
+      "bytes": 42501,
+      "sha256": "43AE38ABE41910289C59F529E21AA5B7B750EA1705CAF043FDC20730561B800C",
+      "lastWriteTimeUtc": "2026-10-20T09:16:30.2085647Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\core\\verify_wasm.mjs",
+      "relativePath": "tools\\core\\verify_wasm.mjs",
+      "bytes": 11398,
+      "sha256": "0155CAFCEB9C41D0B43650344CE04A86D3C72C102D9C167FEB49B159810D8BC7",
+      "lastWriteTimeUtc": "2026-10-20T04:55:34.4111089Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\copy-wasm.ps1",
+      "relativePath": "tools\\miniprogram\\copy-wasm.ps1",
+      "bytes": 1863,
+      "sha256": "C3466ED8CE3E74A697423466BAB8B13B497045009A768960E0CE080533011D3D",
+      "lastWriteTimeUtc": "2026-10-20T09:28:17.4990867Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\gen-sim-inputs.mjs",
+      "relativePath": "tools\\miniprogram\\gen-sim-inputs.mjs",
+      "bytes": 4241,
+      "sha256": "7C9DD72B4794BDED09F95B4020D093516961B633C84430F68F7D62BE0C2DE3BA",
+      "lastWriteTimeUtc": "2026-10-20T10:06:51.4419484Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\probe-wasm-real.mjs",
+      "relativePath": "tools\\miniprogram\\probe-wasm-real.mjs",
+      "bytes": 3306,
+      "sha256": "BA8949D6B2B21F7378A8F9998E81977330D82437E7951706156BC415528D8F26",
+      "lastWriteTimeUtc": "2026-10-20T10:06:03.9561971Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-core-bridge.mjs",
+      "relativePath": "tools\\miniprogram\\test-core-bridge.mjs",
+      "bytes": 10120,
+      "sha256": "4FDFE0813D626F1123EC5F9998693CBCED8E26A6E0525D0B6C767D54D837777B",
+      "lastWriteTimeUtc": "2026-10-20T09:27:46.5939579Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-storage-snapshot.mjs",
+      "relativePath": "tools\\miniprogram\\test-storage-snapshot.mjs",
+      "bytes": 6291,
+      "sha256": "756BCF4076112FB2EFBDDBFC3B4171B7CEEDA02E5C38FA7F3BBFFAAC1D5EDB3A",
+      "lastWriteTimeUtc": "2026-10-20T10:21:46.5228957Z",
+      "kind": "script"
+    },
+    {
+      "path": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\verify-v2-integration.mjs",
+      "relativePath": "tools\\miniprogram\\verify-v2-integration.mjs",
+      "bytes": 9389,
+      "sha256": "48DE92548B1FAD1FEDEA7C66D6106A872E6B53C746E5A47A351BA56CD83EFA2B",
+      "lastWriteTimeUtc": "2026-10-20T10:20:47.7358818Z",
+      "kind": "script"
+    }
+  ]
+}

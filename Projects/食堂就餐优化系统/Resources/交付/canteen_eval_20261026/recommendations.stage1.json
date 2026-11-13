@@ -1,0 +1,36 @@
+{
+  "stage": "stage1",
+  "lang": "zh",
+  "primary_language": "zh-CN",
+  "recommend": {
+    "canvas": "ppt169"
+  },
+  "audience": {
+    "value": "课程评审老师、助教与答辩组同学"
+  },
+  "communication_intent": {
+    "value": "系统性汇报天科食客的三算法机制（贪心/DP/BnB）、DP关键等价性能优化、C++/WASM跨端工程架构及小程序真实闭环，展示严谨的工科设计与客观的实测边界"
+  },
+  "audience_outcome": {
+    "value": "评审老师高度认可算法设计深度（60分）、跨端工程质量（20分）以及客观诚实的答辩表现（20分）"
+  },
+  "core_message": {
+    "value": "真实食堂环境下的就餐与记账闭环；共享C++核心统一三算法；等价优化攻克DP去重热点（PC从23.46秒降至71毫秒）；事实边界清晰严谨"
+  },
+  "delivery_context": {
+    "value": "课设现场答辩投屏汇报，时长5~7分钟"
+  },
+  "artifact_afterlife": {
+    "value": "课程期末大作业评测打分、优秀项目归档展示"
+  },
+  "content_divergence": {
+    "value": "严格基于已核准的v6素材包与讲稿骨架，如实反映客观实测数据与边界"
+  },
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "zh",
+    "default_mode": "free_design",
+    "explicit_workspace_roots": []
+  }
+}

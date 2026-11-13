@@ -1,0 +1,71 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p08" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">原型走查与验收范围：真实界面与边界界定</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">user-v5 微信小程序开发者工具 12/12 走查通过 · 明确划分课程演示与全 PRD 验收边界</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">08 / 09</text>
+  </g>
+
+  <!-- 5 联小程序界面截图模块 -->
+  <g id="mockup_grid_p08" data-pptx-bounds="100 210 1720 460">
+    <!-- Frame 1 -->
+    <rect x="100" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="174" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="174" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/01-user-v5-首页-新装方案.png" />
+    <text x="262" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">01 · 首页新装方案</text>
+    <text x="262" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">预算设定与餐次状态</text>
+
+    <!-- Frame 2 -->
+    <rect x="449" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="523" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="523" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/02-user-v5-菜单覆盖文案.png" />
+    <text x="611" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">02 · 菜单覆盖文案</text>
+    <text x="611" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">12 窗口 137 报价统计</text>
+
+    <!-- Frame 3 -->
+    <rect x="798" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="872" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="872" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/03-user-v5-推荐方式页.png" />
+    <text x="960" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">03 · 推荐算法单选</text>
+    <text x="960" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">贪心 / DP / BnB 择一</text>
+
+    <!-- Frame 4 -->
+    <rect x="1147" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1221" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="1221" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/04-user-v5-新增窗口选菜麻辣烫300g.png" />
+    <text x="1309" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">04 · 自选加菜称重</text>
+    <text x="1309" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">麻辣烫 300g 动态换算</text>
+
+    <!-- Frame 5 -->
+    <rect x="1496" y="210" width="324" height="460" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1570" y="226" width="176" height="380" rx="10" fill="#F4F4F5" />
+    <image x="1570" y="226" width="176" height="380" preserveAspectRatio="xMidYMid meet" href="../images/05-user-v5-记录页.png" />
+    <text x="1658" y="632" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B" text-anchor="middle">05 · 就餐记录确认</text>
+    <text x="1658" y="654" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#71717A" text-anchor="middle">历史溯源与本地持久化</text>
+  </g>
+
+  <!-- 底部验收范围与客观边界对照模块 -->
+  <g id="bottom_scope_panels_p08" data-pptx-bounds="100 690 1720 310">
+    <!-- Left: 已验收范围 -->
+    <rect x="100" y="690" width="840" height="310" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="132" y="718" width="36" height="36" rx="8" fill="#10B981" fill-opacity="0.1" />
+    <text x="150" y="743" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="180" y="744" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981">已通过评测验收范围（P01/P09 审查确认）</text>
+    <text x="132" y="796" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">• 微信开发者工具模拟器 12/12 业务流程全量跑通，交互无阻塞<tspan x="132" dy="28">• C++ 算法响应与基线输出哈希 100% 匹配，单选规划逻辑保真</tspan><tspan x="132" dy="28">• 本地存储、加菜换算与历史统计闭环跑通，达成大作业展示要求</tspan><tspan x="132" dy="28">• 满足高校期末综合评测课程演示标准，成果可信度极高。</tspan></text>
+
+    <!-- Right: 客观未完项与演进边界 -->
+    <rect x="980" y="690" width="840" height="310" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1012" y="718" width="36" height="36" rx="8" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="1030" y="743" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#F59E0B" text-anchor="middle">!</text>
+    <text x="1060" y="744" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B">客观未完项与后续演进方向（坚持不虚报）</text>
+    <text x="1012" y="796" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">• 物理真机环境：尚未在多款真实 Android/iOS 实体手机展开大规模压测<tspan x="1012" dy="28">• 外部文件联动：真实微信聊天文件导入导出与全量备份恢复待完善</tspan><tspan x="1012" dy="28">• 用户灰度试用：同学盲测样本因项目答辩排期紧凑，本轮按跳过记录</tspan><tspan x="1012" dy="28">• 当前明确定位为【课程答辩演示体验版】，坚决不冒称正式生产发布。</tspan></text>
+  </g>
+</svg>

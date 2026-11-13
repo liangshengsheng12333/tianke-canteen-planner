@@ -1,0 +1,51 @@
+{
+  "food_name": "五谷杂粮豆浆 (熟甜豆浆基准)",
+  "reference_source_1": {
+    "book_title": "《中国食物成分表（标准版）》第6版第一册",
+    "chapter": "第五章 干豆类及制品",
+    "food_code": "05-1-101",
+    "food_name": "熟豆浆(甜)",
+    "per_amount": "100g",
+    "water_g": 90.0,
+    "energy_kcal": 38.0,
+    "energy_kj": 159.0,
+    "protein_g": 2.2,
+    "fat_g": 1.2,
+    "carbohydrate_g": 5.0,
+    "sodium_mg": 15.0,
+    "calcium_mg": 10.0,
+    "potassium_mg": 68.0,
+    "iron_mg": 0.4
+  },
+  "reference_source_2": {
+    "organization": "香港食物安全中心 (CFS) 食物研究化验所 (FRL)",
+    "item_en": "Soybean milk (sweetened)",
+    "item_sc": "甜豆浆",
+    "per_amount": "100g",
+    "energy_kcal": 41.0,
+    "protein_g": 2.1,
+    "fat_g": 1.2,
+    "carbohydrate_g": 5.3,
+    "sodium_mg": "Trace",
+    "calcium_mg": 11.0,
+    "potassium_mg": 72.0
+  },
+  "canteen_portion_assumption": {
+    "cup_type": "食堂早餐标准一次性带盖纸杯装 (约 9~10 盎司)",
+    "net_liquid_weight_g": 300.0,
+    "volume_ml": 300.0,
+    "ingredients": "黄豆（大豆）、五谷杂粮（黑米、燕麦、玉米、红豆等）、水、适量白砂糖微甜调味",
+    "single_serving_nutrients_adopted": {
+      "energy_kcal": 114.0,
+      "protein_g": 6.60,
+      "fat_g": 3.60,
+      "carbohydrate_g": 15.00,
+      "sodium_mg": 45.0
+    }
+  },
+  "atwater_recalculation": {
+    "formula": "6.60 * 4 + 3.60 * 9 + 15.00 * 4 = 26.4 + 32.4 + 60.0 = 118.8 kcal",
+    "discrepancy": "+4.80 kcal",
+    "reason": "大豆天然含有水苏糖、棉子糖等低聚多糖及不可溶性膳食纤维，在成分表测定中被扣除产热碳水，粗略 4/9/4 因子略高于成分表实际测定能量，属正常生化利用率公差"
+  }
+}

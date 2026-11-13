@@ -1,0 +1,34 @@
+{
+  "food_name": "薑蓉 / 姜葱蓉调料 (Ginger puree / Ginger and spring onion dip)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "Condiments and sauces - Condiments and sauces (佐料及醬料)",
+  "sheet_name": "Eng",
+  "official_row_index": 86,
+  "original_file": "Nutrient_profiles_FRL.xlsx (Row 86)",
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-23",
+  "per_amount": "100g 调味汁",
+  "nutrients_per_100g": {
+    "energy_kcal": 470.0,
+    "protein_g": 1.0,
+    "protein_g_alt": 1.7,
+    "fat_g": 50.0,
+    "carbohydrate_g": 4.5,
+    "carbohydrate_g_alt": 5.2,
+    "sodium_mg": 2000.0
+  },
+  "p09_review_status": "P09在T03V04报告中确认行号为 Row 86，数值 470 kcal / 100g 可定位。",
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "multiplier": 0.10,
+    "energy_kcal": 47.00,
+    "protein_g": 0.10,
+    "protein_g_alt": 0.17,
+    "fat_g": 5.00,
+    "carbohydrate_g": 0.45,
+    "carbohydrate_g_alt": 0.52,
+    "sodium_mg": 200.0
+  },
+  "assumption_note": "绿碟盛装姜葱蓉单份取 10g 为工艺假设，非现场称重证明。"
+}

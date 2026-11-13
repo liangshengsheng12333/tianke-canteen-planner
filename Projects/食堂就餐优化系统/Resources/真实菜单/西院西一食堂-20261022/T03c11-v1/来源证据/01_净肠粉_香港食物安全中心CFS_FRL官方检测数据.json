@@ -1,0 +1,41 @@
+{
+  "food_name_zh_cn": "净肠粉 (2021)",
+  "food_name_zh_hk": "淨腸粉 (2021)",
+  "food_name_en": "Steamed plain rice-roll (2021)",
+  "food_group_en": "Ready-to-eat foods",
+  "food_subgroup_en": "Chinese dim sum",
+  "cfs_niis_item_id": 2395,
+  "data_source_code": "C",
+  "data_source_description": "Data from the Food Research Laboratory (FRL) of the Centre for Food Safety (CFS), Food and Environmental Hygiene Department, Government of the Hong Kong Special Administrative Region",
+  "official_download_source": "https://www.cfs.gov.hk/resources/Nutrient%20profiles_FRL.xlsx",
+  "official_portal_url": "https://www.cfs.gov.hk/english/nutrient/index.php",
+  "local_evidence_file": "来源证据/Nutrient_profiles_FRL.xlsx (Eng表第313行 / 数据记录第310条)",
+  "access_date": "2026-10-23",
+  "per_amount": "100g",
+  "edible_portion": "100%",
+  "nutrients": {
+    "energy_kcal": 100,
+    "energy_kj": 420,
+    "protein_g": 0.86,
+    "total_fat_g": 1.1,
+    "saturated_fat_g": 0.18,
+    "trans_fat_g": 0.001,
+    "cholesterol_mg": 0,
+    "available_carbohydrate_g": 23.0,
+    "sugars_g": 0.043,
+    "dietary_fibre_g": "Trace",
+    "sodium_mg": 66.0
+  },
+  "analytical_and_reporting_notes": {
+    "protein_method": "Total nitrogen determined by Kjeldahl method, multiplied by factor 6.25",
+    "total_fat_method": "Gravimetric method: acid hydrolysis followed by ether and petroleum ether extraction",
+    "available_carbohydrate_method": "Calculated by difference: 100g minus total grams of water, protein, fat, ash and dietary fibre",
+    "atwater_comparison": {
+      "atwater_4_9_4_kcal_per_100g": 105.34,
+      "official_reported_kcal_per_100g": 100,
+      "discrepancy_kcal_per_100g": 5.34,
+      "handling_rule": "CFS官方原表能量(100 kcal)与4/9/4折算值(105.34 kcal)差异如实保留为公布数据固有差异；官方文档未披露成因，不推测成因（不武断归因于纤维扣除或kJ整百取整）。"
+    },
+    "fat_attribution_rule": "CFS化验测定样品每100g含总脂肪1.1g（单份200g基线含总脂肪2.2g）。该数值为送检熟制净肠粉样品的实测总脂肪，不据此断言全部来自防粘油，亦不断言食堂现场未另行刷油，仅作为中心估算基线如实采纳。"
+  }
+}

@@ -1,0 +1,14 @@
+﻿group,algorithm,medianMs,minMs,maxMs,sampleCount,reportedMedianMatches,responseHashMatches
+DIAG,branchAndBound,3.812,3.141,5.258,5,True,True
+G0,greedy,0.668,0.549,0.789,5,True,True
+G0,dp,10.628,7.299,12.615,5,True,True
+G0,branchAndBound,5.659,5.128,9.063,5,True,True
+G1,greedy,6.737,6.041,8.795,5,True,True
+G1,dp,9.072,7.963,16.022,5,True,True
+G1,branchAndBound,8.625,7.116,12.486,5,True,True
+G2,greedy,15.275,13.421,19.567,5,True,True
+G2,dp,23455.864,22000.157,24404.29,5,True,True
+G2,branchAndBound,265.056,259.718,282.535,5,True,True
+G3,greedy,24.682,23.943,25.311,5,True,True
+G3,dp,999.83,973.029,1377.503,5,True,True
+G3,branchAndBound,1135.304,1113.996,1523.986,5,True,True

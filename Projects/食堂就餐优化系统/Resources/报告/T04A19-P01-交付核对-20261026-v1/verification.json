@@ -1,0 +1,466 @@
+{
+  "checks": [
+    {
+      "name": "cli/main.cpp:baseline",
+      "ok": true,
+      "sha256": "ff56adfd85437e84ace8f07a743606fba20d45d0bdd6869a034daeff8e77400b",
+      "bytes": 5278
+    },
+    {
+      "name": "cli/main.cpp:candidate",
+      "ok": true,
+      "sha256": "ff56adfd85437e84ace8f07a743606fba20d45d0bdd6869a034daeff8e77400b",
+      "bytes": 5278
+    },
+    {
+      "name": "include/mp/api.h:baseline",
+      "ok": true,
+      "sha256": "525d7b98fa3283a8e73867082a8eb1b76a87f858d992338cc62189c47bc6cf59",
+      "bytes": 2055
+    },
+    {
+      "name": "include/mp/api.h:candidate",
+      "ok": true,
+      "sha256": "525d7b98fa3283a8e73867082a8eb1b76a87f858d992338cc62189c47bc6cf59",
+      "bytes": 2055
+    },
+    {
+      "name": "include/mp/base.h:baseline",
+      "ok": true,
+      "sha256": "c0ac6a6e82f4b28107e693cc10a09cd741a28726fc473111e650d97026fc4a5f",
+      "bytes": 7413
+    },
+    {
+      "name": "include/mp/base.h:candidate",
+      "ok": true,
+      "sha256": "c0ac6a6e82f4b28107e693cc10a09cd741a28726fc473111e650d97026fc4a5f",
+      "bytes": 7413
+    },
+    {
+      "name": "include/mp/catalog.h:baseline",
+      "ok": true,
+      "sha256": "747e79418427a7ed0cf1ad5690be59fb5d3a053e9efa95d2afd09c1383227659",
+      "bytes": 7956
+    },
+    {
+      "name": "include/mp/catalog.h:candidate",
+      "ok": true,
+      "sha256": "747e79418427a7ed0cf1ad5690be59fb5d3a053e9efa95d2afd09c1383227659",
+      "bytes": 7956
+    },
+    {
+      "name": "include/mp/contract.h:baseline",
+      "ok": true,
+      "sha256": "33242c59a59df114476a7eb047f5d62f3776af8fa85a1361bf2cfe1b3e3c2ab7",
+      "bytes": 3430
+    },
+    {
+      "name": "include/mp/contract.h:candidate",
+      "ok": true,
+      "sha256": "33242c59a59df114476a7eb047f5d62f3776af8fa85a1361bf2cfe1b3e3c2ab7",
+      "bytes": 3430
+    },
+    {
+      "name": "include/mp/json.h:baseline",
+      "ok": true,
+      "sha256": "bec2fd366576affcb9ffb5f28236d0afe903b3e5ad9d9d311aecc765c65e4e76",
+      "bytes": 3050
+    },
+    {
+      "name": "include/mp/json.h:candidate",
+      "ok": true,
+      "sha256": "bec2fd366576affcb9ffb5f28236d0afe903b3e5ad9d9d311aecc765c65e4e76",
+      "bytes": 3050
+    },
+    {
+      "name": "include/mp/nutrition.h:baseline",
+      "ok": true,
+      "sha256": "0cdb6b098c500c1cf08136cf2c83955a7eeb4283b5ed2bebf51879128fee8155",
+      "bytes": 1194
+    },
+    {
+      "name": "include/mp/nutrition.h:candidate",
+      "ok": true,
+      "sha256": "0cdb6b098c500c1cf08136cf2c83955a7eeb4283b5ed2bebf51879128fee8155",
+      "bytes": 1194
+    },
+    {
+      "name": "include/mp/sha256.h:baseline",
+      "ok": true,
+      "sha256": "44b0c48e0a384f144dbcdffd43cdb64a2bc91bda34cd92cb8eba1bcf900c44c8",
+      "bytes": 831
+    },
+    {
+      "name": "include/mp/sha256.h:candidate",
+      "ok": true,
+      "sha256": "44b0c48e0a384f144dbcdffd43cdb64a2bc91bda34cd92cb8eba1bcf900c44c8",
+      "bytes": 831
+    },
+    {
+      "name": "src/api.cpp:baseline",
+      "ok": true,
+      "sha256": "6fe43aa8b94f169c871ba90795e2449c68b23e909898f4ddbb99ad39c4ce8f07",
+      "bytes": 3541
+    },
+    {
+      "name": "src/api.cpp:candidate",
+      "ok": true,
+      "sha256": "6fe43aa8b94f169c871ba90795e2449c68b23e909898f4ddbb99ad39c4ce8f07",
+      "bytes": 3541
+    },
+    {
+      "name": "src/base.cpp:baseline",
+      "ok": true,
+      "sha256": "4b19300b2e605ed42474c0bbbde6fdf57c22ad05c956dfa0e99fce710ce6077d",
+      "bytes": 11737
+    },
+    {
+      "name": "src/base.cpp:candidate",
+      "ok": true,
+      "sha256": "4b19300b2e605ed42474c0bbbde6fdf57c22ad05c956dfa0e99fce710ce6077d",
+      "bytes": 11737
+    },
+    {
+      "name": "src/catalog.cpp:baseline",
+      "ok": true,
+      "sha256": "df0c1fd35dd7985b97ada49bce084b36688753b156b3ab5bac1ca0157acde0bc",
+      "bytes": 61588
+    },
+    {
+      "name": "src/catalog.cpp:candidate",
+      "ok": true,
+      "sha256": "df0c1fd35dd7985b97ada49bce084b36688753b156b3ab5bac1ca0157acde0bc",
+      "bytes": 61588
+    },
+    {
+      "name": "src/contract.cpp:baseline",
+      "ok": true,
+      "sha256": "087e5a106ee2eae52d8447246a6f760ff8d00136176f0aa2c73c4f0f3feddfcd",
+      "bytes": 10695
+    },
+    {
+      "name": "src/contract.cpp:candidate",
+      "ok": true,
+      "sha256": "087e5a106ee2eae52d8447246a6f760ff8d00136176f0aa2c73c4f0f3feddfcd",
+      "bytes": 10695
+    },
+    {
+      "name": "src/json.cpp:baseline",
+      "ok": true,
+      "sha256": "5015236c02e7e650641d49e16bcd5db63d63de14c4aeabe788e511f3fbee2c39",
+      "bytes": 29747
+    },
+    {
+      "name": "src/json.cpp:candidate",
+      "ok": true,
+      "sha256": "5015236c02e7e650641d49e16bcd5db63d63de14c4aeabe788e511f3fbee2c39",
+      "bytes": 29747
+    },
+    {
+      "name": "src/nutrition.cpp:baseline",
+      "ok": true,
+      "sha256": "f0951ad7850ff63da75c89d9f47194ec2bd8fbd3951df67d6061119d931d6d51",
+      "bytes": 56066
+    },
+    {
+      "name": "src/nutrition.cpp:candidate",
+      "ok": true,
+      "sha256": "f0951ad7850ff63da75c89d9f47194ec2bd8fbd3951df67d6061119d931d6d51",
+      "bytes": 56066
+    },
+    {
+      "name": "src/planner.cpp:baseline",
+      "ok": true,
+      "sha256": "30f716892350cd5134d07ab30b6ac3c6dba55bd8bc31e87284de7dd3c3a63b51",
+      "bytes": 172712
+    },
+    {
+      "name": "src/planner.cpp:candidate",
+      "ok": true,
+      "sha256": "5d00940948bc1b9005b2c8e37a259f6f82c254327f700fcbe50617cc20136a15",
+      "bytes": 179333
+    },
+    {
+      "name": "src/platform_native.cpp:baseline",
+      "ok": true,
+      "sha256": "ff40a6b02d00fcf7b44e58600eba5d03b86c0907e661dfca74fd2f22d67c582d",
+      "bytes": 932
+    },
+    {
+      "name": "src/platform_native.cpp:candidate",
+      "ok": true,
+      "sha256": "ff40a6b02d00fcf7b44e58600eba5d03b86c0907e661dfca74fd2f22d67c582d",
+      "bytes": 932
+    },
+    {
+      "name": "src/platform_wasm.cpp:baseline",
+      "ok": true,
+      "sha256": "d6e971ae20d4a02625f2ed0b88b94ef278cc1924cde6aaef588aac2f3582b138",
+      "bytes": 4376
+    },
+    {
+      "name": "src/platform_wasm.cpp:candidate",
+      "ok": true,
+      "sha256": "d6e971ae20d4a02625f2ed0b88b94ef278cc1924cde6aaef588aac2f3582b138",
+      "bytes": 4376
+    },
+    {
+      "name": "src/sha256.cpp:baseline",
+      "ok": true,
+      "sha256": "5c237f79d875046b422ecceadf0aa3179d06a998b588b0cb0c3dbb01d4c9f5df",
+      "bytes": 7308
+    },
+    {
+      "name": "src/sha256.cpp:candidate",
+      "ok": true,
+      "sha256": "5c237f79d875046b422ecceadf0aa3179d06a998b588b0cb0c3dbb01d4c9f5df",
+      "bytes": 7308
+    },
+    {
+      "name": "tests/data/.probe:baseline",
+      "ok": true,
+      "sha256": "908f8ad9d82bfd778ca6cbf916f84c154d57aa25e3f68f4170660b8f695ff086",
+      "bytes": 159
+    },
+    {
+      "name": "tests/data/.probe:candidate",
+      "ok": true,
+      "sha256": "908f8ad9d82bfd778ca6cbf916f84c154d57aa25e3f68f4170660b8f695ff086",
+      "bytes": 159
+    },
+    {
+      "name": "tests/data/nutrition-snapshot.canonical.txt:baseline",
+      "ok": true,
+      "sha256": "c93d2d91b13e54466e89d7d41ec50b1d93b6566cdee699af0cb81154a72dd288",
+      "bytes": 1110
+    },
+    {
+      "name": "tests/data/nutrition-snapshot.canonical.txt:candidate",
+      "ok": true,
+      "sha256": "c93d2d91b13e54466e89d7d41ec50b1d93b6566cdee699af0cb81154a72dd288",
+      "bytes": 1110
+    },
+    {
+      "name": "tests/test_core_main.cpp:baseline",
+      "ok": true,
+      "sha256": "f573afb4493caea81a505b36ec45a843e724808467f494b65571a01d284a35eb",
+      "bytes": 74179
+    },
+    {
+      "name": "tests/test_core_main.cpp:candidate",
+      "ok": true,
+      "sha256": "f573afb4493caea81a505b36ec45a843e724808467f494b65571a01d284a35eb",
+      "bytes": 74179
+    },
+    {
+      "name": "tests/test_json_main.cpp:baseline",
+      "ok": true,
+      "sha256": "b56f8411865b2ea62f9c7335e7da206fdb75cbbce61a9a41b89da2f8dd4fb93a",
+      "bytes": 23105
+    },
+    {
+      "name": "tests/test_json_main.cpp:candidate",
+      "ok": true,
+      "sha256": "b56f8411865b2ea62f9c7335e7da206fdb75cbbce61a9a41b89da2f8dd4fb93a",
+      "bytes": 23105
+    },
+    {
+      "name": "tests/test_sha256_main.cpp:baseline",
+      "ok": true,
+      "sha256": "6ce46e09b81e7c78f282e7941dc15c95d6cbcdfa4a0256ddf0fcbea334302e7d",
+      "bytes": 9329
+    },
+    {
+      "name": "tests/test_sha256_main.cpp:candidate",
+      "ok": true,
+      "sha256": "6ce46e09b81e7c78f282e7941dc15c95d6cbcdfa4a0256ddf0fcbea334302e7d",
+      "bytes": 9329
+    },
+    {
+      "name": "wasm/A18-ABI.md:baseline",
+      "ok": true,
+      "sha256": "02e41355b617b016d750a792df7807373ec42daf2781350e7023a4133dd6eb5b",
+      "bytes": 1448
+    },
+    {
+      "name": "wasm/A18-ABI.md:candidate",
+      "ok": true,
+      "sha256": "02e41355b617b016d750a792df7807373ec42daf2781350e7023a4133dd6eb5b",
+      "bytes": 1448
+    },
+    {
+      "name": "wasm/README.md:baseline",
+      "ok": true,
+      "sha256": "9217f881738053cd3267f536d5ea97eaf7e74f32b7455b5b0fd8aeb235ae60bd",
+      "bytes": 2319
+    },
+    {
+      "name": "wasm/README.md:candidate",
+      "ok": true,
+      "sha256": "9217f881738053cd3267f536d5ea97eaf7e74f32b7455b5b0fd8aeb235ae60bd",
+      "bytes": 2319
+    },
+    {
+      "name": "baseline/mp_core.wasm",
+      "ok": true,
+      "sha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+      "bytes": 111554
+    },
+    {
+      "name": "baseline/mp_cli.exe",
+      "ok": true,
+      "sha256": "94d4407092d569abfb91f0a750c168be9295ce5fb18247d5763c88f88203ea25",
+      "bytes": 353792
+    },
+    {
+      "name": "candidate/mp_core.wasm",
+      "ok": true,
+      "sha256": "d1cec5268bb1bd05ea2719d776e4ceb17c68dc740e9cdbbba2de6df495825f65",
+      "bytes": 114148
+    },
+    {
+      "name": "candidate/mp_cli.exe",
+      "ok": true,
+      "sha256": "91cb2f2da428d227c8e715a3b01895c2d02344ed05a3c4af5a3e4baff96210f0",
+      "bytes": 356864
+    },
+    {
+      "name": "candidate/mp_bench.exe",
+      "ok": true,
+      "sha256": "47b2fbc0d4b0b14cd684f45e27a74acc4c53c21dda1b93cefa917a926dc63734",
+      "bytes": 348672
+    },
+    {
+      "name": "candidate/mp_clock_cli.exe",
+      "ok": true,
+      "sha256": "4fc8264dc5c683cbb235fa514c433b0de25d11eca3b72eb876109226a9559e7c",
+      "bytes": 358912
+    },
+    {
+      "name": "patch.diff",
+      "ok": true,
+      "sha256": "795454f63f386b7b59fad3962f5a578b640ff8ac7b64232e9f634c1a7f721c23",
+      "bytes": 16689
+    },
+    {
+      "name": "guard:frozenPlanner",
+      "ok": true,
+      "sha256": "30f716892350cd5134d07ab30b6ac3c6dba55bd8bc31e87284de7dd3c3a63b51",
+      "bytes": 172712
+    },
+    {
+      "name": "guard:currentUserWasm",
+      "ok": true,
+      "sha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+      "bytes": 111554
+    },
+    {
+      "name": "guard:menu",
+      "ok": true,
+      "sha256": "7444546fbd06ffd0dad99d566c391bc6f0951475ecc5452579ba8a55c80b23f7",
+      "bytes": 196454
+    }
+  ],
+  "identityChecks": 60,
+  "identityFailures": [],
+  "authorPerformanceRecomputed": [
+    {
+      "group": "g1-dp",
+      "computedMedianMs": 5.841999999999999,
+      "reportMatches": true,
+      "responseHashesStable": true,
+      "maxPages": 63
+    },
+    {
+      "group": "g2-dp",
+      "computedMedianMs": 70.999,
+      "reportMatches": true,
+      "responseHashesStable": true,
+      "maxPages": 562
+    },
+    {
+      "group": "g3-dp",
+      "computedMedianMs": 27.441599999999994,
+      "reportMatches": true,
+      "responseHashesStable": true,
+      "maxPages": 275
+    }
+  ],
+  "p01IndependentRuns": [
+    {
+      "group": "g1-dp",
+      "exitCode": 0,
+      "stderr": "",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\tools\\measure.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\candidate\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\inputs\\g1-dp.request.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-P01-交付核对-20261026-v1\\runs\\g1-dp",
+        "6"
+      ],
+      "medianMs": 7.640900000000002,
+      "pages": 63,
+      "clockCalls": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matchesFrozenResponse": true
+    },
+    {
+      "group": "g2-dp",
+      "exitCode": 0,
+      "stderr": "",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\tools\\measure.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\candidate\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\inputs\\g2-dp.request.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-P01-交付核对-20261026-v1\\runs\\g2-dp",
+        "6"
+      ],
+      "medianMs": 86.29989999999998,
+      "pages": 562,
+      "clockCalls": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matchesFrozenResponse": true
+    },
+    {
+      "group": "g3-dp",
+      "exitCode": 0,
+      "stderr": "",
+      "command": [
+        "node",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\tools\\measure.mjs",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\candidate\\mp_core.wasm",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-Sol-DP性能攻关-证据-v1\\inputs\\g3-dp.request.json",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A19-P01-交付核对-20261026-v1\\runs\\g3-dp",
+        "6"
+      ],
+      "medianMs": 37.59100000000001,
+      "pages": 275,
+      "clockCalls": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matchesFrozenResponse": true
+    }
+  ],
+  "changedCoreFiles": [
+    "src/planner.cpp"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "srcFileCount": 79,
+  "candidateSrcMatchesOriginal": true,
+  "srcTreeDigest": "sha256:76b6190e57b9ce103c0d6aa1d86878a4eb25ca359754160f64e7004df6c65cf8",
+  "logsPreservedExactly": true,
+  "planningMeals": [
+    "lunch",
+    "dinner"
+  ],
+  "consumedKcal": 998,
+  "spentCents": 1400,
+  "budgetSet": false,
+  "budgetCents": null,
+  "profileManualTargets": null,
+  "backupUtf8Bytes": 15232,
+  "backupTextLength": 15156,
+  "backupFileSha256": "b24d2cebb418665b26fdec7123ec47fb50c00f260f9fc6738c06b68879497e15",
+  "backupContentDigest": "sha256:506bc608412993cf522e2cb0496ca7348fa4e6c5175909af1394bfc385414d66",
+  "restoredLogsEqualBaseline": true,
+  "profileRestoredMatchesBaseline": true,
+  "invalidBackupChecks": {
+    "test1_syntaxError": {
+      "ok": false,
+      "stage": "parse",
+      "message": "恢复文件不是合法 JSON：Expected double-quoted property name in JSON at position 34 (line 1 column 35)",
+      "rejectedCorrectly": true
+    },
+    "test2_tamperedDigest": {
+      "ok": false,
+      "stage": "parse",
+      "message": "备份摘要不一致：文件内容可能被修改或损坏，已拒绝恢复",
+      "rejectedCorrectly": true
+    },
+    "test3_wrongFormat": {
+      "ok": false,
+      "stage": "parse",
+      "message": "不是天科食客备份文件（format=other-app-backup）",
+      "rejectedCorrectly": true
+    },
+    "zeroTaintAssertion": {
+      "stateUnchanged": true,
+      "dayUnchanged": true,
+      "passed": true
+    }
+  },
+  "methodLimitations": [
+    "file picker is API-existence check only; restore reads real file and injects text before production preflight/apply",
+    "restart script only calls existing store.init(), not a new app process or phone cold start"
+  ],
+  "p01ReranApp": false
+}

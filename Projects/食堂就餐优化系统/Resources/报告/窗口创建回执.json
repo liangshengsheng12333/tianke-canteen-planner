@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-20",
+  "creator": "01a154c3-21d1-7ed2-8317-ba8f83b0b312",
+  "projectId": "2d1d0d85-feb4-469d-bd90-b9d1bc7e0775",
+  "cwd": "D:\\项目\\cpp",
+  "projectContentRoot": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统",
+  "source": "P00 actual create_thread and send_message_to_thread results",
+  "threads": [
+    {"role":"P01", "title":"P01｜总指挥—食堂就餐优化系统", "threadId":"01a1550c-f6cd-71f0-8524-df30c763d844", "hostId":"local", "requestedModel":"default_unoverridden", "requestedThinking":"default_unoverridden", "verifiedActualModel":null, "verifiedActualThinking":null, "identityReceiptDelivered":true},
+    {"role":"P09", "title":"P09｜独立验收—食堂就餐优化系统", "threadId":"01a1550d-34d7-79b2-b593-85670a15cf48", "hostId":"local", "requestedModel":"gpt-6-luna", "requestedThinking":"high", "verifiedActualModel":null, "verifiedActualThinking":null, "identityReceiptDelivered":true}
+  ],
+  "businessAuthorized": false
+}

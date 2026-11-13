@@ -1,0 +1,28 @@
+{
+  "food_name": "熟白切鸡肉（带皮白切鸡切块可食部）",
+  "source_organization_1": "美国农业部农业研究局 (USDA Agricultural Research Service) FoodData Central (SR Legacy)",
+  "fdc_id": 171051,
+  "ndb_number": "05010",
+  "item_description": "Chicken, broilers or fryers, meat and skin, cooked, stewed",
+  "online_portal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171051/nutrients",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 熟重带皮可食部",
+  "nutrients_per_100g": {
+    "energy_kcal": 219.0,
+    "energy_kj": 916.0,
+    "protein_g": 24.68,
+    "fat_g": 12.56,
+    "carbohydrate_g": 0.0,
+    "sodium_mg": 71.0
+  },
+  "cross_reference": "中国疾病预防控制中心营养与健康所《中国食物成分表》第6版第二册禽肉类“鸡(均值)”生肉基准（编码11-1-101，167 kcal/100g生重），考虑水煮熟化失水率（出品率约68%~72%）折算熟重能量约 215~220 kcal/100g，与 USDA 数据高度自洽。",
+  "canteen_portion_assumption": "单份白切鸡饭切块熟鸡肉带皮可食部净重典型中心假设为 110g（含骨总毛重约 130g~150g，剔除骨头后可食部约 110g）。此为明确物理假设，非食堂后厨实测称重。",
+  "single_portion_calculation_110g": {
+    "weight_g": 110.0,
+    "energy_kcal": 240.9,
+    "protein_g": 27.148,
+    "fat_g": 13.816,
+    "carbohydrate_g": 0.0,
+    "sodium_mg": 78.1
+  }
+}

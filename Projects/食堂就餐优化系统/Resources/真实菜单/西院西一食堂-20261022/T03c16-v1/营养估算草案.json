@@ -1,0 +1,22 @@
+[
+  {
+    "dishId": "dish-hnjf-taishi-doufu-fan",
+    "name": "泰式豆腐饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 633,
+      "proteinDg": 274,
+      "fatDg": 265,
+      "carbDg": 716
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册(蒸米饭编码01-2-401按493 kJ换算117.83 kcal/100g、熟油脂类、油豆腐编码03-1-506 foodinfo/343.html 原值1018 kJ / 243.3 kcal)、李锦记官方泰式甜辣酱GB 28050法定营养标签(220 kcal/920 kJ/100g)及鲜黄瓜片原料加权累加",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(配方假设: 熟白米饭197g+熟鸡油/食用油3g) + 炸豆腐块(油豆腐熟重已含油炸吸油量)130g + 泰式甜辣酱汁25g + 连皮鲜黄瓜片20g(单份成品净重约375g)",
+      "estimated": true,
+      "note": "依据标牌10元出餐及炸豆腐裹泰式酸甜辣酱推导；米饭严格按疾控中心官方493 kJ/100g换算为117.83 kcal/100g，消除kJ与kcal混写；油豆腐采用疾控中心官方查询页1018 kJ原值(243.3 kcal)，已包含油炸吸油量，不重复计入烹调油；李锦记泰式甜辣酱按每100g含920 kJ/220 kcal法定标签口径折算25g；200g米饭与3g油脂为工艺假设；米饭计一次且不含续饭；非食堂实测配方"
+    }
+  }
+]

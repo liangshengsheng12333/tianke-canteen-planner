@@ -1,0 +1,70 @@
+{
+  "roles": {
+    "body": {
+      "family": "\"Microsoft YaHei\", \"PingFang SC\", \"Segoe UI\", sans-serif",
+      "size": 16.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 5.9,
+      "latin_chars_per_100px": 12.1,
+      "caps_chars_per_100px": 11.2,
+      "digits_chars_per_100px": 10.7,
+      "citation_chars_per_100px": 11.3,
+      "script_clusters_per_100px": {},
+      "longest_planned_line": {
+        "px": 939.6,
+        "slide": "P03",
+        "text": "菜单规模：已接入西一食堂12个窗口、166个菜品实体、137条有效报价（热干面…"
+      }
+    },
+    "title": {
+      "family": "\"Microsoft YaHei\", \"PingFang SC\", \"Segoe UI\", sans-serif",
+      "size": 32.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 2.9,
+      "latin_chars_per_100px": 6.1,
+      "caps_chars_per_100px": 5.6,
+      "digits_chars_per_100px": 5.4,
+      "citation_chars_per_100px": 5.6,
+      "script_clusters_per_100px": {},
+      "longest_planned_line": {
+        "px": 881.9,
+        "slide": "P01",
+        "text": "为什么做《天科食客》：面向真实校园食堂的就餐优化系统"
+      }
+    },
+    "subtitle": {
+      "family": "\"Microsoft YaHei\", \"PingFang SC\", \"Segoe UI\", sans-serif",
+      "size": 20.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 4.7,
+      "latin_chars_per_100px": 9.7,
+      "caps_chars_per_100px": 9.0,
+      "digits_chars_per_100px": 8.6,
+      "citation_chars_per_100px": 9.0,
+      "script_clusters_per_100px": {},
+      "longest_planned_line": {
+        "px": 908.9,
+        "slide": "P04",
+        "text": "算法共用约束与打分，但在解空间搜索策略上各有取舍：贪心极速、DP状态复用、Bn…"
+      }
+    },
+    "annotation": {
+      "family": "\"Microsoft YaHei\", \"PingFang SC\", \"Segoe UI\", sans-serif",
+      "size": 12.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 7.9,
+      "latin_chars_per_100px": 16.2,
+      "caps_chars_per_100px": 15.0,
+      "digits_chars_per_100px": 14.3,
+      "citation_chars_per_100px": 15.0,
+      "script_clusters_per_100px": {},
+      "longest_planned_line": null
+    }
+  },
+  "script_samples": {},
+  "source": "spec_lock.md",
+  "generated_at": "2026-10-26T05:38:19Z",
+  "notes": [
+    "every role is measured at normal weight; recalibrate a role realized as bold deck-wide with --role NAME:FAMILY:SIZE:bold: bold widens Latin and digits about 7%, while the bundled advance table gives CJK one width for both weights"
+  ]
+}

@@ -1,0 +1,601 @@
+/* pages/home/index.wxss — 今日页布局与视觉细节。
+ * 颜色全部走 app.wxss 的 --tk-* 令牌（浅/深由根节点 tk-light / tk-dark 决定），
+ * 本文件不写死颜色，避免深色模式漏改；字号按 P01-v2 定稿第 7.3 节换算成 rpx。 */
+
+/* ===== 顶部：系统栏预留 / 标题 / 日期 / 模式胶囊 ===== */
+.sys-safe {
+  /* 微信胶囊固定在右上角，顶部只留系统状态栏高度，不遮挡正文。 */
+  height: env(safe-area-inset-top);
+}
+.today-head {
+  padding: 8rpx 8rpx 4rpx;
+}
+.today-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.today-title {
+  font-size: 56rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+  color: var(--tk-text);
+  line-height: 1.25;
+}
+.mode-pill {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  min-height: 88rpx;
+  padding: 0 24rpx;
+  border-radius: 999rpx;
+  background: var(--tk-accent-soft);
+  color: var(--tk-accent);
+  font-size: 28rpx;
+  border: 1rpx solid var(--tk-glass-line);
+}
+.mode-pill-text {
+  font-weight: 600;
+}
+.mode-pill-arrow {
+  font-size: 28rpx;
+  opacity: 0.8;
+}
+.today-date {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+/* ===== 当前菜单行：一行菜单名 + “切换”入口，不加卡片 ===== */
+.menu-line {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.menu-line-name {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-line-switch {
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: auto;
+  padding-left: 20rpx;
+  color: var(--tk-accent);
+  text-decoration: underline;
+}
+/* 行内小链接保持紧凑，用伪元素把可点区扩到 44px。 */
+.menu-line-switch::after {
+  content: '';
+  position: absolute;
+  left: -16rpx;
+  right: -16rpx;
+  top: -26rpx;
+  bottom: -26rpx;
+}
+/* 示例菜单：保留原有警示底色与描边；颜色全部走主题变量，深浅色都可读。 */
+.menu-line-simulated {
+  color: var(--tk-warn-text);
+  background: var(--tk-warn-bg);
+  border: 1rpx solid var(--tk-warn-line);
+  border-radius: 16rpx;
+  padding: 12rpx 20rpx;
+}
+.menu-line-simulated .menu-line-switch {
+  color: var(--tk-warn-text);
+}
+
+/* ===== 未建档提示 ===== */
+.profile-tip {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  border-radius: 56rpx;
+  background: var(--tk-card);
+  border: 1rpx solid var(--tk-line);
+  box-shadow: var(--tk-shadow);
+}
+.profile-tip-title {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.profile-tip-actions {
+  margin-top: 8rpx;
+}
+
+/* ===== 餐次切换 ===== */
+.meal-tabs {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 40rpx;
+}
+.meal-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rpx;
+  padding: 20rpx 0 18rpx;
+  border-radius: 28rpx;
+  background: var(--tk-card);
+  border: 2rpx solid transparent;
+  box-shadow: var(--tk-shadow);
+}
+.meal-tab.active {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.meal-tab-label {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.meal-tab.active .meal-tab-label {
+  color: var(--tk-accent);
+}
+.meal-tab-state {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.meal-tab.state-ok .meal-tab-state {
+  color: var(--tk-accent);
+  font-weight: 600;
+}
+.meal-tab.state-plan .meal-tab-state {
+  color: var(--tk-info);
+}
+
+/* ===== 本餐卡 ===== */
+.meal-hero {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  border-radius: 56rpx;
+  background: var(--tk-card);
+  box-shadow: var(--tk-shadow);
+}
+.meal-hero-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16rpx;
+}
+.meal-hero-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.meal-hero-window {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+  text-align: right;
+  /* 长窗口名允许换行，不把标题挤出卡片。 */
+  max-width: 46%;
+  word-break: break-all;
+}
+.dish-list {
+  margin-top: 14rpx;
+}
+.dish-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16rpx;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid var(--tk-line);
+}
+.dish-row:last-child {
+  border-bottom: none;
+}
+.dish-main {
+  flex: 1;
+  min-width: 0;
+  /* 长菜名正常换行，不截断、不缩小字体。 */
+  word-break: break-all;
+}
+.dish-name {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: var(--tk-text);
+  line-height: 1.45;
+}
+.dish-portion {
+  margin-left: 12rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.dish-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6rpx;
+  flex: 0 0 auto;
+}
+.dish-price {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.meal-price-line {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.meal-price {
+  color: var(--tk-text);
+  font-weight: 600;
+}
+
+/* 热量大数字：约 ×× 千卡；未知时写“热量待补全”，不显示 0。 */
+.heat-block {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+  margin-top: 20rpx;
+}
+.heat-value {
+  font-size: 76rpx;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--tk-text);
+}
+.heat-unknown {
+  font-size: 46rpx;
+  color: var(--tk-muted);
+}
+.pairing {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-text);
+}
+.estimate-note {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-warn-text);
+}
+
+/* 完整模式营养区：三行 + 一条比例条，共用同一组分配结果。 */
+.macro-block {
+  margin-top: 24rpx;
+  padding: 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-card-soft);
+  border: 1rpx solid var(--tk-line);
+}
+.macro-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12rpx;
+  margin-bottom: 6rpx;
+}
+.macro-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+/* 百分比只表示三大宏量的供能占比，不是占每日目标；标签跟着表格一起出现。 */
+.macro-share-label {
+  font-size: 26rpx;
+  color: var(--tk-muted);
+}
+.macro-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+  padding: 6rpx 0;
+}
+.macro-label {
+  flex: 0 0 130rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.macro-grams {
+  flex: 1;
+  font-size: 28rpx;
+  color: var(--tk-text);
+}
+.macro-percent {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-accent);
+}
+.macro-bar {
+  display: flex;
+  height: 16rpx;
+  margin-top: 12rpx;
+  border-radius: 999rpx;
+  overflow: hidden;
+  background: var(--tk-secondary);
+}
+.macro-seg {
+  height: 100%;
+}
+.seg-protein {
+  background: var(--tk-accent);
+}
+.seg-fat {
+  background: var(--tk-warn-text);
+}
+.seg-carb {
+  background: var(--tk-info);
+}
+.macro-note {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+
+.status-note {
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-top: 8rpx;
+}
+
+/* 主/次操作：主按钮在右，换一份在左；没有换菜入口时主按钮占满。 */
+.primary-actions {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 32rpx;
+}
+.secondary-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  padding-top: 16rpx;
+  border-top: 1rpx dashed var(--tk-line);
+}
+
+/* ===== 今日小结 ===== */
+.summary-card {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  border-radius: 56rpx;
+  background: var(--tk-card);
+  box-shadow: var(--tk-shadow);
+}
+.summary-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.summary-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.summary-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16rpx;
+  padding: 8rpx 0;
+}
+.summary-label {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.summary-value {
+  font-size: 32rpx;
+  color: var(--tk-text);
+  text-align: right;
+}
+.summary-divider {
+  height: 1rpx;
+  background: var(--tk-line);
+  margin: 16rpx 0;
+}
+.summary-footnote {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.danger {
+  color: var(--tk-danger);
+  font-weight: 600;
+}
+
+/* ===== 其他方案 / 锁定 / 售罄 ===== */
+.plans-card {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  border-radius: 56rpx;
+  background: var(--tk-card);
+  box-shadow: var(--tk-shadow);
+}
+/* “其他方案”：一行状态（徽标 + 一句说明），较长说明与诊断按需展开。 */
+.plan-status-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12rpx;
+  margin-top: 16rpx;
+}
+.plan-status-hint {
+  flex: 1 1 360rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+  line-height: 1.5;
+}
+/* 技术信息只在用户主动展开时出现，避免普通页堆内部实现细节。 */
+.tech-block {
+  margin-top: 16rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 24rpx;
+  background: var(--tk-card-soft);
+  border: 1rpx solid var(--tk-line);
+}
+.tech-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-muted);
+}
+.plan-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+  margin-top: 20rpx;
+}
+.plan-chip {
+  flex: 1 1 300rpx;
+  min-width: 280rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-field-bg);
+  border: 2rpx solid var(--tk-line);
+}
+.plan-chip-active {
+  border-color: var(--tk-line-strong);
+  background: var(--tk-accent-soft);
+}
+.plan-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.plan-meta {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.issue {
+  margin-top: 20rpx;
+  padding: 16rpx 20rpx;
+  border-radius: 24rpx;
+  background: var(--tk-danger-bg);
+  border: 1rpx solid var(--tk-danger-line);
+}
+.issue-label {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-danger);
+  word-break: break-all;
+}
+.row-value text {
+  margin-right: 8rpx;
+}
+
+/* ===== 弹层：本餐详情 / 自己选菜 ===== */
+.sheet-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(10, 16, 13, 0.42);
+  z-index: 30;
+}
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx 40rpx calc(32rpx + env(safe-area-inset-bottom));
+  border-radius: 56rpx 56rpx 0 0;
+  background: var(--tk-glass);
+  backdrop-filter: blur(24rpx);
+  box-shadow: 0 -12rpx 40rpx rgba(10, 16, 13, 0.18);
+  z-index: 31;
+}
+.sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16rpx 0 12rpx;
+}
+.sheet-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.sheet-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 88rpx;
+  min-height: 88rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.sheet-body {
+  /* scroll-view 需要确定高度才能滚动；弹层总高受 82vh 限制。 */
+  height: 58vh;
+}
+.sheet-tail {
+  height: 20rpx;
+}
+.detail-item {
+  margin-top: 20rpx;
+  padding: 24rpx;
+  border-radius: 24rpx;
+  background: var(--tk-card-soft);
+  border: 1rpx solid var(--tk-line);
+}
+.detail-item-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+.detail-item-name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  word-break: break-all;
+}
+.detail-item-meta {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.detail-nutrition {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+
+/* 错误横幅（读取失败） */
+.banner {
+  margin-top: 24rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.banner-err {
+  background: var(--tk-danger-bg);
+  border: 1rpx solid var(--tk-danger-line);
+  color: var(--tk-danger);
+}
+/* 推荐需更新：提示 + 既有“刷新方案”入口（不自动重算） */
+.banner-update {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  flex-wrap: wrap;
+  background: var(--tk-warn-bg);
+  border: 1rpx solid var(--tk-warn-line);
+  color: var(--tk-warn-text);
+}
+.banner-update-text {
+  flex: 1 1 320rpx;
+  word-break: break-all;
+}

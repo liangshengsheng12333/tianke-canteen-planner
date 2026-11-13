@@ -1,0 +1,37 @@
+{
+  "stage": "stage1",
+  "lang": "zh",
+  "primary_language": "zh-CN",
+  "revision": 1,
+  "recommend": {
+    "canvas": "ppt169"
+  },
+  "audience": {
+    "value": "课程答辩评审老师、期末评测考核小组"
+  },
+  "communication_intent": {
+    "value": "全面展示《天科食客》系统从痛点到C++核心、WASM本地架构与小程序全流程成果，突出两餐DP关键优化与实测数据，交代客观边界"
+  },
+  "audience_outcome": {
+    "value": "评审老师充分认可项目的算法工程深度、真实食堂落地闭环与严谨态度，评定优秀成绩"
+  },
+  "core_message": {
+    "value": "真实食堂痛点出发，C++跨平台算法核心驱动，WASM本地闭环，硬核性能与客观边界兼备"
+  },
+  "delivery_context": {
+    "value": "主要为期末现场投影答辩讲解，次要为关键节点唤起交互HTML演示与会后结项材料留存"
+  },
+  "artifact_afterlife": {
+    "value": "作为大作业结项文档、课程优秀作品存档与答辩材料存档"
+  },
+  "content_divergence": {
+    "value": ""
+  },
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "zh",
+    "default_mode": "free_design",
+    "explicit_workspace_roots": []
+  }
+}

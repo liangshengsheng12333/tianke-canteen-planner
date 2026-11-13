@@ -1,0 +1,62 @@
+{
+  "menuVersion": "west1-canteen-batch2-supplement6-20261026",
+  "catalogHash": "sha256:a35158df416b9b338df10a3a7907f1a3e5ea5b2df0d60785ab6aa0e9f4839b0a",
+  "baselineVersion": "west1-canteen-batch1-nutrition35-chuanxiang6-20261024",
+  "baselineHash": "sha256:23c0eda554226f9ecda0d4b973e57eabc697abe9e5ca34b7058fd45b30ff44ea",
+  "windowsCount": 12,
+  "dishesCount": 166,
+  "offersCount": 137,
+  "newWindowsCount": 6,
+  "newDishesCount": 75,
+  "newOffersCount": 75,
+  "subtasks": [
+    {
+      "id": "H01",
+      "windowId": "w-yilong-baozi",
+      "windowName": "忆笼手工鲜肉包",
+      "photoFile": "f55ce01cc3857c9fec2d5ca6783ad55f.jpg",
+      "dishCount": 20,
+      "offerCount": 20
+    },
+    {
+      "id": "H02",
+      "windowId": "w-chongqing-xiaomian",
+      "windowName": "重庆小面与一口香小笼包",
+      "photoFile": "d2138473d70cb1a9039ebcd8e70435b5.jpg",
+      "dishCount": 18,
+      "offerCount": 18
+    },
+    {
+      "id": "H03",
+      "windowId": "w-youpoji",
+      "windowName": "油泼鸡",
+      "photoFile": "d557f2a917d895120e7cb9601a336617.jpg",
+      "dishCount": 10,
+      "offerCount": 10
+    },
+    {
+      "id": "H04",
+      "windowId": "w-chao-rou",
+      "windowName": "辣椒炒肉与小锅小炒",
+      "photoFile": "a0dadf2bb7f9f6a454284b14e5fd8f87.jpg",
+      "dishCount": 8,
+      "offerCount": 8
+    },
+    {
+      "id": "H05",
+      "windowId": "w-yunnan-mixian",
+      "windowName": "云南米线与面",
+      "photoFile": "7c697c5366aab426864f531adb2341ef.jpg",
+      "dishCount": 10,
+      "offerCount": 10
+    },
+    {
+      "id": "H06",
+      "windowId": "w-malatang",
+      "windowName": "称重麻辣烫与香锅",
+      "photoFile": "769a64d301d8906ff5ef7b4de2962867.jpg",
+      "dishCount": 9,
+      "offerCount": 9
+    }
+  ]
+}

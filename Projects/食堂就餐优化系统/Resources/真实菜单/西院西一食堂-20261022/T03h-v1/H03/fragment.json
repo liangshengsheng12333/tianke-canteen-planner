@@ -1,0 +1,364 @@
+{
+  "window": {
+    "windowId": "w-youpoji",
+    "name": "油泼鸡",
+    "mealWindows": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  "dishes": [
+    {
+      "dishId": "dish-ypj-zhaopai-youpoji",
+      "name": "招牌油泼鸡套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 645,
+        "proteinDg": 325,
+        "fatDg": 228,
+        "carbDg": 775
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "去骨鸡腿肉块140g + 豆芽青菜底料60g + 油泼热油12g + 白米饭200g",
+        "estimated": true,
+        "note": "TOP1招牌油泼鸡配米饭套餐，实拍价13元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-zhuroupian",
+      "name": "油泼猪肉片套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 670,
+        "proteinDg": 310,
+        "fatDg": 265,
+        "carbDg": 770
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "猪里脊肉片140g + 垫底素菜 + 油泼热油 + 白米饭200g",
+        "estimated": true,
+        "note": "TOP2油泼猪肉片配米饭套餐，实拍价15元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-dajipai",
+      "name": "油泼大鸡排套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 710,
+        "proteinDg": 335,
+        "fatDg": 285,
+        "carbDg": 800
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "酥炸大鸡排切块150g + 垫底青菜 + 油泼酱汁 + 白米饭200g",
+        "estimated": true,
+        "note": "TOP3招牌与经典系列重复项合并，实拍价14元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-huajiaoya",
+      "name": "油泼花椒鸭套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 660,
+        "proteinDg": 285,
+        "fatDg": 280,
+        "carbDg": 735
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "卤鸭肉块140g + 青花椒油泼汁 + 垫底青菜 + 白米饭200g",
+        "estimated": true,
+        "note": "现场浅蓝色纸片贴纸改价为12元，依规则采用改价"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-douhua",
+      "name": "油泼豆花套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 510,
+        "proteinDg": 198,
+        "fatDg": 175,
+        "carbDg": 685
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "嫩豆花220g + 豆芽葱花 + 油泼热油 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价11元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-suancai-roujuan",
+      "name": "油泼酸菜肉卷套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 615,
+        "proteinDg": 265,
+        "fatDg": 232,
+        "carbDg": 750
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "猪肉卷120g + 老坛酸菜80g + 油泼汁 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价12元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-furong-jipian",
+      "name": "油泼芙蓉鸡片套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 585,
+        "proteinDg": 345,
+        "fatDg": 185,
+        "carbDg": 700
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "软浆鸡胸脯肉片140g + 蛋清芙蓉 + 油泼汁 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-yupian",
+      "name": "油泼鱼片套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 565,
+        "proteinDg": 295,
+        "fatDg": 190,
+        "carbDg": 690
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "嫩巴沙鱼片150g + 垫底豆芽莴笋 + 油泼红油 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价15元"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-maoxuewang",
+      "name": "油泼毛血旺套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 595,
+        "proteinDg": 245,
+        "fatDg": 235,
+        "carbDg": 715
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "鸭血片120g + 火腿肠片 + 豆皮木耳 + 麻辣油泼汁 + 白米饭200g",
+        "estimated": true,
+        "note": "现场浅蓝色纸片贴纸改价为11元，依规则采用改价"
+      }
+    },
+    {
+      "dishId": "dish-ypj-youpo-xiaosurou",
+      "name": "油泼小酥肉套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 685,
+        "proteinDg": 275,
+        "fatDg": 295,
+        "carbDg": 775
+      },
+      "nutritionBasis": {
+        "source": "照片d557f2a917d895120e7cb9601a336617与中国食物成分表",
+        "portionAssumption": "香炸小酥肉130g + 砂锅配菜 + 油泼热汁 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-ypj-zhaopai-youpoji",
+      "dishId": "dish-ypj-zhaopai-youpoji",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-zhuroupian",
+      "dishId": "dish-ypj-youpo-zhuroupian",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-dajipai",
+      "dishId": "dish-ypj-youpo-dajipai",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1400,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-huajiaoya",
+      "dishId": "dish-ypj-youpo-huajiaoya",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-douhua",
+      "dishId": "dish-ypj-youpo-douhua",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-suancai-roujuan",
+      "dishId": "dish-ypj-youpo-suancai-roujuan",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-furong-jipian",
+      "dishId": "dish-ypj-youpo-furong-jipian",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-yupian",
+      "dishId": "dish-ypj-youpo-yupian",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-maoxuewang",
+      "dishId": "dish-ypj-youpo-maoxuewang",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ypj-youpo-xiaosurou",
+      "dishId": "dish-ypj-youpo-xiaosurou",
+      "windowId": "w-youpoji",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "metadata": {
+    "subtaskId": "H03",
+    "windowName": "油泼鸡",
+    "photoFiles": [
+      "d557f2a917d895120e7cb9601a336617.jpg"
+    ],
+    "itemCount": 10,
+    "priceEstimated": false,
+    "notes": "油泼鸡加急补录数据分包"
+  }
+}

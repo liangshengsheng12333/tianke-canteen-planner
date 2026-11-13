@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F9F6" />
+  
+  <!-- Header Bar -->
+  <g transform="translate(60, 40)">
+    <rect x="0" y="0" width="90" height="24" rx="4" fill="#E8F1EB" />
+    <text x="12" y="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#1B4D3E">问题建模</text>
+    <text x="105" y="20" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" font-weight="bold" fill="#1B4D3E">真实食堂菜单覆盖与统一约束规划建模</text>
+    <text x="0" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#5A6B61">面对真实食堂多窗口组合爆炸与非线性约束，建立统一形式化模型，作为三套算法的共同求解目标</text>
+  </g>
+
+  <!-- Left Column: Menu Coverage & Data Reality (Card) -->
+  <g transform="translate(60, 115)">
+    <!-- Top Big Metric Banner -->
+    <rect x="0" y="0" width="600" height="95" rx="10" fill="#1B4D3E" />
+    <g transform="translate(30, 24)">
+      <text x="0" y="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#A3C7B6">食堂窗口覆盖</text>
+      <text x="0" y="55" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF">12 <tspan font-size="16" font-weight="normal">个窗口</tspan></text>
+    </g>
+    <g transform="translate(210, 24)">
+      <text x="0" y="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#A3C7B6">菜品实体总数</text>
+      <text x="0" y="55" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF">166 <tspan font-size="16" font-weight="normal">项实体</tspan></text>
+    </g>
+    <g transform="translate(400, 24)">
+      <text x="0" y="24" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#A3C7B6">有效售卖报价</text>
+      <text x="0" y="55" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="32" font-weight="bold" fill="#E87A24">137 <tspan font-size="16" font-weight="normal" fill="#FFFFFF">条规格</tspan></text>
+    </g>
+
+    <!-- Details Card -->
+    <g transform="translate(0, 110)">
+      <rect x="0" y="0" width="600" height="395" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      
+      <!-- Section A: 菜单覆盖真实性 -->
+      <g transform="translate(24, 24)">
+        <rect x="0" y="0" width="120" height="22" rx="4" fill="#E8F1EB" />
+        <text x="8" y="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#1B4D3E">真实菜单数据覆盖</text>
+        <text x="0" y="44" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#1F2923">完整转录西院西一食堂真实数据：热干面、杂粮煎饼、广式肠粉、海南鸡饭、川湘小厨炒菜、麻辣烫等12类窗口；</text>
+        <text x="0" y="66" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">每条菜品关联单价、供餐餐次（早/中/晚），以及基于中国食物成分表的营养估算值。</text>
+      </g>
+
+      <line x1="24" y1="120" x2="576" y2="120" stroke="#DDE5DF" stroke-width="1" />
+
+      <!-- Section B: 形式化数学模型 -->
+      <g transform="translate(24, 140)">
+        <rect x="0" y="0" width="140" height="22" rx="4" fill="#FEF3EB" />
+        <text x="8" y="16" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#E87A24">统一规划模型与约束</text>
+        
+        <!-- Formula Box -->
+        <rect x="0" y="32" width="552" height="120" rx="8" fill="#F6F9F6" stroke="#DDE5DF" stroke-width="1" />
+        
+        <text x="16" y="58" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#1B4D3E">目标函数: min Score = w1·|Energy - Target| + w2·Cost - w3·Diversity</text>
+        
+        <text x="16" y="86" font-family="Consolas, monospace" font-size="13" fill="#1F2923">约束 1 (预算硬约束):  ∑ (xi · Price_i) ≤ Meal_Budget</text>
+        <text x="16" y="108" font-family="Consolas, monospace" font-size="13" fill="#1F2923">约束 2 (营养软界限):  Energy_min ≤ ∑ (xi · Cal_i) ≤ Energy_max</text>
+        <text x="16" y="130" font-family="Consolas, monospace" font-size="13" fill="#5A6B61">约束 3 (窗口时段限):  xi ∈ Available_Dishes(Meal_Type)</text>
+
+        <!-- Model Explanation -->
+        <text x="0" y="176" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#1F2923">决策变量 xi ∈ {0, 1} 表示菜品选否；所有算法共用同一套打分函数与候选集合；</text>
+        <text x="0" y="198" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">单餐保留候选上限 maxMealCandidatesPerMeal=256，避免无界爆炸，保证公平对齐。</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Column: 2 Mobile UI Proofs -->
+  <g transform="translate(680, 115)">
+    <!-- Screenshot 1: 菜单展示 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="260" height="490" rx="14" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <clipPath id="phoneClipP03A">
+        <rect x="8" y="8" width="244" height="440" rx="10" />
+      </clipPath>
+      <image href="images/screenshot-menu.png" x="8" y="8" width="244" height="440" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneClipP03A)" />
+      <text x="130" y="475" text-anchor="middle" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#1B4D3E">菜单覆盖页 (12窗/166实体)</text>
+    </g>
+
+    <!-- Screenshot 2: 三算法选择 -->
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="260" height="490" rx="14" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <clipPath id="phoneClipP03B">
+        <rect x="8" y="8" width="244" height="440" rx="10" />
+      </clipPath>
+      <image href="images/screenshot-recommend-algo.png" x="8" y="8" width="244" height="440" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneClipP03B)" />
+      <text x="130" y="475" text-anchor="middle" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#1B4D3E">推荐方式选择与算法切换</text>
+    </g>
+
+    <text x="270" y="525" text-anchor="middle" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#5A6B61">截图来源：user-v5 开发者工具模拟器真实数据载入证据</text>
+  </g>
+</svg>

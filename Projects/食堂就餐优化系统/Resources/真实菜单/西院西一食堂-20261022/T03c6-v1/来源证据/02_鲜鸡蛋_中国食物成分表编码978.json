@@ -1,0 +1,32 @@
+{
+  "ingredientName": "鲜鸡蛋(全蛋去壳)",
+  "dishId": "dish-shandong-pancake",
+  "sourceDatabase": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+  "category": "蛋类及制品",
+  "foodCode": "978",
+  "bookCode": "06-1-101",
+  "officialName": "鸡蛋(均值)",
+  "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+  "officialOriginalPer100g": {
+    "edible": 88,
+    "waterG": 74.1,
+    "energyKj": 599.0,
+    "energyKcal": 143.0,
+    "proteinG": 13.3,
+    "fatG": 8.8,
+    "carbG": 2.8,
+    "ashG": 1.0,
+    "sodiumMg": 131.5,
+    "cholesterolMg": 585.0
+  },
+  "portionAssumption": {
+    "description": "标准中等鲜鸡蛋1枚，打散后在面皮表面推摊烘熟。全蛋去壳净重按行业与成分表标准可食部典型值50g计（全蛋带壳约57g，可食部88%对应50.16g）",
+    "portionG": 50.0,
+    "portionEnergyKcal": 71.5000,
+    "portionProteinG": 6.6500,
+    "portionFatG": 4.4000,
+    "portionCarbG": 1.4000,
+    "portionSodiumMg": 65.7500
+  },
+  "auditNote": "本鸡蛋仅在面皮摊制时计1次，不与面糊或其他辅料重复计算。"
+}

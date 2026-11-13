@@ -1,0 +1,26 @@
+{
+  "user": {
+    "count": 79,
+    "bytes": 1030857,
+    "treeDigest": "sha256:ce34f2637ecd7271de297177a425b046dd74409343397a78fd695a06d7fc5714",
+    "manifestDigest": "sha256:ce34f2637ecd7271de297177a425b046dd74409343397a78fd695a06d7fc5714",
+    "missing": [],
+    "extra": [],
+    "changed": [],
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+    "menuFileSha256": "d9a3beebff3e4b5ba8c569f4a6ce204649870acf1d3c502be87113ff1ec63955"
+  },
+  "dev": {
+    "count": 88,
+    "bytes": 1131647,
+    "treeDigest": "sha256:dabbe7ce74d60aecfbc3596cae3b10effb14c6fa0400dfc87b1749fa467c84ac",
+    "manifestDigest": "sha256:dabbe7ce74d60aecfbc3596cae3b10effb14c6fa0400dfc87b1749fa467c84ac",
+    "missing": [],
+    "extra": [],
+    "changed": [],
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+    "menuFileSha256": "d9a3beebff3e4b5ba8c569f4a6ce204649870acf1d3c502be87113ff1ec63955"
+  },
+  "sourceEqualsDev": true,
+  "menuUnchangedFromV4": true
+}

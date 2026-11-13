@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/profile/index",
+    "pages/logs/index",
+    "pages/self-pick/index",
+    "pages/menu/index",
+    "pages/dev/index",
+    "pages/appearance/index",
+    "pages/profile-edit/index",
+    "pages/budget/index",
+    "pages/data/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "天科食客",
+    "navigationBarBackgroundColor": "#f5f6f8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f6f8"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "darkmode": true
+}

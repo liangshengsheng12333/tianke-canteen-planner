@@ -1,0 +1,42 @@
+{
+  "product_name": "李锦记港式甜豉油 (Lee Kum Kee Sweet Soy Sauce)",
+  "producer": "李锦记（新会）食品有限公司",
+  "packaging_volume": "410ml / 瓶",
+  "product_standard": "GB/T 18186 (酿造酱油)",
+  "nutrition_label_standard": "GB 28050 (食品安全国家标准 预包装食品营养标签通则)",
+  "product_ingredients": "水、白砂糖、食用盐、大豆、小麦粉、食品添加剂(焦糖色、谷氨酸钠、山梨酸钾、5'-呈味核苷酸二钠)",
+  "access_date": "2026-10-22",
+  "per_amount": "100ml",
+  "density_approx": "1.15 g/ml (100ml ≈ 115g)",
+  "label_nutrients_per_100ml": {
+    "energy_kj": 889.0,
+    "energy_kcal": 209.0,
+    "protein_g": 5.3,
+    "fat_g": 0.0,
+    "carbohydrate_g": 47.0,
+    "sugars_g": 42.0,
+    "sodium_mg": 5350.0
+  },
+  "single_portion_calculation_15g": {
+    "volume_ml": 13.04,
+    "weight_g": 15.0,
+    "energy_kcal": 27.26,
+    "protein_g": 0.691,
+    "fat_g": 0.0,
+    "carbohydrate_g": 6.13,
+    "sodium_mg": 697.8
+  },
+  "single_portion_calculation_15ml": {
+    "volume_ml": 15.0,
+    "weight_g": 17.25,
+    "energy_kcal": 31.35,
+    "protein_g": 0.795,
+    "fat_g": 0.0,
+    "carbohydrate_g": 7.05,
+    "sodium_mg": 802.5
+  },
+  "atwater_recalculation": {
+    "formula_per_100ml": "5.3 * 4 + 0.0 * 9 + 47.0 * 4 = 21.2 + 0.0 + 188.0 = 209.2 kcal",
+    "discrepancy_vs_label_209kcal": "209.2 kcal vs 209 kcal, 差值仅 0.2 kcal，完全闭环自洽"
+  }
+}

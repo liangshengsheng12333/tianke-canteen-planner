@@ -1,0 +1,103 @@
+{
+  "rawEvidenceCount": 23,
+  "rawEvidenceAllMatch": true,
+  "rawEvidence": [
+    {
+      "file": "01-mini-oracle.request.json",
+      "ok": true
+    },
+    {
+      "file": "01-mini-oracle.response.json",
+      "ok": true
+    },
+    {
+      "file": "02-budget-and-eaten.request.json",
+      "ok": true
+    },
+    {
+      "file": "02-budget-and-eaten.response.json",
+      "ok": true
+    },
+    {
+      "file": "03-lock-lunch.request.json",
+      "ok": true
+    },
+    {
+      "file": "03-lock-lunch.response.json",
+      "ok": true
+    },
+    {
+      "file": "03-lock-lunch.invalid-request.json",
+      "ok": true
+    },
+    {
+      "file": "03-lock-lunch.rejected.response.json",
+      "ok": true
+    },
+    {
+      "file": "04-key-tie.request.json",
+      "ok": true
+    },
+    {
+      "file": "04-key-tie.response.json",
+      "ok": true
+    },
+    {
+      "file": "05-half-rice-valid.request.json",
+      "ok": true
+    },
+    {
+      "file": "05-half-rice-valid.response.json",
+      "ok": true
+    },
+    {
+      "file": "06-half-rice-price-mismatch.request.json",
+      "ok": true
+    },
+    {
+      "file": "06-half-rice-price-mismatch.response.json",
+      "ok": true
+    },
+    {
+      "file": "request_mini_t07a2.json",
+      "ok": true
+    },
+    {
+      "file": "request_dp.json",
+      "ok": true
+    },
+    {
+      "file": "request_branchAndBound.json",
+      "ok": true
+    },
+    {
+      "file": "request_greedy.json",
+      "ok": true
+    },
+    {
+      "file": "response_dp.json",
+      "ok": true
+    },
+    {
+      "file": "response_branchAndBound.json",
+      "ok": true
+    },
+    {
+      "file": "response_greedy.json",
+      "ok": true
+    },
+    {
+      "file": "targets_verification.json",
+      "ok": true
+    },
+    {
+      "file": "oracle_verification.json",
+      "ok": true
+    }
+  ],
+  "currentWasmHash": "d1cec5268bb1bd05ea2719d776e4ceb17c68dc740e9cdbbba2de6df495825f65",
+  "p09IdentityAllPass": true,
+  "p09FocusedAllPass": true,
+  "oracleCombinations": 2250,
+  "p01ReranBusinessTests": false
+}

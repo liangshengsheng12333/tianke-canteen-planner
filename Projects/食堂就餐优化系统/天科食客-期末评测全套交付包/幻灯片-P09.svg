@@ -1,0 +1,69 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="ending">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Subtle Structural Decor -->
+  <circle id="decor_circle_1" data-pptx-role="decoration" cx="200" cy="180" r="280" fill="#2563EB" fill-opacity="0.04" />
+  <circle id="decor_circle_2" data-pptx-role="decoration" cx="1720" cy="880" r="320" fill="#10B981" fill-opacity="0.04" />
+  <rect id="decor_top_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p09" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">工程回顾与总结：打造有深度的校园食堂优化系统</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">跨平台算法内核 · 深度时空自由度控制 · 真实食堂场景落地 · 恪守严谨求实作风</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">09 / 09</text>
+  </g>
+
+  <!-- Four Pillars Grid -->
+  <g id="four_pillars_grid_p09" data-pptx-bounds="100 220 1720 380">
+    <!-- Pillar 1 -->
+    <rect x="100" y="220" width="405" height="380" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="136" y="256" width="48" height="48" rx="12" fill="#2563EB" fill-opacity="0.1" />
+    <text x="160" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#2563EB" text-anchor="middle">01</text>
+    <text x="136" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">真实食堂场景闭环</text>
+    <text x="136" y="400" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">实地走访西院西一食堂，<tspan x="136" dy="28">覆盖 12 窗口 137 真实报价；</tspan><tspan x="136" dy="28">从目标设定到独立记餐，</tspan><tspan x="136" dy="28">构筑真实生活全流程闭环。</tspan></text>
+    <rect x="136" y="556" width="333" height="4" fill="#2563EB" rx="2" />
+
+    <!-- Pillar 2 -->
+    <rect x="538" y="220" width="405" height="380" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="574" y="256" width="48" height="48" rx="12" fill="#10B981" fill-opacity="0.1" />
+    <text x="598" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#10B981" text-anchor="middle">02</text>
+    <text x="574" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">跨平台高性能架构</text>
+    <text x="574" y="400" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">C++17 纯算法内核统一逻辑，<tspan x="574" dy="28">双编译链实现 Native 单体验证</tspan><tspan x="574" dy="28">与小程序 WASM 纯本地离线执行，</tspan><tspan x="574" dy="28">零云端依赖，秒级响应。</tspan></text>
+    <rect x="574" y="556" width="333" height="4" fill="#10B981" rx="2" />
+
+    <!-- Pillar 3 -->
+    <rect x="976" y="220" width="405" height="380" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1012" y="256" width="48" height="48" rx="12" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="1036" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#F59E0B" text-anchor="middle">03</text>
+    <text x="1012" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">深度时空自由度控制</text>
+    <text x="1012" y="400" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">多维决策自由度严密建模，<tspan x="1012" dy="28">消除两餐 DP 重复扫描，</tspan><tspan x="1012" dy="28">耗时从 23.46s 骤降至 71.00ms，</tspan><tspan x="1012" dy="28">562 页内存稳健受控。</tspan></text>
+    <rect x="1012" y="556" width="333" height="4" fill="#F59E0B" rx="2" />
+
+    <!-- Pillar 4 -->
+    <rect x="1414" y="220" width="406" height="380" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1450" y="256" width="48" height="48" rx="12" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1474" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#2563EB" text-anchor="middle">04</text>
+    <text x="1450" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">已正式发布上线</text>
+    <text x="1450" y="400" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">微信小程序已审核上线发布，<tspan x="1450" dy="28">师生扫码即可即时使用；</tspan><tspan x="1450" dy="28">全离线高性能架构与真实菜单，</tspan><tspan x="1450" dy="28">实现课程到实用产品的成功跨越！</tspan></text>
+    <rect x="1450" y="556" width="334" height="4" fill="#2563EB" rx="2" />
+  </g>
+
+  <!-- Bottom Closing & Presenter Card -->
+  <g id="closing_presenter_block_p09" data-pptx-bounds="100 630 1720 370">
+    <rect x="100" y="630" width="1720" height="370" rx="20" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- Center Callout -->
+    <text x="960" y="730" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B" text-anchor="middle">敬请各位评审老师批评指正！</text>
+    <text x="960" y="780" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A" text-anchor="middle">感谢您的聆听 · 恳请提问交流与指导</text>
+
+    <line x1="260" y1="820" x2="1660" y2="820" stroke="#E4E4E7" stroke-width="1" />
+
+    <!-- Presenter & Academic Meta -->
+    <rect x="660" y="850" width="600" height="110" rx="14" fill="#F4F4F5" />
+    <text x="960" y="892" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#2563EB" text-anchor="middle">答辩汇报人：任潇宇</text>
+    <text x="960" y="930" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A" text-anchor="middle">天津科技大学 · 软件工程课程设计期末综合评测 · 2026年10月</text>
+  </g>
+</svg>

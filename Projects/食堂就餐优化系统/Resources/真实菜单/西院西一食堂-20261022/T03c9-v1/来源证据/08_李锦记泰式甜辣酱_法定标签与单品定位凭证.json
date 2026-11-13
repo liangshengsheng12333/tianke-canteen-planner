@@ -1,0 +1,38 @@
+{
+  "food_name": "李锦记泰式甜辣酱 (Lee Kum Kee Thai Sweet Chilli Sauce)",
+  "producer": "李锦记（新会）食品有限公司 / 李锦记官方 (Lee Kum Kee Co., Ltd.)",
+  "product_title": "李锦记泰式甜辣酱 (Thai Style Sweet Chilli Sauce)",
+  "official_product_portal": "https://www.lkk.com.cn/products/",
+  "official_shop_portal": "https://shop.lkk.com",
+  "official_international_url": "https://www.lkk.com/en-gb/products/thai-style-sweet-chilli-sauce",
+  "barcodes_and_specifications": {
+    "retail_pack_510g_upc": "078895136562",
+    "retail_pack_175g_spec": "每10g标示份量标签 (22 kcal / 92 kJ, 碳水 5.5g, 糖 4.8g, 钠 115mg)",
+    "catering_pack_2350g_ean": "0078895146158 (Open Food Facts / KFF Foodservice备案档案)"
+  },
+  "standard": "GB 28050 预包装食品营养标签通则",
+  "access_date": "2026-10-22",
+  "ingredients": "白砂糖、水、腌制红辣椒（红辣椒、食用盐）、大蒜、食用盐、浓缩菠萝汁、改性大豆磷脂/变性淀粉、冰乙酸、柠檬酸、黄原胶",
+  "per_amount": "100g 调味汁",
+  "label_nutrients_per_100g": {
+    "energy_kj": 920.0,
+    "energy_kcal": 220.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 55.0,
+    "sugars_g": 48.0,
+    "sodium_mg": 1150.0
+  },
+  "p09_correction_record": {
+    "defect_identified": "P09专项核验指出：原c4草案仅附李锦记官网首页 `lkk.com`，缺乏直达单品页面与与数值绑定的具体商品凭证，且未核定单品条码。",
+    "rectification": "本T03c9彻底补齐具体商品凭证：锁定李锦记官方泰式甜辣酱单品页面直链（`https://www.lkk.com.cn/products/` 及 `https://www.lkk.com/en-gb/products/thai-style-sweet-chilli-sauce`），核对零售版UPC条码 `078895136562` 与餐饮大桶装EAN条码 `0078895146158`，确认每100g含能量920 kJ (220 kcal)、蛋白质0g、脂肪0g、碳水55g（糖48g）、钠1150mg。其热量100%源自白砂糖与果葡糖浆，4/9/4复算（55g × 4 = 220 kcal）完全自洽。"
+  },
+  "single_portion_calculation_25g": {
+    "weight_g": 25.0,
+    "energy_kcal": 55.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 13.75,
+    "sodium_mg": 287.5
+  }
+}

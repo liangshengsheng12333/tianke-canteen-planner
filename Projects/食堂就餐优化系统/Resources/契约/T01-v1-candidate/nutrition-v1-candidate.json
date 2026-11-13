@@ -1,0 +1,290 @@
+{
+  "schema": "t01-nutrition-config-candidate",
+  "contractVersion": "1.0",
+  "version": "nutrition-v1-candidate",
+  "status": "candidate-not-frozen",
+  "updated": "2026-10-20",
+  "formula": {
+    "id": "mifflin-st-jeor",
+    "labelZh": "估算静息能量消耗（REE）预测式",
+    "status": "confirmedProductFormula",
+    "sourceIds": ["mifflin1990"],
+    "note": "主PRD选定；P09独立复算N1/N2整数链一致。输出为估算REE，不称实测基础代谢（BMR）；数值为产品估算，不是医学处方。"
+  },
+  "statusValues": {
+    "confirmedProductInitial": "P01/PRD已确认的产品初值，可写入实现；不是指南推荐或医学结论，可校正。",
+    "confirmedProductFormula": "公式与单位换算已由P09复算的产品决定。",
+    "p09AcceptedWithCondition": "P09接受该值/规则，但附带适用条件，实现必须满足条件。",
+    "pendingP09Verification": "尚未由P09独立核验；在通过前不得作为已核验配置对外宣称。",
+    "pendingP01Decision": "需P01作产品取舍；当前值为候选初值，不是结论。",
+    "p09RequiredFixApplied": "P09指出的契约缺口已在候选契约中修复，仍需P09在修订版上复核。"
+  },
+  "verification": {
+    "reportPath": "Resources/报告/T01-P09-营养配置独立核验-20261020.md",
+    "reportDate": "2026-10-20",
+    "reportSha256": "1723320E1624E18F7DEDB78EC06CCDA65BF167AE7FD4256E0AC1F5719F269FA7",
+    "verdict": "not-passed",
+    "arithmeticChecked": ["N1", "N2"],
+    "semanticsChecked": ["N4"],
+    "requiredFixesApplied": [
+      "BMI改用未舍入整数比较，显示值单独舍入",
+      "REE术语替代BMR，避免把预测估算称为实测基础代谢",
+      "未成年人不得得到自动营养目标",
+      "孕哺/疾病饮食不进入自动目标路径（候选按P09建议拦截，待P01确认）",
+      "手动目标必须记录来源（professional/userEntered）"
+    ],
+    "pendingVerificationOrDecision": [
+      "activityFactorPermille",
+      "proteinMgPerKgNormal",
+      "proteinMgPerKgTrainingPreference",
+      "fatEnergyPermille",
+      "mealSharePermille",
+      "lowIntakeFloorKcalMale",
+      "lowIntakeFloorKcalFemale",
+      "adultAgeMinYears",
+      "adultAgeMaxYears",
+      "macroGuardrails"
+    ]
+  },
+  "parameters": {
+    "fatLossDeficitPermille": {
+      "value": 100,
+      "unit": "permilleOfTdee",
+      "status": "confirmedProductInitial",
+      "verifiedBy": "P09",
+      "note": "PRD已确定：估算消耗的10%，最多300kcal/日；作为可校正产品参数，不写成指南统一处方。"
+    },
+    "fatLossDeficitCapKcal": {
+      "value": 300,
+      "unit": "kcalPerDay",
+      "status": "confirmedProductInitial",
+      "verifiedBy": "P09",
+      "note": "与缺口比例同一产品初值。"
+    },
+    "activityFactorPermille": {
+      "value": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+      "unit": "permilleOfRee",
+      "status": "pendingP09Verification",
+      "verifiedBy": null,
+      "note": "候选产品估算档位，无一手来源；P09指出FAO/WHO/UNU的PAL分类与这些数值口径不同，不能借用其同名分类证明。P01需定义各档日常活动含义，并标明可校正估算或给出校准计划。"
+    },
+    "proteinMgPerKgNormal": {
+      "value": 1200,
+      "unit": "mgPerKgBodyWeightPerDay",
+      "status": "pendingP09Verification",
+      "verifiedBy": null,
+      "note": "P09指出NASEM成人蛋白质RDA为0.8g/kg/日，1.2g/kg未被支持；P01需选择采用参考基准或保留为产品默认并明确标注、说明体重适用范围。"
+    },
+    "proteinMgPerKgTrainingPreference": {
+      "value": 1500,
+      "unit": "mgPerKgBodyWeightPerDay",
+      "status": "pendingP09Verification",
+      "verifiedBy": null,
+      "note": "1.5g/kg落在ISSN健康运动人群1.4–2.0g/kg范围，但'训练偏好'为布尔值，未定义训练方式/训练量/适用人群；需P09/P01补适用条件。"
+    },
+    "fatEnergyPermille": {
+      "value": 270,
+      "unit": "permilleOfTargetEnergy",
+      "status": "pendingP01Decision",
+      "verifiedBy": null,
+      "note": "27%落在NASEM成人脂肪AMDR 20–35%内，但非普遍最佳值；P09认为可作可调产品初值，尚缺来源/产品裁定，不得标已核验。"
+    },
+    "mealSharePermille": {
+      "value": {"breakfast": 300, "lunch": 400, "dinner": 300},
+      "status": "pendingP01Decision",
+      "verifiedBy": null,
+      "note": "产品分配初值，非医学餐次处方；P09指出缺来源，可作为可调初值，待P01确认。"
+    },
+    "lowIntakeFloorKcalMale": {
+      "value": 1500,
+      "unit": "kcalPerDay",
+      "status": "pendingP09Verification",
+      "verifiedBy": null,
+      "note": "占位值；P09指出NHLBI数值来自特定干预研究、NIDDK的1000kcal是工具设计边界，均不能推广为通用安全下限。P01需定义该guardrail的真实用途与来源。"
+    },
+    "lowIntakeFloorKcalFemale": {
+      "value": 1200,
+      "unit": "kcalPerDay",
+      "status": "pendingP09Verification",
+      "verifiedBy": null,
+      "note": "同上，占位值。"
+    }
+  },
+  "applicability": {
+    "adultAgeMinYears": {
+      "value": 18,
+      "status": "pendingP01Decision",
+      "note": "未成年人为产品外推边界：候选契约规定未成年人不得得到自动目标；18岁是否接受为产品外推需P01/P09确认（Mifflin原始样本19–78岁）。"
+    },
+    "adultAgeMaxYears": {
+      "value": null,
+      "status": "pendingP01Decision",
+      "note": "候选不设硬上限；P09指出65岁上限无该公式来源支持。是否设上限或仅提示，待P01决定。"
+    },
+    "minorPolicy": {
+      "value": "blockAutomaticGoals",
+      "status": "p09RequiredFixApplied",
+      "note": "年龄低于下限时，fatLoss/maintain均不自动生成；manual只可按用户/专业人员来源存储并做格式校验。"
+    },
+    "bmiUnderweightThresholdTenths": {
+      "value": 185,
+      "unit": "tenthsOfBmi",
+      "status": "p09AcceptedWithCondition",
+      "verifiedBy": "P09",
+      "note": "WHO成人underweight分类BMI<18.5有依据，仅适用成人。比较必须未舍入：weightGrams*10000 < 185*heightMm*heightMm；显示BMI可单独四舍五入。"
+    },
+    "underweightPolicy": {
+      "value": "blockFatLossOnly",
+      "status": "pendingP01Decision",
+      "note": "PRD要求不自动生成减脂目标，maintain可继续并warning；P09建议P01进一步明确过轻状态下的manual/maintain行为。"
+    },
+    "pregnancyOrLactationPolicy": {
+      "value": "blockAutomaticGoals",
+      "status": "pendingP01Decision",
+      "note": "P09建议孕期/哺乳期不进入一般成人自动目标流程；候选按此实现（fatLoss/maintain均不自动生成），待P01确认。manual仅可存证、需source、不背书医学适用性。"
+    },
+    "medicalDietPolicy": {
+      "value": "blockAutomaticGoals",
+      "status": "pendingP01Decision",
+      "note": "同上；疾病饮食管理不自动生成目标，manual仅可存证并提示咨询专业人员。"
+    }
+  },
+  "manualTargetValidation": {
+    "sourceRequired": {
+      "value": true,
+      "status": "p09RequiredFixApplied",
+      "note": "goal.manualTargets.source ∈ {professional,userEntered}；系统只做格式/一致性检查，不背书医学适用性。"
+    },
+    "energyMacroConsistency": {
+      "value": true,
+      "status": "pendingP01Decision",
+      "note": "手动目标能量与4/9/4换算明显不一致时拒绝；具体容差待P01。"
+    },
+    "lowIntakeCheck": {
+      "value": true,
+      "status": "pendingP09Verification",
+      "note": "手动能量目标低于低摄入阈值时拒绝；阈值本身待P09/P01。"
+    }
+  },
+  "macroGuardrails": {
+    "status": "pendingP01Decision",
+    "note": "P09要求至少覆盖高蛋白/低能量导致碳水比例过低、手动宏量能量不一致等组合。候选只保留规则槽位，未设硬拦截；不得把AMDR/RDA直接写成医学约束。",
+    "referenceRangesPermille": {
+      "proteinEnergy": [100, 350],
+      "fatEnergy": [200, 350],
+      "carbEnergy": [450, 650],
+      "note": "NASEM成人AMDR参考范围，仅作P01设计提示，不是已批准拦截规则。"
+    },
+    "carbohydrateRdaG": {
+      "value": 130,
+      "unit": "gPerDay",
+      "status": "pendingP01Decision",
+      "note": "NASEM成人碳水RDA参考值；是否作为提示/拦截待P01，不当医学处方。"
+    }
+  },
+  "plannerSorting": {
+    "nutritionDeviationWeightsPermille": {
+      "value": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+      "status": "confirmedProductInitial",
+      "verifiedBy": "P01",
+      "note": "P01裁定四项各250‰；三算法共用同一排序键。"
+    },
+    "nutritionTierWidthBp": {
+      "value": 1000,
+      "unit": "basisPoints",
+      "status": "confirmedProductInitial",
+      "verifiedBy": "P01",
+      "note": "nutritionTier=floor(nutritionDeviationBp/1000)；只是可调排序分组宽度，不是营养达标阈值或医学指标。"
+    }
+  },
+  "targetModeDefault": {
+    "value": "remainingAfterKnownIntake",
+    "status": "confirmedProductInitial",
+    "verifiedBy": "P01",
+    "fallback": "referenceSharesWhenIntakeIncomplete",
+    "note": "四项摄入均完整时按剩余目标重新归一化分配；任一项不完整时退回餐次参考并标NUTRITION_INCOMPLETE，不按未知加码补偿。"
+  },
+  "examples": [
+    {
+      "id": "N1",
+      "description": "男，20岁，175.0cm，70.0kg，moderate，fatLoss；示例参数1200mg/kg蛋白、270‰脂肪、餐次300/400/300。",
+      "inputs": {"sex": "male", "ageYears": 20, "heightMm": 1750, "weightGrams": 70000, "activityFactorPermille": 1550},
+      "expected": {
+        "reeMkcal": 1698750,
+        "tdeeMkcal": 2633063,
+        "deficitMkcal": 263306,
+        "targetEnergyKcal": 2370,
+        "proteinDg": 840,
+        "fatDg": 711,
+        "carbDg": 3485
+      },
+      "verification": "p09ArithmeticChecked",
+      "note": "P09独立复算与提案一致；参数来源仍待核验，不得当已核验营养建议。"
+    },
+    {
+      "id": "N2",
+      "description": "女，22岁，162.0cm，50.0kg，light，maintain。",
+      "inputs": {"sex": "female", "ageYears": 22, "heightMm": 1620, "weightGrams": 50000, "activityFactorPermille": 1375},
+      "expected": {
+        "reeMkcal": 1241500,
+        "tdeeMkcal": 1707063,
+        "deficitMkcal": 0,
+        "targetEnergyKcal": 1707,
+        "proteinDg": 600,
+        "fatDg": 512,
+        "carbDg": 2515
+      },
+      "verification": "p09ArithmeticChecked",
+      "note": "P09独立复算一致；参数来源仍待核验。"
+    },
+    {
+      "id": "BMI_EDGE_18_4599",
+      "description": "BMI边界：53,349g、1,700mm；未舍入BMI约18.4599<18.5，但显示值四舍五入为18.5。",
+      "inputs": {"weightGrams": 53349, "heightMm": 1700, "bmiUnderweightThresholdTenths": 185},
+      "expected": {
+        "unroundedComparison": "53349*10000 < 185*1700*1700 => true",
+        "blockedGoals": ["fatLoss"],
+        "displayBmiTenths": 185
+      },
+      "verification": "p09RequiredFixAppliedPendingRecheck",
+      "note": "P09指出先舍入会漏拦；候选必须按未舍入比较。待P09在修订版复核。"
+    },
+    {
+      "id": "KNOWN_ZERO_VS_UNKNOWN",
+      "description": "已知零与未知并存：白水四项为0（来源label）参与求和；麻婆豆腐proteinDg为null，不按0计入。",
+      "inputs": {"water": {"energyKcal": 0, "proteinDg": 0, "fatDg": 0, "carbDg": 0}, "tofu": {"energyKcal": 320, "proteinDg": null, "fatDg": 220, "carbDg": 120}},
+      "expected": {"knownSums": {"energyKcal": 320, "proteinDg": 0, "fatDg": 220, "carbDg": 120}, "incompleteNutrients": ["proteinDg"], "unknownItemCount": 1},
+      "verification": "p09SemanticsAccepted",
+      "note": "P09确认与PRD 3.1一致；不得把未知当零或据此称达标。"
+    },
+    {
+      "id": "HALF_RICE_PRICE",
+      "description": "半份米饭价格规则：整份米饭offer价格150分，半份offer价格必须同为150分；营养按半份比例派生。",
+      "inputs": {"fullRicePriceCents": 150, "halfRicePriceCents": 150, "fullRiceNutrition": {"energyKcal": 230, "proteinDg": 40, "fatDg": 5, "carbDg": 500}},
+      "expected": {"halfRicePriceCents": 150, "halfRiceNutrition": {"energyKcal": 115, "proteinDg": 20, "fatDg": 3, "carbDg": 250}},
+      "verification": "p01Ruling6",
+      "note": "P01裁定6：半份与整份同价，不除以二；整份价格未知时半份也未知。"
+    }
+  ],
+  "sourceRefs": [
+    {"id": "mifflin1990", "title": "Mifflin MD et al. (1990) resting energy expenditure predictive equation", "url": "https://pubmed.ncbi.nlm.nih.gov/2305711/", "use": "REE公式原始研究；P09复核引用"},
+    {"id": "nasem2023", "title": "National Academies (2023) Dietary Reference Intakes for Energy", "url": "https://nap.nationalacademies.org/read/26818/chapter/3", "use": "成人EER/生命阶段与蛋白质参考背景"},
+    {"id": "fao2004", "title": "FAO/WHO/UNU (2004) Human Energy Requirements, PAL definitions", "url": "https://www.fao.org/4/y5686e/y5686e07.htm", "use": "说明PAL分类与候选活动系数口径不同"},
+    {"id": "issn2017", "title": "Jäger et al. (2017) ISSN protein and exercise position stand", "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8", "use": "训练蛋白1.4–2.0g/kg范围背景"},
+    {"id": "iom2005", "title": "IOM/NASEM (2005) DRI for macronutrients", "url": "https://nap.nationalacademies.org/publications/10490", "use": "成人蛋白质RDA与宏量AMDR参考范围"},
+    {"id": "whoBmi", "title": "WHO adult BMI classification", "url": "https://www.who.int/docs/default-source/nutritionlibrary/events/9789241505529-eng.pdf", "use": "BMI<18.5成人underweight分类"},
+    {"id": "niddk", "title": "NIDDK Body Weight Planner", "url": "https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner", "use": "18+与非孕哺适用边界、工具低摄入限制的说明"},
+    {"id": "nhlbi2013", "title": "NHLBI (2013) obesity evidence review", "url": "https://www.nhlbi.nih.gov/sites/default/files/media/docs/obesity-evidence-review.pdf", "use": "1200–1500/1500–1800 kcal见于特定干预情境，非通用安全线"}
+  ],
+  "pendingItems": [
+    "activityFactorPermille定义与来源",
+    "proteinMgPerKgNormal取值/依据",
+    "proteinMgPerKgTrainingPreference适用条件",
+    "fatEnergyPermille与macroGuardrails规则",
+    "mealSharePermille来源与可调性",
+    "lowIntakeFloorKcalMale/Female来源与产品用途",
+    "adultAgeMinYears外推依据与adultAgeMaxYears是否设限",
+    "underweightPolicy下maintain/manual精确行为",
+    "pregnancyOrLactationPolicy/medicalDietPolicy下manual是否允许存证"
+  ]
+}

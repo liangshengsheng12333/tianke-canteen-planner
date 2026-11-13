@@ -1,0 +1,49 @@
+<!-- pages/appearance/index.wxml — 显示与外观：本卡只做浅色/深色/跟随系统，显示模式不在本卡。 -->
+<view class="page {{themeClass}}">
+  <!-- 次级页返回入口：与菜单/数据/预算/资料页使用同一 .back-line 形式与 onBack 语义 -->
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回我的</text>
+  </view>
+
+  <view class="hero">
+    <view class="hero-title">显示与外观</view>
+    <view class="hero-sub">选择浅色、深色或跟随系统。外观只改变配色，不改变用餐记录、预算与推荐。</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">
+      <text>外观</text>
+      <text class="badge badge-info">{{currentLabel}}</text>
+    </view>
+
+    <view class="option-list">
+      <view
+        wx:for="{{options}}"
+        wx:key="value"
+        class="option {{item.value === preference ? 'selected' : ''}}"
+        data-value="{{item.value}}"
+        bindtap="onSelect"
+        aria-role="radio"
+        aria-checked="{{item.value === preference}}"
+      >
+        <view class="option-leading">
+          <view class="swatch swatch-{{item.value}}"></view>
+          <view class="option-text">
+            <view class="option-name">{{item.label}}</view>
+            <view class="option-desc">{{item.desc}}</view>
+          </view>
+        </view>
+        <text class="check">{{item.value === preference ? '✓' : ''}}</text>
+      </view>
+    </view>
+
+    <view class="note" wx:if="{{systemNote}}">{{systemNote}}</view>
+    <view class="note">选择会立即保存，下次打开保持；保存失败时保留原选择并提示重试。</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title"><text>说明</text></view>
+    <view class="note">浅色和深色是固定外观，不受系统主题影响；跟随系统会随手机主题变化并保留这一选择。</view>
+    <view class="note">本页只调整外观，不改变菜单、记餐、预算、锁定或营养推荐，也不会重新生成方案。</view>
+  </view>
+</view>

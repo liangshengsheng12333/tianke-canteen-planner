@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "todowrite-cpp",
+  "version": "1.0.1",
+  "description": "Workspace task checklist with persistent TodoKit storage.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "TodoWrite 工作区待办",
+        "shortDescription": "创建并更新工作区任务清单",
+        "category": "Productivity"
+      }
+    }
+  }
+}

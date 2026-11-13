@@ -1,0 +1,70 @@
+<!-- pages/data/index.wxml — 数据管理：当前菜单 + 更新/导出/恢复入口 + 次级技术入口。 -->
+<view class="page {{themeClass}}">
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回我的</text>
+  </view>
+
+  <view class="hero">
+    <view class="hero-title">数据管理</view>
+    <view class="hero-sub">更新菜单、导出备份、恢复备份都在这里；操作前预览影响，取消或失败保留原数据。</view>
+  </view>
+
+  <view class="banner banner-err" wx:if="{{loadError}}">{{loadError}}</view>
+
+  <block wx:if="{{view}}">
+    <!-- 当前菜单 -->
+    <view class="card">
+      <view class="card-title">
+        <text>当前菜单</text>
+        <text class="badge badge-sim" wx:if="{{simulated}}">示例菜单（模拟）</text>
+      </view>
+      <view class="row" wx:for="{{menuRows}}" wx:key="label">
+        <text class="row-label">{{item.label}}</text>
+        <text class="row-value">{{item.value}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{simulated}}">当前是内置示例菜单，只用于体验与测试，不代表食堂真实菜单。</view>
+    </view>
+
+    <!-- 更新菜单 / 导出 / 恢复 -->
+    <view class="card">
+      <view class="card-title">菜单与备份</view>
+      <view class="note">导入菜单会先预检并展示影响（新增/移除/改价、失效的锁定与售罄），确认后才替换；取消或失败不改动原菜单。</view>
+      <view class="action-list">
+        <view class="action" bindtap="onOpenImport">
+          <view class="action-main">
+            <text class="action-title">更新菜单</text>
+            <text class="action-desc">粘贴或选择菜单 JSON，先预检再确认替换</text>
+          </view>
+          <text class="action-arrow">›</text>
+        </view>
+        <view class="action" bindtap="onOpenExport">
+          <view class="action-main">
+            <text class="action-title">导出备份</text>
+            <text class="action-desc">生成当前业务数据的备份文件与摘要</text>
+          </view>
+          <text class="action-arrow">›</text>
+        </view>
+        <view class="action" bindtap="onOpenRestore">
+          <view class="action-main">
+            <text class="action-title">恢复备份</text>
+            <text class="action-desc">先预检并展示逐项对照，确认后才覆盖</text>
+          </view>
+          <text class="action-arrow">›</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 次级入口：技术信息与诊断 -->
+    <view class="card">
+      <view class="card-title">
+        <text>技术信息</text>
+        <text class="muted">次级入口</text>
+      </view>
+      <view class="note">原始 JSON、哈希摘要与备份对照只对排查有用，放在这里，不占普通用户首层。</view>
+      <view class="btn-group">
+        <button class="btn btn-ghost" bindtap="onOpenTech">备份摘要与原始数据</button>
+        <button class="btn btn-ghost" bindtap="onOpenDev">诊断信息</button>
+      </view>
+    </view>
+  </block>
+</view>

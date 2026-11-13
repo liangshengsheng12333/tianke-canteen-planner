@@ -1,0 +1,62 @@
+[
+  {
+    "dishId": "dish-hnjf-hainan-jifan",
+    "name": "海南鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 558,
+      "proteinDg": 328,
+      "fatDg": 228,
+      "carbDg": 541
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表》第6版第一册(蒸米饭01-2-401/熟鸡油油脂类)、USDA FoodData Central NDB #05010 (熟带皮白切鸡肉)、香港食物安全中心CFS FRL(薑蓉Row 86/青瓜Row 740)及GB 28050鸡饭辣酱标签原料累加",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟米饭197g+鸡油3g) + 熟白切鸡肉(带皮切块)110g + 姜葱蓉调料10g + 鸡饭辣椒酱10g + 鲜黄瓜片25g(单份成品净重约355g)",
+      "estimated": true,
+      "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及典型海南鸡饭双味蘸料出餐推导，米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-taishi-doufu-fan",
+    "name": "泰式豆腐饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 631,
+      "proteinDg": 274,
+      "fatDg": 265,
+      "carbDg": 715
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表》第6版第一册(蒸米饭01-2-401/熟鸡油油脂类/油豆腐03.1.506)、李锦记GB 28050法定营养标签(泰式甜辣酱)及香港CFS FRL(青瓜Row 740)原料累加",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟米饭197g+鸡油3g) + 炸豆腐块(熟重)130g + 泰式甜辣酱汁25g + 鲜黄瓜片20g(单份成品净重约375g)",
+      "estimated": true,
+      "note": "依据标牌10元出餐及炸豆腐裹泰式酸甜辣酱推导，油豆腐采用油炸熟重基准，米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-cpky-baiqieji-fan",
+    "name": "白切鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 489,
+      "proteinDg": 332,
+      "fatDg": 148,
+      "carbDg": 542
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表》第6版第一册(蒸米饭01-2-401)、USDA FoodData Central NDB #05010 (熟带皮白切鸡肉)及香港CFS FRL(燒味汁Row 85/白灼菜心Row 705)原料累加，并与CFS官方白切鸡饭整份化验(Row 533)对照验证",
+      "portionAssumption": "熟白米饭200g + 熟白切鸡肉(带皮切块)110g + 烧味豉油浇汁15g + 白灼菜心35g(单份成品净重约360g)",
+      "estimated": true,
+      "note": "依据烤鸭档口盘装切块白切鸡配青菜米饭推导，采用纯白米饭基准与白灼菜心配菜，米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  }
+]

@@ -1,0 +1,134 @@
+/* pages/profile/index.wxss — “我的”摘要入口差异样式；颜色/卡片/表单沿用 app.wxss 令牌。 */
+
+/* 读取异常横幅 */
+.banner {
+  margin-top: 24rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.banner-err {
+  background: var(--tk-danger-bg);
+  border: 1rpx solid var(--tk-danger-line);
+  color: var(--tk-danger);
+}
+
+/* 目标摘要标题行 */
+.target-title {
+  margin-top: 12rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+
+/* 显示模式：两项并排，选中用边框 + 勾选 + “已选”文字三重表达。 */
+.opt-list {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 16rpx;
+}
+.opt {
+  flex: 1;
+  padding: 20rpx 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-field-bg);
+  border: 2rpx solid var(--tk-line);
+}
+.opt-selected {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.opt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rpx;
+}
+.opt-label {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.opt-check {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-accent);
+}
+.opt-desc {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+
+/* 外观：三张带色块的小预览；选中同样用边框 + 勾选 + 文本。 */
+.theme-list {
+  margin-top: 16rpx;
+}
+.theme-opt {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  margin-top: 16rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-field-bg);
+  border: 2rpx solid var(--tk-line);
+}
+.theme-opt-selected {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.theme-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.swatch {
+  position: relative;
+  width: 96rpx;
+  height: 64rpx;
+  border-radius: 14rpx;
+  border: 1rpx solid var(--tk-line-strong);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.swatch-light {
+  background: linear-gradient(135deg, #f5f6f8 0%, #ffffff 100%);
+}
+.swatch-dark {
+  background: linear-gradient(135deg, #111416 0%, #2a3235 100%);
+}
+.swatch-system {
+  background: linear-gradient(135deg, #f5f6f8 0%, #f5f6f8 48%, #111416 52%, #111416 100%);
+}
+.swatch-bar {
+  position: absolute;
+  left: 10rpx;
+  right: 10rpx;
+  top: 12rpx;
+  height: 10rpx;
+  border-radius: 6rpx;
+  background: rgba(120, 130, 140, 0.45);
+}
+.swatch-dot {
+  position: absolute;
+  left: 10rpx;
+  top: 32rpx;
+  width: 26rpx;
+  height: 18rpx;
+  border-radius: 6rpx;
+  background: rgba(120, 130, 140, 0.3);
+}
+
+/* 次级链接行 */
+.link-line {
+  margin-top: 16rpx;
+  text-align: right;
+}
+
+/* “示例菜单”提醒徽标 */
+.badge-sim {
+  background: var(--tk-warn-bg);
+  color: var(--tk-warn-text);
+}

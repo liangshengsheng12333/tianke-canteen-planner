@@ -1,0 +1,128 @@
+[
+  {
+    "dishId": "dish-shredded-pancake",
+    "name": "手抓饼",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 443,
+      "proteinDg": 141,
+      "fatDg": 212,
+      "carbDg": 490,
+      "carbsDg": 490
+    },
+    "nutritionBasis": {
+      "source": "GB 28050三全原味手抓饼生坯标签(国际条码6908791501338/FoodTalks产品档案7490)、《中国食物成分表》第6版第一册(鲜鸡蛋06-1-101/生马铃薯02-1-101/大豆油10-1-101)",
+      "portionAssumption": "三全原味手抓饼速冻生坯90g + 鲜鸡蛋(全蛋去壳)50g + 生马铃薯(土豆丝净料)45g + 烹调大豆油3g(单份成品净重约185g)",
+      "estimated": true,
+      "note": "严格依据门头标牌公示配料'面皮+鸡蛋+土豆丝'；三全原味生坯自带起酥油13.68g无需额外底油，单份烹调大豆油3g统合归集档口土豆丝预炒吸油(约1.5g)与铁板打蛋微量防粘润锅油(约1.5g)，彻底根除原草案土豆丝黑盒折算加油与底油双重计入之缺陷；全份重新精算，非食堂化验值",
+      "ingredients": [
+        {
+          "name": "三全原味手抓饼速冻生坯",
+          "portionG": 90.0,
+          "source": "三全食品股份有限公司 GB 28050 预包装标签",
+          "barcode": "6908791501338",
+          "standard": "SB/T 10379",
+          "license": "SC11141010800010",
+          "portalUrl": "https://www.foodtalks.cn/product/7490",
+          "per100g": {
+            "energyKcal": 344.0,
+            "energyKj": 1440.0,
+            "proteinG": 7.3,
+            "fatG": 15.2,
+            "carbG": 44.3,
+            "sodiumMg": 482.0
+          },
+          "portionValues": {
+            "energyKcal": 309.6000,
+            "proteinG": 6.5700,
+            "fatG": 13.6800,
+            "carbG": 39.8700,
+            "sodiumMg": 433.8000
+          }
+        },
+        {
+          "name": "鲜鸡蛋(全蛋去壳)",
+          "portionG": 50.0,
+          "source": "中国疾控中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+          "foodCode": "06-1-101",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+          "per100g": {
+            "energyKcal": 143.0,
+            "energyKj": 599.0,
+            "proteinG": 13.3,
+            "fatG": 8.8,
+            "carbG": 2.8,
+            "sodiumMg": 131.5
+          },
+          "portionValues": {
+            "energyKcal": 71.5000,
+            "proteinG": 6.6500,
+            "fatG": 4.4000,
+            "carbG": 1.4000,
+            "sodiumMg": 65.7500
+          }
+        },
+        {
+          "name": "马铃薯(土豆丝净料)",
+          "portionG": 45.0,
+          "source": "中国疾控中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+          "foodCode": "02-1-101",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/313.html",
+          "per100g": {
+            "energyKcal": 78.0,
+            "energyKj": 328.0,
+            "proteinG": 2.0,
+            "fatG": 0.2,
+            "carbG": 17.2,
+            "sodiumMg": 2.7
+          },
+          "portionValues": {
+            "energyKcal": 35.1000,
+            "proteinG": 0.9000,
+            "fatG": 0.0900,
+            "carbG": 7.7400,
+            "sodiumMg": 1.2150
+          }
+        },
+        {
+          "name": "烹调植物油(大豆油)",
+          "portionG": 3.0,
+          "source": "中国疾控中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+          "foodCode": "10-1-101",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1497.html",
+          "per100g": {
+            "energyKcal": 899.0,
+            "energyKj": 3761.0,
+            "proteinG": 0.0,
+            "fatG": 99.9,
+            "carbG": 0.0,
+            "sodiumMg": 4.9
+          },
+          "portionValues": {
+            "energyKcal": 26.9700,
+            "proteinG": 0.0000,
+            "fatG": 2.9970,
+            "carbG": 0.0000,
+            "sodiumMg": 0.1470
+          }
+        }
+      ],
+      "unroundedTotals": {
+        "energyKcal": 443.1700,
+        "proteinG": 14.1200,
+        "fatG": 21.1670,
+        "carbG": 49.0100,
+        "sodiumMg": 500.9120
+      },
+      "fourNineFourCheck": {
+        "rawTheoreticalKcal": 443.0230,
+        "rawDiffKcal": -0.1470,
+        "twoDecTheoreticalKcal": 443.0500,
+        "contractIntegerDiffKcal": 0.0230
+      }
+    }
+  }
+]

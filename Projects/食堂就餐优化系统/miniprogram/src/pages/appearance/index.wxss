@@ -1,0 +1,73 @@
+/* pages/appearance/index.wxss — 外观设置页差异样式：三张外形选项与主题色块。
+   颜色全部走 app.wxss 的 --tk-* 令牌，本页在两种主题下都可读。 */
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.option-list {
+  margin-top: 20rpx;
+}
+
+/* 一项外观：整行可点，选中用边框 + 勾选 + 文本三重表达，不只靠颜色。 */
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-top: 16rpx;
+  padding: 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-field-bg);
+  border: 2rpx solid var(--tk-line);
+}
+.option.selected {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.option-leading {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  flex: 1;
+}
+.option-text {
+  flex: 1;
+}
+.option-name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.option-desc {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.check {
+  width: 44rpx;
+  text-align: center;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: var(--tk-accent);
+}
+
+/* 主题色块：用色块先给出直观对照，不依赖用户去理解名称。 */
+.swatch {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 18rpx;
+  border: 1rpx solid var(--tk-line-strong);
+  flex-shrink: 0;
+}
+.swatch-light {
+  background: linear-gradient(135deg, #f5f6f8 0%, #ffffff 100%);
+}
+.swatch-dark {
+  background: linear-gradient(135deg, #111416 0%, #2a3235 100%);
+}
+.swatch-system {
+  background: linear-gradient(135deg, #f5f6f8 0%, #f5f6f8 48%, #111416 52%, #111416 100%);
+}

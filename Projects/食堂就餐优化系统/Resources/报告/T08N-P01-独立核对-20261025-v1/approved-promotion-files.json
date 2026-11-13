@@ -1,0 +1,234 @@
+[
+  {
+    "relativePath": "core\\cli\\main.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\cli\\main.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\cli\\main.cpp",
+    "beforeSha256": "20AC81E8B7A82B40AD4BB29FE19C58FD21DB2DC01E73A3A74DF87A5359082146",
+    "afterSha256": "FF56ADFD85437E84ACE8F07A743606FBA20D45D0BDD6869A034DAEFF8E77400B",
+    "afterBytes": 5278
+  },
+  {
+    "relativePath": "core\\src\\api.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\api.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\api.cpp",
+    "beforeSha256": "94D1E8A86E81603F332E0C602FFE05CA2D6084CECC757238D479133E1A6BA0DA",
+    "afterSha256": "6FE43AA8B94F169C871BA90795E2449C68B23E909898F4DDBB99AD39C4CE8F07",
+    "afterBytes": 3541
+  },
+  {
+    "relativePath": "core\\src\\base.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\base.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\base.cpp",
+    "beforeSha256": "2D6075CE09621670B34C24C0CA9A4791E9859B43E5C97B648C43A538E152E9F8",
+    "afterSha256": "4B19300B2E605ED42474C0BBBDE6FDF57C22AD05C956DFA0E99FCE710CE6077D",
+    "afterBytes": 11737
+  },
+  {
+    "relativePath": "core\\src\\catalog.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\catalog.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\catalog.cpp",
+    "beforeSha256": "989D43CDF33C273B70D2372B0D2CF4E92D0CBCF55337AB4C3D140022CC507930",
+    "afterSha256": "DF0C1FD35DD7985B97ADA49BCE084B36688753B156B3AB5BAC1CA0157ACDE0BC",
+    "afterBytes": 61588
+  },
+  {
+    "relativePath": "core\\src\\contract.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\contract.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\contract.cpp",
+    "beforeSha256": "C47BC48291F2C873307F9BDAB999A994C364342227EF5447FE0A935E96FA5F7A",
+    "afterSha256": "087E5A106EE2EAE52D8447246A6F760FF8D00136176F0AA2C73C4F0F3FEDDFCD",
+    "afterBytes": 10695
+  },
+  {
+    "relativePath": "core\\src\\json.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\json.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\json.cpp",
+    "beforeSha256": "3C2BA4CAB47599C6E00B40C089A8014FE6E62594CC5A2D8A05902088B8BB44A2",
+    "afterSha256": "5015236C02E7E650641D49E16BCD5DB63D63DE14C4AEABE788E511F3FBEE2C39",
+    "afterBytes": 29747
+  },
+  {
+    "relativePath": "core\\src\\nutrition.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\nutrition.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\nutrition.cpp",
+    "beforeSha256": "771AFBC811B3FDDC9F119E8865BD02CFA25587E5EA19F501266DBDFE50D260AF",
+    "afterSha256": "F0951AD7850FF63DA75C89D9F47194EC2BD8FBD3951DF67D6061119D931D6D51",
+    "afterBytes": 56066
+  },
+  {
+    "relativePath": "core\\src\\planner.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\planner.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\planner.cpp",
+    "beforeSha256": "109555B9A255792CC571BC1620153D33A11358DF7AAB7D25C2EED7F5295ECE69",
+    "afterSha256": "30F716892350CD5134D07AB30B6AC3C6DBA55BD8BC31E87284DE7DD3C3A63B51",
+    "afterBytes": 172712
+  },
+  {
+    "relativePath": "core\\src\\platform_native.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\platform_native.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\platform_native.cpp",
+    "beforeSha256": "3C28243021914C70616AF847C39EF8667AF395177A2DC96A98A21566B8C3BD3E",
+    "afterSha256": "FF40A6B02D00FCF7B44E58600EBA5D03B86C0907E661DFCA74FD2F22D67C582D",
+    "afterBytes": 932
+  },
+  {
+    "relativePath": "core\\src\\platform_wasm.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\platform_wasm.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\platform_wasm.cpp",
+    "beforeSha256": "3CB5E2B9C4E48CF51B7B4D36B52D101B1C44627EB295ADF60BC16E623D4A2247",
+    "afterSha256": "D6E971AE20D4A02625F2ED0B88B94EF278CC1924CDE6AAEF588AAC2F3582B138",
+    "afterBytes": 4376
+  },
+  {
+    "relativePath": "core\\src\\sha256.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\src\\sha256.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\src\\sha256.cpp",
+    "beforeSha256": "75F3B0F019E5E599E1AE613A8FD6066F02A2A5FD8C1E000AA197186F1DC71E6B",
+    "afterSha256": "5C237F79D875046B422ECCEADF0AA3179D06A998B588B0CB0C3DBB01D4C9F5DF",
+    "afterBytes": 7308
+  },
+  {
+    "relativePath": "core\\tests\\test_core_main.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\tests\\test_core_main.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\test_core_main.cpp",
+    "beforeSha256": "6F663247CB60DAF08108A360F7C8AF7AD576C33EC0780D8FADDE00ECCB2C6C73",
+    "afterSha256": "F573AFB4493CAEA81A505B36EC45A843E724808467F494B65571A01D284A35EB",
+    "afterBytes": 74179
+  },
+  {
+    "relativePath": "core\\tests\\test_json_main.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\tests\\test_json_main.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\test_json_main.cpp",
+    "beforeSha256": "1ED760DB97012A97C2F6E55D600319170CB811D9E4393A1228BE34CD9A2C81D1",
+    "afterSha256": "B56F8411865B2EA62F9C7335E7DA206FDB75CBBCE61A9A41B89DA2F8DD4FB93A",
+    "afterBytes": 23105
+  },
+  {
+    "relativePath": "core\\tests\\test_sha256_main.cpp",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\core\\tests\\test_sha256_main.cpp",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\core\\tests\\test_sha256_main.cpp",
+    "beforeSha256": "A66B2257AEDAA0BD85D4B9828777CFE874A61FEF0438268C6CB657CE1E0FE172",
+    "afterSha256": "6CE46E09B81E7C78F282E7941DC15C95D6CBCDFA4A0256DDF0FCBEA334302E7D",
+    "afterBytes": 9329
+  },
+  {
+    "relativePath": "miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+    "beforeSha256": "8A817926BDE039B74672FA17974323574AEBDB2B41FD8D9815B0E11BFF3A4AD8",
+    "afterSha256": "B0098453B7251C2FF39C65B3DF932E7E15975E4252A036196EBF63638A3DC5DD",
+    "afterBytes": 111554
+  },
+  {
+    "relativePath": "miniprogram\\src\\domain\\backup.ts",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\miniprogram\\src\\domain\\backup.ts",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\domain\\backup.ts",
+    "beforeSha256": "F134FC8CB1689985739BE5FE2176264FE9B60F48410E3F620FB4ABD948A74581",
+    "afterSha256": "B07C87AD9CABEF3D366ED4A1A0DE3EFCE0851F858AFA7CAD2BBE8DF710AB7217",
+    "afterBytes": 11414
+  },
+  {
+    "relativePath": "miniprogram\\src\\domain\\plan.ts",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\miniprogram\\src\\domain\\plan.ts",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\domain\\plan.ts",
+    "beforeSha256": "01E21892E9D92D5F968B06CD41318648192D9D50C13D6EDF2A69A3B8A9E92D31",
+    "afterSha256": "942A393482128290F216DC9E59384DDEAFB01209AB5F2EE8EA5A3AA5AE00E4C8",
+    "afterBytes": 42995
+  },
+  {
+    "relativePath": "miniprogram\\src\\domain\\types.ts",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\miniprogram\\src\\domain\\types.ts",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\domain\\types.ts",
+    "beforeSha256": "8D9FCCCD25E59B6BBC29839C711A9BB78E8729D0119C2D3FB6519908E9BCADED",
+    "afterSha256": "B2B4BA8813B0751D98233D9119892CE4CD20DC01C4CD51E2591C8A5FE3AAC28D",
+    "afterBytes": 23637
+  },
+  {
+    "relativePath": "miniprogram\\src\\utils\\core-runtime.ts",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\miniprogram\\src\\utils\\core-runtime.ts",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\miniprogram\\src\\utils\\core-runtime.ts",
+    "beforeSha256": "4DF93917DD4E024724CFD91DDC09DAB7D560D76F9D69259675A75B4E52E6D56C",
+    "afterSha256": "21F087B5F9077FC76F6DE917FC38901D5CD891CD4509ECD53A5ED5B585AF549C",
+    "afterBytes": 3488
+  },
+  {
+    "relativePath": "tools\\miniprogram\\candidate-manifest.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\candidate-manifest.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\candidate-manifest.mjs",
+    "beforeSha256": "C9DB78521EDA720C8286CA651390061228884C6F837202625C1239BCABE089CA",
+    "afterSha256": "7266568A681CA2F4CD8CF9F4A950C7517F293E89B5F2DC1392F8ABEE154E5155",
+    "afterBytes": 4174
+  },
+  {
+    "relativePath": "tools\\miniprogram\\t05-test-helpers.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\t05-test-helpers.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\t05-test-helpers.mjs",
+    "beforeSha256": "928239B77660081D340EA65777379A910F1E836A00FE605CDB46FAD14D350E21",
+    "afterSha256": "7F46FE8B2A37216A85FD81289632ECA6BE21AE764DD3E4AC0A0CFFAD3E7CAA87",
+    "afterBytes": 11338
+  },
+  {
+    "relativePath": "tools\\miniprogram\\test-t05-menu-default.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\test-t05-menu-default.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-t05-menu-default.mjs",
+    "beforeSha256": "8E4684E9A52A805FD318086A7CC9D9FC32236181D30330D7A0EE1B31353C0163",
+    "afterSha256": "9A8C97FED2CCAFD6DCB2C2E95B2F75A136B44BCEC5F4DB56D8B3529D5612F47A",
+    "afterBytes": 31349
+  },
+  {
+    "relativePath": "tools\\miniprogram\\test-t05-soldout-scope.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\test-t05-soldout-scope.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-t05-soldout-scope.mjs",
+    "beforeSha256": "23256DC6142A329DE432015EFD8BEAC8C6AE09BABD4BEE144E3B3210587FB998",
+    "afterSha256": "CD56BF4C4346567F0ECF0BBF8447853E57FC52181EB17FE072B917DEAB300D15",
+    "afterBytes": 43999
+  },
+  {
+    "relativePath": "tools\\miniprogram\\test-t05-store.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\test-t05-store.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-t05-store.mjs",
+    "beforeSha256": "80BE0E1A367511DD71127BD835E0E13C7D48F5E65C5B16D0086746DDB3C36898",
+    "afterSha256": "FD7A9AB54EEC9DEC998C0B13D8632321C495779B7660DF0E287E2C556375E825",
+    "afterBytes": 72638
+  },
+  {
+    "relativePath": "tools\\miniprogram\\test-t05a01a-dp-chain.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\test-t05a01a-dp-chain.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-t05a01a-dp-chain.mjs",
+    "beforeSha256": "72C151344B52947B092505C374720687BBDF3BF42E2015BBC2EFA94EEA6E8FAF",
+    "afterSha256": "B5D2D4AB33648B56A167AA19C97E24569A3656BC8114C251CD30616A7C34834D",
+    "afterBytes": 36794
+  },
+  {
+    "relativePath": "tools\\miniprogram\\test-t05a01b-bnb-chain.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\test-t05a01b-bnb-chain.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-t05a01b-bnb-chain.mjs",
+    "beforeSha256": "3D392943EE8F7F8A49FBCCBE1CFC9B6AA0CC47450D196482996ABD707AC3AF03",
+    "afterSha256": "080F49F867E46AD9574FE6245CE308FE3FCDC883B6DD20F65375A2C7864D7ADB",
+    "afterBytes": 36845
+  },
+  {
+    "relativePath": "tools\\miniprogram\\test-t06c-unified.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\test-t06c-unified.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\test-t06c-unified.mjs",
+    "beforeSha256": "45714F5ECA172F8488CF1CFABA0DF5962A9E4C12D8C349B6C1F4788196F61DE6",
+    "afterSha256": "C53C8CA42A4297E31681A2B61290D03E19DFD067F495A5C57281CEFE67855536",
+    "afterBytes": 35011
+  },
+  {
+    "relativePath": "tools\\miniprogram\\verify-t05-integration.mjs",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\tools\\miniprogram\\verify-t05-integration.mjs",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\tools\\miniprogram\\verify-t05-integration.mjs",
+    "beforeSha256": "679766446192EFCCD2F43324D821409F6CF982352F66CE0F99D45FDD55D60A69",
+    "afterSha256": "001253A98B9D72A198D94003B639972F46007F057A0A82C7C1E58CFBD6D94371",
+    "afterBytes": 22902
+  },
+  {
+    "relativePath": "build\\native\\mp_cli.exe",
+    "source": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\build-scripts\\toolchain\\build\\native\\mp_cli.exe",
+    "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\build\\native\\mp_cli.exe",
+    "beforeSha256": null,
+    "afterSha256": "2DAE456921AB5E9F414140D26E676EF6A35C3D138C2356AB6E5FF4B3466110BA",
+    "afterBytes": 382464
+  }
+]

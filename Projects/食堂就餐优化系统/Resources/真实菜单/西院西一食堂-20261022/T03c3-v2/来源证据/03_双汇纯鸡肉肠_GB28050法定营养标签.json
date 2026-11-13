@@ -1,0 +1,31 @@
+{
+  "product_name": "双汇纯鸡肉肠 (或双汇鸡肉火腿肠)",
+  "producer": "河南省双汇实业集团有限责任公司",
+  "product_standard": "GB/T 20712 (火腿肠质量通则)",
+  "nutrition_label_standard": "GB 28050 (食品安全国家标准 预包装食品营养标签通则)",
+  "single_piece_specification": "30g / 支 (独立小包装)",
+  "product_ingredients": "鸡肉、水、淀粉、大豆蛋白、植物油、麦芽糖、白砂糖、食用盐、香辛料、味精、食品添加剂(卡拉胶、三聚磷酸钠、山梨酸钾、D-异抗坏血酸钠等)",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "label_nutrients_per_100g": {
+    "energy_kj": 756.0,
+    "energy_kcal_equivalent": 180.688,
+    "protein_g": 11.0,
+    "fat_g": 11.0,
+    "carbohydrate_g": 9.5,
+    "sodium_mg": 956.0
+  },
+  "single_portion_calculation_30g": {
+    "weight_g": 30.0,
+    "energy_kj": 226.8,
+    "energy_kcal": 54.21,
+    "protein_g": 3.30,
+    "fat_g": 3.30,
+    "carbohydrate_g": 2.85,
+    "sodium_mg": 286.8
+  },
+  "atwater_recalculation": {
+    "formula_per_100g": "11.0 * 4 + 11.0 * 9 + 9.5 * 4 = 44.0 + 99.0 + 38.0 = 181.0 kcal (757.3 kJ)",
+    "discrepancy_vs_label_756kj": "757.3 kJ vs 756 kJ, 绝对差值仅 0.3 kcal / 1.3 kJ，属于法定标签四舍五入正常公差"
+  }
+}

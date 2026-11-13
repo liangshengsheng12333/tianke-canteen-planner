@@ -1,0 +1,1262 @@
+{
+  "scope": "Read existing raw evidence only; no algorithm rerun",
+  "inputChecks": [
+    {
+      "group": "G0",
+      "sameInputExceptRequestIdAndAlgorithm": true
+    },
+    {
+      "group": "G1",
+      "sameInputExceptRequestIdAndAlgorithm": true
+    },
+    {
+      "group": "G2",
+      "sameInputExceptRequestIdAndAlgorithm": true
+    },
+    {
+      "group": "G3",
+      "sameInputExceptRequestIdAndAlgorithm": true
+    }
+  ],
+  "results": [
+    {
+      "group": "G0",
+      "algorithm": "greedy",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3209,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 3150,
+            "diversity": {
+              "categoryCoverage": 3,
+              "repeatedDishCount": 3,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3150,
+            "plannedTotalKnownCents": 3150,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3912,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 2950,
+            "diversity": {
+              "categoryCoverage": 3,
+              "repeatedDishCount": 2,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2950,
+            "plannedTotalKnownCents": 2950,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "taste",
+          "offeredAs": [
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3785,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 3100,
+            "diversity": {
+              "categoryCoverage": 4,
+              "repeatedDishCount": 2,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3100,
+            "plannedTotalKnownCents": 3100,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "greedy",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "breakfast": 10,
+          "lunch": 15,
+          "dinner": 15
+        },
+        "nodesEvaluated": 84,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_CANDIDATES",
+            "scope": "allMeals",
+            "detail": "greedy per-meal local selection without full-day exhaustive search"
+          }
+        ]
+      }
+    },
+    {
+      "group": "G0",
+      "algorithm": "dp",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3163,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 3400,
+            "diversity": {
+              "categoryCoverage": 3,
+              "repeatedDishCount": 5,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3400,
+            "plannedTotalKnownCents": 3400,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3517,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 2900,
+            "diversity": {
+              "categoryCoverage": 2,
+              "repeatedDishCount": 4,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2900,
+            "plannedTotalKnownCents": 2900,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "taste",
+          "offeredAs": [
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3984,
+            "nutritionTier": 3,
+            "preferenceScore": 3,
+            "priceCents": 3500,
+            "diversity": {
+              "categoryCoverage": 2,
+              "repeatedDishCount": 3,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3500,
+            "plannedTotalKnownCents": 3500,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "breakfast": 10,
+          "lunch": 15,
+          "dinner": 15
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 1720,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "group": "G0",
+      "algorithm": "bnb",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3163,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 3400,
+            "diversity": {
+              "categoryCoverage": 3,
+              "repeatedDishCount": 5,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3400,
+            "plannedTotalKnownCents": 3400,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3517,
+            "nutritionTier": 3,
+            "preferenceScore": 2,
+            "priceCents": 2900,
+            "diversity": {
+              "categoryCoverage": 2,
+              "repeatedDishCount": 4,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2900,
+            "plannedTotalKnownCents": 2900,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "taste",
+          "offeredAs": [
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 3984,
+            "nutritionTier": 3,
+            "preferenceScore": 3,
+            "priceCents": 3500,
+            "diversity": {
+              "categoryCoverage": 2,
+              "repeatedDishCount": 3,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3500,
+            "plannedTotalKnownCents": 3500,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "branchAndBound",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "breakfast": 10,
+          "lunch": 15,
+          "dinner": 15
+        },
+        "nodesEvaluated": 1510,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "group": "G1",
+      "algorithm": "greedy",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary",
+            "economy",
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 6260,
+            "nutritionTier": 6,
+            "preferenceScore": 0,
+            "priceCents": 1050,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 1050,
+            "plannedTotalKnownCents": 1050,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "greedy",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "breakfast": 46
+        },
+        "nodesEvaluated": 60,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_CANDIDATES",
+            "scope": "allMeals",
+            "detail": "greedy per-meal local selection without full-day exhaustive search"
+          }
+        ]
+      }
+    },
+    {
+      "group": "G1",
+      "algorithm": "dp",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 4034,
+            "nutritionTier": 4,
+            "preferenceScore": 0,
+            "priceCents": 2200,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2200,
+            "plannedTotalKnownCents": 2200,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy",
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 4318,
+            "nutritionTier": 4,
+            "preferenceScore": 0,
+            "priceCents": 1600,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 1600,
+            "plannedTotalKnownCents": 1600,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "breakfast": 46
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 46,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "group": "G1",
+      "algorithm": "bnb",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 4034,
+            "nutritionTier": 4,
+            "preferenceScore": 0,
+            "priceCents": 2200,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2200,
+            "plannedTotalKnownCents": 2200,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy",
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 4318,
+            "nutritionTier": 4,
+            "preferenceScore": 0,
+            "priceCents": 1600,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 1600,
+            "plannedTotalKnownCents": 1600,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "branchAndBound",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "breakfast": 46
+        },
+        "nodesEvaluated": 46,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "group": "G2",
+      "algorithm": "greedy",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 2123,
+            "nutritionTier": 2,
+            "preferenceScore": 0,
+            "priceCents": 2650,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2650,
+            "plannedTotalKnownCents": 2650,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 2518,
+            "nutritionTier": 2,
+            "preferenceScore": 0,
+            "priceCents": 2100,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 2,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2100,
+            "plannedTotalKnownCents": 2100,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "taste",
+          "offeredAs": [
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 2873,
+            "nutritionTier": 2,
+            "preferenceScore": 0,
+            "priceCents": 2350,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2350,
+            "plannedTotalKnownCents": 2350,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "greedy",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "breakfast": 46,
+          "lunch": 186
+        },
+        "nodesEvaluated": 288,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_CANDIDATES",
+            "scope": "allMeals",
+            "detail": "greedy per-meal local selection without full-day exhaustive search"
+          }
+        ]
+      }
+    },
+    {
+      "group": "G2",
+      "algorithm": "dp",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 677,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3400,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3400,
+            "plannedTotalKnownCents": 3400,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy",
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 943,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3200,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3200,
+            "plannedTotalKnownCents": 3200,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "breakfast": 46,
+          "lunch": 186
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 8602,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "group": "G2",
+      "algorithm": "bnb",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 677,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3400,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3400,
+            "plannedTotalKnownCents": 3400,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy",
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 943,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3200,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3200,
+            "plannedTotalKnownCents": 3200,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "branchAndBound",
+        "searchComplete": true,
+        "candidatesEnumerated": {
+          "breakfast": 46,
+          "lunch": 186
+        },
+        "nodesEvaluated": 8230,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": []
+      }
+    },
+    {
+      "group": "G3",
+      "algorithm": "greedy",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 468,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3300,
+            "diversity": {
+              "categoryCoverage": 3,
+              "repeatedDishCount": 2,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3300,
+            "plannedTotalKnownCents": 3300,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 675,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 2650,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 4,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2650,
+            "plannedTotalKnownCents": 2650,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        },
+        {
+          "strategy": "taste",
+          "offeredAs": [
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 872,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3250,
+            "diversity": {
+              "categoryCoverage": 3,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3250,
+            "plannedTotalKnownCents": 3250,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "greedy",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "breakfast": 46,
+          "lunch": 186,
+          "dinner": 186
+        },
+        "nodesEvaluated": 1162,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_CANDIDATES",
+            "scope": "allMeals",
+            "detail": "greedy per-meal local selection without full-day exhaustive search"
+          }
+        ]
+      }
+    },
+    {
+      "group": "G3",
+      "algorithm": "dp",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary",
+            "economy",
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 8312,
+            "nutritionTier": 8,
+            "preferenceScore": 0,
+            "priceCents": 600,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 3,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 600,
+            "plannedTotalKnownCents": 600,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA",
+            "APPROXIMATE_DISCRETIZATION",
+            "SEARCH_LIMIT_REACHED"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "dp",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "breakfast": 46,
+          "lunch": 186,
+          "dinner": 186
+        },
+        "nodesEvaluated": null,
+        "statesEvaluated": 11950,
+        "capsHit": [
+          {
+            "limit": "maxDpStates",
+            "limitValue": 32,
+            "observed": 46,
+            "meal": "breakfast"
+          },
+          {
+            "limit": "maxDpStates",
+            "limitValue": 32,
+            "observed": 5952,
+            "meal": "lunch"
+          },
+          {
+            "limit": "maxDpStates",
+            "limitValue": 32,
+            "observed": 5328,
+            "meal": "dinner"
+          }
+        ],
+        "approximations": [
+          {
+            "kind": "APPROXIMATE_DISCRETIZATION",
+            "scope": "breakfast",
+            "value": 20,
+            "limit": 32,
+            "detail": "DP state space quantized (step=20kcal/50dg) and capped at maxDpStates"
+          },
+          {
+            "kind": "APPROXIMATE_DISCRETIZATION",
+            "scope": "lunch",
+            "value": 20,
+            "limit": 32,
+            "detail": "DP state space quantized (step=20kcal/50dg) and capped at maxDpStates"
+          },
+          {
+            "kind": "APPROXIMATE_DISCRETIZATION",
+            "scope": "dinner",
+            "value": 20,
+            "limit": 32,
+            "detail": "DP state space quantized (step=20kcal/50dg) and capped at maxDpStates"
+          }
+        ]
+      }
+    },
+    {
+      "group": "G3",
+      "algorithm": "bnb",
+      "status": "OkPartial",
+      "plans": [
+        {
+          "strategy": "primary",
+          "offeredAs": [
+            "primary"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 164,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3450,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 1,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3450,
+            "plannedTotalKnownCents": 3450,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA",
+            "SEARCH_LIMIT_REACHED"
+          ]
+        },
+        {
+          "strategy": "economy",
+          "offeredAs": [
+            "economy"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 987,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 2600,
+            "diversity": {
+              "categoryCoverage": 1,
+              "repeatedDishCount": 3,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 2600,
+            "plannedTotalKnownCents": 2600,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA",
+            "SEARCH_LIMIT_REACHED"
+          ]
+        },
+        {
+          "strategy": "taste",
+          "offeredAs": [
+            "taste"
+          ],
+          "score": {
+            "nutritionCompleteness": "complete",
+            "comparisonBasis": "known_sums",
+            "nutritionDeviationBp": 924,
+            "nutritionTier": 0,
+            "preferenceScore": 0,
+            "priceCents": 3350,
+            "diversity": {
+              "categoryCoverage": 4,
+              "repeatedDishCount": 0,
+              "unknownCategoryItemCount": 0
+            }
+          },
+          "budget": {
+            "budgetCents": 3500,
+            "remainingBudgetKnownCents": 3500,
+            "plannedTotalCents": 3350,
+            "plannedTotalKnownCents": 3350,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "known_only"
+          },
+          "flags": [
+            "ESTIMATED_DATA",
+            "SEARCH_LIMIT_REACHED"
+          ]
+        }
+      ],
+      "search": {
+        "algorithm": "branchAndBound",
+        "searchComplete": false,
+        "candidatesEnumerated": {
+          "breakfast": 46,
+          "lunch": 186,
+          "dinner": 186
+        },
+        "nodesEvaluated": 200000,
+        "statesEvaluated": null,
+        "capsHit": [
+          {
+            "limit": "maxSearchNodes",
+            "limitValue": 200000,
+            "observed": 200001
+          }
+        ],
+        "approximations": []
+      }
+    }
+  ]
+}

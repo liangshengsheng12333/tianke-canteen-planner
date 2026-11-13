@@ -1,0 +1,15 @@
+{
+  "changedFilesVerified": [
+    "assets/wasm/mp_core.wasm",
+    "domain/self-pick.ts",
+    "domain/store.ts",
+    "domain/types.ts",
+    "pages/self-pick/index.ts",
+    "pages/self-pick/index.wxml",
+    "utils/core-bridge.ts",
+    "utils/core-runtime.ts"
+  ],
+  "count": 8,
+  "productionNotMerged": true,
+  "comboTypeIssueConfirmed": true
+}

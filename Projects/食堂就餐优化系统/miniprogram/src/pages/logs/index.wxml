@@ -1,0 +1,476 @@
+<!-- pages/logs/index.wxml — 记餐页：一行日期操作、可展开月历、早/中/晚三标签、空日主操作、当日已知、月度汇总、补记与改撤。
+     首屏顺序固定为：日期 → 月历 → 餐次标签 → 当前餐次（或空日“记一餐”）→ 当日已知 → 月度汇总，
+     只渲染选中餐次，减少整日长滚动；换标签不改变日期与汇总口径。 -->
+<view class="page page-has-tabbar {{themeClass}}">
+  <!-- 一行日期操作：取代原绿色 hero + 日期条，标题由导航栏承担，业务日期即所选日期，不重复显示。 -->
+  <view class="date-bar">
+    <view class="date-bar-main">
+      <text class="date-primary">{{dateLabel}}</text>
+      <text class="tag tag-plain" wx:if="{{readonly}}">历史</text>
+      <text class="tag" wx:if="{{!readonly}}">今天</text>
+    </view>
+    <view class="date-actions">
+      <text class="link link-strong" bindtap="onToggleCalendar">{{calendarOpen ? '收起月历' : '查看月历'}}</text>
+      <text class="link link-back-today" wx:if="{{readonly}}" bindtap="onBackToday">回到今天</text>
+    </view>
+    <view class="date-hint" wx:if="{{readonly}}">历史日期只读：仅可查看，不提供改写历史的入口。</view>
+  </view>
+
+  <!-- 月历：周一起始；今天/选中/有记录三种标记互不替代，且不只靠颜色区分 -->
+  <view class="card calendar-card" wx:if="{{calendarOpen}}">
+    <view class="cal-head">
+      <text class="cal-nav" bindtap="onPrevMonth">‹ 上月</text>
+      <text class="cal-title">{{calendarTitle}}</text>
+      <text class="cal-nav" bindtap="onNextMonth">下月 ›</text>
+    </view>
+    <view class="cal-weekdays">
+      <text class="cal-wd" wx:for="{{calendarWeekdays}}" wx:key="*this" wx:for-item="wd">{{wd}}</text>
+    </view>
+    <view class="cal-grid">
+      <view class="cal-cell" wx:for="{{calendarCells}}" wx:key="key" wx:for-item="cell">
+        <view
+          wx:if="{{!cell.empty}}"
+          class="cal-day {{cell.selected ? 'is-selected' : ''}} {{cell.isToday ? 'is-today' : ''}} {{cell.hasRecords ? 'has-records' : ''}}"
+          data-date="{{cell.date}}"
+          bindtap="onSelectCalendarDate"
+        >
+          <text class="cal-num">{{cell.day}}</text>
+          <view class="cal-marks">
+            <text class="cal-dot" wx:if="{{cell.hasRecords}}"></text>
+            <text class="cal-today" wx:if="{{cell.isToday}}">今</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cal-legend">
+      <text class="cal-legend-item">● 有记录</text>
+      <text class="cal-legend-item">今 今天</text>
+      <text class="cal-legend-item">外框 选中</text>
+    </view>
+  </view>
+
+  <view class="status-line {{statusKind === 'error' ? 'note-warn' : 'muted'}}" wx:if="{{statusText}}">
+    {{statusText}}
+  </view>
+
+  <!-- 早餐/午餐/晚餐标签：只渲染选中餐次的记录与操作，减少整日长滚动。
+       切标签只换查看范围（不写记录、不改日期）；每签带已记/已结束/待确认状态，
+       未选中的两餐是否已记仍可一眼看到。 -->
+  <view class="meal-tabs">
+    <view
+      wx:for="{{mealTabs}}"
+      wx:key="key"
+      class="meal-tab {{activeMeal === item.key ? 'active' : ''}} state-{{item.stateKind}}"
+      data-meal="{{item.key}}"
+      bindtap="onSelectMeal"
+    >
+      <text class="meal-tab-label">{{item.label}}</text>
+      <text class="meal-tab-state">{{item.stateText}}</text>
+    </view>
+  </view>
+
+  <!-- 空态：这天没有任何记录。未记餐不等于摄入为零，也不显示“摄入 0”。 -->
+  <!-- 说明压成一处：未记餐的语义 + 今天可补记的下一步；历史日期只保留语义，不给写入口。 -->
+  <view class="card empty-card" wx:if="{{loaded && emptyDay}}">
+    <view class="empty-title">这天还没记餐</view>
+    <view class="note">未记餐不代表摄入为零。{{emptyActionHint}}</view>
+    <view class="btn-group" wx:if="{{!readonly}}">
+      <button class="btn btn-sm btn-empty-record" bindtap="onEmptyRecordTap">记一餐</button>
+    </view>
+  </view>
+
+  <!-- 当前餐次区：只渲染选中的那一餐（其余两餐用标签状态查看），主操作仍是记餐/改撤/补记。
+       空日：该餐卡压成紧凑样式（meal-card-slim），只保留餐次名、状态与两枚小按钮。 -->
+  <block wx:for="{{sections}}" wx:key="meal" wx:for-item="sec">
+  <view class="meal-card {{emptyDay ? 'meal-card-slim' : ''}}" wx:if="{{sec.meal === activeMeal}}" id="meal-{{sec.meal}}">
+    <view class="meal-head">
+      <text class="meal-name">{{sec.label}}</text>
+      <view>
+        <text class="badge badge-ok" wx:if="{{sec.confirmed}}">已记</text>
+        <text class="badge badge-info" wx:else>未记</text>
+        <text class="badge badge-warn" wx:if="{{sec.ended}}">已结束</text>
+      </view>
+    </view>
+    <!-- 空日只在“已结束”时保留这一句提示：已结束/无供应的语义仍要看得到，其余重复说明由空日卡承担。 -->
+    <view class="note" wx:if="{{!emptyDay || sec.ended}}">{{sec.confirmHint}}</view>
+
+    <!-- 计划菜品：可改实付单价后确认（推荐不等于已吃） -->
+    <view wx:if="{{sec.planRows.length > 0 && !readonly}}">
+      <view wx:if="{{!sec.confirmOpen}}">
+        <view class="sub-title">计划菜品</view>
+        <view class="meal-item" wx:for="{{sec.planRows}}" wx:key="itemKey" wx:for-item="p">
+          <view>
+            <text class="item-name">{{p.name}}</text>
+            <text class="item-meta"> {{p.portionLabel}}</text>
+          </view>
+          <text class="{{p.priceKnown ? 'price' : 'muted'}}">{{p.priceLabel}}</text>
+        </view>
+        <view class="btn-group" wx:if="{{sec.canConfirm}}">
+          <button class="btn btn-sm btn-open-confirm" bindtap="onOpenConfirm" data-meal="{{sec.meal}}">确认已吃…</button>
+        </view>
+      </view>
+
+      <view class="confirm-panel" wx:if="{{sec.confirmOpen}}">
+        <view class="sub-title">核对实付单价（默认使用计划购买价，可修正）</view>
+        <view class="meal-item" wx:for="{{sec.planRows}}" wx:key="itemKey" wx:for-item="p" wx:for-index="pi">
+          <view>
+            <text class="item-name">{{p.name}}</text>
+            <text class="item-meta"> {{p.portionLabel}}</text>
+          </view>
+          <input
+            class="input price-input"
+            type="digit"
+            value="{{p.priceText}}"
+            placeholder="留空=未知"
+            data-meal="{{sec.meal}}"
+            data-index="{{pi}}"
+            bindinput="onPriceInput"
+          />
+        </view>
+        <view class="note">金额单位元；留空表示实付未知（不按 0 计入）。确认后推荐快照锁定，改动请用“修改”。</view>
+        <view class="btn-group">
+          <button class="btn btn-sm" bindtap="onConfirmMeal" data-meal="{{sec.meal}}">确认已吃</button>
+          <button class="btn btn-ghost btn-sm btn-cancel-confirm" bindtap="onCancelConfirm" data-meal="{{sec.meal}}">取消</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- 有效记录：可改数量/实付价/备注、可撤销 -->
+    <view class="record" wx:for="{{sec.active}}" wx:key="recordId" wx:for-item="rec">
+      <view class="record-head">
+        <text class="badge {{rec.badgeClass}}">{{rec.statusLabel}}</text>
+        <text class="muted">修订 {{rec.revision}} · {{rec.createdAtLabel}}</text>
+      </view>
+      <view class="meal-item" wx:for="{{rec.items}}" wx:key="itemKey" wx:for-item="it">
+        <view>
+          <text class="item-name">{{it.name}}</text>
+          <text class="item-meta"> {{it.portionLabel}} ×{{it.quantity}} · {{it.sourceLabel}}</text>
+          <text class="tag tag-warn" wx:if="{{it.energyUnknown}}">营养未知</text>
+        </view>
+        <text class="{{it.priceKnown ? 'price' : 'muted'}}">{{it.priceLabel}}</text>
+      </view>
+      <view class="row row-nutrition">
+        <text class="row-label">已知小计</text>
+        <text class="row-value">{{rec.knownEnergyLabel}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">实付合计</text>
+        <text class="row-value">{{rec.priceLabel}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{rec.priceIncomplete}}">
+        价格不完整：{{rec.unknownItemCount}} 项实付未知，不能声称在预算内。
+      </view>
+
+      <view class="btn-group" wx:if="{{!readonly}}">
+        <button class="btn btn-ghost btn-sm" bindtap="onToggleEdit" data-meal="{{sec.meal}}" data-record="{{rec.recordId}}">
+          {{rec.editOpen ? '收起修改' : '修改'}}
+        </button>
+        <button class="btn btn-danger btn-sm" bindtap="onRevoke" data-meal="{{sec.meal}}" data-record="{{rec.recordId}}">撤销</button>
+      </view>
+
+      <view class="edit-panel" wx:if="{{rec.editOpen && !readonly}}">
+        <view class="sub-title">修改记录（保存后生成新的有效记录，旧记录保留为历史）</view>
+        <view class="edit-item" wx:for="{{rec.editItems}}" wx:key="itemKey" wx:for-item="ei" wx:for-index="eidx">
+          <view class="field-label">{{ei.name}}（{{ei.portionLabel}}）</view>
+          <view class="edit-grid">
+            <view class="field">
+              <view class="field-label">数量（1–99）</view>
+              <input
+                class="input"
+                type="number"
+                value="{{ei.quantityText}}"
+                data-meal="{{sec.meal}}"
+                data-record="{{rec.recordId}}"
+                data-index="{{eidx}}"
+                data-field="quantityText"
+                bindinput="onEditItemInput"
+              />
+            </view>
+            <view class="field">
+              <view class="field-label">实付单价（元）</view>
+              <input
+                class="input"
+                type="digit"
+                value="{{ei.priceText}}"
+                placeholder="留空=未知"
+                data-meal="{{sec.meal}}"
+                data-record="{{rec.recordId}}"
+                data-index="{{eidx}}"
+                data-field="priceText"
+                bindinput="onEditItemInput"
+              />
+            </view>
+          </view>
+          <view class="field">
+            <view class="field-label">备注（留空表示保持原备注）</view>
+            <input
+              class="input"
+              value="{{ei.noteText}}"
+              data-meal="{{sec.meal}}"
+              data-record="{{rec.recordId}}"
+              data-index="{{eidx}}"
+              data-field="noteText"
+              bindinput="onEditItemInput"
+            />
+          </view>
+        </view>
+        <view class="btn-group">
+          <button class="btn btn-sm" bindtap="onSaveEdit" data-meal="{{sec.meal}}" data-record="{{rec.recordId}}">保存修改</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- 历史记录：superseded / revoked，只读展示并标状态 -->
+    <view wx:if="{{sec.history.length > 0}}">
+      <view class="sub-title">历史记录（只读）</view>
+      <view class="record record-history" wx:for="{{sec.history}}" wx:key="recordId" wx:for-item="h">
+        <view class="record-head">
+          <text class="badge {{h.badgeClass}}">{{h.statusLabel}}</text>
+          <text class="muted">修订 {{h.revision}} · {{h.createdAtLabel}}</text>
+        </view>
+        <view class="meal-item" wx:for="{{h.items}}" wx:key="itemKey" wx:for-item="hit">
+          <view>
+            <text class="item-name">{{hit.name}}</text>
+            <text class="item-meta"> {{hit.portionLabel}} ×{{hit.quantity}}</text>
+            <text class="tag tag-warn" wx:if="{{!hit.priceKnown}}">价格未知</text>
+          </view>
+          <text class="{{hit.priceKnown ? 'price' : 'muted'}}">{{hit.priceLabel}}</text>
+        </view>
+        <view class="row row-nutrition">
+          <text class="row-label">已知小计</text>
+          <text class="row-value">{{h.knownEnergyLabel}}</text>
+        </view>
+        <view class="row">
+          <text class="row-label">实付合计</text>
+          <text class="row-value">{{h.priceLabel}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 补记手动食物；meal-actions 只用于空日的紧凑排布（见 index.wxss），非空日仍是普通按钮组 -->
+    <view class="btn-group meal-actions" wx:if="{{!readonly && !sec.manualOpen}}">
+      <button class="btn btn-ghost btn-sm btn-open-manual" bindtap="onOpenManual" data-meal="{{sec.meal}}">补记食物</button>
+    </view>
+    <view class="manual-panel" wx:if="{{sec.manualOpen && !readonly}}">
+      <view class="sub-title">补记食物（{{sec.label}}）</view>
+      <view class="field">
+        <view class="field-label">菜名</view>
+        <input
+          class="input"
+          value="{{sec.manual.name}}"
+          placeholder="例如：番茄炒蛋"
+          data-meal="{{sec.meal}}"
+          data-field="name"
+          bindinput="onManualInput"
+        />
+      </view>
+      <view class="edit-grid">
+        <view class="field">
+          <view class="field-label">份量</view>
+          <picker mode="selector" range="{{portionOptions}}" value="{{sec.manual.portionIndex}}" data-meal="{{sec.meal}}" bindchange="onManualPortion">
+            <view class="picker-value">{{sec.manual.portionLabel}}</view>
+          </picker>
+        </view>
+        <view class="field">
+          <view class="field-label">数量（1–99）</view>
+          <input
+            class="input"
+            type="number"
+            value="{{sec.manual.quantityText}}"
+            data-meal="{{sec.meal}}"
+            data-field="quantityText"
+            bindinput="onManualInput"
+          />
+        </view>
+      </view>
+      <view class="switch-row">
+        <view class="field-label">价格已知</view>
+        <switch checked="{{sec.manual.priceKnown}}" data-meal="{{sec.meal}}" data-field="priceKnown" bindchange="onManualSwitch" />
+      </view>
+      <view class="field" wx:if="{{sec.manual.priceKnown}}">
+        <view class="field-label">实付单价（元）</view>
+        <input
+          class="input"
+          type="digit"
+          value="{{sec.manual.unitPriceText}}"
+          placeholder="例如 12.50"
+          data-meal="{{sec.meal}}"
+          data-field="unitPriceText"
+          bindinput="onManualInput"
+        />
+      </view>
+      <view class="note" wx:if="{{!sec.manual.priceKnown}}">价格未知不按 0 计入，预算核算会标记为不完整。</view>
+
+      <view class="switch-row">
+        <view class="field-label">营养已知（每份）</view>
+        <switch checked="{{sec.manual.nutritionKnown}}" data-meal="{{sec.meal}}" data-field="nutritionKnown" bindchange="onManualSwitch" />
+      </view>
+      <view wx:if="{{sec.manual.nutritionKnown}}">
+        <view class="note note-warn">
+          四项需全部填写才会记录；任一留空将得到提示（核心存储只接受完整四项，不把未知按 0 计算）。
+        </view>
+        <view class="edit-grid">
+          <view class="field">
+            <view class="field-label">能量（kcal）</view>
+            <input
+              class="input"
+              type="digit"
+              value="{{sec.manual.energyText}}"
+              data-meal="{{sec.meal}}"
+              data-field="energyText"
+              bindinput="onManualInput"
+            />
+          </view>
+          <view class="field">
+            <view class="field-label">蛋白质（g）</view>
+            <input
+              class="input"
+              type="digit"
+              value="{{sec.manual.proteinText}}"
+              data-meal="{{sec.meal}}"
+              data-field="proteinText"
+              bindinput="onManualInput"
+            />
+          </view>
+          <view class="field">
+            <view class="field-label">脂肪（g）</view>
+            <input
+              class="input"
+              type="digit"
+              value="{{sec.manual.fatText}}"
+              data-meal="{{sec.meal}}"
+              data-field="fatText"
+              bindinput="onManualInput"
+            />
+          </view>
+          <view class="field">
+            <view class="field-label">碳水（g）</view>
+            <input
+              class="input"
+              type="digit"
+              value="{{sec.manual.carbText}}"
+              data-meal="{{sec.meal}}"
+              data-field="carbText"
+              bindinput="onManualInput"
+            />
+          </view>
+        </view>
+      </view>
+
+      <view class="field">
+        <view class="field-label">备注</view>
+        <input
+          class="input"
+          value="{{sec.manual.note}}"
+          placeholder="可选"
+          data-meal="{{sec.meal}}"
+          data-field="note"
+          bindinput="onManualInput"
+        />
+      </view>
+      <view class="error-text" wx:if="{{sec.manualError}}">{{sec.manualError}}</view>
+      <view class="btn-group">
+        <button class="btn btn-sm btn-manual-submit" bindtap="onManualSubmit" data-meal="{{sec.meal}}">提交补记</button>
+        <button class="btn btn-ghost btn-sm btn-manual-cancel" bindtap="onCloseManual" data-meal="{{sec.meal}}">取消</button>
+      </view>
+    </view>
+
+    <!-- 结束 / 重开餐次；meal-actions 只用于空日的紧凑排布（见 index.wxss） -->
+    <view class="btn-group meal-actions" wx:if="{{!readonly}}">
+      <button class="btn btn-warn btn-sm" wx:if="{{!sec.ended}}" bindtap="onEndMeal" data-meal="{{sec.meal}}">结束餐次</button>
+      <button class="btn btn-ghost btn-sm" wx:if="{{sec.ended}}" bindtap="onReopenMeal" data-meal="{{sec.meal}}">重开餐次</button>
+    </view>
+  </view>
+  </block>
+
+  <!-- 当日汇总：餐次之后的短卡，已知小计 + 不完整提示；简易模式只给热量摘要，完整模式给已有克数。 -->
+  <!-- 空态不渲染汇总：没有记录时 store 的合计是 0，直接显示会像“摄入 0”，改用上面的空态卡片说明。 -->
+  <view class="card day-card" wx:if="{{loaded && !emptyDay}}">
+    <view class="card-title">当日已知</view>
+    <view class="row">
+      <text class="row-label">能量</text>
+      <text class="row-value">{{intake.energyLabel}}</text>
+    </view>
+    <block wx:if="{{mode === 'full'}}">
+      <view class="row">
+        <text class="row-label">蛋白质</text>
+        <text class="row-value">{{intake.proteinLabel}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">脂肪</text>
+        <text class="row-value">{{intake.fatLabel}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">碳水</text>
+        <text class="row-value">{{intake.carbLabel}}</text>
+      </view>
+    </block>
+    <view class="note" wx:if="{{mode !== 'full'}}">简易模式只显示热量；需要克数可在今日页切换为完整模式。</view>
+    <view class="row">
+      <text class="row-label">已记录菜品</text>
+      <text class="row-value">{{intake.itemCount}} 项</text>
+    </view>
+    <view class="row">
+      <text class="row-label">未知项</text>
+      <text class="row-value">{{intake.unknownItemCount}} 项（不按 0 计入）</text>
+    </view>
+    <view class="note note-warn" wx:if="{{intake.incompleteNutrients.length > 0}}">
+      营养不完整：{{intakeIncompleteText}} 未计入完整总量（未知不等于 0，不承诺达标）。
+    </view>
+
+    <block wx:if="{{intake.itemCount > 0 || budget.budgetSet}}">
+      <view class="sub-title">预算与实际消费</view>
+      <view class="row">
+        <text class="row-label">全天预算</text>
+        <text class="row-value">{{budget.budgetLabel}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">实际支出</text>
+        <text class="row-value">{{spentKnownLabel}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">计划总价</text>
+        <text class="row-value">{{plannedKnownLabel}}</text>
+      </view>
+      <view class="row" wx:if="{{budget.budgetSet}}">
+        <text class="row-label">剩余可用</text>
+        <text class="row-value">{{remainingLabel}}</text>
+      </view>
+      <view class="note {{budget.overBudget ? 'note-warn' : ''}}">{{budget.message}}</view>
+      <view class="btn-group">
+        <text class="tag tag-danger" wx:if="{{budget.overBudget}}">已超预算</text>
+        <text class="tag tag-warn" wx:if="{{!budget.accountingComplete}}">预算核算不完整</text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 月度汇总短卡：当日内容之后的后续短卡；只统计有效记录，未知项明确标“含未填项”。 -->
+  <view class="card month-card" wx:if="{{loaded}}">
+    <view class="month-line">{{monthLineText}}</view>
+    <view class="month-grid">
+      <view class="month-item">
+        <text class="month-label">本月实付</text>
+        <text class="month-value">{{monthPriceLabel}}</text>
+      </view>
+      <view class="month-item">
+        <text class="month-label">本月热量</text>
+        <text class="month-value">{{monthEnergyLabel}}</text>
+      </view>
+    </view>
+    <view class="note">{{monthNoteText}}</view>
+  </view>
+
+  <!-- 共用底部导航：今日 / 记录 / 我的 -->
+  <view class="tabbar">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="key"
+      class="tabbar-item {{tab === item.key ? 'active' : ''}}"
+      data-tab="{{item.key}}"
+      bindtap="onTab"
+    >
+      <view class="tabbar-icon {{item.icon}}"></view>
+      <text class="tabbar-label">{{item.label}}</text>
+    </view>
+  </view>
+</view>

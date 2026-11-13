@@ -1,0 +1,44 @@
+[
+  {
+    "iteration": 0,
+    "ms": 20.5512,
+    "pages": 63,
+    "clockCalls": 0,
+    "responseSha256": "f8e4f8f7406abc5fd2a08c7a219bff281a172ef255fa056e95f17ef20c66fa05"
+  },
+  {
+    "iteration": 1,
+    "ms": 7.640900000000002,
+    "pages": 63,
+    "clockCalls": 0,
+    "responseSha256": "f8e4f8f7406abc5fd2a08c7a219bff281a172ef255fa056e95f17ef20c66fa05"
+  },
+  {
+    "iteration": 2,
+    "ms": 6.6113,
+    "pages": 63,
+    "clockCalls": 0,
+    "responseSha256": "f8e4f8f7406abc5fd2a08c7a219bff281a172ef255fa056e95f17ef20c66fa05"
+  },
+  {
+    "iteration": 3,
+    "ms": 8.246899999999997,
+    "pages": 63,
+    "clockCalls": 0,
+    "responseSha256": "f8e4f8f7406abc5fd2a08c7a219bff281a172ef255fa056e95f17ef20c66fa05"
+  },
+  {
+    "iteration": 4,
+    "ms": 8.328500000000005,
+    "pages": 63,
+    "clockCalls": 0,
+    "responseSha256": "f8e4f8f7406abc5fd2a08c7a219bff281a172ef255fa056e95f17ef20c66fa05"
+  },
+  {
+    "iteration": 5,
+    "ms": 7.220399999999984,
+    "pages": 63,
+    "clockCalls": 0,
+    "responseSha256": "f8e4f8f7406abc5fd2a08c7a219bff281a172ef255fa056e95f17ef20c66fa05"
+  }
+]

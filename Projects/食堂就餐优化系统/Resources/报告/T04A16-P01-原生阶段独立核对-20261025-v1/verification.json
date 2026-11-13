@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "nativeBaselineEquivalentAt1000Nodes": true,
+  "newWasmVerified": false,
+  "runs": [
+    {
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A16-内部Sol-搜索资源整改-证据-v1\\candidate\\build\\native\\mp_test_sha256.exe"
+      ],
+      "exitCode": 0,
+      "wallMs": 41.72069998458028,
+      "stdout": "ALL PASS (20 checks)\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A16-内部Sol-搜索资源整改-证据-v1\\candidate\\build\\native\\mp_test_json.exe"
+      ],
+      "exitCode": 0,
+      "wallMs": 21.928099973592907,
+      "stdout": "[case] canonical snapshot\r\n  snapshot canonical length = 1110 bytes\r\n  fixture length           = 1110 bytes\r\n[case] request/result pair round trip\r\n  pairs length = 9\r\n[case] strings and escapes\r\n[case] parse failures\r\n[case] DOM details\r\n[case] JsonOut\r\n[case] JsonFind\r\nALL PASS (189 checks)\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A16-内部Sol-搜索资源整改-证据-v1\\candidate\\build\\native\\mp_test_core.exe"
+      ],
+      "exitCode": 0,
+      "wallMs": 634.6428999968339,
+      "stdout": "=== T04 三算法核心：原生单元与契约验证 ===\r\n[1] ComputeNutritionTarget 配对样例\r\n  pairs 数量 = 9（期望 9）\r\n  [PASS] BMI_18_4599_FATLOSS_UNDERWEIGHT\r\n  [PASS] BMI_18_5_FATLOSS_OK\r\n  [PASS] AGE_18_EXTRAPOLATION_WARNING\r\n  [PASS] RISK_MANUAL_STORAGE_ONLY\r\n  [PASS] FEMALE_1199_TARGET_REVIEW_REQUIRED\r\n  [PASS] MACRO_COMPOSITION_CONFLICT_FEMALE_1200\r\n  [PASS] MANUAL_TOLERANCE_WITHIN_2000\r\n  [PASS] MANUAL_TOLERANCE_EXCEEDED_2000\r\n  [PASS] UNDERWEIGHT_MANUAL_STORAGE_ONLY\r\n[2] 契约级错误\r\n  [PASS] ageYears=200 → INVALID_INPUT @ $.profile.ageYears\r\n  [PASS] contractVersion=2.0 → UNSUPPORTED_CONTRACT_VERSION\r\n[3] ValidateMenuCatalog（模拟菜单）\r\n  [PASS] 模拟菜单结构/引用/半份同价/catalogHash 校验通过\r\n[3b] ValidateMenuCatalog 失败路径\r\n  [PASS] catalogHash 与目录内容不一致 → INVALID_INPUT @ $.catalogHash\r\n  [PASS] 半份米饭价格与整份不同价 → INVALID_INPUT @ $.offers[].priceCents\r\n  [PASS] 报价引用不存在的菜品 → INVALID_INPUT @ $.offers[].dishId\r\n[4] PlanDay\r\n  [PASS] status=OkPartial plans=1\r\n  [PASS] TargetUnavailable（targetStatus=AUTO_TARGET_DISABLED，plans=0）\r\n  [PASS] maxItemsPerMeal=99 → INVALID_INPUT\r\n[5] PlanDay 其余状态路径\r\n  [PASS] NoFeasible（早餐锁到不供应早餐的窗口） → status=NoFeasible plans=0\r\n  [PASS] NoFeasibleWithinBudget（预算 1 分） → status=NoFeasibleWithinBudget plans=1\r\n  [PASS] LockConflict（锁定不存在的报价） → status=LockConflict plans=0\r\n  [PASS] NutritionDataInsufficient（全部菜品营养未知） → status=NutritionDataInsufficient plans=0\r\n  [PASS] OkPartial（锁定营养未知的汤） → status=OkPartial plans=1\r\n  [PASS] ResourceLimited（limits.maxSearchNodes=2 合法限额触发） → status=ResourceLimited plans=0\r\n[6] PlanDay 契约字段核对\r\n[7] T04 三算法与套餐展开专项验证\r\n\r\n检查项 43，失败 0\r\nALL PASS (43 checks)\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A16-内部Sol-搜索资源整改-证据-v1\\candidate\\build\\native\\mp_cli.exe",
+        "plan",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A16-内部Sol-搜索资源整改-证据-v1\\raw_io\\candidate_native_nodes1000.req.json",
+        "--out",
+        "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T04A16-P01-原生阶段独立核对-20261025-v1\\candidate-native-nodes1000.resp.json"
+      ],
+      "exitCode": 0,
+      "wallMs": 49.82330001075752,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "note": "P01 reran native regressions and one bounded real-menu case; no new WASM was available."
+}

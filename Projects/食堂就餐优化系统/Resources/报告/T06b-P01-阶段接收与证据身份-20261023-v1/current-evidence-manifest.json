@@ -1,0 +1,183 @@
+{
+  "task": "T06b",
+  "purpose": "P01 current on-disk evidence identity; does not validate reported test results",
+  "sourceDirectory": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T06b-反重力-固定候选业务闭环验证-证据-v1",
+  "fileCount": 35,
+  "files": [
+    {
+      "path": "00-身份核对/identity-check.json",
+      "bytes": 1559,
+      "sha256": "249EBEB45707A89229604B19FFBD2DB74F20F7C6E27546D4FC0CEC399E7F9937"
+    },
+    {
+      "path": "01-推荐与自选/01-target-outcome.json",
+      "bytes": 1377,
+      "sha256": "2B135E5C6DE1BE7920A2ECB074023B762808F1D85759C4AD524667DBA0CE9BE1"
+    },
+    {
+      "path": "01-推荐与自选/02-initial-plan.json",
+      "bytes": 847,
+      "sha256": "5E1A7D7C1DC6D5E8F0878B85375E218D3B3E14CEB701B0A7684061DD7CA9B41E"
+    },
+    {
+      "path": "01-推荐与自选/03-unknown-nutrition-dishes.json",
+      "bytes": 2,
+      "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945"
+    },
+    {
+      "path": "01-推荐与自选/04-self-pick-view.json",
+      "bytes": 3841,
+      "sha256": "7D233342756DABEA960D194E86C1B2AD490DAAFFD1D7F4331F19AD16EFE46AF2"
+    },
+    {
+      "path": "01-推荐与自选/05-self-pick-draft-preview.json",
+      "bytes": 952,
+      "sha256": "33DBBA7DEBD3B69BCB7DD95210651A4020E5C91E4525E44AF746AC870A2D225F"
+    },
+    {
+      "path": "01-推荐与自选/06-self-pick-confirmed-log.json",
+      "bytes": 352,
+      "sha256": "A687B8018EDF0374BC457FEE7111E2A273663081F82763AF7B2F6DEA09A3F68F"
+    },
+    {
+      "path": "01-推荐与自选/07-home-view-after-self-pick.json",
+      "bytes": 13306,
+      "sha256": "7128C92926B53600C58297DB8C961887CA7E3F6042A35E8734C2281CB357165E"
+    },
+    {
+      "path": "02-确认与记录编辑/01-confirm-breakfast.json",
+      "bytes": 1327,
+      "sha256": "8BAA6AC4DBA6F655993C261ED597A5EF904DDF78A008FD50243E8BDEABF12FED"
+    },
+    {
+      "path": "02-确认与记录编辑/02-duplicate-confirm-idempotency.json",
+      "bytes": 237,
+      "sha256": "4D52BF5A223BAA7BAE78441BE2DF710B5EB98CA04AAD1ED22C59DE4B241B5ABB"
+    },
+    {
+      "path": "02-确认与记录编辑/03-edit-log-superseded.json",
+      "bytes": 2614,
+      "sha256": "7621D988FAD165D9925144E68988566E281CAE12B12EF3256D0675F5BF68CC86"
+    },
+    {
+      "path": "02-确认与记录编辑/04-revoke-log.json",
+      "bytes": 2770,
+      "sha256": "4E3D2FE5B681C686852D0278BC36B7C4A3A93D951ED8C3503ED7BB64626E6568"
+    },
+    {
+      "path": "02-确认与记录编辑/05-manual-append-log.json",
+      "bytes": 1153,
+      "sha256": "D9DD3A0A4E7154162CDF2254F0F84DBE311DA4CD399DF15A8B4EA8F531E07D5B"
+    },
+    {
+      "path": "02-确认与记录编辑/06-replan-only-uneaten-meals.json",
+      "bytes": 286,
+      "sha256": "F1CBE1361A1B1AC534BF129BD5B43AF42741568AE06609CB290E4B30F48B1C48"
+    },
+    {
+      "path": "03-余餐预算/01-normal-budget-feasible.json",
+      "bytes": 622,
+      "sha256": "5899CD0F4405404DFC8B9EC66C38242959FB8597B752A7CE812C8F7C2FE76751"
+    },
+    {
+      "path": "03-余餐预算/02-incomplete-budget-unknown-price.json",
+      "bytes": 644,
+      "sha256": "F1E902390360289752EEE3C9D577295EF4083E0F8EA062ED9174F4160D967A1D"
+    },
+    {
+      "path": "03-余餐预算/03-over-budget-flagged.json",
+      "bytes": 700,
+      "sha256": "E90E63314F7102DC51F878021D1193970BC1372E0B3497990491667FC8697120"
+    },
+    {
+      "path": "04-跨日售罄与锁定/01-day1-soldout-and-locks.json",
+      "bytes": 397,
+      "sha256": "0009D1607DF9AA40978FFF4FD42F2FE4AB7CE9CC7ED237455146C337CDA5D34A"
+    },
+    {
+      "path": "04-跨日售罄与锁定/02-day2-isolated-empty.json",
+      "bytes": 101,
+      "sha256": "554DDBC4103FCEF5E943FA58DC35369B2A0656F4804DF2FE4FA785A1A326ADA6"
+    },
+    {
+      "path": "04-跨日售罄与锁定/03-day1-history-preserved.json",
+      "bytes": 137,
+      "sha256": "AEEF8003445054ECE91A2592C94D5373915F950AC3519EAC62BB2620467E1133"
+    },
+    {
+      "path": "04-跨日售罄与锁定/04-lock-conflict-no-silent-unlock.json",
+      "bytes": 349,
+      "sha256": "A679CAD88EB513599E9872CEA12E194CD5EE6B46528EFE261ECD2B8011893016"
+    },
+    {
+      "path": "04-跨日售罄与锁定/05-clear-soldout-restores-plan.json",
+      "bytes": 174,
+      "sha256": "D8261A3CC240448BB0BFAC8046DC5EE2BAC2AF7D85940141A4537C17D7A0E341"
+    },
+    {
+      "path": "05-菜单导入与备份恢复/01-preflight-corrupted-json-rejected.json",
+      "bytes": 336,
+      "sha256": "A8E8884EE59CCEC6E0391421237B9AEC6D8F901FF7FBFE912F1832541E6398AF"
+    },
+    {
+      "path": "05-菜单导入与备份恢复/02-preflight-cancelled-no-change.json",
+      "bytes": 41823,
+      "sha256": "856A4A914E06C6CD6AF4FEAADFD209A63A453E91A015953A6B6DAD4D9E04B31E"
+    },
+    {
+      "path": "05-菜单导入与备份恢复/03-valid-menu-import-diff-applied.json",
+      "bytes": 225,
+      "sha256": "24FA2356FD75BCC5B928EEF6EB7DC6CAF0390E54593C5B0FDFD6070A7B05D3AF"
+    },
+    {
+      "path": "05-菜单导入与备份恢复/04-backup-export.json",
+      "bytes": 171,
+      "sha256": "7761221EE098DBB02ADCCD5511F4FFBC74C7A43C4F2DD6FEFE120931F066595D"
+    },
+    {
+      "path": "05-菜单导入与备份恢复/05-backup-preflight-8-rows-equal.json",
+      "bytes": 55388,
+      "sha256": "D8242D5D368CC884E6435CC7AEA6259171EC5BC73C1648FB622A0D6F739D92C7"
+    },
+    {
+      "path": "05-菜单导入与备份恢复/06-backup-apply-restore-verified.json",
+      "bytes": 470,
+      "sha256": "028BAAA20AB5F44C6CF311D8C4CF4B6DEE5B93F7D2863A9DEB88AB863D4C7158"
+    },
+    {
+      "path": "06-模拟器运行/sim-01-home.png",
+      "bytes": 44691,
+      "sha256": "E6ADE576E5DA567B15C4779CD59364E35BBD35A9219824A10A1DBD7C5C220E7B"
+    },
+    {
+      "path": "06-模拟器运行/sim-02-self-pick.png",
+      "bytes": 15266,
+      "sha256": "118ACCE15BD819F47F7756D6442819E6A055C750A4B640A31476F85B11CEB928"
+    },
+    {
+      "path": "06-模拟器运行/sim-03-logs.png",
+      "bytes": 43152,
+      "sha256": "1F2A6FA7D90F9801CE360C8E006334A2DF4CD0E94840910753BC64EE3E4DD9B2"
+    },
+    {
+      "path": "06-模拟器运行/sim-04-menu.png",
+      "bytes": 52526,
+      "sha256": "1E2870D60D08D5C3604EBF21308AFB24EBD0B0A71AF4D097CA9514559A794BA4"
+    },
+    {
+      "path": "06-模拟器运行/sim-05-dev.png",
+      "bytes": 45919,
+      "sha256": "88F1DE84F2DD510DC87707465123F081ED06F47138FA866BC1DA13ED0B68685C"
+    },
+    {
+      "path": "t06b-closure-summary.json",
+      "bytes": 1665,
+      "sha256": "F6B22DB886FD684D7E13A82D3BC34437911967EECEAF86ADB6A93771CA745AFA"
+    },
+    {
+      "path": "verify-t06b-closure.mjs",
+      "bytes": 32626,
+      "sha256": "36CBAF869C004FD9AD5B8A53C2C278BEC77765E6A1347B94B87C6A052269612B"
+    }
+  ]
+}

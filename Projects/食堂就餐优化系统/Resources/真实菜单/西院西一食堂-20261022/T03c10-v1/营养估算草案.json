@@ -1,0 +1,42 @@
+[
+  {
+    "dishId": "dish-plain-changfen",
+    "name": "原味肠粉",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 231,
+      "proteinDg": 25,
+      "fatDg": 22,
+      "carbDg": 531
+    },
+    "nutritionBasis": {
+      "source": "香港食物安全中心(CFS)食物研究化验所FRL档案Item 2395净肠粉(2021)官方检测数据、李锦记官方欧洲单品Sweet Soy Sauce(每100g标示，详见T03c10-v1来源证据01与03)",
+      "portionAssumption": "熟肠粉皮200g + 调味甜豉油汁15g(单份成品净重中心估计约215g，非食堂实称)",
+      "estimated": true,
+      "note": "透明中心份量假设；熟粉皮采纳化验所测定样品总脂肪(2.2g/200g)，不武断断言全部来自防粘油，估算未额外追加未观测到的油脂；豉油采用官方每100g产品资料(注明与国内410ml SKU未证实同款)按15g重算；豉油标示脂肪<0.5g/100g取中心估计22dg(理论上限23dg)；CFS官方原表能量与4/9/4差异保留为公布数据固有差异"
+    }
+  },
+  {
+    "dishId": "dish-lean-pork-changfen",
+    "name": "瘦肉肠粉（猪瘦肉）",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 274,
+      "proteinDg": 86,
+      "fatDg": 41,
+      "carbDg": 535
+    },
+    "nutritionBasis": {
+      "source": "香港食物安全中心(CFS)净肠粉(2021)、中国食物成分表第6版第二册猪肉(瘦)编码081110、李锦记官方每100g甜豉油标示加权估算(详见T03c10-v1来源证据01/02/03)",
+      "portionAssumption": "熟肠粉皮200g + 生猪瘦肉碎30g + 调味甜豉油汁15g(单份成品净重中心估计约245g，非食堂实称)",
+      "estimated": true,
+      "note": "透明中心份量假设；依据标牌原文'（猪瘦肉）'，生瘦肉投料30g按生重营养数据计算(600kJ/143kcal, P20.3, F6.2, C1.5)，不经熟重重复缩放；豉油依官方每100g产品资料按15g重算；粉皮总脂肪2.2g保留为化验基准；酱汁脂肪<0.5g/100g在不确定性区间内取整恒为41dg；CFS原表能量与4/9/4差异保留为公布数据固有差异"
+    }
+  }
+]

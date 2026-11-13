@@ -1,0 +1,1038 @@
+{
+  "contractVersion": "1.0",
+  "task": "T07b1",
+  "generatedAt": "2026-10-23T11:14:37.893Z",
+  "benchmarkJson": {
+    "path": "Resources/报告/T07b-反重力-固定候选性能与工程验证-证据-v3/benchmark_results.json",
+    "bytes": 49415,
+    "sha256": "DD2C0AB4FF0A6A97CD23F432A7ACB0DAA85E43012FC22EFA068CBB817A420953"
+  },
+  "alignmentSummary": {
+    "totalRows": 24,
+    "nativeRows": 12,
+    "wasmRows": 12,
+    "allMatchedWithRawJson": true
+  },
+  "rows": [
+    {
+      "rowId": 1,
+      "platform": "Native CLI",
+      "group": "G0",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g0-greedy",
+      "sourceKeyInJson": "nativeRuns[0].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 17.84,
+        "runsMs": [
+          12.871,
+          12.799,
+          13.088,
+          13.166,
+          16.736
+        ],
+        "min": 12.799,
+        "max": 16.736,
+        "median": 13.088,
+        "mean": 13.732,
+        "stdDev": 1.517
+      },
+      "v4NewValue": {
+        "warmupMs": 17.84,
+        "runsMs": [
+          16.736,
+          12.925,
+          12.799,
+          14.035,
+          13.088
+        ],
+        "min": 12.799,
+        "max": 16.736,
+        "median": 13.088,
+        "mean": 13.916,
+        "stdDev": 1.475
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[0] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 2,
+      "platform": "Native CLI",
+      "group": "G0",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g0-dp",
+      "sourceKeyInJson": "nativeRuns[1].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 30.411,
+        "runsMs": [
+          27.699,
+          27.3,
+          27.525,
+          30.035,
+          29.589
+        ],
+        "min": 27.3,
+        "max": 30.035,
+        "median": 27.699,
+        "mean": 28.43,
+        "stdDev": 1.157
+      },
+      "v4NewValue": {
+        "warmupMs": 30.411,
+        "runsMs": [
+          30.035,
+          27.699,
+          27.445,
+          27.3,
+          28.543
+        ],
+        "min": 27.3,
+        "max": 30.035,
+        "median": 27.699,
+        "mean": 28.205,
+        "stdDev": 1.012
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[1] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 3,
+      "platform": "Native CLI",
+      "group": "G0",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g0-bnb",
+      "sourceKeyInJson": "nativeRuns[2].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 32.019,
+        "runsMs": [
+          30.187,
+          29.805,
+          29.143,
+          32.394,
+          31.815
+        ],
+        "min": 29.143,
+        "max": 32.394,
+        "median": 30.187,
+        "mean": 30.669,
+        "stdDev": 1.233
+      },
+      "v4NewValue": {
+        "warmupMs": 32.019,
+        "runsMs": [
+          32.394,
+          30.191,
+          30.187,
+          29.143,
+          29.736
+        ],
+        "min": 29.143,
+        "max": 32.394,
+        "median": 30.187,
+        "mean": 30.33,
+        "stdDev": 1.101
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[2] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 4,
+      "platform": "Native CLI",
+      "group": "G1",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g1-greedy",
+      "sourceKeyInJson": "nativeRuns[3].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 68.543,
+        "runsMs": [
+          64.655,
+          64.444,
+          64.231,
+          64.671,
+          67.799
+        ],
+        "min": 64.231,
+        "max": 67.799,
+        "median": 64.655,
+        "mean": 65.16,
+        "stdDev": 1.332
+      },
+      "v4NewValue": {
+        "warmupMs": 68.543,
+        "runsMs": [
+          67.799,
+          65.208,
+          64.231,
+          64.655,
+          64.583
+        ],
+        "min": 64.231,
+        "max": 67.799,
+        "median": 64.655,
+        "mean": 65.295,
+        "stdDev": 1.29
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[3] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 5,
+      "platform": "Native CLI",
+      "group": "G1",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g1-dp",
+      "sourceKeyInJson": "nativeRuns[4].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 67.166,
+        "runsMs": [
+          65.111,
+          64.797,
+          63.492,
+          64.25,
+          65.202
+        ],
+        "min": 63.492,
+        "max": 65.202,
+        "median": 64.797,
+        "mean": 64.57,
+        "stdDev": 0.648
+      },
+      "v4NewValue": {
+        "warmupMs": 67.166,
+        "runsMs": [
+          64.866,
+          64.216,
+          64.797,
+          65.202,
+          63.492
+        ],
+        "min": 63.492,
+        "max": 65.202,
+        "median": 64.797,
+        "mean": 64.515,
+        "stdDev": 0.602
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[4] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 6,
+      "platform": "Native CLI",
+      "group": "G1",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g1-bnb",
+      "sourceKeyInJson": "nativeRuns[5].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 67.602,
+        "runsMs": [
+          64.2,
+          64.223,
+          64.55,
+          64.298,
+          67.402
+        ],
+        "min": 64.2,
+        "max": 67.402,
+        "median": 64.223,
+        "mean": 64.935,
+        "stdDev": 1.25
+      },
+      "v4NewValue": {
+        "warmupMs": 67.602,
+        "runsMs": [
+          67.402,
+          64.202,
+          64.2,
+          64.223,
+          64.681
+        ],
+        "min": 64.2,
+        "max": 67.402,
+        "median": 64.223,
+        "mean": 64.942,
+        "stdDev": 1.244
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[5] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 7,
+      "platform": "Native CLI",
+      "group": "G2",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g2-greedy",
+      "sourceKeyInJson": "nativeRuns[6].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 75.56,
+        "runsMs": [
+          65.07,
+          64.066,
+          64.887,
+          67.213,
+          67.045
+        ],
+        "min": 64.066,
+        "max": 67.213,
+        "median": 65.07,
+        "mean": 65.656,
+        "stdDev": 1.242
+      },
+      "v4NewValue": {
+        "warmupMs": 75.56,
+        "runsMs": [
+          67.213,
+          65.07,
+          65.448,
+          64.066,
+          64.407
+        ],
+        "min": 64.066,
+        "max": 67.213,
+        "median": 65.07,
+        "mean": 65.241,
+        "stdDev": 1.099
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[6] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 8,
+      "platform": "Native CLI",
+      "group": "G2",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g2-dp",
+      "sourceKeyInJson": "nativeRuns[7].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 67.707,
+        "runsMs": [
+          65.184,
+          64.653,
+          64.912,
+          67.739,
+          67.069
+        ],
+        "min": 64.653,
+        "max": 67.739,
+        "median": 65.184,
+        "mean": 65.911,
+        "stdDev": 1.244
+      },
+      "v4NewValue": {
+        "warmupMs": 67.707,
+        "runsMs": [
+          67.739,
+          65.184,
+          64.653,
+          65.932,
+          64.78
+        ],
+        "min": 64.653,
+        "max": 67.739,
+        "median": 65.184,
+        "mean": 65.658,
+        "stdDev": 1.133
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[7] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 9,
+      "platform": "Native CLI",
+      "group": "G2",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g2-bnb",
+      "sourceKeyInJson": "nativeRuns[8].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 68.973,
+        "runsMs": [
+          65.66,
+          64.959,
+          65.021,
+          67.575,
+          67.604
+        ],
+        "min": 64.959,
+        "max": 67.604,
+        "median": 65.66,
+        "mean": 66.164,
+        "stdDev": 1.171
+      },
+      "v4NewValue": {
+        "warmupMs": 68.973,
+        "runsMs": [
+          67.604,
+          65.66,
+          64.959,
+          66.392,
+          65.047
+        ],
+        "min": 64.959,
+        "max": 67.604,
+        "median": 65.66,
+        "mean": 65.932,
+        "stdDev": 0.981
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[8] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 10,
+      "platform": "Native CLI",
+      "group": "G3",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g3-greedy",
+      "sourceKeyInJson": "nativeRuns[9].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 70.578,
+        "runsMs": [
+          67.426,
+          66.42,
+          67.892,
+          67.005,
+          68.31
+        ],
+        "min": 66.42,
+        "max": 68.31,
+        "median": 67.426,
+        "mean": 67.411,
+        "stdDev": 0.672
+      },
+      "v4NewValue": {
+        "warmupMs": 70.578,
+        "runsMs": [
+          66.543,
+          67.426,
+          66.42,
+          68.31,
+          68.266
+        ],
+        "min": 66.42,
+        "max": 68.31,
+        "median": 67.426,
+        "mean": 67.393,
+        "stdDev": 0.809
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[9] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 11,
+      "platform": "Native CLI",
+      "group": "G3",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g3-dp",
+      "sourceKeyInJson": "nativeRuns[10].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 69.424,
+        "runsMs": [
+          66.551,
+          65.766,
+          66.213,
+          68.102,
+          68.38
+        ],
+        "min": 65.766,
+        "max": 68.38,
+        "median": 66.551,
+        "mean": 67.002,
+        "stdDev": 1.053
+      },
+      "v4NewValue": {
+        "warmupMs": 69.424,
+        "runsMs": [
+          68.38,
+          65.884,
+          67.072,
+          65.766,
+          66.551
+        ],
+        "min": 65.766,
+        "max": 68.38,
+        "median": 66.551,
+        "mean": 66.73,
+        "stdDev": 0.951
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[10] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 12,
+      "platform": "Native CLI",
+      "group": "G3",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g3-bnb",
+      "sourceKeyInJson": "nativeRuns[11].runsMs & stats",
+      "v3OldValue": {
+        "warmupMs": 78.701,
+        "runsMs": [
+          67.553,
+          63.896,
+          66.924,
+          69.438,
+          68.91
+        ],
+        "min": 63.896,
+        "max": 69.438,
+        "median": 67.553,
+        "mean": 67.344,
+        "stdDev": 2
+      },
+      "v4NewValue": {
+        "warmupMs": 78.701,
+        "runsMs": [
+          69.438,
+          67.553,
+          63.896,
+          65.014,
+          68.393
+        ],
+        "min": 63.896,
+        "max": 69.438,
+        "median": 67.553,
+        "mean": 66.859,
+        "stdDev": 2.082
+      },
+      "differenceExplanation": "v3 报告误抄录了较早探索轮次的运行序列；v4 严格按落盘 benchmark_results.json 中 nativeRuns[11] 原生键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 13,
+      "platform": "A11 WASM (Core)",
+      "group": "G0",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g0-greedy",
+      "sourceKeyInJson": "wasmRuns[0].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 6.249,
+        "runsMs": [
+          1.462,
+          1.13,
+          1.102,
+          1.055,
+          1.201
+        ],
+        "min": 1.055,
+        "max": 1.462,
+        "median": 1.13,
+        "mean": 1.19,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 6.249,
+        "runsMs": [
+          1.462,
+          1.167,
+          1.13,
+          1.058,
+          1.055
+        ],
+        "min": 1.055,
+        "max": 1.462,
+        "median": 1.13,
+        "mean": 1.174,
+        "stdDev": 0.15,
+        "bridgeMedianMs": 1.162,
+        "hostMedianMs": 1.295,
+        "memoryPages": 47
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[0] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 14,
+      "platform": "A11 WASM (Core)",
+      "group": "G0",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g0-dp",
+      "sourceKeyInJson": "wasmRuns[1].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 8.74,
+        "runsMs": [
+          6.28,
+          5.898,
+          5.811,
+          5.802,
+          5.79
+        ],
+        "min": 5.79,
+        "max": 6.28,
+        "median": 5.898,
+        "mean": 5.916,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 8.74,
+        "runsMs": [
+          6.28,
+          6.135,
+          5.873,
+          5.898,
+          5.79
+        ],
+        "min": 5.79,
+        "max": 6.28,
+        "median": 5.898,
+        "mean": 5.995,
+        "stdDev": 0.183,
+        "bridgeMedianMs": 5.939,
+        "hostMedianMs": 6.173,
+        "memoryPages": 54
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[1] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 15,
+      "platform": "A11 WASM (Core)",
+      "group": "G0",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g0-bnb",
+      "sourceKeyInJson": "wasmRuns[2].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 7.762,
+        "runsMs": [
+          5.526,
+          5.351,
+          5.34,
+          5.269,
+          5.388
+        ],
+        "min": 5.269,
+        "max": 5.526,
+        "median": 5.351,
+        "mean": 5.375,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 7.762,
+        "runsMs": [
+          5.526,
+          5.381,
+          5.351,
+          5.329,
+          5.269
+        ],
+        "min": 5.269,
+        "max": 5.526,
+        "median": 5.351,
+        "mean": 5.371,
+        "stdDev": 0.086,
+        "bridgeMedianMs": 5.406,
+        "hostMedianMs": 5.596,
+        "memoryPages": 74
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[2] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 16,
+      "platform": "A11 WASM (Core)",
+      "group": "G1",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g1-greedy",
+      "sourceKeyInJson": "wasmRuns[3].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 38.857,
+        "runsMs": [
+          11.969,
+          11.34,
+          11.202,
+          11.069,
+          11.411
+        ],
+        "min": 11.069,
+        "max": 11.969,
+        "median": 11.34,
+        "mean": 11.398,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 38.857,
+        "runsMs": [
+          11.34,
+          11.969,
+          11.39,
+          11.214,
+          11.069
+        ],
+        "min": 11.069,
+        "max": 11.969,
+        "median": 11.34,
+        "mean": 11.396,
+        "stdDev": 0.307,
+        "bridgeMedianMs": 11.397,
+        "hostMedianMs": 11.945,
+        "memoryPages": 496
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[3] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 17,
+      "platform": "A11 WASM (Core)",
+      "group": "G1",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g1-dp",
+      "sourceKeyInJson": "wasmRuns[4].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 40.667,
+        "runsMs": [
+          11.176,
+          11.122,
+          11.055,
+          10.995,
+          11.144
+        ],
+        "min": 10.995,
+        "max": 11.176,
+        "median": 11.122,
+        "mean": 11.098,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 40.667,
+        "runsMs": [
+          10.995,
+          11.176,
+          11.029,
+          11.122,
+          11.164
+        ],
+        "min": 10.995,
+        "max": 11.176,
+        "median": 11.122,
+        "mean": 11.097,
+        "stdDev": 0.073,
+        "bridgeMedianMs": 11.178,
+        "hostMedianMs": 11.563,
+        "memoryPages": 496
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[4] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 18,
+      "platform": "A11 WASM (Core)",
+      "group": "G1",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g1-bnb",
+      "sourceKeyInJson": "wasmRuns[5].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 38.502,
+        "runsMs": [
+          11.236,
+          11.039,
+          10.988,
+          10.928,
+          11.102
+        ],
+        "min": 10.928,
+        "max": 11.236,
+        "median": 11.039,
+        "mean": 11.059,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 38.502,
+        "runsMs": [
+          10.932,
+          11.049,
+          11.039,
+          11.236,
+          10.928
+        ],
+        "min": 10.928,
+        "max": 11.236,
+        "median": 11.039,
+        "mean": 11.037,
+        "stdDev": 0.112,
+        "bridgeMedianMs": 11.077,
+        "hostMedianMs": 11.473,
+        "memoryPages": 496
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[5] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 19,
+      "platform": "A11 WASM (Core)",
+      "group": "G2",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g2-greedy",
+      "sourceKeyInJson": "wasmRuns[6].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 38.588,
+        "runsMs": [
+          13.381,
+          11.17,
+          11.155,
+          11.117,
+          11.208
+        ],
+        "min": 11.117,
+        "max": 13.381,
+        "median": 11.17,
+        "mean": 11.606,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 38.588,
+        "runsMs": [
+          11.17,
+          11.347,
+          13.381,
+          11.117,
+          11.159
+        ],
+        "min": 11.117,
+        "max": 13.381,
+        "median": 11.17,
+        "mean": 11.635,
+        "stdDev": 0.877,
+        "bridgeMedianMs": 11.233,
+        "hostMedianMs": 11.574,
+        "memoryPages": 497
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[6] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 20,
+      "platform": "A11 WASM (Core)",
+      "group": "G2",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g2-dp",
+      "sourceKeyInJson": "wasmRuns[7].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 39.149,
+        "runsMs": [
+          11.228,
+          11.152,
+          11.101,
+          11.053,
+          11.166
+        ],
+        "min": 11.053,
+        "max": 11.228,
+        "median": 11.14,
+        "mean": 11.14,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 39.149,
+        "runsMs": [
+          11.152,
+          11.053,
+          11.228,
+          11.21,
+          11.093
+        ],
+        "min": 11.053,
+        "max": 11.228,
+        "median": 11.152,
+        "mean": 11.147,
+        "stdDev": 0.067,
+        "bridgeMedianMs": 11.215,
+        "hostMedianMs": 11.593,
+        "memoryPages": 497
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[7] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 21,
+      "platform": "A11 WASM (Core)",
+      "group": "G2",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g2-bnb",
+      "sourceKeyInJson": "wasmRuns[8].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 39.92,
+        "runsMs": [
+          11.141,
+          11.076,
+          11.022,
+          11.007,
+          11.112
+        ],
+        "min": 11.007,
+        "max": 11.141,
+        "median": 11.072,
+        "mean": 11.072,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 39.92,
+        "runsMs": [
+          11.085,
+          11.141,
+          11.056,
+          11.076,
+          11.007
+        ],
+        "min": 11.007,
+        "max": 11.141,
+        "median": 11.076,
+        "mean": 11.073,
+        "stdDev": 0.044,
+        "bridgeMedianMs": 11.109,
+        "hostMedianMs": 11.386,
+        "memoryPages": 497
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[8] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 22,
+      "platform": "A11 WASM (Core)",
+      "group": "G3",
+      "algorithm": "greedy",
+      "tag": "greedy",
+      "requestId": "req-t07b-g3-greedy",
+      "sourceKeyInJson": "wasmRuns[9].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 40.288,
+        "runsMs": [
+          12.698,
+          11.733,
+          11.611,
+          11.545,
+          11.802
+        ],
+        "min": 11.545,
+        "max": 12.698,
+        "median": 11.733,
+        "mean": 11.878,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 40.288,
+        "runsMs": [
+          11.733,
+          12.698,
+          11.769,
+          11.545,
+          11.662
+        ],
+        "min": 11.545,
+        "max": 12.698,
+        "median": 11.733,
+        "mean": 11.882,
+        "stdDev": 0.415,
+        "bridgeMedianMs": 11.791,
+        "hostMedianMs": 12.154,
+        "memoryPages": 502
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[9] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 23,
+      "platform": "A11 WASM (Core)",
+      "group": "G3",
+      "algorithm": "dp",
+      "tag": "dp",
+      "requestId": "req-t07b-g3-dp",
+      "sourceKeyInJson": "wasmRuns[10].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 39.306,
+        "runsMs": [
+          11.774,
+          11.592,
+          11.488,
+          11.307,
+          11.605
+        ],
+        "min": 11.307,
+        "max": 11.774,
+        "median": 11.592,
+        "mean": 11.553,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 39.306,
+        "runsMs": [
+          11.676,
+          11.307,
+          11.383,
+          11.592,
+          11.774
+        ],
+        "min": 11.307,
+        "max": 11.774,
+        "median": 11.592,
+        "mean": 11.546,
+        "stdDev": 0.176,
+        "bridgeMedianMs": 11.638,
+        "hostMedianMs": 12.031,
+        "memoryPages": 498
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[10] 核心原始键重建",
+      "matchedWithRawJson": true
+    },
+    {
+      "rowId": 24,
+      "platform": "A11 WASM (Core)",
+      "group": "G3",
+      "algorithm": "branchAndBound",
+      "tag": "bnb",
+      "requestId": "req-t07b-g3-bnb",
+      "sourceKeyInJson": "wasmRuns[11].coreRunsMs & coreStats",
+      "v3OldValue": {
+        "warmupMs": 41.828,
+        "runsMs": [
+          12.506,
+          11.361,
+          11.288,
+          11.152,
+          11.455
+        ],
+        "min": 11.152,
+        "max": 12.506,
+        "median": 11.361,
+        "mean": 11.552,
+        "stdDev": null
+      },
+      "v4NewValue": {
+        "warmupMs": 41.828,
+        "runsMs": [
+          11.363,
+          11.361,
+          11.152,
+          11.209,
+          12.506
+        ],
+        "min": 11.152,
+        "max": 12.506,
+        "median": 11.361,
+        "mean": 11.518,
+        "stdDev": 0.501,
+        "bridgeMedianMs": 11.4,
+        "hostMedianMs": 11.604,
+        "memoryPages": 498
+      },
+      "differenceExplanation": "v3 报告核心 5 次运行序列存在时序置换或部分小数抄录偏差；v4 严格按落盘 benchmark_results.json 中 wasmRuns[11] 核心原始键重建",
+      "matchedWithRawJson": true
+    }
+  ]
+}

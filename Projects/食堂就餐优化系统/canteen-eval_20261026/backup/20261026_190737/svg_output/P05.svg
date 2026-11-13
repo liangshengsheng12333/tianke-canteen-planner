@@ -1,0 +1,160 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p05" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="40" font-weight="bold" fill="#18181B">算法核心：三大求解策略源码与时空复杂度分析</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="22" fill="#71717A">边际增益贪心 · 多阶段图DP状态分桶 · 分支限界松弛剪枝 · WASM沙箱控制</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">05 / 09</text>
+  </g>
+
+  <!-- Left: 4K 架构配图 + 底层 C++ 源码 + HTML 交互入口 -->
+  <g id="left_algo_diagram_p05" data-pptx-bounds="100 210 890 790">
+    <!-- Container Box -->
+    <rect x="100" y="210" width="890" height="790" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- 4K Algorithm Comparison Image (可放大展示) -->
+    <rect x="120" y="230" width="850" height="310" rx="10" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <image id="img_p05_algo" x="120" y="230" width="850" height="310" preserveAspectRatio="xMidYMid meet" href="../images/T10d-01-三算法机制对照-4K-浅色.png" />
+
+    <!-- 3-Column C++ Core Source Snippets Header -->
+    <rect x="120" y="552" width="6" height="20" fill="#2563EB" rx="3" />
+    <text x="134" y="569" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#18181B">三大算法 C++ 核心源码片段（摘自 core/src/planner.cpp 实测代码）</text>
+
+    <!-- Source Column 1: Greedy (x: 120, w: 274) -->
+    <rect x="120" y="580" width="274" height="252" rx="8" fill="#1E1E2E" stroke="#313244" stroke-width="1" />
+    <rect x="130" y="590" width="60" height="20" rx="4" fill="#2563EB" />
+    <text x="160" y="605" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GREEDY</text>
+    <text x="198" y="605" font-family="Consolas, monospace" font-size="12" fill="#A6ADC8">RunGreedy()</text>
+    <text x="130" y="630" font-family="Consolas, monospace" font-size="12" fill="#6C7086">// 1. 按边际效用排序 O(NlogN)</text>
+    <text x="130" y="650" font-family="Consolas, monospace" font-size="12" fill="#89B4FA">std::sort</text>
+    <text x="186" y="650" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(cands.begin(), ...);</text>
+    <text x="130" y="670" font-family="Consolas, monospace" font-size="12" fill="#6C7086">// 2. 局部最优单步贪选</text>
+    <text x="130" y="690" font-family="Consolas, monospace" font-size="12" fill="#CBA6F7">for </text>
+    <text x="156" y="690" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(const auto&amp; c : cands) {</text>
+    <text x="130" y="710" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">  if (cost + c.cost &lt;= cap) {</text>
+    <text x="130" y="730" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">    out-&gt;Push(c); break;</text>
+    <text x="130" y="750" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">  }</text>
+    <text x="130" y="770" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">}</text>
+    <text x="130" y="794" font-family="Consolas, monospace" font-size="12" fill="#A6E3A1">// 单步决策耗时 &lt; 1ms</text>
+    <text x="130" y="814" font-family="Consolas, monospace" font-size="12" fill="#6C7086">tracker-&gt;AddApproximation();</text>
+
+    <!-- Source Column 2: DP (x: 408, w: 274) -->
+    <rect x="408" y="580" width="274" height="252" rx="8" fill="#1E1E2E" stroke="#313244" stroke-width="1" />
+    <rect x="418" y="590" width="60" height="20" rx="4" fill="#8B5CF6" />
+    <text x="448" y="605" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">DP 20K</text>
+    <text x="486" y="605" font-family="Consolas, monospace" font-size="12" fill="#A6ADC8">RunDpAlgorithm()</text>
+    <text x="418" y="630" font-family="Consolas, monospace" font-size="12" fill="#6C7086">// 1. 分层扩展消除笛卡尔扫描</text>
+    <text x="418" y="650" font-family="Consolas, monospace" font-size="12" fill="#CBA6F7">for </text>
+    <text x="444" y="650" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(auto&amp; prev : layer) {</text>
+    <text x="418" y="670" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">  DpState nxt = Step(prev);</text>
+    <text x="418" y="690" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">  if (!Dominated(nxt))</text>
+    <text x="418" y="710" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">    nextLayer.Push(nxt);</text>
+    <text x="418" y="730" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">}</text>
+    <text x="418" y="750" font-family="Consolas, monospace" font-size="12" fill="#6C7086">// 2. 20,000 状态桶化截断</text>
+    <text x="418" y="770" font-family="Consolas, monospace" font-size="12" fill="#F38BA8">if </text>
+    <text x="438" y="770" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(nextLayer.Size() &gt; 20000)</text>
+    <text x="418" y="794" font-family="Consolas, monospace" font-size="12" fill="#89B4FA">  QuantizeBuckets</text>
+    <text x="526" y="794" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(&amp;next);</text>
+    <text x="418" y="814" font-family="Consolas, monospace" font-size="12" fill="#A6E3A1">// 耗时骤降至 71.00ms</text>
+
+    <!-- Source Column 3: BnB (x: 696, w: 274) -->
+    <rect x="696" y="580" width="274" height="252" rx="8" fill="#1E1E2E" stroke="#313244" stroke-width="1" />
+    <rect x="706" y="590" width="60" height="20" rx="4" fill="#10B981" />
+    <text x="736" y="605" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BnB</text>
+    <text x="774" y="605" font-family="Consolas, monospace" font-size="12" fill="#A6ADC8">RecurseBnB()</text>
+    <text x="706" y="630" font-family="Consolas, monospace" font-size="12" fill="#6C7086">// 1. 后缀松弛上界剪枝判断</text>
+    <text x="706" y="650" font-family="Consolas, monospace" font-size="12" fill="#CBA6F7">if </text>
+    <text x="726" y="650" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(stage + 1 &lt; totalMeals) {</text>
+    <text x="706" y="670" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">  bool prune = CanPrune(</text>
+    <text x="706" y="690" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">    best, nxt, suffix[s+1]);</text>
+    <text x="706" y="710" font-family="Consolas, monospace" font-size="12" fill="#F38BA8">  if </text>
+    <text x="726" y="710" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(prune) </text>
+    <text x="776" y="710" font-family="Consolas, monospace" font-size="12" fill="#F38BA8">continue;</text>
+    <text x="706" y="730" font-family="Consolas, monospace" font-size="12" fill="#6C7086">  // 动态剪除整棵劣解树</text>
+    <text x="706" y="750" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">}</text>
+    <text x="706" y="770" font-family="Consolas, monospace" font-size="12" fill="#6C7086">// 2. 递归推进保真最优解</text>
+    <text x="706" y="794" font-family="Consolas, monospace" font-size="12" fill="#89B4FA">RecurseBnB</text>
+    <text x="776" y="794" font-family="Consolas, monospace" font-size="12" fill="#CDD6F4">(env, s + 1);</text>
+    <text x="706" y="814" font-family="Consolas, monospace" font-size="12" fill="#A6E3A1">// 数学证明严格全局最优</text>
+
+    <!-- Bottom Interactive HTML Banner -->
+    <rect id="p05_btn_bg" x="120" y="844" width="850" height="142" rx="10" fill="#2563EB" fill-opacity="0.08" stroke="#2563EB" stroke-width="1.5" />
+    <rect id="p05_btn_badge" x="136" y="858" width="38" height="38" rx="8" fill="#2563EB" />
+    <text x="155" y="883" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">⚙</text>
+    <text x="186" y="878" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#2563EB">配套原生交互 HTML 三算法机制对照演示【点此全屏打开】</text>
+    <text x="186" y="904" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="14" fill="#71717A">支持贪心/DP/BnB 状态树高亮切换与单选走查：</text>
+    <text x="186" y="930" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#2563EB">T10d-01-三算法机制对照.html</text>
+    <text x="186" y="958" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="14" fill="#F59E0B">注：三种方法使用同一菜单候选与评分规则，搜索策略不同，单次择一运行而非并行投票</text>
+  </g>
+
+  <!-- Right: 复杂度深度推导与时空自由度控制 -->
+  <g id="right_dof_analysis_p05" data-pptx-bounds="1010 210 810 790">
+    <!-- Card 1: 复杂度推导与实测对比表 -->
+    <rect x="1010" y="210" width="810" height="320" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1034" y="230" width="6" height="22" fill="#2563EB" rx="3" />
+    <text x="1048" y="248" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">三大算法时空复杂度推导与实测性能对照矩阵</text>
+
+    <!-- Table Header -->
+    <rect x="1034" y="264" width="762" height="32" rx="6" fill="#F4F4F5" />
+    <text x="1048" y="286" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#3F3F46">求解策略</text>
+    <text x="1148" y="286" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#3F3F46">理论时间复杂度</text>
+    <text x="1310" y="286" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#3F3F46">空间复杂度 / 内存</text>
+    <text x="1500" y="286" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#3F3F46">PC实测延迟</text>
+    <text x="1668" y="286" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#3F3F46">数学最优性</text>
+
+    <!-- Row 1: Greedy -->
+    <rect x="1034" y="302" width="762" height="60" fill="#FFFFFF" stroke="#F4F4F5" stroke-width="1" />
+    <text x="1048" y="334" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#2563EB">贪心 (Greedy)</text>
+    <text x="1148" y="334" font-family="Consolas, monospace" font-size="14" fill="#18181B">O(M · K log K)</text>
+    <text x="1310" y="334" font-family="Consolas, monospace" font-size="14" fill="#18181B">O(K) 局部缓冲区</text>
+    <text x="1500" y="334" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#10B981">&lt; 1.0 ms</text>
+    <text x="1668" y="334" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#71717A">局部最优 (启发式)</text>
+
+    <!-- Row 2: DP -->
+    <rect x="1034" y="366" width="762" height="74" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <text x="1048" y="398" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#8B5CF6">动态规划 (DP)</text>
+    <text x="1048" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">20K桶截断优化</text>
+    <text x="1148" y="398" font-family="Consolas, monospace" font-size="14" fill="#18181B">O(M · S · K)</text>
+    <text x="1148" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">S ≤ 20,000 桶化</text>
+    <text x="1310" y="398" font-family="Consolas, monospace" font-size="14" fill="#18181B">562 页 WASM</text>
+    <text x="1310" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">实测约 35.1 MB</text>
+    <text x="1500" y="398" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#2563EB">71.00 ms</text>
+    <text x="1500" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#10B981">提速 330 倍 (原23s)</text>
+    <text x="1668" y="398" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#18181B">高精度近似解</text>
+    <text x="1668" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">步长内全局最优</text>
+
+    <!-- Row 3: BnB -->
+    <rect x="1034" y="444" width="762" height="74" fill="#FFFFFF" stroke="#F4F4F5" stroke-width="1" />
+    <text x="1048" y="476" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#10B981">分支限界 (BnB)</text>
+    <text x="1048" y="498" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">松弛上下界剪枝</text>
+    <text x="1148" y="476" font-family="Consolas, monospace" font-size="14" fill="#18181B">最坏 O(K^M)</text>
+    <text x="1148" y="498" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">剪枝后大幅收敛</text>
+    <text x="1310" y="476" font-family="Consolas, monospace" font-size="14" fill="#18181B">O(M) 递归栈深</text>
+    <text x="1310" y="498" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">栈深度固定为 3</text>
+    <text x="1500" y="476" font-family="Consolas, monospace" font-size="14" fill="#18181B">动态剪枝收敛</text>
+    <text x="1500" y="498" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#71717A">评估节点极大压缩</text>
+    <text x="1668" y="476" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#10B981">严格全局最优</text>
+    <text x="1668" y="498" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#10B981">数学保真解</text>
+
+    <!-- Card 2: 决策空间多维自由度建模 -->
+    <rect x="1010" y="546" width="810" height="220" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1034" y="566" width="36" height="36" rx="8" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1052" y="590" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#2563EB" text-anchor="middle">A</text>
+    <text x="1080" y="591" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">决策空间多维自由度建模与降维机理 (DoF)</text>
+    <text x="1034" y="630" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="17" fill="#71717A">• 决策变量维度：餐次组合 M ∈ {1,2,3}，菜品条目候选全集 C = 137 道<tspan x="1034" dy="26">• 原始自由度爆炸：三餐无约束全排列空间达 137³ ≈ 2,571,353 种组合</tspan><tspan x="1034" dy="26">• 多目标超平面投影：通过预算硬边界 (Price ≤ B) 与宏量营养区间双重约束，</tspan><tspan x="1034" dy="26">  将离散解空间大幅投影并收缩至可行域流形内，剔除 99.2% 无效搜索自由度。</tspan></text>
+
+    <!-- Card 3: WASM 线性内存沙箱工程控制 -->
+    <rect x="1010" y="780" width="810" height="220" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1034" y="800" width="36" height="36" rx="8" fill="#10B981" fill-opacity="0.1" />
+    <text x="1052" y="824" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#10B981" text-anchor="middle">B</text>
+    <text x="1080" y="825" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">工程防御：WebAssembly 单线程线性内存沙箱控制</text>
+    <text x="1034" y="864" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="17" fill="#71717A">• 候选池硬性截断：候选集上限锁定 K ≤ 256，防止无界内存增长<tspan x="1034" dy="26">• WASM 线性内存控制：系统设定安全容量红线为 768 页（48 MB）</tspan><tspan x="1034" dy="26">• 实测峰值：PC 端 G2 实测峰值仅 562 页（约 35.1 MB），利用率 73.2%</tspan><tspan x="1034" dy="26">  严格保障微信小程序在单线程 WebAssembly 沙箱中平稳运行，零 OOM 崩溃。</tspan></text>
+  </g>
+</svg>

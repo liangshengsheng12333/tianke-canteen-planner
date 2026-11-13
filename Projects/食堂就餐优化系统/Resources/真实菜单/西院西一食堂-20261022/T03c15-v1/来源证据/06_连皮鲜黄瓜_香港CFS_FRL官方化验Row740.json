@@ -1,0 +1,36 @@
+{
+  "food_name": "青瓜(連皮) / 生鲜连皮黄瓜片 (Cucumber with skin)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "Vegetables and vegetable products / Squashes and gourds (Row 740)",
+  "sheet_name": "Eng",
+  "official_row_index": 740,
+  "original_file": "Nutrient_profiles_FRL.xlsx (Row 740)",
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-23",
+  "per_amount": "100g 生鲜",
+  "nutrients_per_100g": {
+    "energy_kcal": 14.0,
+    "energy_kcal_alt": 12.0,
+    "protein_g": 0.7,
+    "fat_g": 0.1,
+    "fat_g_alt": 0.0,
+    "carbohydrate_g": 2.4,
+    "carbohydrate_g_alt": 1.8,
+    "sodium_mg": 2.0
+  },
+  "p09_review_status": "P09在T03V04报告中确认行号为 Row 740，连皮黄瓜可定位。",
+  "single_portion_calculation_25g": {
+    "weight_g": 25.0,
+    "multiplier": 0.25,
+    "energy_kcal": 3.50,
+    "energy_kcal_alt": 3.00,
+    "protein_g": 0.175,
+    "fat_g": 0.025,
+    "fat_g_alt": 0.000,
+    "carbohydrate_g": 0.60,
+    "carbohydrate_g_alt": 0.45,
+    "sodium_mg": 0.50
+  },
+  "assumption_note": "切片黄瓜垫盘单份取 25g 为工艺假设，非现场称重证明。"
+}

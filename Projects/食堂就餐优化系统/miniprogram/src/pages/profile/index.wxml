@@ -1,0 +1,135 @@
+<!-- pages/profile/index.wxml — “我的”摘要入口：目标摘要 + 四个分组入口（U04 收口）。 -->
+<view class="page page-has-tabbar {{themeClass}}">
+  <view class="hero">
+    <view class="hero-title">我的</view>
+    <view class="hero-sub">这里只看每日目标与资料摘要；改资料进“个人资料”，点“编辑资料”才展开表单，保存后才生效。</view>
+  </view>
+
+  <!-- 当前目标摘要 -->
+  <view class="card">
+    <view class="card-title">
+      <text>每日营养目标</text>
+      <text class="badge {{targetBadge}}">{{targetBadgeText}}</text>
+    </view>
+    <view class="target-title">{{targetTitle}}</view>
+    <view class="note">{{targetSub}}</view>
+  </view>
+
+  <view class="banner banner-err" wx:if="{{loadError}}">{{loadError}}</view>
+
+  <block wx:if="{{view}}">
+    <!-- 个人资料 -->
+    <view class="card">
+      <view class="card-title">
+        <text>个人资料</text>
+        <text class="badge {{profileBadge}}">{{profileBadgeText}}</text>
+      </view>
+      <view class="row" wx:for="{{profileRows}}" wx:key="label">
+        <text class="row-label">{{item.label}}</text>
+        <text class="row-value">{{item.value}}</text>
+      </view>
+      <view class="btn-group">
+        <button class="btn btn-ghost" bindtap="onOpenProfileEdit" data-role="profile">查看/编辑个人资料</button>
+      </view>
+      <view class="note">已存资料先显示摘要；点“查看/编辑个人资料”后才展开表单，可取消返回。</view>
+    </view>
+
+    <!-- 预算与偏好 -->
+    <view class="card">
+      <view class="card-title">
+        <text>预算与偏好</text>
+        <text class="muted">今日设置 + 档案偏好</text>
+      </view>
+      <view class="row" wx:for="{{budgetRows}}" wx:key="label">
+        <text class="row-label">{{item.label}}</text>
+        <text class="row-value">{{item.value}}</text>
+      </view>
+      <view class="btn-group">
+        <button class="btn btn-ghost btn-budget" bindtap="onOpenBudget">打开预算与偏好</button>
+      </view>
+      <view class="note">预算留空表示不设约束，0 表示零预算；未知金额不按 0 计算。</view>
+    </view>
+
+    <!-- 显示与外观：两组互相独立，各自持久化 -->
+    <view class="card">
+      <view class="card-title">
+        <text>显示与外观</text>
+        <text class="badge badge-info">两组独立</text>
+      </view>
+
+      <view class="sub-title">显示模式 · 当前 {{modeLabel}}</view>
+      <view class="note">只改变营养信息多少，不改变推荐、记录与业务权限。</view>
+      <view class="opt-list">
+        <view
+          wx:for="{{modeOptions}}"
+          wx:key="value"
+          class="opt {{mode === item.value ? 'opt-selected' : ''}}"
+          data-value="{{item.value}}"
+          bindtap="onSelectMode"
+        >
+          <view class="opt-head">
+            <text class="opt-label">{{item.label}}</text>
+            <text class="opt-check" wx:if="{{mode === item.value}}">✓ 已选</text>
+          </view>
+          <view class="opt-desc">{{item.desc}}</view>
+        </view>
+      </view>
+
+      <view class="sub-title">外观 · 当前 {{appearanceLabelText}}</view>
+      <view class="note">只改变配色与材质，不影响信息、数据或显示模式。</view>
+      <view class="theme-list">
+        <view
+          wx:for="{{appearanceOptions}}"
+          wx:key="value"
+          class="theme-opt {{preference === item.value ? 'theme-opt-selected' : ''}}"
+          data-value="{{item.value}}"
+          bindtap="onSelectAppearance"
+        >
+          <view class="swatch swatch-{{item.value}}">
+            <view class="swatch-bar"></view>
+            <view class="swatch-dot"></view>
+          </view>
+          <view class="theme-meta">
+            <text class="opt-label">{{item.label}}</text>
+            <text class="opt-desc">{{item.desc}}</text>
+          </view>
+          <text class="opt-check" wx:if="{{preference === item.value}}">✓ 已选</text>
+        </view>
+      </view>
+      <view class="note note-warn" wx:if="{{appearanceNote}}">{{appearanceNote}}</view>
+      <view class="link-line">
+        <text class="link" bindtap="onOpenAppearanceDetail">更多外观说明</text>
+      </view>
+    </view>
+
+    <!-- 数据管理 -->
+    <view class="card">
+      <view class="card-title">
+        <text>数据管理</text>
+        <text class="badge badge-sim" wx:if="{{simulatedMenu}}">示例菜单</text>
+      </view>
+      <view class="row" wx:for="{{dataRows}}" wx:key="label">
+        <text class="row-label">{{item.label}}</text>
+        <text class="row-value">{{item.value}}</text>
+      </view>
+      <view class="btn-group">
+        <button class="btn btn-ghost btn-data" bindtap="onOpenData">打开数据管理</button>
+      </view>
+      <view class="note">更新菜单、导出/恢复备份在这里；原始 JSON、哈希与诊断收在次级页。</view>
+    </view>
+  </block>
+
+  <!-- 共用底部导航：今日 / 记录 / 我的 -->
+  <view class="tabbar">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="key"
+      class="tabbar-item {{tab === item.key ? 'active' : ''}}"
+      data-tab="{{item.key}}"
+      bindtap="onTab"
+    >
+      <view class="tabbar-icon {{item.icon}}"></view>
+      <text class="tabbar-label">{{item.label}}</text>
+    </view>
+  </view>
+</view>

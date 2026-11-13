@@ -1,0 +1,304 @@
+{
+  "sampleVersion": "t01-sample-v1-candidate",
+  "note": "仅一个成对的 PlanRequest/PlanResult 契约样例，用于说明字段与状态；未运行、未验收。哈希为占位符。示例覆盖：未知营养+锁定、售罄、已吃快照与未知实付、预算不完整、剩余餐次目标重算、少于三套方案。",
+  "request": {
+    "contractVersion": "1.0",
+    "requestId": "req-20261021-lunch-0001",
+    "businessDate": "2026-10-21",
+    "tzOffsetMinutes": 480,
+    "profile": {
+      "contractVersion": "1.0",
+      "profileId": "p-local-0001",
+      "revision": 3,
+      "sex": "male",
+      "ageYears": 20,
+      "heightMm": 1750,
+      "weightGrams": 70000,
+      "bodyFatPermille": null,
+      "activityLevel": "moderate",
+      "goal": {"type": "fatLoss", "manualTargets": null},
+      "trainingPreference": false,
+      "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+      "tastes": [{"dishId": "d-ck", "preference": "like"}]
+    },
+    "catalog": {
+      "contractVersion": "1.0",
+      "menuVersion": "canteen1-20261021-v3",
+      "catalogHash": "sha256:EXAMPLE_NOT_COMPUTED",
+      "canteen": {"id": "c1", "name": "示例食堂"},
+      "windows": [
+        {"windowId": "w1", "name": "A窗口", "mealWindows": ["breakfast", "lunch", "dinner"]}
+      ],
+      "dishes": [
+        {"dishId": "d-rice", "name": "米饭", "kind": "single", "category": "staple", "riceDish": true,
+         "components": [], "riceIncluded": false, "portionBasis": "1碗约200g熟重",
+         "nutrition": {"energyKcal": 230, "proteinDg": 40, "fatDg": 5, "carbDg": 500},
+         "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1碗约200g熟重", "estimated": true, "note": ""}},
+        {"dishId": "d-tofu", "name": "麻婆豆腐", "kind": "single", "category": "protein", "riceDish": false,
+         "components": [], "riceIncluded": false, "portionBasis": "1份约150g",
+         "nutrition": {"energyKcal": 320, "proteinDg": null, "fatDg": 220, "carbDg": 120},
+         "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1份约150g", "estimated": true, "note": "蛋白质未知，待补"}},
+        {"dishId": "d-greens", "name": "清炒时蔬", "kind": "single", "category": "vegetable", "riceDish": false,
+         "components": [], "riceIncluded": false, "portionBasis": "1份约120g",
+         "nutrition": {"energyKcal": 90, "proteinDg": 30, "fatDg": 60, "carbDg": 60},
+         "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1份约120g", "estimated": true, "note": ""}},
+        {"dishId": "d-ck", "name": "宫保鸡丁", "kind": "single", "category": "protein", "riceDish": false,
+         "components": [], "riceIncluded": false, "portionBasis": "1份约150g",
+         "nutrition": {"energyKcal": 450, "proteinDg": 250, "fatDg": 300, "carbDg": 200},
+         "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1份约150g", "estimated": true, "note": ""}},
+        {"dishId": "d-bun", "name": "肉包", "kind": "single", "category": "staple", "riceDish": false,
+         "components": [], "riceIncluded": false, "portionBasis": "1个约80g",
+         "nutrition": {"energyKcal": 260, "proteinDg": 90, "fatDg": 100, "carbDg": 320},
+         "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1个约80g", "estimated": true, "note": ""}}
+      ],
+      "offers": [
+        {"offerId": "o-rice-full", "dishId": "d-rice", "windowId": "w1", "mealWindows": ["lunch", "dinner"],
+         "portionCode": "full", "portionRatioNum": 1, "portionRatioDen": 1,
+         "priceCents": 150, "priceBasis": "unitPrice", "nutritionOverride": null},
+        {"offerId": "o-rice-half", "dishId": "d-rice", "windowId": "w1", "mealWindows": ["lunch", "dinner"],
+         "portionCode": "half", "portionRatioNum": 1, "portionRatioDen": 2,
+         "priceCents": 150, "priceBasis": "unitPrice", "nutritionOverride": null},
+        {"offerId": "o-tofu-full", "dishId": "d-tofu", "windowId": "w1", "mealWindows": ["lunch", "dinner"],
+         "portionCode": "full", "portionRatioNum": 1, "portionRatioDen": 1,
+         "priceCents": 700, "priceBasis": "unitPrice", "nutritionOverride": null},
+        {"offerId": "o-greens-full", "dishId": "d-greens", "windowId": "w1", "mealWindows": ["lunch", "dinner"],
+         "portionCode": "full", "portionRatioNum": 1, "portionRatioDen": 1,
+         "priceCents": 500, "priceBasis": "unitPrice", "nutritionOverride": null},
+        {"offerId": "o-ck-full", "dishId": "d-ck", "windowId": "w1", "mealWindows": ["lunch", "dinner"],
+         "portionCode": "full", "portionRatioNum": 1, "portionRatioDen": 1,
+         "priceCents": 1200, "priceBasis": "unitPrice", "nutritionOverride": null},
+        {"offerId": "o-bun-full", "dishId": "d-bun", "windowId": "w1", "mealWindows": ["breakfast"],
+         "portionCode": "full", "portionRatioNum": 1, "portionRatioDen": 1,
+         "priceCents": 250, "priceBasis": "unitPrice", "nutritionOverride": null}
+      ],
+      "comboRules": []
+    },
+    "nutritionConfig": {
+      "version": "nutrition-v1-candidate",
+      "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+      "formula": "mifflin-st-jeor",
+      "parameters": {
+        "fatLossDeficitPermille": 100,
+        "fatLossDeficitCapKcal": 300,
+        "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+        "proteinMgPerKgNormal": 1200,
+        "proteinMgPerKgTrainingPreference": 1500,
+        "fatEnergyPermille": 270,
+        "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+        "lowIntakeFloorKcalMale": 1500,
+        "lowIntakeFloorKcalFemale": 1200
+      },
+      "applicability": {
+        "adultAgeMinYears": 18,
+        "adultAgeMaxYears": null,
+        "bmiUnderweightThresholdTenths": 185,
+        "underweightPolicy": "blockFatLossOnly",
+        "pregnancyOrLactationPolicy": "blockAutomaticGoals",
+        "medicalDietPolicy": "blockAutomaticGoals"
+      },
+      "plannerSorting": {
+        "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+        "nutritionTierWidthBp": 1000
+      }
+    },
+    "plannerConfig": {
+      "algorithm": "greedy",
+      "strategies": ["primary", "economy", "taste"],
+      "budgetCents": 2200,
+      "maxItemsPerMeal": 2,
+      "limits": {
+        "maxMealCandidatesPerMeal": 64,
+        "maxDpStates": 20000,
+        "maxSearchNodes": 200000,
+        "wallClockMs": null
+      }
+    },
+    "planningMeals": ["lunch"],
+    "state": {
+      "soldOut": [{"windowId": "w1", "meal": "lunch", "dishId": "d-ck"}],
+      "windowLocks": [],
+      "itemLocks": [
+        {"meal": "lunch", "offerId": "o-tofu-full", "quantity": 1},
+        {"meal": "lunch", "offerId": "o-greens-full", "quantity": 1}
+      ],
+      "endedMeals": [],
+      "activeLogs": [
+        {
+          "contractVersion": "1.0",
+          "recordId": "rec-20261021-b-01",
+          "confirmationId": "confirm-20261021-b-01",
+          "businessDate": "2026-10-21",
+          "tzOffsetMinutes": 480,
+          "meal": "breakfast",
+          "status": "active",
+          "revision": 1,
+          "replacesRecordId": null,
+          "supersededByRecordId": null,
+          "revokedAt": null,
+          "confirmedAt": "2026-10-21T08:05:00+08:00",
+          "menuVersion": "canteen1-20261021-v3",
+          "items": [
+            {"itemKey": "i1", "source": "menuOffer", "offerId": "o-bun-full", "dishId": "d-bun",
+             "menuVersion": "canteen1-20261021-v3", "nameSnapshot": "肉包", "portionCode": "full", "quantity": 1,
+             "unitPriceCents": 250, "priceKnown": true,
+             "nutrition": {"energyKcal": 260, "proteinDg": 90, "fatDg": 100, "carbDg": 320},
+             "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1个约80g", "estimated": true, "note": ""},
+             "note": ""},
+            {"itemKey": "i2", "source": "manual", "offerId": null, "dishId": null, "menuVersion": null,
+             "nameSnapshot": "豆浆（手录）", "portionCode": "cup", "quantity": 1,
+             "unitPriceCents": null, "priceKnown": false,
+             "nutrition": {"energyKcal": 120, "proteinDg": 60, "fatDg": 40, "carbDg": 100},
+             "nutritionBasis": {"source": "estimate", "portionAssumption": "中杯约300ml", "estimated": true, "note": "用户手录，实付未知"},
+             "note": ""}
+          ]
+        }
+      ]
+    }
+  },
+  "result": {
+    "contractVersion": "1.0",
+    "requestId": "req-20261021-lunch-0001",
+    "ok": true,
+    "error": null,
+    "result": {
+      "status": "OkPartial",
+      "businessDate": "2026-10-21",
+      "tzOffsetMinutes": 480,
+      "mealOutcomes": [
+        {"meal": "lunch", "status": "Ok", "planIndex": 0}
+      ],
+      "inputDigests": {
+        "catalogHash": "sha256:EXAMPLE_NOT_COMPUTED",
+        "menuVersion": "canteen1-20261021-v3",
+        "profileHash": "sha256:EXAMPLE_NOT_COMPUTED",
+        "nutritionConfigVersion": "nutrition-v1-candidate",
+        "nutritionConfigHash": "sha256:EXAMPLE_NOT_COMPUTED",
+        "plannerConfigHash": "sha256:EXAMPLE_NOT_COMPUTED"
+      },
+      "targets": {
+        "daily": {"energyKcal": 2370, "proteinDg": 840, "fatDg": 711, "carbDg": 3485},
+        "mealReference": {"lunch": {"energyKcal": 1137, "proteinDg": 394, "fatDg": 326, "carbDg": 1751}},
+        "source": {
+          "formula": "mifflin-st-jeor",
+          "formulaLabel": "估算静息能量消耗（REE）",
+          "targetBasis": "remainingAfterKnownIntake",
+          "reeKcal": 1699,
+          "tdeeKcal": 2633,
+          "deficitKcal": 263,
+          "activityFactorPermille": 1550,
+          "goal": "fatLoss"
+        },
+        "applicability": {"status": "passed", "blockedGoals": [], "warnings": []},
+        "pendingVerification": [
+          "activityFactorPermille",
+          "proteinMgPerKgNormal",
+          "proteinMgPerKgTrainingPreference",
+          "fatEnergyPermille",
+          "mealSharePermille",
+          "lowIntakeFloorKcalMale",
+          "lowIntakeFloorKcalFemale",
+          "adultAgeMinYears",
+          "adultAgeMaxYears",
+          "macroGuardrails"
+        ]
+      },
+      "strategyOutcome": [
+        {"strategy": "primary", "planIndex": 0, "selectedBecause": "ONLY_LEGAL_PLAN"},
+        {"strategy": "economy", "planIndex": 0, "selectedBecause": "ONLY_LEGAL_PLAN"},
+        {"strategy": "taste", "planIndex": 0, "selectedBecause": "ONLY_LEGAL_PLAN"}
+      ],
+      "plans": [
+        {
+          "offeredAs": ["primary", "economy", "taste"],
+          "score": {
+            "nutritionCompleteness": "incomplete",
+            "comparisonBasis": "incompleteKnownComparable",
+            "nutritionDeviationBp": null,
+            "nutritionTier": null,
+            "preferenceScore": 0,
+            "priceCents": 1200,
+            "diversity": {"categoryCoverage": 2, "repeatedDishCount": 0, "unknownCategoryItemCount": 0}
+          },
+          "meals": [
+            {
+              "meal": "lunch",
+              "windowId": "w1",
+              "windowLocked": false,
+              "items": [
+                {"offerId": "o-tofu-full", "dishId": "d-tofu", "name": "麻婆豆腐", "quantity": 1, "portionCode": "full",
+                 "unitPriceCents": 700, "priceKnown": true,
+                 "nutrition": {"energyKcal": 320, "proteinDg": null, "fatDg": 220, "carbDg": 120},
+                 "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1份约150g", "estimated": true, "note": "蛋白质未知，待补"},
+                 "locked": true, "estimated": true, "combo": false},
+                {"offerId": "o-greens-full", "dishId": "d-greens", "name": "清炒时蔬", "quantity": 1, "portionCode": "full",
+                 "unitPriceCents": 500, "priceKnown": true,
+                 "nutrition": {"energyKcal": 90, "proteinDg": 30, "fatDg": 60, "carbDg": 60},
+                 "nutritionBasis": {"source": "referenceTable", "portionAssumption": "1份约120g", "estimated": true, "note": ""},
+                 "locked": true, "estimated": true, "combo": false}
+              ],
+              "nutrition": {
+                "knownSums": {"energyKcal": 410, "proteinDg": 30, "fatDg": 280, "carbDg": 180},
+                "incompleteNutrients": ["proteinDg"],
+                "unknownItemRefs": ["o-tofu-full"]
+              },
+              "nutritionReferenceTarget": {"energyKcal": 1137, "proteinDg": 394, "fatDg": 326, "carbDg": 1751}
+            }
+          ],
+          "budget": {
+            "budgetCents": 2200,
+            "remainingBudgetKnownCents": 1950,
+            "plannedTotalCents": 1200,
+            "plannedTotalKnownCents": 1200,
+            "priceIncomplete": false,
+            "overBudget": false,
+            "withinBudgetKnownAmounts": true,
+            "overageCents": 0,
+            "checkBasis": "knownActualsOnly"
+          },
+          "flags": ["NUTRITION_INCOMPLETE", "ESTIMATED_DATA", "BUDGET_ACCOUNTING_INCOMPLETE", "FEWER_THAN_THREE_PLANS"]
+        }
+      ],
+      "intakeSummary": {
+        "totals": {"energyKcal": 380, "proteinDg": 150, "fatDg": 140, "carbDg": 420},
+        "incompleteNutrients": [],
+        "unknownNutritionItemRefs": [],
+        "priceIncomplete": true,
+        "unknownPriceItemRefs": ["rec-20261021-b-01#i2"],
+        "activeLogCount": 1
+      },
+      "budgetSummary": {
+        "budgetCents": 2200,
+        "actualSpendKnownCents": 250,
+        "actualSpendUnknownItemCount": 1,
+        "actualSpendUnknownPriceItemRefs": ["rec-20261021-b-01#i2"],
+        "budgetAccountingComplete": false,
+        "remainingKnownCents": 1950
+      },
+      "distinctPlanCount": 1,
+      "fewerThanThreeReason": {
+        "code": "NO_DISTINCT_ALTERNATIVE",
+        "message": "午餐锁定了2/2个售卖单位且宫保鸡丁已售罄，只有1套不同合法方案；经济/口味方案与主推荐相同，未复制凑数。"
+      },
+      "search": {
+        "algorithm": "greedy",
+        "searchComplete": true,
+        "candidatesEnumerated": {"lunch": 1},
+        "nodesEvaluated": null,
+        "statesEvaluated": null,
+        "capsHit": [],
+        "approximations": []
+      },
+      "diagnostics": [
+        {"code": "LOCKED_UNKNOWN_NUTRITION", "severity": "warning",
+         "message": "已锁定d-tofu的蛋白质数据未知；按PRD 3.1保留为固定项，整体营养不完整，不承诺达标。",
+         "dishIds": ["d-tofu"]},
+        {"code": "BUDGET_ACCOUNTING_INCOMPLETE", "severity": "warning",
+         "message": "早餐存在未知实付记录（豆浆rec-20261021-b-01#i2）；预算核算不完整，剩余预算仅为已知口径。",
+         "itemRefs": ["rec-20261021-b-01#i2"]},
+        {"code": "SOLD_OUT_EXCLUDED", "severity": "info",
+         "message": "宫保鸡丁在2026-10-21午餐已售罄，未参与自动新增。",
+         "dishIds": ["d-ck"]}
+      ]
+    }
+  }
+}

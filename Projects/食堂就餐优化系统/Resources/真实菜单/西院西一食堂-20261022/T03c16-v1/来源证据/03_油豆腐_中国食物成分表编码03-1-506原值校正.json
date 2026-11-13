@@ -1,0 +1,33 @@
+{
+  "food_name": "油豆腐 / 炸豆腐块",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，第三章 豆类及制品 - 豆制品类",
+  "food_code": "03-1-506",
+  "direct_online_portal": "https://nlc.chinanutri.cn/fq/foodinfo/343.html",
+  "access_date": "2026-10-23",
+  "per_amount": "100g 熟重可食部",
+  "official_nutrients_per_100g": {
+    "water_g": 58.8,
+    "energy_kj_official": 1018.0,
+    "energy_kcal_converted": 243.3078,
+    "energy_kcal_rounded": 243.3,
+    "protein_g": 17.0,
+    "fat_g": 17.6,
+    "carbohydrate_g": 4.9,
+    "ash_g": 1.7,
+    "sodium_mg": 32.5
+  },
+  "cooking_oil_avoidance_clarification": {
+    "audit_requirement": "核已有油炸原料的油，避免重复计算",
+    "factual_determination": "《中国食物成分表》编码 03-1-506 收录的“油豆腐”本身即为经高温油炸膨化成熟的豆制品，其实测脂肪含量 17.6g/100g 中已完全涵盖了加工油炸吸油量（水分已由鲜北豆腐的80%降至58.8%，蛋白质与脂肪高度浓缩）。泰式豆腐饭档口现场仅是将炸好的豆腐块复热或浇拌泰式甜辣酱出餐，因此在原料拆解中，绝不重复计入后厨油炸吸油量或底油，杜绝油脂与热量双重重复计算。"
+  },
+  "canteen_portion_assumption_130g": {
+    "weight_g": 130.0,
+    "portion_description": "单份泰式豆腐饭主菜为炸豆腐块约 5~7 块，净重典型假设为 130g（波动范围 110 ~ 150g）",
+    "energy_kcal": 316.29,
+    "protein_g": 22.10,
+    "fat_g": 22.88,
+    "carbohydrate_g": 6.37,
+    "sodium_mg": 42.25
+  }
+}

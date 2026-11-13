@@ -1,0 +1,31 @@
+{
+  "food_name": "薑蓉 / 姜葱蓉调味汁 (Ginger puree / Ginger and spring onion dip)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "Condiments and sauces - Condiments and sauces (佐料及醬料)",
+  "sheet_name": "Eng",
+  "official_row_index": 86,
+  "original_file": "Nutrient_profiles_FRL.xlsx (Row 86)",
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 调味汁",
+  "nutrients_per_100g": {
+    "energy_kcal": 470.0,
+    "protein_g": 1.7,
+    "fat_g": 50.0,
+    "carbohydrate_g": 5.2,
+    "sodium_mg": 2000.0
+  },
+  "p09_correction_record": {
+    "defect_identified": "P09专项核验指出：原c4附件 06_姜葱蓉...json 中错误自称行号为 Row 88，但官方 Excel 中 Row 88 实际为花生油 (Peanut oil, 900 kcal/100g)，行号存在严重错位与凭证矛盾。",
+    "rectification": "本T03c9彻底纠偏行号为官方 Excel Eng sheet 真实的 Row 86（Ginger puree），数值（470 kcal, P 1.7g, F 50.0g, C 5.2g, Na 2000mg）与行号完全一致并保存凭证。"
+  },
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "energy_kcal": 47.0,
+    "protein_g": 0.17,
+    "fat_g": 5.0,
+    "carbohydrate_g": 0.52,
+    "sodium_mg": 200.0
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "window": {
+    "windowId": "w-malatang",
+    "name": "称重麻辣烫与香锅",
+    "mealWindows": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  "dishes": [
+    {
+      "dishId": "dish-mlt-tang-300g",
+      "name": "麻辣烫(带汤)300g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 350,
+        "proteinDg": 205,
+        "fatDg": 165,
+        "carbDg": 300
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料300g：生肉丸片75g+豆制品菌菇75g+青菜105g+粉面45g",
+        "estimated": true,
+        "note": "按3.76元/100g费率计算，300g×0.0376=11.28元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-wutang-300g",
+      "name": "麻辣烫(无汤)300g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 365,
+        "proteinDg": 205,
+        "fatDg": 180,
+        "carbDg": 305
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料300g荤素搭配干拌酱料",
+        "estimated": true,
+        "note": "按3.76元/100g费率计算，300g×0.0376=11.28元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-xiangguo-300g",
+      "name": "麻辣香锅300g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 410,
+        "proteinDg": 210,
+        "fatDg": 235,
+        "carbDg": 285
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料300g荤素搭配热油酱香翻炒",
+        "estimated": true,
+        "note": "按3.96元/100g费率计算，300g×0.0396=11.88元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-tang-400g",
+      "name": "麻辣烫(带汤)400g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 470,
+        "proteinDg": 275,
+        "fatDg": 220,
+        "carbDg": 405
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料400g：生肉丸片100g+豆制品菌菇100g+青菜140g+主食60g",
+        "estimated": true,
+        "note": "按3.76元/100g费率计算，400g×0.0376=15.04元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-wutang-400g",
+      "name": "麻辣烫(无汤)400g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 490,
+        "proteinDg": 275,
+        "fatDg": 240,
+        "carbDg": 410
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料400g荤素搭配干拌酱料",
+        "estimated": true,
+        "note": "按3.76元/100g费率计算，400g×0.0376=15.04元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-xiangguo-400g",
+      "name": "麻辣香锅400g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 550,
+        "proteinDg": 280,
+        "fatDg": 315,
+        "carbDg": 385
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料400g荤素搭配热油酱香翻炒",
+        "estimated": true,
+        "note": "按3.96元/100g费率计算，400g×0.0396=15.84元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-tang-500g",
+      "name": "麻辣烫(带汤)500g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 590,
+        "proteinDg": 345,
+        "fatDg": 275,
+        "carbDg": 510
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料500g：生肉丸片125g+豆制品菌菇125g+青菜175g+主食75g",
+        "estimated": true,
+        "note": "按3.76元/100g费率计算，500g×0.0376=18.80元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-wutang-500g",
+      "name": "麻辣烫(无汤)500g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 615,
+        "proteinDg": 345,
+        "fatDg": 300,
+        "carbDg": 518
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料500g荤素搭配干拌酱料",
+        "estimated": true,
+        "note": "按3.76元/100g费率计算，500g×0.0376=18.80元"
+      }
+    },
+    {
+      "dishId": "dish-mlt-xiangguo-500g",
+      "name": "麻辣香锅500g参考搭配",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 690,
+        "proteinDg": 350,
+        "fatDg": 395,
+        "carbDg": 485
+      },
+      "nutritionBasis": {
+        "source": "照片769a64d301d8906ff5ef7b4de2962867与中国食物成分表",
+        "portionAssumption": "选料500g荤素搭配热油酱香翻炒",
+        "estimated": true,
+        "note": "按3.96元/100g费率计算，500g×0.0396=19.80元"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-mlt-tang-300g",
+      "dishId": "dish-mlt-tang-300g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1128,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-wutang-300g",
+      "dishId": "dish-mlt-wutang-300g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1128,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-xiangguo-300g",
+      "dishId": "dish-mlt-xiangguo-300g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1188,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-tang-400g",
+      "dishId": "dish-mlt-tang-400g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1504,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-wutang-400g",
+      "dishId": "dish-mlt-wutang-400g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1504,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-xiangguo-400g",
+      "dishId": "dish-mlt-xiangguo-400g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1584,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-tang-500g",
+      "dishId": "dish-mlt-tang-500g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1880,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-wutang-500g",
+      "dishId": "dish-mlt-wutang-500g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1880,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-mlt-xiangguo-500g",
+      "dishId": "dish-mlt-xiangguo-500g",
+      "windowId": "w-malatang",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1980,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "metadata": {
+    "subtaskId": "H06",
+    "windowName": "称重麻辣烫与香锅",
+    "photoFiles": [
+      "769a64d301d8906ff5ef7b4de2962867.jpg"
+    ],
+    "itemCount": 9,
+    "priceEstimated": true,
+    "notes": "称重麻辣烫与香锅加急补录数据分包"
+  }
+}

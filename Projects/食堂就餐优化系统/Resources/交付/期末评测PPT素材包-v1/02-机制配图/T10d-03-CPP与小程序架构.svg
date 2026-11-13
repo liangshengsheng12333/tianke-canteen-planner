@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1147 458" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-node-ui="" data-reader-fit="intrinsic-height" data-reader-min-text="7.5" data-reader-primary-text="14">
+        <title id="archify-diagram-title">天科食客：C++ 核心在微信小程序与桌面 CLI 的双构建架构</title>
+        <desc id="archify-diagram-description">同一份 C++17 算法内核：手机端 WXWebAssembly 离线执行与电脑端 Native CLI 实验验证</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" />
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" />
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" />
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <style>
+          svg[data-node-ui] [data-node-id] > rect:not(.c-mask) { stroke-width: 1.25px; }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-frontend { fill: color-mix(in srgb, var(--frontend-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--frontend-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-backend { fill: color-mix(in srgb, var(--backend-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--backend-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-database { fill: color-mix(in srgb, var(--database-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--database-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-cloud { fill: color-mix(in srgb, var(--cloud-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--cloud-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-security { fill: color-mix(in srgb, var(--security-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--security-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-messagebus { fill: color-mix(in srgb, var(--messagebus-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--messagebus-stroke) 72%, var(--mask)); }
+          :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] > rect:not(.c-mask).c-external { fill: color-mix(in srgb, var(--external-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--external-stroke) 72%, var(--mask)); }
+          svg[data-node-ui]:is([data-preset="classic"], [data-preset="signal-flow"], [data-preset="editorial"]) .c-region { fill: color-mix(in srgb, var(--cloud-stroke) 3%, transparent); stroke: color-mix(in srgb, var(--cloud-stroke) 42%, var(--lane-stroke)); stroke-dasharray: none; }
+          svg[data-node-ui] .c-security-group { stroke: color-mix(in srgb, var(--security-stroke) 58%, var(--lane-stroke)); }
+          svg[data-node-ui]:is([data-preset="classic"], [data-preset="signal-flow"], [data-preset="editorial"]) .c-security-group { stroke-dasharray: 4 3; }
+          svg[data-node-ui]:is([data-preset="classic"], [data-preset="signal-flow"], [data-preset="editorial"]) .c-lane { stroke: var(--lane-stroke); stroke-dasharray: none; }
+          svg[data-node-ui] [data-graph-role="structural-frame-label-mask"] { rx: 5px; fill: color-mix(in srgb, var(--cloud-stroke) 10%, var(--mask)); stroke: color-mix(in srgb, var(--cloud-stroke) 38%, var(--mask)); stroke-width: .8px; }
+          svg[data-node-ui] [data-composition-frame-kind="security-group"] > [data-graph-role="structural-frame-label-mask"] { fill: color-mix(in srgb, var(--security-stroke) 9%, var(--mask)); stroke: color-mix(in srgb, var(--security-stroke) 36%, var(--mask)); }
+          svg[data-node-ui] .phase-rule { opacity: .5; stroke-dasharray: none; }
+          svg[data-node-ui] .phase-chip { stroke: var(--lane-stroke); stroke-width: .75px; }
+          svg[data-node-ui] g[data-edge-from] > rect.c-mask { rx: 7px; stroke: var(--lane-stroke); stroke-width: .75px; }
+          svg[data-node-ui][data-preset="blueprint"] :is([data-graph-role="structural-frame-label-mask"], g[data-edge-from] > rect.c-mask, .phase-chip) { rx: 2px; }
+          svg[data-node-ui][data-preset="editorial"] :is([data-graph-role="structural-frame-label-mask"], g[data-edge-from] > rect.c-mask, .phase-chip) { rx: 3px; }
+        </style>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- Boundaries (behind everything) -->
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="0" data-composition-frame-label="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)" x="190" y="40" width="680" height="350" rx="12" class="c-region" stroke-width="1"/>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="security-group" data-composition-frame-id="1" data-composition-frame-label="C++ 共享核心 (WXWebAssembly 虚拟机沙箱)" x="640" y="40" width="230" height="350" rx="8" class="c-security-group" stroke-width="1"/>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="2" data-composition-frame-label="B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)" x="853.3399841" y="28" width="253.32003179999998" height="362" rx="12" class="c-region" stroke-width="1"/>
+
+        <!-- Connection paths (before components for correct z-order) -->
+        <g data-graph-role="automatic-crossover" style="--step:0">
+          <path data-graph-role="automatic-crossover-underlay" d="M 105 190 L 105 108 Q 105 100 113 100 L 220 100" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="users" data-edge-to="ui_pages" data-edge-label="查看推荐 / 录入偏好" data-edge-key="0" data-edge-id="users-to-ui" data-composition-points="105,190;105,100;220,100" data-composition-crossover="halo" data-composition-independent="true" d="M 105 190 L 105 108 Q 105 100 113 100 L 220 100" class="a-emphasis" data-animate="edge" style="--step:0" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:1">
+          <path data-graph-role="automatic-crossover-underlay" d="M 305 130 L 305 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="ui_pages" data-edge-to="local_storage" data-edge-label="读写菜单/档案/饮食记录" data-edge-key="1" data-edge-id="ui-to-storage" data-composition-points="305,130;305,310" data-composition-crossover="halo" data-composition-independent="true" d="M 305 130 L 305 310" class="a-default" data-animate="edge" style="--step:1" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:2">
+          <path data-graph-role="automatic-crossover-underlay" d="M 390 90.9 L 406 90.9 Q 414 90.9 414 82.9 L 414 54 Q 414 46 422 46 L 522 46 Q 530 46 530 54 L 530 70" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="ui_pages" data-edge-to="ts_caller" data-edge-label="组织规划请求" data-edge-key="2" data-edge-id="ui-to-ts" data-composition-points="390,90.9;414,90.9;414,46;530,46;530,70" data-composition-crossover="halo" data-composition-independent="true" d="M 390 90.9 L 406 90.9 Q 414 90.9 414 82.9 L 414 54 Q 414 46 422 46 L 522 46 Q 530 46 530 54 L 530 70" class="a-emphasis" data-animate="edge" style="--step:2" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:3">
+          <path data-graph-role="automatic-crossover-underlay" d="M 615 100 L 631 100 Q 639 100 639 108 L 639 146 Q 639 154 647 154 L 731.95 154 Q 739.95 154 739.95 146 L 739.95 130" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="ts_caller" data-edge-to="wasm_runtime" data-edge-label="调度求解 (mp_alloc)" data-edge-key="3" data-edge-id="ts-to-wasm" data-composition-points="615,100;639,100;639,154;739.95,154;739.95,130" data-composition-crossover="halo" data-composition-independent="true" d="M 615 100 L 631 100 Q 639 100 639 108 L 639 146 Q 639 154 647 154 L 731.95 154 Q 739.95 154 739.95 146 L 739.95 130" class="a-emphasis" data-animate="edge" style="--step:3" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:4">
+          <path data-graph-role="automatic-crossover-underlay" d="M 755 130 L 755 190" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="wasm_runtime" data-edge-to="planner_engine" data-edge-label="执行多目标寻优" data-edge-key="4" data-edge-id="wasm-to-planner" data-composition-points="755,130;755,190" data-composition-crossover="halo" data-composition-independent="true" d="M 755 130 L 755 190" class="a-default" data-animate="edge" style="--step:4" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:5">
+          <path data-graph-role="automatic-crossover-underlay" d="M 755 250 L 755 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="planner_engine" data-edge-to="nutrition_calc" data-edge-label="代谢与营养素约束" data-edge-key="5" data-edge-id="planner-to-nutrition" data-composition-points="755,250;755,310" data-composition-crossover="halo" data-composition-independent="true" d="M 755 250 L 755 310" class="a-default" data-animate="edge" style="--step:5" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:6">
+          <path data-graph-role="automatic-crossover-underlay" d="M 739.95 250 L 739.95 266 Q 739.95 274 731.95 274 L 647 274 Q 639 274 639 266 L 639 228 Q 639 220 631 220 L 615 220" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="planner_engine" data-edge-to="app_state" data-edge-label="返回搭配与营养估算" data-edge-key="6" data-edge-id="planner-to-state" data-composition-points="739.95,250;739.95,274;639,274;639,220;615,220" data-composition-crossover="halo" data-composition-independent="true" d="M 739.95 250 L 739.95 266 Q 739.95 274 731.95 274 L 647 274 Q 639 274 639 266 L 639 228 Q 639 220 631 220 L 615 220" class="a-emphasis" data-animate="edge" style="--step:6" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:7">
+          <path data-graph-role="automatic-crossover-underlay" d="M 445 206 L 382 206 Q 374 206 374 198 L 374 130" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="app_state" data-edge-to="ui_pages" data-edge-label="渲染结果卡片" data-edge-key="7" data-edge-id="state-to-ui" data-composition-points="445,206;374,206;374,130" data-composition-crossover="halo" data-composition-independent="true" d="M 445 206 L 382 206 Q 374 206 374 198 L 374 130" class="a-emphasis" data-animate="edge" style="--step:7" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:8">
+          <path data-graph-role="automatic-crossover-underlay" d="M 980 130 L 980 190" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="cpp_source" data-edge-to="build_toolchain" data-edge-label="统一源码输入" data-edge-key="8" data-edge-id="source-to-build" data-composition-points="980,130;980,190" data-composition-crossover="halo" data-composition-independent="true" d="M 980 130 L 980 190" class="a-dashed" data-animate="edge" style="--step:8" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:9">
+          <path data-graph-role="automatic-crossover-underlay" d="M 895 220 L 875.5 220 Q 867.5 220 867.5 212 L 867.5 108 Q 867.5 100 859.5 100 L 840 100" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="build_toolchain" data-edge-to="wasm_runtime" data-edge-label="编译为 mp_core.wasm" data-edge-key="9" data-edge-id="build-to-wasm" data-composition-points="895,220;867.5,220;867.5,100;840,100" data-composition-crossover="halo" data-composition-independent="true" d="M 895 220 L 875.5 220 Q 867.5 220 867.5 212 L 867.5 108 Q 867.5 100 859.5 100 L 840 100" class="a-dashed" data-animate="edge" style="--step:9" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:10">
+          <path data-graph-role="automatic-crossover-underlay" d="M 980 250 L 980 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="build_toolchain" data-edge-to="native_cli" data-edge-label="编译为 Native CLI" data-edge-key="10" data-edge-id="build-to-cli" data-composition-points="980,250;980,310" data-composition-crossover="halo" data-composition-independent="true" d="M 980 250 L 980 310" class="a-dashed" data-animate="edge" style="--step:10" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+        </g>
+
+        <!-- Components -->
+        <g id="node-users" data-node-id="users" data-node-label="天科大师生" tabindex="0" role="button" aria-label="聚焦天科大师生，手机微信客户端, 架构组件" aria-pressed="false" data-node-kind="external" data-node-sublabel="手机微信客户端" data-node-context="架构组件">
+          <title>天科大师生 · 手机微信客户端 · 架构组件</title>
+          <rect x="40" y="190" width="130" height="60" rx="8" class="c-mask"/>
+          <rect x="40" y="190" width="130" height="60" rx="8" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="person" class="semantic-sigil s-external" transform="translate(46 196) scale(0.6875)">
+            <circle cx="8" cy="4.5" r="2.5"/><path d="M3 14v-2a5 5 0 0 1 10 0v2"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="105" y="218" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">天科大师生</text>
+        <text data-detail="context" x="105" y="234" class="t-muted" font-size="9" text-anchor="middle">手机微信客户端</text>
+        </g>
+
+        <g id="node-ui_pages" data-node-id="ui_pages" data-node-label="微信小程序界面" tabindex="0" role="button" aria-label="聚焦微信小程序界面，今日推荐/自选 · 饮食记录 · 设置, A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="今日推荐/自选 · 饮食记录 · 设置" data-node-tag="3大功能组" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)">
+          <title>微信小程序界面 · 今日推荐/自选 · 饮食记录 · 设置 · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) · 3大功能组</title>
+          <rect x="220" y="70" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="220" y="70" width="170" height="60" rx="8" class="c-frontend" data-animate="node" style="--step:1" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(226 76) scale(0.6875)">
+            <rect x="2" y="3" width="12" height="10" rx="2"/>
+            <path d="M2 6.5h12"/>
+            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
+            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="305" y="98" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">微信小程序界面</text>
+        <text data-detail="context" x="305" y="114" class="t-muted" font-size="8.7" text-anchor="middle">今日推荐/自选 · 饮食记录 · 设置</text>
+        <text data-detail="fine" x="305" y="122" class="t-frontend" font-size="7" text-anchor="middle">3大功能组</text>
+        </g>
+
+        <g id="node-local_storage" data-node-id="local_storage" data-node-label="本地离线数据" tabindex="0" role="button" aria-label="聚焦本地离线数据，西院西一12窗口137报价 · 档案, A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)" aria-pressed="false" data-node-kind="database" data-node-sublabel="西院西一12窗口137报价 · 档案" data-node-tag="纯本地·wx.Storage" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)">
+          <title>本地离线数据 · 西院西一12窗口137报价 · 档案 · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) · 纯本地·wx.Storage</title>
+          <rect x="220" y="310" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="220" y="310" width="170" height="60" rx="8" class="c-database" data-animate="node" style="--step:2" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(226 316) scale(0.6875)">
+            <ellipse cx="8" cy="4" rx="5" ry="2"/>
+            <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="305" y="338" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">本地离线数据</text>
+        <text data-detail="context" x="305" y="354" class="t-muted" font-size="9" text-anchor="middle">西院西一12窗口137报价 · 档案</text>
+        <text data-detail="fine" x="305" y="362" class="t-database" font-size="7" text-anchor="middle">纯本地·wx.Storage</text>
+        </g>
+
+        <g id="node-ts_caller" data-node-id="ts_caller" data-node-label="TypeScript 调用层" tabindex="0" role="button" aria-label="聚焦TypeScript 调用层，组织请求参数 · 调度核心与渲染, A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="组织请求参数 · 调度核心与渲染" data-node-tag="轻量调用·无算法镜像" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)">
+          <title>TypeScript 调用层 · 组织请求参数 · 调度核心与渲染 · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) · 轻量调用·无算法镜像</title>
+          <rect x="445" y="70" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="445" y="70" width="170" height="60" rx="8" class="c-frontend" data-animate="node" style="--step:3" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(451 76) scale(0.6875)">
+            <rect x="2" y="3" width="12" height="10" rx="2"/>
+            <path d="M2 6.5h12"/>
+            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
+            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="530" y="98" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">TypeScript 调用层</text>
+        <text data-detail="context" x="530" y="114" class="t-muted" font-size="9" text-anchor="middle">组织请求参数 · 调度核心与渲染</text>
+        <text data-detail="fine" x="530" y="122" class="t-frontend" font-size="7" text-anchor="middle">轻量调用·无算法镜像</text>
+        </g>
+
+        <g id="node-app_state" data-node-id="app_state" data-node-label="应用状态中心" tabindex="0" role="button" aria-label="聚焦应用状态中心，接收搭配/营养估算 · 驱动视图, A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="接收搭配/营养估算 · 驱动视图" data-node-tag="响应式状态" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)">
+          <title>应用状态中心 · 接收搭配/营养估算 · 驱动视图 · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) · 响应式状态</title>
+          <rect x="445" y="190" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="445" y="190" width="170" height="60" rx="8" class="c-frontend" data-animate="node" style="--step:7" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(451 196) scale(0.6875)">
+            <rect x="2" y="3" width="12" height="10" rx="2"/>
+            <path d="M2 6.5h12"/>
+            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
+            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="530" y="218" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">应用状态中心</text>
+        <text data-detail="context" x="530" y="234" class="t-muted" font-size="9" text-anchor="middle">接收搭配/营养估算 · 驱动视图</text>
+        <text data-detail="fine" x="530" y="242" class="t-frontend" font-size="7" text-anchor="middle">响应式状态</text>
+        </g>
+
+        <g id="node-wasm_runtime" data-node-id="wasm_runtime" data-node-label="WXWebAssembly 沙箱" tabindex="0" role="button" aria-label="聚焦WXWebAssembly 沙箱，mp_core.wasm · 内存恰好一次释放, A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱)" aria-pressed="false" data-node-kind="backend" data-node-sublabel="mp_core.wasm · 内存恰好一次释放" data-node-tag="客户端沙箱环境" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱)">
+          <title>WXWebAssembly 沙箱 · mp_core.wasm · 内存恰好一次释放 · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱) · 客户端沙箱环境</title>
+          <rect x="670" y="70" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="670" y="70" width="170" height="60" rx="8" class="c-backend" data-animate="node" style="--step:4" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(676 76) scale(0.6875)">
+            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="755" y="98" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">WXWebAssembly 沙箱</text>
+        <text data-detail="context" x="755" y="114" class="t-muted" font-size="8.7" text-anchor="middle">mp_core.wasm · 内存恰好一次释放</text>
+        <text data-detail="fine" x="755" y="122" class="t-backend" font-size="7" text-anchor="middle">客户端沙箱环境</text>
+        </g>
+
+        <g id="node-planner_engine" data-node-id="planner_engine" data-node-label="C++ 规划算法引擎" tabindex="0" role="button" aria-label="聚焦C++ 规划算法引擎，贪心 / DP / 分支限界 (单次选一), A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱)" aria-pressed="false" data-node-kind="backend" data-node-sublabel="贪心 / DP / 分支限界 (单次选一)" data-node-tag="三算法核心求解" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱)">
+          <title>C++ 规划算法引擎 · 贪心 / DP / 分支限界 (单次选一) · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱) · 三算法核心求解</title>
+          <rect x="670" y="190" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="670" y="190" width="170" height="60" rx="8" class="c-backend" data-animate="node" style="--step:5" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(676 196) scale(0.6875)">
+            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="755" y="218" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">C++ 规划算法引擎</text>
+        <text data-detail="context" x="755" y="234" class="t-muted" font-size="8.7" text-anchor="middle">贪心 / DP / 分支限界 (单次选一)</text>
+        <text data-detail="fine" x="755" y="242" class="t-backend" font-size="7" text-anchor="middle">三算法核心求解</text>
+        </g>
+
+        <g id="node-nutrition_calc" data-node-id="nutrition_calc" data-node-label="营养代谢与约束模块" tabindex="0" role="button" aria-label="聚焦营养代谢与约束模块，Mifflin-St Jeor 代谢 · 候选过滤, A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱)" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Mifflin-St Jeor 代谢 · 候选过滤" data-node-tag="多目标健康指标" data-node-context="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱)">
+          <title>营养代谢与约束模块 · Mifflin-St Jeor 代谢 · 候选过滤 · A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱) › C++ 共享核心 (WXWebAssembly 虚拟机沙箱) · 多目标健康指标</title>
+          <rect x="670" y="310" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="670" y="310" width="170" height="60" rx="8" class="c-backend" data-animate="node" style="--step:6" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(676 316) scale(0.6875)">
+            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="755" y="338" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">营养代谢与约束模块</text>
+        <text data-detail="context" x="755" y="354" class="t-muted" font-size="8.7" text-anchor="middle">Mifflin-St Jeor 代谢 · 候选过滤</text>
+        <text data-detail="fine" x="755" y="362" class="t-backend" font-size="7" text-anchor="middle">多目标健康指标</text>
+        </g>
+
+        <g id="node-cpp_source" data-node-id="cpp_source" data-node-label="C++17 共享核心源码" tabindex="0" role="button" aria-label="聚焦C++17 共享核心源码，core/src/ (算法与约束模型), B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)" aria-pressed="false" data-node-kind="security" data-node-sublabel="core/src/ (算法与约束模型)" data-node-tag="单一事实源 (SSOT)" data-node-context="B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)">
+          <title>C++17 共享核心源码 · core/src/ (算法与约束模型) · B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建) · 单一事实源 (SSOT)</title>
+          <rect x="895" y="70" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="895" y="70" width="170" height="60" rx="8" class="c-security" data-animate="node" style="--step:8" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="briefcase" class="semantic-sigil s-security" transform="translate(901 76) scale(0.6875)">
+            <rect x="2" y="5" width="12" height="9" rx="2"/><path d="M5 5V2h6v3M2 9h12M7 9v2h2V9"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="980" y="98" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">C++17 共享核心源码</text>
+        <text data-detail="context" x="980" y="114" class="t-muted" font-size="9" text-anchor="middle">core/src/ (算法与约束模型)</text>
+        <text data-detail="fine" x="980" y="122" class="t-security" font-size="7" text-anchor="middle">单一事实源 (SSOT)</text>
+        </g>
+
+        <g id="node-build_toolchain" data-node-id="build_toolchain" data-node-label="双构建流水线" tabindex="0" role="button" aria-label="聚焦双构建流水线，用户构建 vs 开发构建 (build.mjs), B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)" aria-pressed="false" data-node-kind="cloud" data-node-sublabel="用户构建 vs 开发构建 (build.mjs)" data-node-tag="LLVM/WASM + GCC" data-node-context="B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)">
+          <title>双构建流水线 · 用户构建 vs 开发构建 (build.mjs) · B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建) · LLVM/WASM + GCC</title>
+          <rect x="895" y="190" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="895" y="190" width="170" height="60" rx="8" class="c-cloud" data-animate="node" style="--step:9" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="active" class="semantic-sigil s-cloud" transform="translate(901 196) scale(0.6875)">
+            <path d="M2 8h3l1.5-3.5L9 12l1.6-4H14"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="980" y="218" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">双构建流水线</text>
+        <text data-detail="context" x="980" y="234" class="t-muted" font-size="8.4" text-anchor="middle">用户构建 vs 开发构建 (build.mjs)</text>
+        <text data-detail="fine" x="980" y="242" class="t-cloud" font-size="7" text-anchor="middle">LLVM/WASM + GCC</text>
+        </g>
+
+        <g id="node-native_cli" data-node-id="native_cli" data-node-label="Native CLI 验证终端" tabindex="0" role="button" aria-label="聚焦Native CLI 验证终端，离线算例 · 对照实验 · 性能测试, B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)" aria-pressed="false" data-node-kind="backend" data-node-sublabel="离线算例 · 对照实验 · 性能测试" data-node-tag="桌面端·不参与手机运行" data-node-context="B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)">
+          <title>Native CLI 验证终端 · 离线算例 · 对照实验 · 性能测试 · B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建) · 桌面端·不参与手机运行</title>
+          <rect x="895" y="310" width="170" height="60" rx="8" class="c-mask"/>
+          <rect x="895" y="310" width="170" height="60" rx="8" class="c-backend" data-animate="node" style="--step:11" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(901 316) scale(0.6875)">
+            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
+          </g>
+          <text data-node-label="" data-detail-anchor="" x="980" y="338" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Native CLI 验证终端</text>
+        <text data-detail="context" x="980" y="354" class="t-muted" font-size="9" text-anchor="middle">离线算例 · 对照实验 · 性能测试</text>
+        <text data-detail="fine" x="980" y="362" class="t-backend" font-size="7" text-anchor="middle">桌面端·不参与手机运行</text>
+        </g>
+
+        <!-- Connection labels -->
+        <g data-detail="context" data-edge-from="users" data-edge-to="ui_pages" data-edge-label="查看推荐 / 录入偏好" data-edge-key="0" data-edge-id="users-to-ui">
+          <rect x="111.9" y="80" width="101.2" height="14" rx="3" class="c-mask"/>
+          <text x="162.5" y="90" class="t-edge-emphasis" font-size="8" text-anchor="middle">查看推荐 / 录入偏好</text>
+        </g>
+        <g data-detail="context" data-edge-from="ui_pages" data-edge-to="local_storage" data-edge-label="读写菜单/档案/饮食记录" data-edge-key="1" data-edge-id="ui-to-storage">
+          <rect x="183.39999999999998" y="213" width="115.6" height="14" rx="3" class="c-mask"/>
+          <text x="241.2" y="223" class="t-edge-default" font-size="8" text-anchor="middle">读写菜单/档案/饮食记录</text>
+        </g>
+        <g data-detail="context" data-edge-from="ui_pages" data-edge-to="ts_caller" data-edge-label="组织规划请求" data-edge-key="2" data-edge-id="ui-to-ts">
+          <rect x="438.2" y="26" width="67.6" height="14" rx="3" class="c-mask"/>
+          <text x="472" y="36" class="t-edge-emphasis" font-size="8" text-anchor="middle">组织规划请求</text>
+        </g>
+        <g data-detail="context" data-edge-from="ts_caller" data-edge-to="wasm_runtime" data-edge-label="调度求解 (mp_alloc)" data-edge-key="3" data-edge-id="ts-to-wasm">
+          <rect x="531.8" y="133.5" width="101.2" height="14" rx="3" class="c-mask"/>
+          <text x="582.4" y="143.5" class="t-edge-emphasis" font-size="8" text-anchor="middle">调度求解 (mp_alloc)</text>
+        </g>
+        <g data-detail="context" data-edge-from="wasm_runtime" data-edge-to="planner_engine" data-edge-label="执行多目标寻优" data-edge-key="4" data-edge-id="wasm-to-planner">
+          <rect x="671.8" y="168" width="77.2" height="14" rx="3" class="c-mask"/>
+          <text x="710.4" y="178" class="t-edge-default" font-size="8" text-anchor="middle">执行多目标寻优</text>
+        </g>
+        <g data-detail="context" data-edge-from="planner_engine" data-edge-to="nutrition_calc" data-edge-label="代谢与营养素约束" data-edge-key="5" data-edge-id="planner-to-nutrition">
+          <rect x="761" y="273" width="86.8" height="14" rx="3" class="c-mask"/>
+          <text x="804.4" y="283" class="t-edge-default" font-size="8" text-anchor="middle">代谢与营养素约束</text>
+        </g>
+        <g data-detail="context" data-edge-from="planner_engine" data-edge-to="app_state" data-edge-label="返回搭配与营养估算" data-edge-key="6" data-edge-id="planner-to-state">
+          <rect x="641.275" y="254" width="96.39999999999999" height="14" rx="3" class="c-mask"/>
+          <text x="689.475" y="264" class="t-edge-emphasis" font-size="8" text-anchor="middle">返回搭配与营养估算</text>
+        </g>
+        <g data-detail="context" data-edge-from="app_state" data-edge-to="ui_pages" data-edge-label="渲染结果卡片" data-edge-key="7" data-edge-id="state-to-ui">
+          <rect x="340.2" y="148" width="67.6" height="14" rx="3" class="c-mask"/>
+          <text x="374" y="158" class="t-edge-emphasis" font-size="8" text-anchor="middle">渲染结果卡片</text>
+        </g>
+        <g data-detail="context" data-edge-from="cpp_source" data-edge-to="build_toolchain" data-edge-label="统一源码输入" data-edge-key="8" data-edge-id="source-to-build">
+          <rect x="986" y="153" width="67.6" height="14" rx="3" class="c-mask"/>
+          <text x="1019.8" y="163" class="t-edge-dashed" font-size="8" text-anchor="middle">统一源码输入</text>
+        </g>
+        <g data-detail="context" data-edge-from="build_toolchain" data-edge-to="wasm_runtime" data-edge-label="编译为 mp_core.wasm" data-edge-key="9" data-edge-id="build-to-wasm">
+          <rect x="816.9" y="140" width="101.2" height="14" rx="3" class="c-mask"/>
+          <text x="867.5" y="150" class="t-edge-dashed" font-size="8" text-anchor="middle">编译为 mp_core.wasm</text>
+        </g>
+        <g data-detail="context" data-edge-from="build_toolchain" data-edge-to="native_cli" data-edge-label="编译为 Native CLI" data-edge-key="10" data-edge-id="build-to-cli">
+          <rect x="882.4000000000001" y="273" width="91.6" height="14" rx="3" class="c-mask"/>
+          <text x="928.2" y="283" class="t-edge-dashed" font-size="8" text-anchor="middle">编译为 Native CLI</text>
+        </g>
+
+        <!-- Boundary labels (foreground masks keep routes out of titles) -->
+        <g data-graph-role="structural-frame-label" data-composition-frame-id="0" data-composition-frame-kind="region" data-composition-frame-label="A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)">
+          <rect data-graph-role="structural-frame-label-mask" x="194" y="50" width="339.4" height="16" rx="3" class="c-mask"/>
+          <text data-boundary-label="" x="198" y="63" class="t-cloud" font-size="9" font-weight="600">A. 手机端实际产品主路径 (微信小程序 + WXWebAssembly 本地沙箱)</text>
+        </g>
+
+        <g data-graph-role="structural-frame-label" data-composition-frame-id="1" data-composition-frame-kind="security-group" data-composition-frame-label="C++ 共享核心 (WXWebAssembly 虚拟机沙箱)">
+          <rect data-graph-role="structural-frame-label-mask" x="644" y="50" width="220.6" height="16" rx="3" class="c-mask"/>
+          <text data-boundary-label="" x="648" y="63" class="t-security" font-size="9" font-weight="600">C++ 共享核心 (WXWebAssembly 虚拟机沙箱)</text>
+        </g>
+
+        <g data-graph-role="structural-frame-label" data-composition-frame-id="2" data-composition-frame-kind="region" data-composition-frame-label="B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)">
+          <rect data-graph-role="structural-frame-label-mask" x="857.3399841" y="32" width="245.32003179999998" height="16" rx="3" class="c-mask"/>
+          <text data-boundary-label="" x="861.3399841" y="43.400001" class="t-cloud" font-size="7.4000010000000005" font-weight="600">B. 电脑端开发与验证辅助路径 (Native 离线环境与双构建)</text>
+        </g>
+
+        <!-- Legend -->
+        <g data-legend="" data-legend-bridge="">
+          <text x="40" y="422" class="t-primary" font-size="12" font-weight="650">图例</text>
+          <g data-legend-semantic-kind="frontend" data-legend-kind="frontend" data-legend-label="前端" data-legend-x="40" data-legend-baseline="442" data-legend-width="68">
+            <rect x="40" y="433" width="16" height="10" rx="2.5" class="c-frontend" stroke-width="1"/>
+            <text x="62" y="442" class="t-muted" font-size="10" font-weight="500">前端</text>
+          </g>
+          <g data-legend-semantic-kind="backend" data-legend-kind="backend" data-legend-label="后端" data-legend-x="130" data-legend-baseline="442" data-legend-width="68">
+            <rect x="130" y="433" width="16" height="10" rx="2.5" class="c-backend" stroke-width="1"/>
+            <text x="152" y="442" class="t-muted" font-size="10" font-weight="500">后端</text>
+          </g>
+          <g data-legend-semantic-kind="database" data-legend-kind="database" data-legend-label="数据库" data-legend-x="220" data-legend-baseline="442" data-legend-width="81">
+            <rect x="220" y="433" width="16" height="10" rx="2.5" class="c-database" stroke-width="1"/>
+            <text x="242" y="442" class="t-muted" font-size="10" font-weight="500">数据库</text>
+          </g>
+          <g data-legend-semantic-kind="cloud" data-legend-kind="cloud" data-legend-label="云服务" data-legend-x="323" data-legend-baseline="442" data-legend-width="81">
+            <rect x="323" y="433" width="16" height="10" rx="2.5" class="c-cloud" stroke-width="1"/>
+            <text x="345" y="442" class="t-muted" font-size="10" font-weight="500">云服务</text>
+          </g>
+          <g data-legend-semantic-kind="security" data-legend-kind="security" data-legend-label="安全" data-legend-x="426" data-legend-baseline="442" data-legend-width="68">
+            <rect x="426" y="433" width="16" height="10" rx="2.5" class="c-security" stroke-width="1"/>
+            <text x="448" y="442" class="t-muted" font-size="10" font-weight="500">安全</text>
+          </g>
+          <g data-legend-semantic-kind="external" data-legend-kind="external" data-legend-label="外部系统" data-legend-x="516" data-legend-baseline="442" data-legend-width="93">
+            <rect x="516" y="433" width="16" height="10" rx="2.5" class="c-external" stroke-width="1"/>
+            <text x="538" y="442" class="t-muted" font-size="10" font-weight="500">外部系统</text>
+          </g>
+        </g>
+      </svg>

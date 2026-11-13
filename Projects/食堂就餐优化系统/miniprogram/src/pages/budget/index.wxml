@@ -1,0 +1,77 @@
+<!-- pages/budget/index.wxml — 预算与偏好：全天预算 + 口味/训练/孕哺/疾病（档案字段）。 -->
+<view class="page {{themeClass}}">
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回我的</text>
+  </view>
+
+  <view class="hero">
+    <view class="hero-title">预算与偏好</view>
+    <view class="hero-sub">全天预算作用于所选业务日期；口味、训练偏好与特殊饮食属于档案字段，随档案保存。</view>
+  </view>
+
+  <view class="banner banner-err" wx:if="{{loadError}}">{{loadError}}</view>
+
+  <block wx:if="{{view}}">
+    <!-- 全天预算 -->
+    <view class="card">
+      <view class="card-title">
+        <text>全天预算</text>
+        <text class="badge badge-info">今日设置</text>
+      </view>
+      <view class="note">留空表示不设预算约束，填 0 表示零预算（两者不同）；未知金额不按 0 计算。</view>
+      <view class="field">
+        <view class="field-label">全天预算（元，可留空）</view>
+        <input class="input" type="digit" value="{{budgetYuan}}" bindinput="onBudgetInput" placeholder="如 30；留空表示未设置" />
+      </view>
+      <view class="btn-group">
+        <button class="btn btn-budget-save" bindtap="onSaveBudget" disabled="{{budgetSaving}}">{{budgetSaving ? '保存中…' : '保存全天预算'}}</button>
+      </view>
+      <view class="note note-warn" wx:if="{{budgetNote}}">{{budgetNote}}</view>
+      <view class="row" wx:for="{{budgetRows}}" wx:key="label">
+        <text class="row-label">{{item.label}}</text>
+        <text class="row-value">{{item.value}}</text>
+      </view>
+      <view class="note">保存预算会让旧计划失效；回“今日”页刷新方案后按新预算核算。</view>
+    </view>
+
+    <!-- 口味与训练偏好 -->
+    <view class="card">
+      <view class="card-title">
+        <text>口味与训练偏好</text>
+        <text class="badge {{view.saved ? 'badge-ok' : 'badge-warn'}}">{{view.saved ? '档案已保存' : '档案未保存'}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{!view.saved}}">还没有保存个人资料；请先在“个人资料”里填好并保存身体档案，再设置偏好。</view>
+
+      <view class="field">
+        <view class="field-label">口味偏好（逗号分隔，可选）</view>
+        <input class="input" value="{{tastesText}}" bindinput="onTastesInput" placeholder="如：清淡，少辣" />
+      </view>
+
+      <view class="switch-row">
+        <view class="switch-label">规律训练偏好</view>
+        <switch checked="{{trainingPreference}}" data-field="trainingPreference" bindchange="onPrefSwitch" />
+      </view>
+      <view class="note">表示最近 4 周每周≥3 次、每次约 30 分钟的训练；只影响核心的蛋白质目标配置，不是“增肌目标”入口。</view>
+
+      <view class="switch-row">
+        <view class="switch-label">孕哺期</view>
+        <switch checked="{{pregnancyOrLactation}}" data-field="pregnancyOrLactation" bindchange="onPrefSwitch" />
+      </view>
+      <view class="switch-row">
+        <view class="switch-label">需疾病饮食管理</view>
+        <switch checked="{{medicalDietManagement}}" data-field="medicalDietManagement" bindchange="onPrefSwitch" />
+      </view>
+      <view class="note">孕哺期或需疾病饮食管理时，核心会停用自动目标与自动规划，不给出减脂方案。</view>
+
+      <view class="btn-group">
+        <button class="btn btn-pref-save" bindtap="onSavePreferences" disabled="{{prefSaving || !view.saved}}">{{prefSaving ? '保存中…' : '保存偏好'}}</button>
+        <button class="btn btn-ghost btn-done" bindtap="onBack">完成</button>
+      </view>
+      <view class="note note-warn" wx:if="{{prefNote}}">{{prefNote}}</view>
+      <view class="error-row" wx:for="{{prefErrors}}" wx:key="index">
+        <text class="error-text">{{item}}</text>
+      </view>
+      <view class="note">偏好随档案保存；保存成功后按既有流程自动重算营养目标。</view>
+    </view>
+  </block>
+</view>

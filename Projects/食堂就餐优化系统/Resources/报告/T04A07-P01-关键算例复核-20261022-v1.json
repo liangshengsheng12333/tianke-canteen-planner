@@ -1,0 +1,16 @@
+{
+  "cliRuns": 2,
+  "plans": [
+    {
+      "case": "a07-4097-minimal",
+      "canonicalBytes": 4097,
+      "planKey": "plan:6c2a0a4ee5904585b0f972ec608fb2a89b172a6baa2d6aa229d48cb74c6fd2cd"
+    },
+    {
+      "case": "a07-quantity-merge",
+      "canonicalBytes": 2016,
+      "planKey": "plan:1a01c0f2462162080a39e4955543912f4870ce8e6f558841ae870eef8a59c3d1"
+    }
+  ],
+  "scope": "P01 targeted review; not full regression"
+}

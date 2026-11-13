@@ -1,0 +1,82 @@
+[
+  {
+    "dishId": "dish-plain-changfen",
+    "name": "原味肠粉",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 258,
+      "proteinDg": 25,
+      "fatDg": 52,
+      "carbDg": 531
+    },
+    "nutritionBasis": {
+      "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(净肠粉2021)、李锦记港式甜豉油GB 28050标签及中国食物成分表第6版大豆油编码10-1-101加权估算",
+      "portionAssumption": "熟肠粉皮200g + 调味甜豉油汁15g + 蒸盘防粘底油3g(单份成品净重约218g)",
+      "estimated": true,
+      "note": "配方公式依据门头白肠粉淋豉油酱汁实况，结合广式拉肠不锈钢托盘刷底油工艺与淋汁估算；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-ham-changfen",
+    "name": "火腿肠粉（鸡肉）",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 313,
+      "proteinDg": 58,
+      "fatDg": 85,
+      "carbDg": 559
+    },
+    "nutritionBasis": {
+      "source": "香港食物安全中心(CFS)净肠粉(2021)、双汇纯鸡肉肠GB 28050标签、李锦记港式甜豉油及中国食物成分表第6版大豆油加权估算",
+      "portionAssumption": "熟肠粉皮200g + 鸡肉火腿肠30g(1支切丁/片) + 调味甜豉油汁15g + 蒸盘防粘底油3g(单份成品净重约248g)",
+      "estimated": true,
+      "note": "配方公式严格依据标牌原文括号标注'（鸡肉）'火腿，结合熟制鸡肉火腿肠单支30g入浆同蒸估算；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-lean-pork-changfen",
+    "name": "瘦肉肠粉（猪瘦肉）",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 301,
+      "proteinDg": 86,
+      "fatDg": 71,
+      "carbDg": 535
+    },
+    "nutritionBasis": {
+      "source": "香港食物安全中心(CFS)净肠粉(2021)、中国食物成分表第6版第二册猪肉(瘦)编码081110、李锦记港式甜豉油及大豆油加权估算",
+      "portionAssumption": "熟肠粉皮200g + 生猪瘦肉碎30g(入浆蒸熟) + 调味甜豉油汁15g + 蒸盘防粘底油3g(单份成品净重约248g)",
+      "estimated": true,
+      "note": "配方公式严格依据标牌原文括号标注'（猪瘦肉）'，结合生瘦肉末30g铺浆蒸熟工艺估算；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-grain-soymilk",
+    "name": "五谷杂粮豆浆",
+    "kind": "single",
+    "category": "drink",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 114,
+      "proteinDg": 66,
+      "fatDg": 36,
+      "carbDg": 150
+    },
+    "nutritionBasis": {
+      "source": "中国食物成分表第6版第一册熟豆浆(甜)编码05-1-101及香港食物安全中心(CFS)非预包装甜豆浆基准综合估算",
+      "portionAssumption": "食堂标准一次性早餐纸杯装五谷杂粮豆浆300ml(净重约300g)",
+      "estimated": true,
+      "note": "依据食堂早餐现磨五谷豆浆微甜杯装实况，结合大豆与五谷杂粮配比估算；非食堂实测配方"
+    }
+  }
+]

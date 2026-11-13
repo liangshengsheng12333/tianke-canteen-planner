@@ -1,0 +1,33 @@
+{
+  "food_name": "白切雞飯（整份化验检测基准） (Steamed rice with steamed plain chicken)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "excel_attachment": "Nutrient_profiles_FRL.xlsx (Sheet: Eng, Row: 533)",
+  "category": "Ready-to-eat foods - Rice dishes",
+  "row_index": 533,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 整份均质化样",
+  "cfs_local_excel_row533_per_100g": {
+    "energy_kcal": 170.0,
+    "protein_g": 6.4,
+    "fat_g": 5.5,
+    "carbohydrate_g": 25.0,
+    "dietary_fibre_g": "Trace",
+    "sugars_g": 0.4,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 13.0,
+    "sodium_mg": 270.0,
+    "calcium_mg": 11.0,
+    "magnesium_mg": 6.5,
+    "phosphorus_mg": 49.0,
+    "potassium_mg": 74.0
+  },
+  "cfs_version_comparison_clarification": {
+    "version_A_local_excel": "本地 CFS NIIS Excel (Nutrient_profiles_FRL.xlsx, Sheet: Eng, Row: 533): 能量 170 kcal/100g, 蛋白质 6.4g, 脂肪 5.5g, 碳水化合物 25.0g, 钠 270mg。",
+    "version_B_old_public_report": "香港食物安全中心早期公开研究报告 (https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_01_nvic.html): 白切鸡饭整份标定能量为 180 kcal/100g。",
+    "clarification_rule": "根据做事的原则与P09整改要求，明确记录上述两个版本的客观差异（170 kcal vs 180 kcal），绝不混作同一条数据。本项目本地对照严格采用当前本地附件 Row 533 (170 kcal)。"
+  },
+  "p09_correction_note": "P09核验整改闭环：此前草案附件文件名与内容误写为 Row 532（实际 Row 532 为叉烧饭 Steamed rice with barbecued pork，200 kcal/100g）；现彻底更正为 Row 533。同时，删去原草案中毫无依据的“香港盒饭米饭约 280g”等主观推断。CFS 档案为香港特区餐饮复合样本整份均质化测定，未公布米饭、鸡肉、酱汁之各自独立重量比例，不可随意反推本食堂食材分配。",
+  "benchmark_reference": "若按单份 360g 成品折算 CFS 复合样均值：能量 612 kcal、蛋白质 23.0g、脂肪 19.8g、碳水化合物 90.0g、钠 972mg。本项目基于西一食堂现场实况（200g 蒸米饭 + 110g 白切鸡肉 + 15g 烧味汁 + 35g 菜心）拆解累加值为 489 kcal、蛋白质 33.2g、脂肪 14.8g、碳水化合物 54.2g、钠 380mg。两者结构差异体现了高校食堂标准小份米饭（200g 占 55.6%）与商业外卖高碳水大份米饭（碳水 90g）的物理出餐差异，拆解模型具备高度透明度与合理性。"
+}

@@ -1,0 +1,548 @@
+/* app.wxss — 天科食客全局样式：语义颜色令牌 + 共用组件。
+ *
+ * 颜色只走 var(--tk-*) 令牌，令牌类由 utils/appearance.ts 决定：
+ *   .tk-light / .tk-dark 挂在每个页面根节点（<view class="page {{themeClass}}">，themeClass 已含 tk- 前缀）。
+ * 页面 wxss 只写布局差异，不再出现写死的浅色底/字色，避免深色模式漏改。
+ * 本文件的设计值来自 P01-v2 定稿第 7 节；玻璃材质只作层次参考，文字清晰优先。
+ */
+
+/* 窗口底色（page 元素上方无法挂动态 class，深色时由 wx.setBackgroundColor 覆盖） */
+page {
+  background: #f5f6f8;
+  color: #202825;
+  font-size: 32rpx;
+  line-height: 1.55;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* ===== 颜色令牌：浅色（首次默认） ===== */
+.tk-light {
+  --tk-bg: #f5f6f8;
+  --tk-card: #ffffff;
+  --tk-card-soft: #fbfcfb;
+  --tk-secondary: #eceff0;
+  --tk-text: #202825;
+  --tk-muted: #65716b;
+  --tk-accent: #267354;
+  --tk-accent-soft: #e4f0e7;
+  --tk-on-accent: #ffffff;
+  --tk-line: rgba(36, 62, 47, 0.10);
+  --tk-line-strong: rgba(36, 62, 47, 0.22);
+  --tk-field-bg: #f8faf9;
+  --tk-field-line: #d5dfda;
+  --tk-warn-text: #80550b;
+  --tk-warn-bg: #fff3db;
+  --tk-warn-line: #f0d9b0;
+  --tk-danger: #b6373f;
+  --tk-danger-bg: #fbe6e2;
+  --tk-danger-line: #f0c3ba;
+  --tk-info: #34557d;
+  --tk-info-bg: #e8eef7;
+  --tk-tabbar: rgba(255, 255, 255, 0.94);
+  --tk-glass: rgba(255, 255, 255, 0.86);
+  --tk-glass-line: rgba(36, 62, 47, 0.12);
+  --tk-sheet: #ffffff;
+  --tk-hero-from: #267354;
+  --tk-hero-to: #3f8f6d;
+  --tk-hero-text: #ffffff;
+  --tk-shadow: 0 6rpx 18rpx rgba(40, 65, 54, 0.06);
+  --tk-disabled: #c9c2b4;
+}
+
+/* ===== 颜色令牌：深色（独立调边线/高光/阴影，不机械反色、不用整屏纯黑） ===== */
+.tk-dark {
+  --tk-bg: #111416;
+  --tk-card: #202629;
+  --tk-card-soft: #252c2f;
+  --tk-secondary: #2a3235;
+  --tk-text: #f1f5f2;
+  /* 用户选定方案B：深色次级文字接近主文字色，优先小字可读性（偏离设计稿 §7.2 的 #AFBAB4，已在反馈中记录）。 */
+  --tk-muted: #e3eae5;
+  --tk-accent: #90d6ad;
+  --tk-accent-soft: #293f34;
+  --tk-on-accent: #13271d;
+  --tk-line: rgba(220, 244, 229, 0.12);
+  --tk-line-strong: rgba(220, 244, 229, 0.26);
+  --tk-field-bg: #252c2f;
+  --tk-field-line: #3a4346;
+  --tk-warn-text: #f0cc8b;
+  --tk-warn-bg: #3b3020;
+  --tk-warn-line: #5a4a2d;
+  --tk-danger: #ffb4b9;
+  --tk-danger-bg: #3a2528;
+  --tk-danger-line: #5c3a3e;
+  --tk-info: #91b7df;
+  --tk-info-bg: #24303b;
+  --tk-tabbar: rgba(37, 44, 46, 0.94);
+  --tk-glass: rgba(32, 38, 41, 0.9);
+  --tk-glass-line: rgba(220, 244, 229, 0.16);
+  --tk-sheet: #202629;
+  --tk-hero-from: #1d3b2d;
+  --tk-hero-to: #2a5540;
+  --tk-hero-text: #f1f5f2;
+  --tk-shadow: 0 6rpx 18rpx rgba(0, 0, 0, 0.35);
+  --tk-disabled: #4a5254;
+}
+
+/* 页面容器：占满可视高度并铺主题底色，避免深色时外层 page 露出浅色。
+ * 左右 40rpx（20px）对齐定稿 §7.3 的页面边距；底部同时预留手势安全区，
+ * 次级页（无悬浮导航）的最后一行也不会压在系统手势条上。 */
+.page {
+  min-height: 100vh;
+  padding: 24rpx 40rpx calc(120rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  background: var(--tk-bg);
+  color: var(--tk-text);
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+/* 顶部品牌区：圆角 28px 与标题 28px 对齐定稿 §7.3。 */
+.hero {
+  padding: 40rpx;
+  border-radius: 56rpx;
+  background: linear-gradient(135deg, var(--tk-hero-from) 0%, var(--tk-hero-to) 100%);
+  color: var(--tk-hero-text);
+  box-shadow: 0 8rpx 24rpx rgba(38, 115, 84, 0.18);
+}
+.hero-title {
+  font-size: 56rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+.hero-sub {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  opacity: 0.92;
+}
+
+/* 卡片与标题：内边距 32rpx（16px）与圆角 40rpx（20px）贴合定稿的圆润容器层级。 */
+.card {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  background: var(--tk-card);
+  border-radius: 56rpx;
+  box-shadow: var(--tk-shadow);
+}
+.card-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-title {
+  margin-top: 12rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.note {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.note-warn {
+  color: var(--tk-warn-text);
+}
+.muted {
+  color: var(--tk-muted);
+  font-size: 28rpx;
+}
+
+/* 行 */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16rpx;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid var(--tk-line);
+}
+.row:last-child {
+  border-bottom: none;
+}
+.row-label {
+  flex: 0 0 210rpx;
+  color: var(--tk-muted);
+  font-size: 28rpx;
+}
+.row-value {
+  flex: 1;
+  text-align: right;
+  word-break: break-all;
+}
+.value-strong {
+  font-weight: 600;
+  color: var(--tk-accent);
+}
+
+/* 标签 */
+.tag {
+  display: inline-block;
+  padding: 6rpx 16rpx;
+  margin-left: 8rpx;
+  font-size: 28rpx;
+  border-radius: 999rpx;
+  background: var(--tk-accent-soft);
+  color: var(--tk-accent);
+  line-height: 1.6;
+}
+.tag-warn {
+  background: var(--tk-warn-bg);
+  color: var(--tk-warn-text);
+}
+.tag-danger {
+  background: var(--tk-danger-bg);
+  color: var(--tk-danger);
+}
+.tag-plain {
+  background: var(--tk-secondary);
+  color: var(--tk-muted);
+}
+
+/* 徽标（状态） */
+.badge {
+  display: inline-block;
+  padding: 6rpx 18rpx;
+  border-radius: 999rpx;
+  font-size: 28rpx;
+}
+.badge-ok {
+  background: var(--tk-accent-soft);
+  color: var(--tk-accent);
+}
+.badge-warn {
+  background: var(--tk-warn-bg);
+  color: var(--tk-warn-text);
+}
+.badge-err {
+  background: var(--tk-danger-bg);
+  color: var(--tk-danger);
+}
+.badge-info {
+  background: var(--tk-info-bg);
+  color: var(--tk-info);
+}
+
+/* 按钮 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* button 组件自带 width:184px 与 margin:auto，会把按钮定宽并居中；
+     这里用 !important 覆盖组件默认样式，让按钮宽度随内容、位置随父容器。 */
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 36rpx;
+  height: 96rpx;
+  border-radius: 28rpx;
+  font-size: 32rpx;
+  background: var(--tk-accent);
+  color: var(--tk-on-accent);
+  border: none;
+}
+.btn::after {
+  border: none;
+}
+.btn[disabled] {
+  background: var(--tk-disabled);
+  color: var(--tk-on-accent);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--tk-accent);
+  border: 1rpx solid var(--tk-line-strong);
+}
+.btn-warn {
+  background: var(--tk-warn-bg);
+  color: var(--tk-warn-text);
+  border: 1rpx solid var(--tk-warn-line);
+}
+.btn-danger {
+  background: var(--tk-danger);
+  color: var(--tk-on-accent);
+}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+  margin-top: 24rpx;
+}
+.btn-block {
+  width: 100%;
+}
+.btn-sm {
+  height: 88rpx;
+  font-size: 28rpx;
+  padding: 0 24rpx;
+  border-radius: 20rpx;
+}
+
+/* 表单 */
+.field {
+  margin-top: 24rpx;
+}
+.field-label {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+  margin-bottom: 12rpx;
+}
+.input {
+  height: 88rpx;
+  padding: 0 24rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-field-line);
+  border-radius: 20rpx;
+  font-size: 32rpx;
+  color: var(--tk-text);
+}
+.picker-value {
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 24rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-field-line);
+  border-radius: 20rpx;
+  font-size: 32rpx;
+  color: var(--tk-text);
+}
+.error-text {
+  color: var(--tk-danger);
+  font-size: 28rpx;
+  margin-top: 8rpx;
+}
+
+/* 餐次卡 */
+.meal-card {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  background: var(--tk-card);
+  border-radius: 56rpx;
+  border: 1rpx solid var(--tk-line);
+}
+.meal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meal-name {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.meal-window {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.meal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20rpx;
+  padding: 14rpx 0;
+  border-bottom: 1rpx dashed var(--tk-line);
+}
+/* 长菜名/窗口名优先换行：名称列可收缩并断行，价格列保持完整不被挤成两行。 */
+.meal-item > view:first-child {
+  flex: 1;
+  min-width: 0;
+  word-break: break-all;
+}
+.meal-item > .price,
+.meal-item > .muted {
+  flex: 0 0 auto;
+}
+.meal-item:last-child {
+  border-bottom: none;
+}
+.item-name {
+  font-size: 36rpx;
+}
+.item-meta {
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.price {
+  color: var(--tk-text);
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.empty {
+  padding: 36rpx 0;
+  text-align: center;
+  color: var(--tk-muted);
+  font-size: 28rpx;
+}
+
+/* 进度条 */
+.bar-wrap {
+  margin-top: 10rpx;
+  height: 16rpx;
+  background: var(--tk-secondary);
+  border-radius: 999rpx;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: var(--tk-accent);
+  border-radius: 999rpx;
+}
+.bar-fill-warn {
+  background: var(--tk-warn-text);
+}
+
+/* 底部导航：三个主入口（今日 / 记录 / 我的）共用同一套悬浮玻璃导航。
+ * 三页共用 .tabbar 结构与 MAIN_TABS（utils/tabbar.ts），行为一致；选中态同时用图标、文字加粗
+ * 与底色反馈，不只靠颜色。正文页容器需加 .page-has-tabbar 预留高度，避免遮挡。
+ * 尺寸对齐定稿 §7.3/§7.1：导航高 49px（98rpx）、玻璃底、左右 12px 内缩、悬浮在安全区上方。 */
+.tabbar {
+  position: fixed;
+  left: 24rpx;
+  right: 24rpx;
+  /* 悬浮在安全区上方，而不是贴在屏幕最底部：既不压住正文，也避开 iOS 手势条。 */
+  bottom: calc(28rpx + env(safe-area-inset-bottom));
+  display: flex;
+  padding: 10rpx;
+  border-radius: 56rpx;
+  background: var(--tk-glass);
+  border: 1rpx solid var(--tk-glass-line);
+  box-shadow: 0 10rpx 30rpx rgba(20, 35, 28, 0.14);
+  backdrop-filter: blur(24rpx);
+  z-index: 20;
+}
+.tabbar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rpx;
+  min-height: 98rpx;
+  padding: 8rpx 0;
+  border-radius: 28rpx;
+  font-size: 28rpx;
+  color: var(--tk-muted);
+}
+.tabbar-item.active {
+  color: var(--tk-accent);
+  font-weight: 600;
+  background: var(--tk-accent-soft);
+}
+.tabbar-icon {
+  position: relative;
+  width: 34rpx;
+  height: 34rpx;
+}
+/* 今日：圆环 + 中心点 */
+.icon-today::before {
+  content: '';
+  position: absolute;
+  left: 4rpx;
+  top: 4rpx;
+  width: 26rpx;
+  height: 26rpx;
+  border: 2rpx solid currentColor;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.icon-today::after {
+  content: '';
+  position: absolute;
+  left: 14rpx;
+  top: 14rpx;
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background: currentColor;
+}
+/* 记录：三条列表线 */
+.icon-logs::before {
+  content: '';
+  position: absolute;
+  left: 5rpx;
+  top: 9rpx;
+  width: 24rpx;
+  height: 2rpx;
+  border-radius: 2rpx;
+  background: currentColor;
+  box-shadow: 0 7rpx 0 currentColor, 0 14rpx 0 currentColor;
+}
+/* 我的：头 + 肩 */
+.icon-profile::before {
+  content: '';
+  position: absolute;
+  left: 12rpx;
+  top: 4rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: currentColor;
+}
+.icon-profile::after {
+  content: '';
+  position: absolute;
+  left: 6rpx;
+  top: 17rpx;
+  width: 22rpx;
+  height: 12rpx;
+  border-radius: 12rpx 12rpx 4rpx 4rpx;
+  background: currentColor;
+}
+
+/* 有悬浮导航的页面：正文底部留出导航高度 + 安全区，滚动到底也不被遮住。 */
+.page-has-tabbar {
+  padding-bottom: calc(220rpx + env(safe-area-inset-bottom));
+}
+
+/* 次级页面（菜单与备份 / 诊断）的返回入口，不占主导航。 */
+.back-line {
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+  padding: 8rpx 0;
+}
+
+/* 轻量文字入口（今日页“查看 ›”“这餐详情 ›”等）。
+   文字保持 14px 字号，用 min-height + 内边距把可点区做到 44px，便于真机点中。 */
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 88rpx;
+  padding: 0 8rpx;
+  color: var(--tk-accent);
+  font-size: 28rpx;
+  line-height: 1.45;
+}
+.link-strong {
+  font-weight: 600;
+}
+
+/* 大按钮：今日页主操作“确认吃了” */
+.btn-lg {
+  height: 96rpx;
+  font-size: 32rpx;
+  border-radius: 28rpx;
+  padding: 0 36rpx;
+}
+.btn-block-lg {
+  flex: 1;
+  width: auto !important;
+}
+
+/* 开发诊断页等宽输出 */
+.mono {
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 22rpx;
+  word-break: break-all;
+}
+.pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: var(--tk-secondary);
+  border-radius: 12rpx;
+  padding: 16rpx;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 21rpx;
+  max-height: 520rpx;
+  overflow-y: auto;
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "dishId": "dish-wuhan-hotdry-noodles",
+    "name": "热干面",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 506,
+      "proteinDg": 137,
+      "fatDg": 163,
+      "carbDg": 756
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册/第二册(熟切面01-1-201折算/纯芝麻酱20-3-114/芝麻香油10-1-105/酿造酱油20-1-101/酱萝卜20-5-011)原料配比累加及湖北省地方标准DB42/T 2092-2023估算",
+      "portionAssumption": "熟碱水面(掸面)200g + 纯芝麻酱18g + 芝麻香油6g + 调味酱油15g + 酱萝卜丁葱花20g(单份成品净重约259g)",
+      "estimated": true,
+      "note": "依据档口标牌大碗热干面公示与武汉典型配方推导，非食堂实测配方；四项宏量均为中心估计"
+    }
+  },
+  {
+    "dishId": "dish-southern-wonton-small",
+    "name": "南方小馄饨小份",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 263,
+      "proteinDg": 116,
+      "fatDg": 131,
+      "carbDg": 251
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册(生馄饨皮01-1-205/2:8肥瘦猪肉馅08-1-102与08-1-104复合/熟猪油19-1-007/干紫菜05-2-008/虾皮12-2-115)原料累加估算",
+      "portionAssumption": "生馄饨10只(皮45g+肉馅45g) + 熟清汤200g + 熟猪油2.5g + 干紫菜1.5g + 虾皮1.0g + 葱花调味(单份带汤总重约335g，固体约132g)",
+      "estimated": true,
+      "note": "依据标牌小份5元推导为标准10只出餐，配方包含清汤底与紫菜虾皮小料；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-southern-wonton-large",
+    "name": "南方小馄饨大份",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 416,
+      "proteinDg": 185,
+      "fatDg": 205,
+      "carbDg": 402
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册(生馄饨皮01-1-205/2:8肥瘦猪肉馅08-1-102与08-1-104复合/熟猪油19-1-007/干紫菜05-2-008/虾皮12-2-115)原料累加估算",
+      "portionAssumption": "生馄饨16只(皮72g+肉馅72g) + 熟清汤250g + 熟猪油3.5g + 干紫菜2.5g + 虾皮1.5g + 葱花调料(单份带汤总重约464g，固体约210g)",
+      "estimated": true,
+      "note": "依据标牌大份8元相对小份5元(1.6倍价格比)推导为16只出餐(1.6倍只数比)，单只规格与小份一致；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-shaomai",
+    "name": "烧麦",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 435,
+      "proteinDg": 96,
+      "fatDg": 177,
+      "carbDg": 599
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册/第二册(小麦粉薄面皮01-1-205/熟糯米饭01-2-301折算/半肥瘦猪肉丁08-1-101/熟猪油19-1-007/酱油20-1-101)原料累加并参考GB 28050市售速冻烧麦标签",
+      "portionAssumption": "蒸烧麦4只(烧麦皮32g + 熟糯米饭112g + 猪肉丁24g + 猪油8g + 调料4g，4只成品总净重约180g)",
+      "estimated": true,
+      "note": "依据标牌6元并结合同食堂窗口1.5元/个单价推导为标准4只出餐，采用重油糯米肉丁特色配方估算；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-egg-soup",
+    "name": "鸡蛋汤",
+    "kind": "single",
+    "category": "soup",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 108,
+      "proteinDg": 67,
+      "fatDg": 69,
+      "carbDg": 50
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册(鲜鸡蛋06-1-101/芝麻香油10-1-105/玉米淀粉02-2-103)原料配比累加估算",
+      "portionAssumption": "鲜鸡蛋去壳50g + 芝麻香油2.5g + 玉米淀粉4g + 沸水高汤约240g + 食盐葱花4g(单碗带汤总重约300g)",
+      "estimated": true,
+      "note": "依据标牌3元标准大碗鸡蛋汤推导，含1枚全蛋花与香油淀粉勾薄芡，提供清淡佐餐汤品中心估计；非食堂实测配方"
+    }
+  }
+]

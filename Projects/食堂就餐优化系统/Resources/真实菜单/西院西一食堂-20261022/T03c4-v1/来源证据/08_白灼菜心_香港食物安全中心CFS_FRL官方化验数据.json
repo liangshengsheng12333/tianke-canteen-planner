@@ -1,0 +1,26 @@
+{
+  "food_name": "白灼菜心 (Blanched choy sum with light oil)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "蔬菜類及其製品 - 葉菜、莖菜、芽菜及蕓薹屬類蔬菜",
+  "item_id": 186,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "nutrients_per_100g": {
+    "energy_kcal": 20.0,
+    "protein_g": 1.8,
+    "fat_g": 0.91,
+    "carbohydrate_g": 1.2,
+    "dietary_fibre_g": 1.6,
+    "sodium_mg": 260.0
+  },
+  "single_portion_calculation_35g": {
+    "weight_g": 35.0,
+    "energy_kcal": 7.0,
+    "protein_g": 0.63,
+    "fat_g": 0.3185,
+    "carbohydrate_g": 0.42,
+    "sodium_mg": 91.0
+  }
+}

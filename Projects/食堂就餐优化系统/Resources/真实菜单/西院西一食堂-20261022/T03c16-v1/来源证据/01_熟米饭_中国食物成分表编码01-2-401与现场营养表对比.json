@@ -1,0 +1,43 @@
+{
+  "food_name": "米饭(蒸) / 熟白米饭",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，杨月欣主编，北京大学医学出版社，2018年，ISBN: 978-7-5659-1845-2",
+  "food_code": "01-2-401",
+  "food_category": "谷类及制品 - 稻米及制品",
+  "online_portal": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+  "access_date": "2026-10-23",
+  "edible_portion": "100%",
+  "per_amount": "100g 熟重",
+  "nutrients_per_100g": {
+    "energy_kj": 493.0,
+    "energy_kcal_converted": 117.8298,
+    "conversion_formula": "493.0 / 4.184 = 117.829828 kcal",
+    "protein_g": 2.6,
+    "fat_g": 0.3,
+    "carbohydrate_g": 25.9,
+    "water_g": 70.9,
+    "sodium_mg": 2.5
+  },
+  "canteen_physical_evidence_comparison": {
+    "photo_evidence": "西院西一食堂墙面真实营养表（T03a-v1 照片1 / 03aa3b48ce6090e365eca270d655a8f8.jpg）第一行米饭公示数据",
+    "photo_energy_kj": 486.0,
+    "photo_energy_kcal_converted": 116.16,
+    "photo_protein_g": 2.6,
+    "photo_fat_g": 0.3,
+    "photo_carbohydrate_g": 25.9,
+    "clarification": "P09在T03V04复核中指出：历史草案同时列示493 kJ与116 kcal，但493 / 4.184 = 117.83 kcal，存在混写冲突。本工程T03c16彻底统一以疾控中心官方查询页国家标准标定值 493.0 kJ/100g 为唯一权威基准，按国标 4.184 换算为 117.8298 kcal/100g，坚决废除旧草案中直接写 116 kcal/100g 的粗算口径。"
+  },
+  "portion_assumption_taishi_doufu_fan": {
+    "reference_standard": "西一食堂立柱公共标牌（照片11）公示米饭小份标准为 200g",
+    "recipe_split": "黄姜鸡汤蒸米饭基底200g拆解为：熟白米饭 197g + 提香油脂（鸡油/食用油）3g",
+    "cooked_rice_197g_calculation": {
+      "weight_g": 197.0,
+      "energy_kcal": 232.1248,
+      "protein_g": 5.122,
+      "fat_g": 0.591,
+      "carbohydrate_g": 51.023,
+      "sodium_mg": 4.925
+    },
+    "note": "米饭单份仅计一次，不含无限续饭；非后厨实测称重，属配方工艺透明假设"
+  }
+}

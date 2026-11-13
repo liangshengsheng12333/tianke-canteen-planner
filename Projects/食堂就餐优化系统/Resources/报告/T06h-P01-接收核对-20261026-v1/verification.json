@@ -1,0 +1,23 @@
+{
+  "user": {
+    "count": 79,
+    "bytes": 1029750,
+    "treeDigest": "sha256:2e20b79fd064aa2d44813741a664e93f682c0a611f50831d3d42f0e50d848cf8",
+    "manifestDigest": "sha256:2e20b79fd064aa2d44813741a664e93f682c0a611f50831d3d42f0e50d848cf8",
+    "missing": [],
+    "extra": [],
+    "changed": [],
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd"
+  },
+  "dev": {
+    "count": 88,
+    "bytes": 1130414,
+    "treeDigest": "sha256:bc682d2cce794bc34cb1a579bbd6e5a01f34a49863854ae8cbbb9a114d696cc9",
+    "manifestDigest": "sha256:bc682d2cce794bc34cb1a579bbd6e5a01f34a49863854ae8cbbb9a114d696cc9",
+    "missing": [],
+    "extra": [],
+    "changed": [],
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd"
+  },
+  "sourceEqualsDev": true
+}

@@ -1,0 +1,38 @@
+{
+  "food_name": "猪肉(瘦)",
+  "english_name": "Pork, lean",
+  "book_title": "《中国食物成分表（标准版）》第6版第二册",
+  "editor_in_chief": "杨月欣",
+  "authoring_organization": "中国疾病预防控制中心营养与健康所",
+  "publisher": "北京大学医学出版社",
+  "publication_year": 2019,
+  "chapter": "第三章 畜肉类及其制品",
+  "food_code_standard": "081110",
+  "food_code_legacy": "08-1-110",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "edible_portion_ratio": 1.0,
+  "state": "生，鲜品 (raw)",
+  "nutrients": {
+    "water_g": 71.0,
+    "energy_kcal": 143.0,
+    "energy_kj": 600.0,
+    "protein_g": 20.3,
+    "fat_g": 6.2,
+    "carbohydrate_g": 1.5,
+    "ash_g": 1.0,
+    "cholesterol_mg": 81.0,
+    "calcium_mg": 6.0,
+    "phosphorus_mg": 184.0,
+    "potassium_mg": 305.0,
+    "sodium_mg": 57.9,
+    "magnesium_mg": 24.0,
+    "iron_mg": 3.0,
+    "zinc_mg": 2.99
+  },
+  "atwater_recalculation": {
+    "formula": "20.3 * 4 + 6.2 * 9 + 1.5 * 4 = 81.2 + 55.8 + 6.0 = 143.0 kcal",
+    "discrepancy": 0.0,
+    "note": "中国食物成分表猪瘦肉数据Atwater宏量产热复算与标定能量143 kcal完全自洽，闭环无差值"
+  }
+}

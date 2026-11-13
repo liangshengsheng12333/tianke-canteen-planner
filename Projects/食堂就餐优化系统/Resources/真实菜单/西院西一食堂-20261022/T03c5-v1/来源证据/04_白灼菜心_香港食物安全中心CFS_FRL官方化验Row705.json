@@ -1,0 +1,36 @@
+{
+  "food_name": "白灼菜心 (Boiled Chinese flowering cabbage)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "excel_attachment": "Nutrient_profiles_FRL.xlsx (Sheet: Eng, Row: 705)",
+  "category": "Vegetables and vegetable products - Leaf, stalk, shoot and brassica vegetables",
+  "row_index": 705,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 熟重",
+  "nutrients_per_100g": {
+    "energy_kcal": 20.0,
+    "protein_g": 1.8,
+    "fat_g": 0.91,
+    "carbohydrate_g": 1.2,
+    "dietary_fibre_g": 2.0,
+    "sugars_g": 0.67,
+    "saturated_fat_g": 0.15,
+    "cholesterol_mg": "ND",
+    "calcium_mg": 91.0,
+    "magnesium_mg": 13.0,
+    "phosphorus_mg": 43.0,
+    "potassium_mg": 230.0,
+    "sodium_mg": 33.0
+  },
+  "p09_correction_note": "P09专项核验整改闭环：此前 T03c4-v1 草案附件误标 item_id: 186 并误将钠写为 260.0mg（系混入其他带酱汁菜品数值）；现依据原始表格彻底纠正为 Excel Eng sheet 正式行号 Row 705，官方标定钠含量为 33.0mg/100g，完全与原始表格相符。",
+  "canteen_portion_assumption": "单份白切鸡饭标配沸水白灼菜心 35g（约2~3根），含微量焯菜底油，爽脆解腻，此为透明工艺假设。",
+  "single_portion_calculation_35g": {
+    "weight_g": 35.0,
+    "energy_kcal": 7.0,
+    "protein_g": 0.63,
+    "fat_g": 0.3185,
+    "carbohydrate_g": 0.42,
+    "sodium_mg": 11.55
+  }
+}

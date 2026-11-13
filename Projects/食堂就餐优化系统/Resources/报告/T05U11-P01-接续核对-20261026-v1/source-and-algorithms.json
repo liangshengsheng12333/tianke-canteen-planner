@@ -1,0 +1,57 @@
+{
+  "sourceCount": 87,
+  "sourceEqualsDev": true,
+  "sourceBytes": 1055036,
+  "userOverrideFiles": [
+    "src/domain/store.ts",
+    "src/pages/data/index.ts",
+    "src/pages/data/index.wxml",
+    "src/pages/home/index.wxml",
+    "src/pages/menu/index.wxml",
+    "src/pages/profile/index.wxml"
+  ],
+  "algorithmRecords": [
+    {
+      "target": "user",
+      "selected": "greedy",
+      "requestAlgorithm": "greedy",
+      "responseAlgorithm": "greedy",
+      "ok": true
+    },
+    {
+      "target": "user",
+      "selected": "dp",
+      "requestAlgorithm": "dp",
+      "responseAlgorithm": "dp",
+      "ok": true
+    },
+    {
+      "target": "user",
+      "selected": "branchAndBound",
+      "requestAlgorithm": "branchAndBound",
+      "responseAlgorithm": "branchAndBound",
+      "ok": true
+    },
+    {
+      "target": "dev",
+      "selected": "greedy",
+      "requestAlgorithm": "greedy",
+      "responseAlgorithm": "greedy",
+      "ok": true
+    },
+    {
+      "target": "dev",
+      "selected": "dp",
+      "requestAlgorithm": "dp",
+      "responseAlgorithm": "dp",
+      "ok": true
+    },
+    {
+      "target": "dev",
+      "selected": "branchAndBound",
+      "requestAlgorithm": "branchAndBound",
+      "responseAlgorithm": "branchAndBound",
+      "ok": true
+    }
+  ]
+}

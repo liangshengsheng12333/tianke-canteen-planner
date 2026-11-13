@@ -1,0 +1,31 @@
+{
+  "ingredientName": "鏊子防粘烹调植物油(大豆油)",
+  "dishId": "dish-shandong-pancake",
+  "sourceDatabase": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+  "category": "油脂类(植物油)",
+  "foodCode": "1041",
+  "bookCode": "10-1-101",
+  "officialName": "大豆油",
+  "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1041.html",
+  "officialOriginalPer100g": {
+    "edible": 100,
+    "waterG": 0.1,
+    "energyKj": 3761.0,
+    "energyKcal": 899.0,
+    "proteinG": 0.0,
+    "fatG": 99.9,
+    "carbG": 0.0,
+    "sodiumMg": 0.0,
+    "vitaminEMg": 27.5
+  },
+  "portionAssumption": {
+    "description": "摊煎饼前油刷在铁鏊子上轻刷1遍以防粘连，用量按中心估计值6g（波动范围4~8g）计",
+    "portionG": 6.0,
+    "portionEnergyKcal": 53.9400,
+    "portionProteinG": 0.0000,
+    "portionFatG": 5.9940,
+    "portionCarbG": 0.0000,
+    "portionSodiumMg": 0.0000
+  },
+  "auditNote": "此处油量仅为鏊子防粘底油；炸薄脆本身自带的油炸吸附油脂已完全包含在薄脆独立条目内，二者绝无重复计量。"
+}

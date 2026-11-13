@@ -1,0 +1,63 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p04" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">业务全流程：从智能推荐到就餐记录闭环</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">目标设定 · 算法推荐 · 自由加菜 · 离线记餐 · 构筑真实校园生活闭环</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">04 / 09</text>
+  </g>
+
+  <!-- Left: 4K 闭环图与交互横幅 -->
+  <g id="left_loop_diagram_p04" data-pptx-bounds="100 220 1140 780">
+    <rect x="100" y="220" width="1140" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- 4K Loop Image Frame -->
+    <rect x="124" y="244" width="1092" height="600" rx="12" fill="#F4F4F5" />
+    <image x="124" y="244" width="1092" height="600" preserveAspectRatio="xMidYMid meet" href="../images/T10d-02-产品使用闭环-4K-浅色.png" />
+
+    <!-- Interactive HTML Banner -->
+    <rect x="124" y="864" width="1092" height="112" rx="12" fill="#10B981" fill-opacity="0.06" stroke="#10B981" stroke-width="1.5" />
+    <rect x="148" y="894" width="52" height="52" rx="10" fill="#10B981" />
+    <text x="174" y="928" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">↻</text>
+    <text x="220" y="914" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981">配套原生交互 HTML 闭环图演示入口</text>
+    <text x="220" y="948" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">支持全流程高亮循迹、双向操作回溯、图元关系下钻：<tspan fill="#18181B" font-weight="bold">images/T10d-02-产品使用闭环.html</tspan></text>
+  </g>
+
+  <!-- Right: 闭环全链路四步解析卡片 -->
+  <g id="right_loop_steps_p04" data-pptx-bounds="1270 220 550 780">
+    <!-- Step 1 -->
+    <rect x="1270" y="220" width="550" height="175" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1300" y="248" width="36" height="36" rx="8" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1318" y="273" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#2563EB" text-anchor="middle">1</text>
+    <text x="1350" y="274" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">多维目标与偏好设定</text>
+    <text x="1300" y="324" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">输入餐次、预算上限与热量营养期望；<tspan x="1300" dy="26">支持标记过敏原与忌口窗口，精确约束解空间。</tspan></text>
+
+    <!-- Step 2 -->
+    <rect x="1270" y="415" width="550" height="175" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1300" y="443" width="36" height="36" rx="8" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1318" y="468" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#2563EB" text-anchor="middle">2</text>
+    <text x="1350" y="469" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">本地 C++/WASM 单选规划</text>
+    <text x="1300" y="519" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">用户择一选择贪心、动态规划或分支限界；<tspan x="1300" dy="26">WASM 引擎纯本地秒级求解，生成推荐餐单组合。</tspan></text>
+
+    <!-- Step 3 -->
+    <rect x="1270" y="610" width="550" height="175" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1300" y="638" width="36" height="36" rx="8" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="1318" y="663" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#F59E0B" text-anchor="middle">3</text>
+    <text x="1350" y="664" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">个性化自选加菜与覆写</text>
+    <text x="1300" y="714" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">支持麻辣烫按克数称重加菜或手动换菜；<tspan x="1300" dy="26">算法动态实时重算预算偏差与营养累计值。</tspan></text>
+
+    <!-- Step 4 -->
+    <rect x="1270" y="805" width="550" height="195" rx="14" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1300" y="833" width="36" height="36" rx="8" fill="#10B981" fill-opacity="0.1" />
+    <text x="1318" y="858" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#10B981" text-anchor="middle">4</text>
+    <text x="1350" y="859" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">独立记餐确认与历史统计</text>
+    <text x="1300" y="909" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">就餐完毕后用户主动确认记餐（推荐与实录解耦）；<tspan x="1300" dy="26">数据写入小程序本地 Storage，沉淀为个人营养档案，</tspan><tspan x="1300" dy="26">真正实现“规划—微调—履约—记录”生活全闭环。</tspan></text>
+  </g>
+</svg>

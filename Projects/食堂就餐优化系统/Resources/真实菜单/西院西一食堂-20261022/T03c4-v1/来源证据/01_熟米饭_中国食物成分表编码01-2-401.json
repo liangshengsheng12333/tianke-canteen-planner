@@ -1,0 +1,22 @@
+{
+  "food_name": "米饭(蒸) / 熟白米饭",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，杨月欣主编，北京大学医学出版社，2018年，ISBN: 978-7-5659-1845-2",
+  "food_code": "01-2-401",
+  "food_category": "谷类及制品 - 稻米及制品",
+  "online_portal": "http://chinanutri.cn/",
+  "access_date": "2026-10-22",
+  "edible_portion": "100%",
+  "per_amount": "100g 熟重",
+  "nutrients_per_100g": {
+    "energy_kcal": 116.0,
+    "energy_kj": 493.0,
+    "protein_g": 2.6,
+    "fat_g": 0.3,
+    "carbohydrate_g": 25.9,
+    "water_g": 70.9,
+    "sodium_mg": 2.5
+  },
+  "canteen_physical_evidence": "西院西一食堂墙面真实营养表（照片1）配料行实测数据：486.00 kJ、蛋白质 2.60g、脂肪 0.30g、碳水化合物 25.90g，与国家标准表完全吻合",
+  "portion_assumption": "西一食堂墙柱公共标牌公示小份米饭标准为 200g。单份套餐含标配熟米饭 200g（海南鸡饭/泰式豆腐饭为197g白米饭+3g鸡油蒸制；白切鸡饭为200g纯白米饭）"
+}

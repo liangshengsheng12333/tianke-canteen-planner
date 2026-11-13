@@ -1,0 +1,6243 @@
+{
+  "contractVersion": "1.0",
+  "candidateVersion": "chuanxiang-window-candidate-v1-20261024",
+  "canteen": {
+    "canteenId": "canteen-west1",
+    "name": "西院西一食堂"
+  },
+  "windows": [
+    {
+      "windowId": "w-chuanxiang-xiaochu",
+      "name": "川湘小厨",
+      "fullName": "川湘小厨营养套餐",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "description": "西院西一食堂客流最高窗口；以荤素定额套餐（1荤+2素+米饭，11/12/13元）与自选组合（两素7元、三素9元、一荤一素9元、两荤一素14元）为主，随餐含米饭并承诺免费加米、免费汤。配菜台实拍约30~35道菜品提供视觉组件与参考记录支持。"
+    }
+  ],
+  "dishes": [
+    {
+      "dishId": "dish-cx-rice",
+      "name": "米饭（标准小份200g）",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 236,
+        "proteinDg": 52,
+        "fatDg": 6,
+        "carbDg": 518
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭标准小份200g（依据西一食堂立柱官方规格标牌小份200g出餐基准）",
+        "estimated": true,
+        "note": "依据西一食堂立柱米饭规格标牌(照片11)标准小份200g明确假设；采用中国疾控中心食物成分表编码01-2-401基准(493kJ/100g按国标折算117.83kcal/100g)；单份仅计一次，不含免费续饭量"
+      }
+    },
+    {
+      "dishId": "dish-cx-xilanhua",
+      "name": "清炒西蓝花",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 54,
+        "proteinDg": 18,
+        "fatDg": 38,
+        "carbDg": 43
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生西兰花65g + 烹调大豆油3.5g + 蒜碎食盐调味1.5g(单份成品净重约70g)",
+        "estimated": true,
+        "note": "依据川湘小厨台面实拍照片(图03-B4/图04-B4)推导之典型炒蔬菜配伍；非窗口单独售卖实测菜品"
+      }
+    },
+    {
+      "dishId": "dish-cx-shousibaocai",
+      "name": "手撕包菜",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 43,
+        "proteinDg": 10,
+        "fatDg": 36,
+        "carbDg": 22
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生卷心菜65g + 烹调大豆油3.5g + 干椒食盐调味1.5g(单份成品净重约70g)",
+        "estimated": true,
+        "note": "依据川湘小厨台面实拍照片(图03-B6/图04-B6/图02-B2等)推导之典型炒蔬菜配伍；非窗口单独售卖实测菜品"
+      }
+    },
+    {
+      "dishId": "dish-cx-tudousi",
+      "name": "炒土豆丝",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 82,
+        "proteinDg": 13,
+        "fatDg": 36,
+        "carbDg": 112
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生土豆丝65g + 烹调大豆油3.5g + 辣椒碎食盐调味1.5g(单份成品净重约70g)",
+        "estimated": true,
+        "note": "依据川湘小厨台面实拍照片(图03-B5/图04-B5等)推导之典型蔬菜配伍；非窗口单独售卖实测菜品"
+      }
+    },
+    {
+      "dishId": "dish-cx-yuxiang-rousi",
+      "name": "鱼香肉丝（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 232,
+        "proteinDg": 165,
+        "fatDg": 118,
+        "carbDg": 156
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "鱼香肉丝单份主荤配料：生猪瘦肉75g + 水发黑木耳25g + 胡萝卜25g + 青椒15g + 烹调大豆油7g + 白砂糖7g + 生抽/调味老抽酱油8g + 淀粉/裹糊3g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号3 (图03-F3/图04-F3/图08-B4)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-xiangchang-jidan",
+      "name": "香肠鸡蛋（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 265,
+        "proteinDg": 133,
+        "fatDg": 207,
+        "carbDg": 68
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "香肠鸡蛋单份主荤配料：熟香肠40g + 鲜鸡蛋55g + 青椒35g + 烹调大豆油7g + 生抽/调味老抽酱油5g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号15 (图01-M4/图08-M1)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-culiu-muxu",
+      "name": "醋溜木须（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 229,
+        "proteinDg": 157,
+        "fatDg": 140,
+        "carbDg": 105
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "醋溜木须单份主荤配料：鲜鸡蛋50g + 生猪瘦肉40g + 水发黑木耳25g + 黄瓜25g + 烹调大豆油7g + 白砂糖4g + 生抽/调味老抽酱油6g + 淀粉/裹糊2g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号16 (图06-M2/图07-M1/图01-M0)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-gongbao-jiding",
+      "name": "宫保鸡丁（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 316,
+        "proteinDg": 156,
+        "fatDg": 228,
+        "carbDg": 126
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "宫保鸡丁单份主荤配料：生去骨带皮鸡腿肉70g + 熟炸花生米15g + 黄瓜35g + 烹调大豆油7g + 白砂糖6g + 生抽/调味老抽酱油7g + 淀粉/裹糊2g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号2 (图03-F2/图04-F2/图06-M3/图07-M2/图01-M1)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-mala-xiangguo",
+      "name": "麻辣香锅（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 209,
+        "proteinDg": 93,
+        "fatDg": 137,
+        "carbDg": 128
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "麻辣香锅单份主荤配料：猪肉丸30g + 腐竹(水发)25g + 生卷心菜45g + 水发黑木耳15g + 生土豆20g + 烹调大豆油7g + 生抽/调味老抽酱油8g + 白砂糖2g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号17 (图06-M4/图07-M3/图01-M2)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-aoerliang-jiding",
+      "name": "奥尔良鸡丁（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 239,
+        "proteinDg": 136,
+        "fatDg": 165,
+        "carbDg": 95
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "奥尔良鸡丁单份主荤配料：生去骨带皮鸡腿肉80g + 青椒20g + 胡萝卜20g + 烹调大豆油6g + 白砂糖4g + 淀粉/裹糊3g + 生抽/调味老抽酱油5g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（门头标牌11元档第6款；典型奥尔良烤风味炒鸡肉丁）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-ziran-roupian",
+      "name": "孜然肉片（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 201,
+        "proteinDg": 164,
+        "fatDg": 118,
+        "carbDg": 78
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "孜然肉片单份主荤配料：生猪瘦肉75g + 青椒30g + 生卷心菜30g + 烹调大豆油7g + 生抽/调味老抽酱油6g + 白砂糖2g + 淀粉/裹糊2g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号4 (图03-F4/图04-F4)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-sanxian-zhurouwan",
+      "name": "三鲜猪肉丸（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 196,
+        "proteinDg": 103,
+        "fatDg": 140,
+        "carbDg": 84
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "三鲜猪肉丸单份主荤配料：猪肉丸65g + 水发黑木耳20g + 生西兰花30g + 水发香菇15g + 烹调大豆油4g + 生抽/调味老抽酱油6g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号11 (图03-M3/图04-M3/图08-F3)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-heihujiao-jiliu",
+      "name": "黑胡椒鸡柳（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 198,
+        "proteinDg": 166,
+        "fatDg": 101,
+        "carbDg": 105
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黑胡椒鸡柳单份主荤配料：生鸡胸肉80g + 青椒30g + 胡萝卜25g + 烹调大豆油6g + 生抽/调味老抽酱油7g + 淀粉/裹糊3g + 白砂糖2g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（门头标牌11元档第9款；滑嫩鸡胸肉柳条配黑胡椒青红椒丝）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-hupi-jitui",
+      "name": "虎皮鸡腿（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 294,
+        "proteinDg": 293,
+        "fatDg": 172,
+        "carbDg": 33
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "虎皮鸡腿单份主荤配料：熟卤鸡腿肉115g + 烹调大豆油5g + 烧味/红烧卤汁10g + 白砂糖2g",
+        "estimated": true,
+        "note": "依据门头标牌【11元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号10卤禽腿备选；整只大鸡腿油炸起皱后红烧透焖）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-gali-jirou",
+      "name": "咖喱鸡肉（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 245,
+        "proteinDg": 128,
+        "fatDg": 159,
+        "carbDg": 128
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "咖喱鸡肉单份主荤配料：生去骨带皮鸡腿肉70g + 生土豆50g + 胡萝卜20g + 烹调大豆油4g + 咖喱酱调料15g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号7 (图04-F7/图02-F3/图05-F7/图07-F5/图01-F4/图08-F2)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-tudou-lachang",
+      "name": "土豆腊肠（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 299,
+        "proteinDg": 94,
+        "fatDg": 204,
+        "carbDg": 200
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "土豆腊肠单份主荤配料：广式腊肠40g + 生土豆80g + 青椒20g + 烹调大豆油5g + 生抽/调味老抽酱油6g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号13 (图04-M6/图02-M3/图05-M6/图07-F4/图01-F3)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-lajiao-chaorou",
+      "name": "辣椒炒肉（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 288,
+        "proteinDg": 138,
+        "fatDg": 232,
+        "carbDg": 69
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "辣椒炒肉单份主荤配料：生猪五花肉40g + 生猪瘦肉35g + 青椒70g + 烹调大豆油6g + 生抽/调味老抽酱油8g + 白砂糖1.5g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（川湘招牌核心代表荤菜；新鲜青椒大火爆炒肥瘦前腿五花肉片）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-xianggu-menji",
+      "name": "香菇焖鸡（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 227,
+        "proteinDg": 150,
+        "fatDg": 162,
+        "carbDg": 60
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "香菇焖鸡单份主荤配料：生去骨带皮鸡腿肉85g + 水发香菇40g + 烹调大豆油5g + 烧味/红烧卤汁10g + 白砂糖2g + 生抽/调味老抽酱油6g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号8 (图04-F8/图02-F4/图05-F8/图06-F0)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-ganbian-jikuai",
+      "name": "干煸鸡块（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 318,
+        "proteinDg": 107,
+        "fatDg": 164,
+        "carbDg": 317
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "干煸鸡块单份主荤配料：生去骨带皮鸡腿肉55g + 淀粉/裹糊10g + 年糕40g + 烹调大豆油9g + 青椒20g + 白砂糖2g + 生抽/调味老抽酱油5g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号9 (图03-M1/图04-M1 年糕辣子鸡/干煸鸡块)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-tangcu-liji",
+      "name": "糖醋里脊（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 345,
+        "proteinDg": 167,
+        "fatDg": 150,
+        "carbDg": 355
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "糖醋里脊单份主荤配料：生猪瘦肉80g + 淀粉/裹糊25g + 烹调大豆油10g + 番茄酱15g + 白砂糖10g + 生抽/调味老抽酱油3g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号6 (图04-F6/图02-F2/图05-F6 亮红橙黄酸甜芡炸肉块)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-ziran-jizhen",
+      "name": "孜然鸡胗（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 185,
+        "proteinDg": 174,
+        "fatDg": 95,
+        "carbDg": 77
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "孜然鸡胗单份主荤配料：鸡胗85g + 青椒50g + 烹调大豆油7g + 生抽/调味老抽酱油6g + 白砂糖1.5g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号14 (图01-F5/图08-F1 麦穗花刀鸡胗密集青椒圈)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-guobaorou",
+      "name": "锅包肉（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 364,
+        "proteinDg": 167,
+        "fatDg": 170,
+        "carbDg": 360
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "锅包肉单份主荤配料：生猪瘦肉80g + 淀粉/裹糊30g + 烹调大豆油12g + 白砂糖8g + 生抽/调味老抽酱油5g + 胡萝卜10g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号6或4 (厚浆金黄炸大片猪里脊肉酸甜汁烹炒)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-heihujiao-rouli",
+      "name": "黑胡椒肉粒（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 196,
+        "proteinDg": 162,
+        "fatDg": 108,
+        "carbDg": 90
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黑胡椒肉粒单份主荤配料：生猪瘦肉75g + 青椒25g + 胡萝卜20g + 烹调大豆油6g + 生抽/调味老抽酱油7g + 淀粉/裹糊3g + 白砂糖2g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号18 (图07-F3/图01-F2 深酱色肉丁胡萝卜青椒浓汁)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-zhaopai-yatui",
+      "name": "招牌鸭腿（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 289,
+        "proteinDg": 338,
+        "fatDg": 143,
+        "carbDg": 39
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "招牌鸭腿单份主荤配料：熟卤鸭腿肉125g + 烧味/红烧卤汁15g + 白砂糖2g",
+        "estimated": true,
+        "note": "依据门头标牌【12元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号10 (图03-M2/图04-M2 长骨紧致整只卤鸭腿)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-zhaopai-koushuiji",
+      "name": "招牌口水鸡（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 360,
+        "proteinDg": 295,
+        "fatDg": 239,
+        "carbDg": 49
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "招牌口水鸡单份主荤配料：熟卤鸡腿肉110g + 烹调大豆油10g + 熟炸花生米5g + 生抽/调味老抽酱油8g + 白砂糖3g",
+        "estimated": true,
+        "note": "依据门头标牌【13元档】及实拍照片视觉特征推导的主菜组件（川湘核心招牌；白切嫩熟鸡腿肉淋浓香麻辣复合红油酱料与花生碎）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-tudou-hongshaorou",
+      "name": "土豆红烧肉（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 385,
+        "proteinDg": 109,
+        "fatDg": 301,
+        "carbDg": 179
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "土豆红烧肉单份主荤配料：生猪五花肉70g + 生土豆60g + 烹调大豆油4g + 烧味/红烧卤汁10g + 白砂糖4g + 生抽/调味老抽酱油6g",
+        "estimated": true,
+        "note": "依据门头标牌【13元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号5 (图04-F5/图02-F1/图05-F5/图08-M3 带皮红烧肉块切块土豆)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-suancai-wuguyu",
+      "name": "酸菜无骨鱼（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 254,
+        "proteinDg": 238,
+        "fatDg": 157,
+        "carbDg": 48
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "酸菜无骨鱼单份主荤配料：草鱼/巴沙鱼肉110g + 老酸菜40g + 北豆腐40g + 烹调大豆油8g + 淀粉/裹糊3g + 生抽/调味老抽酱油5g",
+        "estimated": true,
+        "note": "依据门头标牌【13元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号1 (图03-F1/图04-F1 白色无骨鱼肉片酸菜白豆腐丁)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-yumi-dun-paigu",
+      "name": "玉米炖排骨（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 350,
+        "proteinDg": 181,
+        "fatDg": 257,
+        "carbDg": 136
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "玉米炖排骨单份主荤配料：生猪小排95g + 熟甜玉米粒50g + 胡萝卜25g + 烹调大豆油3g + 生抽/调味老抽酱油5g",
+        "estimated": true,
+        "note": "依据门头标牌【13元档】及实拍照片视觉特征推导的主菜组件（可能对应照片菜品对照表序号12 (图03-M4/图04-M4 黄色带芯甜玉米截段带骨排骨块)）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-cx-meigancai-shaorou",
+      "name": "梅干菜烧肉（主菜组件）",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 363,
+        "proteinDg": 116,
+        "fatDg": 310,
+        "carbDg": 95
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "梅干菜烧肉单份主荤配料：生猪五花肉75g + 泡发梅干菜45g + 烹调大豆油3g + 白砂糖4g + 生抽/调味老抽酱油6g",
+        "estimated": true,
+        "note": "依据门头标牌【13元档】及实拍照片视觉特征推导的主菜组件（门头标牌13元档第5款；绍兴特色红烧五花肉块透吸泡发梅干菜香）；未单独标价，不作单菜单卖报价"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-yuxiang-rousi",
+      "name": "鱼香肉丝套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-yuxiang-rousi",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 563,
+        "proteinDg": 245,
+        "fatDg": 197,
+        "carbDg": 739
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜鱼香肉丝（生猪瘦肉75g + 水发黑木耳25g + 胡萝卜25g + 青椒15g + 烹调大豆油7g + 白砂糖7g + 生抽/调味老抽酱油8g + 淀粉/裹糊3g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 468,
+          "proteinDg": 212,
+          "fatDg": 150,
+          "carbDg": 637
+        },
+        "central": {
+          "portionAssumption": "主菜鱼香肉丝（生猪瘦肉75g + 水发黑木耳25g + 胡萝卜25g + 青椒15g + 烹调大豆油7g + 白砂糖7g + 生抽/调味老抽酱油8g + 淀粉/裹糊3g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 563,
+          "proteinDg": 245,
+          "fatDg": 197,
+          "carbDg": 739
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 659,
+          "proteinDg": 278,
+          "fatDg": 245,
+          "carbDg": 840
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 563.4,
+          "proteinG": 24.506,
+          "fatG": 19.714,
+          "carbG": 73.852
+        },
+        "atwaterTheoreticalKcal": 570.86,
+        "diffKcal": 7.46,
+        "diffReason": "理论4/9/4供能570.86 kcal与计算值563.4 kcal相差7.46 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-xiangchang-jidan",
+      "name": "香肠鸡蛋套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-xiangchang-jidan",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 596,
+        "proteinDg": 213,
+        "fatDg": 287,
+        "carbDg": 651
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜香肠鸡蛋（熟香肠40g + 鲜鸡蛋55g + 青椒35g + 烹调大豆油7g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 502,
+          "proteinDg": 182,
+          "fatDg": 226,
+          "carbDg": 579
+        },
+        "central": {
+          "portionAssumption": "主菜香肠鸡蛋（熟香肠40g + 鲜鸡蛋55g + 青椒35g + 烹调大豆油7g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 596,
+          "proteinDg": 213,
+          "fatDg": 287,
+          "carbDg": 651
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 705,
+          "proteinDg": 250,
+          "fatDg": 359,
+          "carbDg": 727
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 596.26,
+          "proteinG": 21.28,
+          "fatG": 28.661,
+          "carbG": 65.105
+        },
+        "atwaterTheoreticalKcal": 603.49,
+        "diffKcal": 7.23,
+        "diffReason": "理论4/9/4供能603.49 kcal与计算值596.26 kcal相差7.23 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-culiu-muxu",
+      "name": "醋溜木须套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-culiu-muxu",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 561,
+        "proteinDg": 237,
+        "fatDg": 219,
+        "carbDg": 688
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜醋溜木须（鲜鸡蛋50g + 生猪瘦肉40g + 水发黑木耳25g + 黄瓜25g + 烹调大豆油7g + 白砂糖4g + 生抽/调味老抽酱油6g + 淀粉/裹糊2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 466,
+          "proteinDg": 202,
+          "fatDg": 166,
+          "carbDg": 603
+        },
+        "central": {
+          "portionAssumption": "主菜醋溜木须（鲜鸡蛋50g + 生猪瘦肉40g + 水发黑木耳25g + 黄瓜25g + 烹调大豆油7g + 白砂糖4g + 生抽/调味老抽酱油6g + 淀粉/裹糊2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 561,
+          "proteinDg": 237,
+          "fatDg": 219,
+          "carbDg": 688
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 655,
+          "proteinDg": 271,
+          "fatDg": 272,
+          "carbDg": 773
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 560.66,
+          "proteinG": 23.678,
+          "fatG": 21.897,
+          "carbG": 68.809
+        },
+        "atwaterTheoreticalKcal": 567.02,
+        "diffKcal": 6.37,
+        "diffReason": "理论4/9/4供能567.02 kcal与计算值560.66 kcal相差6.37 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-gongbao-jiding",
+      "name": "宫保鸡丁套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-gongbao-jiding",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 648,
+        "proteinDg": 236,
+        "fatDg": 307,
+        "carbDg": 710
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜宫保鸡丁（生去骨带皮鸡腿肉70g + 熟炸花生米15g + 黄瓜35g + 烹调大豆油7g + 白砂糖6g + 生抽/调味老抽酱油7g + 淀粉/裹糊2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 538,
+          "proteinDg": 201,
+          "fatDg": 240,
+          "carbDg": 619
+        },
+        "central": {
+          "portionAssumption": "主菜宫保鸡丁（生去骨带皮鸡腿肉70g + 熟炸花生米15g + 黄瓜35g + 烹调大豆油7g + 白砂糖6g + 生抽/调味老抽酱油7g + 淀粉/裹糊2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 648,
+          "proteinDg": 236,
+          "fatDg": 307,
+          "carbDg": 710
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 758,
+          "proteinDg": 270,
+          "fatDg": 375,
+          "carbDg": 800
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 648.06,
+          "proteinG": 23.589,
+          "fatG": 30.733,
+          "carbG": 70.95
+        },
+        "atwaterTheoreticalKcal": 654.75,
+        "diffKcal": 6.7,
+        "diffReason": "理论4/9/4供能654.75 kcal与计算值648.06 kcal相差6.7 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-mala-xiangguo",
+      "name": "麻辣香锅套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-mala-xiangguo",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 541,
+        "proteinDg": 173,
+        "fatDg": 217,
+        "carbDg": 711
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜麻辣香锅（猪肉丸30g + 腐竹(水发)25g + 生卷心菜45g + 水发黑木耳15g + 生土豆20g + 烹调大豆油7g + 生抽/调味老抽酱油8g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 449,
+          "proteinDg": 147,
+          "fatDg": 164,
+          "carbDg": 622
+        },
+        "central": {
+          "portionAssumption": "主菜麻辣香锅（猪肉丸30g + 腐竹(水发)25g + 生卷心菜45g + 水发黑木耳15g + 生土豆20g + 烹调大豆油7g + 生抽/调味老抽酱油8g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 541,
+          "proteinDg": 173,
+          "fatDg": 217,
+          "carbDg": 711
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 634,
+          "proteinDg": 200,
+          "fatDg": 270,
+          "carbDg": 800
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 541.07,
+          "proteinG": 17.343,
+          "fatG": 21.659,
+          "carbG": 71.102
+        },
+        "atwaterTheoreticalKcal": 548.71,
+        "diffKcal": 7.64,
+        "diffReason": "理论4/9/4供能548.71 kcal与计算值541.07 kcal相差7.64 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-aoerliang-jiding",
+      "name": "奥尔良鸡丁套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-aoerliang-jiding",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 571,
+        "proteinDg": 216,
+        "fatDg": 244,
+        "carbDg": 678
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜奥尔良鸡丁（生去骨带皮鸡腿肉80g + 青椒20g + 胡萝卜20g + 烹调大豆油6g + 白砂糖4g + 淀粉/裹糊3g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 482,
+          "proteinDg": 188,
+          "fatDg": 195,
+          "carbDg": 590
+        },
+        "central": {
+          "portionAssumption": "主菜奥尔良鸡丁（生去骨带皮鸡腿肉80g + 青椒20g + 胡萝卜20g + 烹调大豆油6g + 白砂糖4g + 淀粉/裹糊3g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 571,
+          "proteinDg": 216,
+          "fatDg": 244,
+          "carbDg": 678
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 660,
+          "proteinDg": 243,
+          "fatDg": 293,
+          "carbDg": 765
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 570.81,
+          "proteinG": 21.558,
+          "fatG": 24.417,
+          "carbG": 67.776
+        },
+        "atwaterTheoreticalKcal": 577.09,
+        "diffKcal": 6.27,
+        "diffReason": "理论4/9/4供能577.09 kcal与计算值570.81 kcal相差6.27 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-ziran-roupian",
+      "name": "孜然肉片套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-ziran-roupian",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 532,
+        "proteinDg": 244,
+        "fatDg": 197,
+        "carbDg": 661
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜孜然肉片（生猪瘦肉75g + 青椒30g + 生卷心菜30g + 烹调大豆油7g + 生抽/调味老抽酱油6g + 白砂糖2g + 淀粉/裹糊2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 447,
+          "proteinDg": 212,
+          "fatDg": 149,
+          "carbDg": 583
+        },
+        "central": {
+          "portionAssumption": "主菜孜然肉片（生猪瘦肉75g + 青椒30g + 生卷心菜30g + 烹调大豆油7g + 生抽/调味老抽酱油6g + 白砂糖2g + 淀粉/裹糊2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 532,
+          "proteinDg": 244,
+          "fatDg": 197,
+          "carbDg": 661
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 618,
+          "proteinDg": 276,
+          "fatDg": 244,
+          "carbDg": 738
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 532.33,
+          "proteinG": 24.428,
+          "fatG": 19.687,
+          "carbG": 66.081
+        },
+        "atwaterTheoreticalKcal": 539.22,
+        "diffKcal": 6.89,
+        "diffReason": "理论4/9/4供能539.22 kcal与计算值532.33 kcal相差6.89 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-sanxian-zhurouwan",
+      "name": "三鲜猪肉丸套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-sanxian-zhurouwan",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 527,
+        "proteinDg": 183,
+        "fatDg": 219,
+        "carbDg": 667
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜三鲜猪肉丸（猪肉丸65g + 水发黑木耳20g + 生西兰花30g + 水发香菇15g + 烹调大豆油4g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 446,
+          "proteinDg": 157,
+          "fatDg": 172,
+          "carbDg": 591
+        },
+        "central": {
+          "portionAssumption": "主菜三鲜猪肉丸（猪肉丸65g + 水发黑木耳20g + 生西兰花30g + 水发香菇15g + 烹调大豆油4g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 527,
+          "proteinDg": 183,
+          "fatDg": 219,
+          "carbDg": 667
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 613,
+          "proteinDg": 208,
+          "fatDg": 270,
+          "carbDg": 744
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 527.49,
+          "proteinG": 18.251,
+          "fatG": 21.875,
+          "carbG": 66.748
+        },
+        "atwaterTheoreticalKcal": 536.87,
+        "diffKcal": 9.39,
+        "diffReason": "理论4/9/4供能536.87 kcal与计算值527.49 kcal相差9.39 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-heihujiao-jiliu",
+      "name": "黑胡椒鸡柳套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-heihujiao-jiliu",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 529,
+        "proteinDg": 246,
+        "fatDg": 181,
+        "carbDg": 688
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜黑胡椒鸡柳（生鸡胸肉80g + 青椒30g + 胡萝卜25g + 烹调大豆油6g + 生抽/调味老抽酱油7g + 淀粉/裹糊3g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 447,
+          "proteinDg": 215,
+          "fatDg": 139,
+          "carbDg": 602
+        },
+        "central": {
+          "portionAssumption": "主菜黑胡椒鸡柳（生鸡胸肉80g + 青椒30g + 胡萝卜25g + 烹调大豆油6g + 生抽/调味老抽酱油7g + 淀粉/裹糊3g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 529,
+          "proteinDg": 246,
+          "fatDg": 181,
+          "carbDg": 688
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 612,
+          "proteinDg": 277,
+          "fatDg": 222,
+          "carbDg": 774
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 529.48,
+          "proteinG": 24.58,
+          "fatG": 18.059,
+          "carbG": 68.809
+        },
+        "atwaterTheoreticalKcal": 536.09,
+        "diffKcal": 6.61,
+        "diffReason": "理论4/9/4供能536.09 kcal与计算值529.48 kcal相差6.61 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-hupi-jitui",
+      "name": "虎皮鸡腿套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-hupi-jitui",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 626,
+        "proteinDg": 373,
+        "fatDg": 251,
+        "carbDg": 616
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜虎皮鸡腿（熟卤鸡腿肉115g + 烹调大豆油5g + 烧味/红烧卤汁10g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【11元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 536,
+          "proteinDg": 325,
+          "fatDg": 204,
+          "carbDg": 547
+        },
+        "central": {
+          "portionAssumption": "主菜虎皮鸡腿（熟卤鸡腿肉115g + 烹调大豆油5g + 烧味/红烧卤汁10g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 626,
+          "proteinDg": 373,
+          "fatDg": 251,
+          "carbDg": 616
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 720,
+          "proteinDg": 420,
+          "fatDg": 303,
+          "carbDg": 685
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 625.59,
+          "proteinG": 37.26,
+          "fatG": 25.133,
+          "carbG": 61.598
+        },
+        "atwaterTheoreticalKcal": 621.63,
+        "diffKcal": 3.96,
+        "diffReason": "理论4/9/4供能621.63 kcal与计算值625.59 kcal相差3.96 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-gali-jirou",
+      "name": "咖喱鸡肉套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-gali-jirou",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 577,
+        "proteinDg": 208,
+        "fatDg": 239,
+        "carbDg": 711
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜咖喱鸡肉（生去骨带皮鸡腿肉70g + 生土豆50g + 胡萝卜20g + 烹调大豆油4g + 咖喱酱调料15g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 486,
+          "proteinDg": 180,
+          "fatDg": 189,
+          "carbDg": 623
+        },
+        "central": {
+          "portionAssumption": "主菜咖喱鸡肉（生去骨带皮鸡腿肉70g + 生土豆50g + 胡萝卜20g + 烹调大豆油4g + 咖喱酱调料15g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 577,
+          "proteinDg": 208,
+          "fatDg": 239,
+          "carbDg": 711
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 667,
+          "proteinDg": 237,
+          "fatDg": 288,
+          "carbDg": 800
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 576.8,
+          "proteinG": 20.845,
+          "fatG": 23.854,
+          "carbG": 71.14
+        },
+        "atwaterTheoreticalKcal": 582.63,
+        "diffKcal": 5.83,
+        "diffReason": "理论4/9/4供能582.63 kcal与计算值576.8 kcal相差5.83 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-tudou-lachang",
+      "name": "土豆腊肠套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-tudou-lachang",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 630,
+        "proteinDg": 174,
+        "fatDg": 283,
+        "carbDg": 783
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜土豆腊肠（广式腊肠40g + 生土豆80g + 青椒20g + 烹调大豆油5g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 542,
+          "proteinDg": 152,
+          "fatDg": 233,
+          "carbDg": 695
+        },
+        "central": {
+          "portionAssumption": "主菜土豆腊肠（广式腊肠40g + 生土豆80g + 青椒20g + 烹调大豆油5g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 630,
+          "proteinDg": 174,
+          "fatDg": 283,
+          "carbDg": 783
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 737,
+          "proteinDg": 201,
+          "fatDg": 350,
+          "carbDg": 875
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 630.48,
+          "proteinG": 17.411,
+          "fatG": 28.339,
+          "carbG": 78.348
+        },
+        "atwaterTheoreticalKcal": 638.09,
+        "diffKcal": 7.61,
+        "diffReason": "理论4/9/4供能638.09 kcal与计算值630.48 kcal相差7.61 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-lajiao-chaorou",
+      "name": "辣椒炒肉套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-lajiao-chaorou",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 620,
+        "proteinDg": 218,
+        "fatDg": 311,
+        "carbDg": 652
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜辣椒炒肉（生猪五花肉40g + 生猪瘦肉35g + 青椒70g + 烹调大豆油6g + 生抽/调味老抽酱油8g + 白砂糖1.5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 528,
+          "proteinDg": 189,
+          "fatDg": 253,
+          "carbDg": 577
+        },
+        "central": {
+          "portionAssumption": "主菜辣椒炒肉（生猪五花肉40g + 生猪瘦肉35g + 青椒70g + 烹调大豆油6g + 生抽/调味老抽酱油8g + 白砂糖1.5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 620,
+          "proteinDg": 218,
+          "fatDg": 311,
+          "carbDg": 652
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 725,
+          "proteinDg": 251,
+          "fatDg": 380,
+          "carbDg": 728
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 620.18,
+          "proteinG": 21.808,
+          "fatG": 31.1,
+          "carbG": 65.218
+        },
+        "atwaterTheoreticalKcal": 628.0,
+        "diffKcal": 7.82,
+        "diffReason": "理论4/9/4供能628.0 kcal与计算值620.18 kcal相差7.82 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-xianggu-menji",
+      "name": "香菇焖鸡套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-xianggu-menji",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 559,
+        "proteinDg": 230,
+        "fatDg": 241,
+        "carbDg": 643
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜香菇焖鸡（生去骨带皮鸡腿肉85g + 水发香菇40g + 烹调大豆油5g + 烧味/红烧卤汁10g + 白砂糖2g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 479,
+          "proteinDg": 201,
+          "fatDg": 197,
+          "carbDg": 567
+        },
+        "central": {
+          "portionAssumption": "主菜香菇焖鸡（生去骨带皮鸡腿肉85g + 水发香菇40g + 烹调大豆油5g + 烧味/红烧卤汁10g + 白砂糖2g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 559,
+          "proteinDg": 230,
+          "fatDg": 241,
+          "carbDg": 643
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 644,
+          "proteinDg": 258,
+          "fatDg": 291,
+          "carbDg": 718
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 559.03,
+          "proteinG": 22.981,
+          "fatG": 24.119,
+          "carbG": 64.266
+        },
+        "atwaterTheoreticalKcal": 566.06,
+        "diffKcal": 7.03,
+        "diffReason": "理论4/9/4供能566.06 kcal与计算值559.03 kcal相差7.03 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-ganbian-jikuai",
+      "name": "干煸鸡块套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-ganbian-jikuai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 650,
+        "proteinDg": 187,
+        "fatDg": 244,
+        "carbDg": 900
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜干煸鸡块（生去骨带皮鸡腿肉55g + 淀粉/裹糊10g + 年糕40g + 烹调大豆油9g + 青椒20g + 白砂糖2g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 544,
+          "proteinDg": 162,
+          "fatDg": 193,
+          "carbDg": 773
+        },
+        "central": {
+          "portionAssumption": "主菜干煸鸡块（生去骨带皮鸡腿肉55g + 淀粉/裹糊10g + 年糕40g + 烹调大豆油9g + 青椒20g + 白砂糖2g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 650,
+          "proteinDg": 187,
+          "fatDg": 244,
+          "carbDg": 900
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 765,
+          "proteinDg": 216,
+          "fatDg": 303,
+          "carbDg": 1027
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 649.55,
+          "proteinG": 18.685,
+          "fatG": 24.364,
+          "carbG": 89.988
+        },
+        "atwaterTheoreticalKcal": 653.97,
+        "diffKcal": 4.41,
+        "diffReason": "理论4/9/4供能653.97 kcal与计算值649.55 kcal相差4.41 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-tangcu-liji",
+      "name": "糖醋里脊套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-tangcu-liji",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 677,
+        "proteinDg": 247,
+        "fatDg": 229,
+        "carbDg": 938
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜糖醋里脊（生猪瘦肉80g + 淀粉/裹糊25g + 烹调大豆油10g + 番茄酱15g + 白砂糖10g + 生抽/调味老抽酱油3g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 570,
+          "proteinDg": 216,
+          "fatDg": 182,
+          "carbDg": 806
+        },
+        "central": {
+          "portionAssumption": "主菜糖醋里脊（生猪瘦肉80g + 淀粉/裹糊25g + 烹调大豆油10g + 番茄酱15g + 白砂糖10g + 生抽/调味老抽酱油3g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 677,
+          "proteinDg": 247,
+          "fatDg": 229,
+          "carbDg": 938
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 784,
+          "proteinDg": 277,
+          "fatDg": 276,
+          "carbDg": 1070
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 676.73,
+          "proteinG": 24.653,
+          "fatG": 22.901,
+          "carbG": 93.809
+        },
+        "atwaterTheoreticalKcal": 679.96,
+        "diffKcal": 3.22,
+        "diffReason": "理论4/9/4供能679.96 kcal与计算值676.73 kcal相差3.22 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-ziran-jizhen",
+      "name": "孜然鸡胗套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-ziran-jizhen",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 517,
+        "proteinDg": 254,
+        "fatDg": 174,
+        "carbDg": 660
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜孜然鸡胗（鸡胗85g + 青椒50g + 烹调大豆油7g + 生抽/调味老抽酱油6g + 白砂糖1.5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 435,
+          "proteinDg": 223,
+          "fatDg": 130,
+          "carbDg": 584
+        },
+        "central": {
+          "portionAssumption": "主菜孜然鸡胗（鸡胗85g + 青椒50g + 烹调大豆油7g + 生抽/调味老抽酱油6g + 白砂糖1.5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 517,
+          "proteinDg": 254,
+          "fatDg": 174,
+          "carbDg": 660
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 598,
+          "proteinDg": 284,
+          "fatDg": 219,
+          "carbDg": 737
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 516.62,
+          "proteinG": 25.351,
+          "fatG": 17.447,
+          "carbG": 66.036
+        },
+        "atwaterTheoreticalKcal": 522.57,
+        "diffKcal": 5.95,
+        "diffReason": "理论4/9/4供能522.57 kcal与计算值516.62 kcal相差5.95 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-guobaorou",
+      "name": "锅包肉套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-guobaorou",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 696,
+        "proteinDg": 246,
+        "fatDg": 249,
+        "carbDg": 943
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜锅包肉（生猪瘦肉80g + 淀粉/裹糊30g + 烹调大豆油12g + 白砂糖8g + 生抽/调味老抽酱油5g + 胡萝卜10g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 588,
+          "proteinDg": 216,
+          "fatDg": 197,
+          "carbDg": 819
+        },
+        "central": {
+          "portionAssumption": "主菜锅包肉（生猪瘦肉80g + 淀粉/裹糊30g + 烹调大豆油12g + 白砂糖8g + 生抽/调味老抽酱油5g + 胡萝卜10g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 696,
+          "proteinDg": 246,
+          "fatDg": 249,
+          "carbDg": 943
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 806,
+          "proteinDg": 277,
+          "fatDg": 301,
+          "carbDg": 1071
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 696.17,
+          "proteinG": 24.645,
+          "fatG": 24.891,
+          "carbG": 94.252
+        },
+        "atwaterTheoreticalKcal": 699.61,
+        "diffKcal": 3.43,
+        "diffReason": "理论4/9/4供能699.61 kcal与计算值696.17 kcal相差3.43 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-heihujiao-rouli",
+      "name": "黑胡椒肉粒套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-heihujiao-rouli",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 528,
+        "proteinDg": 242,
+        "fatDg": 187,
+        "carbDg": 673
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜黑胡椒肉粒（生猪瘦肉75g + 青椒25g + 胡萝卜20g + 烹调大豆油6g + 生抽/调味老抽酱油7g + 淀粉/裹糊3g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 444,
+          "proteinDg": 210,
+          "fatDg": 144,
+          "carbDg": 588
+        },
+        "central": {
+          "portionAssumption": "主菜黑胡椒肉粒（生猪瘦肉75g + 青椒25g + 胡萝卜20g + 烹调大豆油6g + 生抽/调味老抽酱油7g + 淀粉/裹糊3g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 528,
+          "proteinDg": 242,
+          "fatDg": 187,
+          "carbDg": 673
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 611,
+          "proteinDg": 274,
+          "fatDg": 229,
+          "carbDg": 758
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 527.63,
+          "proteinG": 24.165,
+          "fatG": 18.684,
+          "carbG": 67.324
+        },
+        "atwaterTheoreticalKcal": 534.11,
+        "diffKcal": 6.49,
+        "diffReason": "理论4/9/4供能534.11 kcal与计算值527.63 kcal相差6.49 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-zhaopai-yatui",
+      "name": "招牌鸭腿套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-zhaopai-yatui",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 620,
+        "proteinDg": 418,
+        "fatDg": 222,
+        "carbDg": 622
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜招牌鸭腿（熟卤鸭腿肉125g + 烧味/红烧卤汁15g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【12元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 537,
+          "proteinDg": 367,
+          "fatDg": 184,
+          "carbDg": 552
+        },
+        "central": {
+          "portionAssumption": "主菜招牌鸭腿（熟卤鸭腿肉125g + 烧味/红烧卤汁15g + 白砂糖2g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 620,
+          "proteinDg": 418,
+          "fatDg": 222,
+          "carbDg": 622
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 704,
+          "proteinDg": 468,
+          "fatDg": 260,
+          "carbDg": 693
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 620.44,
+          "proteinG": 41.75,
+          "fatG": 22.213,
+          "carbG": 62.248
+        },
+        "atwaterTheoreticalKcal": 615.91,
+        "diffKcal": 4.53,
+        "diffReason": "理论4/9/4供能615.91 kcal与计算值620.44 kcal相差4.53 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-zhaopai-koushuiji",
+      "name": "招牌口水鸡套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-zhaopai-koushuiji",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 692,
+        "proteinDg": 375,
+        "fatDg": 318,
+        "carbDg": 632
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜招牌口水鸡（熟卤鸡腿肉110g + 烹调大豆油10g + 熟炸花生米5g + 生抽/调味老抽酱油8g + 白砂糖3g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【13元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 586,
+          "proteinDg": 324,
+          "fatDg": 257,
+          "carbDg": 556
+        },
+        "central": {
+          "portionAssumption": "主菜招牌口水鸡（熟卤鸡腿肉110g + 烹调大豆油10g + 熟炸花生米5g + 生抽/调味老抽酱油8g + 白砂糖3g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 692,
+          "proteinDg": 375,
+          "fatDg": 318,
+          "carbDg": 632
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 801,
+          "proteinDg": 427,
+          "fatDg": 382,
+          "carbDg": 709
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 691.79,
+          "proteinG": 37.513,
+          "fatG": 31.791,
+          "carbG": 63.166
+        },
+        "atwaterTheoreticalKcal": 688.84,
+        "diffKcal": 2.95,
+        "diffReason": "理论4/9/4供能688.84 kcal与计算值691.79 kcal相差2.95 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-tudou-hongshaorou",
+      "name": "土豆红烧肉套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-tudou-hongshaorou",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 716,
+        "proteinDg": 189,
+        "fatDg": 380,
+        "carbDg": 762
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜土豆红烧肉（生猪五花肉70g + 生土豆60g + 烹调大豆油4g + 烧味/红烧卤汁10g + 白砂糖4g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【13元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 608,
+          "proteinDg": 164,
+          "fatDg": 311,
+          "carbDg": 667
+        },
+        "central": {
+          "portionAssumption": "主菜土豆红烧肉（生猪五花肉70g + 生土豆60g + 烹调大豆油4g + 烧味/红烧卤汁10g + 白砂糖4g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 716,
+          "proteinDg": 189,
+          "fatDg": 380,
+          "carbDg": 762
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 825,
+          "proteinDg": 215,
+          "fatDg": 448,
+          "carbDg": 857
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 716.49,
+          "proteinG": 18.941,
+          "fatG": 37.97,
+          "carbG": 76.184
+        },
+        "atwaterTheoreticalKcal": 722.23,
+        "diffKcal": 5.74,
+        "diffReason": "理论4/9/4供能722.23 kcal与计算值716.49 kcal相差5.74 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-suancai-wuguyu",
+      "name": "酸菜无骨鱼套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-suancai-wuguyu",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 586,
+        "proteinDg": 318,
+        "fatDg": 236,
+        "carbDg": 631
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜酸菜无骨鱼（草鱼/巴沙鱼肉110g + 老酸菜40g + 北豆腐40g + 烹调大豆油8g + 淀粉/裹糊3g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【13元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 499,
+          "proteinDg": 277,
+          "fatDg": 190,
+          "carbDg": 558
+        },
+        "central": {
+          "portionAssumption": "主菜酸菜无骨鱼（草鱼/巴沙鱼肉110g + 老酸菜40g + 北豆腐40g + 烹调大豆油8g + 淀粉/裹糊3g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 586,
+          "proteinDg": 318,
+          "fatDg": 236,
+          "carbDg": 631
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 683,
+          "proteinDg": 366,
+          "fatDg": 290,
+          "carbDg": 707
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 586.07,
+          "proteinG": 31.818,
+          "fatG": 23.635,
+          "carbG": 63.14
+        },
+        "atwaterTheoreticalKcal": 592.55,
+        "diffKcal": 6.48,
+        "diffReason": "理论4/9/4供能592.55 kcal与计算值586.07 kcal相差6.48 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-yumi-dun-paigu",
+      "name": "玉米炖排骨套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-yumi-dun-paigu",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 682,
+        "proteinDg": 261,
+        "fatDg": 337,
+        "carbDg": 719
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜玉米炖排骨（生猪小排95g + 熟甜玉米粒50g + 胡萝卜25g + 烹调大豆油3g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【13元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 573,
+          "proteinDg": 222,
+          "fatDg": 269,
+          "carbDg": 630
+        },
+        "central": {
+          "portionAssumption": "主菜玉米炖排骨（生猪小排95g + 熟甜玉米粒50g + 胡萝卜25g + 烹调大豆油3g + 生抽/调味老抽酱油5g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 682,
+          "proteinDg": 261,
+          "fatDg": 337,
+          "carbDg": 719
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 796,
+          "proteinDg": 300,
+          "fatDg": 409,
+          "carbDg": 807
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 681.96,
+          "proteinG": 26.095,
+          "fatG": 33.665,
+          "carbG": 71.88
+        },
+        "atwaterTheoreticalKcal": 694.88,
+        "diffKcal": 12.92,
+        "diffReason": "理论4/9/4供能694.88 kcal与计算值681.96 kcal相差12.92 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-meigancai-shaorou",
+      "name": "梅干菜烧肉套餐",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-meigancai-shaorou",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 695,
+        "proteinDg": 196,
+        "fatDg": 389,
+        "carbDg": 678
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "主菜梅干菜烧肉（生猪五花肉75g + 泡发梅干菜45g + 烹调大豆油3g + 白砂糖4g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+        "estimated": true,
+        "note": "依据川湘小厨门头标牌【13元档】明确格式'指定主菜+任选两素+米'构建之完整套餐；两素采用台面清晰可见之清炒西蓝花与手撕包菜为透明典型搭配假设，非店员确认组合；米饭按立柱小份200g计一次，不含无限续饭；非后厨实测化验值"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱情景：主菜约85%份量 + 两素偏少各约60g(轻油) + 白米饭偏紧180g",
+          "energyKcal": 592,
+          "proteinDg": 170,
+          "fatDg": 321,
+          "carbDg": 598
+        },
+        "central": {
+          "portionAssumption": "主菜梅干菜烧肉（生猪五花肉75g + 泡发梅干菜45g + 烹调大豆油3g + 白砂糖4g + 生抽/调味老抽酱油6g） + 清炒西蓝花70g + 手撕包菜70g + 熟白米饭200g",
+          "energyKcal": 695,
+          "proteinDg": 196,
+          "fatDg": 389,
+          "carbDg": 678
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁情景：主菜约115%份量 + 两素偏多各约80g(重油) + 白米饭偏松220g",
+          "energyKcal": 802,
+          "proteinDg": 221,
+          "fatDg": 462,
+          "carbDg": 758
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 695.0,
+          "proteinG": 19.581,
+          "fatG": 38.896,
+          "carbG": 67.834
+        },
+        "atwaterTheoreticalKcal": 699.72,
+        "diffKcal": 4.73,
+        "diffReason": "理论4/9/4供能699.72 kcal与计算值695.0 kcal相差4.73 kcal，主要由植物膳食纤维折算、特定脂肪酸燃烧系数及国标换算精度引起"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-2veg-rice",
+      "name": "两素套餐（任选两素+米）",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 346,
+        "proteinDg": 84,
+        "fatDg": 90,
+        "carbDg": 593
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "参考组合出品假设：熟白米饭200g + 生西兰花75g + 烹调大豆油4g + 生卷心菜75g + 烹调大豆油4g",
+        "estimated": true,
+        "note": "招牌红框明确售卖模式：任选两素+米=7元。采用典型两素组合（清炒西蓝花80g+手撕包菜80g）加立柱小份米饭200g为代表估算。"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱低位情景",
+          "energyKcal": 299,
+          "proteinDg": 75,
+          "fatDg": 69,
+          "carbDg": 531
+        },
+        "central": {
+          "portionAssumption": "标准中心出品情景：熟白米饭200g + 生西兰花75g + 烹调大豆油4g + 生卷心菜75g + 烹调大豆油4g",
+          "energyKcal": 346,
+          "proteinDg": 84,
+          "fatDg": 90,
+          "carbDg": 593
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁高位情景",
+          "energyKcal": 392,
+          "proteinDg": 94,
+          "fatDg": 111,
+          "carbDg": 655
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 345.83,
+          "proteinG": 8.425,
+          "fatG": 8.967,
+          "carbG": 59.3
+        },
+        "atwaterTheoreticalKcal": 351.6,
+        "diffKcal": 5.77,
+        "diffReason": "理论4/9/4供能351.6 kcal与计算值345.83 kcal相差5.77 kcal，在合理换算误差范围内"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-3veg-rice",
+      "name": "三素套餐（任选三素+米）",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-xilanhua",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-tudousi",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 413,
+        "proteinDg": 93,
+        "fatDg": 115,
+        "carbDg": 695
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "参考组合出品假设：熟白米饭200g + 生西兰花65g + 烹调大豆油3.5g + 生卷心菜65g + 烹调大豆油3.5g + 生土豆65g + 烹调大豆油3.5g",
+        "estimated": true,
+        "note": "招牌红框明确售卖模式：任选三素+米=9元。采用典型三素组合（清炒西蓝花70g+手撕包菜70g+炒土豆丝70g）加立柱小份米饭200g为代表估算。"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱低位情景",
+          "energyKcal": 350,
+          "proteinDg": 81,
+          "fatDg": 84,
+          "carbDg": 616
+        },
+        "central": {
+          "portionAssumption": "标准中心出品情景：熟白米饭200g + 生西兰花65g + 烹调大豆油3.5g + 生卷心菜65g + 烹调大豆油3.5g + 生土豆65g + 烹调大豆油3.5g",
+          "energyKcal": 413,
+          "proteinDg": 93,
+          "fatDg": 115,
+          "carbDg": 695
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁高位情景",
+          "energyKcal": 477,
+          "proteinDg": 104,
+          "fatDg": 147,
+          "carbDg": 774
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 413.25,
+          "proteinG": 9.295,
+          "fatG": 11.545,
+          "carbG": 69.48
+        },
+        "atwaterTheoreticalKcal": 419.0,
+        "diffKcal": 5.75,
+        "diffReason": "理论4/9/4供能419.0 kcal与计算值413.25 kcal相差5.75 kcal，在合理换算误差范围内"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-1meat-1veg-rice",
+      "name": "一荤一素组合（一荤一素+米）",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-gongbao-jiding",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 453,
+        "proteinDg": 149,
+        "fatDg": 169,
+        "carbDg": 606
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "参考组合出品假设：熟白米饭200g + 生卷心菜65g + 烹调大豆油3.5g + 生去骨带皮鸡腿肉40g + 熟炸花生米8g + 黄瓜20g + 烹调大豆油4g + 白砂糖3g + 生抽/调味老抽酱油4g + 淀粉/裹糊1g",
+        "estimated": true,
+        "note": "招牌红框自选条目：一荤一素+米=9元。原图标牌未注明可选荤菜是否仅限特定档位，按口径规范保留展示/记录入口，不将任意13元主荤机械划归9元。采用典型代表主荤（宫保鸡丁80g）配一手撕包菜70g及米饭200g为代表估算。"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱低位情景",
+          "energyKcal": 384,
+          "proteinDg": 129,
+          "fatDg": 133,
+          "carbDg": 534
+        },
+        "central": {
+          "portionAssumption": "标准中心出品情景：熟白米饭200g + 生卷心菜65g + 烹调大豆油3.5g + 生去骨带皮鸡腿肉40g + 熟炸花生米8g + 黄瓜20g + 烹调大豆油4g + 白砂糖3g + 生抽/调味老抽酱油4g + 淀粉/裹糊1g",
+          "energyKcal": 453,
+          "proteinDg": 149,
+          "fatDg": 169,
+          "carbDg": 606
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁高位情景",
+          "energyKcal": 530,
+          "proteinDg": 175,
+          "fatDg": 210,
+          "carbDg": 682
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 453.44,
+          "proteinG": 14.944,
+          "fatG": 16.945,
+          "carbG": 60.565
+        },
+        "atwaterTheoreticalKcal": 454.55,
+        "diffKcal": 1.11,
+        "diffReason": "理论4/9/4供能454.55 kcal与计算值453.44 kcal相差1.11 kcal，在合理换算误差范围内"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-set-2meat-1veg-rice",
+      "name": "两荤一素组合（两荤一素+米）",
+      "kind": "combo",
+      "category": "set",
+      "riceDish": false,
+      "riceIncluded": true,
+      "components": [
+        {
+          "dishId": "dish-cx-rice",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-shousibaocai",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-gongbao-jiding",
+          "count": 1
+        },
+        {
+          "dishId": "dish-cx-ziran-roupian",
+          "count": 1
+        }
+      ],
+      "nutrition": {
+        "energyKcal": 504,
+        "proteinDg": 205,
+        "fatDg": 190,
+        "carbDg": 632
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "参考组合出品假设：熟白米饭200g + 生卷心菜65g + 烹调大豆油3.5g + 生去骨带皮鸡腿肉30g + 熟炸花生米6g + 黄瓜15g + 烹调大豆油3g + 白砂糖2.5g + 生抽/调味老抽酱油3g + 淀粉/裹糊1g + 生猪瘦肉35g + 青椒15g + 生卷心菜15g + 烹调大豆油3g + 生抽/调味老抽酱油3g + 白砂糖1g + 淀粉/裹糊1g",
+        "estimated": true,
+        "note": "招牌红框自选条目：两荤一素+米=14元。原图标牌未限定双荤档位，保留展示/记录入口。采用典型双拼代表（宫保鸡丁60g+孜然肉片60g）配一手撕包菜70g及米饭200g为代表估算。"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "打勺偏紧/控油控酱低位情景",
+          "energyKcal": 432,
+          "proteinDg": 176,
+          "fatDg": 155,
+          "carbDg": 560
+        },
+        "central": {
+          "portionAssumption": "标准中心出品情景：熟白米饭200g + 生卷心菜65g + 烹调大豆油3.5g + 生去骨带皮鸡腿肉30g + 熟炸花生米6g + 黄瓜15g + 烹调大豆油3g + 白砂糖2.5g + 生抽/调味老抽酱油3g + 淀粉/裹糊1g + 生猪瘦肉35g + 青椒15g + 生卷心菜15g + 烹调大豆油3g + 生抽/调味老抽酱油3g + 白砂糖1g + 淀粉/裹糊1g",
+          "energyKcal": 504,
+          "proteinDg": 205,
+          "fatDg": 190,
+          "carbDg": 632
+        },
+        "high": {
+          "portionAssumption": "打勺偏松/重油稠汁高位情景",
+          "energyKcal": 597,
+          "proteinDg": 242,
+          "fatDg": 242,
+          "carbDg": 712
+        }
+      },
+      "verification": {
+        "rawSum": {
+          "energyKcal": 503.71,
+          "proteinG": 20.461,
+          "fatG": 18.98,
+          "carbG": 63.241
+        },
+        "atwaterTheoreticalKcal": 505.63,
+        "diffKcal": 1.91,
+        "diffReason": "理论4/9/4供能505.63 kcal与计算值503.71 kcal相差1.91 kcal，在合理换算误差范围内"
+      }
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-chaoqingcai",
+      "name": "炒青菜（照片暂定名）",
+      "visualReferenceName": "炒青菜 / 小白菜",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-B1",
+      "visualCharacteristics": "鲜深绿叶菜、白嫩叶梗、清亮油汁",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 70,
+        "proteinDg": 16,
+        "fatDg": 63,
+        "carbDg": 22
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生小白菜110g + 烹调植物油6g + 食盐蒜碎2g(成品净重约105g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图03-B1清炒绿叶菜外观推导，以小白菜作为代表叶菜；油水清亮，按典型单勺蔬菜出餐估算；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "生小白菜95g + 烹调植物油4g + 食盐蒜碎2g(成品净重约90g，少油轻炒)",
+          "energyKcal": 50,
+          "proteinDg": 14,
+          "fatDg": 43,
+          "carbDg": 19
+        },
+        "central": {
+          "portionAssumption": "生小白菜110g + 烹调植物油6g + 食盐蒜碎2g(成品净重约105g，典型出餐份量)",
+          "energyKcal": 70,
+          "proteinDg": 16,
+          "fatDg": 63,
+          "carbDg": 22
+        },
+        "high": {
+          "portionAssumption": "生小白菜125g + 烹调植物油8g + 食盐蒜碎2g(成品净重约120g，满勺偏油)",
+          "energyKcal": 91,
+          "proteinDg": 19,
+          "fatDg": 84,
+          "carbDg": 25
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "小白菜",
+          "weightG": 110,
+          "source": "中国食物成分表第6版第一册 04-1-101",
+          "energyKcal": 16.5,
+          "proteinG": 1.65,
+          "fatG": 0.33,
+          "carbG": 2.2
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-xihulu",
+      "name": "炒西葫芦片（照片暂定名）",
+      "visualReferenceName": "炒西葫芦片 / 炒瓜片",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-B2",
+      "visualCharacteristics": "浅绿带皮半圆西葫芦薄片、微透白籽、清炒淡汁",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 75,
+        "proteinDg": 12,
+        "fatDg": 62,
+        "carbDg": 37
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "带皮西葫芦切片115g + 烹调植物油6g + 食盐调料2g(成品净重约112g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图03-B2浅绿半圆薄瓜片外观推导，水分充足吸油中等；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "带皮西葫芦切片95g + 烹调植物油4g + 食盐调料2g(成品净重约95g，少油控量)",
+          "energyKcal": 53,
+          "proteinDg": 10,
+          "fatDg": 42,
+          "carbDg": 30
+        },
+        "central": {
+          "portionAssumption": "带皮西葫芦切片115g + 烹调植物油6g + 食盐调料2g(成品净重约112g，典型出餐份量)",
+          "energyKcal": 75,
+          "proteinDg": 12,
+          "fatDg": 62,
+          "carbDg": 37
+        },
+        "high": {
+          "portionAssumption": "带皮西葫芦切片130g + 烹调植物油8g + 食盐调料2g(成品净重约128g，满勺偏油)",
+          "energyKcal": 95,
+          "proteinDg": 13,
+          "fatDg": 83,
+          "carbDg": 42
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "西葫芦",
+          "weightG": 115,
+          "source": "中国食物成分表第6版第一册 04-5-103",
+          "energyKcal": 20.7,
+          "proteinG": 1.15,
+          "fatG": 0.23,
+          "carbG": 3.68
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-chaocaihua",
+      "name": "清炒菜花（照片暂定名）",
+      "visualReferenceName": "炒白花菜 / 清炒菜花",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-B3, 图04-B3",
+      "visualCharacteristics": "白色密集花球、浅绿花梗、小朵清炒",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 80,
+        "proteinDg": 23,
+        "fatDg": 62,
+        "carbDg": 40
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "白花菜朵110g + 烹调植物油6g + 食盐蒜碎2g(成品净重约110g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图03-B3/04-B3白色小花球外观推导，花梗花球保留适度脆感；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "白花菜朵95g + 烹调植物油4.5g + 食盐蒜碎2g(成品净重约95g，轻油翻炒)",
+          "energyKcal": 63,
+          "proteinDg": 20,
+          "fatDg": 47,
+          "carbDg": 34
+        },
+        "central": {
+          "portionAssumption": "白花菜朵110g + 烹调植物油6g + 食盐蒜碎2g(成品净重约110g，典型出餐份量)",
+          "energyKcal": 80,
+          "proteinDg": 23,
+          "fatDg": 62,
+          "carbDg": 40
+        },
+        "high": {
+          "portionAssumption": "白花菜朵130g + 烹调植物油8g + 食盐蒜碎2g(成品净重约130g，满勺偏油)",
+          "energyKcal": 103,
+          "proteinDg": 27,
+          "fatDg": 83,
+          "carbDg": 47
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "花菜",
+          "weightG": 110,
+          "source": "中国食物成分表第6版第一册 04-4-101",
+          "energyKcal": 26.4,
+          "proteinG": 2.31,
+          "fatG": 0.22,
+          "carbG": 3.96
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-chaoxilanhua",
+      "name": "炒西蓝花（照片暂定名）",
+      "visualReferenceName": "炒西蓝花 / 蒜蓉西蓝花",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-B4, 图04-B4",
+      "visualCharacteristics": "鲜深绿颗粒花球、浅绿粗花茎、蒜碎、插大铁勺",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 90,
+        "proteinDg": 45,
+        "fatDg": 67,
+        "carbDg": 36
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "绿西蓝花小朵110g + 烹调植物油6g + 蒜碎食盐3g(成品净重约110g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图03-B4/04-B4深绿花球外观推导，蒜碎可见；富含膳食纤维；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "绿西蓝花小朵95g + 烹调植物油4.5g + 蒜碎食盐2g(成品净重约95g，少油轻炒)",
+          "energyKcal": 72,
+          "proteinDg": 39,
+          "fatDg": 51,
+          "carbDg": 31
+        },
+        "central": {
+          "portionAssumption": "绿西蓝花小朵110g + 烹调植物油6g + 蒜碎食盐3g(成品净重约110g，典型出餐份量)",
+          "energyKcal": 90,
+          "proteinDg": 45,
+          "fatDg": 67,
+          "carbDg": 36
+        },
+        "high": {
+          "portionAssumption": "绿西蓝花小朵130g + 烹调植物油8g + 蒜碎食盐3g(成品净重约130g，满勺偏油)",
+          "energyKcal": 115,
+          "proteinDg": 53,
+          "fatDg": 88,
+          "carbDg": 43
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "西蓝花",
+          "weightG": 110,
+          "source": "中国食物成分表第6版第一册 04-4-102",
+          "energyKcal": 36.3,
+          "proteinG": 4.51,
+          "fatG": 0.66,
+          "carbG": 3.63
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-chaotudousi",
+      "name": "炒土豆丝（照片暂定名）",
+      "visualReferenceName": "炒土豆丝 / 酸辣土豆丝",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-B5, 图04-B5, 图02-B1, 图05-B5, 图06-B3, 图07-B3, 图01-B2",
+      "visualCharacteristics": "浅黄米白色均匀细土豆丝、干辣椒碎",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 148,
+        "proteinDg": 22,
+        "fatDg": 72,
+        "carbDg": 189
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "去皮马铃薯细丝110g + 烹调植物油7g + 干椒食盐醋3g(成品净重约112g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图03-B5等7张照片均匀细土豆丝外观推导；淀粉含量高，吸油中等；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "去皮马铃薯细丝95g + 烹调植物油5g + 干椒食盐醋2g(成品净重约95g，少油控量)",
+          "energyKcal": 118,
+          "proteinDg": 19,
+          "fatDg": 52,
+          "carbDg": 163
+        },
+        "central": {
+          "portionAssumption": "去皮马铃薯细丝110g + 烹调植物油7g + 干椒食盐醋3g(成品净重约112g，典型出餐份量)",
+          "energyKcal": 148,
+          "proteinDg": 22,
+          "fatDg": 72,
+          "carbDg": 189
+        },
+        "high": {
+          "portionAssumption": "去皮马铃薯细丝130g + 烹调植物油9g + 干椒食盐醋3g(成品净重约132g，满勺偏油)",
+          "energyKcal": 181,
+          "proteinDg": 26,
+          "fatDg": 93,
+          "carbDg": 224
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "土豆",
+          "weightG": 110,
+          "source": "中国食物成分表第6版第一册 02-1-101",
+          "energyKcal": 84.7,
+          "proteinG": 2.2,
+          "fatG": 0.22,
+          "carbG": 18.92
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 7,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 62.9,
+          "proteinG": 0.0,
+          "fatG": 6.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-shousibaocai",
+      "name": "手撕包菜（照片暂定名）",
+      "visualReferenceName": "手撕包菜 / 炝炒圆白菜",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-B6, 图04-B6, 图02-B2, 图05-B6 (归并06-B2/07-B2/01-B1视差)",
+      "visualCharacteristics": "浅绿与白色手撕叶片卷心菜、边缘微焦爆炒质感",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 89,
+        "proteinDg": 15,
+        "fatDg": 72,
+        "carbDg": 47
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "手撕卷心菜叶115g + 烹调植物油7g + 干椒生抽调料3g(成品净重约110g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图03-B6等手撕包菜外观推导，与旧表29之视差已完成归并；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "手撕卷心菜叶95g + 烹调植物油5g + 干椒生抽调料2g(成品净重约90g，少油爆炒)",
+          "energyKcal": 67,
+          "proteinDg": 12,
+          "fatDg": 52,
+          "carbDg": 39
+        },
+        "central": {
+          "portionAssumption": "手撕卷心菜叶115g + 烹调植物油7g + 干椒生抽调料3g(成品净重约110g，典型出餐份量)",
+          "energyKcal": 89,
+          "proteinDg": 15,
+          "fatDg": 72,
+          "carbDg": 47
+        },
+        "high": {
+          "portionAssumption": "手撕卷心菜叶130g + 烹调植物油9g + 干椒生抽调料3g(成品净重约125g，满勺偏油)",
+          "energyKcal": 111,
+          "proteinDg": 17,
+          "fatDg": 93,
+          "carbDg": 53
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "包菜",
+          "weightG": 115,
+          "source": "中国食物成分表第6版第一册 04-2-101",
+          "energyKcal": 26.4,
+          "proteinG": 1.49,
+          "fatG": 0.23,
+          "carbG": 4.71
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 7,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 62.9,
+          "proteinG": 0.0,
+          "fatG": 6.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-shaoqianzhang",
+      "name": "烧千张（照片暂定名）",
+      "visualReferenceName": "烧千张 / 烧豆皮",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-B8, 图02-B4, 图05-B8 (归并06-B2/07-B2/01-B1视差)",
+      "visualCharacteristics": "浅米白色长方形平整折叠薄千张/豆皮片、清淡汤汁",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（豆制品，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 282,
+        "proteinDg": 221,
+        "fatDg": 163,
+        "carbDg": 77
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟千张片90g + 烹调植物油5g + 红烧酱汁清汤20g(成品净重约115g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图04-B8折叠片状浅色豆皮外观推导；千张原生蛋白质与植物脂肪高；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟千张片75g + 烹调植物油4g + 红烧酱汁清汤16g(成品净重约95g，少汤控油)",
+          "energyKcal": 234,
+          "proteinDg": 184,
+          "fatDg": 134,
+          "carbDg": 64
+        },
+        "central": {
+          "portionAssumption": "熟千张片90g + 烹调植物油5g + 红烧酱汁清汤20g(成品净重约115g，典型出餐份量)",
+          "energyKcal": 282,
+          "proteinDg": 221,
+          "fatDg": 163,
+          "carbDg": 77
+        },
+        "high": {
+          "portionAssumption": "熟千张片105g + 烹调植物油7g + 红烧酱汁清汤25g(成品净重约137g，满勺多汁)",
+          "energyKcal": 340,
+          "proteinDg": 258,
+          "fatDg": 201,
+          "carbDg": 90
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "千张",
+          "weightG": 90,
+          "source": "中国食物成分表第6版第一册 03-3-102",
+          "energyKcal": 235.8,
+          "proteinG": 22.05,
+          "fatG": 11.25,
+          "carbG": 7.38
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 45.0,
+          "proteinG": 0.0,
+          "fatG": 5.0,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 2.0,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 1.7,
+          "proteinG": 0.08,
+          "fatG": 0.01,
+          "carbG": 0.32
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-fengweiqiezi",
+      "name": "风味茄子（照片暂定名）",
+      "visualReferenceName": "风味茄子 / 脆皮风味茄条",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-B9, 图02-B5, 图05-B9, 图06-B0, 图07-B0",
+      "visualCharacteristics": "深褐色焦脆油炸茄条、焦糖脆壳、干红椒段、白芝麻",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（蔬菜深加工，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 184,
+        "proteinDg": 12,
+        "fatDg": 132,
+        "carbDg": 152
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "茄子条85g + 淀粉8g + 烹调植物油13g + 白糖4g + 调料酱汁5g(成品净重约115g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图04-B9等油炸脆皮茄条外观推导；裹淀粉油炸加糖，热量显著高于普通蔬菜；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "茄子条70g + 淀粉6g + 烹调植物油10g + 白糖3g + 调料酱汁4g(成品净重约93g，低油炸挂糊)",
+          "energyKcal": 142,
+          "proteinDg": 9,
+          "fatDg": 102,
+          "carbDg": 117
+        },
+        "central": {
+          "portionAssumption": "茄子条85g + 淀粉8g + 烹调植物油13g + 白糖4g + 调料酱汁5g(成品净重约115g，典型出餐份量)",
+          "energyKcal": 184,
+          "proteinDg": 12,
+          "fatDg": 132,
+          "carbDg": 152
+        },
+        "high": {
+          "portionAssumption": "茄子条100g + 淀粉10g + 烹调植物油16g + 白糖5g + 调料酱汁6g(成品净重约137g，重油脆壳浓汁)",
+          "energyKcal": 227,
+          "proteinDg": 14,
+          "fatDg": 162,
+          "carbDg": 186
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "茄子",
+          "weightG": 85,
+          "source": "中国食物成分表第6版第一册 04-5-101",
+          "energyKcal": 19.6,
+          "proteinG": 0.94,
+          "fatG": 0.17,
+          "carbG": 3.57
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 27.7,
+          "proteinG": 0.02,
+          "fatG": 0.01,
+          "carbG": 6.8
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 13,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 116.9,
+          "proteinG": 0.0,
+          "fatG": 12.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 16.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 3.99
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 4.2,
+          "proteinG": 0.2,
+          "fatG": 0.03,
+          "carbG": 0.8
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-chaooupian",
+      "name": "炒藕片（照片暂定名）",
+      "visualReferenceName": "炒藕片 / 家常藕片",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-B4, 图07-B4, 图01-B3",
+      "visualCharacteristics": "圆片多孔莲藕薄片、酱香微焦浅汁",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 136,
+        "proteinDg": 22,
+        "fatDg": 62,
+        "carbDg": 176
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "鲜莲藕切片110g + 烹调植物油6g + 生抽食盐调料4g(成品净重约115g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图06-B4等多孔圆藕片外观推导；莲藕淀粉含量较高，口感微脆；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "鲜莲藕切片90g + 烹调植物油4.5g + 生抽食盐调料3g(成品净重约95g，少油翻炒)",
+          "energyKcal": 108,
+          "proteinDg": 18,
+          "fatDg": 47,
+          "carbDg": 144
+        },
+        "central": {
+          "portionAssumption": "鲜莲藕切片110g + 烹调植物油6g + 生抽食盐调料4g(成品净重约115g，典型出餐份量)",
+          "energyKcal": 136,
+          "proteinDg": 22,
+          "fatDg": 62,
+          "carbDg": 176
+        },
+        "high": {
+          "portionAssumption": "鲜莲藕切片125g + 烹调植物油8g + 生抽食盐调料5g(成品净重约133g，满勺偏油)",
+          "energyKcal": 166,
+          "proteinDg": 25,
+          "fatDg": 83,
+          "carbDg": 200
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "莲藕",
+          "weightG": 110,
+          "source": "中国食物成分表第6版第一册 04-3-101",
+          "energyKcal": 80.3,
+          "proteinG": 2.09,
+          "fatG": 0.22,
+          "carbG": 17.16
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 2.5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 2.1,
+          "proteinG": 0.1,
+          "fatG": 0.01,
+          "carbG": 0.4
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-hongshaodoujinquan",
+      "name": "红烧豆筋圈（照片暂定名）",
+      "visualReferenceName": "红烧豆筋圈 / 红烧面筋卷",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-B5, 图07-B5, 图01-B4, 图08-B0",
+      "visualCharacteristics": "螺旋中空卷筒状豆筋圈/面筋卷、红烧酱汁",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（豆制品/面筋，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 190,
+        "proteinDg": 214,
+        "fatDg": 65,
+        "carbDg": 118
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "水发豆筋卷90g + 烹调植物油6g + 红烧酱汁芡20g(成品净重约115g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图06-B5等螺旋卷筒多孔外观推导，以水面筋/豆筋基准计算；吸附红烧汁；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "水发豆筋卷75g + 烹调植物油4.5g + 红烧酱汁芡15g(成品净重约94g，少汤控油)",
+          "energyKcal": 153,
+          "proteinDg": 178,
+          "fatDg": 49,
+          "carbDg": 98
+        },
+        "central": {
+          "portionAssumption": "水发豆筋卷90g + 烹调植物油6g + 红烧酱汁芡20g(成品净重约115g，典型出餐份量)",
+          "energyKcal": 190,
+          "proteinDg": 214,
+          "fatDg": 65,
+          "carbDg": 118
+        },
+        "high": {
+          "portionAssumption": "水发豆筋卷105g + 烹调植物油8g + 红烧酱汁芡25g(成品净重约137g，多汁重味)",
+          "energyKcal": 231,
+          "proteinDg": 250,
+          "fatDg": 86,
+          "carbDg": 139
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "豆筋圈",
+          "weightG": 90,
+          "source": "中国食物成分表第6版第一册 01-4-103 (水面筋/水发豆筋)",
+          "energyKcal": 130.5,
+          "proteinG": 21.15,
+          "fatG": 0.45,
+          "carbG": 10.8
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 5.1,
+          "proteinG": 0.24,
+          "fatG": 0.03,
+          "carbG": 0.96
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-chao-dongguapian",
+      "name": "清炒冬瓜片（照片暂定名）",
+      "visualReferenceName": "清炒冬瓜片 / 虾皮冬瓜(素装)",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-B6, 图07-B6, 图01-B5, 图08-B1",
+      "visualCharacteristics": "半透明冬瓜薄片、清汤、葱花",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 59,
+        "proteinDg": 5,
+        "fatDg": 52,
+        "carbDg": 28
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生冬瓜切片115g + 烹调植物油5g + 葱花盐清汤10g(成品净重约128g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图06-B6半透明冬瓜片外观推导；冬瓜水分极高能量低；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "生冬瓜切片95g + 烹调植物油3.5g + 葱花盐清汤8g(成品净重约105g，少油微汤)",
+          "energyKcal": 43,
+          "proteinDg": 4,
+          "fatDg": 37,
+          "carbDg": 23
+        },
+        "central": {
+          "portionAssumption": "生冬瓜切片115g + 烹调植物油5g + 葱花盐清汤10g(成品净重约128g，典型出餐份量)",
+          "energyKcal": 59,
+          "proteinDg": 5,
+          "fatDg": 52,
+          "carbDg": 28
+        },
+        "high": {
+          "portionAssumption": "生冬瓜切片135g + 烹调植物油6.5g + 葱花盐清汤12g(成品净重约150g，满勺多汁)",
+          "energyKcal": 75,
+          "proteinDg": 5,
+          "fatDg": 68,
+          "carbDg": 32
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "冬瓜",
+          "weightG": 115,
+          "source": "中国食物成分表第6版第一册 04-5-106",
+          "energyKcal": 13.8,
+          "proteinG": 0.46,
+          "fatG": 0.23,
+          "carbG": 2.76
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 45.0,
+          "proteinG": 0.0,
+          "fatG": 5.0,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-hongshaoqiezi",
+      "name": "红烧茄子（照片暂定名）",
+      "visualReferenceName": "红烧茄子 / 家常茄子",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-B7, 图02-B3, 图05-B7, 图01-B6, 图08-B2",
+      "visualCharacteristics": "深紫皮滚刀块、深褐浓油赤酱软烂吸汁质感、蒜碎（疑含微量肉末）",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（疑含微量肉末调味，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 157,
+        "proteinDg": 24,
+        "fatDg": 125,
+        "carbDg": 86
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "茄子滚刀块100g + 猪瘦肉末5g + 淀粉4g + 烹调植物油12g + 红烧酱汁10g(成品净重约128g，典型红烧出餐)",
+        "estimated": true,
+        "note": "依据图04-B7等深酱色软烂茄子外观推导；茄子组织疏松吸油强，含少量肉末提味；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "茄子滚刀块85g + 猪瘦肉末4g + 淀粉3g + 烹调植物油9g + 红烧酱汁8g(成品净重约108g，控油慢烧)",
+          "energyKcal": 121,
+          "proteinDg": 20,
+          "fatDg": 94,
+          "carbDg": 70
+        },
+        "central": {
+          "portionAssumption": "茄子滚刀块100g + 猪瘦肉末5g + 淀粉4g + 烹调植物油12g + 红烧酱汁10g(成品净重约128g，典型红烧出餐)",
+          "energyKcal": 157,
+          "proteinDg": 24,
+          "fatDg": 125,
+          "carbDg": 86
+        },
+        "high": {
+          "portionAssumption": "茄子滚刀块115g + 猪瘦肉末6g + 淀粉5g + 烹调植物油15g + 红烧酱汁12g(成品净重约150g，浓油赤酱重油)",
+          "energyKcal": 194,
+          "proteinDg": 28,
+          "fatDg": 156,
+          "carbDg": 104
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "茄子",
+          "weightG": 100,
+          "source": "中国食物成分表第6版第一册 04-5-101",
+          "energyKcal": 23.0,
+          "proteinG": 1.1,
+          "fatG": 0.2,
+          "carbG": 4.2
+        },
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 7.2,
+          "proteinG": 1.02,
+          "fatG": 0.31,
+          "carbG": 0.08
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 13.8,
+          "proteinG": 0.01,
+          "fatG": 0.0,
+          "carbG": 3.4
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 12,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 107.9,
+          "proteinG": 0.0,
+          "fatG": 11.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 5.1,
+          "proteinG": 0.24,
+          "fatG": 0.03,
+          "carbG": 0.96
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-mapodoufu",
+      "name": "麻婆豆腐（照片暂定名）",
+      "visualReferenceName": "麻婆豆腐 / 家常豆腐",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-B1, 图07-B1, 图01-B7, 图08-B3",
+      "visualCharacteristics": "白色豆腐方丁、红油麻辣汤汁、花椒粉、葱花",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "未确认（豆制品，含肉末，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 209,
+        "proteinDg": 124,
+        "fatDg": 127,
+        "carbDg": 66
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "北豆腐丁110g + 猪瘦肉末10g + 烹调植物油8g + 红油豆瓣酱汁淀粉15g(成品净重约140g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图06-B1等红油豆腐方块外观推导；以北豆腐为基准，辅以猪肉碎与红油芡汁；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "北豆腐丁90g + 猪瘦肉末8g + 烹调植物油6g + 红油豆瓣酱汁淀粉12g(成品净重约115g，少油轻辣)",
+          "energyKcal": 164,
+          "proteinDg": 101,
+          "fatDg": 98,
+          "carbDg": 50
+        },
+        "central": {
+          "portionAssumption": "北豆腐丁110g + 猪瘦肉末10g + 烹调植物油8g + 红油豆瓣酱汁淀粉15g(成品净重约140g，典型出餐份量)",
+          "energyKcal": 209,
+          "proteinDg": 124,
+          "fatDg": 127,
+          "carbDg": 66
+        },
+        "high": {
+          "portionAssumption": "北豆腐丁130g + 猪瘦肉末12g + 烹调植物油10g + 红油豆瓣酱汁淀粉18g(成品净重约168g，重油麻辣满勺)",
+          "energyKcal": 253,
+          "proteinDg": 146,
+          "fatDg": 156,
+          "carbDg": 82
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "北豆腐",
+          "weightG": 110,
+          "source": "中国食物成分表第6版第一册 03-2-101",
+          "energyKcal": 107.8,
+          "proteinG": 10.12,
+          "fatG": 4.07,
+          "carbG": 3.08
+        },
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 14.3,
+          "proteinG": 2.03,
+          "fatG": 0.62,
+          "carbG": 0.15
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 10.4,
+          "proteinG": 0.01,
+          "fatG": 0.0,
+          "carbG": 2.55
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 4.2,
+          "proteinG": 0.2,
+          "fatG": 0.03,
+          "carbG": 0.8
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-doujiaorousi",
+      "name": "豆角炒肉丝（照片暂定名）",
+      "visualReferenceName": "豆角炒肉丝 / 豇豆肉丝",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-M7, 图02-M4, 图05-M7, 图06-M0",
+      "visualCharacteristics": "鲜绿长豆角短截、清晰散布长猪肉丝/肉末、蒜碎",
+      "matchWithBoard": "招牌无同名主菜；含肉丝，非纯素",
+      "setVegEligibility": "未确认（含肉丝，非纯素，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 127,
+        "proteinDg": 74,
+        "fatDg": 87,
+        "carbDg": 48
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生豇豆节90g + 猪瘦肉丝25g + 烹调植物油7g + 蒜碎生抽调料3g(成品净重约122g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图04-M7等可见长条绿豆角与明显肉丝；如实按混合归类，严禁伪称纯素；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "生豇豆节75g + 猪瘦肉丝20g + 烹调植物油5g + 蒜碎生抽调料2.5g(成品净重约100g，轻油翻炒)",
+          "energyKcal": 97,
+          "proteinDg": 60,
+          "fatDg": 64,
+          "carbDg": 40
+        },
+        "central": {
+          "portionAssumption": "生豇豆节90g + 猪瘦肉丝25g + 烹调植物油7g + 蒜碎生抽调料3g(成品净重约122g，典型出餐份量)",
+          "energyKcal": 127,
+          "proteinDg": 74,
+          "fatDg": 87,
+          "carbDg": 48
+        },
+        "high": {
+          "portionAssumption": "生豇豆节105g + 猪瘦肉丝30g + 烹调植物油9g + 蒜碎生抽调料3.5g(成品净重约144g，肉多偏油)",
+          "energyKcal": 157,
+          "proteinDg": 88,
+          "fatDg": 111,
+          "carbDg": 57
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "豇豆",
+          "weightG": 90,
+          "source": "中国食物成分表第6版第一册 04-6-101",
+          "energyKcal": 27.0,
+          "proteinG": 2.25,
+          "fatG": 0.18,
+          "carbG": 4.14
+        },
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 35.8,
+          "proteinG": 5.08,
+          "fatG": 1.55,
+          "carbG": 0.38
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 7,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 62.9,
+          "proteinG": 0.0,
+          "fatG": 6.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 1.7,
+          "proteinG": 0.08,
+          "fatG": 0.01,
+          "carbG": 0.32
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-jinzhengurousi",
+      "name": "金针菇肉丝（照片暂定名）",
+      "visualReferenceName": "金针菇肉丝 / 金针菇炒肉",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-M5, 图02-M2, 图05-M5",
+      "visualCharacteristics": "浅白细长金针菇、散布细肉丝、微红油清亮汤汁",
+      "matchWithBoard": "招牌无同名主菜；含肉丝，非纯素",
+      "setVegEligibility": "未确认（含肉丝，非纯素，无套餐素菜凭据）",
+      "nutrition": {
+        "energyKcal": 113,
+        "proteinDg": 72,
+        "fatDg": 79,
+        "carbDg": 41
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "金针菇85g + 猪瘦肉丝25g + 烹调植物油6g + 清亮汤汁调味10g(成品净重约123g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图04-M5等可见细白金针菇散布细猪肉丝；含肉如实标混合，非纯素；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "金针菇70g + 猪瘦肉丝20g + 烹调植物油4.5g + 清亮汤汁调味8g(成品净重约100g，微汤少油)",
+          "energyKcal": 89,
+          "proteinDg": 58,
+          "fatDg": 60,
+          "carbDg": 33
+        },
+        "central": {
+          "portionAssumption": "金针菇85g + 猪瘦肉丝25g + 烹调植物油6g + 清亮汤汁调味10g(成品净重约123g，典型出餐份量)",
+          "energyKcal": 113,
+          "proteinDg": 72,
+          "fatDg": 79,
+          "carbDg": 41
+        },
+        "high": {
+          "portionAssumption": "金针菇100g + 猪瘦肉丝30g + 烹调植物油8g + 清亮汤汁调味12g(成品净重约146g，肉丝充足偏油)",
+          "energyKcal": 143,
+          "proteinDg": 86,
+          "fatDg": 103,
+          "carbDg": 49
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "金针菇",
+          "weightG": 85,
+          "source": "中国食物成分表第6版第一册 05-1-103",
+          "energyKcal": 22.1,
+          "proteinG": 2.04,
+          "fatG": 0.34,
+          "carbG": 3.4
+        },
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 35.8,
+          "proteinG": 5.08,
+          "fatG": 1.55,
+          "carbG": 0.38
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 1.7,
+          "proteinG": 0.08,
+          "fatG": 0.01,
+          "carbG": 0.32
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-yumi-rouli",
+      "name": "玉米肉粒（照片暂定名）",
+      "visualReferenceName": "玉米肉粒 / 玉米炒肉丁",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-F2, 图07-F1",
+      "visualCharacteristics": "鲜黄甜玉米粒、暗褐色肉丁、少量青椒碎",
+      "matchWithBoard": "招牌无同名主菜",
+      "setVegEligibility": "非素菜（含肉丁混合菜）",
+      "nutrition": {
+        "energyKcal": 186,
+        "proteinDg": 88,
+        "fatDg": 88,
+        "carbDg": 191
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟甜玉米粒80g + 猪瘦肉丁30g + 青椒红椒10g + 烹调植物油6g(成品净重约123g，典型出餐份量)",
+        "estimated": true,
+        "note": "依据图06-F2/07-F1金黄玉米与清晰肉丁推导；玉米兼具碳水，肉丁补充蛋白质；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟甜玉米粒65g + 猪瘦肉丁25g + 青椒红椒8g + 烹调植物油4.5g(成品净重约100g，少油轻炒)",
+          "energyKcal": 148,
+          "proteinDg": 73,
+          "fatDg": 68,
+          "carbDg": 155
+        },
+        "central": {
+          "portionAssumption": "熟甜玉米粒80g + 猪瘦肉丁30g + 青椒红椒10g + 烹调植物油6g(成品净重约123g，典型出餐份量)",
+          "energyKcal": 186,
+          "proteinDg": 88,
+          "fatDg": 88,
+          "carbDg": 191
+        },
+        "high": {
+          "portionAssumption": "熟甜玉米粒95g + 猪瘦肉丁35g + 青椒红椒12g + 烹调植物油8g(成品净重约146g，满勺偏油)",
+          "energyKcal": 227,
+          "proteinDg": 104,
+          "fatDg": 113,
+          "carbDg": 227
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "甜玉米粒",
+          "weightG": 80,
+          "source": "中国食物成分表第6版第一册 01-2-102",
+          "energyKcal": 86.4,
+          "proteinG": 2.64,
+          "fatG": 0.96,
+          "carbG": 18.24
+        },
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 42.9,
+          "proteinG": 6.09,
+          "fatG": 1.86,
+          "carbG": 0.45
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 2.3,
+          "proteinG": 0.12,
+          "fatG": 0.02,
+          "carbG": 0.42
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-xianrou-oujia",
+      "name": "鲜肉藕夹（照片暂定名）",
+      "visualReferenceName": "鲜肉藕夹 / 炸藕盒",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图01-M5, 图08-M2",
+      "visualCharacteristics": "金黄酥脆圆盘夹肉藕饼、同心孔洞、橙红芡汁、芝麻",
+      "matchWithBoard": "招牌无同名主菜（可能为酸甜油炸特色菜）",
+      "setVegEligibility": "非素菜（裹肉夹油炸混合菜）",
+      "nutrition": {
+        "energyKcal": 286,
+        "proteinDg": 52,
+        "fatDg": 212,
+        "carbDg": 216
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "莲藕切片55g + 猪五花肉馅30g + 挂糊面粉淀粉10g + 油炸吸油10g + 芡汁10g(成品约2只典型大小，净重约115g)",
+        "estimated": true,
+        "note": "依据图01-M5/08-M2金黄圆形夹肉饼外观推导；双层藕片夹五花肉馅油炸并浇汁；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "莲藕切片45g + 猪五花肉馅25g + 挂糊面粉淀粉8g + 油炸吸油8g + 芡汁8g(成品约2只较薄，净重约94g)",
+          "energyKcal": 231,
+          "proteinDg": 43,
+          "fatDg": 174,
+          "carbDg": 171
+        },
+        "central": {
+          "portionAssumption": "莲藕切片55g + 猪五花肉馅30g + 挂糊面粉淀粉10g + 油炸吸油10g + 芡汁10g(成品约2只典型大小，净重约115g)",
+          "energyKcal": 286,
+          "proteinDg": 52,
+          "fatDg": 212,
+          "carbDg": 216
+        },
+        "high": {
+          "portionAssumption": "莲藕切片65g + 猪五花肉馅35g + 挂糊面粉淀粉12g + 油炸吸油13g + 芡汁12g(成品约2只厚实肉馅，净重约137g)",
+          "energyKcal": 349,
+          "proteinDg": 61,
+          "fatDg": 261,
+          "carbDg": 261
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "莲藕",
+          "weightG": 55,
+          "source": "中国食物成分表第6版第一册 04-3-101",
+          "energyKcal": 40.2,
+          "proteinG": 1.04,
+          "fatG": 0.11,
+          "carbG": 8.58
+        },
+        {
+          "ingredient": "猪五花肉",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 08-1-104",
+          "energyKcal": 104.7,
+          "proteinG": 3.96,
+          "fatG": 11.1,
+          "carbG": 0.72
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 34.6,
+          "proteinG": 0.02,
+          "fatG": 0.01,
+          "carbG": 8.5
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 89.9,
+          "proteinG": 0.0,
+          "fatG": 9.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 4.2,
+          "proteinG": 0.2,
+          "fatG": 0.03,
+          "carbG": 0.8
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 12.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 2.99
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-gongbaojiding",
+      "name": "宫保鸡丁（照片暂定名）",
+      "visualReferenceName": "宫保鸡丁",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-F2, 图04-F2, 图06-M3, 图07-M2, 图01-M1",
+      "visualCharacteristics": "鸡肉丁、炸花生米、黄瓜丁/西葫芦丁、红椒段、红油浓酱",
+      "matchWithBoard": "可能对应【宫保鸡丁】（T03a招牌11元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 268,
+        "proteinDg": 189,
+        "fatDg": 163,
+        "carbDg": 98
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "鸡胸肉丁60g + 炸花生米15g + 黄瓜丁25g + 烹调植物油8g + 白糖3g + 淀粉2g + 酱油汁8g(成品净重约120g)",
+        "estimated": true,
+        "note": "依据图03-F2等5张照片红亮鸡丁与花生外观推导；花生米热量与脂肪贡献显著；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "鸡胸肉丁50g + 炸花生米12g + 黄瓜丁20g + 烹调植物油6g + 白糖2g + 淀粉1.5g + 酱油汁6g(成品净重约95g)",
+          "energyKcal": 212,
+          "proteinDg": 156,
+          "fatDg": 127,
+          "carbDg": 73
+        },
+        "central": {
+          "portionAssumption": "鸡胸肉丁60g + 炸花生米15g + 黄瓜丁25g + 烹调植物油8g + 白糖3g + 淀粉2g + 酱油汁8g(成品净重约120g)",
+          "energyKcal": 268,
+          "proteinDg": 189,
+          "fatDg": 163,
+          "carbDg": 98
+        },
+        "high": {
+          "portionAssumption": "鸡胸肉丁70g + 炸花生米18g + 黄瓜丁30g + 烹调植物油10g + 白糖4g + 淀粉2.5g + 酱油汁10g(成品净重约142g)",
+          "energyKcal": 325,
+          "proteinDg": 222,
+          "fatDg": 200,
+          "carbDg": 123
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "鸡胸肉",
+          "weightG": 60,
+          "source": "中国食物成分表第6版第一册 09-1-101",
+          "energyKcal": 79.8,
+          "proteinG": 14.76,
+          "fatG": 1.5,
+          "carbG": 0.42
+        },
+        {
+          "ingredient": "炸花生米",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 06-1-102",
+          "energyKcal": 87.0,
+          "proteinG": 3.6,
+          "fatG": 6.75,
+          "carbG": 2.7
+        },
+        {
+          "ingredient": "黄瓜",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 04-5-102",
+          "energyKcal": 4.0,
+          "proteinG": 0.2,
+          "fatG": 0.05,
+          "carbG": 0.72
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 12.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 2.99
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 6.9,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 1.7
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 6.8,
+          "proteinG": 0.32,
+          "fatG": 0.04,
+          "carbG": 1.28
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-yuxiangrousi",
+      "name": "鱼香肉丝（照片暂定名）",
+      "visualReferenceName": "鱼香肉丝",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-F3, 图04-F3, 图08-B4",
+      "visualCharacteristics": "细肉丝、细胡萝卜丝、黑木耳丝、橙红红油芡汁",
+      "matchWithBoard": "可能对应【鱼香肉丝】（T03a招牌11元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 190,
+        "proteinDg": 110,
+        "fatDg": 112,
+        "carbDg": 111
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "猪瘦肉丝50g + 胡萝卜丝30g + 水发木耳丝20g + 烹调植物油8g + 白糖4g + 淀粉3g + 鱼香酱汁7g(成品净重约120g)",
+        "estimated": true,
+        "note": "依据图03-F3/04-F3细切肉丝木耳胡萝卜外观推导；典型酸甜微辣芡汁；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "猪瘦肉丝40g + 胡萝卜丝25g + 水发木耳丝15g + 烹调植物油6g + 白糖3g + 淀粉2g + 鱼香酱汁5g(成品净重约94g)",
+          "energyKcal": 145,
+          "proteinDg": 88,
+          "fatDg": 86,
+          "carbDg": 82
+        },
+        "central": {
+          "portionAssumption": "猪瘦肉丝50g + 胡萝卜丝30g + 水发木耳丝20g + 烹调植物油8g + 白糖4g + 淀粉3g + 鱼香酱汁7g(成品净重约120g)",
+          "energyKcal": 190,
+          "proteinDg": 110,
+          "fatDg": 112,
+          "carbDg": 111
+        },
+        "high": {
+          "portionAssumption": "猪瘦肉丝60g + 胡萝卜丝35g + 水发木耳丝25g + 烹调植物油10g + 白糖5g + 淀粉4g + 鱼香酱汁9g(成品净重约146g)",
+          "energyKcal": 234,
+          "proteinDg": 133,
+          "fatDg": 139,
+          "carbDg": 139
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 50,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 71.5,
+          "proteinG": 10.15,
+          "fatG": 3.1,
+          "carbG": 0.75
+        },
+        {
+          "ingredient": "胡萝卜",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 04-3-105",
+          "energyKcal": 9.6,
+          "proteinG": 0.3,
+          "fatG": 0.06,
+          "carbG": 1.95
+        },
+        {
+          "ingredient": "黑木耳",
+          "weightG": 20,
+          "source": "中国食物成分表第6版第一册 05-2-101 (水发)",
+          "energyKcal": 4.2,
+          "proteinG": 0.3,
+          "fatG": 0.04,
+          "carbG": 0.7
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 16.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 3.99
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 10.4,
+          "proteinG": 0.01,
+          "fatG": 0.0,
+          "carbG": 2.55
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 7,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 6.0,
+          "proteinG": 0.28,
+          "fatG": 0.04,
+          "carbG": 1.12
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-galijirou",
+      "name": "咖喱鸡肉（照片暂定名）",
+      "visualReferenceName": "咖喱鸡肉 / 咖喱土豆鸡",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-F7, 图02-F3, 图05-F7, 图07-F5, 图01-F4, 图08-F2",
+      "visualCharacteristics": "带皮鸡块、滚刀土豆块、胡萝卜片、浓稠黄色咖喱汁",
+      "matchWithBoard": "可能对应【咖喱鸡肉】（T03a招牌12元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 198,
+        "proteinDg": 109,
+        "fatDg": 130,
+        "carbDg": 98
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "去骨带皮鸡腿肉块60g + 熟土豆块40g + 胡萝卜片15g + 烹调植物油4g + 复合咖喱汁15g(成品净重约132g)",
+        "estimated": true,
+        "note": "依据图04-F7等6张照片浓稠黄褐色咖喱肉块推导；土豆与鸡腿肉块大小均匀；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "去骨带皮鸡腿肉块50g + 熟土豆块30g + 胡萝卜片12g + 烹调植物油3g + 复合咖喱汁12g(成品净重约105g)",
+          "energyKcal": 159,
+          "proteinDg": 90,
+          "fatDg": 104,
+          "carbDg": 75
+        },
+        "central": {
+          "portionAssumption": "去骨带皮鸡腿肉块60g + 熟土豆块40g + 胡萝卜片15g + 烹调植物油4g + 复合咖喱汁15g(成品净重约132g)",
+          "energyKcal": 198,
+          "proteinDg": 109,
+          "fatDg": 130,
+          "carbDg": 98
+        },
+        "high": {
+          "portionAssumption": "去骨带皮鸡腿肉块70g + 熟土豆块50g + 胡萝卜片18g + 烹调植物油5g + 复合咖喱汁18g(成品净重约159g)",
+          "energyKcal": 238,
+          "proteinDg": 127,
+          "fatDg": 155,
+          "carbDg": 121
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "带皮鸡腿肉",
+          "weightG": 60,
+          "source": "中国食物成分表第6版第一册 09-1-103",
+          "energyKcal": 108.6,
+          "proteinG": 9.6,
+          "fatG": 7.8,
+          "carbG": 0.12
+        },
+        {
+          "ingredient": "土豆",
+          "weightG": 40,
+          "source": "中国食物成分表第6版第一册 02-1-101",
+          "energyKcal": 30.8,
+          "proteinG": 0.8,
+          "fatG": 0.08,
+          "carbG": 6.88
+        },
+        {
+          "ingredient": "胡萝卜",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 04-3-105",
+          "energyKcal": 4.8,
+          "proteinG": 0.15,
+          "fatG": 0.03,
+          "carbG": 0.97
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 36.0,
+          "proteinG": 0.0,
+          "fatG": 4.0,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "咖喱汁",
+          "weightG": 15,
+          "source": "通用复合咖喱调料数据库标准",
+          "energyKcal": 18.0,
+          "proteinG": 0.3,
+          "fatG": 1.05,
+          "carbG": 1.8
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-niangao-laziji",
+      "name": "年糕辣子鸡（照片暂定名）",
+      "visualReferenceName": "年糕辣子鸡 / 干煸鸡块",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-M1, 图04-M1",
+      "visualCharacteristics": "炸鸡块、白色半透明圆柱年糕条、青红椒片",
+      "matchWithBoard": "可能对应【干煸鸡块】（T03a招牌12元档）或自选特色菜",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 243,
+        "proteinDg": 149,
+        "fatDg": 116,
+        "carbDg": 184
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "炸鸡胸肉块55g + 水磨年糕条40g + 青椒红椒片15g + 烹调植物油10g + 淀粉3g + 调料酱汁5g(成品净重约126g)",
+        "estimated": true,
+        "note": "依据图03-M1/04-M1炸鸡块与白色圆柱形年糕混炒推导；年糕贡献高碳水；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "炸鸡胸肉块45g + 水磨年糕条30g + 青椒红椒片12g + 烹调植物油8g + 淀粉2g + 调料酱汁4g(成品净重约100g)",
+          "energyKcal": 191,
+          "proteinDg": 121,
+          "fatDg": 93,
+          "carbDg": 137
+        },
+        "central": {
+          "portionAssumption": "炸鸡胸肉块55g + 水磨年糕条40g + 青椒红椒片15g + 烹调植物油10g + 淀粉3g + 调料酱汁5g(成品净重约126g)",
+          "energyKcal": 243,
+          "proteinDg": 149,
+          "fatDg": 116,
+          "carbDg": 184
+        },
+        "high": {
+          "portionAssumption": "炸鸡胸肉块65g + 水磨年糕条50g + 青椒红椒片18g + 烹调植物油12g + 淀粉4g + 调料酱汁6g(成品净重约153g)",
+          "energyKcal": 294,
+          "proteinDg": 177,
+          "fatDg": 139,
+          "carbDg": 231
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "鸡胸肉",
+          "weightG": 55,
+          "source": "中国食物成分表第6版第一册 09-1-101",
+          "energyKcal": 73.2,
+          "proteinG": 13.53,
+          "fatG": 1.38,
+          "carbG": 0.39
+        },
+        {
+          "ingredient": "水磨年糕",
+          "weightG": 40,
+          "source": "中国食物成分表第6版第一册 01-1-108",
+          "energyKcal": 61.6,
+          "proteinG": 1.0,
+          "fatG": 0.2,
+          "carbG": 14.0
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 3.4,
+          "proteinG": 0.18,
+          "fatG": 0.03,
+          "carbG": 0.63
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 89.9,
+          "proteinG": 0.0,
+          "fatG": 9.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 10.4,
+          "proteinG": 0.01,
+          "fatG": 0.0,
+          "carbG": 2.55
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 4.2,
+          "proteinG": 0.2,
+          "fatG": 0.03,
+          "carbG": 0.8
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-sanxian-zhurouwan",
+      "name": "三鲜猪肉丸（照片暂定名）",
+      "visualReferenceName": "三鲜猪肉丸 / 三鲜丸子",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-M3, 图04-M3, 图08-F3 (06-F3/07-F2/01-F1视差)",
+      "visualCharacteristics": "汆熟猪肉丸、黑木耳、小油菜、香菇、骨汤",
+      "matchWithBoard": "可能对应【三鲜猪肉丸】（T03a招牌11元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 156,
+        "proteinDg": 84,
+        "fatDg": 116,
+        "carbDg": 50
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟猪肉丸约3粒65g + 小白菜25g + 水发木耳15g + 熟香菇15g + 骨汤微油15g(烹调油2g，成品净重约132g)",
+        "estimated": true,
+        "note": "依据图03-M3等圆肉丸配青菜木耳香菇汤菜推导；按典型三鲜调味估算；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟猪肉丸约2-3粒50g + 小白菜20g + 水发木耳10g + 熟香菇10g + 骨汤微油12g(烹调油1.5g，成品净重约102g)",
+          "energyKcal": 119,
+          "proteinDg": 64,
+          "fatDg": 89,
+          "carbDg": 37
+        },
+        "central": {
+          "portionAssumption": "熟猪肉丸约3粒65g + 小白菜25g + 水发木耳15g + 熟香菇15g + 骨汤微油15g(烹调油2g，成品净重约132g)",
+          "energyKcal": 156,
+          "proteinDg": 84,
+          "fatDg": 116,
+          "carbDg": 50
+        },
+        "high": {
+          "portionAssumption": "熟猪肉丸约4粒80g + 小白菜30g + 水发木耳20g + 熟香菇20g + 骨汤微油18g(烹调油2.5g，成品净重约168g)",
+          "energyKcal": 192,
+          "proteinDg": 104,
+          "fatDg": 143,
+          "carbDg": 62
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪肉丸",
+          "weightG": 65,
+          "source": "中国食物成分表第6版第一册 08-6-101",
+          "energyKcal": 126.8,
+          "proteinG": 7.48,
+          "fatG": 9.43,
+          "carbG": 3.25
+        },
+        {
+          "ingredient": "小白菜",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 04-1-101",
+          "energyKcal": 3.8,
+          "proteinG": 0.38,
+          "fatG": 0.07,
+          "carbG": 0.5
+        },
+        {
+          "ingredient": "黑木耳",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 05-2-101 (水发)",
+          "energyKcal": 3.1,
+          "proteinG": 0.22,
+          "fatG": 0.03,
+          "carbG": 0.53
+        },
+        {
+          "ingredient": "香菇",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 05-1-101 (水发/鲜)",
+          "energyKcal": 3.9,
+          "proteinG": 0.33,
+          "fatG": 0.04,
+          "carbG": 0.67
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 18.0,
+          "proteinG": 0.0,
+          "fatG": 2.0,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-tudou-lachang",
+      "name": "土豆腊肠（照片暂定名）",
+      "visualReferenceName": "土豆腊肠 / 腊肠炒土豆片",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-M6, 图02-M3, 图05-M6, 图07-F4, 图01-F3",
+      "visualCharacteristics": "斜切红香肠/广式腊肠片、炸金黄土豆厚片/薯角",
+      "matchWithBoard": "可能对应【土豆腊肠】（T03a招牌12元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 271,
+        "proteinDg": 67,
+        "fatDg": 207,
+        "carbDg": 151
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟广式腊肠切片35g + 炸土豆厚片65g + 烹调植物油8g + 青椒红椒片10g(成品净重约116g)",
+        "estimated": true,
+        "note": "依据图04-M6等斜切红亮腊肠与炸土豆块推导；腊肠含较高脂肪，土豆贡献碳水；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟广式腊肠切片28g + 炸土豆厚片50g + 烹调植物油6g + 青椒红椒片8g(成品净重约90g)",
+          "energyKcal": 212,
+          "proteinDg": 53,
+          "fatDg": 162,
+          "carbDg": 117
+        },
+        "central": {
+          "portionAssumption": "熟广式腊肠切片35g + 炸土豆厚片65g + 烹调植物油8g + 青椒红椒片10g(成品净重约116g)",
+          "energyKcal": 271,
+          "proteinDg": 67,
+          "fatDg": 207,
+          "carbDg": 151
+        },
+        "high": {
+          "portionAssumption": "熟广式腊肠切片42g + 炸土豆厚片80g + 烹调植物油10g + 青椒红椒片12g(成品净重约142g)",
+          "energyKcal": 331,
+          "proteinDg": 80,
+          "fatDg": 253,
+          "carbDg": 185
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "香肠腊肠",
+          "weightG": 35,
+          "source": "中国食物成分表第6版第一册 08-7-101",
+          "energyKcal": 147.0,
+          "proteinG": 5.25,
+          "fatG": 12.6,
+          "carbG": 3.5
+        },
+        {
+          "ingredient": "土豆",
+          "weightG": 65,
+          "source": "中国食物成分表第6版第一册 02-1-101",
+          "energyKcal": 50.1,
+          "proteinG": 1.3,
+          "fatG": 0.13,
+          "carbG": 11.18
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 2.3,
+          "proteinG": 0.12,
+          "fatG": 0.02,
+          "carbG": 0.42
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-xiangchang-jidan",
+      "name": "香肠鸡蛋（照片暂定名）",
+      "visualReferenceName": "香肠鸡蛋 / 香肠炒鸡蛋",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图01-M4, 图08-M1",
+      "visualCharacteristics": "斜切粉红香肠片、嫩黄炒鸡蛋块、绿青椒块",
+      "matchWithBoard": "可能对应【香肠鸡蛋】（T03a招牌11元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 289,
+        "proteinDg": 115,
+        "fatDg": 249,
+        "carbDg": 53
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟香肠切片35g + 鲜鸡蛋炒块45g + 青椒块25g + 烹调植物油8g(成品净重约111g)",
+        "estimated": true,
+        "note": "依据图01-M4/08-M1粉红香肠片与金黄炒蛋推导；鸡蛋吸油中等，香肠富含脂质；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟香肠切片28g + 鲜鸡蛋炒块35g + 青椒块20g + 烹调植物油6g(成品净重约87g)",
+          "energyKcal": 227,
+          "proteinDg": 91,
+          "fatDg": 194,
+          "carbDg": 42
+        },
+        "central": {
+          "portionAssumption": "熟香肠切片35g + 鲜鸡蛋炒块45g + 青椒块25g + 烹调植物油8g(成品净重约111g)",
+          "energyKcal": 289,
+          "proteinDg": 115,
+          "fatDg": 249,
+          "carbDg": 53
+        },
+        "high": {
+          "portionAssumption": "熟香肠切片42g + 鲜鸡蛋炒块55g + 青椒块30g + 烹调植物油10g(成品净重约135g)",
+          "energyKcal": 352,
+          "proteinDg": 140,
+          "fatDg": 304,
+          "carbDg": 63
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "香肠腊肠",
+          "weightG": 35,
+          "source": "中国食物成分表第6版第一册 08-7-101",
+          "energyKcal": 147.0,
+          "proteinG": 5.25,
+          "fatG": 12.6,
+          "carbG": 3.5
+        },
+        {
+          "ingredient": "鸡蛋",
+          "weightG": 45,
+          "source": "中国食物成分表第6版第一册 10-1-101",
+          "energyKcal": 64.8,
+          "proteinG": 5.99,
+          "fatG": 4.28,
+          "carbG": 0.72
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 5.8,
+          "proteinG": 0.3,
+          "fatG": 0.05,
+          "carbG": 1.05
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-culiomuxu",
+      "name": "醋溜木须（照片暂定名）",
+      "visualReferenceName": "醋溜木须 / 醋熘肉片木须",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-M2, 图07-M1, 图01-M0",
+      "visualCharacteristics": "黑木耳片、嫩黄炒蛋块、肉片/鸡肉片、黄瓜片",
+      "matchWithBoard": "可能对应【醋溜木须】（T03a招牌11元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 205,
+        "proteinDg": 130,
+        "fatDg": 141,
+        "carbDg": 68
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "猪瘦肉片35g + 炒鸡蛋40g + 水发木耳20g + 黄瓜片20g + 烹调植物油8g + 醋溜芡汁8g(含淀粉2g,糖2g，成品净重约127g)",
+        "estimated": true,
+        "note": "依据图06-M2等黑木耳金黄炒蛋与肉片推导；醋酸复合芡汁；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "猪瘦肉片28g + 炒鸡蛋30g + 水发木耳15g + 黄瓜片15g + 烹调植物油6g + 醋溜芡汁6g(含淀粉1.5g,糖1.5g，成品净重约98g)",
+          "energyKcal": 156,
+          "proteinDg": 101,
+          "fatDg": 107,
+          "carbDg": 51
+        },
+        "central": {
+          "portionAssumption": "猪瘦肉片35g + 炒鸡蛋40g + 水发木耳20g + 黄瓜片20g + 烹调植物油8g + 醋溜芡汁8g(含淀粉2g,糖2g，成品净重约127g)",
+          "energyKcal": 205,
+          "proteinDg": 130,
+          "fatDg": 141,
+          "carbDg": 68
+        },
+        "high": {
+          "portionAssumption": "猪瘦肉片42g + 炒鸡蛋50g + 水发木耳25g + 黄瓜片25g + 烹调植物油10g + 醋溜芡汁10g(含淀粉2.5g,糖2.5g，成品净重约158g)",
+          "energyKcal": 254,
+          "proteinDg": 160,
+          "fatDg": 175,
+          "carbDg": 85
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 35,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 50.0,
+          "proteinG": 7.1,
+          "fatG": 2.17,
+          "carbG": 0.52
+        },
+        {
+          "ingredient": "鸡蛋",
+          "weightG": 40,
+          "source": "中国食物成分表第6版第一册 10-1-101",
+          "energyKcal": 57.6,
+          "proteinG": 5.32,
+          "fatG": 3.8,
+          "carbG": 0.64
+        },
+        {
+          "ingredient": "黑木耳",
+          "weightG": 20,
+          "source": "中国食物成分表第6版第一册 05-2-101 (水发)",
+          "energyKcal": 4.2,
+          "proteinG": 0.3,
+          "fatG": 0.04,
+          "carbG": 0.7
+        },
+        {
+          "ingredient": "黄瓜",
+          "weightG": 20,
+          "source": "中国食物成分表第6版第一册 04-5-102",
+          "energyKcal": 3.2,
+          "proteinG": 0.16,
+          "fatG": 0.04,
+          "carbG": 0.58
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 6.9,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 1.7
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 8.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 2.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 3.4,
+          "proteinG": 0.16,
+          "fatG": 0.02,
+          "carbG": 0.64
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-malaxiangguo",
+      "name": "麻辣香锅（照片暂定名）",
+      "visualReferenceName": "麻辣香锅 / 什锦干锅",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图06-M4, 图07-M3, 图01-M2",
+      "visualCharacteristics": "卷心菜、黑木耳、胡萝卜、青菜、腐竹、丸子片干锅",
+      "matchWithBoard": "可能对应【麻辣香锅】（T03a招牌11元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 206,
+        "proteinDg": 83,
+        "fatDg": 164,
+        "carbDg": 59
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "切片猪肉丸30g + 卷心菜35g + 水发木耳15g + 小白菜15g + 千张15g + 烹调植物油10g + 红油豆瓣酱汁8g(成品净重约125g)",
+        "estimated": true,
+        "note": "依据图06-M4等什锦蔬菜丸子片红油干炒外观推导；多重复合食材与重油底料；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "切片猪肉丸25g + 卷心菜28g + 水发木耳12g + 小白菜12g + 千张12g + 烹调植物油8g + 红油豆瓣酱汁6g(成品净重约100g)",
+          "energyKcal": 167,
+          "proteinDg": 67,
+          "fatDg": 133,
+          "carbDg": 48
+        },
+        "central": {
+          "portionAssumption": "切片猪肉丸30g + 卷心菜35g + 水发木耳15g + 小白菜15g + 千张15g + 烹调植物油10g + 红油豆瓣酱汁8g(成品净重约125g)",
+          "energyKcal": 206,
+          "proteinDg": 83,
+          "fatDg": 164,
+          "carbDg": 59
+        },
+        "high": {
+          "portionAssumption": "切片猪肉丸35g + 卷心菜42g + 水发木耳18g + 小白菜18g + 千张18g + 烹调植物油12g + 红油豆瓣酱汁10g(成品净重约150g)",
+          "energyKcal": 245,
+          "proteinDg": 98,
+          "fatDg": 195,
+          "carbDg": 71
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪肉丸",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 08-6-101",
+          "energyKcal": 58.5,
+          "proteinG": 3.45,
+          "fatG": 4.35,
+          "carbG": 1.5
+        },
+        {
+          "ingredient": "包菜",
+          "weightG": 35,
+          "source": "中国食物成分表第6版第一册 04-2-101",
+          "energyKcal": 8.0,
+          "proteinG": 0.45,
+          "fatG": 0.07,
+          "carbG": 1.43
+        },
+        {
+          "ingredient": "黑木耳",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 05-2-101 (水发)",
+          "energyKcal": 3.1,
+          "proteinG": 0.22,
+          "fatG": 0.03,
+          "carbG": 0.53
+        },
+        {
+          "ingredient": "小白菜",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 04-1-101",
+          "energyKcal": 2.2,
+          "proteinG": 0.22,
+          "fatG": 0.04,
+          "carbG": 0.3
+        },
+        {
+          "ingredient": "千张",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 03-3-102",
+          "energyKcal": 39.3,
+          "proteinG": 3.67,
+          "fatG": 1.88,
+          "carbG": 1.23
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 89.9,
+          "proteinG": 0.0,
+          "fatG": 9.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 5.1,
+          "proteinG": 0.24,
+          "fatG": 0.03,
+          "carbG": 0.96
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-heihujiao-rouli",
+      "name": "黑胡椒肉粒（照片暂定名）",
+      "visualReferenceName": "黑胡椒肉粒 / 家常肉丁",
+      "kind": "single",
+      "category": "mixed",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图07-F3, 图01-F2",
+      "visualCharacteristics": "深酱色肉丁、胡萝卜丁、青椒块、浓酱汁",
+      "matchWithBoard": "可能对应【黑胡椒肉粒】（T03a招牌12元档荤菜）",
+      "setVegEligibility": "非素菜（主菜/混合菜）",
+      "nutrition": {
+        "energyKcal": 167,
+        "proteinDg": 120,
+        "fatDg": 105,
+        "carbDg": 62
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "猪瘦肉丁55g + 青椒块25g + 胡萝卜丁20g + 烹调植物油7g + 黑椒浓汁10g + 淀粉2g(成品净重约117g)",
+        "estimated": true,
+        "note": "依据图07-F3/01-F2深色大肉丁配青红蔬菜推导；黑胡椒汁浓厚；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "猪瘦肉丁45g + 青椒块20g + 胡萝卜丁15g + 烹调植物油5g + 黑椒浓汁8g + 淀粉1.5g(成品净重约93g)",
+          "energyKcal": 129,
+          "proteinDg": 98,
+          "fatDg": 79,
+          "carbDg": 47
+        },
+        "central": {
+          "portionAssumption": "猪瘦肉丁55g + 青椒块25g + 胡萝卜丁20g + 烹调植物油7g + 黑椒浓汁10g + 淀粉2g(成品净重约117g)",
+          "energyKcal": 167,
+          "proteinDg": 120,
+          "fatDg": 105,
+          "carbDg": 62
+        },
+        "high": {
+          "portionAssumption": "猪瘦肉丁65g + 青椒块30g + 胡萝卜丁25g + 烹调植物油9g + 黑椒浓汁12g + 淀粉2.5g(成品净重约141g)",
+          "energyKcal": 206,
+          "proteinDg": 142,
+          "fatDg": 132,
+          "carbDg": 76
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 55,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 78.7,
+          "proteinG": 11.17,
+          "fatG": 3.41,
+          "carbG": 0.83
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 5.8,
+          "proteinG": 0.3,
+          "fatG": 0.05,
+          "carbG": 1.05
+        },
+        {
+          "ingredient": "胡萝卜",
+          "weightG": 20,
+          "source": "中国食物成分表第6版第一册 04-3-105",
+          "energyKcal": 6.4,
+          "proteinG": 0.2,
+          "fatG": 0.04,
+          "carbG": 1.3
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 7,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 62.9,
+          "proteinG": 0.0,
+          "fatG": 6.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 6.8,
+          "proteinG": 0.32,
+          "fatG": 0.04,
+          "carbG": 1.28
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 6.9,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 1.7
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-suancai-yu",
+      "name": "酸菜豆腐鱼（照片暂定名）",
+      "visualReferenceName": "酸菜豆腐鱼 / 酸菜鱼",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-F1, 图04-F1 (06-F1疑似变体)",
+      "visualCharacteristics": "白色无骨鱼肉片、酸菜叶梗、白豆腐丁、干红椒段、浅色汤",
+      "matchWithBoard": "可能对应【酸菜无骨鱼】（T03a招牌13元档荤菜）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 150,
+        "proteinDg": 146,
+        "fatDg": 87,
+        "carbDg": 21
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟无骨鱼肉片70g + 熟北豆腐30g + 酸菜35g + 烹调植物油6g + 酸菜鱼浅汤40g(可食部净重约178g)",
+        "estimated": true,
+        "note": "依据图03-F1/04-F1大托盘浅汤鱼片推导；鱼片无骨高蛋白，豆腐酸菜吸味；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟无骨鱼肉片55g + 熟北豆腐25g + 酸菜28g + 烹调植物油4.5g + 酸菜鱼浅汤30g(可食部净重约140g)",
+          "energyKcal": 117,
+          "proteinDg": 116,
+          "fatDg": 67,
+          "carbDg": 17
+        },
+        "central": {
+          "portionAssumption": "熟无骨鱼肉片70g + 熟北豆腐30g + 酸菜35g + 烹调植物油6g + 酸菜鱼浅汤40g(可食部净重约178g)",
+          "energyKcal": 150,
+          "proteinDg": 146,
+          "fatDg": 87,
+          "carbDg": 21
+        },
+        "high": {
+          "portionAssumption": "熟无骨鱼肉片85g + 熟北豆腐35g + 酸菜42g + 烹调植物油8g + 酸菜鱼浅汤50g(可食部净重约216g)",
+          "energyKcal": 187,
+          "proteinDg": 176,
+          "fatDg": 112,
+          "carbDg": 25
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "无骨鱼肉片",
+          "weightG": 70,
+          "source": "中国食物成分表第6版第一册 11-1-102 (草鱼/巴沙鱼代表)",
+          "energyKcal": 61.6,
+          "proteinG": 11.55,
+          "fatG": 1.54,
+          "carbG": 0.35
+        },
+        {
+          "ingredient": "北豆腐",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 03-2-101",
+          "energyKcal": 29.4,
+          "proteinG": 2.76,
+          "fatG": 1.11,
+          "carbG": 0.84
+        },
+        {
+          "ingredient": "酸菜",
+          "weightG": 35,
+          "source": "中国食物成分表第6版第一册 04-7-101",
+          "energyKcal": 4.9,
+          "proteinG": 0.28,
+          "fatG": 0.03,
+          "carbG": 0.88
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 6,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 53.9,
+          "proteinG": 0.0,
+          "fatG": 5.99,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-ziran-roupian",
+      "name": "孜然肉片（照片暂定名）",
+      "visualReferenceName": "溜肉片 / 孜然肉片",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-F4, 图04-F4",
+      "visualCharacteristics": "金黄色裹浆肉片/肉块、青椒片、洋葱片",
+      "matchWithBoard": "可能对应【孜然肉片】（T03a招牌11元档）或【锅包肉】",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 218,
+        "proteinDg": 147,
+        "fatDg": 134,
+        "carbDg": 95
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "猪瘦肉片70g + 裹粉淀粉8g + 青椒洋葱片25g + 烹调植物油9g + 孜然料汁5g(成品净重约114g)",
+        "estimated": true,
+        "note": "依据图03-F4裹粉肉片金黄大块外观推导；肉片裹薄糊先炸后炒；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "猪瘦肉片55g + 裹粉淀粉6g + 青椒洋葱片20g + 烹调植物油7g + 孜然料汁4g(成品净重约90g)",
+          "energyKcal": 169,
+          "proteinDg": 115,
+          "fatDg": 105,
+          "carbDg": 72
+        },
+        "central": {
+          "portionAssumption": "猪瘦肉片70g + 裹粉淀粉8g + 青椒洋葱片25g + 烹调植物油9g + 孜然料汁5g(成品净重约114g)",
+          "energyKcal": 218,
+          "proteinDg": 147,
+          "fatDg": 134,
+          "carbDg": 95
+        },
+        "high": {
+          "portionAssumption": "猪瘦肉片85g + 裹粉淀粉10g + 青椒洋葱片30g + 烹调植物油11g + 孜然料汁6g(成品净重约138g)",
+          "energyKcal": 266,
+          "proteinDg": 178,
+          "fatDg": 164,
+          "carbDg": 118
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 70,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 100.1,
+          "proteinG": 14.21,
+          "fatG": 4.34,
+          "carbG": 1.05
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 27.7,
+          "proteinG": 0.02,
+          "fatG": 0.01,
+          "carbG": 6.8
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 25,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 5.8,
+          "proteinG": 0.3,
+          "fatG": 0.05,
+          "carbG": 1.05
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 9,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 80.9,
+          "proteinG": 0.0,
+          "fatG": 8.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 3.4,
+          "proteinG": 0.16,
+          "fatG": 0.02,
+          "carbG": 0.64
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-tudou-hongshaorou",
+      "name": "土豆红烧肉（照片暂定名）",
+      "visualReferenceName": "土豆红烧肉",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-F5, 图02-F1, 图05-F5, 图08-M3",
+      "visualCharacteristics": "肥瘦带皮五花肉块、切块土豆、深褐色红烧酱汁",
+      "matchWithBoard": "可能对应【土豆红烧肉】（T03a招牌13元档荤菜）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 309,
+        "proteinDg": 99,
+        "fatDg": 272,
+        "carbDg": 139
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "五花肉块65g + 土豆块45g + 烹调植物油3g + 白糖3g + 红烧酱油糖汁12g(成品净重约125g)",
+        "estimated": true,
+        "note": "依据图04-F5等深褐色亮光五花肉块与土豆推导；五花肉高脂高香，土豆软烂吸肉香；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "五花肉块50g + 土豆块35g + 烹调植物油2.5g + 白糖2g + 红烧酱油糖汁10g(成品净重约98g)",
+          "energyKcal": 239,
+          "proteinDg": 76,
+          "fatDg": 211,
+          "carbDg": 105
+        },
+        "central": {
+          "portionAssumption": "五花肉块65g + 土豆块45g + 烹调植物油3g + 白糖3g + 红烧酱油糖汁12g(成品净重约125g)",
+          "energyKcal": 309,
+          "proteinDg": 99,
+          "fatDg": 272,
+          "carbDg": 139
+        },
+        "high": {
+          "portionAssumption": "五花肉块80g + 土豆块55g + 烹调植物油4g + 白糖4g + 红烧酱油糖汁15g(成品净重约153g)",
+          "energyKcal": 384,
+          "proteinDg": 121,
+          "fatDg": 338,
+          "carbDg": 173
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪五花肉",
+          "weightG": 65,
+          "source": "中国食物成分表第6版第一册 08-1-104",
+          "energyKcal": 226.8,
+          "proteinG": 8.58,
+          "fatG": 24.05,
+          "carbG": 1.56
+        },
+        {
+          "ingredient": "土豆",
+          "weightG": 45,
+          "source": "中国食物成分表第6版第一册 02-1-101",
+          "energyKcal": 34.6,
+          "proteinG": 0.9,
+          "fatG": 0.09,
+          "carbG": 7.74
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 27.0,
+          "proteinG": 0.0,
+          "fatG": 3.0,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 3,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 12.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 2.99
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 8.5,
+          "proteinG": 0.4,
+          "fatG": 0.05,
+          "carbG": 1.6
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-tangculiji",
+      "name": "糖醋里脊（照片暂定名）",
+      "visualReferenceName": "糖醋里脊 / 锅包肉",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-F6, 图02-F2, 图05-F6",
+      "visualCharacteristics": "挂厚糊金黄炸肉块、亮红橙黄酸甜芡、白芝麻",
+      "matchWithBoard": "可能对应【糖醋里脊】或【锅包肉】（T03a招牌12元档）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 271,
+        "proteinDg": 134,
+        "fatDg": 141,
+        "carbDg": 225
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "猪里脊肉条65g + 挂糊淀粉面粉15g + 油炸吸油10g + 白糖8g + 糖醋酸甜汁15g(成品净重约112g)",
+        "estimated": true,
+        "note": "依据图04-F6裹厚糊金黄炸肉块与橙红酸甜芡推导；炸油与糖分带来充沛能量；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "猪里脊肉条50g + 挂糊淀粉面粉12g + 油炸吸油8g + 白糖6g + 糖醋酸甜汁12g(成品净重约87g)",
+          "energyKcal": 212,
+          "proteinDg": 103,
+          "fatDg": 111,
+          "carbDg": 176
+        },
+        "central": {
+          "portionAssumption": "猪里脊肉条65g + 挂糊淀粉面粉15g + 油炸吸油10g + 白糖8g + 糖醋酸甜汁15g(成品净重约112g)",
+          "energyKcal": 271,
+          "proteinDg": 134,
+          "fatDg": 141,
+          "carbDg": 225
+        },
+        "high": {
+          "portionAssumption": "猪里脊肉条80g + 挂糊淀粉面粉18g + 油炸吸油13g + 白糖10g + 糖醋酸甜汁18g(成品净重约137g)",
+          "energyKcal": 339,
+          "proteinDg": 165,
+          "fatDg": 180,
+          "carbDg": 274
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 65,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 93.0,
+          "proteinG": 13.2,
+          "fatG": 4.03,
+          "carbG": 0.98
+        },
+        {
+          "ingredient": "淀粉",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 01-6-101 (玉米淀粉)",
+          "energyKcal": 51.9,
+          "proteinG": 0.03,
+          "fatG": 0.01,
+          "carbG": 12.75
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 10,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 89.9,
+          "proteinG": 0.0,
+          "fatG": 9.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "白糖",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 19-1-101",
+          "energyKcal": 32.0,
+          "proteinG": 0.0,
+          "fatG": 0.0,
+          "carbG": 7.98
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 4.2,
+          "proteinG": 0.2,
+          "fatG": 0.03,
+          "carbG": 0.8
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-xianggu-menji",
+      "name": "香菇焖鸡（照片暂定名）",
+      "visualReferenceName": "香菇焖鸡",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图04-F8, 图02-F4, 图05-F8, 图06-F0",
+      "visualCharacteristics": "带骨鸡肉块、整朵/厚切黑褐香菇、深酱色红烧浓汁",
+      "matchWithBoard": "可能对应【香菇焖鸡】（T03a招牌12元档荤菜）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 177,
+        "proteinDg": 114,
+        "fatDg": 136,
+        "carbDg": 28
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟带皮鸡腿肉块去骨可食部65g(带骨毛重约90g，骨重25g) + 香菇30g + 烹调植物油5g + 红烧浓汁12g(可食部净重约110g)",
+        "estimated": true,
+        "note": "依据图04-F8等深酱色带骨鸡块与香菇推导；明确剥除鸡骨仅计可食部；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟带皮鸡腿肉块去骨可食部50g(带骨毛重约70g，骨重20g) + 香菇25g + 烹调植物油4g + 红烧浓汁10g(可食部净重约88g)",
+          "energyKcal": 138,
+          "proteinDg": 88,
+          "fatDg": 106,
+          "carbDg": 22
+        },
+        "central": {
+          "portionAssumption": "熟带皮鸡腿肉块去骨可食部65g(带骨毛重约90g，骨重25g) + 香菇30g + 烹调植物油5g + 红烧浓汁12g(可食部净重约110g)",
+          "energyKcal": 177,
+          "proteinDg": 114,
+          "fatDg": 136,
+          "carbDg": 28
+        },
+        "high": {
+          "portionAssumption": "熟带皮鸡腿肉块去骨可食部80g(带骨毛重约110g，骨重30g) + 香菇35g + 烹调植物油6.5g + 红烧浓汁15g(可食部净重约135g)",
+          "energyKcal": 221,
+          "proteinDg": 140,
+          "fatDg": 170,
+          "carbDg": 33
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "带皮鸡腿肉",
+          "weightG": 65,
+          "source": "中国食物成分表第6版第一册 09-1-103",
+          "energyKcal": 117.7,
+          "proteinG": 10.4,
+          "fatG": 8.45,
+          "carbG": 0.13
+        },
+        {
+          "ingredient": "香菇",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 05-1-101 (水发/鲜)",
+          "energyKcal": 7.8,
+          "proteinG": 0.66,
+          "fatG": 0.09,
+          "carbG": 1.35
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 45.0,
+          "proteinG": 0.0,
+          "fatG": 5.0,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 6.8,
+          "proteinG": 0.32,
+          "fatG": 0.04,
+          "carbG": 1.28
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-lu-yatui",
+      "name": "卤鸭腿（照片暂定名）",
+      "visualReferenceName": "卤鸭腿 / 招牌鸭腿",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-M2, 图04-M2",
+      "visualCharacteristics": "深酱色整只长骨卤禽腿（骨端外露、皮质紧致）",
+      "matchWithBoard": "可能对应【招牌鸭腿】（T03a招牌12元档，亦有虎皮鸡腿可能）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 158,
+        "proteinDg": 138,
+        "fatDg": 111,
+        "carbDg": 10
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "整只卤禽腿熟带皮肉可食部85g(带骨毛重约130g，骨重45g) + 表面附着卤汁5g(典型整只鸭腿)",
+        "estimated": true,
+        "note": "依据图03-M2/04-M2整只长骨禽腿推导；按禽腿可食部明确核算，废弃骨重约45g；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "整只卤禽腿熟带皮肉可食部70g(带骨毛重约110g，骨重40g) + 表面附着卤汁4g(偏瘦/小腿)",
+          "energyKcal": 130,
+          "proteinDg": 114,
+          "fatDg": 91,
+          "carbDg": 8
+        },
+        "central": {
+          "portionAssumption": "整只卤禽腿熟带皮肉可食部85g(带骨毛重约130g，骨重45g) + 表面附着卤汁5g(典型整只鸭腿)",
+          "energyKcal": 158,
+          "proteinDg": 138,
+          "fatDg": 111,
+          "carbDg": 10
+        },
+        "high": {
+          "portionAssumption": "整只卤禽腿熟带皮肉可食部100g(带骨毛重约150g，骨重50g) + 表面附着卤汁6g(肥厚/大腿)",
+          "energyKcal": 186,
+          "proteinDg": 162,
+          "fatDg": 130,
+          "carbDg": 12
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "带皮鸡腿肉",
+          "weightG": 85,
+          "source": "中国食物成分表第6版第一册 09-1-103",
+          "energyKcal": 153.8,
+          "proteinG": 13.6,
+          "fatG": 11.05,
+          "carbG": 0.17
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 5,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 4.2,
+          "proteinG": 0.2,
+          "fatG": 0.03,
+          "carbG": 0.8
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-yumi-dunpaigu",
+      "name": "玉米炖排骨（照片暂定名）",
+      "visualReferenceName": "玉米炖排骨",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图03-M4, 图04-M4, 图02-M1, 图05-M4, 图07-M4, 图01-M3, 图08-M0",
+      "visualCharacteristics": "黄色带芯甜玉米截段、带骨排骨块、胡萝卜、清炖排骨汤",
+      "matchWithBoard": "可能对应【玉米炖排骨】（T03a招牌13元档荤菜）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 170,
+        "proteinDg": 114,
+        "fatDg": 105,
+        "carbDg": 99
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟排骨肉可食部55g(瘦40g+肥15g，硬骨废弃约45g) + 甜玉米粒35g(玉米芯废弃约20g) + 胡萝卜15g + 清汤带油40g(烹调油2g，可食部约146g)",
+        "estimated": true,
+        "note": "依据图03-M4等7张照片排骨玉米截段炖汤推导；明确扣除排骨大骨与玉米芯不可食部；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟排骨肉可食部42g(瘦30g+肥12g，硬骨废弃约38g) + 甜玉米粒28g(玉米芯废弃约17g) + 胡萝卜12g + 清汤带油30g(烹调油1.5g，可食部约113g)",
+          "energyKcal": 132,
+          "proteinDg": 87,
+          "fatDg": 82,
+          "carbDg": 79
+        },
+        "central": {
+          "portionAssumption": "熟排骨肉可食部55g(瘦40g+肥15g，硬骨废弃约45g) + 甜玉米粒35g(玉米芯废弃约20g) + 胡萝卜15g + 清汤带油40g(烹调油2g，可食部约146g)",
+          "energyKcal": 170,
+          "proteinDg": 114,
+          "fatDg": 105,
+          "carbDg": 99
+        },
+        "high": {
+          "portionAssumption": "熟排骨肉可食部68g(瘦50g+肥18g，硬骨废弃约52g) + 甜玉米粒42g(玉米芯废弃约25g) + 胡萝卜18g + 清汤带油50g(烹调油2.5g，可食部约179g)",
+          "energyKcal": 208,
+          "proteinDg": 141,
+          "fatDg": 128,
+          "carbDg": 119
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "猪瘦肉",
+          "weightG": 40,
+          "source": "中国食物成分表第6版第一册 08-1-102",
+          "energyKcal": 57.2,
+          "proteinG": 8.12,
+          "fatG": 2.48,
+          "carbG": 0.6
+        },
+        {
+          "ingredient": "猪五花肉",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 08-1-104",
+          "energyKcal": 52.4,
+          "proteinG": 1.98,
+          "fatG": 5.55,
+          "carbG": 0.36
+        },
+        {
+          "ingredient": "甜玉米粒",
+          "weightG": 35,
+          "source": "中国食物成分表第6版第一册 01-2-102",
+          "energyKcal": 37.8,
+          "proteinG": 1.15,
+          "fatG": 0.42,
+          "carbG": 7.98
+        },
+        {
+          "ingredient": "胡萝卜",
+          "weightG": 15,
+          "source": "中国食物成分表第6版第一册 04-3-105",
+          "energyKcal": 4.8,
+          "proteinG": 0.15,
+          "fatG": 0.03,
+          "carbG": 0.97
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 2,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 18.0,
+          "proteinG": 0.0,
+          "fatG": 2.0,
+          "carbG": 0.0
+        }
+      ]
+    },
+    {
+      "dishId": "dish-chuanxiang-photo-ziran-jizhen",
+      "name": "孜然鸡胗（照片暂定名）",
+      "visualReferenceName": "孜然鸡胗 / 青椒鸡胗",
+      "kind": "single",
+      "category": "meat",
+      "riceDish": false,
+      "riceIncluded": false,
+      "priceCents": null,
+      "photoEvidence": "图01-F5, 图08-F1",
+      "visualCharacteristics": "麦穗花刀鸡胗、密集青椒圈、红油酱汁",
+      "matchWithBoard": "可能对应【孜然鸡胗】（T03a招牌12元档荤菜）",
+      "setVegEligibility": "非素菜（主荤）",
+      "nutrition": {
+        "energyKcal": 171,
+        "proteinDg": 149,
+        "fatDg": 102,
+        "carbDg": 49
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "花刀鸡胗75g + 青椒圈30g + 烹调植物油8g + 孜然红油汁5g(成品净重约116g)",
+        "estimated": true,
+        "note": "依据图01-F5/08-F1麦穗花刀鸡胗与青椒圈推导；鸡胗富含蛋白质，质地脆嫩弹牙；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "花刀鸡胗60g + 青椒圈25g + 烹调植物油6g + 孜然红油汁4g(成品净重约93g)",
+          "energyKcal": 133,
+          "proteinDg": 119,
+          "fatDg": 77,
+          "carbDg": 39
+        },
+        "central": {
+          "portionAssumption": "花刀鸡胗75g + 青椒圈30g + 烹调植物油8g + 孜然红油汁5g(成品净重约116g)",
+          "energyKcal": 171,
+          "proteinDg": 149,
+          "fatDg": 102,
+          "carbDg": 49
+        },
+        "high": {
+          "portionAssumption": "花刀鸡胗90g + 青椒圈35g + 烹调植物油10g + 孜然红油汁6g(成品净重约139g)",
+          "energyKcal": 208,
+          "proteinDg": 179,
+          "fatDg": 126,
+          "carbDg": 59
+        }
+      },
+      "ingredientBreakdown": [
+        {
+          "ingredient": "鸡胗",
+          "weightG": 75,
+          "source": "中国食物成分表第6版第一册 09-3-101",
+          "energyKcal": 88.5,
+          "proteinG": 14.4,
+          "fatG": 2.1,
+          "carbG": 3.0
+        },
+        {
+          "ingredient": "青椒红椒",
+          "weightG": 30,
+          "source": "中国食物成分表第6版第一册 04-5-105",
+          "energyKcal": 6.9,
+          "proteinG": 0.36,
+          "fatG": 0.06,
+          "carbG": 1.26
+        },
+        {
+          "ingredient": "烹调植物油",
+          "weightG": 8,
+          "source": "中国食物成分表第6版第一册 12-1-101 (大豆油/调和油)",
+          "energyKcal": 71.9,
+          "proteinG": 0.0,
+          "fatG": 7.99,
+          "carbG": 0.0
+        },
+        {
+          "ingredient": "红烧酱汁",
+          "weightG": 4,
+          "source": "中国食物成分表第6版第一册 18-1-101 (复合调味汁)",
+          "energyKcal": 3.4,
+          "proteinG": 0.16,
+          "fatG": 0.02,
+          "carbG": 0.64
+        }
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-chuanxiang-set-yuxiang-rousi",
+      "dishId": "dish-chuanxiang-set-yuxiang-rousi",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-xiangchang-jidan",
+      "dishId": "dish-chuanxiang-set-xiangchang-jidan",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-culiu-muxu",
+      "dishId": "dish-chuanxiang-set-culiu-muxu",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-gongbao-jiding",
+      "dishId": "dish-chuanxiang-set-gongbao-jiding",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-mala-xiangguo",
+      "dishId": "dish-chuanxiang-set-mala-xiangguo",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-aoerliang-jiding",
+      "dishId": "dish-chuanxiang-set-aoerliang-jiding",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-ziran-roupian",
+      "dishId": "dish-chuanxiang-set-ziran-roupian",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-sanxian-zhurouwan",
+      "dishId": "dish-chuanxiang-set-sanxian-zhurouwan",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-heihujiao-jiliu",
+      "dishId": "dish-chuanxiang-set-heihujiao-jiliu",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-hupi-jitui",
+      "dishId": "dish-chuanxiang-set-hupi-jitui",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-gali-jirou",
+      "dishId": "dish-chuanxiang-set-gali-jirou",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-tudou-lachang",
+      "dishId": "dish-chuanxiang-set-tudou-lachang",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-lajiao-chaorou",
+      "dishId": "dish-chuanxiang-set-lajiao-chaorou",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-xianggu-menji",
+      "dishId": "dish-chuanxiang-set-xianggu-menji",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-ganbian-jikuai",
+      "dishId": "dish-chuanxiang-set-ganbian-jikuai",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-tangcu-liji",
+      "dishId": "dish-chuanxiang-set-tangcu-liji",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-ziran-jizhen",
+      "dishId": "dish-chuanxiang-set-ziran-jizhen",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-guobaorou",
+      "dishId": "dish-chuanxiang-set-guobaorou",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-heihujiao-rouli",
+      "dishId": "dish-chuanxiang-set-heihujiao-rouli",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-zhaopai-yatui",
+      "dishId": "dish-chuanxiang-set-zhaopai-yatui",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1200,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-zhaopai-koushuiji",
+      "dishId": "dish-chuanxiang-set-zhaopai-koushuiji",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-tudou-hongshaorou",
+      "dishId": "dish-chuanxiang-set-tudou-hongshaorou",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-suancai-wuguyu",
+      "dishId": "dish-chuanxiang-set-suancai-wuguyu",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-yumi-dun-paigu",
+      "dishId": "dish-chuanxiang-set-yumi-dun-paigu",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-meigancai-shaorou",
+      "dishId": "dish-chuanxiang-set-meigancai-shaorou",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-2veg-rice",
+      "dishId": "dish-chuanxiang-set-2veg-rice",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 700,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-3veg-rice",
+      "dishId": "dish-chuanxiang-set-3veg-rice",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 900,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-1meat-1veg-rice",
+      "dishId": "dish-chuanxiang-set-1meat-1veg-rice",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 900,
+      "priceBasis": "comboTotal"
+    },
+    {
+      "offerId": "offer-chuanxiang-set-2meat-1veg-rice",
+      "dishId": "dish-chuanxiang-set-2meat-1veg-rice",
+      "windowId": "w-chuanxiang-xiaochu",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1400,
+      "priceBasis": "comboTotal"
+    }
+  ],
+  "comboRules": [],
+  "metadata": {
+    "sourceTask": "T03g",
+    "generationDate": "2026-10-24",
+    "subtasks": {
+      "T03g01": "川湘招牌套餐与营养估算（25款标牌套餐+4款参考组合+29款基础/主菜组件）",
+      "T03g02": "川湘八图菜品整理与估算（35款可辨照片视觉菜品候选）"
+    },
+    "statistics": {
+      "totalDishes": 93,
+      "signatureComboDishes": 25,
+      "referenceComboDishes": 4,
+      "baseComponentDishes": 4,
+      "mainComponentDishes": 25,
+      "photoCandidateDishes": 35,
+      "totalOffers": 29,
+      "signatureOffers": 25,
+      "referenceOffers": 4
+    },
+    "principles": [
+      "25款标牌真实价主餐首要保证以完整套餐（1荤+2素+米饭）推荐与记录，价格保持11/12/13元整套价，不拆解单主菜单价",
+      "米饭按西一食堂立柱标准小份200g熟白米饭计算，单份仅计一次，不假定无限续饭量",
+      "两素按配菜台典型搭配给出透明假设，标明为推测搭配而非店员确认",
+      "未见单卖价照片菜品严格不编独立价格（priceCents=null，无独立offer），不将11/12/13元挪用为托盘价",
+      "未明确荤菜适用范围的一荤一素9元/两荤一素14元保留展示与记录入口，严禁将任意13元主荤机械划归9元组合"
+    ]
+  }
+}

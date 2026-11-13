@@ -1,0 +1,138 @@
+[
+  {
+    "dishId": "dish-shandong-pancake",
+    "name": "山东杂粮煎饼",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 471,
+      "proteinDg": 139,
+      "fatDg": 164,
+      "carbDg": 692,
+      "carbsDg": 692
+    },
+    "nutritionBasis": {
+      "source": "《中国食物成分表（标准版）》第6版第一册/第二册(谷类煎饼编码1202熟制折算/鸡蛋编码978/大豆油编码10-1-101/调味品甜面酱编码13-1-301/传统油炸面食排叉编码01-1-504替代薄脆)",
+      "portionAssumption": "熟杂粮饼皮110g(生干煎饼干物质折算含水50%) + 鲜鸡蛋(去壳)50g + 传统油炸薄脆(排叉替代)25g + 调味甜面酱15g + 烹调大豆油6g(单份成品净重约206g)",
+      "estimated": true,
+      "note": "依据门头标牌公示配料'饼皮+鸡蛋+薄脆'(现场实拍照片10)结合摊制工艺推导。已纠正P09专项核验指出的前版原料条目拼接问题，严格采用官方1202真实数据(1498kJ/P 7.6g/F 0.7g/C 83.8g)与50%含水工艺假设重新折算；薄脆改用原料、工艺同源的中国食物成分表排叉通用条目作为权威科学替代；鸡蛋仅计1枚，薄脆吸油不重复计入鏊子底油；非食堂实测配方",
+      "ingredients": [
+        {
+          "name": "现摊杂粮熟饼皮",
+          "portionG": 110.0,
+          "source": "中国疾病预防控制中心营养与健康所《中国食物成分表》第6版第一册",
+          "foodCode": "1202 (煎饼)",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1202.html",
+          "processNote": "官方原料为低水分传统干煎饼(含水6.8%)。现场现摊熟饼皮按典型工艺假设含水量为50.0%(干物质系数50/93.2=0.53648069)，非现场实测",
+          "per100g": {
+            "energyKcal": 192.08,
+            "energyKj": 803.65,
+            "proteinG": 4.08,
+            "fatG": 0.38,
+            "carbG": 44.96,
+            "sodiumMg": 45.87
+          },
+          "portionValues": {
+            "energyKcal": 211.2841,
+            "proteinG": 4.4850,
+            "fatG": 0.4131,
+            "carbG": 49.4528,
+            "sodiumMg": 50.4560
+          }
+        },
+        {
+          "name": "鲜鸡蛋(全蛋去壳)",
+          "portionG": 50.0,
+          "source": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+          "foodCode": "978 (06-1-101 鸡蛋均值)",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+          "processNote": "标准中等鲜鸡蛋1枚打散推摊，去壳净重按行业与标准可食部典型值50g计；仅计入本项，不重复计量",
+          "per100g": {
+            "energyKcal": 143.0,
+            "energyKj": 599.0,
+            "proteinG": 13.3,
+            "fatG": 8.8,
+            "carbG": 2.8,
+            "sodiumMg": 131.5
+          },
+          "portionValues": {
+            "energyKcal": 71.5000,
+            "proteinG": 6.6500,
+            "fatG": 4.4000,
+            "carbG": 1.4000,
+            "sodiumMg": 65.7500
+          }
+        },
+        {
+          "name": "鏊子防粘烹调植物油(大豆油)",
+          "portionG": 6.0,
+          "source": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第一册",
+          "foodCode": "1041 (10-1-101 大豆油)",
+          "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1041.html",
+          "processNote": "铁鏊子旋转防粘刷底油按中心估计值6g计；薄脆油炸吸油不在此处重复计量",
+          "per100g": {
+            "energyKcal": 899.0,
+            "energyKj": 3761.0,
+            "proteinG": 0.0,
+            "fatG": 99.9,
+            "carbG": 0.0,
+            "sodiumMg": 0.0
+          },
+          "portionValues": {
+            "energyKcal": 53.9400,
+            "proteinG": 0.0000,
+            "fatG": 5.9940,
+            "carbG": 0.0000,
+            "sodiumMg": 0.0000
+          }
+        },
+        {
+          "name": "调味甜面酱",
+          "portionG": 15.0,
+          "source": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第二册",
+          "foodCode": "13-1-301 (甜面酱)",
+          "processNote": "煎饼翻面后内侧毛刷刷酱按典型小吃份量15g计；同时核对佛山海天袋装甜面酱GB 28050包装标签参数以资比对",
+          "per100g": {
+            "energyKcal": 143.0,
+            "energyKj": 600.0,
+            "proteinG": 5.5,
+            "fatG": 0.6,
+            "carbG": 28.5,
+            "sodiumMg": 2097.2
+          },
+          "portionValues": {
+            "energyKcal": 21.4500,
+            "proteinG": 0.8250,
+            "fatG": 0.0900,
+            "carbG": 4.2750,
+            "sodiumMg": 314.5800
+          }
+        },
+        {
+          "name": "传统油炸薄脆(排叉替代)",
+          "portionG": 25.0,
+          "source": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》",
+          "foodCode": "01-1-504类似工艺 (排叉/传统油炸面点)",
+          "processNote": "煎饼薄脆属无包装散装熟制品，以同原料、同油炸工艺的中式传统面点排叉通用条目作为权威科学替代；经配方吸油率验证相符；自带吸附油脂已内嵌，不重复计量底油",
+          "per100g": {
+            "energyKcal": 453.0,
+            "energyKj": 1895.0,
+            "proteinG": 7.6,
+            "fatG": 22.0,
+            "carbG": 56.1,
+            "sodiumMg": 550.0
+          },
+          "portionValues": {
+            "energyKcal": 113.2500,
+            "proteinG": 1.9000,
+            "fatG": 5.5000,
+            "carbG": 14.0250,
+            "sodiumMg": 137.5000
+          }
+        }
+      ]
+    }
+  }
+]

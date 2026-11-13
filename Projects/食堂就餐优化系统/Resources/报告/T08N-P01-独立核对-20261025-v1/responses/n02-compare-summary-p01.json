@@ -1,0 +1,122 @@
+{
+ "tag": "p01",
+ "native": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\build-scripts\\toolchain\\build\\native\\mp_cli.exe",
+ "wasm": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T08N-ZCode-最终收尾归集-证据-v1\\integrated-candidate\\miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+ "cases": [
+  {
+   "name": "base-greedy",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 40,
+   "wasmMs": 16,
+   "nativeSha256": "f8336786482c21496fdc185e873fbebea02f7944c85282d30e18059ef828bd05",
+   "wasmSha256": "f8336786482c21496fdc185e873fbebea02f7944c85282d30e18059ef828bd05",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  },
+  {
+   "name": "base-dp",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 936,
+   "wasmMs": 608,
+   "nativeSha256": "6b941220bad02f68774f5227bd0a1c9566bce5fb9e41d75635ae06330ca84173",
+   "wasmSha256": "6b941220bad02f68774f5227bd0a1c9566bce5fb9e41d75635ae06330ca84173",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  },
+  {
+   "name": "base-branchandbound",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 4286,
+   "wasmMs": 844,
+   "nativeSha256": "d5d9f44a840629dc4796304cdbfb7175b82a81a91bd546c668507ecd1145558d",
+   "wasmSha256": "d5d9f44a840629dc4796304cdbfb7175b82a81a91bd546c668507ecd1145558d",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  },
+  {
+   "name": "locks",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 30,
+   "wasmMs": 3,
+   "nativeSha256": "fd63ddb5e4f52913b0ed95e502080795f83ac66062e0835556e685299466d921",
+   "wasmSha256": "fd63ddb5e4f52913b0ed95e502080795f83ac66062e0835556e685299466d921",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  },
+  {
+   "name": "combo-rice-once",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 21,
+   "wasmMs": 2,
+   "nativeSha256": "39aab87cfff1062160e22f5a62a7cfdd002d6c15011983de954de3ebe554bf92",
+   "wasmSha256": "39aab87cfff1062160e22f5a62a7cfdd002d6c15011983de954de3ebe554bf92",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  },
+  {
+   "name": "half-rice-same-price",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 20,
+   "wasmMs": 2,
+   "nativeSha256": "c71d296e190a82e46c6a24cc312ad7490264281ea35cb7ccaa8b7c4dd32d879d",
+   "wasmSha256": "c71d296e190a82e46c6a24cc312ad7490264281ea35cb7ccaa8b7c4dd32d879d",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  },
+  {
+   "name": "unknown-nutrition-locked",
+   "nativeExit": 0,
+   "wasmExit": 0,
+   "nativeMs": 23,
+   "wasmMs": 2,
+   "nativeSha256": "b4829f41d12044a7cb5896aa45a63b3df6b98e306b97f0a7f64bc6c37fa221d0",
+   "wasmSha256": "b4829f41d12044a7cb5896aa45a63b3df6b98e306b97f0a7f64bc6c37fa221d0",
+   "byteMatch": true,
+   "normalizedMatchOld": {
+    "native": true,
+    "wasm": true,
+    "nativeVsOldWasm": true
+   },
+   "assertionProblems": []
+  }
+ ],
+ "allByteMatchDual": true,
+ "allNormalizedMatchOld": true,
+ "allAssertionsPass": true
+}

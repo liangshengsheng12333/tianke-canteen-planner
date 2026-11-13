@@ -1,0 +1,44 @@
+[
+  {
+    "iteration": 0,
+    "ms": 70.94659999999999,
+    "pages": 275,
+    "clockCalls": 0,
+    "responseSha256": "0088ec880866c0b15333e72d7049b12672415f88fcad2967928f9ca4b84d3423"
+  },
+  {
+    "iteration": 1,
+    "ms": 40.36850000000001,
+    "pages": 275,
+    "clockCalls": 0,
+    "responseSha256": "0088ec880866c0b15333e72d7049b12672415f88fcad2967928f9ca4b84d3423"
+  },
+  {
+    "iteration": 2,
+    "ms": 37.15520000000001,
+    "pages": 275,
+    "clockCalls": 0,
+    "responseSha256": "0088ec880866c0b15333e72d7049b12672415f88fcad2967928f9ca4b84d3423"
+  },
+  {
+    "iteration": 3,
+    "ms": 37.59100000000001,
+    "pages": 275,
+    "clockCalls": 0,
+    "responseSha256": "0088ec880866c0b15333e72d7049b12672415f88fcad2967928f9ca4b84d3423"
+  },
+  {
+    "iteration": 4,
+    "ms": 36.15519999999998,
+    "pages": 275,
+    "clockCalls": 0,
+    "responseSha256": "0088ec880866c0b15333e72d7049b12672415f88fcad2967928f9ca4b84d3423"
+  },
+  {
+    "iteration": 5,
+    "ms": 40.55650000000003,
+    "pages": 275,
+    "clockCalls": 0,
+    "responseSha256": "0088ec880866c0b15333e72d7049b12672415f88fcad2967928f9ca4b84d3423"
+  }
+]

@@ -1,0 +1,215 @@
+<!-- pages/profile-edit/index.wxml — 个人资料：已存摘要 → 显式编辑 → store 校验 → WASM 目标展示。 -->
+<view class="page {{themeClass}}">
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回我的</text>
+  </view>
+
+  <view class="hero">
+    <view class="hero-title">个人资料</view>
+    <view class="hero-sub">填写身体数据与目标；保存后用于计算每日营养目标。</view>
+  </view>
+
+  <!-- 读取异常直接可见 -->
+  <view class="banner banner-err" wx:if="{{loadError}}">{{loadError}}</view>
+
+  <block wx:if="{{view}}">
+    <!-- 摘要视图：未点编辑前只展示已存资料，不铺开表单 -->
+    <block wx:if="{{!editing}}">
+      <view class="card">
+        <view class="card-title">
+          <text>已存资料</text>
+          <text class="badge {{view.saved ? 'badge-ok' : 'badge-warn'}}">{{view.saved ? '已保存' : '未保存'}}</text>
+        </view>
+        <view class="note">{{summaryNote}}</view>
+        <view class="note">当前档案版本：{{view.profileRevision}}</view>
+        <view class="row" wx:for="{{summaryRows}}" wx:key="label">
+          <text class="row-label">{{item.label}}</text>
+          <text class="row-value">{{item.value}}</text>
+        </view>
+        <view class="btn-group">
+          <button class="btn" bindtap="onStartEdit">编辑资料</button>
+          <button class="btn btn-ghost" bindtap="onComputeTarget" disabled="{{computing}}">{{computing ? '计算中…' : '计算营养目标'}}</button>
+        </view>
+        <view class="note">“计算营养目标”只用已保存的资料；保存状态与目标能否用于自动规划分开显示。</view>
+        <view class="note">偏好（口味/训练/孕哺/疾病）在“预算与偏好”页维护，随档案一起保存。</view>
+      </view>
+    </block>
+
+    <!-- 编辑视图：用户明确点“编辑资料”后才展开 -->
+    <block wx:else>
+      <!-- 保存/校验错误：逐条列出字段与原因 -->
+      <view class="card" wx:if="{{errors.length > 0}}">
+        <view class="card-title">
+          <text>保存未通过</text>
+          <text class="badge badge-err">{{errors.length}} 项</text>
+        </view>
+        <view class="error-row" wx:for="{{errors}}" wx:key="index">
+          <text class="error-label">{{item.label}}</text>
+          <text class="error-text">{{item.message}}</text>
+        </view>
+      </view>
+
+      <!-- 身体档案 -->
+      <view class="card">
+        <view class="card-title">
+          <text>身体档案</text>
+          <text class="badge badge-warn">{{view.saved ? '编辑中 · 未保存' : '默认示例 · 未保存'}}</text>
+        </view>
+        <view class="note note-warn">{{editingNote}}</view>
+        <view class="note">当前档案版本：{{view.profileRevision}}</view>
+
+        <view class="field">
+          <view class="field-label">性别</view>
+          <picker range="{{sexLabels}}" value="{{form.sexIndex}}" bindchange="onSexChange">
+            <view class="picker-value">{{sexLabels[form.sexIndex]}}</view>
+          </picker>
+        </view>
+
+        <view class="field">
+          <view class="field-label">年龄（岁）</view>
+          <input class="input" type="number" value="{{form.ageYears}}" data-field="ageYears" bindinput="onFieldInput" placeholder="如 20" />
+        </view>
+
+        <view class="field">
+          <view class="field-label">身高（cm）</view>
+          <input class="input" type="digit" value="{{form.heightCm}}" data-field="heightCm" bindinput="onFieldInput" placeholder="如 175" />
+        </view>
+
+        <view class="field">
+          <view class="field-label">体重（kg）</view>
+          <input class="input" type="digit" value="{{form.weightKg}}" data-field="weightKg" bindinput="onFieldInput" placeholder="如 70.5" />
+        </view>
+
+        <view class="field">
+          <view class="field-label">体脂率（%，可选）</view>
+          <input class="input" type="digit" value="{{form.bodyFatPct}}" data-field="bodyFatPct" bindinput="onFieldInput" placeholder="如 18.5；留空表示未知" />
+        </view>
+
+        <view class="field">
+          <view class="field-label">活动水平</view>
+          <picker range="{{view.activityOptions}}" range-key="label" value="{{form.activityIndex}}" bindchange="onActivityChange">
+            <view class="picker-value">{{view.activityOptions[form.activityIndex] ? view.activityOptions[form.activityIndex].label : '请选择'}}</view>
+          </picker>
+        </view>
+
+        <view class="field">
+          <view class="field-label">目标</view>
+          <picker range="{{view.goalOptions}}" range-key="label" value="{{form.goalIndex}}" bindchange="onGoalChange">
+            <view class="picker-value">{{view.goalOptions[form.goalIndex] ? view.goalOptions[form.goalIndex].label : '请选择'}}</view>
+          </picker>
+        </view>
+
+        <!-- 手动目标：只有目标类型为手动时才需要填写 -->
+        <view class="manual-block" wx:if="{{form.goalType === 'manual'}}">
+          <view class="sub-title">手动目标（你提供的数值）</view>
+          <view class="note">手动目标能否用于自动规划会按适用性自动判断；宏量只填一部分时只保存、不自动补算。</view>
+          <view class="field">
+            <view class="field-label">能量（kcal，必填）</view>
+            <input class="input" type="number" value="{{form.manualEnergyKcal}}" data-field="manualEnergyKcal" bindinput="onFieldInput" placeholder="如 1800" />
+          </view>
+          <view class="field">
+            <view class="field-label">蛋白质（g，可选）</view>
+            <input class="input" type="digit" value="{{form.manualProteinG}}" data-field="manualProteinG" bindinput="onFieldInput" placeholder="如 90.0" />
+          </view>
+          <view class="field">
+            <view class="field-label">脂肪（g，可选）</view>
+            <input class="input" type="digit" value="{{form.manualFatG}}" data-field="manualFatG" bindinput="onFieldInput" placeholder="如 55.0" />
+          </view>
+          <view class="field">
+            <view class="field-label">碳水（g，可选）</view>
+            <input class="input" type="digit" value="{{form.manualCarbG}}" data-field="manualCarbG" bindinput="onFieldInput" placeholder="如 220.0" />
+          </view>
+          <view class="field">
+            <view class="field-label">来源类型</view>
+            <picker range="{{manualSourceLabels}}" value="{{form.manualSourceIndex}}" bindchange="onManualSourceChange">
+              <view class="picker-value">{{manualSourceLabels[form.manualSourceIndex]}}</view>
+            </picker>
+          </view>
+          <view class="field">
+            <view class="field-label">来源说明（可选）</view>
+            <input class="input" value="{{form.manualSourceNote}}" data-field="manualSourceNote" bindinput="onFieldInput" placeholder="如：体检报告 / 营养师建议" />
+          </view>
+        </view>
+
+        <view class="note">身高、体重、体脂按 cm / kg / % 填写即可；保存后内部按更精确单位记录，界面显示单位不变。</view>
+
+        <view class="btn-group">
+          <button class="btn" bindtap="onSave" disabled="{{saving || computing}}">{{saving ? '保存中…' : '保存资料'}}</button>
+          <button class="btn btn-ghost" bindtap="onCancelEdit" disabled="{{saving}}">取消编辑</button>
+          <button class="btn btn-ghost" bindtap="onComputeTarget" disabled="{{saving || computing}}">{{computing ? '计算中…' : '计算营养目标'}}</button>
+        </view>
+        <view class="note">点“保存资料”才会写入；保存后自动用已保存的资料重算每日目标并回到摘要。“取消编辑”会丢弃本次未保存的修改。</view>
+        <view class="note">“计算营养目标”用的是已保存的资料，表单里未保存的修改不参与计算。</view>
+      </view>
+    </block>
+
+    <!-- 营养目标：全部正式值来自 WASM -->
+    <view class="card">
+      <view class="card-title">
+        <text>每日营养目标</text>
+        <text class="badge {{targetBadge}}">{{targetStateText}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{editing}}">正在编辑：下面的目标仍来自已保存的资料，表单里未保存的修改不参与。</view>
+      <view class="note note-warn" wx:if="{{targetError}}">{{targetError}}</view>
+
+      <block wx:if="{{view.target}}">
+        <view class="row">
+          <text class="row-label">目标状态</text>
+          <text class="row-value">{{view.target.statusLabel}}</text>
+        </view>
+        <view class="row">
+          <text class="row-label">能否用于自动规划</text>
+          <text class="row-value">{{view.target.eligible ? '可以' : '暂不可以'}} — {{view.target.reasonsText ? view.target.reasonsText : '无额外限制'}}</text>
+        </view>
+        <view class="row">
+          <text class="row-label">BMI</text>
+          <text class="row-value">{{view.target.bmiLabel}}</text>
+        </view>
+        <view class="row" wx:if="{{view.target.ageBand}}">
+          <text class="row-label">年龄区间</text>
+          <text class="row-value">{{view.target.ageBand}}{{view.target.age18Extrapolation ? '（18 岁按成人公式外推）' : ''}}</text>
+        </view>
+        <view class="row" wx:if="{{view.target.daily}}">
+          <text class="row-label">每日目标</text>
+          <text class="row-value">{{targetDailyText}}</text>
+        </view>
+        <view class="row" wx:for="{{targetMealRows}}" wx:key="label">
+          <text class="row-label">{{item.label}}参考</text>
+          <text class="row-value">{{item.text}}</text>
+        </view>
+        <view class="row" wx:if="{{view.target.sourceLabel}}">
+          <text class="row-label">目标来源</text>
+          <text class="row-value">{{view.target.sourceLabel}}</text>
+        </view>
+        <view class="row" wx:if="{{view.target.componentLabel}}">
+          <text class="row-label">宏量构成</text>
+          <text class="row-value">{{view.target.componentLabel}}</text>
+        </view>
+        <view class="row" wx:if="{{view.target.warnings.length > 0}}">
+          <text class="row-label">提示</text>
+          <view class="row-value">
+            <view class="note note-warn" wx:for="{{view.target.warnings}}" wx:key="*this">{{item}}</view>
+          </view>
+        </view>
+        <view class="row">
+          <text class="row-label">手动目标存证</text>
+          <text class="row-value">{{view.target.manualStored ? '已存证' : '未存证'}}</text>
+        </view>
+        <view class="row">
+          <text class="row-label">手动目标应用</text>
+          <text class="row-value">{{view.target.manualApplied ? '已应用' : '未应用'}}</text>
+        </view>
+        <view class="row" wx:if="{{view.target.manualReason}}">
+          <text class="row-label">未应用原因</text>
+          <text class="row-value">{{view.target.manualReason}}</text>
+        </view>
+        <view class="note">{{view.target.message}}</view>
+      </block>
+
+      <block wx:else>
+        <view class="empty">{{view.targetState === 'loading' ? '正在计算…' : '尚未计算目标'}}</view>
+        <view class="note">点“计算营养目标”，用已保存的资料计算；未保存的修改不会参与。</view>
+      </block>
+    </view>
+  </block>
+</view>

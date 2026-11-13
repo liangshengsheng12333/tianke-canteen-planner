@@ -1,0 +1,153 @@
+<view class="page">
+  <view class="banner banner-sim">
+    <text class="tag">模拟数据</text>
+    <text>本页菜单、营养与预算均为模拟数据，营养值为估算占位；不构成真实菜单或业务验收依据。</text>
+  </view>
+
+  <view class="card">
+    <view class="title">运行环境</view>
+    <view class="row" wx:for="{{envRows}}" wx:key="label">
+      <text class="label">{{item.label}}</text>
+      <text class="value">{{item.value}}</text>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="title">模拟输入夹具选择 <text class="tag">模拟</text></view>
+    <view class="picker-box">
+      <picker bindchange="onCaseChange" value="{{selectedCaseIndex}}" range="{{caseLabels}}">
+        <view class="picker-value">当前夹具：{{currentCaseName}} (点击切换)</view>
+      </picker>
+    </view>
+    <view class="note">{{currentCaseDesc}}</view>
+
+    <view class="row" wx:for="{{simRows}}" wx:key="label">
+      <text class="label">{{item.label}}</text>
+      <text class="value">{{item.value}}</text>
+    </view>
+    <view class="{{capabilityOk ? 'ok' : 'err'}}">调用侧子集检查：{{capabilityText}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">WASM 加载 / ABI 探针</view>
+    <view class="status status-{{state}}">状态：{{stateText}}</view>
+    <view class="error" wx:if="{{errorText}}">错误：{{errorText}}</view>
+    <view class="row" wx:for="{{probeRows}}" wx:key="label">
+      <text class="label">{{item.label}}</text>
+      <text class="value">{{item.value}}</text>
+    </view>
+    <view class="note" wx:if="{{probeNote}}">{{probeNote}}</view>
+    <view class="btn-group">
+      <button size="mini" type="default" bindtap="onProbe" disabled="{{state === 'loading'}}">运行 ABI 探针</button>
+      <button size="mini" type="warn" bindtap="onTriggerLoadError" disabled="{{state === 'loading'}}">触发加载错误演示</button>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="title">PlanDay 业务联调（阶段 B 已开放）</view>
+    <view class="note">通过 core-bridge 调用 C++ WASM (mp_plan)。JS 仅负责字段展示与内存生命周期，不补算任何营养或规划逻辑。</view>
+
+    <view class="btn-group">
+      <button size="mini" type="primary" bindtap="onRunPlan" disabled="{{planState === 'running'}}">运行 PlanDay (WASM)</button>
+      <button size="mini" type="default" bindtap="onClearStorage">清除本地缓存快照</button>
+    </view>
+
+    <view class="restore-badge" wx:if="{{isRestoredFromStorage}}">
+      已从本地持久化存储恢复上次结果快照（时间: {{storageTimestamp}}）
+    </view>
+
+    <view class="status status-ready" wx:if="{{planState === 'success' && !isRestoredFromStorage}}">
+      执行成功（耗时：{{planDurationMs}} ms，已保存至本地存储）
+    </view>
+    <view class="status status-error" wx:if="{{planState === 'error'}}">
+      {{errorText}}
+    </view>
+
+    <view class="result-box" wx:if="{{planSummary}}">
+      <!-- 契约错误 -->
+      <view wx:if="{{!planSummary.isOk}}">
+        <view class="badge badge-err">契约级错误: {{planSummary.errorCode}}</view>
+        <view class="row">
+          <text class="label">错误路径</text>
+          <text class="value">{{planSummary.fieldPath}}</text>
+        </view>
+        <view class="row">
+          <text class="label">详细说明</text>
+          <text class="value">{{planSummary.message}}</text>
+        </view>
+      </view>
+
+      <!-- 业务结果 -->
+      <view wx:if="{{planSummary.isOk}}">
+        <view class="badge badge-info">状态: {{planSummary.status}}</view>
+        <view class="row">
+          <text class="label">唯一方案数</text>
+          <text class="value">{{planSummary.distinctPlanCount}} (不凑三套)</text>
+        </view>
+        <view class="row" wx:if="{{planSummary.planKey}}">
+          <text class="label">planKey (不透明稳定键)</text>
+          <text class="value code">{{planSummary.planKey}}</text>
+        </view>
+        <view class="row" wx:if="{{planSummary.offeredAs}}">
+          <text class="label">合并策略 (offeredAs)</text>
+          <text class="value">{{planSummary.offeredAs}}</text>
+        </view>
+        <view class="row">
+          <text class="label">方案标志 (flags)</text>
+          <text class="value">{{planSummary.flags}}</text>
+        </view>
+
+        <!-- 目标不可用详情 -->
+        <view wx:if="{{planSummary.status === 'TargetUnavailable'}}">
+          <view class="note note-warn">自动目标已停用：{{planSummary.targetStatus}} (原因: {{planSummary.targetReasons}})</view>
+          <view class="row">
+            <text class="label">诊断信息</text>
+            <text class="value">{{planSummary.diagnostics}}</text>
+          </view>
+        </view>
+
+        <!-- 资源受限详情 -->
+        <view wx:if="{{planSummary.status === 'ResourceLimited'}}">
+          <view class="note note-warn">合法限额真实耗尽 (limitReached=true, 搜索评估节点: {{planSummary.searchNodesVisited}})</view>
+          <view class="row">
+            <text class="label">诊断信息</text>
+            <text class="value">{{planSummary.diagnostics}}</text>
+          </view>
+        </view>
+
+        <!-- 成功方案详情 -->
+        <view wx:if="{{planSummary.budgetSummary}}">
+          <view class="sub-title">方案预算核算 (9 字段完整性)</view>
+          <view class="row">
+            <text class="label">全天预算 / 剩余可用</text>
+            <text class="value">￥{{planSummary.budgetSummary.budgetCents / 100}} / ￥{{planSummary.budgetSummary.remainingBudgetKnownCents / 100}}</text>
+          </view>
+          <view class="row">
+            <text class="label">方案总价 (已知小计)</text>
+            <text class="value">￥{{planSummary.budgetSummary.plannedTotalCents / 100}} (￥{{planSummary.budgetSummary.plannedTotalKnownCents / 100}})</text>
+          </view>
+          <view class="row">
+            <text class="label">预算内 / 超支 / 超额</text>
+            <text class="value">withinBudget: {{planSummary.budgetSummary.withinBudgetKnownAmounts ? '是' : '否'}}, over: {{planSummary.budgetSummary.overBudget ? '是' : '否'}}, overage: ￥{{planSummary.budgetSummary.overageCents / 100}}</text>
+          </view>
+          <view class="row">
+            <text class="label">核算口径 / 价格完整</text>
+            <text class="value">{{planSummary.budgetSummary.checkBasis}} / {{planSummary.budgetSummary.priceIncomplete ? '不完整' : '完整'}}</text>
+          </view>
+        </view>
+
+        <view wx:if="{{planSummary.mealsSummary && planSummary.mealsSummary.length > 0}}">
+          <view class="sub-title">三餐推荐与各餐参考目标</view>
+          <view class="meal-card" wx:for="{{planSummary.mealsSummary}}" wx:key="meal">
+            <view class="meal-header">
+              <text class="meal-name">{{item.meal}} (窗口: {{item.windowId}})</text>
+              <text class="meal-count">{{item.itemCount}} 道菜</text>
+            </view>
+            <view class="meal-items">{{item.items}}</view>
+            <view class="meal-ref">餐次参考目标: {{item.refTarget}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

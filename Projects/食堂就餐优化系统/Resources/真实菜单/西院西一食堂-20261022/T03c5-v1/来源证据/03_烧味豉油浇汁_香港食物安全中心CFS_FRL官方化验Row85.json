@@ -1,0 +1,31 @@
+{
+  "food_name": "燒味汁 / 烧味豉油浇汁 (Sauce for Siu Mei)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "excel_attachment": "Nutrient_profiles_FRL.xlsx (Sheet: Eng, Row: 85)",
+  "category": "Condiments and sauces - Condiments and sauces",
+  "row_index": 85,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "nutrients_per_100g": {
+    "energy_kcal": 63.0,
+    "protein_g": 1.7,
+    "fat_g": 0.3,
+    "carbohydrate_g": 13.0,
+    "dietary_fibre_g": "Trace",
+    "sugars_g": 8.5,
+    "saturated_fat_g": 0.12,
+    "cholesterol_mg": 0.26,
+    "sodium_mg": 1900.0
+  },
+  "canteen_portion_assumption": "单份白切鸡饭浇淋烧味豉油浇汁 15g，以豉油、水、微量糖熬制，提供基础咸鲜微甜风味，此为透明工艺假设。",
+  "single_portion_calculation_15g": {
+    "weight_g": 15.0,
+    "energy_kcal": 9.45,
+    "protein_g": 0.255,
+    "fat_g": 0.045,
+    "carbohydrate_g": 1.95,
+    "sodium_mg": 285.0
+  }
+}

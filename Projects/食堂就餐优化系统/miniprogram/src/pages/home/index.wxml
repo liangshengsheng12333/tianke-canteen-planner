@@ -1,0 +1,412 @@
+<!-- pages/home/index.wxml — 今日页：标题/日期 → 简易·完整 → 三餐切换 → 本餐卡 → 今日小结 → 共用底部导航。 -->
+<view class="page page-has-tabbar {{themeClass}}">
+  <!-- 微信系统栏 / 胶囊预留：只用安全区高度，不手写固定 px 猜测机型 -->
+  <view class="sys-safe"></view>
+
+  <!-- 产品标题与日期 -->
+  <view class="today-head">
+    <view class="today-title-row">
+      <view class="today-title">天科食客</view>
+      <!-- 简易 / 完整快捷入口：只切换营养信息多少，不是开发者模式 -->
+      <view class="mode-pill" bindtap="onToggleMode">
+        <text class="mode-pill-text">{{modeLabel}}</text>
+        <text class="mode-pill-arrow">›</text>
+      </view>
+    </view>
+    <view class="today-date">{{dateLine}}</view>
+    <!-- 当前菜单 + 切换：一行只放菜单名与一个入口，直达“菜单与备份”页的预检/确认流程 -->
+    <view class="menu-line {{menuSimulated ? 'menu-line-simulated' : ''}}">
+      <text class="menu-line-name">{{menuTitle}}</text>
+      <text class="menu-line-switch" bindtap="onOpenMenuSwitch">切换 ›</text>
+    </view>
+  </view>
+
+  <!-- 读取异常直接可见，不用假数据顶替 -->
+  <view class="banner banner-err" wx:if="{{loadError}}">{{loadError}}</view>
+
+  <!-- 记录写入后剩余推荐可能过期：只提示并指向既有“刷新方案”，不自动重算 -->
+  <view class="banner banner-update" wx:if="{{planUpdate}}">
+    <text class="banner-update-text">{{planUpdate.message}}</text>
+    <text class="link link-strong" bindtap="onRefreshPlan">刷新方案 ›</text>
+  </view>
+
+  <block wx:if="{{card}}">
+    <!-- 未建档：给出可执行的入口，不把档案表单调到今日页首屏 -->
+    <view class="profile-tip" wx:if="{{!profileReady}}">
+      <view class="profile-tip-title">想按你的目标推荐？先完善资料。</view>
+      <view class="note">手选和记餐入口仍然可用；不建档也能看菜单与记录。</view>
+      <view class="profile-tip-actions">
+        <text class="link link-strong" bindtap="onGoProfile">去完善资料 ›</text>
+      </view>
+    </view>
+
+    <!-- 早餐 / 午餐 / 晚餐切换：带已记/已结束状态，切换不写业务数据 -->
+    <view class="meal-tabs">
+      <view
+        wx:for="{{mealTabs}}"
+        wx:key="key"
+        class="meal-tab {{activeMeal === item.key ? 'active' : ''}} state-{{item.stateKind}}"
+        data-meal="{{item.key}}"
+        bindtap="onSelectMeal"
+      >
+        <text class="meal-tab-label">{{item.label}}</text>
+        <text class="meal-tab-state">{{item.stateText}}</text>
+      </view>
+    </view>
+
+    <!-- 当前餐卡：菜名/份量/价格 → 热量大字 → 搭配说明 → 完整模式营养区 → 操作 -->
+    <view class="meal-hero">
+      <view class="meal-hero-head">
+        <view class="meal-hero-title">{{card.mealLabel}}</view>
+        <view class="meal-hero-window">{{card.windowText}}</view>
+      </view>
+
+      <view class="dish-list" wx:if="{{card.dishes.length > 0}}">
+        <view class="dish-row" wx:for="{{card.dishes}}" wx:key="itemKey">
+          <view class="dish-main">
+            <text class="dish-name">{{item.name}}</text>
+            <text class="dish-portion">{{item.portionText}}</text>
+          </view>
+          <view class="dish-meta">
+            <text class="dish-price">{{item.priceLabel}}</text>
+            <text class="tag tag-plain" wx:if="{{item.locked}}">已锁定</text>
+            <text class="tag tag-danger" wx:if="{{item.soldOut}}">售罄</text>
+          </view>
+        </view>
+      </view>
+      <view class="empty" wx:else>{{card.emptyText}}</view>
+
+      <view class="meal-price-line">
+        <text class="meal-price-label">这餐计划</text>
+        <text class="meal-price">{{card.plannedPriceText}}</text>
+      </view>
+
+      <view class="heat-block">
+        <text class="heat-value {{card.heatUnknown ? 'heat-unknown' : ''}}">{{card.heatText}}</text>
+        <text class="tag tag-warn" wx:if="{{card.heatEstimated}}">估算</text>
+      </view>
+      <view class="pairing">{{card.pairingText}}</view>
+
+      <!-- 完整模式：与简易共享同一张卡，只在热量/搭配后增加一组紧凑营养区 -->
+      <view class="macro-block" wx:if="{{card.macro.show}}">
+        <view class="macro-title-row">
+          <text class="macro-title">这餐的营养</text>
+          <text class="macro-share-label">供能占比</text>
+        </view>
+        <view class="macro-row" wx:for="{{card.macro.rows}}" wx:key="key">
+          <text class="macro-label">{{item.label}}</text>
+          <text class="macro-grams">{{item.gramsText}}</text>
+          <text class="macro-percent">{{item.percentText}}</text>
+        </view>
+        <view class="macro-bar" wx:if="{{card.macro.showBar}}">
+          <view class="macro-seg seg-protein" style="{{card.macro.barStyleProtein}}"></view>
+          <view class="macro-seg seg-fat" style="{{card.macro.barStyleFat}}"></view>
+          <view class="macro-seg seg-carb" style="{{card.macro.barStyleCarb}}"></view>
+        </view>
+        <view class="macro-note">{{card.macro.note}}</view>
+      </view>
+
+      <view class="status-note" wx:if="{{card.statusNote}}">{{card.statusNote}}</view>
+      <view class="chips" wx:if="{{card.flags.length > 0}}">
+        <text class="tag tag-warn" wx:for="{{card.flags}}" wx:key="*this">{{item}}</text>
+      </view>
+
+      <view class="primary-actions">
+        <button
+          class="btn btn-lg btn-ghost btn-block-lg"
+          wx:if="{{card.canSwap}}"
+          bindtap="onSwapMeal"
+        >换一份</button>
+        <button
+          class="btn btn-lg btn-block-lg"
+          wx:if="{{card.canConfirm}}"
+          bindtap="onConfirmMeal"
+        >确认吃了</button>
+        <button
+          class="btn btn-lg btn-ghost btn-block-lg"
+          wx:if="{{card.confirmed}}"
+          bindtap="onGoLogs"
+        >已记录 · 查看</button>
+      </view>
+      <view class="secondary-actions">
+        <text class="link link-pick" bindtap="onOpenSelfPick">自己选菜</text>
+        <text class="link link-detail" bindtap="onOpenDetail">这餐详情 ›</text>
+      </view>
+    </view>
+
+    <!-- 今日小结：只写实际记录，不把待吃计划当已摄入；没设预算不摆空卡 -->
+    <view class="summary-card">
+      <view class="summary-head">
+        <text class="summary-title">{{summary.recordedText}}</text>
+        <text class="link" bindtap="onGoLogs">查看 ›</text>
+      </view>
+      <view class="summary-row">
+        <text class="summary-label">已记录热量</text>
+        <text class="summary-value">{{summary.energyText}}</text>
+      </view>
+      <view class="summary-row">
+        <text class="summary-label">已记录花费</text>
+        <text class="summary-value">{{summary.spentText}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{summary.spentIncomplete}}">花费还没填全，暂时算不准预算。</view>
+      <view class="note note-warn" wx:if="{{summary.energyIncomplete}}">营养还没补全：{{summary.energyIncompleteText}}（未知不按 0 计入）。</view>
+      <block wx:if="{{summary.budgetSet}}">
+        <view class="summary-divider"></view>
+        <view class="summary-row">
+          <text class="summary-label">全天预算</text>
+          <text class="summary-value">{{summary.budgetLabel}}</text>
+        </view>
+        <view class="summary-row">
+          <text class="summary-label">待吃计划</text>
+          <text class="summary-value">{{summary.plannedLabel}}</text>
+        </view>
+        <view class="summary-row">
+          <text class="summary-label">已花</text>
+          <text class="summary-value">{{summary.spentLabel}}</text>
+        </view>
+        <view class="summary-row" wx:if="{{summary.remainingKnown}}">
+          <text class="summary-label">剩余可用</text>
+          <text class="summary-value">{{summary.remainingLabel}}</text>
+        </view>
+        <view class="summary-row" wx:if="{{summary.overBudget}}">
+          <text class="summary-label">超出预算</text>
+          <text class="summary-value danger">{{summary.overageLabel}}</text>
+        </view>
+        <view class="note note-warn" wx:if="{{summary.plannedIncomplete}}">计划含未填价格，待吃金额只按已知小计。</view>
+      </block>
+      <view class="summary-footnote">“已记”只算实际记录；待吃的推荐不计入摄入。</view>
+    </view>
+
+    <!-- 其他方案：默认只给一行状态 + 必要标记；说明与技术诊断按需展开，不占主导航 -->
+    <view class="plans-card">
+      <view class="card-title">
+        <text>其他方案</text>
+        <text class="link" bindtap="onTogglePlansDetail">{{plansOpen ? '收起说明' : '说明'}}</text>
+      </view>
+      <view class="plan-status-line">
+        <text class="badge {{planBadge}}">{{planStatusShort}}</text>
+        <text class="plan-status-hint">{{planHint}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{targetNote}}">{{targetNote}}</view>
+      <block wx:if="{{plansOpen}}">
+        <view class="note" wx:for="{{planNotes}}" wx:key="index">{{item}}</view>
+        <view class="tech-block" wx:if="{{planTechNotes.length > 0 || sheetError}}">
+          <view class="tech-title">技术信息（用于诊断）</view>
+          <view class="note" wx:for="{{planTechNotes}}" wx:key="index">{{item}}</view>
+          <view class="note" wx:if="{{sheetError}}">选择面板错误：{{sheetError}}</view>
+          <view class="note">完整技术信息：我的 → 数据管理 → 开发诊断。</view>
+        </view>
+      </block>
+
+      <view class="btn-group">
+        <button
+          class="btn"
+          bindtap="onRefreshPlan"
+          disabled="{{refreshing || view.planState === 'loading' || !view.canPlan}}"
+        >{{refreshing ? '生成中…' : (view.planState === 'ok' ? '重新生成方案' : '生成今日方案')}}</button>
+      </view>
+
+      <view class="plan-list" wx:if="{{plans.length > 0}}">
+        <view
+          wx:for="{{plans}}"
+          wx:key="index"
+          class="plan-chip {{item.selected ? 'plan-chip-active' : ''}}"
+          data-index="{{item.index}}"
+          bindtap="onSelectPlan"
+        >
+          <view class="plan-title">{{item.title}}</view>
+          <view class="plan-meta">{{item.priceLabel}} · {{item.deviationText}}</view>
+          <view class="plan-meta" wx:if="{{item.completenessText}}">{{item.completenessText}}</view>
+          <view class="chips" wx:if="{{item.flagLabels.length > 0}}">
+            <text class="tag tag-warn" wx:for="{{item.flagLabels}}" wx:for-item="flag" wx:key="*this">{{flag}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="note" wx:if="{{plans.length > 1}}">点击方案卡片切换主选 / 备选；不足三套时按真实结果展示，不复制凑数。</view>
+
+      <view class="chips" wx:if="{{topFlags.length > 0}}">
+        <text class="tag tag-warn" wx:for="{{topFlags}}" wx:key="index">{{item.label}}</text>
+      </view>
+    </view>
+
+    <!-- 锁定失效 / 冲突：列出原因与可执行入口 -->
+    <view class="plans-card" wx:if="{{lockIssues.length > 0}}">
+      <view class="card-title">
+        <text>锁定项需要处理</text>
+        <text class="badge badge-err">{{lockIssues.length}} 项</text>
+      </view>
+      <view class="note note-warn">解决前不会生成新的合法方案，也不会静默解锁。</view>
+      <view class="issue" wx:for="{{lockIssues}}" wx:key="index">
+        <view class="chips">
+          <text class="tag tag-plain">{{item.mealLabel}}</text>
+          <text class="tag tag-warn">{{item.kindLabel}}</text>
+        </view>
+        <view class="issue-label">{{item.label}}</view>
+        <view class="note">{{item.reason}}</view>
+        <view class="btn-group">
+          <button
+            class="btn btn-sm btn-warn"
+            wx:if="{{item.kind === 'window' && item.windowId}}"
+            data-meal="{{item.meal}}"
+            bindtap="onClearWindowLockIssue"
+          >解除窗口锁定</button>
+          <button
+            class="btn btn-sm btn-warn"
+            wx:if="{{item.kind === 'item' && item.offerId}}"
+            data-meal="{{item.meal}}"
+            data-offer="{{item.offerId}}"
+            bindtap="onClearItemLockIssue"
+          >解除菜品锁定</button>
+        </view>
+        <view class="note" wx:if="{{!item.resolvable}}">该锁定记录缺少稳定 ID，当前页面无法定位解除；请重新导入菜单后再处理。</view>
+      </view>
+    </view>
+
+    <!-- 今日临时售罄：可手动解除，跨日不继承 -->
+    <view class="plans-card" wx:if="{{soldOutMarks.length > 0}}">
+      <view class="card-title">
+        <text>今日临时售罄</text>
+        <text class="badge badge-warn">{{soldOutMarks.length}} 项</text>
+      </view>
+      <view class="note">仅作用于今天；标记后需重新生成方案才生效，跨日不继承。</view>
+      <view class="row" wx:for="{{soldOutMarks}}" wx:key="index">
+        <text class="row-label">{{item.mealLabel}}</text>
+        <view class="row-value">
+          <text>{{item.dishName}}</text>
+          <text class="note" wx:if="{{item.windowName}}">（{{item.windowName}}）</text>
+          <button
+            class="btn btn-sm btn-ghost"
+            data-meal="{{item.meal}}"
+            data-dish="{{item.dishId}}"
+            data-window="{{item.windowId}}"
+            bindtap="onClearSoldOut"
+          >解除</button>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 本餐详情：锁定/售罄/结束等业务操作集中在这里，不挤占本餐卡 -->
+  <view class="sheet-mask" wx:if="{{detailOpen}}" bindtap="onCloseDetail"></view>
+  <view class="sheet" wx:if="{{detailOpen}}">
+    <view class="sheet-head">
+      <view class="sheet-title">{{detail.mealLabel}} · 这餐详情</view>
+      <text class="sheet-close" bindtap="onCloseDetail">关闭</text>
+    </view>
+    <scroll-view class="sheet-body" scroll-y>
+      <view class="row">
+        <text class="row-label">窗口</text>
+        <text class="row-value">{{detail.windowText}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">状态</text>
+        <text class="row-value">{{detail.planStatusLabel}}</text>
+      </view>
+      <view class="row">
+        <text class="row-label">计划合计</text>
+        <text class="row-value">{{detail.plannedKnownLabel}}</text>
+      </view>
+
+      <view class="sub-title">菜品</view>
+      <view class="detail-item" wx:for="{{detail.items}}" wx:key="itemKey">
+        <view class="detail-item-main">
+          <text class="detail-item-name">{{item.name}}</text>
+          <text class="detail-item-meta">×{{item.quantity}} · {{item.portionLabel}} · {{item.priceLabel}}</text>
+        </view>
+        <view class="chips">
+          <text class="tag tag-warn" wx:if="{{item.estimated}}">估算</text>
+          <text class="tag tag-plain" wx:if="{{item.locked}}">已锁定</text>
+          <text class="tag tag-danger" wx:if="{{item.soldOut}}">售罄</text>
+          <text class="tag tag-plain" wx:if="{{item.unknownLabel}}">{{item.unknownLabel}}</text>
+        </view>
+        <view class="detail-nutrition">{{item.nutritionText}}</view>
+        <view class="btn-group" wx:if="{{detail.actionsEnabled}}">
+          <button
+            class="btn btn-sm btn-ghost"
+            data-meal="{{card.meal}}"
+            data-offer="{{item.offerId}}"
+            bindtap="onToggleItemLock"
+          >{{item.locked ? '解除锁定' : '锁定'}}</button>
+          <button
+            class="btn btn-sm btn-ghost"
+            wx:if="{{!item.soldOut}}"
+            data-meal="{{card.meal}}"
+            data-dish="{{item.dishId}}"
+            bindtap="onMarkSoldOut"
+          >标记售罄</button>
+          <button
+            class="btn btn-sm btn-ghost"
+            wx:else
+            data-meal="{{card.meal}}"
+            data-dish="{{item.dishId}}"
+            data-window="{{item.windowId}}"
+            bindtap="onClearSoldOut"
+          >解除售罄</button>
+          <button
+            class="btn btn-sm btn-ghost"
+            wx:if="{{!item.locked}}"
+            data-meal="{{card.meal}}"
+            data-offer="{{item.offerId}}"
+            bindtap="onSwapItem"
+          >换菜</button>
+        </view>
+      </view>
+      <view class="empty" wx:if="{{detail.items.length === 0}}">这餐还没有菜品明细。</view>
+
+      <view class="sub-title">已知合计</view>
+      <view class="row">
+        <text class="row-label">营养</text>
+        <text class="row-value">{{detail.knownSumsText}}</text>
+      </view>
+      <view class="row" wx:if="{{detail.targetText}}">
+        <text class="row-label">餐次参考</text>
+        <text class="row-value">{{detail.targetText}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{detail.incompleteText}}">缺失项：{{detail.incompleteText}}（未知不按 0 计入）。</view>
+      <view class="note" wx:if="{{detail.priceIncomplete}}">计划含未填价格，合计只按已知金额小计。</view>
+
+      <view class="sub-title">本餐操作</view>
+      <view class="btn-group">
+        <button
+          class="btn btn-sm"
+          wx:if="{{detail.windowActionable}}"
+          data-meal="{{card.meal}}"
+          bindtap="onToggleWindowLock"
+        >{{detail.windowLocked ? '解除窗口锁定' : '锁定窗口'}}</button>
+        <button
+          class="btn btn-sm btn-ghost"
+          wx:if="{{detail.canSwap}}"
+          bindtap="onSwapMeal"
+        >换一份</button>
+        <button
+          class="btn btn-sm btn-ghost"
+          wx:if="{{card.canEnd}}"
+          data-meal="{{card.meal}}"
+          bindtap="onEndMeal"
+        >结束餐次</button>
+        <button
+          class="btn btn-sm btn-ghost"
+          wx:if="{{card.canReopen}}"
+          data-meal="{{card.meal}}"
+          bindtap="onReopenMeal"
+        >重开餐次</button>
+      </view>
+      <view class="note">锁定与售罄是下一次生成的约束；推荐不等于已吃，确认仍在记录页完成。</view>
+      <view class="sheet-tail"></view>
+    </scroll-view>
+  </view>
+
+  <!-- 共用底部导航：今日 / 记录 / 我的 -->
+  <view class="tabbar">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="key"
+      class="tabbar-item {{tab === item.key ? 'active' : ''}}"
+      data-tab="{{item.key}}"
+      bindtap="onTab"
+    >
+      <view class="tabbar-icon {{item.icon}}"></view>
+      <text class="tabbar-label">{{item.label}}</text>
+    </view>
+  </view>
+</view>

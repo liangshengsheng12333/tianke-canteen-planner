@@ -1,0 +1,36 @@
+{
+  "ingredientName": "传统油炸薄脆(馃箅儿)",
+  "dishId": "dish-shandong-pancake",
+  "auditCorrection": {
+    "historicalIssue": "前版T03c1-v2误采所谓的'粮悦大吃兄薄脆(2134 kJ)'，经溯源其实质为'「大吃兄」糯米锅巴(原味)'(配料为糯米、淀粉)，并非面粉油炸薄脆，且前版链接仅停在foodtalks首页，无单品实物凭证。已在T03c6彻底废止更正。",
+    "substitutionJustification": "煎饼薄脆（北方又称馃箅儿、薄脆片）多为食堂档口现场油炸或当地小吃原料作坊供应，属无统一工业包装的散装熟制品。其主要原料为小麦粉、水及植物油炸制。因无包装标签，采用《中国食物成分表》经典中式油炸面点'排叉'（01-1-504类似工艺）通用条目作为透明科学替代估算基准。已按P09核验意见彻底删除前版'配方吸油率已验证相符'等缺乏过程凭证的断言，明确其为科学替代估算假设，不冒称档口实测配方或现场称重。"
+  },
+  "primaryStandard": {
+    "sourceDatabase": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》",
+    "category": "谷类及制品 / 传统油炸面食",
+    "bookCode": "01-1-504类似工艺(排叉)",
+    "officialName": "排叉 / 传统油炸面点",
+    "officialOriginalPer100g": {
+      "waterG": 4.5,
+      "energyKj": 1895.0,
+      "energyKcal": 453.0,
+      "proteinG": 7.6,
+      "fatG": 22.0,
+      "carbG": 56.1,
+      "sodiumMg": 550.0
+    },
+    "portionAssumption": {
+      "description": "标准煎饼夹入油炸薄脆1整张（对折夹入），净重按典型中心估计值25g（波动范围20~30g）计；此项为典型份量假设，非现场实测或实验室称重",
+      "portionG": 25.0,
+      "portionEnergyKcal": 113.2500,
+      "portionProteinG": 1.9000,
+      "portionFatG": 5.5000,
+      "portionCarbG": 14.0250,
+      "portionSodiumMg": 137.5000
+    }
+  },
+  "substitutionNote": {
+    "description": "薄脆散装熟制品采用国家成分表同原料、同油炸工艺的面点排叉通用条目作为替代基准。根据P09复核意见，已彻底删除前版缺乏过程复算凭证的吸油率验证断言，保留为透明的替代条目与份量假设。"
+  },
+  "auditNote": "薄脆自带的油炸吸附油脂（单份约5.5g脂肪）已完全体现在该条目中；鏊子防粘底油（6g大豆油）为独立工序，二者边界明确，绝无重复计量。"
+}

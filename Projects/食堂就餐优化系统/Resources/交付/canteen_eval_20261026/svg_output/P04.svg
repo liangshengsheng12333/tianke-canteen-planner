@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F9F6" />
+  
+  <!-- Header Bar -->
+  <g transform="translate(60, 35)">
+    <rect x="0" y="0" width="120" height="24" rx="4" fill="#FEF3EB" />
+    <text x="12" y="17" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#E87A24">核心算法 (60分)</text>
+    <text x="135" y="20" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" font-weight="bold" fill="#1B4D3E">三个算法解决同一个规划问题：机制对比与工程取舍</text>
+    <text x="0" y="46" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#5A6B61">共用输入候选与综合打分口径，三种截然不同的搜索策略：启发式极速、状态空间复用、乐观界剪枝</text>
+  </g>
+
+  <!-- Top Hero Visual: Archify Comparison Diagram -->
+  <g transform="translate(60, 95)">
+    <rect x="0" y="0" width="1160" height="310" rx="12" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+    <clipPath id="algoClipP04">
+      <rect x="8" y="8" width="1144" height="294" rx="8" />
+    </clipPath>
+    <image href="images/algo-comparison.png" x="8" y="8" width="1144" height="294" preserveAspectRatio="xMidYMid meet" clip-path="url(#algoClipP04)" />
+  </g>
+
+  <!-- Bottom: 3 Strategy Deep-Dive Cards -->
+  <g transform="translate(60, 420)">
+    <!-- Column 1: 贪心法 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="370" height="255" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <rect x="0" y="0" width="370" height="6" rx="3" fill="#2E7D5B" />
+      <text x="20" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#1B4D3E">贪心算法 (Greedy)</text>
+      <rect x="250" y="16" width="100" height="22" rx="4" fill="#E8F1EB" />
+      <text x="262" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#2E7D5B">耗时 &lt; 10 ms</text>
+      
+      <text x="20" y="62" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1F2923">搜索机制：局部增益最优</text>
+      <text x="20" y="84" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">按“营养贴近度/价格比”对当前餐次菜品做局部最佳选择，快速形成代表餐次组合。</text>
+      
+      <text x="20" y="118" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1F2923">适用场景与优势：</text>
+      <text x="20" y="140" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">计算极度轻量，手机冷启动即刻秒出方案，适合网络差或对响应速度极敏感场景。</text>
+
+      <text x="20" y="174" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#E87A24">客观理论边界：</text>
+      <text x="20" y="196" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">属启发式贪婪选择，不保证数学局部最优，遇到多窗口高离散价格时可能错失全天最优。</text>
+    </g>
+
+    <!-- Column 2: 动态规划 (DP) -->
+    <g transform="translate(395, 0)">
+      <rect x="0" y="0" width="370" height="255" rx="10" fill="#FFFFFF" stroke="#E87A24" stroke-width="2" />
+      <rect x="0" y="0" width="370" height="6" rx="3" fill="#E87A24" />
+      <text x="20" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#1B4D3E">动态规划 (DP)</text>
+      <rect x="250" y="16" width="100" height="22" rx="4" fill="#FEF3EB" />
+      <text x="262" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#E87A24">核心优化专项</text>
+      
+      <text x="20" y="62" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1F2923">搜索机制：多阶段累积与去重</text>
+      <text x="20" y="84" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">按早/中/晚阶段推进，累积热量与花费状态，用全局方案键去重并更新状态转移表。</text>
+      
+      <text x="20" y="118" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1F2923">状态容量控制：</text>
+      <text x="20" y="140" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">单/双餐状态上限20,000，三餐全天上限32个紧凑状态；超限进行桶化截断。</text>
+
+      <text x="20" y="174" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#E87A24">客观理论边界：</text>
+      <text x="20" y="196" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">状态截断保证了计算在有限内存与时间内完成，但在强截断下承认其为高精度近似解。</text>
+    </g>
+
+    <!-- Column 3: 分支限界 (BnB) -->
+    <g transform="translate(790, 0)">
+      <rect x="0" y="0" width="370" height="255" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <rect x="0" y="0" width="370" height="6" rx="3" fill="#1B4D3E" />
+      <text x="20" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#1B4D3E">分支限界 (BnB)</text>
+      <rect x="250" y="16" width="100" height="22" rx="4" fill="#E8F1EB" />
+      <text x="262" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#1B4D3E">保界剪枝搜索</text>
+      
+      <text x="20" y="62" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1F2923">搜索机制：深度优先 + 乐观上界</text>
+      <text x="20" y="84" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">递归展开搜索树，估算剩余餐次理论最好上限（乐观界）；一旦低于当前最优则强力剪枝。</text>
+      
+      <text x="20" y="118" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1F2923">防爆栈资源限制：</text>
+      <text x="20" y="140" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">设置最大搜索节点数 maxSearchNodes=200,000，防止最坏情况递归爆栈卡死。</text>
+
+      <text x="20" y="174" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#E87A24">客观理论边界：</text>
+      <text x="20" y="196" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">未触及节点上限时能给出数学精确最优解；若触及节点上限，保留已搜得的最优行者。</text>
+    </g>
+  </g>
+</svg>

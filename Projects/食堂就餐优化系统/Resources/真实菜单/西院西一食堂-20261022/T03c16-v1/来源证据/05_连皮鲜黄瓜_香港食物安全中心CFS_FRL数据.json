@@ -1,0 +1,47 @@
+{
+  "food_name": "青瓜(連皮) / 生黄瓜片 (Cucumber with skin)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL) / 中国疾病预防控制中心营养与健康所",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL) Row 740 与《中国食物成分表》",
+  "category": "Vegetables and vegetable products / Squashes and gourds (Row 740)",
+  "sheet_name": "Eng",
+  "official_row_index": 740,
+  "original_file": "Nutrient_profiles_FRL.xlsx (Row 740)",
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-23",
+  "per_amount": "100g 生鲜可食部",
+  "nutrients_per_100g": {
+    "cfs_frl_row740": {
+      "energy_kcal": 12.0,
+      "protein_g": 0.7,
+      "fat_g": 0.0,
+      "carbohydrate_g": 1.8,
+      "dietary_fibre_g": 0.7,
+      "sodium_mg": 2.0
+    },
+    "china_cdc_food_composition": {
+      "energy_kcal": 14.0,
+      "protein_g": 0.7,
+      "fat_g": 0.1,
+      "carbohydrate_g": 2.4,
+      "sodium_mg": 2.0
+    }
+  },
+  "canteen_portion_assumption_20g": {
+    "weight_g": 20.0,
+    "portion_description": "标配清口黄瓜片约 2~3 薄片（20g）",
+    "calculated_values_cdc_baseline": {
+      "energy_kcal": 2.80,
+      "protein_g": 0.14,
+      "fat_g": 0.02,
+      "carbohydrate_g": 0.48,
+      "sodium_mg": 0.4
+    },
+    "calculated_values_cfs_frl_baseline": {
+      "energy_kcal": 2.40,
+      "protein_g": 0.14,
+      "fat_g": 0.00,
+      "carbohydrate_g": 0.36,
+      "sodium_mg": 0.4
+    }
+  }
+}

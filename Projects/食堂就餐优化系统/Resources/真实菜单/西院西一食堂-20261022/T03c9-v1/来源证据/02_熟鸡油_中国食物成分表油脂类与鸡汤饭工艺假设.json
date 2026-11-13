@@ -1,0 +1,20 @@
+{
+  "food_name": "熟鸡油（鸡汤饭烹调油脂）",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，第十章 油脂类（动物油脂）",
+  "online_portal": "https://nlc.chinanutri.cn/",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "nutrients_per_100g": {
+    "energy_kcal": 890.0,
+    "energy_kj": 3728.0,
+    "protein_g": 0.0,
+    "fat_g": 99.8,
+    "carbohydrate_g": 0.0,
+    "sodium_mg": 0.0
+  },
+  "canteen_process_assumption": {
+    "photo_evidence": "海南鸡饭档口门头灯箱（T03a-v1 照片2 / 3f8c8a89fd8880b833651220e02770a8.jpg）明确公示标语“米饭鸡汤蒸 没菜也吃撑”",
+    "fact_vs_assumption": "照片2可证实档口米饭采用鸡汤蒸饭工艺。但现场标牌绝未标明每200g熟饭添加几克鸡油；每200g熟饭加入3g提香熟鸡油属于经典海南鸡饭的烹调配方工艺假设，而非现场称重证明事实。以此提供米饭金黄光泽与油脂香气，按每份3g计入26.70 kcal与2.994g脂肪。"
+  }
+}

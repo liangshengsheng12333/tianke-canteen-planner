@@ -1,0 +1,62 @@
+[
+  {
+    "dishId": "dish-shandong-pancake",
+    "name": "山东杂粮煎饼",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 486,
+      "proteinDg": 149,
+      "fatDg": 192,
+      "carbDg": 636
+    },
+    "nutritionBasis": {
+      "source": "中国食物成分表第6版(编码06-1-101鸡蛋/10-1-101植物油/01-1-601干煎饼折算/13-1-301甜面酱)及GB 28050市售薄脆标签加权估算",
+      "portionAssumption": "熟杂粮饼皮110g + 鲜鸡蛋(去壳)50g + 油炸薄脆25g + 甜面酱15g + 刷底油6g(单份成品净重约206g)",
+      "estimated": true,
+      "note": "配方公式严格依据标牌原文'饼皮+鸡蛋+薄脆'，结合制作工艺刷底油与甜面酱估算；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-grilled-cold-noodles",
+    "name": "烤冷面",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 413,
+      "proteinDg": 140,
+      "fatDg": 141,
+      "carbDg": 578
+    },
+    "nutritionBasis": {
+      "source": "GB 28050市售预包装冷面片标签、中国食物成分表第6版(鸡蛋/植物油)及酸甜辣酱加权估算",
+      "portionAssumption": "冷面片95g + 鲜鸡蛋(去壳)50g + 复合调味酱20g + 烹调油8g(单份成品净重约183g)",
+      "estimated": true,
+      "note": "配方公式严格依据标牌原文'面皮+鸡蛋'，结合铁板煎制用油与酸甜辣调味汁估算；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-shredded-pancake",
+    "name": "手抓饼",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 434,
+      "proteinDg": 133,
+      "fatDg": 229,
+      "carbDg": 439
+    },
+    "nutritionBasis": {
+      "source": "GB 28050主流速冻手抓饼生坯标签、中国食物成分表第6版(鸡蛋/马铃薯/植物油)加权估算",
+      "portionAssumption": "手抓饼生坯90g + 鲜鸡蛋(去壳)50g + 熟土豆丝45g + 烹调底油3g(单份成品净重约188g)",
+      "estimated": true,
+      "note": "配方公式严格依据标牌原文'面皮+鸡蛋+土豆丝'，结合饼身自带起酥油及极少底油估算；非食堂实测配方"
+    }
+  }
+]

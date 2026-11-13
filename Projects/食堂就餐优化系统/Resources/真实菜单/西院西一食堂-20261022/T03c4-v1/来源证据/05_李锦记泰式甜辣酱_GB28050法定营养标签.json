@@ -1,0 +1,26 @@
+{
+  "product_name": "李锦记泰式甜辣酱 (Lee Kum Kee Sweet Chilli Sauce)",
+  "producer": "李锦记（新会）食品有限公司 / 李锦记官方产品线",
+  "standard": "GB 28050 预包装食品营养标签通则",
+  "official_url": "https://www.lkk.com/",
+  "access_date": "2026-10-22",
+  "ingredients": "水、白砂糖、腌制红辣椒、大蒜、食用盐、乙酰化双淀粉己二酸酯、冰乙酸、柠檬酸、黄原胶",
+  "per_amount": "100g",
+  "label_nutrients_per_100g": {
+    "energy_kj": 920.0,
+    "energy_kcal": 220.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 55.0,
+    "sugars_g": 48.0,
+    "sodium_mg": 1150.0
+  },
+  "single_portion_calculation_25g": {
+    "weight_g": 25.0,
+    "energy_kcal": 55.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 13.75,
+    "sodium_mg": 287.5
+  }
+}

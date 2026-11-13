@@ -1,0 +1,51 @@
+{
+  "windows": {
+    "count": 12,
+    "oldMissing": [],
+    "oldChanged": [],
+    "duplicateIds": false
+  },
+  "dishes": {
+    "count": 166,
+    "oldMissing": [],
+    "oldChanged": [],
+    "duplicateIds": false
+  },
+  "offers": {
+    "count": 137,
+    "oldMissing": [],
+    "oldChanged": [],
+    "duplicateIds": false
+  },
+  "newNutrition": {
+    "count": 75,
+    "nonEstimated": [],
+    "incomplete": []
+  },
+  "wasmValidation": {
+    "wasmPath": "T05R02/out/user-v2/src/assets/wasm/mp_core.wasm",
+    "wasmSha256": "b0098453b7251c2ff39c65b3df932e7e15975e4252a036196ebf63638a3dc5dd",
+    "result": {
+      "contractVersion": "1.0",
+      "requestId": null,
+      "ok": true,
+      "error": null,
+      "result": {
+        "valid": true,
+        "menuVersion": "west1-canteen-batch2-supplement6-20261026",
+        "catalogHash": "sha256:a35158df416b9b338df10a3a7907f1a3e5ea5b2df0d60785ab6aa0e9f4839b0a",
+        "computedCatalogHash": "sha256:a35158df416b9b338df10a3a7907f1a3e5ea5b2df0d60785ab6aa0e9f4839b0a",
+        "counts": {
+          "windows": 12,
+          "dishes": 166,
+          "offers": 137,
+          "halfOffers": 0,
+          "comboRules": 0
+        },
+        "diagnostics": []
+      }
+    },
+    "hostExitCode": 1,
+    "hostExitNote": "Node emitted a complete valid menu result before a UV_HANDLE_CLOSING shutdown assertion; do not claim normal command exit."
+  }
+}

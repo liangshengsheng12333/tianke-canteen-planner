@@ -1,0 +1,61 @@
+/* pages/profile-edit/index.wxss — 个人资料页只写布局差异；颜色/字号/表单/卡片沿用 app.wxss。 */
+
+/* 错误/读取异常横幅 */
+.banner {
+  margin-top: 24rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.banner-err {
+  background: var(--tk-danger-bg);
+  border: 1rpx solid var(--tk-danger-line);
+  color: var(--tk-danger);
+}
+
+/* 字段级错误列表 */
+.error-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14rpx;
+  padding: 8rpx 0;
+  border-bottom: 1rpx dashed var(--tk-line);
+}
+.error-row:last-child {
+  border-bottom: none;
+}
+.error-label {
+  flex: 0 0 200rpx;
+  font-size: 28rpx;
+  color: var(--tk-danger);
+}
+.error-text {
+  flex: 1;
+  color: var(--tk-danger);
+}
+
+/* 手动目标分组 */
+.manual-block {
+  margin-top: 24rpx;
+  padding: 24rpx;
+  border-radius: 24rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+}
+
+/* 开关行 */
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid var(--tk-line);
+}
+.switch-row:last-child {
+  border-bottom: none;
+}
+.switch-label {
+  font-size: 32rpx;
+  color: var(--tk-text);
+}

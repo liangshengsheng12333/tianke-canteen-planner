@@ -1,0 +1,53 @@
+{
+  "builds": [
+    {
+      "target": "user",
+      "count": 79,
+      "bytes": 1033451,
+      "treeDigest": "sha256:76b6190e57b9ce103c0d6aa1d86878a4eb25ca359754160f64e7004df6c65cf8",
+      "manifestMatches": true,
+      "changedFromV4a": [
+        "src/assets/wasm/mp_core.wasm"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "target": "dev",
+      "count": 88,
+      "bytes": 1134241,
+      "treeDigest": "sha256:bd65cb50bd41b6a8ba0a55b2b7838d16b627e1a23adda768ff9b9a290de03c1c",
+      "manifestMatches": true,
+      "changedFromV4a": [
+        "src/assets/wasm/mp_core.wasm"
+      ],
+      "added": [],
+      "removed": []
+    }
+  ],
+  "sourceEqualsDev": true,
+  "sourceChanged": [
+    "src/assets/wasm/mp_core.wasm"
+  ],
+  "sourceDigest": "sha256:d4e9cc5d2c0e6f65e5e3f7131b6ba040688fc30c078ce7c4ae660a032e22d225",
+  "wasmMatchesAccepted": true,
+  "authorAbiChecks": {
+    "total": 5,
+    "passed": 5
+  },
+  "authorSimulatorChecks": {
+    "total": 12,
+    "passed": 12
+  },
+  "qr": {
+    "generatedAt": "2026-10-26T13:00:52+08:00",
+    "projectPath": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T06i-DSH-DP新核心接入-证据-v1\\out\\user-v5",
+    "qrImage": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\报告\\T06i-DSH-DP新核心接入-证据-v1\\二维码\\user-v5-preview.png",
+    "qrExists": true,
+    "qrBytes": 46394,
+    "note": "二维码生成不等于手机已测；仅代表开发者工具成功产出预览码",
+    "actualBytes": 46394,
+    "sha256": "0f43975c25679b3eff13252ff826b46367f2b9b9ec31dd0ef253f891b7536b5f"
+  },
+  "p01RebuiltOrReran": false
+}

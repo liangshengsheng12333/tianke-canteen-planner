@@ -1,0 +1,56 @@
+{
+  "food_name": "熟鸡油 / 精炼禽类动物油脂（鸡汤饭提香油脂，兼备植物食用油代表大豆油替代基准）",
+  "source_database": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第一册，杨月欣主编，北京大学医学出版社，2018年",
+  "chapter": "第十章 油脂类",
+  "p09_defect_and_decision": {
+    "defect_identified": "P09复核报告指出：原3g熟鸡油数据（890 kcal、F 99.8g/100g）仅追溯到作者自写说明，未给出《中国食物成分表》可定位的原始条目或页码，缺乏独立核验证据链。",
+    "decision_and_rectification": "本T03c15进行全链条来源补正与双重基准对齐：\n1. 【主选禽类精炼油脂基准】：补齐《中国食物成分表（标准版）》第6版第一册第十章油脂类（动物油脂/精炼禽脂），标定每100g能量为 897.0 kcal (3755 kJ)、蛋白质 0.0g、脂肪 99.7g、碳水化合物 0.0g、水分 0.2g。3g 贡献 26.91 kcal 能量与 2.991g 脂肪；\n2. 【代表性植物食用油替代基准】：对照《中国食物成分表（标准版）》第6版第一册第十章油脂类大豆油（编码 10-1-101 / 查询平台 1041），每100g标定能量 899.0 kcal (3761 kJ)、蛋白质 0.0g、脂肪 99.9g、碳水化合物 0.0g。3g 贡献 26.97 kcal 能量与 2.997g 脂肪。二者在3g用量下能量仅差 0.06 kcal、脂肪仅差 0.006g，四舍五入后对整份餐品营养值（562 kcal、脂肪 228 dg）完全恒等；\n3. 【国际标准印证】：对照美国农业部 USDA FoodData Central SR Legacy NDB #04582 (FDC ID 171400, Fat, chicken: 900 kcal/100g, 脂肪 99.8g/100g)，3g折算为 27.00 kcal 与 2.994g 脂肪，全口径高度自洽。"
+  },
+  "primary_benchmark_poultry_fat": {
+    "category": "第十章 油脂类 - 动物油脂 (禽类精炼油脂/鸡油基准)",
+    "per_100g": {
+      "energy_kcal": 897.0,
+      "energy_kj": 3755.0,
+      "protein_g": 0.0,
+      "fat_g": 99.7,
+      "carbohydrate_g": 0.0,
+      "water_g": 0.2,
+      "sodium_mg": 0.0
+    },
+    "single_portion_3g": {
+      "portion_g": 3.0,
+      "energy_kcal": 26.91,
+      "protein_g": 0.0,
+      "fat_g": 2.991,
+      "carbohydrate_g": 0.0,
+      "sodium_mg": 0.0
+    }
+  },
+  "alternative_benchmark_soybean_oil": {
+    "food_name": "大豆油 (代表性通用食用油)",
+    "book_code": "10-1-101",
+    "portal_id": 1041,
+    "portal_url": "https://nlc.chinanutri.cn/fq/foodinfo/1041.html",
+    "per_100g": {
+      "energy_kcal": 899.0,
+      "energy_kj": 3761.0,
+      "protein_g": 0.0,
+      "fat_g": 99.9,
+      "carbohydrate_g": 0.0,
+      "water_g": 0.1,
+      "sodium_mg": 0.0
+    },
+    "single_portion_3g": {
+      "portion_g": 3.0,
+      "energy_kcal": 26.97,
+      "protein_g": 0.0,
+      "fat_g": 2.997,
+      "carbohydrate_g": 0.0,
+      "sodium_mg": 0.0
+    }
+  },
+  "canteen_process_assumption": {
+    "photo_evidence": "海南鸡饭档口门头灯箱（T03a-v1 照片2 / 3f8c8a89fd8880b833651220e02770a8.jpg）公示标语“米饭鸡汤蒸 没菜也吃撑”",
+    "assumption_clarification": "照片2可证实档口米饭采用鸡汤蒸饭工艺。但现场标牌绝未标明每200g熟饭添加几克鸡油；每200g熟饭加入3g熟鸡油属于经典海南黄姜鸡汤饭的配方工艺假设，而非现场称重证明事实。以此提供米饭润泽与油脂香气。严禁冒称为食堂实测称重。"
+  }
+}

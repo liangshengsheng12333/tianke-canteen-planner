@@ -1,0 +1,195 @@
+{
+  "type": "isolated seeded historical official menu; not user phone state",
+  "menuVersion": "west1-canteen-batch1-nutrition4-20261023",
+  "offers": 35,
+  "unknown": 31,
+  "loaded": {
+    "ok": true,
+    "message": "核心已返回 35 个报价的单份营养",
+    "offerCount": 35
+  },
+  "pancake": [
+    {
+      "offerId": "offer-shandong-pancake",
+      "name": "山东杂粮煎饼",
+      "energyKcal": null
+    }
+  ],
+  "rows": [
+    {
+      "offerId": "offer-wuhan-hotdry-noodles",
+      "name": "热干面",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-southern-wonton-small",
+      "name": "南方小馄饨小份",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-southern-wonton-large",
+      "name": "南方小馄饨大份",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-shaomai",
+      "name": "烧麦",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-egg-soup",
+      "name": "鸡蛋汤",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-shandong-pancake",
+      "name": "山东杂粮煎饼",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-grilled-cold-noodles",
+      "name": "烤冷面",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-shredded-pancake",
+      "name": "手抓饼",
+      "energyKcal": 426
+    },
+    {
+      "offerId": "offer-plain-changfen",
+      "name": "原味肠粉",
+      "energyKcal": 231
+    },
+    {
+      "offerId": "offer-ham-changfen",
+      "name": "火腿肠粉（鸡肉）",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-lean-pork-changfen",
+      "name": "瘦肉肠粉（猪瘦肉）",
+      "energyKcal": 274
+    },
+    {
+      "offerId": "offer-grain-soymilk",
+      "name": "五谷杂粮豆浆",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-hongyou-jiaomaji-fan",
+      "name": "红油椒麻鸡饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-ningmengji-fan",
+      "name": "柠檬鸡饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-jinpai-kaorou-fan",
+      "name": "金牌烤肉饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-hainan-jifan",
+      "name": "海南鸡饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-jipai-doufu-fan",
+      "name": "鸡排豆腐饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-taishi-cuipiji-fan",
+      "name": "泰式脆皮鸡饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-taishi-doufu-fan",
+      "name": "泰式豆腐饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-shala-jifan",
+      "name": "沙拉鸡饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-zha-xiannai",
+      "name": "炸鲜奶",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-zhaopai-doufu",
+      "name": "招牌豆腐",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-naiyou-xiaomantou",
+      "name": "奶油小馒头",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-hnjf-xiaoqingcai",
+      "name": "小青菜",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-cuipi-kaoya-fan",
+      "name": "脆皮烤鸭饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-aorliang-jipai-fan",
+      "name": "奥尔良鸡排饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-wuxiang-yatui-fan",
+      "name": "五香鸭腿饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-longjiang-zhuzhou-fan",
+      "name": "隆江猪肘饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-roujuan-fan",
+      "name": "肉卷饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-baiqieji-fan",
+      "name": "白切鸡饭",
+      "energyKcal": 493
+    },
+    {
+      "offerId": "offer-cpky-mizhi-chashao-fan",
+      "name": "蜜汁叉烧饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-guangshi-lachang-fan",
+      "name": "广式腊肠饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-wuxiang-jitui-fan",
+      "name": "五香鸡腿饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-lurou-fan",
+      "name": "卤肉饭",
+      "energyKcal": null
+    },
+    {
+      "offerId": "offer-cpky-renxuan-shuangpin-fan",
+      "name": "任选双拼饭",
+      "energyKcal": null
+    }
+  ]
+}

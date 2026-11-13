@@ -1,0 +1,165 @@
+{
+  "stage": "stage2",
+  "lang": "zh",
+  "selection_sha256": "3e1707b00d05bbb59cf5779c698ff31cfe2d14370e36e40e9dee9d26b8a11ae2",
+  "recommend": {
+    "delivery_purpose": "balanced",
+    "mode": "custom",
+    "visual_style": "custom",
+    "image_strategy": "custom",
+    "image_usage": ["provided"],
+    "generation_mode": "continuous"
+  },
+  "page_count": {
+    "value": "8"
+  },
+  "image_notes": {
+    "value": "优先采用已提供的4K浅色/深色算法与架构图、模拟器截图及食堂实拍。"
+  },
+  "proactive_speaker_notes": {
+    "value": true
+  },
+  "proactive_custom_animations": {
+    "value": false
+  },
+  "proactive_narration_audio": {
+    "value": false
+  },
+  "refine_spec": {
+    "value": false
+  },
+  "design_spec_depth": {
+    "value": "brief"
+  },
+  "design_directions": {
+    "selected": 0,
+    "candidates": [
+      {
+        "id": "tech-precision",
+        "name": "科技蓝·严谨工程汇报",
+        "note": "结构化论证，突出架构与算法闭环，兼顾数据指标与实测边界。",
+        "mode": "custom",
+        "mode_behavior": "以结构化论证为主线，先亮出核心技术架构与闭环，再以实测数据和客观边界作为严密支撑。",
+        "visual_style": "custom",
+        "visual_style_behavior": "采用现代工程科技排版，清晰栅格与卡片微边框，留白舒适，层级分明。",
+        "icons": "lucide",
+        "color": {
+          "name": "科技蓝橙",
+          "palette": {
+            "background": "#F8FAFC",
+            "secondary_bg": "#F1F5F9",
+            "primary": "#1E3A8A",
+            "accent": "#F97316",
+            "secondary_accent": "#2563EB",
+            "body_text": "#0F172A"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Segoe UI",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Calibri",
+            "css": "sans-serif"
+          },
+          "body_size": 22
+        },
+        "image_strategy": {
+          "name": "高保真技术图解",
+          "rendering": "custom",
+          "visual": "高分辨率矢量架构与算法机制图配以卡片化注释",
+          "mood": "专业、严谨、现代",
+          "behavior": "严格保持4K配图清晰度，并配备交互演示跳转入口。"
+        }
+      },
+      {
+        "id": "academic-rigor",
+        "name": "双轨对比·硬核学术答辩",
+        "note": "算法对比和性能剖析为核心驱动，突出两餐DP优化前后中位数的对照。",
+        "mode": "custom",
+        "mode_behavior": "以算法对比和性能剖析为核心驱动，突出两餐DP优化前后中位数的对照与数学复杂度分析。",
+        "visual_style": "custom",
+        "visual_style_behavior": "学术论文风格演化的宽屏演示版式，强调数据图表、矩阵表格与代码/伪代码块的整洁度。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "深灰极简",
+          "palette": {
+            "background": "#FFFFFF",
+            "secondary_bg": "#F8FAFC",
+            "primary": "#0F172A",
+            "accent": "#0EA5E9",
+            "secondary_accent": "#64748B",
+            "body_text": "#1E293B"
+          }
+        },
+        "typography": {
+          "name": "黑体 + Arial",
+          "heading": {
+            "primary": "SimHei",
+            "english": "Arial",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Arial",
+            "css": "sans-serif"
+          },
+          "body_size": 22
+        },
+        "image_strategy": {
+          "name": "严谨学术图解",
+          "rendering": "custom",
+          "visual": "单色与高对比度图表，突出数据与公式",
+          "mood": "沉稳、客观、学术",
+          "behavior": "突出对照与数据矩阵，弱化纯装饰元素。"
+        }
+      },
+      {
+        "id": "scenario-experience",
+        "name": "场景落地·清新生动演示",
+        "note": "从食堂用餐真实情境切入，展现学生端选餐与记餐体验，后揭秘底层算法。",
+        "mode": "custom",
+        "mode_behavior": "从食堂用餐真实情境切入，先展现学生端选餐与记餐体验，后揭秘底层的算法动力。",
+        "visual_style": "custom",
+        "visual_style_behavior": "现代化产品体验设计风格，圆角卡片、柔和阴影，结合模拟器界面与真实食堂照片。",
+        "icons": "lucide",
+        "color": {
+          "name": "清新活力",
+          "palette": {
+            "background": "#FAFAFA",
+            "secondary_bg": "#F4F4F5",
+            "primary": "#2563EB",
+            "accent": "#10B981",
+            "secondary_accent": "#F59E0B",
+            "body_text": "#18181B"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Segoe UI",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body_size": 22
+        },
+        "image_strategy": {
+          "name": "真实场景与界面走查",
+          "rendering": "custom",
+          "visual": "真实菜单照片、移动端界面与图表结合",
+          "mood": "亲和、实用、生动",
+          "behavior": "凸显真实感与实用性，配合界面截图序列化展示。"
+        }
+      }
+    ]
+  }
+}

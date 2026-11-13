@@ -1,0 +1,272 @@
+[
+  {
+    "dishId": "dish-wuhan-hotdry-noodles",
+    "name": "热干面",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 506,
+      "proteinDg": 137,
+      "fatDg": 163,
+      "carbDg": 756
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "熟碱水面(掸面)200g + 纯芝麻酱18g + 芝麻香油6g + 调味酱油15g + 甜咸脆萝卜丁葱花20g(单份成品净重约259g)",
+      "estimated": true,
+      "note": "依据门头标牌大碗热干面公示与武汉典型配方推导，非食堂实测配方；四项宏量均为中心估计"
+    },
+    "scenarios": {
+      "low": {
+        "portionAssumption": "熟碱水面180g + 纯芝麻酱15g + 芝麻香油4g + 调味酱油12g + 脆萝卜丁葱花15g(单份成品净重约226g，打勺偏紧/控油控酱)",
+        "energyKcal": 433,
+        "proteinDg": 120,
+        "fatDg": 127,
+        "carbDg": 674
+      },
+      "central": {
+        "portionAssumption": "熟碱水面(掸面)200g + 纯芝麻酱18g + 芝麻香油6g + 调味酱油15g + 甜咸脆萝卜丁葱花20g(单份成品净重约259g)",
+        "energyKcal": 506,
+        "proteinDg": 137,
+        "fatDg": 163,
+        "carbDg": 756
+      },
+      "high": {
+        "portionAssumption": "熟碱水面220g + 纯芝麻酱22g + 芝麻香油8g + 调味酱油18g + 脆萝卜丁葱花25g(单份成品净重约293g，打勺偏松/重油稠酱)",
+        "energyKcal": 586,
+        "proteinDg": 156,
+        "fatDg": 205,
+        "carbDg": 839
+      }
+    },
+    "verification": {
+      "rawSum": {
+        "energyKcal": 506.13,
+        "proteinG": 13.696,
+        "fatG": 16.323,
+        "carbG": 75.581
+      },
+      "atwaterTheoreticalKcal": 504.02,
+      "diffKcal": 1.98,
+      "diffReason": "纯芝麻酱富含特定长链不饱和脂肪酸，其特定阿特沃特系数略高于9 kcal/g粗略均值"
+    }
+  },
+  {
+    "dishId": "dish-southern-wonton-small",
+    "name": "南方小馄饨小份",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 263,
+      "proteinDg": 116,
+      "fatDg": 131,
+      "carbDg": 251
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "生馄饨10只(皮45g+肉馅45g) + 熟清汤200g + 熟猪油2.5g + 干紫菜1.5g + 虾皮1.0g + 葱花调味(单份带汤总重约335g，固体约132g)",
+      "estimated": true,
+      "note": "依据标牌小份5元推导为标准10只出餐，配方包含清汤底与紫菜虾皮小料；非食堂实测配方"
+    },
+    "scenarios": {
+      "low": {
+        "portionAssumption": "生馄饨10只(皮41g+肉馅41g) + 清汤180g + 熟猪油1.5g + 干紫菜1.0g + 虾皮0.8g + 调味1.5g(单只生重8.2g，清淡少油带汤约310g，固体约120g)",
+        "energyKcal": 231,
+        "proteinDg": 104,
+        "fatDg": 112,
+        "carbDg": 226
+      },
+      "central": {
+        "portionAssumption": "生馄饨10只(皮45g+肉馅45g) + 熟清汤200g + 熟猪油2.5g + 干紫菜1.5g + 虾皮1.0g + 葱花调味(单只生重9.0g，单份带汤总重约335g，固体约132g)",
+        "energyKcal": 263,
+        "proteinDg": 116,
+        "fatDg": 131,
+        "carbDg": 251
+      },
+      "high": {
+        "portionAssumption": "生馄饨10只(皮49g+肉馅49g) + 清汤220g + 熟猪油3.5g + 干紫菜2.0g + 虾皮1.5g + 调味2.5g(单只生重9.8g，重汤多油带汤约365g，固体约145g)",
+        "energyKcal": 295,
+        "proteinDg": 129,
+        "fatDg": 151,
+        "carbDg": 276
+      }
+    },
+    "verification": {
+      "rawSum": {
+        "energyKcal": 263.06,
+        "proteinG": 11.596,
+        "fatG": 13.1315,
+        "carbG": 25.0991
+      },
+      "atwaterTheoreticalKcal": 264.96,
+      "diffKcal": -1.96,
+      "diffReason": "干紫菜中含较多未被人体消化吸收的海藻多糖，成分表测定有效能量时予以扣除"
+    }
+  },
+  {
+    "dishId": "dish-southern-wonton-large",
+    "name": "南方小馄饨大份",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 416,
+      "proteinDg": 185,
+      "fatDg": 205,
+      "carbDg": 402
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "生馄饨16只(皮72g+肉馅72g) + 熟清汤250g + 熟猪油3.5g + 干紫菜2.5g + 虾皮1.5g + 葱花调料(单份带汤总重约464g，固体约210g)",
+      "estimated": true,
+      "note": "依据标牌大份8元相对小份5元(1.6倍价格比)推导为16只出餐(1.6倍只数比)，单只规格与小份一致；非食堂实测配方"
+    },
+    "scenarios": {
+      "low": {
+        "portionAssumption": "生馄饨16只(皮65.6g+肉馅65.6g) + 清汤220g + 熟猪油2.5g + 干紫菜1.8g + 虾皮1.2g + 调味2.0g(单只生重8.2g，清淡少油带汤约425g，固体约190g)",
+        "energyKcal": 371,
+        "proteinDg": 166,
+        "fatDg": 180,
+        "carbDg": 363
+      },
+      "central": {
+        "portionAssumption": "生馄饨16只(皮72g+肉馅72g) + 熟清汤250g + 熟猪油3.5g + 干紫菜2.5g + 虾皮1.5g + 葱花调料(单只生重9.0g，单份带汤总重约464g，固体约210g)",
+        "energyKcal": 416,
+        "proteinDg": 185,
+        "fatDg": 205,
+        "carbDg": 402
+      },
+      "high": {
+        "portionAssumption": "生馄饨16只(皮78.4g+肉馅78.4g) + 清汤280g + 熟猪油5.0g + 干紫菜3.2g + 虾皮2.0g + 调味4.0g(单只生重9.8g，大汤多油带汤约515g，固体约230g)",
+        "energyKcal": 466,
+        "proteinDg": 205,
+        "fatDg": 235,
+        "carbDg": 441
+      }
+    },
+    "verification": {
+      "rawSum": {
+        "energyKcal": 416.265,
+        "proteinG": 18.5109,
+        "fatG": 20.5095,
+        "carbG": 40.1737
+      },
+      "atwaterTheoreticalKcal": 419.32,
+      "diffKcal": -3.32,
+      "diffReason": "干紫菜海藻膳食纤维扣除效应随用量成比例放大，与小份机理完全一致"
+    }
+  },
+  {
+    "dishId": "dish-shaomai",
+    "name": "烧麦",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 435,
+      "proteinDg": 96,
+      "fatDg": 177,
+      "carbDg": 599
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "蒸烧麦4只(烧麦皮32g + 熟糯米饭112g + 猪肉丁24g + 猪油8g + 调料4g，4只成品总净重约180g)",
+      "estimated": true,
+      "note": "依据标牌6元并结合同食堂窗口1.5元/个单价推导为标准4只出餐，采用重油糯米肉丁特色配方估算；非食堂实测配方"
+    },
+    "scenarios": {
+      "low": {
+        "portionAssumption": "蒸烧麦4只(烧麦皮28g + 熟糯米饭100g + 猪肉丁20g + 猪油6g + 调料3g，单只约40g，4只成品总净重约160g，捏制略小/轻油)",
+        "energyKcal": 370,
+        "proteinDg": 83,
+        "fatDg": 141,
+        "carbDg": 530
+      },
+      "central": {
+        "portionAssumption": "蒸烧麦4只(烧麦皮32g + 熟糯米饭112g + 猪肉丁24g + 猪油8g + 调料4g，单只约45g，4只成品总净重约180g)",
+        "energyKcal": 435,
+        "proteinDg": 96,
+        "fatDg": 177,
+        "carbDg": 599
+      },
+      "high": {
+        "portionAssumption": "蒸烧麦4只(烧麦皮36g + 熟糯米饭124g + 猪肉丁28g + 猪油10g + 调料5g，单只约50g达工业安井标准，4只成品总净重约200g，饱满重油)",
+        "energyKcal": 500,
+        "proteinDg": 108,
+        "fatDg": 213,
+        "carbDg": 668
+      }
+    },
+    "verification": {
+      "rawSum": {
+        "energyKcal": 434.92,
+        "proteinG": 9.5632,
+        "fatG": 17.684,
+        "carbG": 59.9152
+      },
+      "atwaterTheoreticalKcal": 437.07,
+      "diffKcal": -2.07,
+      "diffReason": "熟糯米饭含抗性淀粉及糯米直链淀粉消化率差异，成分表有效能值略低于阿特沃特系数粗算"
+    }
+  },
+  {
+    "dishId": "dish-egg-soup",
+    "name": "鸡蛋汤",
+    "kind": "single",
+    "category": "soup",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 108,
+      "proteinDg": 67,
+      "fatDg": 69,
+      "carbDg": 49
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "鲜鸡蛋去壳50g + 芝麻香油2.5g + 玉米淀粉4g + 沸水高汤约240g + 食盐葱花4g(单碗带汤总重约300g)",
+      "estimated": true,
+      "note": "依据标牌3元标准大碗鸡蛋汤推导，含1枚全蛋花与香油淀粉勾薄芡；carbDg严格按无偏未舍入累加值4.945g逢半进一取整为49dg；非食堂实测配方"
+    },
+    "scenarios": {
+      "low": {
+        "portionAssumption": "鲜鸡蛋去壳42g + 芝麻香油1.5g + 玉米淀粉2.5g + 沸水高汤约220g + 辅料3g(单碗带汤约270g，小蛋/薄芡/轻油)",
+        "energyKcal": 83,
+        "proteinDg": 56,
+        "fatDg": 52,
+        "carbDg": 34
+      },
+      "central": {
+        "portionAssumption": "鲜鸡蛋去壳50g + 芝麻香油2.5g + 玉米淀粉4g + 沸水高汤约240g + 食盐葱花4g(单碗带汤总重约300g)",
+        "energyKcal": 108,
+        "proteinDg": 67,
+        "fatDg": 69,
+        "carbDg": 49
+      },
+      "high": {
+        "portionAssumption": "鲜鸡蛋去壳58g + 芝麻香油3.5g + 玉米淀粉6.0g + 沸水高汤约260g + 辅料5g(单碗带汤约330g，大蛋/厚芡/加淋香油)",
+        "energyKcal": 136,
+        "proteinDg": 78,
+        "fatDg": 86,
+        "carbDg": 69
+      }
+    },
+    "verification": {
+      "rawSum": {
+        "energyKcal": 108.39,
+        "proteinG": 6.69,
+        "fatG": 6.9025,
+        "carbG": 4.945
+      },
+      "atwaterTheoreticalKcal": 108.66,
+      "diffKcal": -0.66,
+      "diffReason": "玉米淀粉与鸡蛋微量成分特异阿特沃特系数与4/9/4粗值存在极微细差异"
+    }
+  }
+]

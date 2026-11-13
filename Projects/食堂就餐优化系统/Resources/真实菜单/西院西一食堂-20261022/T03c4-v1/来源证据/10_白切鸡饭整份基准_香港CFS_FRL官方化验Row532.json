@@ -1,0 +1,24 @@
+{
+  "food_name": "白切雞飯（整份化验检测基准） (Steamed rice with steamed plain chicken)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "即食食物 - 飯",
+  "row_index": 532,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g 整份均质化样",
+  "nutrients_per_100g": {
+    "energy_kcal": 170.0,
+    "protein_g": 6.4,
+    "fat_g": 5.5,
+    "carbohydrate_g": 25.0,
+    "dietary_fibre_g": "Trace",
+    "sugars_g": 0.4,
+    "saturated_fat_g": 1.5,
+    "cholesterol_mg": 13.0,
+    "sodium_mg": 270.0,
+    "calcium_mg": 11.0,
+    "potassium_mg": 74.0
+  },
+  "benchmark_comparison": "按高校食堂单份约 300g~350g（含200g米饭+110g白切鸡肉+蔬菜酱汁）换算，整份能量约 480~550 kcal，与本项目原料逐项加总估算值 489 kcal 高度契合"
+}

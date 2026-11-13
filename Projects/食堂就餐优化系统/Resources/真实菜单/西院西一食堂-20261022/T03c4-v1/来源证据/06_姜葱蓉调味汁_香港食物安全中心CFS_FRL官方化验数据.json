@@ -1,0 +1,25 @@
+{
+  "food_name": "薑蓉 / 姜葱蓉调味汁 (Ginger and spring onion dip)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "佐料及醬料 - 佐料及醬料",
+  "row_index": 88,
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-22",
+  "per_amount": "100g",
+  "nutrients_per_100g": {
+    "energy_kcal": 470.0,
+    "protein_g": 1.7,
+    "fat_g": 50.0,
+    "carbohydrate_g": 5.2,
+    "sodium_mg": 2000.0
+  },
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "energy_kcal": 47.0,
+    "protein_g": 0.17,
+    "fat_g": 5.0,
+    "carbohydrate_g": 0.52,
+    "sodium_mg": 200.0
+  }
+}

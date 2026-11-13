@@ -1,0 +1,87 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p02" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">痛点分析与真实落地场景：西院西一食堂全数据覆盖</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">解决学生就餐多维决策困境 · 覆盖 12 窗口 137 条真实可售报价 · 严谨数据溯源</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">02 / 09</text>
+  </g>
+
+  <!-- Left Column: 痛点与破局定位 -->
+  <g id="col_pain_points_p02" data-pptx-bounds="100 220 800 780">
+    <!-- Panel Background -->
+    <rect x="100" y="220" width="800" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- Panel Header -->
+    <rect x="136" y="256" width="36" height="36" rx="8" fill="#2563EB" fill-opacity="0.1" />
+    <text x="154" y="281" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB" text-anchor="middle">!</text>
+    <text x="188" y="282" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">就餐决策痛点与工程定位</text>
+
+    <!-- Pain Item 1 -->
+    <rect x="136" y="320" width="728" height="124" rx="12" fill="#F4F4F5" />
+    <text x="168" y="358" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B">痛点一 · 档口分散与决策效率低下</text>
+    <text x="168" y="396" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">西一食堂窗口分散且菜牌各异，学生就餐高峰期来回奔波比选<tspan x="168" dy="26">缺乏统一的全局餐品视图与实时预算规划工具</tspan></text>
+
+    <!-- Pain Item 2 -->
+    <rect x="136" y="464" width="728" height="124" rx="12" fill="#F4F4F5" />
+    <text x="168" y="502" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B">痛点二 · 营养摄入与经济预算双重矛盾</text>
+    <text x="168" y="540" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">既要控制每餐预算（如 ≤20 元），又要兼顾热量与蛋白质摄取<tspan x="168" dy="26">学生难以在大脑中瞬间求解高维组合多目标优化问题</tspan></text>
+
+    <!-- Pain Item 3 -->
+    <rect x="136" y="608" width="728" height="124" rx="12" fill="#F4F4F5" />
+    <text x="168" y="646" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B">痛点三 · 传统方案依赖云端，弱网体验差</text>
+    <text x="168" y="684" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">食堂地下一层或高峰期网络信号差，传统服务端架构易超时白屏<tspan x="168" dy="26">急需轻量级、零网络依赖的纯本地离线高性能求解方案</tspan></text>
+
+    <!-- Goal Banner -->
+    <rect x="136" y="756" width="728" height="208" rx="12" fill="#2563EB" fill-opacity="0.06" stroke="#2563EB" stroke-width="1.5" />
+    <text x="168" y="800" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#2563EB">工程破局定位与核心使命</text>
+    <text x="168" y="844" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">✓ 采用现代 C++17 纯算法内核，跨平台编译至 WebAssembly<tspan x="168" dy="34">✓ 微信小程序端离线本地毫秒级规划，无需后端服务器与云函数</tspan><tspan x="168" dy="34">✓ 真实数据驱动：精准覆盖西一食堂全菜单，从推荐到记录完整闭环</tspan></text>
+  </g>
+
+  <!-- Right Column: 西一食堂真实数据与严谨口径 -->
+  <g id="col_data_scenario_p02" data-pptx-bounds="940 220 880 780">
+    <!-- Panel Background -->
+    <rect x="940" y="220" width="880" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- Top KPI Grid: 3 Tiles -->
+    <!-- Tile 1 -->
+    <rect x="976" y="256" width="256" height="150" rx="12" fill="#F4F4F5" />
+    <text x="1006" y="300" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">实地覆盖窗口</text>
+    <text x="1006" y="358" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#2563EB">12<tspan font-size="20" fill="#71717A"> 个</tspan></text>
+    <text x="1006" y="388" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#10B981">西院西一食堂全域</text>
+
+    <!-- Tile 2 -->
+    <rect x="1252" y="256" width="256" height="150" rx="12" fill="#F4F4F5" />
+    <text x="1282" y="300" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">技术菜品实体</text>
+    <text x="1282" y="358" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#2563EB">166<tspan font-size="20" fill="#71717A"> 项</tspan></text>
+    <text x="1282" y="388" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#10B981">标准化规格建模</text>
+
+    <!-- Tile 3 -->
+    <rect x="1528" y="256" width="256" height="150" rx="12" fill="#F4F4F5" />
+    <text x="1558" y="300" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">真实有效报价</text>
+    <text x="1558" y="358" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#2563EB">137<tspan font-size="20" fill="#71717A"> 条</tspan></text>
+    <text x="1558" y="388" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#10B981">现场真实价签转录</text>
+
+    <!-- Scenario Detail Card 1: 真实菜牌转录 -->
+    <rect x="976" y="434" width="808" height="156" rx="12" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1006" y="474" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">现场实勘真实转录 · 拒绝虚构样本</text>
+    <text x="1006" y="512" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">团队实地走访天津科技大学西院西一食堂，逐一采集川湘套餐、称重麻辣烫、<tspan x="1006" dy="28">油泼鸡等 12 个实体档口价签，针对份量与可选配料建立标准规范条目，</tspan><tspan x="1006" dy="28">完整保留一菜多价、主副食规格等真实就餐复杂特性。</tspan></text>
+
+    <!-- Scenario Detail Card 2: 严谨营养数据口径 -->
+    <rect x="976" y="618" width="808" height="156" rx="12" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1006" y="658" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#18181B">严谨数据溯源 · 客观营养素口径</text>
+    <text x="1006" y="696" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">营养数据严格参考《中国食物成分表》结合实际烹饪出餐标准进行参数化估算；<tspan x="1006" dy="28">对于成分无法精准溯源的菜品，模型显式标注为“未知”，绝不隐式按 0 处理，</tspan><tspan x="1006" dy="28">确保多目标算法优化过程不会因错误零值产生不可信偏置。</tspan></text>
+
+    <!-- Bottom Badge -->
+    <rect x="976" y="802" width="808" height="162" rx="12" fill="#10B981" fill-opacity="0.08" stroke="#10B981" stroke-width="1" />
+    <text x="1006" y="844" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981">实地调研支撑成果总结</text>
+    <text x="1006" y="884" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B">真实食堂 12 窗口与 137 条有效报价为算法优化提供了坚实的现实基座，<tspan x="1006" dy="28">使系统脱离了玩具数据集（Toy Dataset），具备强烈的现实工程意义。</tspan></text>
+  </g>
+</svg>

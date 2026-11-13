@@ -1,0 +1,43 @@
+{
+  "food_name": "米饭(蒸) / 熟白米饭",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，杨月欣主编，北京大学医学出版社，2018年，ISBN: 978-7-5659-1845-2",
+  "food_code": "01-2-401",
+  "food_category": "谷类及制品 - 稻米及制品",
+  "online_portal": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+  "item_id": 287,
+  "access_date": "2026-10-23",
+  "edible_portion": "100%",
+  "per_amount": "100g 熟重",
+  "nutrients_per_100g": {
+    "energy_kj": 493.0,
+    "energy_kcal_standard_converted": 117.8298,
+    "protein_g": 2.6,
+    "fat_g": 0.3,
+    "carbohydrate_g": 25.9,
+    "water_g": 70.9,
+    "sodium_mg": 2.5
+  },
+  "conversion_clarification": {
+    "defect_identified": "P09复核报告指出：旧草案存在 493 kJ/100g 与 116 kcal/100g 混写冲突（493 / 4.184 = 117.83 kcal，与 116 kcal 不等）。",
+    "rectification": "统一按官方中国食物成分查询平台287号蒸米饭条目公布的 493 kJ/100g 权威数值，经国家标准换算系数（1 kcal = 4.184 kJ）严谨折算为 117.8298 kcal/100g，宏量三项保持 2.6g / 0.3g / 25.9g 严密不变。"
+  },
+  "canteen_photo_evidence_comparison": {
+    "photo_evidence": "西院西一食堂墙面真实营养表（T03a-v1 照片1 / 03aa3b48ce6090e365eca270d655a8f8.jpg）第一行米饭公示数据",
+    "photo_energy_kj": 486.0,
+    "photo_energy_kcal_converted": 116.16,
+    "photo_protein_g": 2.6,
+    "photo_fat_g": 0.3,
+    "photo_carbohydrate_g": 25.9,
+    "clarification": "现场展板米饭标注 486 kJ (116.16 kcal)，国家标准表查询平台标定 493 kJ (117.83 kcal)，二者相差 7 kJ (1.67 kcal)，宏量完全相同。本工程统一定标于国家官方查询平台 493 kJ 基准，并充分披露差异。"
+  },
+  "portion_calculation_197g": {
+    "portion_g": 197.0,
+    "energy_kcal": 232.1248,
+    "protein_g": 5.122,
+    "fat_g": 0.591,
+    "carbohydrate_g": 51.023,
+    "sodium_mg": 4.925,
+    "assumption_note": "西一食堂标牌（照片11）标示米饭小份标准为 200g。海南鸡饭按工艺配方假设拆解为：熟白米饭 197g + 通用烹调油 3g = 200g 黄姜鸡汤米饭基底。197g 熟米饭仅计一次，不含学生后续自行无限续饭。"
+  }
+}

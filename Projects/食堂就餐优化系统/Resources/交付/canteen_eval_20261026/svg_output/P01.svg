@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="cover">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F9F6" />
+  
+  <!-- Subtle Header & Theme Bands -->
+  <rect x="0" y="0" width="1280" height="8" fill="#1B4D3E" />
+  <rect x="60" y="40" width="180" height="28" rx="6" fill="#E8F1EB" />
+  <text x="72" y="59" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1B4D3E">面向对象程序设计 C++</text>
+  <text x="250" y="59" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">| 课程设计与期末评测答辩</text>
+
+  <!-- Left Column: Title & Project Overview -->
+  <g transform="translate(60, 110)">
+    <!-- Main Title -->
+    <text x="0" y="50" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="40" font-weight="bold" fill="#1B4D3E">天科食客：面向真实校园食堂的</text>
+    <text x="0" y="105" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="40" font-weight="bold" fill="#1B4D3E">个性化就餐规划与记账系统</text>
+    
+    <!-- Subtitle / Mission -->
+    <rect x="0" y="130" width="680" height="40" rx="8" fill="#E8F1EB" />
+    <text x="16" y="156" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#2E7D5B">核心定位：连接食堂真实菜单、营养约束与多算法求解，严格区分“计划建议”与“进食记账”</text>
+
+    <!-- Key Highlights Grid (4 Cards) -->
+    <g transform="translate(0, 195)">
+      <!-- Card 1: 真实菜单 -->
+      <rect x="0" y="0" width="330" height="110" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <rect x="16" y="16" width="36" height="36" rx="8" fill="#E8F1EB" />
+      <text x="26" y="40" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#1B4D3E">01</text>
+      <text x="62" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#1B4D3E">真实食堂数据驱动</text>
+      <text x="62" y="52" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">非玩具集：接入西一食堂12窗口</text>
+      <text x="16" y="86" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#2E7D5B">166个实体 · 137条报价 · 营养估算</text>
+
+      <!-- Card 2: 三大算法 -->
+      <rect x="350" y="0" width="330" height="110" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <rect x="366" y="16" width="36" height="36" rx="8" fill="#E8F1EB" />
+      <text x="376" y="40" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#1B4D3E">02</text>
+      <text x="412" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#1B4D3E">三算法同题求解</text>
+      <text x="412" y="52" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">统一约束模型下的策略分化</text>
+      <text x="366" y="86" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#E87A24">贪心法 · 动态规划 (DP) · 分支限界</text>
+
+      <!-- Card 3: 性能攻关 -->
+      <rect x="0" y="125" width="330" height="110" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <rect x="16" y="141" width="36" height="36" rx="8" fill="#FEF3EB" />
+      <text x="26" y="165" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#E87A24">03</text>
+      <text x="62" y="157" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#1B4D3E">DP 核心等价优化</text>
+      <text x="62" y="177" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">消除重复扫描热点（T04A19）</text>
+      <text x="16" y="211" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#E87A24">PC中位：23.5秒 → 71毫秒（降99.6%）</text>
+
+      <!-- Card 4: 跨端工程 -->
+      <rect x="350" y="125" width="330" height="110" rx="10" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="1.5" />
+      <rect x="366" y="141" width="36" height="36" rx="8" fill="#E8F1EB" />
+      <text x="376" y="165" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#1B4D3E">04</text>
+      <text x="412" y="157" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#1B4D3E">现代 C++17 跨端架构</text>
+      <text x="412" y="177" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">CLI实验与小程序端侧计算同源</text>
+      <text x="366" y="211" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#2E7D5B">C++17 + WASM + 微信小程序</text>
+    </g>
+
+    <!-- Project Meta / Footer Info -->
+    <g transform="translate(0, 470)">
+      <text x="0" y="20" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#5A6B61">汇报时长：约 5~7 分钟 | 评分重心：算法设计 60分 / 工程实现 20分 / 表达答辩 20分</text>
+      <text x="0" y="42" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#88988E">当前验证候选：user-v5（内置T04A19 WASM核心） | 截图环境：微信开发者工具模拟器</text>
+    </g>
+  </g>
+
+  <!-- Right Column: Mobile UI Showcase Card -->
+  <g transform="translate(820, 85)">
+    <!-- Device Frame Background -->
+    <rect x="0" y="0" width="380" height="580" rx="20" fill="#FFFFFF" stroke="#DDE5DF" stroke-width="2" />
+    
+    <!-- Device Header Bar -->
+    <rect x="0" y="0" width="380" height="50" rx="20" fill="#1B4D3E" />
+    <rect x="0" y="30" width="380" height="20" fill="#1B4D3E" />
+    <text x="24" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">天科食客 · 小程序端实机界面</text>
+    <rect x="300" y="18" width="56" height="20" rx="4" fill="#2E7D5B" />
+    <text x="308" y="32" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">user-v5</text>
+
+    <!-- Embedded Screenshot -->
+    <g transform="translate(45, 65)">
+      <rect x="-4" y="-4" width="298" height="488" rx="14" fill="#F6F9F6" stroke="#DDE5DF" stroke-width="1.5" />
+      <clipPath id="phoneClipP01">
+        <rect x="0" y="0" width="290" height="480" rx="10" />
+      </clipPath>
+      <image href="images/screenshot-home.png" x="0" y="0" width="290" height="480" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneClipP01)" />
+    </g>
+
+    <!-- Label Below Screenshot -->
+    <text x="190" y="565" text-anchor="middle" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#5A6B61">图：微信开发者工具模拟器首屏推荐结果</text>
+  </g>
+</svg>

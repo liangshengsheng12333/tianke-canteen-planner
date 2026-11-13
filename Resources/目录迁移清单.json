@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-20",
+  "verified": 29,
+  "files": [
+    {
+      "old": "D:\\项目\\cpp\\工作流\\主PRD-v0.2-续行确认记录.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\主PRD-v0.2-续行确认记录.md",
+      "sha256": "9C10DA357EDA98BEB4833669C0939F7D0049BBA0FDCF2F54181D69D8960AD92B"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\主PRD.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\主PRD.md",
+      "sha256": "0D8DFBA54B6649D0312A4C342160BB62AC2CB17D9DE9704B5B83CE4362842A0C"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T00-初始化文档.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T00-初始化文档.md",
+      "sha256": "29397422569BC7353FB77DE70CB576CF22CA0DFE156EA7DE2861911FF8BCD6CA"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T01-契约与营养配置.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T01-契约与营养配置.md",
+      "sha256": "147C36BA1EEFD9E38EC642D8424AAC26E6450C88F1CBB8EFD089BA926FDA24EA"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T02-最小真机链路.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T02-最小真机链路.md",
+      "sha256": "18019FCF96E26B3632337DEBEFA17989FE3A77B539F0E1968C446F1831C4B537"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T03-首批真实菜单.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T03-首批真实菜单.md",
+      "sha256": "BF317BDAD0406C5590CA2C7D26D235F528169E50AD975BD8B83275A056D274D8"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T04-C++三算法.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T04-C++三算法.md",
+      "sha256": "7A0E7FB71EF059500B379F43D81365074D9F0360BAF42510B1AD4EB0C6CCF69D"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T05-小程序与本地数据.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T05-小程序与本地数据.md",
+      "sha256": "2B98DBCE990404707DCBBA2FFBC74BF0CB7FC19D9D4BEEF35FF88521EDC12BA9"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T06-全流程集成.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T06-全流程集成.md",
+      "sha256": "8ECCB09F1176A8D54EF8C97E0D3C7E424EDF8D6C24E3A95953C9629B1101F0D8"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T07-实验与一致性.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T07-实验与一致性.md",
+      "sha256": "8FA366D1B44E245AC0C32AC0F0AAF9961CC32E4DC8A1CA51C0E66F563C46AC6F"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T08-真机与试用.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T08-真机与试用.md",
+      "sha256": "1660B5E39B0CB3AFC706F90793CADA5530CA4A69DC29A7F059F7D63BD806D9D4"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T09-独立总审.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T09-独立总审.md",
+      "sha256": "31E9CE77FBC189E702265044BF616115E53AE695B930D36299DC2DFBC79050D3"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\任务卡\\T10-交付与演示素材.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\任务卡\\T10-交付与演示素材.md",
+      "sha256": "22DBE593841F9AFDB9C979A765FAB3F468AD7D3F634BDC4CC9A7C4933CA69470"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\初始化发起回执.json",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\初始化发起回执.json",
+      "sha256": "5915296A3DA4E1951893E86070641121F94D3C4F836A55D9B411901C50438E25"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\待补资料清单.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\待补资料清单.md",
+      "sha256": "A7322F4CDA37347A4E89067E13EC7DA4CDE43FE69E5FBA45B33434963CD0CF3F"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\总表.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\总表.md",
+      "sha256": "43B62E384D5570997F67D6D381F122AD4C22E94964D8E6A73FAF31170BCCC105"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\执行与记录约定.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\执行与记录约定.md",
+      "sha256": "46270E0C6310CE8A473A42253780532373651C936E6071093F74F4F9B7E05EC7"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\批准计划.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\批准计划.md",
+      "sha256": "2FCC7674E84CD1D5C68F2A4F691DF417795FB9463351E1E52437C723D87227C0"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\报告\\P00-初始化文档查收.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\报告\\P00-初始化文档查收.md",
+      "sha256": "EF9B0F91EB21D19231DF150432E0452C53F0B73D756275BA8612B2A86B273C39"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\报告\\PRD-v0.2-修订复核.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\报告\\PRD-v0.2-修订复核.md",
+      "sha256": "4C3607B27506855C918E1B3A4542BB6601150E3208408E7FFCA91D94338CF437"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\报告\\PRD与角色任务卡评审-20261019.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\报告\\PRD与角色任务卡评审-20261019.md",
+      "sha256": "CECC515A39B6527B88FB8C6F434DCC3712E323D4822167CFE70E99560DF561E5"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\报告\\发起窗口-PRD查收.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\报告\\发起窗口-PRD查收.md",
+      "sha256": "525546A5A9F2B55EB9D7F3ED94A5C5675FC570F6BAC915DE3397163441AE957D"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\角色卡\\DSH-C++算法.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\角色卡\\DSH-C++算法.md",
+      "sha256": "D0862DC522307141086E5E7164BF2AC660A0A8B2157D8C584BEF62F6CD4FEAC8"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\角色卡\\P00-初始化.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\角色卡\\P00-初始化.md",
+      "sha256": "6BEDE1B08D40C8A5A8436550CF7E6A4506B22A7040258D54919A8F41F07A750D"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\角色卡\\P01-总指挥.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\角色卡\\P01-总指挥.md",
+      "sha256": "99E7521803867E5DE5EC72C84F10A4938E4C099A6F2DA9FACFFDD3C653330B94"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\角色卡\\P09-独立验收.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\角色卡\\P09-独立验收.md",
+      "sha256": "85DFC74788A8A67CBF8F9177CBC9E5B64D55940E12FC7294DB022366425614FF"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\角色卡\\反重力-小程序.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\角色卡\\反重力-小程序.md",
+      "sha256": "5EE78C192A9B6125A35D8A182EEA0FB8D066F277F22222F28E905ECF50CBCD98"
+    },
+    {
+      "old": "D:\\项目\\cpp\\工作流\\讨论确认与初始化交接.md",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\原工作流\\讨论确认与初始化交接.md",
+      "sha256": "DA9A092FC136876C6C455537A01B59976257941DFEAFEFA2C1E16D4E5461FB25"
+    },
+    {
+      "old": "D:\\项目\\cpp\\面向对象程序设计C++-期末编程汇报题-20261009.docx",
+      "new": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\历史资料\\面向对象程序设计C++-期末编程汇报题-20261009.docx",
+      "sha256": "F0C4673973C429B13B80BCD74AB1157F1CC2862D63AE2F804B3285BEACF1EFF7"
+    }
+  ]
+}

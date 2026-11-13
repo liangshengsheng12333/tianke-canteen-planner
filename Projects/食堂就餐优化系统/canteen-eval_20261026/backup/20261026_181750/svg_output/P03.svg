@@ -1,0 +1,56 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p03" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">混合运行时架构：C++17 内核与 WASM 高性能桥接</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">共享 C++17 算法内核 · 双工具链解耦验证 · 微信小程序端纯本地离线执行</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">03 / 09</text>
+  </g>
+
+  <!-- Left: 4K 架构图与交互横幅 -->
+  <g id="left_arch_diagram_p03" data-pptx-bounds="100 220 1140 780">
+    <rect x="100" y="220" width="1140" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- 4K Architecture Image Frame -->
+    <rect x="124" y="244" width="1092" height="600" rx="12" fill="#F4F4F5" />
+    <image x="124" y="244" width="1092" height="600" preserveAspectRatio="xMidYMid meet" href="../images/T10d-03-CPP与小程序架构-4K-浅色.png" />
+
+    <!-- Interactive HTML Banner -->
+    <rect x="124" y="864" width="1092" height="112" rx="12" fill="#2563EB" fill-opacity="0.06" stroke="#2563EB" stroke-width="1.5" />
+    <rect x="148" y="894" width="52" height="52" rx="10" fill="#2563EB" />
+    <text x="174" y="928" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">⚡</text>
+    <text x="220" y="914" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB">配套原生交互 HTML 架构图演示入口</text>
+    <text x="220" y="948" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">支持节点高亮联动、深浅色无损切换、视口缩放走查：<tspan fill="#18181B" font-weight="bold">images/T10d-03-CPP与小程序架构.html</tspan></text>
+  </g>
+
+  <!-- Right: 架构解析三卡片 -->
+  <g id="right_arch_cards_p03" data-pptx-bounds="1270 220 550 780">
+    <!-- Card 1: 共享 C++17 纯算法内核 -->
+    <rect x="1270" y="220" width="550" height="240" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1302" y="252" width="44" height="44" rx="10" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1324" y="282" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB" text-anchor="middle">01</text>
+    <text x="1362" y="282" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">共享 C++17 纯算法内核</text>
+    <text x="1302" y="336" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">核心代码仅依赖 C++17 标准库，实现统一的<tspan x="1302" dy="28">菜单数据模型、合法性筛选规则与三算法求解器，</tspan><tspan x="1302" dy="28">杜绝前后端多套逻辑维护导致的行为偏差。</tspan></text>
+
+    <!-- Card 2: 电脑侧 Native CLI 验证 -->
+    <rect x="1270" y="490" width="550" height="240" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1302" y="522" width="44" height="44" rx="10" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="1324" y="552" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B" text-anchor="middle">02</text>
+    <text x="1362" y="552" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">双轨编译：Native CLI 单测</text>
+    <text x="1302" y="606" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">采用 MSVC 编译为本地 Native CLI 工具，<tspan x="1302" dy="28">专用于电脑侧高压批处理、基线生成与单体测试，</tspan><tspan x="1302" dy="28">提供高可信的算法基准输出与快速开发迭代。</tspan></text>
+
+    <!-- Card 3: 小程序 WASM 本地离线执行 -->
+    <rect x="1270" y="760" width="550" height="240" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1302" y="792" width="44" height="44" rx="10" fill="#10B981" fill-opacity="0.1" />
+    <text x="1324" y="822" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981" text-anchor="middle">03</text>
+    <text x="1362" y="822" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">Zig/Clang 编译 WASM 落地</text>
+    <text x="1302" y="876" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">Zig/Clang 工具链交叉编译生成 WASM 模块，<tspan x="1302" dy="28">嵌入微信小程序直接运行于客户端 JavaScript 引擎，</tspan><tspan x="1302" dy="28">彻底脱离云端服务器依赖，实现食堂零网络畅享。</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,921 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "f24b71cf54d70efd1b350d6e05b032a758ba94c068715442a9d1649cb1dc57cb",
+    "file_count": 9,
+    "files": [
+      {
+        "file": "P01.svg",
+        "sha256": "1b3d110a0691cee0d9318003f39c735a6d315adce30e73746a1774bda767565a"
+      },
+      {
+        "file": "P02.svg",
+        "sha256": "e12219fc1ccdd8a95b8427e66315c463fc436573f3284f3be8e0249537e1ab68"
+      },
+      {
+        "file": "P03.svg",
+        "sha256": "7ef4c53fdbe1e8e90ecd559e9af943e838756e561b083d04295843dbae21a53e"
+      },
+      {
+        "file": "P04.svg",
+        "sha256": "88dab54eb28a1ec8e3207f19fb35df5f28e2ca1a0dde7730ae272a9be54b2823"
+      },
+      {
+        "file": "P05.svg",
+        "sha256": "5d851db4c8a9f28361ffd73b88ee1eb229f7681283120baa90e704b968746743"
+      },
+      {
+        "file": "P06.svg",
+        "sha256": "b08b730c88b778366b92a0d28225ce6967f6c92d7781ff2c02ebd9214e0689e4"
+      },
+      {
+        "file": "P07.svg",
+        "sha256": "c425c912c33349c4e09f6190d02b773ac33cf8af6598c5439316f5b49131cc13"
+      },
+      {
+        "file": "P08.svg",
+        "sha256": "034878424a6c1068d87d0822ed52df50f09b20c0a4bba7d624a8f5c8d3f3e414"
+      },
+      {
+        "file": "P09.svg",
+        "sha256": "3649cd525bd62f8b6f54535dd8615df9f508bf630f1982e11365923d4033208c"
+      }
+    ]
+  },
+  "summary": {
+    "total": 9,
+    "passed": 0,
+    "warnings": 9,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 19,
+      "issues": [
+        {
+          "file": "P01.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P01.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (16 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Calibri, sans-serif'; text[16]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None; text[19]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P02.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P02.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (15 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Calibri, sans-serif'; text[7]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None; text[17]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P03.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P03.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (11 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P04.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P04.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P05.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P05.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (64 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Consolas, monospace'; text[20]:font-family 'Consolas, monospace' -> None; text[21]:font-family 'Consolas, monospace' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P05.svg",
+          "message": "Detected 5 paragraph-like line run(s) split across sibling <text> elements (<g id=\"left_algo_diagram_p05\"> x=130.0, y=572.0..596.0, 2 lines; <g id=\"left_algo_diagram_p05\"> x=130.0, y=698.0..722.0, 2 lines; <g id=\"left_algo_diagram_p05\"> x=425.0, y=596.0..620.0, 2 lines; +2 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "P06.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P06.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (20 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Calibri, sans-serif'; text[7]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None; text[13]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P07.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P07.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (14 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P08.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P08.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (12 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P09.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "P09.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[8]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[11]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#000000": [
+        "P05.svg"
+      ],
+      "#1E1E2E": [
+        "P05.svg"
+      ],
+      "#313244": [
+        "P05.svg"
+      ],
+      "#3F3F46": [
+        "P05.svg"
+      ],
+      "#6C7086": [
+        "P05.svg"
+      ],
+      "#89B4FA": [
+        "P05.svg"
+      ],
+      "#8B5CF6": [
+        "P05.svg"
+      ],
+      "#A1A1AA": [
+        "P01.svg"
+      ],
+      "#A6ADC8": [
+        "P05.svg"
+      ],
+      "#A6E3A1": [
+        "P05.svg"
+      ],
+      "#CBA6F7": [
+        "P05.svg"
+      ],
+      "#CDD6F4": [
+        "P05.svg"
+      ],
+      "#E2E8F0": [
+        "P05.svg"
+      ],
+      "#F38BA8": [
+        "P05.svg"
+      ],
+      "#F8FAFC": [
+        "P05.svg"
+      ],
+      "#FFFFFF": [
+        "P01.svg",
+        "P02.svg",
+        "P03.svg",
+        "P04.svg",
+        "P05.svg",
+        "P06.svg",
+        "P07.svg",
+        "P08.svg",
+        "P09.svg"
+      ]
+    },
+    "fonts": {
+      "Consolas, monospace": [
+        "P05.svg"
+      ]
+    },
+    "sizes": {
+      "68": [
+        "P01.svg"
+      ]
+    }
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 9,
+    "totals": {
+      "text_elements": 278,
+      "image_placements": 8,
+      "icons": 0,
+      "svg_geometry_elements": 172,
+      "preset_shapes": 0,
+      "page_frame_elements": 33,
+      "marker_uses": 0,
+      "inline_emphasis_runs": 10,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 4,
+      "icons": 0,
+      "presets": 0,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 5,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 6,
+    "geometry_elements": {
+      "circle": 5,
+      "ellipse": 0,
+      "line": 16,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 151
+    },
+    "preset_names": {},
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": [
+      0.0323,
+      0.316
+    ]
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "P01.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P01.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (16 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Calibri, sans-serif'; text[16]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None; text[19]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 27,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 18,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 7,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 27,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#A1A1AA",
+            "#FFFFFF"
+          ]
+        },
+        "sparse_typography_sizes": {
+          "68": 1
+        }
+      },
+      "passed": true,
+      "source_sha256": "1b3d110a0691cee0d9318003f39c735a6d315adce30e73746a1774bda767565a"
+    },
+    {
+      "file": "P02.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P02.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (15 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Calibri, sans-serif'; text[7]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None; text[17]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 28,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 16,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 28,
+        "tspan_elements": 13,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "e12219fc1ccdd8a95b8427e66315c463fc436573f3284f3be8e0249537e1ab68"
+    },
+    {
+      "file": "P03.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P03.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (11 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 1,
+            "files": [
+              "T10d-03-CPP与小程序架构-4K-浅色.png"
+            ],
+            "max_frame_share": 0.316
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 13,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 7,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "7ef4c53fdbe1e8e90ecd559e9af943e838756e561b083d04295843dbae21a53e"
+    },
+    {
+      "file": "P04.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P04.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 1,
+            "files": [
+              "T10d-02-产品使用闭环-4K-浅色.png"
+            ],
+            "max_frame_share": 0.316
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 15,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "88dab54eb28a1ec8e3207f19fb35df5f28e2ca1a0dde7730ae272a9be54b2823"
+    },
+    {
+      "file": "P05.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P05.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (64 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Consolas, monospace'; text[20]:font-family 'Consolas, monospace' -> None; text[21]:font-family 'Consolas, monospace' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Detected 5 paragraph-like line run(s) split across sibling <text> elements (<g id=\"left_algo_diagram_p05\"> x=130.0, y=572.0..596.0, 2 lines; <g id=\"left_algo_diagram_p05\"> x=130.0, y=698.0..722.0, 2 lines; <g id=\"left_algo_diagram_p05\"> x=425.0, y=596.0..620.0, 2 lines; +2 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 100,
+          "images": {
+            "placements": 1,
+            "files": [
+              "T10d-01-三算法机制对照-4K-浅色.png"
+            ],
+            "max_frame_share": 0.0839
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 25,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, monospace",
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 100,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#000000",
+            "#1E1E2E",
+            "#313244",
+            "#3F3F46",
+            "#6C7086",
+            "#89B4FA",
+            "#8B5CF6",
+            "#A6ADC8",
+            "#A6E3A1",
+            "#CBA6F7",
+            "#CDD6F4",
+            "#E2E8F0",
+            "#F38BA8",
+            "#F8FAFC",
+            "#FFFFFF"
+          ],
+          "font_families": [
+            "Consolas, monospace"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "5d851db4c8a9f28361ffd73b88ee1eb229f7681283120baa90e704b968746743"
+    },
+    {
+      "file": "P06.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P06.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (20 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Calibri, sans-serif'; text[7]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None; text[13]:font-family 'Microsoft YaHei, Calibri, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 31,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 16,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 31,
+        "tspan_elements": 11,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "b08b730c88b778366b92a0d28225ce6967f6c92d7781ff2c02ebd9214e0689e4"
+    },
+    {
+      "file": "P07.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P07.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (14 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 21,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 14,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 21,
+        "tspan_elements": 11,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "c425c912c33349c4e09f6190d02b773ac33cf8af6598c5439316f5b49131cc13"
+    },
+    {
+      "file": "P08.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P08.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (12 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[6]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[9]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 5,
+            "files": [
+              "01-user-v5-首页-新装方案.png",
+              "02-user-v5-菜单覆盖文案.png",
+              "03-user-v5-推荐方式页.png",
+              "04-user-v5-新增窗口选菜麻辣烫300g.png",
+              "05-user-v5-记录页.png"
+            ],
+            "max_frame_share": 0.0323
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 17,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "034878424a6c1068d87d0822ed52df50f09b20c0a4bba7d624a8f5c8d3f3e414"
+    },
+    {
+      "file": "P09.svg",
+      "path": "d:\\项目\\cpp\\Projects\\食堂就餐优化系统\\canteen-eval_20261026\\svg_output\\P09.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Segoe UI, sans-serif'; text[8]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None; text[11]:font-family 'Microsoft YaHei, Segoe UI, sans-serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1920 1080",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 17,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 5,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Calibri, sans-serif",
+          "Microsoft YaHei, Segoe UI, sans-serif"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 12,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "3649cd525bd62f8b6f54535dd8615df9f508bf630f1982e11365923d4033208c"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "dishId": "dish-grilled-cold-noodles",
+    "name": "烤冷面",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": false,
+    "riceIncluded": false,
+    "nutrition": {
+      "energyKcal": 398,
+      "proteinDg": 150,
+      "fatDg": 116,
+      "carbDg": 574
+    },
+    "nutritionBasis": {
+      "source": "GB 28050预包装奥斯托马烤冷面片标签、天津利民蒜蓉辣酱标签(GTIN:6901554100281)、《中国食物成分表》第6版第一册(鸡蛋06-1-101/大豆油10-1-101/白砂糖1448/醋均值1520)",
+      "portionAssumption": "真空生湿冷面片100g + 鲜鸡蛋(去壳)50g + 天津利民蒜蓉辣酱15g + 白砂糖4g + 酿造食醋5g + 烹调大豆油6g(固形原料180g，另含工艺软化残留水分10g，单份成品总净重约190g)",
+      "estimated": true,
+      "note": "依据档口标牌原文'面皮+鸡蛋'及酸甜口味标示推导；面片、鸡蛋、蒜蓉辣酱、糖、醋、油各自独立计量；严禁水分算入热量，杜绝重复加油；非食堂实测配方"
+    }
+  }
+]

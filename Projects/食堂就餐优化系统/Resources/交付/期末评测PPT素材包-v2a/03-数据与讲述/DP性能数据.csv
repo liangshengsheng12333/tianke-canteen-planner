@@ -1,0 +1,7 @@
+﻿candidate,algorithm,scenario,median_ms,formal_sample_count,environment,source,note
+旧冻结WASM,DP,G2 两餐,23455.864,5,PC/Node,T04A19-Sol-DP性能攻关-交付反馈-v1.md；baseline/author-reference-results.json,同一G2请求，作者五次正式样本中位数；旧核心
+T04A19新核心,DP,G2 两餐,70.999,5,PC/Node,T04A19-Sol-DP性能攻关-交付反馈-v1.md；runs/final-wasm/,同一G2请求，作者五次正式样本中位数；新核心
+T04A19新核心,DP,G2 两餐,86.3,5,PC/Node,T04A19-P01-接收与接入裁定-20261026-v1.md；verification.json,P01独立五次运行；宿主调度不同
+user-v5接入包,DP,G2 两餐,69.534,5,PC/Node,T06i-DSH-DP新核心接入-交付反馈-v1.md；abi-dp-check.json,接入包五次正式样本中位数；响应哈希匹配T04A19
+T06i接入包,DP,G1 单餐,4.914,5,PC/Node,T06i-DSH-DP新核心接入-证据-v1/02-核心与ABI/abi-dp-check.json,接入包五次正式样本中位数
+T06i接入包,DP,G3 三餐,26.728,5,PC/Node,T06i-DSH-DP新核心接入-证据-v1/02-核心与ABI/abi-dp-check.json,接入包五次正式样本中位数

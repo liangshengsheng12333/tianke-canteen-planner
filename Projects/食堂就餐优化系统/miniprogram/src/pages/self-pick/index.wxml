@@ -1,0 +1,169 @@
+<!-- pages/self-pick/index.wxml — 自己选菜（T05S03）：选窗口 → 勾菜品/改数量 → 预览 → 明确确认。
+     勾选、数量、草稿标识只在页面 data；取消/返回即丢弃。营养只显示核心返回的单份值与合计，
+     未知显示“待补全”（T05N01）。行/步进器/确认按钮的 id 只供自动化测试定位，不改变视觉与交互。 -->
+<view class="page page-selfpick {{themeClass}}">
+  <view class="back-line">
+    <text class="link" bindtap="onBack">‹ 返回今日</text>
+  </view>
+
+  <view class="hero">
+    <view class="hero-title">自己选菜</view>
+    <view class="hero-sub">{{mealLabel}} · {{dateLabel}}｜勾选和数量在确认前都只是草稿。</view>
+    <view class="menu-flag" wx:if="{{simulated}}">
+      <text class="menu-flag-text">示例菜单</text>
+      <text class="menu-flag-note">当前为模拟菜单（非真实供应）</text>
+    </view>
+  </view>
+
+  <view class="banner banner-err" wx:if="{{loadError}}">{{loadError}}</view>
+  <view class="btn-group" wx:if="{{loadError}}">
+    <button class="btn btn-ghost" bindtap="onRetry">重试</button>
+  </view>
+
+  <!-- 成功（含重复提交的幂等返回）：只说明已记录，不自动刷新推荐 -->
+  <block wx:if="{{confirmed}}">
+    <view class="card">
+      <view class="card-title">
+        <text>这一餐已记录</text>
+        <text class="badge badge-ok">已计入</text>
+      </view>
+      <view class="note">{{confirmMessage}}</view>
+      <view class="note note-warn" wx:if="{{planNeedsUpdate}}">{{planUpdateText}}</view>
+      <view class="note">记录会出现在今日和记录/月历里；如需修改实付或数量，请到记录页改记或撤销。</view>
+      <view class="btn-group">
+        <button class="btn" bindtap="onBack">回到今日</button>
+        <button class="btn btn-ghost" bindtap="onGoLogs">去记录页查看</button>
+      </view>
+    </view>
+  </block>
+
+  <!-- 不能自选：原因与既有出口都由 store 给出，页面不自造旁路 -->
+  <block wx:if="{{blocked}}">
+    <view class="card">
+      <view class="card-title">
+        <text>这餐暂时不能自选</text>
+        <text class="badge badge-warn">已拦截</text>
+      </view>
+      <view class="note note-warn">{{blockMessage}}</view>
+      <view class="btn-group">
+        <button class="btn btn-ghost" wx:if="{{canReopen}}" bindtap="onReopen">重开该餐</button>
+        <button class="btn btn-ghost" wx:if="{{canGoLogs}}" bindtap="onGoLogs">去记录页改记/撤销</button>
+        <button class="btn" bindtap="onBack">返回今日</button>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if="{{view && !blocked && !confirmed}}">
+    <!-- 窗口：一餐只能在一个窗口里选 -->
+    <view class="card">
+      <view class="card-title">
+        <text>选择窗口</text>
+        <text class="badge badge-info">一餐只在一个窗口选</text>
+      </view>
+      <view class="win-tabs">
+        <view
+          class="win-tab {{item.active ? 'active' : ''}}"
+          wx:for="{{windows}}"
+          wx:key="windowId"
+          data-window-id="{{item.windowId}}"
+          bindtap="onSelectWindow"
+        >
+          <text class="win-name">{{item.name}}</text>
+          <text class="win-meta">可售 {{item.availableCount}} · 售罄 {{item.soldOutCount}}</text>
+        </view>
+      </view>
+      <view class="note" wx:if="{{windows.length === 0}}">本餐当前没有可用窗口。</view>
+    </view>
+
+    <!-- 菜单：份量/价格/售罄都按菜单真实报价 -->
+    <view class="card">
+      <view class="card-title">
+        <text>菜单</text>
+        <text class="badge badge-info">{{mode === 'full' ? '完整' : '简易'}}模式</text>
+      </view>
+      <view class="note">份量只按菜单真实报价；套餐按套餐总价计一次，半份米饭与整份同价。</view>
+      <view
+        class="offer-row {{item.selected ? 'selected' : ''}} {{item.canPick ? '' : 'disabled'}}"
+        wx:for="{{offers}}"
+        wx:key="offerId"
+        id="{{item.offerId}}"
+        data-offer-id="{{item.offerId}}"
+        bindtap="onToggleOffer"
+      >
+        <view class="offer-main">
+          <view class="offer-name">{{item.name}}</view>
+          <view class="offer-tags">
+            <text class="tag tag-plain">{{item.portionLabel}}</text>
+            <text class="tag" wx:if="{{item.kindLabel}}">{{item.kindLabel}}</text>
+            <text class="tag tag-warn" wx:if="{{item.estimatedLabel}}">{{item.estimatedLabel}}</text>
+            <text class="tag tag-plain" wx:if="{{item.comboComponentsText}}">含 {{item.comboComponentsText}}</text>
+            <text class="tag tag-plain" wx:if="{{item.riceIncludedText}}">{{item.riceIncludedText}}</text>
+            <text class="tag tag-danger" wx:if="{{item.soldOut}}">{{item.unavailableLabel}}</text>
+          </view>
+          <view class="offer-nutrition" wx:if="{{mode === 'full'}}">{{item.nutritionText}}</view>
+        </view>
+        <view class="offer-side">
+          <view class="offer-price">{{item.priceLabel}}</view>
+          <view class="stepper" wx:if="{{item.selected}}">
+            <text class="stepper-btn" id="dec-{{item.offerId}}" data-offer-id="{{item.offerId}}" data-op="dec" catchtap="onQuantity">−</text>
+            <text class="stepper-num">{{item.quantity}}</text>
+            <text class="stepper-btn" id="inc-{{item.offerId}}" data-offer-id="{{item.offerId}}" data-op="inc" catchtap="onQuantity">＋</text>
+          </view>
+          <view class="offer-action" wx:else>{{item.canPick ? '点一下选中' : '不可选'}}</view>
+        </view>
+      </view>
+      <view class="note" wx:if="{{offers.length === 0}}">这个窗口本餐暂无可选报价。</view>
+    </view>
+
+    <!-- 预览：将记录什么；金额与营养均来自 store 预览，未知不补 0 -->
+    <view class="card">
+      <view class="card-title">
+        <text>将记录的内容</text>
+        <text class="badge {{canConfirm ? 'badge-ok' : 'badge-warn'}}">{{canConfirm ? '可以确认' : '还不能确认'}}</text>
+      </view>
+      <view class="note" wx:if="{{previewLines.length === 0}}">还没有选菜：至少选 1 项才能确认吃了。</view>
+      <view class="sel-row" wx:for="{{previewLines}}" wx:key="offerId">
+        <view class="sel-name">{{item.name}}</view>
+        <view class="sel-meta">{{item.portionLabel}} · 数量 {{item.quantity}} · {{item.priceLabel}}</view>
+        <view class="sel-nutrition" wx:if="{{mode === 'full'}}">{{item.nutritionText}}</view>
+      </view>
+      <view class="row">
+        <text class="row-label">已知合计</text>
+        <text class="row-value">{{knownTotalLabel}}</text>
+      </view>
+      <view class="note note-warn" wx:if="{{priceIncomplete}}">有 {{unknownItemCount}} 项实付未知：不计入已知合计，也不按 0 计算。</view>
+      <view class="note" id="nutrition-sums" wx:if="{{mode === 'full'}}">营养：{{nutritionSumsText}}</view>
+      <view class="note" wx:else>营养明细在“完整模式”显示；未知值不按 0 计算。</view>
+      <view class="note note-warn" wx:if="{{nutritionError}}">{{nutritionError}}</view>
+      <view class="note note-warn" wx:for="{{hints}}" wx:key="index">{{item}}</view>
+      <view class="note note-warn" wx:if="{{confirmError}}">{{confirmError}}</view>
+    </view>
+
+    <!-- 底部固定操作栏：摘要与明细都复用既有正式预览（不重算价格），取消只丢草稿；确认是唯一写入动作 -->
+    <view class="footer">
+      <view class="footer-detail" wx:if="{{detailOpen}}">
+        <view class="footer-detail-head">
+          <text class="footer-detail-title">已选明细</text>
+          <text class="footer-detail-close" bindtap="onToggleDetail">收起</text>
+        </view>
+        <scroll-view class="footer-detail-scroll" scroll-y>
+          <view class="footer-detail-row" wx:for="{{previewLines}}" wx:key="offerId">
+            <text class="footer-detail-name">{{item.name}}</text>
+            <text class="footer-detail-meta">×{{item.quantity}} · {{item.priceLabel}}</text>
+          </view>
+          <view class="footer-detail-note" wx:if="{{priceIncomplete}}">有 {{unknownItemCount}} 项价格待补：不计入已知合计，也不按 0 计算。</view>
+        </scroll-view>
+      </view>
+      <view class="footer-summary">
+        <text class="footer-summary-text" id="footer-summary">{{footerSummaryText}}</text>
+        <text class="footer-detail-toggle" wx:if="{{previewLines.length > 0}}" bindtap="onToggleDetail">{{detailOpen ? '收起明细' : '选菜明细'}}</text>
+      </view>
+      <view class="footer-inner">
+        <button class="btn btn-ghost footer-cancel" bindtap="onCancel">取消</button>
+        <button class="btn footer-confirm" id="confirm-eat" bindtap="onConfirm" disabled="{{confirming || !canConfirm}}">
+          {{confirming ? '确认中…' : '确认吃了'}}
+        </button>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,136 @@
+{
+  "coreReruns": [
+    {
+      "spent": 100,
+      "algorithm": "greedy",
+      "status": "OkPartial",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": 0,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": false,
+        "withinBudgetKnownAmounts": true,
+        "overageCents": 0,
+        "checkBasis": "known_only"
+      }
+    },
+    {
+      "spent": 100,
+      "algorithm": "dp",
+      "status": "OkPartial",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": 0,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": false,
+        "withinBudgetKnownAmounts": true,
+        "overageCents": 0,
+        "checkBasis": "known_only"
+      }
+    },
+    {
+      "spent": 100,
+      "algorithm": "branchAndBound",
+      "status": "OkPartial",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": 0,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": false,
+        "withinBudgetKnownAmounts": true,
+        "overageCents": 0,
+        "checkBasis": "known_only"
+      }
+    },
+    {
+      "spent": 101,
+      "algorithm": "greedy",
+      "status": "NoFeasibleWithinBudget",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": 0,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": true,
+        "withinBudgetKnownAmounts": false,
+        "overageCents": 1,
+        "checkBasis": "known_only"
+      }
+    },
+    {
+      "spent": 101,
+      "algorithm": "dp",
+      "status": "NoFeasibleWithinBudget",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": 0,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": true,
+        "withinBudgetKnownAmounts": false,
+        "overageCents": 1,
+        "checkBasis": "known_only"
+      }
+    },
+    {
+      "spent": 101,
+      "algorithm": "branchAndBound",
+      "status": "NoFeasibleWithinBudget",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": 0,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": true,
+        "withinBudgetKnownAmounts": false,
+        "overageCents": 1,
+        "checkBasis": "known_only"
+      }
+    },
+    {
+      "spent": "unknown",
+      "algorithm": "dp",
+      "budget": {
+        "budgetCents": 100,
+        "remainingBudgetKnownCents": null,
+        "plannedTotalCents": 0,
+        "plannedTotalKnownCents": 0,
+        "priceIncomplete": false,
+        "overBudget": true,
+        "withinBudgetKnownAmounts": false,
+        "overageCents": null,
+        "checkBasis": "known_only"
+      }
+    }
+  ],
+  "documentArithmetic": [
+    {
+      "dish": "pancake",
+      "documentMacroKcal": "487.10",
+      "jsonEnergyKcal": 486,
+      "deltaKcal": "1.10"
+    },
+    {
+      "dish": "cold-noodles",
+      "documentMacroKcal": "413.70",
+      "jsonEnergyKcal": 413,
+      "deltaKcal": "0.70"
+    },
+    {
+      "dish": "shredded-pancake",
+      "documentMacroKcal": "435.33",
+      "jsonEnergyKcal": 434,
+      "deltaKcal": "1.33"
+    }
+  ],
+  "note": "Arithmetic review does not verify ingredient sources or require forcing source energy to macro-derived energy."
+}

@@ -1,0 +1,21 @@
+{
+  "version": "2026-10-20-init-v1",
+  "packages": [
+    {
+      "role": "反重力",
+      "file": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\初始化包\\反重力-只读初始化包.md",
+      "sha256": "CBE96FDD2FB7C18033F279E313B5454170A5C1016CD845FF58B0298D30C64A90",
+      "bytes": 83466,
+      "status": "prepared_not_sent",
+      "requestedModel": "Gemini 3.8 Flash日常；Gemini 4复杂问题；原生档位未指定"
+    },
+    {
+      "role": "DSH",
+      "file": "D:\\项目\\cpp\\Projects\\食堂就餐优化系统\\Resources\\初始化包\\DSH-只读初始化包.md",
+      "sha256": "4A0F230CEED80ADAF66E4034AFDCAE0F52DB37022D8D1640CD05F631C8AE7098",
+      "bytes": 79008,
+      "status": "prepared_not_sent",
+      "requestedModel": "DeepSeek V4.1 Flash；原生档位未指定"
+    }
+  ]
+}

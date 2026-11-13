@@ -1,0 +1,174 @@
+{
+  "package": "@j0hanz/todokit-mcp@2.1.0",
+  "checks": [
+    "MCP initialize and tools/list",
+    "create, update, complete, close, restart, read persisted tasks",
+    "invalid empty description rejected"
+  ],
+  "responses": [
+    {
+      "name": "add_todos",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"result\":{\"count\":2,\"ids\":[\"672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3\",\"510a868f-f5b9-4da4-9e7e-343984a3f9ae\"],\"summary\":\"Added 2 todos\",\"nextActions\":[\"list_todos\",\"update_todo\"]}}"
+          }
+        ],
+        "structuredContent": {
+          "ok": true,
+          "result": {
+            "count": 2,
+            "ids": [
+              "672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3",
+              "510a868f-f5b9-4da4-9e7e-343984a3f9ae"
+            ],
+            "summary": "Added 2 todos",
+            "nextActions": [
+              "list_todos",
+              "update_todo"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "update_todo",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"result\":{\"item\":{\"id\":\"672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3\",\"description\":\"验证更新已成功\",\"completed\":false,\"priority\":\"high\",\"category\":\"testing\",\"createdAt\":\"2026-10-19T16:41:06.676Z\",\"updatedAt\":\"2026-10-19T16:41:06.694Z\"},\"summary\":\"Updated todo\",\"nextActions\":[\"list_todos\",\"complete_todo\"]}}"
+          }
+        ],
+        "structuredContent": {
+          "ok": true,
+          "result": {
+            "item": {
+              "id": "672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3",
+              "description": "验证更新已成功",
+              "completed": false,
+              "priority": "high",
+              "category": "testing",
+              "createdAt": "2026-10-19T16:41:06.676Z",
+              "updatedAt": "2026-10-19T16:41:06.694Z"
+            },
+            "summary": "Updated todo",
+            "nextActions": [
+              "list_todos",
+              "complete_todo"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "complete_todo",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"result\":{\"item\":{\"id\":\"672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3\",\"description\":\"验证更新已成功\",\"completed\":true,\"priority\":\"high\",\"category\":\"testing\",\"createdAt\":\"2026-10-19T16:41:06.676Z\",\"updatedAt\":\"2026-10-19T16:41:06.701Z\",\"completedAt\":\"2026-10-19T16:41:06.701Z\"},\"summary\":\"Completed todo\",\"nextActions\":[\"list_todos\"]}}"
+          }
+        ],
+        "structuredContent": {
+          "ok": true,
+          "result": {
+            "item": {
+              "id": "672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3",
+              "description": "验证更新已成功",
+              "completed": true,
+              "priority": "high",
+              "category": "testing",
+              "createdAt": "2026-10-19T16:41:06.676Z",
+              "updatedAt": "2026-10-19T16:41:06.701Z",
+              "completedAt": "2026-10-19T16:41:06.701Z"
+            },
+            "summary": "Completed todo",
+            "nextActions": [
+              "list_todos"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "list_todos",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"result\":{\"items\":[{\"id\":\"672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3\",\"description\":\"验证更新已成功\",\"completed\":true,\"priority\":\"high\",\"category\":\"testing\",\"createdAt\":\"2026-10-19T16:41:06.676Z\",\"updatedAt\":\"2026-10-19T16:41:06.701Z\",\"completedAt\":\"2026-10-19T16:41:06.701Z\"},{\"id\":\"510a868f-f5b9-4da4-9e7e-343984a3f9ae\",\"description\":\"保留第二项验证完成后持久化\",\"completed\":false,\"priority\":\"low\",\"category\":\"testing\",\"createdAt\":\"2026-10-19T16:41:06.676Z\",\"updatedAt\":\"2026-10-19T16:41:06.676Z\"}],\"summary\":\"Showing 2 all todos (Found 2 todos (1 pending, 1 completed))\",\"counts\":{\"total\":2,\"pending\":1,\"completed\":1},\"filteredCounts\":{\"total\":2,\"pending\":1,\"completed\":1},\"status\":\"all\",\"returned\":2,\"truncated\":false,\"remaining\":0,\"hint\":\"Tip: when all todos are completed, the storage file is automatically deleted.\"}}"
+          }
+        ],
+        "structuredContent": {
+          "ok": true,
+          "result": {
+            "items": [
+              {
+                "id": "672cf2c8-1d1d-4d92-8feb-2ea5b7479ca3",
+                "description": "验证更新已成功",
+                "completed": true,
+                "priority": "high",
+                "category": "testing",
+                "createdAt": "2026-10-19T16:41:06.676Z",
+                "updatedAt": "2026-10-19T16:41:06.701Z",
+                "completedAt": "2026-10-19T16:41:06.701Z"
+              },
+              {
+                "id": "510a868f-f5b9-4da4-9e7e-343984a3f9ae",
+                "description": "保留第二项验证完成后持久化",
+                "completed": false,
+                "priority": "low",
+                "category": "testing",
+                "createdAt": "2026-10-19T16:41:06.676Z",
+                "updatedAt": "2026-10-19T16:41:06.676Z"
+              }
+            ],
+            "summary": "Showing 2 all todos (Found 2 todos (1 pending, 1 completed))",
+            "counts": {
+              "total": 2,
+              "pending": 1,
+              "completed": 1
+            },
+            "filteredCounts": {
+              "total": 2,
+              "pending": 1,
+              "completed": 1
+            },
+            "status": "all",
+            "returned": 2,
+            "truncated": false,
+            "remaining": 0,
+            "hint": "Tip: when all todos are completed, the storage file is automatically deleted."
+          }
+        }
+      }
+    },
+    {
+      "name": "add_todo",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "MCP error -32602: Input validation error: Invalid arguments for tool add_todo: Too small: expected string to have >=1 characters at description"
+          }
+        ],
+        "isError": true
+      }
+    }
+  ],
+  "tools": [
+    "add_todo",
+    "add_todos",
+    "list_todos",
+    "update_todo",
+    "complete_todo",
+    "delete_todo"
+  ],
+  "storageShape": [
+    "0",
+    "1"
+  ],
+  "passed": true
+}

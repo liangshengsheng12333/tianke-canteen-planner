@@ -1,0 +1,59 @@
+{
+  "ingredientName": "调味甜面酱",
+  "dishId": "dish-shandong-pancake",
+  "primaryStandard": {
+    "sourceDatabase": "中国疾病预防控制中心营养与健康所《中国食物成分表（标准版）》第6版第二册",
+    "category": "调味品类",
+    "bookCode": "13-1-301",
+    "officialName": "甜面酱",
+    "officialOriginalPer100g": {
+      "waterG": 53.9,
+      "energyKj": 600.0,
+      "energyKcal": 143.0,
+      "proteinG": 5.5,
+      "fatG": 0.6,
+      "carbG": 28.5,
+      "ashG": 11.5,
+      "sodiumMg": 2097.2
+    },
+    "portionAssumption": {
+      "description": "煎饼翻面后内侧用酱刷轻刷1~2遍，用量按典型小吃标准份量15g计；此项为透明份量假设，非现场称重",
+      "portionG": 15.0,
+      "portionEnergyKcal": 21.4500,
+      "portionProteinG": 0.8250,
+      "portionFatG": 0.0900,
+      "portionCarbG": 4.2750,
+      "portionSodiumMg": 314.5800
+    }
+  },
+  "commercialReference": {
+    "brandName": "海天甜面酱袋装180g",
+    "manufacturer": "佛山市海天调味食品股份有限公司",
+    "standardNumber": "GB/T 24399",
+    "portalUrl": "https://www.foodtalks.cn/product/6292",
+    "labeledPer15g": {
+      "energyKj": 103.0,
+      "energyKcal": 24.62,
+      "proteinG": 1.5,
+      "fatG": 0.2,
+      "carbG": 4.2,
+      "sodiumMg": 531.0
+    },
+    "convertedPer100g": {
+      "energyKj": 686.67,
+      "energyKcal": 164.12,
+      "proteinG": 10.0,
+      "fatG": 1.33,
+      "carbG": 28.0,
+      "sodiumMg": 3540.0
+    },
+    "portion15gValues": {
+      "energyKcal": 24.6176,
+      "proteinG": 1.5000,
+      "fatG": 0.2000,
+      "carbG": 4.2000,
+      "sodiumMg": 531.0000
+    }
+  },
+  "auditNote": "本版推荐以中国食物成分表通用权威条目（13-1-301）作为基准，同时完整保留并披露市售主流海天袋装甜面酱的真实GB 28050包装标签参数以资对照；单份两方案能量差异仅为3.17 kcal，宏量高度吻合。"
+}

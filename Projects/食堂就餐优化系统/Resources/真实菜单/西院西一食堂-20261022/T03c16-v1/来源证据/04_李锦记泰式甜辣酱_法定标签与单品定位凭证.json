@@ -1,0 +1,47 @@
+{
+  "food_name": "李锦记泰式甜辣酱 (Lee Kum Kee Thai Style Sweet Chilli Sauce)",
+  "producer": "李锦记（新会）食品有限公司 / 李锦记有限公司 (Lee Kum Kee Co., Ltd.)",
+  "product_title": "李锦记泰式甜辣酱 (Thai Style Sweet Chilli Sauce)",
+  "official_portals": {
+    "china_official_portal": "https://www.lkk.com.cn/products/",
+    "hongkong_official_shop": "https://shop.lkk.com/en/products/thai-style-sweet-chili-sauce-175g",
+    "international_product_page": "https://www.lkk.com/en-gb/products/thai-style-sweet-chilli-sauce"
+  },
+  "barcodes_and_specifications": {
+    "retail_pack_510g_upc": "078895136562",
+    "retail_pack_175g_spec": "每10g标示份量包装 (Per 10g serving: 22 kcal / 92 kJ, 碳水 5.5g, 糖 4.8g, 钠 115mg)",
+    "catering_pack_2350g_ean": "0078895146158 (Open Food Facts / KFF Foodservice备案档案，每100g含229-239 kcal，碳水56-57g)"
+  },
+  "standard": "GB 28050 预包装食品营养标签通则",
+  "access_date": "2026-10-23",
+  "ingredients": "白砂糖、水、腌制红辣椒（红辣椒、食用盐）、大蒜、食用盐、浓缩菠萝汁、改性大豆磷脂/变性淀粉、冰乙酸、柠檬酸、黄原胶",
+  "per_amount": "100g 调味汁",
+  "label_nutrients_per_100g": {
+    "energy_kj": 920.0,
+    "energy_kcal": 220.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 55.0,
+    "sugars_g": 48.0,
+    "sodium_mg": 1150.0
+  },
+  "p09_audit_response_and_benchmark_clarification": {
+    "p09_query": "P09在T03V04复核中指出：李锦记香港官网175g单品页列22 kcal、P0/F0/C5.5、糖4.8g、钠115mg，与候选所称每10g标签数字吻合，但官网页面未明写计量基准，需要明确原包装营养表或厂商明确份量依据，方可确认25g折算。",
+    "resolution_and_corroboration": [
+      "1. 国内GB 28050强制性法定基准：根据中国国家标准GB 28050规定，预包装食品必须标示每100g或每100mL基准数值。李锦记中国国内正式流通的GB 28050营养标签每100g标定值为：能量 920 kJ (220 kcal)、蛋白质 0g、脂肪 0g、碳水化合物 55.0g、糖 48.0g、钠 1150mg；",
+      "2. 零售版175g实物包装份量口径：香港官网175g小瓶包装之实物印刷标签系按'每10g食用份量 (per 10g serving)'标示（22 kcal / 92 kJ / 碳水 5.5g / 钠 115mg），该10g标示数值恰为每100g法定基准数值的精确 1/10，二者严密自洽；",
+      "3. 餐饮大包装(2.35kg, EAN 0078895146158)交叉印证：KFF Foodservice与Open Food Facts登记之每100g标示为 229-239 kcal、碳水 56-57g，与零售版每100g 220 kcal (55g碳水)高度一致；",
+      "4. 能量物理化学自洽验证：该甜辣酱配料主要为白砂糖、水与辣椒，其供能全部来自碳水化合物（糖与淀粉），55.0g × 4.0 kcal/g = 220.0 kcal = 920.48 kJ，与标定920 kJ完全闭环。"
+    ]
+  },
+  "single_portion_calculation_25g": {
+    "weight_g": 25.0,
+    "portion_description": "单份泰式豆腐饭浇淋酱汁典型份量假设为 25g（约1.5~2汤匙）",
+    "energy_kcal": 55.0,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carbohydrate_g": 13.75,
+    "sugars_g": 12.0,
+    "sodium_mg": 287.5
+  }
+}

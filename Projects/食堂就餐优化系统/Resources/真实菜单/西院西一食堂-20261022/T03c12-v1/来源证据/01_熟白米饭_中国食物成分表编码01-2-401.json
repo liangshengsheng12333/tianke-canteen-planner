@@ -1,0 +1,50 @@
+{
+  "food_name": "米饭(蒸) / 熟白米饭",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "publication": "《中国食物成分表（标准版）》第6版第一册，杨月欣主编，北京大学医学出版社，2018年，ISBN: 978-7-5659-1845-2 / 中国疾病预防控制中心营养与健康所食物成分查询平台",
+  "food_code": "01-2-401",
+  "food_entry_id": 287,
+  "food_category": "谷类及制品 - 稻米及制品",
+  "online_portal": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+  "access_date": "2026-10-23",
+  "edible_portion": "100%",
+  "per_amount": "100g 熟重",
+  "nutrients_per_100g": {
+    "energy_kj": 493.0,
+    "energy_kcal": 117.83,
+    "energy_kcal_exact": 117.8298,
+    "energy_conversion_rule": "依据国标 1 kcal = 4.184 kJ，493 kJ / 4.184 = 117.8298 kcal/100g，保留两位小数为 117.83 kcal/100g",
+    "protein_g": 2.6,
+    "fat_g": 0.3,
+    "carbohydrate_g": 25.9,
+    "water_g": 70.9,
+    "sodium_mg": 2.5
+  },
+  "canteen_physical_evidence": {
+    "photo_1_nutrition_display": {
+      "photo_file": "03aa3b48ce6090e365eca270d655a8f8.jpg",
+      "photo_index": 1,
+      "sha256": "4f764b805435264405da1503319dc224baa473bd42663c0e48541813c9bd334b",
+      "display_data": "486.00 kJ、蛋白质 2.60g、脂肪 0.30g、碳水化合物 25.90g",
+      "clarification": "经换算 486 kJ / 4.184 = 116.16 kcal。中国疾控食物成分平台蒸米饭条目（编码01-2-401，条目287）标定为 493 kJ/100g（换算为 117.83 kcal/100g）。两者蛋白质、脂肪、碳水化合物完全一致，能量存在微小差异（486 kJ vs 493 kJ，相差 7 kJ / 1.67 kcal）。T03c12 彻底消除此前 116 kcal 与 493 kJ 并列混写之冲突，以官方可定位的 493 kJ/100g 标定值为准，严格按 4.184 换算为 117.83 kcal/100g，消除单位混写冲突。"
+    },
+    "photo_11_rice_portion_board": {
+      "photo_file": "d2138473d70cb1a9039ebcd8e70435b5.jpg",
+      "photo_index": 11,
+      "sha256": "6ecb0f00f0fdb9b5e6655b06d5a1f9593ed5325f7fbfb579a98c7b5916898ba1",
+      "display_data": "小份：200g / 大份：400g",
+      "clarification": "牌子为西一食堂米饭通用类别规格公示，支持现场确有200g规格事实，但不能证明出餐恰好称重为200g。本估算以此作为合理、透明的中心假设，明确标注非食堂实测出餐。"
+    }
+  },
+  "portion_assumption": "单份白切鸡饭含熟白米饭 200g，单份仅计一次米饭，不含无限续饭。",
+  "single_portion_calculation_200g": {
+    "weight_g": 200.0,
+    "energy_kcal": 235.66,
+    "energy_kcal_exact": 235.6596,
+    "energy_kj": 986.0,
+    "protein_g": 5.2,
+    "fat_g": 0.6,
+    "carbohydrate_g": 51.8,
+    "sodium_mg": 5.0
+  }
+}

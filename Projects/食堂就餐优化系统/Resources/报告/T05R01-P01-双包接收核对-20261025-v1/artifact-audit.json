@@ -1,0 +1,177 @@
+{
+  "user": {
+    "digest": "sha256:27418f70c45f20951bc706f2794548c8b88858f3a68b7b53a5c1fc07f01b4c9a",
+    "count": 77,
+    "bytes": 1000391,
+    "manifestDigestMatch": true,
+    "manifestFileMismatches": [],
+    "routes": [
+      "pages/home/index",
+      "pages/profile/index",
+      "pages/logs/index",
+      "pages/self-pick/index",
+      "pages/menu/index",
+      "pages/appearance/index",
+      "pages/profile-edit/index",
+      "pages/budget/index",
+      "pages/data/index",
+      "pages/tutorial/index"
+    ]
+  },
+  "dev": {
+    "digest": "sha256:ece1cc4dbfafd8b803f8070e71b23762dbbd7a81030701107506b6a282bf66cd",
+    "count": 81,
+    "bytes": 1030448,
+    "manifestDigestMatch": true,
+    "manifestFileMismatches": [],
+    "routes": [
+      "pages/home/index",
+      "pages/profile/index",
+      "pages/logs/index",
+      "pages/self-pick/index",
+      "pages/menu/index",
+      "pages/dev/index",
+      "pages/appearance/index",
+      "pages/profile-edit/index",
+      "pages/budget/index",
+      "pages/data/index",
+      "pages/tutorial/index"
+    ]
+  },
+  "common": {
+    "same": [
+      "src/app.ts",
+      "src/app.wxss",
+      "src/assets/wasm/mp_core.wasm",
+      "src/config/nutrition-config.ts",
+      "src/config/simulated-menu.ts",
+      "src/config/west1-menu.ts",
+      "src/domain/app-state.ts",
+      "src/domain/backup.ts",
+      "src/domain/logs.ts",
+      "src/domain/menu-upgrade.ts",
+      "src/domain/menu.ts",
+      "src/domain/plan.ts",
+      "src/domain/profile.ts",
+      "src/domain/self-pick.ts",
+      "src/domain/store.ts",
+      "src/domain/types.ts",
+      "src/mock/simulated-inputs.ts",
+      "src/pages/appearance/index.json",
+      "src/pages/appearance/index.ts",
+      "src/pages/appearance/index.wxml",
+      "src/pages/appearance/index.wxss",
+      "src/pages/budget/index.json",
+      "src/pages/budget/index.ts",
+      "src/pages/budget/index.wxml",
+      "src/pages/budget/index.wxss",
+      "src/pages/data/index.json",
+      "src/pages/data/index.wxss",
+      "src/pages/home/index.json",
+      "src/pages/home/index.ts",
+      "src/pages/home/index.wxml",
+      "src/pages/home/index.wxss",
+      "src/pages/index/index.json",
+      "src/pages/index/index.ts",
+      "src/pages/index/index.wxml",
+      "src/pages/index/index.wxss",
+      "src/pages/logs/index.json",
+      "src/pages/logs/index.ts",
+      "src/pages/logs/index.wxml",
+      "src/pages/logs/index.wxss",
+      "src/pages/menu/index.json",
+      "src/pages/menu/index.ts",
+      "src/pages/menu/index.wxml",
+      "src/pages/menu/index.wxss",
+      "src/pages/profile-edit/index.json",
+      "src/pages/profile-edit/index.ts",
+      "src/pages/profile-edit/index.wxml",
+      "src/pages/profile-edit/index.wxss",
+      "src/pages/profile/index.json",
+      "src/pages/profile/index.ts",
+      "src/pages/profile/index.wxml",
+      "src/pages/profile/index.wxss",
+      "src/pages/self-pick/index.json",
+      "src/pages/self-pick/index.ts",
+      "src/pages/self-pick/index.wxml",
+      "src/pages/self-pick/index.wxss",
+      "src/pages/tutorial/index.json",
+      "src/pages/tutorial/index.ts",
+      "src/pages/tutorial/index.wxml",
+      "src/pages/tutorial/index.wxss",
+      "src/sitemap.json",
+      "src/types.d.ts",
+      "src/utils/appearance.ts",
+      "src/utils/calendar.ts",
+      "src/utils/canonical-json.ts",
+      "src/utils/capability.ts",
+      "src/utils/core-bridge.ts",
+      "src/utils/core-runtime.ts",
+      "src/utils/display-mode.ts",
+      "src/utils/money-display.ts",
+      "src/utils/nutrition-display.ts",
+      "src/utils/sha256.ts",
+      "src/utils/tabbar.ts",
+      "src/utils/tutorial-state.ts",
+      "src/utils/wx-runtime.ts"
+    ],
+    "different": [
+      "src/app.json",
+      "src/pages/data/index.ts",
+      "src/pages/data/index.wxml"
+    ],
+    "devOnly": [
+      "src/pages/dev/index.json",
+      "src/pages/dev/index.ts",
+      "src/pages/dev/index.wxml",
+      "src/pages/dev/index.wxss"
+    ]
+  },
+  "remainingUserDevelopmentSurface": {
+    "visibleSourceMarkers": [
+      {
+        "file": "src/pages/home/index.wxml",
+        "line": 207,
+        "text": "<view class=\"tech-title\">技术信息（用于诊断）</view>"
+      },
+      {
+        "file": "src/pages/data/index.wxml",
+        "line": 57,
+        "text": "<!-- 次级入口：技术信息与诊断 -->"
+      },
+      {
+        "file": "src/pages/data/index.wxml",
+        "line": 60,
+        "text": "<text>技术信息</text>"
+      },
+      {
+        "file": "src/pages/data/index.wxml",
+        "line": 63,
+        "text": "<view class=\"note\">原始 JSON、哈希摘要与备份对照只对排查有用，放在这里，不占普通用户首层。</view>"
+      },
+      {
+        "file": "src/pages/menu/index.wxml",
+        "line": 82,
+        "text": "<view class=\"field-label\">粘贴菜单 JSON（MenuCatalog 或 {catalog:{...}} 包装）</view>"
+      },
+      {
+        "file": "src/pages/menu/index.wxml",
+        "line": 87,
+        "text": "placeholder=\"在此粘贴菜单 JSON…\""
+      },
+      {
+        "file": "src/pages/menu/index.wxml",
+        "line": 227,
+        "text": "<view class=\"field-label\">粘贴备份 JSON</view>"
+      },
+      {
+        "file": "src/pages/profile/index.wxml",
+        "line": 130,
+        "text": "<view class=\"note\">更新菜单、导出/恢复备份在这里；原始 JSON、哈希与诊断收在次级页。</view>"
+      }
+    ],
+    "fixturePresent": true,
+    "fixtureBytes": 32940,
+    "staticStoreImport": true
+  }
+}

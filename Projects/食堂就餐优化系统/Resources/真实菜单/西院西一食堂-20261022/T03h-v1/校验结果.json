@@ -1,0 +1,172 @@
+{
+  "validatedAt": "2026-10-25T18:16:36.761Z",
+  "wasmSha256": "B0098453B7251C2FF39C65B3DF932E7E15975E4252A036196EBF63638A3DC5DD",
+  "wasmValidated": true,
+  "validateMenuOutput": {
+    "contractVersion": "1.0",
+    "requestId": null,
+    "ok": true,
+    "error": null,
+    "result": {
+      "valid": true,
+      "menuVersion": "west1-canteen-batch2-supplement6-20261026",
+      "catalogHash": "sha256:a35158df416b9b338df10a3a7907f1a3e5ea5b2df0d60785ab6aa0e9f4839b0a",
+      "computedCatalogHash": "sha256:a35158df416b9b338df10a3a7907f1a3e5ea5b2df0d60785ab6aa0e9f4839b0a",
+      "counts": {
+        "windows": 12,
+        "dishes": 166,
+        "offers": 137,
+        "halfOffers": 0,
+        "comboRules": 0
+      },
+      "diagnostics": []
+    }
+  },
+  "baselineOfferPreservation": {
+    "baselineOffersCount": 62,
+    "allBaselineOffersPreserved": true,
+    "priceDifferences": []
+  },
+  "sampleOfferNutrition": [
+    {
+      "offerId": "offer-yl-xianrou-bao",
+      "dishId": "dish-yl-xianrou-bao",
+      "windowId": "w-yilong-baozi",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 205,
+        "proteinDg": 68,
+        "fatDg": 82,
+        "carbDg": 260
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-yl-guantang-xiaolongbao",
+      "dishId": "dish-yl-guantang-xiaolongbao",
+      "windowId": "w-yilong-baozi",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 385,
+        "proteinDg": 142,
+        "fatDg": 175,
+        "carbDg": 428
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-cq-xiaomian",
+      "dishId": "dish-cq-xiaomian",
+      "windowId": "w-chongqing-xiaomian",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 445,
+        "proteinDg": 118,
+        "fatDg": 145,
+        "carbDg": 668
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-cq-set-hongyou-chaoshou-bing",
+      "dishId": "dish-cq-set-hongyou-chaoshou-bing",
+      "windowId": "w-chongqing-xiaomian",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 665,
+        "proteinDg": 200,
+        "fatDg": 237,
+        "carbDg": 927
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-ypj-zhaopai-youpoji",
+      "dishId": "dish-ypj-zhaopai-youpoji",
+      "windowId": "w-youpoji",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 645,
+        "proteinDg": 325,
+        "fatDg": 228,
+        "carbDg": 775
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-ypj-youpo-huajiaoya",
+      "dishId": "dish-ypj-youpo-huajiaoya",
+      "windowId": "w-youpoji",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 660,
+        "proteinDg": 285,
+        "fatDg": 280,
+        "carbDg": 735
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-cr-zhaopai-lajiao-chaorou",
+      "dishId": "dish-cr-zhaopai-lajiao-chaorou",
+      "windowId": "w-chao-rou",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 625,
+        "proteinDg": 235,
+        "fatDg": 275,
+        "carbDg": 705
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-yn-zhaopai-roujiang-mixian-tang",
+      "dishId": "dish-yn-zhaopai-roujiang-mixian-tang",
+      "windowId": "w-yunnan-mixian",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 480,
+        "proteinDg": 165,
+        "fatDg": 145,
+        "carbDg": 710
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-mlt-tang-300g",
+      "dishId": "dish-mlt-tang-300g",
+      "windowId": "w-malatang",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 350,
+        "proteinDg": 205,
+        "fatDg": 165,
+        "carbDg": 300
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    },
+    {
+      "offerId": "offer-mlt-xiangguo-500g",
+      "dishId": "dish-mlt-xiangguo-500g",
+      "windowId": "w-malatang",
+      "portionCode": "full",
+      "nutrition": {
+        "energyKcal": 690,
+        "proteinDg": 350,
+        "fatDg": 395,
+        "carbDg": 485
+      },
+      "nutritionComplete": true,
+      "estimated": true
+    }
+  ]
+}

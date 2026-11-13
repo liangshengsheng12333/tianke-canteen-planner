@@ -1,0 +1,21 @@
+{
+  "food_name": "大豆油 (烹调植物油)",
+  "english_name": "Soybean oil",
+  "book_title": "《中国食物成分表（标准版）》第6版第一册",
+  "chapter": "第十章 油脂类",
+  "food_code": "10-1-101",
+  "per_amount": "100g",
+  "nutrients": {
+    "energy_kcal": 899.0,
+    "energy_kj": 3761.0,
+    "protein_g": 0.0,
+    "fat_g": 99.9,
+    "carbohydrate_g": 0.0,
+    "sodium_mg": 0.0,
+    "vitamin_e_mg": 93.08
+  },
+  "atwater_recalculation": {
+    "formula": "0 * 4 + 99.9 * 9 + 0 * 4 = 899.1 kcal",
+    "discrepancy": "+0.1 kcal"
+  }
+}

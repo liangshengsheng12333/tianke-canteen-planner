@@ -1,0 +1,655 @@
+{
+  "window": {
+    "windowId": "w-chongqing-xiaomian",
+    "name": "重庆小面与一口香小笼包",
+    "mealWindows": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  },
+  "dishes": [
+    {
+      "dishId": "dish-cq-xiaomian",
+      "name": "重庆小面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 445,
+        "proteinDg": 118,
+        "fatDg": 145,
+        "carbDg": 668
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗，熟面条约250g配红油芽菜花生调味汤",
+        "estimated": true,
+        "note": "实拍价9元"
+      }
+    },
+    {
+      "dishId": "dish-cq-hongyou-chaoshou",
+      "name": "红油抄手",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 395,
+        "proteinDg": 135,
+        "fatDg": 152,
+        "carbDg": 510
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗约10只抄手生重约180g配红油调味汁",
+        "estimated": true,
+        "note": "实拍价8元"
+      }
+    },
+    {
+      "dishId": "dish-cq-suanlafen",
+      "name": "炸酱酸辣粉",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 460,
+        "proteinDg": 95,
+        "fatDg": 168,
+        "carbDg": 677
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗，红薯粉约220g配肉酱与酸辣汤底",
+        "estimated": true,
+        "note": "实拍价10元"
+      }
+    },
+    {
+      "dishId": "dish-cq-jiandan-xiaomian",
+      "name": "煎蛋小面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 540,
+        "proteinDg": 178,
+        "fatDg": 225,
+        "carbDg": 670
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗重庆小面配1只煎荷包蛋(50g)",
+        "estimated": true,
+        "note": "实拍价10元"
+      }
+    },
+    {
+      "dishId": "dish-cq-zhajiang-xiaomian",
+      "name": "炸酱小面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 525,
+        "proteinDg": 158,
+        "fatDg": 205,
+        "carbDg": 692
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗重庆小面加约40g炒肉酱浇头",
+        "estimated": true,
+        "note": "实拍价11元"
+      }
+    },
+    {
+      "dishId": "dish-cq-suancai-rousi-mian",
+      "name": "酸菜肉丝面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 485,
+        "proteinDg": 162,
+        "fatDg": 165,
+        "carbDg": 678
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗小面配酸菜炒肉丝约45g",
+        "estimated": true,
+        "note": "实拍价11元"
+      }
+    },
+    {
+      "dishId": "dish-cq-laziji-mian",
+      "name": "辣子鸡块面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 565,
+        "proteinDg": 215,
+        "fatDg": 218,
+        "carbDg": 705
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗面配红油炸鸡块浇头约70g",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    },
+    {
+      "dishId": "dish-cq-jiangxiang-jitui-mian",
+      "name": "酱香鸡腿面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 610,
+        "proteinDg": 275,
+        "fatDg": 220,
+        "carbDg": 755
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗面配整只酱香卤鸡腿(熟重约90g)",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    },
+    {
+      "dishId": "dish-cq-hongshao-niurou-mian",
+      "name": "红烧牛肉面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 575,
+        "proteinDg": 245,
+        "fatDg": 195,
+        "carbDg": 752
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗面配红烧牛肉块约65g及原汁红油汤",
+        "estimated": true,
+        "note": "实拍价15元"
+      }
+    },
+    {
+      "dishId": "dish-cq-xianrou-xiaolongbao",
+      "name": "鲜肉小笼包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 360,
+        "proteinDg": 135,
+        "fatDg": 160,
+        "carbDg": 405
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1屉一口香鲜肉小笼包约6只共150g",
+        "estimated": true,
+        "note": "实拍价5元/屉"
+      }
+    },
+    {
+      "dishId": "dish-cq-xianrou-yumi-bao",
+      "name": "鲜肉玉米包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 345,
+        "proteinDg": 125,
+        "fatDg": 145,
+        "carbDg": 412
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1屉鲜肉玉米小笼包约6只共150g",
+        "estimated": true,
+        "note": "实拍价5元/屉"
+      }
+    },
+    {
+      "dishId": "dish-cq-jiangrou-xiaolongbao",
+      "name": "酱肉小笼包",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 380,
+        "proteinDg": 140,
+        "fatDg": 178,
+        "carbDg": 410
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1屉酱肉小笼包约6只共150g",
+        "estimated": true,
+        "note": "实拍价6元/屉"
+      }
+    },
+    {
+      "dishId": "dish-cq-xianroubing",
+      "name": "麻辣鲜肉饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 340,
+        "proteinDg": 115,
+        "fatDg": 165,
+        "carbDg": 365
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1个盘装麻辣鲜肉馅饼约120g油煎",
+        "estimated": true,
+        "note": "实拍价5元/个"
+      }
+    },
+    {
+      "dishId": "dish-cq-jidanbing",
+      "name": "鸡蛋饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 255,
+        "proteinDg": 92,
+        "fatDg": 108,
+        "carbDg": 302
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1个盘装葱香鸡蛋煎饼约110g",
+        "estimated": true,
+        "note": "实拍价3元/个"
+      }
+    },
+    {
+      "dishId": "dish-cq-jiangxiangbing",
+      "name": "招牌酱香饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 1350,
+        "proteinDg": 325,
+        "fatDg": 425,
+        "carbDg": 2085
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "标牌标称10元/斤，1斤=500g千层酱香饼",
+        "estimated": true,
+        "note": "实拍明确单位为10元/斤，标明500g基准"
+      }
+    },
+    {
+      "dishId": "dish-cq-set-hongyou-chaoshou-bing",
+      "name": "红油抄手加酱香饼套餐",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 665,
+        "proteinDg": 200,
+        "fatDg": 237,
+        "carbDg": 927
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗红油抄手加搭配酱香饼约100g",
+        "estimated": true,
+        "note": "元气套餐标价10.8元"
+      }
+    },
+    {
+      "dishId": "dish-cq-set-qingtang-chaoshou-bing",
+      "name": "清汤抄手加酱香饼套餐",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 615,
+        "proteinDg": 195,
+        "fatDg": 195,
+        "carbDg": 902
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗清汤肉馅抄手约10只加搭配酱香饼约100g",
+        "estimated": true,
+        "note": "单品清汤抄手划线停售，套餐条目未划线保留，标价10.8元"
+      }
+    },
+    {
+      "dishId": "dish-cq-set-xiaomian-bing",
+      "name": "重庆小面加酱香饼套餐",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 715,
+        "proteinDg": 183,
+        "fatDg": 230,
+        "carbDg": 1085
+      },
+      "nutritionBasis": {
+        "source": "照片d2138473d70cb1a9039ebcd8e70435b5与中国食物成分表",
+        "portionAssumption": "1碗重庆小面加搭配酱香饼约100g",
+        "estimated": true,
+        "note": "元气套餐标价11.8元"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-cq-xiaomian",
+      "dishId": "dish-cq-xiaomian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 900,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-hongyou-chaoshou",
+      "dishId": "dish-cq-hongyou-chaoshou",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-suanlafen",
+      "dishId": "dish-cq-suanlafen",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-jiandan-xiaomian",
+      "dishId": "dish-cq-jiandan-xiaomian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-zhajiang-xiaomian",
+      "dishId": "dish-cq-zhajiang-xiaomian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-suancai-rousi-mian",
+      "dishId": "dish-cq-suancai-rousi-mian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-laziji-mian",
+      "dishId": "dish-cq-laziji-mian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-jiangxiang-jitui-mian",
+      "dishId": "dish-cq-jiangxiang-jitui-mian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-hongshao-niurou-mian",
+      "dishId": "dish-cq-hongshao-niurou-mian",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-xianrou-xiaolongbao",
+      "dishId": "dish-cq-xianrou-xiaolongbao",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-xianrou-yumi-bao",
+      "dishId": "dish-cq-xianrou-yumi-bao",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-jiangrou-xiaolongbao",
+      "dishId": "dish-cq-jiangrou-xiaolongbao",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-xianroubing",
+      "dishId": "dish-cq-xianroubing",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-jidanbing",
+      "dishId": "dish-cq-jidanbing",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-jiangxiangbing",
+      "dishId": "dish-cq-jiangxiangbing",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-set-hongyou-chaoshou-bing",
+      "dishId": "dish-cq-set-hongyou-chaoshou-bing",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1080,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-set-qingtang-chaoshou-bing",
+      "dishId": "dish-cq-set-qingtang-chaoshou-bing",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1080,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cq-set-xiaomian-bing",
+      "dishId": "dish-cq-set-xiaomian-bing",
+      "windowId": "w-chongqing-xiaomian",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1180,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "metadata": {
+    "subtaskId": "H02",
+    "windowName": "重庆小面与一口香小笼包",
+    "photoFiles": [
+      "d2138473d70cb1a9039ebcd8e70435b5.jpg"
+    ],
+    "itemCount": 18,
+    "priceEstimated": false,
+    "notes": "重庆小面与一口香小笼包加急补录数据分包"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "food_name": "海南鸡饭辣椒酱 (Hainanese Chicken Rice Chilli Sauce)",
+  "brand_name": "WAY 威牌 (Way Foods / Way Sauce)",
+  "producer": "Way Sauce Sdn Bhd (Malaysia)",
+  "product_title": "WAY Hainanese Chicken Rice Chilli Sauce (海南鸡饭辣椒酱 200g)",
+  "official_portal": "https://waysauce.com/",
+  "retail_product_url": "https://tuktukmart.co.uk/products/way-hainanese-chicken-rice-chilli-sauce-200g",
+  "access_date": "2026-10-22",
+  "ingredients_list": "红辣椒 (Red Chilli)、食用醋 (Vinegar)、白砂糖 (Sugar)、生姜 (Ginger)、大蒜 (Garlic)、芝麻油 (Sesame Oil)、食用盐 (Salt)",
+  "per_amount": "100g 调味汁",
+  "label_nutrients_per_100g": {
+    "energy_kj": 502.0,
+    "energy_kcal": 120.0,
+    "protein_g": 2.0,
+    "fat_g": 4.0,
+    "carbohydrate_g": 21.0,
+    "sugars_g": 17.0,
+    "dietary_fibre_g": 4.0,
+    "sodium_mg": 1220.0
+  },
+  "p09_correction_record": {
+    "defect_identified": "P09专项核验指出：原c4草案混称多个品牌'综合标签'（声称'如Way / 广祥泰 / 李锦记蒜蓉辣椒酱综合'），未锁定单一单品确证原件与条目，属于无据综合。",
+    "rectification": "本T03c9彻底废除'综合标签'表述，直接锁定南洋海南鸡饭经典单品代表——Way牌海南鸡饭辣椒酱。该单品配料与南洋鸡饭红碟蘸酱完全一致（鲜红椒、生姜、大蒜、醋与少许芝麻油），官方标定每100g能量502 kJ (120 kcal)、蛋白质2.0g、脂肪4.0g、碳水21.0g、钠1220mg。同时对照同类经典单品新加坡广祥泰（Kwong Cheong Thye每100g含124 kcal、2.2g蛋白、4.0g脂肪、19.6g碳水），证明该数据高度可靠且具备坚实的单品标签原件支撑。"
+  },
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "energy_kcal": 12.0,
+    "protein_g": 0.2,
+    "fat_g": 0.4,
+    "carbohydrate_g": 2.1,
+    "sodium_mg": 122.0
+  }
+}

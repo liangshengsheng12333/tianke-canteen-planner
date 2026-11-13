@@ -1,0 +1,296 @@
+{
+  "window": {
+    "windowId": "w-chao-rou",
+    "name": "辣椒炒肉与小锅小炒",
+    "mealWindows": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  "dishes": [
+    {
+      "dishId": "dish-cr-zhaopai-lajiao-chaorou",
+      "name": "招牌辣椒炒肉套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 625,
+        "proteinDg": 235,
+        "fatDg": 275,
+        "carbDg": 705
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "鲜青椒90g + 五花肉片80g + 炒汁 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价13元（标牌印RNB元）"
+      }
+    },
+    {
+      "dishId": "dish-cr-xiaochao-huangniurou",
+      "name": "湘味小炒黄牛肉套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 590,
+        "proteinDg": 325,
+        "fatDg": 205,
+        "carbDg": 690
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "鲜切黄牛肉片110g + 泡椒青红椒 + 现炒汁 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价16元"
+      }
+    },
+    {
+      "dishId": "dish-cr-lajiao-chaodan",
+      "name": "辣椒炒蛋套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 545,
+        "proteinDg": 195,
+        "fatDg": 225,
+        "carbDg": 660
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "鲜鸡蛋2只100g + 青椒丝80g + 炒油 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价11元"
+      }
+    },
+    {
+      "dishId": "dish-cr-dongsun-lachang",
+      "name": "冬笋辣肠套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 610,
+        "proteinDg": 185,
+        "fatDg": 285,
+        "carbDg": 695
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "鲜冬笋片100g + 湖南麻辣腊肠片60g + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    },
+    {
+      "dishId": "dish-cr-waipocai-chaodan",
+      "name": "外婆菜炒蛋套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 530,
+        "proteinDg": 188,
+        "fatDg": 215,
+        "carbDg": 655
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "湖南特产外婆菜碎60g + 鸡蛋2只100g + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价11元"
+      }
+    },
+    {
+      "dishId": "dish-cr-roumo-qiezi",
+      "name": "肉沫茄子套餐",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 560,
+        "proteinDg": 155,
+        "fatDg": 235,
+        "carbDg": 715
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "嫩茄子150g + 猪肉末40g + 炒汁 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价11元"
+      }
+    },
+    {
+      "dishId": "dish-cr-xianggan-chaorou",
+      "name": "香干炒肉套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 585,
+        "proteinDg": 265,
+        "fatDg": 220,
+        "carbDg": 700
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "卤香干条100g + 猪肉丝60g + 芹菜青椒 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    },
+    {
+      "dishId": "dish-cr-laziji",
+      "name": "辣子鸡套餐",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 655,
+        "proteinDg": 295,
+        "fatDg": 265,
+        "carbDg": 745
+      },
+      "nutritionBasis": {
+        "source": "照片a0dadf2bb7f9f6a454284b14e5fd8f87与中国食物成分表",
+        "portionAssumption": "去骨酥香鸡块120g + 干红辣椒段姜葱 + 白米饭200g",
+        "estimated": true,
+        "note": "实拍价13元"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-cr-zhaopai-lajiao-chaorou",
+      "dishId": "dish-cr-zhaopai-lajiao-chaorou",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-xiaochao-huangniurou",
+      "dishId": "dish-cr-xiaochao-huangniurou",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-lajiao-chaodan",
+      "dishId": "dish-cr-lajiao-chaodan",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-dongsun-lachang",
+      "dishId": "dish-cr-dongsun-lachang",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-waipocai-chaodan",
+      "dishId": "dish-cr-waipocai-chaodan",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-roumo-qiezi",
+      "dishId": "dish-cr-roumo-qiezi",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-xianggan-chaorou",
+      "dishId": "dish-cr-xianggan-chaorou",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-cr-laziji",
+      "dishId": "dish-cr-laziji",
+      "windowId": "w-chao-rou",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1300,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "metadata": {
+    "subtaskId": "H04",
+    "windowName": "辣椒炒肉与小锅小炒",
+    "photoFiles": [
+      "a0dadf2bb7f9f6a454284b14e5fd8f87.jpg"
+    ],
+    "itemCount": 8,
+    "priceEstimated": false,
+    "notes": "辣椒炒肉与小锅小炒加急补录数据分包"
+  }
+}

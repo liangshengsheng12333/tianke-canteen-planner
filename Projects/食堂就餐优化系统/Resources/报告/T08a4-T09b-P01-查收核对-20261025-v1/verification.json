@@ -1,0 +1,235 @@
+{
+  "wasmRawStats": [
+    {
+      "group": "G0",
+      "algorithm": "greedy",
+      "medianRecomputed": 0.597,
+      "medianStored": 0.597,
+      "minRecomputed": 0.489,
+      "maxRecomputed": 1.027,
+      "statsMatch": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "dp",
+      "medianRecomputed": 5.81,
+      "medianStored": 5.81,
+      "minRecomputed": 5.488,
+      "maxRecomputed": 6.695,
+      "statsMatch": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "branchAndBound",
+      "medianRecomputed": 3.969,
+      "medianStored": 3.969,
+      "minRecomputed": 3.813,
+      "maxRecomputed": 5.258,
+      "statsMatch": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "greedy",
+      "medianRecomputed": 0.981,
+      "medianStored": 0.981,
+      "minRecomputed": 0.952,
+      "maxRecomputed": 1.054,
+      "statsMatch": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "dp",
+      "medianRecomputed": 1.083,
+      "medianStored": 1.083,
+      "minRecomputed": 1.064,
+      "maxRecomputed": 1.148,
+      "statsMatch": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "branchAndBound",
+      "medianRecomputed": 1.035,
+      "medianStored": 1.035,
+      "minRecomputed": 1.005,
+      "maxRecomputed": 1.075,
+      "statsMatch": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "greedy",
+      "medianRecomputed": 1.8,
+      "medianStored": 1.8,
+      "minRecomputed": 1.752,
+      "maxRecomputed": 2.047,
+      "statsMatch": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "dp",
+      "medianRecomputed": 271.439,
+      "medianStored": 271.439,
+      "minRecomputed": 266.327,
+      "maxRecomputed": 272.172,
+      "statsMatch": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "branchAndBound",
+      "medianRecomputed": 25.417,
+      "medianStored": 25.417,
+      "minRecomputed": 25.327,
+      "maxRecomputed": 26.723,
+      "statsMatch": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "greedy",
+      "medianRecomputed": 5.624,
+      "medianStored": 5.624,
+      "minRecomputed": 5.571,
+      "maxRecomputed": 6.044,
+      "statsMatch": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "dp",
+      "medianRecomputed": 529.803,
+      "medianStored": 529.803,
+      "minRecomputed": 526.552,
+      "maxRecomputed": 540.505,
+      "statsMatch": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "branchAndBound",
+      "medianRecomputed": 808.908,
+      "medianStored": 808.908,
+      "minRecomputed": 802.094,
+      "maxRecomputed": 828.357,
+      "statsMatch": true
+    },
+    {
+      "group": "DIAG",
+      "algorithm": "branchAndBound",
+      "medianRecomputed": 1.907,
+      "medianStored": 1.907,
+      "minRecomputed": 1.828,
+      "maxRecomputed": 2.322,
+      "statsMatch": true
+    }
+  ],
+  "crossOutputComparisons": [
+    {
+      "group": "G0",
+      "algorithm": "greedy",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "dp",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G0",
+      "algorithm": "branchAndBound",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "greedy",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "dp",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G1",
+      "algorithm": "branchAndBound",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "greedy",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "dp",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G2",
+      "algorithm": "branchAndBound",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "greedy",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "dp",
+      "filesPresent": true,
+      "byteMatch": true
+    },
+    {
+      "group": "G3",
+      "algorithm": "branchAndBound",
+      "filesPresent": true,
+      "byteMatch": true
+    }
+  ],
+  "memoryObservation": {
+    "initialPages": 2,
+    "maxPages": 159,
+    "finalPages": 159,
+    "bytesMax": 10420224,
+    "targetThresholdPages": 768,
+    "withinTarget": true
+  },
+  "p09Inputs": [
+    {
+      "path": "miniprogram/src/config/west1-menu.ts",
+      "match": true
+    },
+    {
+      "path": "Resources/真实菜单/西院西一食堂-20261022/T03f-v1/menu-catalog-candidate.json",
+      "match": true
+    },
+    {
+      "path": "Resources/真实菜单/西院西一食堂-20261022/T03g-v1/川湘窗口候选.json",
+      "match": true
+    },
+    {
+      "path": "Resources/真实菜单/西院西一食堂-20261022/T03d-v1/menu-catalog.json",
+      "match": true
+    },
+    {
+      "path": "Resources/契约/T01-v1.2-candidate/contract-v1-candidate.md",
+      "match": true
+    },
+    {
+      "path": "Resources/契约/T01-v1.2-candidate/nutrition-v1-candidate.json",
+      "match": true
+    },
+    {
+      "path": "Resources/契约/T01-v1.2-candidate/request-result-pair.json",
+      "match": true
+    }
+  ],
+  "phoneCurrentCandidateRawMeasurements": "not supplied; historical inference is not measurement",
+  "pageVisibleRendering": "not supplied; setData simulator metric is substitute only"
+}

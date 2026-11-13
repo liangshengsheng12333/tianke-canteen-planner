@@ -1,0 +1,36 @@
+{
+  "food_name": "大豆油（通用食用烹调油工艺替代基准）",
+  "source_organization": "中国疾病预防控制中心营养与健康所",
+  "database": "中国食物成分查询平台",
+  "online_portal": "https://nlc.chinanutri.cn/fq/foodinfo/1497.html",
+  "item_id": 1497,
+  "access_date": "2026-10-23",
+  "p09_defect_and_decision": {
+    "defect_identified": "P09复核报告指出：原3g熟鸡油数据（897 kcal、F 99.7g/100g）缺乏具体书页与条目定位，且候选出现“鸡油或豆油”双基准混写，同时旧草案曾误链条目1041（绿鳍马面豚）。",
+    "decision_and_rectification": "本T03c19彻底消除双基准混写与未定位断言，废除未定位的精炼禽脂原表断言与错误链接1041，唯一定点于官方中国食物成分查询平台豆油条目1497（https://nlc.chinanutri.cn/fq/foodinfo/1497.html）：\n1. 【官方权威标定数据】：条目1497标定每100g能量为 3696 kJ、蛋白质 0.0g、脂肪 99.9g、碳水化合物 0.0g、钠 0.0mg；\n2. 【标准能量折算】：经国家标准系数（1 kcal = 4.184 kJ）严格折算，每100g能量为 883.3652 kcal；\n3. 【3g单份贡献精算】：3g通用食用油贡献能量 26.5010 kcal、蛋白质 0.0000g、脂肪 2.9970g、碳水化合物 0.0000g；\n4. 【工艺假设与真实边界】：明确声明3g通用烹调油是基于西一食堂档口标牌“米饭鸡汤蒸”推导的配方工艺假设（与197g蒸米饭合为200g熟重），赋予米饭光泽与香气，绝不代表后厨实际称重，亦不冒称后厨实际使用大豆油或纯鸡油。"
+  },
+  "benchmark_soybean_oil_1497": {
+    "category": "油脂类 - 植物油 (通用食用烹调油代表基准)",
+    "per_100g": {
+      "energy_kj": 3696.0,
+      "energy_kcal_converted": 883.3652,
+      "protein_g": 0.0,
+      "fat_g": 99.9,
+      "carbohydrate_g": 0.0,
+      "sodium_mg": 0.0
+    },
+    "single_portion_3g": {
+      "portion_g": 3.0,
+      "multiplier": 0.03,
+      "energy_kcal": 26.5010,
+      "protein_g": 0.0,
+      "fat_g": 2.997,
+      "carbohydrate_g": 0.0,
+      "sodium_mg": 0.0
+    }
+  },
+  "canteen_process_assumption": {
+    "photo_evidence": "海南鸡饭档口门头灯箱（T03a-v1 照片2 / 3f8c8a89fd8880b833651220e02770a8.jpg）公示标语“米饭鸡汤蒸 没菜也吃撑”",
+    "assumption_clarification": "照片2证实档口米饭采用鸡汤蒸饭工艺。但现场标牌未标明每200g熟饭添加几克油脂；每200g熟饭加入3g烹调油属于经典海南黄姜鸡汤饭的配方工艺假设（197g熟白米饭 + 3g烹调油 = 200g熟重），而非现场称重证明事实。严禁冒称为食堂实测称重，亦不证明食堂采用大豆油或纯鸡油。"
+  }
+}

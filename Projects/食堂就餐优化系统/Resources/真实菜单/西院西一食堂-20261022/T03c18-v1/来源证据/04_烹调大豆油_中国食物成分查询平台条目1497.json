@@ -1,0 +1,30 @@
+{
+  "ingredientName": "烹调植物油(大豆油)",
+  "dishId": "dish-shredded-pancake",
+  "sourceDatabase": "中国疾病预防控制中心营养与健康所·食物营养成分查询平台",
+  "foodCode": "1497",
+  "bookCode": "10-1-101",
+  "officialName": "豆油",
+  "category": "油脂类",
+  "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1497.html",
+  "officialOriginalPer100g": {
+    "edible": 100,
+    "waterG": 0.0,
+    "energyKj": 3696.0,
+    "energyKcal": 883.3652,
+    "proteinG": 0.0,
+    "fatG": 99.9,
+    "carbG": 0.0,
+    "sodiumMg": 4.9,
+    "alignNote": "彻底消除在线链接与纸本混写，统一采用官方可定位查询页面直查数值(3696kJ/F99.9g)"
+  },
+  "portionAssumption": {
+    "description": "单份外加烹调大豆油总量3g(波动范围2~4g)；物理用途明确拆解：土豆丝大锅预炒吸油约1.5g + 铁板打蛋微量防粘润锅油约1.5g；手抓饼生坯自带起酥油受热自溶，煎饼自身不重复加油；透明工艺假设，非档口实称",
+    "portionG": 3.0,
+    "portionEnergyKcal": 26.5010,
+    "portionProteinG": 0.0000,
+    "portionFatG": 2.9970,
+    "portionCarbG": 0.0000,
+    "portionSodiumMg": 0.1470
+  }
+}

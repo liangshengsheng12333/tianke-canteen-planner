@@ -1,0 +1,455 @@
+{
+  "windows": [
+    {
+      "windowId": "w-wuhan-hotdry-noodles",
+      "name": "武汉热干面",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "windowId": "w-shandong-pancake",
+      "name": "山东杂粮煎饼/烤冷面/手抓饼",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "windowId": "w-guangdong-changfen",
+      "name": "广东肠粉",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    }
+  ],
+  "dishes": [
+    {
+      "dishId": "dish-wuhan-hotdry-noodles",
+      "name": "热干面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-southern-wonton-small",
+      "name": "南方小馄饨小份",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-southern-wonton-large",
+      "name": "南方小馄饨大份",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-shaomai",
+      "name": "烧麦",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-egg-soup",
+      "name": "鸡蛋汤",
+      "kind": "single",
+      "category": "soup",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-shandong-pancake",
+      "name": "山东杂粮煎饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-grilled-cold-noodles",
+      "name": "烤冷面",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-shredded-pancake",
+      "name": "手抓饼",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-plain-changfen",
+      "name": "原味肠粉",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-ham-changfen",
+      "name": "火腿肠粉（鸡肉）",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-lean-pork-changfen",
+      "name": "瘦肉肠粉（猪瘦肉）",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    },
+    {
+      "dishId": "dish-grain-soymilk",
+      "name": "五谷杂粮豆浆",
+      "kind": "single",
+      "category": "drink",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": null,
+        "proteinDg": null,
+        "fatDg": null,
+        "carbDg": null
+      },
+      "nutritionBasis": {
+        "source": "photo-transcription-t03a",
+        "portionAssumption": "未标明单份克重",
+        "estimated": false,
+        "note": "真实菜单首批固定价条目，待后续营养估算"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-wuhan-hotdry-noodles",
+      "dishId": "dish-wuhan-hotdry-noodles",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-southern-wonton-small",
+      "dishId": "dish-southern-wonton-small",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-southern-wonton-large",
+      "dishId": "dish-southern-wonton-large",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-shaomai",
+      "dishId": "dish-shaomai",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-egg-soup",
+      "dishId": "dish-egg-soup",
+      "windowId": "w-wuhan-hotdry-noodles",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 300,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-shandong-pancake",
+      "dishId": "dish-shandong-pancake",
+      "windowId": "w-shandong-pancake",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 550,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-grilled-cold-noodles",
+      "dishId": "dish-grilled-cold-noodles",
+      "windowId": "w-shandong-pancake",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 500,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-shredded-pancake",
+      "dishId": "dish-shredded-pancake",
+      "windowId": "w-shandong-pancake",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 550,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-plain-changfen",
+      "dishId": "dish-plain-changfen",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 600,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-ham-changfen",
+      "dishId": "dish-ham-changfen",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 700,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-lean-pork-changfen",
+      "dishId": "dish-lean-pork-changfen",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 800,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-grain-soymilk",
+      "dishId": "dish-grain-soymilk",
+      "windowId": "w-guangdong-changfen",
+      "mealWindows": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 200,
+      "priceBasis": "unitPrice"
+    }
+  ]
+}

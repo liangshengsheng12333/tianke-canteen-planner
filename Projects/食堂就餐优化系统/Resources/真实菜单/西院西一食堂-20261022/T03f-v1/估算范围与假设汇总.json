@@ -1,0 +1,3218 @@
+{
+  "metadata": {
+    "title": "西院西一食堂35道全菜品营养估算与假设范围汇总",
+    "version": "T03f-v1",
+    "createdAt": "2026-10-24T14:40:00+08:00",
+    "totalDishes": 35,
+    "approvedDishesCount": 4,
+    "estimatedDishesCount": 31,
+    "batches": {
+      "batch-01": {
+        "name": "早餐面点汤",
+        "count": 5
+      },
+      "batch-02": {
+        "name": "煎饼肠粉豆浆",
+        "count": 4
+      },
+      "batch-03": {
+        "name": "海南窗口主餐",
+        "count": 8
+      },
+      "batch-04": {
+        "name": "配菜小吃",
+        "count": 4
+      },
+      "batch-05": {
+        "name": "烤鸭卤味饭",
+        "count": 10
+      }
+    }
+  },
+  "approvedDishes": [
+    {
+      "dishId": "dish-shredded-pancake",
+      "name": "手抓饼",
+      "kind": "single",
+      "category": "staple",
+      "nutrition": {
+        "energyKcal": 426,
+        "proteinDg": 135,
+        "fatDg": 202,
+        "carbDg": 476
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "云鹤手抓饼速冻生坯(代表替代)90g + 鲜鸡蛋(全蛋去壳)50g + 生马铃薯(土豆丝净料)45g + 烹调大豆油3g(单份成品净重约185g)",
+        "estimated": true,
+        "note": "严格依据门头标牌公示配料'面皮+鸡蛋+土豆丝'；采纳中国疾控中心官方营养标签查询系统云鹤手抓饼条目作为代表替代基准(食堂档口实际品牌未知)，修正钠标签摘录为446mg/100g；原料全面对齐官方公开可定位查询页面(鸡蛋978/马铃薯313/豆油1497)；饼皮生坯自带起酥油不重复加油，单份外加烹调大豆油3g统筹预炒土豆丝吸油(约1.5g)与铁板微量润锅防粘(约1.5g)；绝无非契约carbsDg字段；全份逐项十进制精算累加，非食堂化验值"
+      }
+    },
+    {
+      "dishId": "dish-plain-changfen",
+      "name": "原味肠粉",
+      "kind": "single",
+      "category": "staple",
+      "nutrition": {
+        "energyKcal": 231,
+        "proteinDg": 25,
+        "fatDg": 22,
+        "carbDg": 531
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "熟肠粉皮200g + 调味甜豉油汁15g(单份成品净重中心估计约215g，非食堂实称)",
+        "estimated": true,
+        "note": "透明中心份量假设；熟粉皮采纳化验所测定样品总脂肪(2.2g/200g)，不武断断言全部来自防粘油，估算未额外追加未观测到的油脂；豉油采用官方每100g产品资料(注明与国内410ml SKU未证实同款)按15g重算，锁定采用官方标示209 kcal列作为计算基准；豉油标示脂肪<0.5g/100g使15g酱汁贡献[0, 0.075)g脂肪，整份理论总脂肪为[2.200, 2.275)g，按0.1g舍入可能为22dg(2.2g)或23dg(2.3g)；当前草案保留22dg为采用下界/选定点估的建模假设，并非标签唯一推出的中心值，完整保留22–23dg不确定性区间；CFS官方原表能量与4/9/4差异保留为公布数据固有差异"
+      }
+    },
+    {
+      "dishId": "dish-lean-pork-changfen",
+      "name": "瘦肉肠粉（猪瘦肉）",
+      "kind": "single",
+      "category": "staple",
+      "nutrition": {
+        "energyKcal": 274,
+        "proteinDg": 86,
+        "fatDg": 41,
+        "carbDg": 535
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "熟肠粉皮200g + 生猪瘦肉碎30g + 调味甜豉油汁15g(单份成品净重中心估计约245g，非食堂实称)",
+        "estimated": true,
+        "note": "透明中心份量假设；依据标牌原文'（猪瘦肉）'，生瘦肉投料30g按生重营养数据计算(600kJ/143kcal, P20.3, F6.2, C1.5)，不经熟重重复缩放；豉油依官方每100g产品资料按15g重算，锁定采用官方标示209 kcal列；粉皮总脂肪2.2g保留为化验基准；酱汁脂肪<0.5g/100g使整份理论总脂肪为[4.060, 4.135)g，在整个不确定性区间内四舍五入取整恒为41dg(4.1g)；保留207ml官方SKU替代410ml实际采购SKU未知边界；CFS原表能量与4/9/4差异保留为公布数据固有差异"
+      }
+    },
+    {
+      "dishId": "dish-cpky-baiqieji-fan",
+      "name": "白切鸡饭",
+      "kind": "single",
+      "category": "staple",
+      "nutrition": {
+        "energyKcal": 493,
+        "proteinDg": 332,
+        "fatDg": 148,
+        "carbDg": 542
+      },
+      "nutritionBasis": {
+        "source": "estimate",
+        "portionAssumption": "熟白米饭200g + 熟白切鸡肉(带皮切块可食部)110g + 烧味豉油浇汁15g + 白灼菜心35g(单份成品净重约360g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5，SHA256前16位b30bd028d3128bc1)盘装切块白切鸡配青菜米饭推导。米饭200g系依据立柱规格牌(照片11)小份200g之明确中心假设，非食堂实测出餐；米饭基准采用官方可定位的493 kJ/100g按国标4.184换算为117.83 kcal/100g，彻底消除116 kcal冲突；带皮切块熟鸡肉110g为典型去大骨后可食部明确假设，非后厨称重；烧味豉油汁15g、白灼菜心35g均为透明工艺假设。单份仅计一次米饭，不含无限续饭；非食堂化学送检化验值"
+      }
+    }
+  ],
+  "estimatedDishes": [
+    {
+      "dishId": "dish-wuhan-hotdry-noodles",
+      "name": "热干面",
+      "batch": "batch-01",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 506,
+        "proteinDg": 137,
+        "fatDg": 163,
+        "carbDg": 756
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟碱水面(掸面)200g + 纯芝麻酱18g + 芝麻香油6g + 调味酱油15g + 甜咸脆萝卜丁葱花20g(单份成品净重约259g)",
+        "estimated": true,
+        "note": "依据门头标牌大碗热干面公示与武汉典型配方推导，非食堂实测配方；四项宏量均为中心估计"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "熟碱水面180g + 纯芝麻酱15g + 芝麻香油4g + 调味酱油12g + 脆萝卜丁葱花15g(单份成品净重约226g，打勺偏紧/控油控酱)",
+          "energyKcal": 433,
+          "proteinDg": 120,
+          "fatDg": 127,
+          "carbDg": 674
+        },
+        "central": {
+          "portionAssumption": "熟碱水面(掸面)200g + 纯芝麻酱18g + 芝麻香油6g + 调味酱油15g + 甜咸脆萝卜丁葱花20g(单份成品净重约259g)",
+          "energyKcal": 506,
+          "proteinDg": 137,
+          "fatDg": 163,
+          "carbDg": 756
+        },
+        "high": {
+          "portionAssumption": "熟碱水面220g + 纯芝麻酱22g + 芝麻香油8g + 调味酱油18g + 脆萝卜丁葱花25g(单份成品净重约293g，打勺偏松/重油稠酱)",
+          "energyKcal": 586,
+          "proteinDg": 156,
+          "fatDg": 205,
+          "carbDg": 839
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawSum": {
+          "energyKcal": 506.13,
+          "proteinG": 13.696,
+          "fatG": 16.323,
+          "carbG": 75.581
+        },
+        "atwaterTheoreticalKcal": 504.02,
+        "diffKcal": 1.98,
+        "diffReason": "纯芝麻酱富含特定长链不饱和脂肪酸，其特定阿特沃特系数略高于9 kcal/g粗略均值"
+      }
+    },
+    {
+      "dishId": "dish-southern-wonton-small",
+      "name": "南方小馄饨小份",
+      "batch": "batch-01",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 263,
+        "proteinDg": 116,
+        "fatDg": 131,
+        "carbDg": 251
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生馄饨10只(皮45g+肉馅45g) + 熟清汤200g + 熟猪油2.5g + 干紫菜1.5g + 虾皮1.0g + 葱花调味(单份带汤总重约335g，固体约132g)",
+        "estimated": true,
+        "note": "依据标牌小份5元推导为标准10只出餐，配方包含清汤底与紫菜虾皮小料；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "生馄饨10只(皮41g+肉馅41g) + 清汤180g + 熟猪油1.5g + 干紫菜1.0g + 虾皮0.8g + 调味1.5g(单只生重8.2g，清淡少油带汤约310g，固体约120g)",
+          "energyKcal": 231,
+          "proteinDg": 104,
+          "fatDg": 112,
+          "carbDg": 226
+        },
+        "central": {
+          "portionAssumption": "生馄饨10只(皮45g+肉馅45g) + 熟清汤200g + 熟猪油2.5g + 干紫菜1.5g + 虾皮1.0g + 葱花调味(单只生重9.0g，单份带汤总重约335g，固体约132g)",
+          "energyKcal": 263,
+          "proteinDg": 116,
+          "fatDg": 131,
+          "carbDg": 251
+        },
+        "high": {
+          "portionAssumption": "生馄饨10只(皮49g+肉馅49g) + 清汤220g + 熟猪油3.5g + 干紫菜2.0g + 虾皮1.5g + 调味2.5g(单只生重9.8g，重汤多油带汤约365g，固体约145g)",
+          "energyKcal": 295,
+          "proteinDg": 129,
+          "fatDg": 151,
+          "carbDg": 276
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawSum": {
+          "energyKcal": 263.06,
+          "proteinG": 11.596,
+          "fatG": 13.1315,
+          "carbG": 25.0991
+        },
+        "atwaterTheoreticalKcal": 264.96,
+        "diffKcal": -1.96,
+        "diffReason": "干紫菜中含较多未被人体消化吸收的海藻多糖，成分表测定有效能量时予以扣除"
+      }
+    },
+    {
+      "dishId": "dish-southern-wonton-large",
+      "name": "南方小馄饨大份",
+      "batch": "batch-01",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 416,
+        "proteinDg": 185,
+        "fatDg": 205,
+        "carbDg": 402
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生馄饨16只(皮72g+肉馅72g) + 熟清汤250g + 熟猪油3.5g + 干紫菜2.5g + 虾皮1.5g + 葱花调料(单份带汤总重约464g，固体约210g)",
+        "estimated": true,
+        "note": "依据标牌大份8元相对小份5元(1.6倍价格比)推导为16只出餐(1.6倍只数比)，单只规格与小份一致；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "生馄饨16只(皮65.6g+肉馅65.6g) + 清汤220g + 熟猪油2.5g + 干紫菜1.8g + 虾皮1.2g + 调味2.0g(单只生重8.2g，清淡少油带汤约425g，固体约190g)",
+          "energyKcal": 371,
+          "proteinDg": 166,
+          "fatDg": 180,
+          "carbDg": 363
+        },
+        "central": {
+          "portionAssumption": "生馄饨16只(皮72g+肉馅72g) + 熟清汤250g + 熟猪油3.5g + 干紫菜2.5g + 虾皮1.5g + 葱花调料(单只生重9.0g，单份带汤总重约464g，固体约210g)",
+          "energyKcal": 416,
+          "proteinDg": 185,
+          "fatDg": 205,
+          "carbDg": 402
+        },
+        "high": {
+          "portionAssumption": "生馄饨16只(皮78.4g+肉馅78.4g) + 清汤280g + 熟猪油5.0g + 干紫菜3.2g + 虾皮2.0g + 调味4.0g(单只生重9.8g，大汤多油带汤约515g，固体约230g)",
+          "energyKcal": 466,
+          "proteinDg": 205,
+          "fatDg": 235,
+          "carbDg": 441
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawSum": {
+          "energyKcal": 416.265,
+          "proteinG": 18.5109,
+          "fatG": 20.5095,
+          "carbG": 40.1737
+        },
+        "atwaterTheoreticalKcal": 419.32,
+        "diffKcal": -3.32,
+        "diffReason": "干紫菜海藻膳食纤维扣除效应随用量成比例放大，与小份机理完全一致"
+      }
+    },
+    {
+      "dishId": "dish-shaomai",
+      "name": "烧麦",
+      "batch": "batch-01",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 435,
+        "proteinDg": 96,
+        "fatDg": 177,
+        "carbDg": 599
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "蒸烧麦4只(烧麦皮32g + 熟糯米饭112g + 猪肉丁24g + 猪油8g + 调料4g，4只成品总净重约180g)",
+        "estimated": true,
+        "note": "依据标牌6元并结合同食堂窗口1.5元/个单价推导为标准4只出餐，采用重油糯米肉丁特色配方估算；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "蒸烧麦4只(烧麦皮28g + 熟糯米饭100g + 猪肉丁20g + 猪油6g + 调料3g，单只约40g，4只成品总净重约160g，捏制略小/轻油)",
+          "energyKcal": 370,
+          "proteinDg": 83,
+          "fatDg": 141,
+          "carbDg": 530
+        },
+        "central": {
+          "portionAssumption": "蒸烧麦4只(烧麦皮32g + 熟糯米饭112g + 猪肉丁24g + 猪油8g + 调料4g，单只约45g，4只成品总净重约180g)",
+          "energyKcal": 435,
+          "proteinDg": 96,
+          "fatDg": 177,
+          "carbDg": 599
+        },
+        "high": {
+          "portionAssumption": "蒸烧麦4只(烧麦皮36g + 熟糯米饭124g + 猪肉丁28g + 猪油10g + 调料5g，单只约50g达工业安井标准，4只成品总净重约200g，饱满重油)",
+          "energyKcal": 500,
+          "proteinDg": 108,
+          "fatDg": 213,
+          "carbDg": 668
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawSum": {
+          "energyKcal": 434.92,
+          "proteinG": 9.5632,
+          "fatG": 17.684,
+          "carbG": 59.9152
+        },
+        "atwaterTheoreticalKcal": 437.07,
+        "diffKcal": -2.07,
+        "diffReason": "熟糯米饭含抗性淀粉及糯米直链淀粉消化率差异，成分表有效能值略低于阿特沃特系数粗算"
+      }
+    },
+    {
+      "dishId": "dish-egg-soup",
+      "name": "鸡蛋汤",
+      "batch": "batch-01",
+      "kind": "single",
+      "category": "soup",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 108,
+        "proteinDg": 67,
+        "fatDg": 69,
+        "carbDg": 49
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "鲜鸡蛋去壳50g + 芝麻香油2.5g + 玉米淀粉4g + 沸水高汤约240g + 食盐葱花4g(单碗带汤总重约300g)",
+        "estimated": true,
+        "note": "依据标牌3元标准大碗鸡蛋汤推导，含1枚全蛋花与香油淀粉勾薄芡；carbDg严格按无偏未舍入累加值4.945g逢半进一取整为49dg；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "portionAssumption": "鲜鸡蛋去壳42g + 芝麻香油1.5g + 玉米淀粉2.5g + 沸水高汤约220g + 辅料3g(单碗带汤约270g，小蛋/薄芡/轻油)",
+          "energyKcal": 83,
+          "proteinDg": 56,
+          "fatDg": 52,
+          "carbDg": 34
+        },
+        "central": {
+          "portionAssumption": "鲜鸡蛋去壳50g + 芝麻香油2.5g + 玉米淀粉4g + 沸水高汤约240g + 食盐葱花4g(单碗带汤总重约300g)",
+          "energyKcal": 108,
+          "proteinDg": 67,
+          "fatDg": 69,
+          "carbDg": 49
+        },
+        "high": {
+          "portionAssumption": "鲜鸡蛋去壳58g + 芝麻香油3.5g + 玉米淀粉6.0g + 沸水高汤约260g + 辅料5g(单碗带汤约330g，大蛋/厚芡/加淋香油)",
+          "energyKcal": 136,
+          "proteinDg": 78,
+          "fatDg": 86,
+          "carbDg": 69
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawSum": {
+          "energyKcal": 108.39,
+          "proteinG": 6.69,
+          "fatG": 6.9025,
+          "carbG": 4.945
+        },
+        "atwaterTheoreticalKcal": 108.66,
+        "diffKcal": -0.66,
+        "diffReason": "玉米淀粉与鸡蛋微量成分特异阿特沃特系数与4/9/4粗值存在极微细差异"
+      }
+    },
+    {
+      "dishId": "dish-shandong-pancake",
+      "name": "山东杂粮煎饼",
+      "batch": "batch-02",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 470,
+        "proteinDg": 139,
+        "fatDg": 164,
+        "carbDg": 692
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟杂粮饼皮110g(生干煎饼干物质折算含水50%) + 鲜鸡蛋(全蛋去壳)50g + 传统油炸薄脆(排叉替代)25g + 调味甜面酱15g + 烹调大豆油6g(单份成品净重约206g)",
+        "estimated": true,
+        "note": "依据门头标牌公示配料'饼皮+鸡蛋+薄脆'(照片10)结合摊制工艺推导。熟杂粮饼皮按中国疾控中心食物成分表条目1202(煎饼)及50%含水工艺假设折算；鲜鸡蛋按条目978计1枚(50g)；鏊子底油按条目1497大豆油计6g；调味甜面酱按编码13-1-301计15g；薄脆采用传统中式油炸面食排叉条目作为工艺相近的透明估算替代，薄脆油炸自带油脂已内嵌不重复计入底油。全餐原料逐项十进制累加，非食堂实测配方或现场称重"
+      },
+      "scenarios": {
+        "low": {
+          "scenarioName": "偏薄少油情景",
+          "description": "面糊摊得偏薄(熟饼皮95g) + 偏小鸡蛋(去壳45g) + 轻润鏊底油4g + 薄刷甜面酱12g + 较小薄脆20g",
+          "portionG": 176,
+          "energyKcal": 390,
+          "proteinDg": 120,
+          "fatDg": 128,
+          "carbDg": 586
+        },
+        "central": {
+          "scenarioName": "典型中央情景",
+          "description": "标准熟饼皮110g + 中等鸡蛋(去壳50g) + 防粘底油6g + 甜面酱15g + 标准薄脆25g",
+          "portionG": 206,
+          "energyKcal": 470,
+          "proteinDg": 139,
+          "fatDg": 164,
+          "carbDg": 692
+        },
+        "high": {
+          "scenarioName": "厚实多油情景",
+          "description": "面糊摊得较厚(熟饼皮125g) + 较大鸡蛋(去壳55g) + 防焦底油8g + 浓酱多刷18g + 较大薄脆30g",
+          "portionG": 236,
+          "energyKcal": 551,
+          "proteinDg": 157,
+          "fatDg": 200,
+          "carbDg": 797
+        }
+      },
+      "ingredients": [
+        {
+          "name": "现摊杂粮熟饼皮",
+          "portionG": 110,
+          "source": "中国疾病预防控制中心营养与健康所食物成分查询平台条目1202 (煎饼)",
+          "per100g": {
+            "energyKcal": 192.08,
+            "energyKj": 803.65,
+            "proteinG": 4.08,
+            "fatG": 0.38,
+            "carbG": 44.96,
+            "sodiumMg": 45.87
+          },
+          "portionValues": {
+            "energyKcal": 211.2841,
+            "proteinG": 4.485,
+            "fatG": 0.4131,
+            "carbG": 49.4528,
+            "sodiumMg": 50.456
+          }
+        },
+        {
+          "name": "鲜鸡蛋(全蛋去壳)",
+          "portionG": 50,
+          "source": "中国疾病预防控制中心营养与健康所食物成分查询平台条目978 (06-1-101 鸡蛋均值)",
+          "per100g": {
+            "energyKcal": 143,
+            "energyKj": 599,
+            "proteinG": 13.3,
+            "fatG": 8.8,
+            "carbG": 2.8,
+            "sodiumMg": 131.5
+          },
+          "portionValues": {
+            "energyKcal": 71.5,
+            "proteinG": 6.65,
+            "fatG": 4.4,
+            "carbG": 1.4,
+            "sodiumMg": 65.75
+          }
+        },
+        {
+          "name": "鏊子防粘烹调大豆油",
+          "portionG": 6,
+          "source": "中国疾病预防控制中心营养与健康所食物成分查询平台条目1497 (10-1-101 大豆油)",
+          "per100g": {
+            "energyKcal": 883.37,
+            "energyKj": 3696,
+            "proteinG": 0,
+            "fatG": 99.9,
+            "carbG": 0,
+            "sodiumMg": 0
+          },
+          "portionValues": {
+            "energyKcal": 53.0019,
+            "proteinG": 0,
+            "fatG": 5.994,
+            "carbG": 0,
+            "sodiumMg": 0
+          }
+        },
+        {
+          "name": "调味甜面酱",
+          "portionG": 15,
+          "source": "《中国食物成分表（标准版）》第6版第二册编码13-1-301 (甜面酱)",
+          "per100g": {
+            "energyKcal": 143,
+            "energyKj": 600,
+            "proteinG": 5.5,
+            "fatG": 0.6,
+            "carbG": 28.5,
+            "sodiumMg": 2097.2
+          },
+          "portionValues": {
+            "energyKcal": 21.45,
+            "proteinG": 0.825,
+            "fatG": 0.09,
+            "carbG": 4.275,
+            "sodiumMg": 314.58
+          }
+        },
+        {
+          "name": "传统油炸薄脆(排叉替代)",
+          "portionG": 25,
+          "source": "《中国食物成分表（标准版）》传统油炸排叉通用条目(工艺相近透明估算替代)",
+          "per100g": {
+            "energyKcal": 453,
+            "energyKj": 1895,
+            "proteinG": 7.6,
+            "fatG": 22,
+            "carbG": 56.1,
+            "sodiumMg": 550
+          },
+          "portionValues": {
+            "energyKcal": 113.25,
+            "proteinG": 1.9,
+            "fatG": 5.5,
+            "carbG": 14.025,
+            "sodiumMg": 137.5
+          }
+        }
+      ],
+      "verification": {
+        "unroundedAtwaterKcal": 479.62481,
+        "diffFromSumKcal": 9.138748,
+        "diffPercent": 1.94,
+        "explanation": "差异源于原料1202干煎饼官方标示能量(1498 kJ = 358 kcal)低于标准4/9/4粗算值，系国家成分表中扣除膳食纤维等不可产热成分所致；本草案忠实采用累加求和整数值470 kcal"
+      }
+    },
+    {
+      "dishId": "dish-grilled-cold-noodles",
+      "name": "烤冷面",
+      "batch": "batch-02",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 398,
+        "proteinDg": 150,
+        "fatDg": 116,
+        "carbDg": 574
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "真空生湿冷面片100g + 鲜鸡蛋(全蛋去壳)50g + 天津利民蒜蓉辣酱15g + 白砂糖4g + 酿造食醋5g + 烹调大豆油6g(固形原料180g，另含工艺软化残留水分10g，单份成品总净重约190g)",
+        "estimated": true,
+        "note": "依据档口标牌原文'面皮+鸡蛋'及酸甜口味标示推导(照片10)。冷面片采纳奥斯托马GB 28050标准单张100g规格；鲜鸡蛋按条目978计1枚(50g)；天津利民蒜蓉辣酱按GTIN 6901554100281标签计15g；白砂糖与酿造食醋分别独立计量(4g与5g)；铁板大豆油计6g；铁板喷水软化残留水10g热量为0；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "scenarioName": "偏小张少油微甜情景",
+          "description": "偏小张冷面片95g + 偏小鸡蛋(去壳45g) + 辣酱12g + 白糖3g + 食醋4g + 防粘油4g + 残留水8g",
+          "portionG": 171,
+          "energyKcal": 354,
+          "proteinDg": 138,
+          "fatDg": 91,
+          "carbDg": 534
+        },
+        "central": {
+          "scenarioName": "典型中央情景",
+          "description": "标准单张冷面片100g + 中等鸡蛋(去壳50g) + 蒜蓉辣酱15g + 白砂糖4g + 食醋5g + 铁板油6g + 残留水10g",
+          "portionG": 190,
+          "energyKcal": 398,
+          "proteinDg": 150,
+          "fatDg": 116,
+          "carbDg": 574
+        },
+        "high": {
+          "scenarioName": "厚张多油浓酸甜情景",
+          "description": "偏厚冷面片105g + 较大鸡蛋(去壳55g) + 辣酱18g + 白糖6g + 食醋6g + 煎制油8g + 残留水12g",
+          "portionG": 210,
+          "energyKcal": 446,
+          "proteinDg": 162,
+          "fatDg": 142,
+          "carbDg": 624
+        }
+      },
+      "ingredients": [
+        {
+          "name": "奥斯托马生湿烤冷面片",
+          "portionG": 100,
+          "source": "奥斯托马板状冷面GB 28050预包装标签(条码6971843841077)",
+          "per100g": {
+            "energyKcal": 244,
+            "energyKj": 1022,
+            "proteinG": 7.6,
+            "fatG": 1.1,
+            "carbG": 50.1,
+            "sodiumMg": 1474
+          },
+          "portionValues": {
+            "energyKcal": 244,
+            "proteinG": 7.6,
+            "fatG": 1.1,
+            "carbG": 50.1,
+            "sodiumMg": 1474
+          }
+        },
+        {
+          "name": "鲜鸡蛋(全蛋去壳)",
+          "portionG": 50,
+          "source": "中国疾病预防控制中心食物成分查询平台条目978 (06-1-101 鸡蛋均值)",
+          "per100g": {
+            "energyKcal": 143,
+            "energyKj": 599,
+            "proteinG": 13.3,
+            "fatG": 8.8,
+            "carbG": 2.8,
+            "sodiumMg": 131.5
+          },
+          "portionValues": {
+            "energyKcal": 71.5,
+            "proteinG": 6.65,
+            "fatG": 4.4,
+            "carbG": 1.4,
+            "sodiumMg": 65.75
+          }
+        },
+        {
+          "name": "天津利民蒜蓉辣酱",
+          "portionG": 15,
+          "source": "天津市利民调料有限公司袋装辣酱GB/T 20293标签(GTIN 6901554100281)",
+          "per100g": {
+            "energyKcal": 72,
+            "energyKj": 300,
+            "proteinG": 4.5,
+            "fatG": 0.9,
+            "carbG": 11.2,
+            "sodiumMg": 4430
+          },
+          "portionValues": {
+            "energyKcal": 10.8,
+            "proteinG": 0.675,
+            "fatG": 0.135,
+            "carbG": 1.68,
+            "sodiumMg": 664.5
+          }
+        },
+        {
+          "name": "白砂糖",
+          "portionG": 4,
+          "source": "《中国食物成分表（标准版）》第6版第一册编码1448",
+          "per100g": {
+            "energyKcal": 406,
+            "energyKj": 1698,
+            "proteinG": 0,
+            "fatG": 0,
+            "carbG": 99.9,
+            "sodiumMg": 0.4
+          },
+          "portionValues": {
+            "energyKcal": 16.24,
+            "proteinG": 0,
+            "fatG": 0,
+            "carbG": 3.996,
+            "sodiumMg": 0.016
+          }
+        },
+        {
+          "name": "酿造食醋",
+          "portionG": 5,
+          "source": "《中国食物成分表（标准版）》第6版第一册编码1520 (食醋均值)",
+          "per100g": {
+            "energyKcal": 31,
+            "energyKj": 130,
+            "proteinG": 2.1,
+            "fatG": 0.3,
+            "carbG": 4.9,
+            "sodiumMg": 262.1
+          },
+          "portionValues": {
+            "energyKcal": 1.55,
+            "proteinG": 0.105,
+            "fatG": 0.015,
+            "carbG": 0.245,
+            "sodiumMg": 13.105
+          }
+        },
+        {
+          "name": "烹调大豆油",
+          "portionG": 6,
+          "source": "《中国食物成分表（标准版）》第6版第一册编码10-1-101",
+          "per100g": {
+            "energyKcal": 899,
+            "energyKj": 3761,
+            "proteinG": 0,
+            "fatG": 99.9,
+            "carbG": 0,
+            "sodiumMg": 0
+          },
+          "portionValues": {
+            "energyKcal": 53.94,
+            "proteinG": 0,
+            "fatG": 5.994,
+            "carbG": 0,
+            "sodiumMg": 0
+          }
+        },
+        {
+          "name": "工艺软化残留水",
+          "portionG": 10,
+          "source": "烹调物理水(无热量与养分)",
+          "per100g": {
+            "energyKcal": 0,
+            "energyKj": 0,
+            "proteinG": 0,
+            "fatG": 0,
+            "carbG": 0,
+            "sodiumMg": 0
+          },
+          "portionValues": {
+            "energyKcal": 0,
+            "proteinG": 0,
+            "fatG": 0,
+            "carbG": 0,
+            "sodiumMg": 0
+          }
+        }
+      ],
+      "verification": {
+        "unroundedAtwaterKcal": 394.6,
+        "diffFromSumKcal": -3.43,
+        "diffPercent": -0.86,
+        "explanation": "差异主要源于奥斯托马烤冷面原料标签标示能量(244 kcal/100g)与宏量4/9/4粗算(240.7 kcal)存在固有标示差(-3.56 kcal/100g)；本草案如实反映来源累加值398 kcal"
+      }
+    },
+    {
+      "dishId": "dish-ham-changfen",
+      "name": "火腿肠粉（鸡肉）",
+      "batch": "batch-02",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 286,
+        "proteinDg": 58,
+        "fatDg": 55,
+        "carbDg": 559
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟肠粉皮200g(内含脱模油膜) + 双汇纯鸡肉肠30g(1支切丁/片) + 调味甜豉油汁15g(单份成品净重约245g)",
+        "estimated": true,
+        "note": "依据标牌原文'火腿肠粉（鸡肉）'(照片7)。熟粉皮基底完全沿用已批准原味肠粉口径(香港CFS Item 2395官方检测数据，自带脱模油膜不重复追加蒸盘油)；火腿肠依据双汇纯鸡肉肠GB 28050法定标签按标准小支30g计；酱汁沿用李锦记官方每100g甜豉油标示加权估算15g；全餐原料逐项十进制累加，非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "scenarioName": "偏小份轻酱情景",
+          "description": "米浆摊得稍薄(熟粉皮180g) + 鸡肉肠丁偏少(25g) + 豉油汁12g",
+          "portionG": 217,
+          "energyKcal": 250,
+          "proteinDg": 49,
+          "fatDg": 47,
+          "carbDg": 494
+        },
+        "central": {
+          "scenarioName": "典型中央情景",
+          "description": "标准熟粉皮200g + 双汇纯鸡肉肠30g(1支) + 调味甜豉油15g",
+          "portionG": 245,
+          "energyKcal": 286,
+          "proteinDg": 58,
+          "fatDg": 55,
+          "carbDg": 559
+        },
+        "high": {
+          "scenarioName": "厚实多料表面微油情景",
+          "description": "熟粉皮220g + 鸡肉肠丁较足(35g) + 豉油汁18g + 出盘表面微刷防粘熟植物油1.5g",
+          "portionG": 274.5,
+          "energyKcal": 334,
+          "proteinDg": 67,
+          "fatDg": 78,
+          "carbDg": 624
+        }
+      },
+      "ingredients": [
+        {
+          "name": "熟肠粉皮(含防粘脱模油膜)",
+          "portionG": 200,
+          "source": "香港食物安全中心(CFS)《食物研究化验所营养资料档案(FRL)》Item 2395净肠粉(2021)官方检测数据",
+          "per100g": {
+            "energyKcal": 100,
+            "energyKj": 420,
+            "proteinG": 0.86,
+            "fatG": 1.1,
+            "carbG": 23,
+            "sodiumMg": 66
+          },
+          "portionValues": {
+            "energyKcal": 200,
+            "proteinG": 1.72,
+            "fatG": 2.2,
+            "carbG": 46,
+            "sodiumMg": 132
+          }
+        },
+        {
+          "name": "双汇纯鸡肉肠",
+          "portionG": 30,
+          "source": "双汇纯鸡肉肠GB 28050预包装法定标签(30g/支)",
+          "per100g": {
+            "energyKcal": 180.69,
+            "energyKj": 756,
+            "proteinG": 11,
+            "fatG": 11,
+            "carbG": 9.5,
+            "sodiumMg": 956
+          },
+          "portionValues": {
+            "energyKcal": 54.2065,
+            "proteinG": 3.3,
+            "fatG": 3.3,
+            "carbG": 2.85,
+            "sodiumMg": 286.8
+          }
+        },
+        {
+          "name": "调味甜豉油汁",
+          "portionG": 15,
+          "source": "李锦记官方欧洲单品Sweet Soy Sauce每100g标示(注明与国内410ml未证实同款)",
+          "per100g": {
+            "energyKcal": 209,
+            "energyKj": 889,
+            "proteinG": 5.3,
+            "fatG": 0,
+            "carbG": 47,
+            "sodiumMg": 5350
+          },
+          "portionValues": {
+            "energyKcal": 31.35,
+            "proteinG": 0.795,
+            "fatG": 0,
+            "carbG": 7.05,
+            "sodiumMg": 802.5
+          }
+        }
+      ],
+      "verification": {
+        "unroundedAtwaterKcal": 296.36,
+        "diffFromSumKcal": 10.8035,
+        "diffPercent": 3.78,
+        "explanation": "差异与已获批原味肠粉一致，完全源于香港CFS官方化验净肠粉原表标定能量(100 kcal/100g)与4/9/4粗算值(105.34 kcal/100g)的系统性标示差(200g熟粉皮固有差值约10.68 kcal)；草案忠实采用累加求和整数值286 kcal"
+      }
+    },
+    {
+      "dishId": "dish-grain-soymilk",
+      "name": "五谷杂粮豆浆",
+      "batch": "batch-02",
+      "kind": "single",
+      "category": "drink",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 114,
+        "proteinDg": 66,
+        "fatDg": 36,
+        "carbDg": 150
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "食堂标准一次性早餐带盖纸杯装现磨五谷杂粮豆浆300ml(净重约300g)",
+        "estimated": true,
+        "note": "依据照片7现场早餐杯装五谷杂粮豆浆实况。成分基准采用《中国食物成分表》第6版第一册编码05-1-101(熟甜豆浆)及香港CFS非预包装甜豆浆档案；标准出餐按早餐纸杯满杯300ml(扣除杯重净液约300g)计；4/9/4供能因大豆低聚糖与膳食纤维生理利用率差异略高于标定能量；非食堂化验值"
+      },
+      "scenarios": {
+        "low": {
+          "scenarioName": "未打满杯情景",
+          "description": "早餐纸杯约打至8.5成满(260ml/260g)",
+          "portionG": 260,
+          "energyKcal": 99,
+          "proteinDg": 57,
+          "fatDg": 31,
+          "carbDg": 130
+        },
+        "central": {
+          "scenarioName": "典型中央情景",
+          "description": "标准早餐纸杯满杯出餐(300ml/300g)",
+          "portionG": 300,
+          "energyKcal": 114,
+          "proteinDg": 66,
+          "fatDg": 36,
+          "carbDg": 150
+        },
+        "high": {
+          "scenarioName": "大杯装或盛满至杯口情景",
+          "description": "大规格纸杯或盛得极满至杯口(340ml/340g)",
+          "portionG": 340,
+          "energyKcal": 129,
+          "proteinDg": 75,
+          "fatDg": 41,
+          "carbDg": 170
+        }
+      },
+      "ingredients": [
+        {
+          "name": "现磨五谷杂粮熟豆浆(微甜)",
+          "portionG": 300,
+          "source": "《中国食物成分表（标准版）》第6版第一册编码05-1-101 (熟甜豆浆) 及香港CFS甜豆浆基准",
+          "per100g": {
+            "energyKcal": 38,
+            "energyKj": 159,
+            "proteinG": 2.2,
+            "fatG": 1.2,
+            "carbG": 5,
+            "sodiumMg": 15
+          },
+          "portionValues": {
+            "energyKcal": 114,
+            "proteinG": 6.6,
+            "fatG": 3.6,
+            "carbG": 15,
+            "sodiumMg": 45
+          }
+        }
+      ],
+      "verification": {
+        "unroundedAtwaterKcal": 118.8,
+        "diffFromSumKcal": 4.8,
+        "diffPercent": 4.21,
+        "explanation": "大豆及杂粮中天然存在水苏糖、棉子糖等多糖低聚糖及膳食纤维，在食物成分表中不计入产热碳水化合物，导致4/9/4粗略系数略高于成分表标定能量；草案忠实采用累加求和整数值114 kcal"
+      }
+    },
+    {
+      "dishId": "dish-hnjf-hongyou-jiaomaji-fan",
+      "name": "红油椒麻鸡饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 654,
+        "proteinDg": 331,
+        "fatDg": 328,
+        "carbDg": 547
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 熟白切鸡肉(带皮切块可食部)110g + 淋汁红油椒麻复合味汁15g(植物红油10g+生抽酱汁5g) + 鸡饭辣椒酱10g + 姜葱蓉调料10g + 鲜黄瓜片25g(单份成品净重约370g)",
+        "estimated": true,
+        "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及TOP1红油椒麻鸡出餐配图推导；米饭计一次且不含无限续饭；红油汁为典型川味椒麻复合油配方工艺假设；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 495,
+          "proteinDg": 269,
+          "fatDg": 230,
+          "carbDg": 433
+        },
+        "central": {
+          "energyKcal": 654,
+          "proteinDg": 331,
+          "fatDg": 328,
+          "carbDg": 547
+        },
+        "high": {
+          "energyKcal": 827,
+          "proteinDg": 392,
+          "fatDg": 442,
+          "carbDg": 662
+        },
+        "delta494Percent": -1.16
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-ningmengji-fan",
+      "name": "柠檬鸡饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 620,
+        "proteinDg": 339,
+        "fatDg": 188,
+        "carbDg": 765
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 炸鸡排(裹粉油炸熟重切条)115g + 香柠软鸡酱(浇淋)20g + 鲜黄瓜片20g + 泰式甜辣蘸酱10g(单份成品净重约365g)",
+        "estimated": true,
+        "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及TOP2柠檬鸡出餐配图推导；鸡排采用USDA炸鸡排熟重基准，柠檬酱采用李锦记法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 494,
+          "proteinDg": 279,
+          "fatDg": 150,
+          "carbDg": 600
+        },
+        "central": {
+          "energyKcal": 620,
+          "proteinDg": 339,
+          "fatDg": 188,
+          "carbDg": 765
+        },
+        "high": {
+          "energyKcal": 748,
+          "proteinDg": 399,
+          "fatDg": 226,
+          "carbDg": 936
+        },
+        "delta494Percent": -1.48
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-jinpai-kaorou-fan",
+      "name": "金牌烤肉饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 597,
+        "proteinDg": 355,
+        "fatDg": 203,
+        "carbDg": 659
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 熟烤肉切片(全精肥烤猪肉切片)110g + 浓郁烤肉酱汁(浇淋)20g + 鲜黄瓜片25g + 鸡饭辣椒酱10g(单份成品净重约365g)",
+        "estimated": true,
+        "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及TOP3金牌烤肉饭'酱汁满满 口口浓郁'推导；烤肉采用USDA烤猪肉熟片基准，酱汁采用李锦记烤肉叉烧酱法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 475,
+          "proteinDg": 289,
+          "fatDg": 160,
+          "carbDg": 518
+        },
+        "central": {
+          "energyKcal": 597,
+          "proteinDg": 355,
+          "fatDg": 203,
+          "carbDg": 659
+        },
+        "high": {
+          "energyKcal": 721,
+          "proteinDg": 421,
+          "fatDg": 246,
+          "carbDg": 802
+        },
+        "delta494Percent": -1.46
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-hainan-jifan",
+      "name": "海南鸡饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 562,
+        "proteinDg": 327,
+        "fatDg": 228,
+        "carbDg": 542
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(配方工艺假设: 熟白米饭197g + 通用烹调油3g) + 熟白切鸡肉(带皮切块可食部)110g + 姜葱蓉调料10g + 鸡饭辣椒酱10g + 连皮鲜黄瓜片25g(单份成品净重约355g)",
+        "estimated": true,
+        "note": "依据西院西一食堂海南鸡饭档口标牌'米饭鸡汤蒸 没菜也吃撑'及典型南洋海南鸡饭双味蘸料出餐推导；米饭计一次且不含无限续饭；非后厨化学送检实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 439,
+          "proteinDg": 266,
+          "fatDg": 170,
+          "carbDg": 429
+        },
+        "central": {
+          "energyKcal": 562,
+          "proteinDg": 327,
+          "fatDg": 228,
+          "carbDg": 542
+        },
+        "high": {
+          "energyKcal": 691,
+          "proteinDg": 389,
+          "fatDg": 292,
+          "carbDg": 657
+        },
+        "delta494Percent": -1.64
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-jipai-doufu-fan",
+      "name": "鸡排豆腐饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 621,
+        "proteinDg": 321,
+        "fatDg": 238,
+        "carbDg": 686
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 炸鸡排(裹粉熟重切条)60g + 炸豆腐块(油豆腐熟重已含吸油量)70g + 泰式甜辣酱15g + 鲜黄瓜片20g(单份成品净重约365g)",
+        "estimated": true,
+        "note": "依据招牌推荐及双拼搭配推导；炸鸡排采用USDA熟重基准，豆腐采用疾控中心油豆腐基准；米饭计一次且不含无限续饭；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 492,
+          "proteinDg": 260,
+          "fatDg": 188,
+          "carbDg": 540
+        },
+        "central": {
+          "energyKcal": 621,
+          "proteinDg": 321,
+          "fatDg": 238,
+          "carbDg": 686
+        },
+        "high": {
+          "energyKcal": 763,
+          "proteinDg": 394,
+          "fatDg": 296,
+          "carbDg": 836
+        },
+        "delta494Percent": -0.64
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-taishi-cuipiji-fan",
+      "name": "泰式脆皮鸡饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 615,
+        "proteinDg": 382,
+        "fatDg": 210,
+        "carbDg": 663
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 熟脆皮鸡肉(熟带皮脆皮鸡肉切块可食部)115g + 泰式甜辣酱20g + 鲜黄瓜片25g(单份成品净重约360g)",
+        "estimated": true,
+        "note": "依据招牌推荐及炸脆皮鸡块出餐配图推导；脆皮鸡肉采用USDA熟带皮炸鸡基准，甜辣酱采用李锦记法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 495,
+          "proteinDg": 314,
+          "fatDg": 168,
+          "carbDg": 527
+        },
+        "central": {
+          "energyKcal": 615,
+          "proteinDg": 382,
+          "fatDg": 210,
+          "carbDg": 663
+        },
+        "high": {
+          "energyKcal": 742,
+          "proteinDg": 450,
+          "fatDg": 251,
+          "carbDg": 816
+        },
+        "delta494Percent": -1.3
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-taishi-doufu-fan",
+      "name": "泰式豆腐饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 633,
+        "proteinDg": 274,
+        "fatDg": 265,
+        "carbDg": 716
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(配方假设: 熟白米饭197g+通用烹调油3g) + 炸豆腐块(油豆腐熟重已含油炸吸油量)130g + 泰式甜辣酱汁25g + 连皮鲜黄瓜片20g(单份成品净重约375g)",
+        "estimated": true,
+        "note": "依据标牌10元出餐及炸豆腐裹泰式酸甜辣酱推导；油豆腐采用疾控中心官方查询页1018 kJ原值(243.3 kcal)，已包含油炸吸油量，不重复计入烹调油；米饭计一次且不含续饭；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 513,
+          "proteinDg": 229,
+          "fatDg": 218,
+          "carbDg": 566
+        },
+        "central": {
+          "energyKcal": 633,
+          "proteinDg": 274,
+          "fatDg": 265,
+          "carbDg": 716
+        },
+        "high": {
+          "energyKcal": 759,
+          "proteinDg": 318,
+          "fatDg": 311,
+          "carbDg": 883
+        },
+        "delta494Percent": 0.24
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-shala-jifan",
+      "name": "沙拉鸡饭",
+      "batch": "batch-03",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 642,
+        "proteinDg": 340,
+        "fatDg": 270,
+        "carbDg": 634
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 炸鸡排(裹粉油炸熟重切条)115g + 香甜沙拉酱(浇淋)15g + 鲜黄瓜片20g(单份成品净重约350g)",
+        "estimated": true,
+        "note": "依据特色推荐沙拉鸡饭出餐配图推导；鸡排采用USDA炸鸡排熟重基准，沙拉酱采用丘比香甜味GB 28050法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 507,
+          "proteinDg": 279,
+          "fatDg": 205,
+          "carbDg": 509
+        },
+        "central": {
+          "energyKcal": 642,
+          "proteinDg": 340,
+          "fatDg": 270,
+          "carbDg": 634
+        },
+        "high": {
+          "energyKcal": 787,
+          "proteinDg": 401,
+          "fatDg": 346,
+          "carbDg": 762
+        },
+        "delta494Percent": -1.46
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-zha-xiannai",
+      "name": "炸鲜奶",
+      "batch": "batch-04",
+      "kind": "single",
+      "category": "other",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 356,
+        "proteinDg": 44,
+        "fatDg": 165,
+        "carbDg": 475
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "典型出餐5条炸鲜奶(生坯净重约125g，油炸吸收烹调植物油约10g，单份成品净重约130g)",
+        "estimated": true,
+        "note": "依据照片2精品小菜盘装4-5条金黄长条鲜奶棒及高校食堂通用规格推导；单条生坯按25g计，参考商用脆皮炸鲜奶GB 28050法定标签(892 kJ/100g即213.19 kcal/100g，蛋白质3.5g，脂肪5.2g，碳水38.0g)；油炸吸油率按8.0%计(吸收烹调油10g，899 kcal/100g)；非食堂实测配方，实际能量受出餐条数(4-6条)及油温吸油率影响"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 276,
+          "proteinDg": 35,
+          "fatDg": 122,
+          "carbDg": 380,
+          "description": "份量偏小出餐4条(生坯100g)，高温控油吸油7g"
+        },
+        "central": {
+          "energyKcal": 356,
+          "proteinDg": 44,
+          "fatDg": 165,
+          "carbDg": 475,
+          "description": "典型出餐5条(生坯125g)，标准吸油10g"
+        },
+        "high": {
+          "energyKcal": 455,
+          "proteinDg": 53,
+          "fatDg": 228,
+          "carbDg": 570,
+          "description": "份量偏大出餐6条(生坯150g)，油温偏低吸油15g"
+        }
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-zhaopai-doufu",
+      "name": "招牌豆腐",
+      "batch": "batch-04",
+      "kind": "single",
+      "category": "protein",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 277,
+        "proteinDg": 191,
+        "fatDg": 172,
+        "carbDg": 116
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "北豆腐150g(约5-6厚块) + 煎制吸收烹调油10g + 调味黑褐烧汁25g(生抽8g+老抽3g+蚝油5g+白糖4g+淀粉2g+水3g，单份成品重约180g)",
+        "estimated": true,
+        "note": "依据照片2精品小菜盘装深色黑褐酱汁煎豆腐块及8元/份定价推导；北豆腐采用中国疾控中心查询平台编码03-1-101(415 kJ/100g即99.19 kcal/100g，蛋白质12.2g，脂肪4.8g，碳水2.0g)；煎制吸油按10g计；黑褐调味烧汁按生抽老抽蚝油白糖芡汁配方加权折算38 kcal、碳水8.57g；非食堂实测配方，主要误差来自后厨煎油用量及芡汁挂浆量"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 212,
+          "proteinDg": 153,
+          "fatDg": 128,
+          "carbDg": 93,
+          "description": "份量偏小(豆腐120g)，轻煎少油(油7g)，挂汁20g"
+        },
+        "central": {
+          "energyKcal": 277,
+          "proteinDg": 191,
+          "fatDg": 172,
+          "carbDg": 116,
+          "description": "典型份量(豆腐150g)，标准煎油(油10g)，浓汁25g"
+        },
+        "high": {
+          "energyKcal": 350,
+          "proteinDg": 229,
+          "fatDg": 226,
+          "carbDg": 139,
+          "description": "份量充裕(豆腐180g)，宽油煎透(油14g)，浓芡汁30g"
+        }
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-naiyou-xiaomantou",
+      "name": "奶油小馒头",
+      "batch": "batch-04",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 415,
+        "proteinDg": 95,
+        "fatDg": 128,
+        "carbDg": 661
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "刀切小馒头120g(约5个) + 油炸吸油10g + 全脂甜炼乳蘸料15g(标准味碟，单份成品重约145g)",
+        "estimated": true,
+        "note": "依据照片2精品小菜盘装金黄炸小馒头配独立炼乳味碟及6元/份定价推导；小馒头采用中国疾控中心查询平台编码01-1-101蒸馒头基准(933 kJ/100g即222.99 kcal/100g，蛋白质7.0g，脂肪1.1g，碳水47.0g)；油炸吸油率按8.3%计(吸油10g)；甜炼乳采用疾控中心官方收录雀巢鹰唛炼乳GB 28050标签(1601 kJ/100g即382.65 kcal/100g，蛋白质7.5g，脂肪10.0g，碳水64.9g)；非食堂实测配方，主要不确定性在于学生实际蘸取炼乳量及炸制吸油率"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 324,
+          "proteinDg": 78,
+          "fatDg": 91,
+          "carbDg": 535,
+          "description": "份量偏小出餐4个(馒头100g)，轻炸控油(油7g)，少蘸炼乳(10g)"
+        },
+        "central": {
+          "energyKcal": 415,
+          "proteinDg": 95,
+          "fatDg": 128,
+          "carbDg": 661,
+          "description": "典型出餐5个(馒头120g)，标准吸油(油10g)，蘸料15g"
+        },
+        "high": {
+          "energyKcal": 526,
+          "proteinDg": 117,
+          "fatDg": 176,
+          "carbDg": 811,
+          "description": "份量充裕出餐6个(馒头145g)，吸油偏重(油14g)，炼乳蘸足(20g)"
+        }
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-hnjf-xiaoqingcai",
+      "name": "小青菜",
+      "batch": "batch-04",
+      "kind": "single",
+      "category": "vegetable",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 95,
+        "proteinDg": 28,
+        "fatDg": 68,
+        "carbDg": 65
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "生小青菜(油菜/上海青可食部)150g + 清炒烹调油6g + 蒜蓉3g + 食盐1.5g(炒熟出锅净重约130g)",
+        "estimated": true,
+        "note": "依据照片2精品小菜盘装清炒/蒜炒小油菜及6元/份定价推导；青菜采用中国疾控中心查询平台油菜编码04-1-101(104 kJ/100g即24.86 kcal/100g，蛋白质1.8g，脂肪0.5g，碳水3.8g)；烹调油按快炒用油6g计(53.9 kcal)；大蒜3g微量增香；非食堂实测配方，主要误差来自后厨炒菜实际倒油量(5-9g)及出餐生熟份量"
+      },
+      "scenarios": {
+        "low": {
+          "energyKcal": 68,
+          "proteinDg": 23,
+          "fatDg": 46,
+          "carbDg": 51,
+          "description": "生青菜120g，清淡少油(烹调油4g)，蒜蓉2g"
+        },
+        "central": {
+          "energyKcal": 95,
+          "proteinDg": 28,
+          "fatDg": 68,
+          "carbDg": 65,
+          "description": "生青菜150g，标准用油(烹调油6g)，蒜蓉3g"
+        },
+        "high": {
+          "energyKcal": 131,
+          "proteinDg": 34,
+          "fatDg": 99,
+          "carbDg": 79,
+          "description": "生青菜180g，食堂油水较重(烹调油9g)，蒜蓉4g"
+        }
+      },
+      "ingredients": null,
+      "verification": null
+    },
+    {
+      "dishId": "dish-cpky-cuipi-kaoya-fan",
+      "name": "脆皮烤鸭饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 607,
+        "proteinDg": 336,
+        "fatDg": 274,
+        "carbDg": 561
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟带皮烤鸭切块110g + 卤蛋半个25g + 白灼菜心35g + 烧味豉油浇汁15g(单份成品净重约385g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5/照片13)门头排盘推导。米饭200g系依据立柱规格标牌(照片11)标准小份之明确假设；带皮烤鸭切块110g为去大骨后带皮肉可食部假设；卤蛋半个25g、焯青菜35g、豉油汁15g为出餐工艺假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟带皮烤鸭切块(去骨可食部)",
+            "portionG": 110,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Poultry and poultry products",
+            "itemDescription": "Roasted duck (燒鴨)",
+            "excelSheet": "Eng",
+            "rowIndex": 227,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 290,
+              "proteinG": 22,
+              "fatG": 22,
+              "carbG": 1.1,
+              "sodiumMg": 380
+            },
+            "portionValues": {
+              "energyKcal": 319,
+              "proteinG": 24.2,
+              "fatG": 24.2,
+              "carbG": 1.21,
+              "sodiumMg": 418
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "鸭肉偏少(90g)+轻淋酱汁(10g)",
+          "energyKcal": 546,
+          "proteinDg": 291,
+          "fatDg": 229,
+          "carbDg": 552
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 607,
+          "proteinDg": 336,
+          "fatDg": 274,
+          "carbDg": 561
+        },
+        "high": {
+          "description": "鸭肉充沛(130g)+重淋酱汁(20g)",
+          "energyKcal": 668,
+          "proteinDg": 381,
+          "fatDg": 318,
+          "carbDg": 570
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 606.86,
+        "atwater494EnergyKcal": 605.0315,
+        "absoluteDiffKcal": -1.8285,
+        "relativeDiffPercent": -0.3
+      }
+    },
+    {
+      "dishId": "dish-cpky-aorliang-jipai-fan",
+      "name": "奥尔良鸡排饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 522,
+        "proteinDg": 325,
+        "fatDg": 158,
+        "carbDg": 630
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 烤奥尔良鸡排110g + 熟甜玉米粒20g + 熟水煮蛋半个25g + 豉油/浇汁10g(单份成品净重约365g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)配图推导。米饭200g系依据立柱规格标牌(照片11)标准小份之明确假设；烤奥尔良鸡排110g为去骨带皮烤鸡腿肉排切条工艺假设；甜玉米粒20g、水煮蛋半颗25g、豉油浇汁10g为出餐配伍假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "烤奥尔良鸡排(去骨带皮切条)",
+            "portionG": 110,
+            "source": "USDA FoodData Central (FDC ID 173613 带皮熟鸡腿排基准) 与市售奥尔良调味标签复合标定",
+            "category": "Poultry and poultry products",
+            "itemDescription": "Chicken thigh steak, roasted with Orleans style seasoning",
+            "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173613/nutrients",
+            "per100g": {
+              "energyKcal": 205,
+              "proteinG": 21,
+              "fatG": 11.5,
+              "carbG": 4.5,
+              "sodiumMg": 650
+            },
+            "portionValues": {
+              "energyKcal": 225.5,
+              "proteinG": 23.1,
+              "fatG": 12.65,
+              "carbG": 4.95,
+              "sodiumMg": 715
+            }
+          },
+          {
+            "name": "熟甜玉米粒",
+            "portionG": 20,
+            "source": "美国农业部 USDA FoodData Central (SR Legacy)",
+            "category": "Vegetables and Vegetable Products",
+            "ndbNumber": "11168",
+            "fdcId": 169999,
+            "itemDescription": "Corn, sweet, yellow, cooked, boiled, drained, without salt",
+            "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169999/nutrients",
+            "per100g": {
+              "energyKcal": 96,
+              "proteinG": 3.41,
+              "fatG": 1.5,
+              "carbG": 21,
+              "sodiumMg": 1
+            },
+            "portionValues": {
+              "energyKcal": 19.2,
+              "proteinG": 0.682,
+              "fatG": 0.3,
+              "carbG": 4.2,
+              "sodiumMg": 0.2
+            }
+          },
+          {
+            "name": "熟水煮蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 10,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 6.3,
+              "proteinG": 0.17,
+              "fatG": 0.03,
+              "carbG": 1.3,
+              "sodiumMg": 190
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "鸡排偏小(90g)+轻淋酱汁(5g)",
+          "energyKcal": 478,
+          "proteinDg": 282,
+          "fatDg": 135,
+          "carbDg": 614
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 522,
+          "proteinDg": 325,
+          "fatDg": 158,
+          "carbDg": 630
+        },
+        "high": {
+          "description": "大鸡排(130g)+玉米25g+整蛋(50g)+重淋汁(15g)",
+          "energyKcal": 607,
+          "proteinDg": 403,
+          "fatDg": 204,
+          "carbDg": 663
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 522.41,
+        "atwater494EnergyKcal": 523.728,
+        "absoluteDiffKcal": 1.318,
+        "relativeDiffPercent": 0.25
+      }
+    },
+    {
+      "dishId": "dish-cpky-wuxiang-yatui-fan",
+      "name": "五香鸭腿饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 548,
+        "proteinDg": 416,
+        "fatDg": 168,
+        "carbDg": 549
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟卤鸭腿整只120g(去大骨带皮可食部) + 卤蛋半个25g + 白灼菜心35g + 卤汁15g(单份成品净重约395g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)盘装切段鸭腿推导。米饭200g系依据立柱标牌小份基准假设；整只卤鸭腿去大骨后带皮肉可食部按120g明确假设；卤蛋半个25g、青菜35g、卤汁15g为出餐工艺假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟卤鸭腿(去大骨带皮可食部)",
+            "portionG": 120,
+            "source": "美国农业部 USDA FoodData Central (SR Legacy)",
+            "category": "Poultry Products",
+            "ndbNumber": "05144",
+            "fdcId": 171112,
+            "itemDescription": "Duck, young duckling, domesticated, White Pekin, leg, meat and skin, bone in, cooked, roasted",
+            "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171112/nutrients",
+            "per100g": {
+              "energyKj": 908,
+              "energyKcal": 217,
+              "proteinG": 26.8,
+              "fatG": 11.4,
+              "carbG": 0,
+              "sodiumMg": 300
+            },
+            "portionValues": {
+              "energyKcal": 260.4,
+              "proteinG": 32.16,
+              "fatG": 13.68,
+              "carbG": 0,
+              "sodiumMg": 360
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "鸭腿肉稍瘦偏小(100g)+轻淋卤汁(10g)",
+          "energyKcal": 502,
+          "proteinDg": 361,
+          "fatDg": 145,
+          "carbDg": 542
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 548,
+          "proteinDg": 416,
+          "fatDg": 168,
+          "carbDg": 549
+        },
+        "high": {
+          "description": "鸭腿肥厚大只(140g)+重淋卤汁(20g)",
+          "energyKcal": 595,
+          "proteinDg": 470,
+          "fatDg": 191,
+          "carbDg": 555
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 548.26,
+        "atwater494EnergyKcal": 537.3515,
+        "absoluteDiffKcal": -10.9085,
+        "relativeDiffPercent": -1.99
+      }
+    },
+    {
+      "dishId": "dish-cpky-longjiang-zhuzhou-fan",
+      "name": "隆江猪肘饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 619,
+        "proteinDg": 285,
+        "fatDg": 300,
+        "carbDg": 581
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟带皮猪肘肉片90g + 熟肉卷切片20g + 潮汕酸菜25g + 白灼菜心35g + 卤蛋半个25g + 卤汁15g(单份成品净重约410g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5主推大图)大盘陈列推导。米饭200g系标准小份假设；熟带皮卤猪肘肉片90g、肉卷切片20g、酸菜25g、青菜35g、卤蛋25g、卤汁15g均为透明工艺假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟带皮猪肘肉片(去大骨可食部)",
+            "portionG": 90,
+            "source": "中国疾控中心营养与健康所《中国食物成分表》第6版第二册(猪肉后肘带皮熟制)与USDA FDC ID 171400对照",
+            "foodCode": "08-1-xxx (猪肉 后肘)",
+            "category": "畜肉类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/",
+            "per100g": {
+              "energyKcal": 310,
+              "proteinG": 18,
+              "fatG": 26,
+              "carbG": 0.5,
+              "sodiumMg": 450
+            },
+            "portionValues": {
+              "energyKcal": 279,
+              "proteinG": 16.2,
+              "fatG": 23.4,
+              "carbG": 0.45,
+              "sodiumMg": 405
+            }
+          },
+          {
+            "name": "熟肉卷切片",
+            "portionG": 20,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL) Red sausage / 潮汕肉卷工艺对照",
+            "category": "Meat and meat products",
+            "itemDescription": "Red sausage / Chinese steamed pork roll",
+            "excelSheet": "Eng",
+            "rowIndex": 123,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 240,
+              "proteinG": 13,
+              "fatG": 17,
+              "carbG": 11,
+              "sodiumMg": 840
+            },
+            "portionValues": {
+              "energyKcal": 48,
+              "proteinG": 2.6,
+              "fatG": 3.4,
+              "carbG": 2.2,
+              "sodiumMg": 168
+            }
+          },
+          {
+            "name": "潮汕酸菜",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "04-4-xxx (酸菜)",
+            "category": "蔬菜及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/",
+            "per100g": {
+              "energyKj": 62,
+              "energyKcal": 15,
+              "proteinG": 1.1,
+              "fatG": 0.2,
+              "carbG": 2.4,
+              "sodiumMg": 1200
+            },
+            "portionValues": {
+              "energyKcal": 3.75,
+              "proteinG": 0.275,
+              "fatG": 0.05,
+              "carbG": 0.6,
+              "sodiumMg": 300
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "猪肘偏瘦轻出(75g)+肉卷15g+酸菜20g+卤汁10g",
+          "energyKcal": 556,
+          "proteinDg": 250,
+          "fatDg": 252,
+          "carbDg": 567
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 619,
+          "proteinDg": 285,
+          "fatDg": 300,
+          "carbDg": 581
+        },
+        "high": {
+          "description": "猪肘肥厚带脂(110g)+肉卷25g+酸菜30g+浓卤汁20g",
+          "energyKcal": 697,
+          "proteinDg": 329,
+          "fatDg": 361,
+          "carbDg": 595
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 618.61,
+        "atwater494EnergyKcal": 616.5415,
+        "absoluteDiffKcal": -2.0685,
+        "relativeDiffPercent": -0.33
+      }
+    },
+    {
+      "dishId": "dish-cpky-roujuan-fan",
+      "name": "肉卷饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 528,
+        "proteinDg": 224,
+        "fatDg": 202,
+        "carbDg": 659
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟肉卷切片100g + 卤蛋半个25g + 白灼菜心35g + 卤汁15g(单份成品净重约375g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)盘装切片肉卷排盘推导。米饭200g系标准小份假设；肉卷采用广式/潮汕传统蒸制切片熟肉卷100g明确假设；卤蛋半个25g、青菜35g、卤汁15g为工艺配菜假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟肉卷切片",
+            "portionG": 100,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL) Red sausage / 潮汕肉卷工艺对照",
+            "category": "Meat and meat products",
+            "itemDescription": "Red sausage / Chinese steamed pork roll",
+            "excelSheet": "Eng",
+            "rowIndex": 123,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 240,
+              "proteinG": 13,
+              "fatG": 17,
+              "carbG": 11,
+              "sodiumMg": 840
+            },
+            "portionValues": {
+              "energyKcal": 240,
+              "proteinG": 13,
+              "fatG": 17,
+              "carbG": 11,
+              "sodiumMg": 840
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "肉卷切片稍薄(80g)+轻淋卤汁(10g)",
+          "energyKcal": 477,
+          "proteinDg": 197,
+          "fatDg": 167,
+          "carbDg": 630
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 528,
+          "proteinDg": 224,
+          "fatDg": 202,
+          "carbDg": 659
+        },
+        "high": {
+          "description": "肉卷厚切足量(120g)+浓卤汁(20g)",
+          "energyKcal": 579,
+          "proteinDg": 251,
+          "fatDg": 236,
+          "carbDg": 687
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 527.86,
+        "atwater494EnergyKcal": 534.5915,
+        "absoluteDiffKcal": 6.7315,
+        "relativeDiffPercent": 1.28
+      }
+    },
+    {
+      "dishId": "dish-cpky-mizhi-chashao-fan",
+      "name": "蜜汁叉烧饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 588,
+        "proteinDg": 344,
+        "fatDg": 202,
+        "carbDg": 643
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 广式蜜汁叉烧100g + 卤蛋半个25g + 白灼菜心35g + 叉烧浇汁15g(单份成品净重约375g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)盘装切片叉烧推导。米饭200g系依据立柱标牌标准小份假设；蜜汁叉烧切片100g为典型出餐份量假设；配半颗蛋25g、白灼菜心35g与叉烧汁15g。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "广式蜜汁叉烧",
+            "portionG": 100,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Meat and meat products",
+            "itemDescription": "Barbecued pork (叉燒)",
+            "excelSheet": "Eng",
+            "rowIndex": 124,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 300,
+              "proteinG": 25,
+              "fatG": 17,
+              "carbG": 9.4,
+              "sodiumMg": 660
+            },
+            "portionValues": {
+              "energyKcal": 300,
+              "proteinG": 25,
+              "fatG": 17,
+              "carbG": 9.4,
+              "sodiumMg": 660
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "叉烧切片偏少(80g)+轻浇叉烧汁(10g)",
+          "energyKcal": 525,
+          "proteinDg": 293,
+          "fatDg": 167,
+          "carbDg": 617
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 588,
+          "proteinDg": 344,
+          "fatDg": 202,
+          "carbDg": 643
+        },
+        "high": {
+          "description": "叉烧切片足量(120g)+多浇叉烧汁(20g)",
+          "energyKcal": 651,
+          "proteinDg": 395,
+          "fatDg": 236,
+          "carbDg": 668
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 587.86,
+        "atwater494EnergyKcal": 576.1915,
+        "absoluteDiffKcal": -11.6685,
+        "relativeDiffPercent": -1.98
+      }
+    },
+    {
+      "dishId": "dish-cpky-guangshi-lachang-fan",
+      "name": "广式腊肠饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 552,
+        "proteinDg": 186,
+        "fatDg": 271,
+        "carbDg": 580
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟广式腊肠切片70g + 白灼菜心35g + 豉油10g(单份成品净重约315g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)碗装排盘推导。图示碗装切片红腊肠排布于米饭上方配青菜，无蛋；米饭200g系标准小份假设；熟广式腊肠切片70g(约1.5根腊肠蒸熟切斜片)、青菜35g、豉油10g为工艺假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟广式腊肠切片",
+            "portionG": 70,
+            "source": "中国疾控中心营养与健康所《中国食物成分表》与FoodWake平台(广式香肠)",
+            "foodCode": "08-1-xxx / 08-5-201 (广式香肠)",
+            "category": "畜肉类及制品",
+            "portalUrl": "https://www.foodwake.cn/food/1495",
+            "per100g": {
+              "energyKcal": 433,
+              "proteinG": 18,
+              "fatG": 37.3,
+              "carbG": 6.4,
+              "sodiumMg": 1477.9
+            },
+            "portionValues": {
+              "energyKcal": 303.1,
+              "proteinG": 12.6,
+              "fatG": 26.11,
+              "carbG": 4.48,
+              "sodiumMg": 1034.53
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 10,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 6.3,
+              "proteinG": 0.17,
+              "fatG": 0.03,
+              "carbG": 1.3,
+              "sodiumMg": 190
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "腊肠约1根切片(55g)+轻淋豉油(5g)",
+          "energyKcal": 484,
+          "proteinDg": 158,
+          "fatDg": 214,
+          "carbDg": 564
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 552,
+          "proteinDg": 186,
+          "fatDg": 271,
+          "carbDg": 580
+        },
+        "high": {
+          "description": "腊肠约2根切片(85g)+重淋豉油(15g)",
+          "energyKcal": 620,
+          "proteinDg": 214,
+          "fatDg": 327,
+          "carbDg": 596
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 552.06,
+        "atwater494EnergyKcal": 549.9265,
+        "absoluteDiffKcal": -2.1335,
+        "relativeDiffPercent": -0.39
+      }
+    },
+    {
+      "dishId": "dish-cpky-wuxiang-jitui-fan",
+      "name": "五香鸡腿饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 477,
+        "proteinDg": 339,
+        "fatDg": 126,
+        "carbDg": 542
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟卤鸡腿整只110g(去大骨带皮可食部) + 白灼菜心35g + 卤汁15g(单份成品净重约360g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)盘装整只卤鸡腿配菜推导。米饭200g系标准小份假设；熟卤鸡腿整只去大骨后带皮肉可食部按110g明确假设；配焯青菜35g与卤汁15g。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟卤鸡腿(去大骨带皮可食部)",
+            "portionG": 110,
+            "source": "美国农业部 USDA FoodData Central (SR Legacy)",
+            "category": "Poultry Products",
+            "ndbNumber": "05070",
+            "fdcId": 173613,
+            "itemDescription": "Chicken, broilers or fryers, drumstick, meat and skin, cooked, stewed",
+            "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173613/nutrients",
+            "per100g": {
+              "energyKcal": 204,
+              "proteinG": 25.3,
+              "fatG": 10.6,
+              "carbG": 0,
+              "sodiumMg": 300
+            },
+            "portionValues": {
+              "energyKcal": 224.4,
+              "proteinG": 27.83,
+              "fatG": 11.66,
+              "carbG": 0,
+              "sodiumMg": 330
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "鸡腿较小(90g)+轻淋卤汁(10g)",
+          "energyKcal": 433,
+          "proteinDg": 288,
+          "fatDg": 105,
+          "carbDg": 535
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 477,
+          "proteinDg": 339,
+          "fatDg": 126,
+          "carbDg": 542
+        },
+        "high": {
+          "description": "鸡腿肥大(130g)+重淋卤汁(20g)",
+          "energyKcal": 520,
+          "proteinDg": 391,
+          "fatDg": 148,
+          "carbDg": 548
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 476.51,
+        "atwater494EnergyKcal": 465.9515,
+        "absoluteDiffKcal": -10.5585,
+        "relativeDiffPercent": -2.22
+      }
+    },
+    {
+      "dishId": "dish-cpky-lurou-fan",
+      "name": "卤肉饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 531,
+        "proteinDg": 205,
+        "fatDg": 227,
+        "carbDg": 623
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 碎卤肉丁80g + 卤蛋半个25g + 熟甜玉米粒20g + 白灼菜心35g + 卤肉汁15g(单份成品净重约375g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)碗装卤肉饭推导。图示碗装碎卤肉丁、青菜、玉米粒、半颗卤蛋、米饭；米饭200g系标准小份假设；碎五花卤肉丁80g、卤蛋半颗25g、玉米粒20g、青菜35g、卤肉汁15g为工艺配比假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "碎卤肉丁(五花肉丁带卤香)",
+            "portionG": 80,
+            "source": "中国食物成分表与台湾地区食品营养成分资料库(卤肉/肉燥)",
+            "category": "畜肉类及制品",
+            "itemDescription": "Braised minced pork belly cubes in master sauce",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/",
+            "per100g": {
+              "energyKcal": 280,
+              "proteinG": 13,
+              "fatG": 24,
+              "carbG": 4,
+              "sodiumMg": 650
+            },
+            "portionValues": {
+              "energyKcal": 224,
+              "proteinG": 10.4,
+              "fatG": 19.2,
+              "carbG": 3.2,
+              "sodiumMg": 520
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "熟甜玉米粒",
+            "portionG": 20,
+            "source": "美国农业部 USDA FoodData Central (SR Legacy)",
+            "category": "Vegetables and Vegetable Products",
+            "ndbNumber": "11168",
+            "fdcId": 169999,
+            "itemDescription": "Corn, sweet, yellow, cooked, boiled, drained, without salt",
+            "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169999/nutrients",
+            "per100g": {
+              "energyKcal": 96,
+              "proteinG": 3.41,
+              "fatG": 1.5,
+              "carbG": 21,
+              "sodiumMg": 1
+            },
+            "portionValues": {
+              "energyKcal": 19.2,
+              "proteinG": 0.682,
+              "fatG": 0.3,
+              "carbG": 4.2,
+              "sodiumMg": 0.2
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "卤肉偏瘦偏少(65g)+轻淋卤汁(10g)",
+          "energyKcal": 486,
+          "proteinDg": 185,
+          "fatDg": 190,
+          "carbDg": 610
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 531,
+          "proteinDg": 205,
+          "fatDg": 227,
+          "carbDg": 623
+        },
+        "high": {
+          "description": "卤肉肥糯足量(100g)+玉米25g+浓肉汁(20g)",
+          "energyKcal": 595,
+          "proteinDg": 233,
+          "fatDg": 276,
+          "carbDg": 648
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 531.06,
+        "atwater494EnergyKcal": 535.0195,
+        "absoluteDiffKcal": 3.9595,
+        "relativeDiffPercent": 0.75
+      }
+    },
+    {
+      "dishId": "dish-cpky-renxuan-shuangpin-fan",
+      "name": "任选双拼饭",
+      "batch": "batch-05",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": true,
+      "riceIncluded": true,
+      "nutrition": {
+        "energyKcal": 568,
+        "proteinDg": 351,
+        "fatDg": 222,
+        "carbDg": 555
+      },
+      "nutritionBasis": {
+        "source": "照片与典型份量估算",
+        "portionAssumption": "熟白米饭200g + 熟带皮烤鸭切块55g + 熟带皮白切鸡切块55g + 卤蛋半个25g + 白灼菜心35g + 烧味豉油浇汁15g(单份成品净重约385g)",
+        "estimated": true,
+        "note": "依据脆皮烤鸭窗口现场实拍(照片5)盘装双拼推导。图示为烤鸭拼白切鸡双拼肉品配半颗卤蛋、青菜与米饭；米饭200g系标准小份假设；双拼荤料各取半份(烤鸭55g+白切鸡55g共110g去骨可食肉块)；卤蛋25g、青菜35g、豉油15g为工艺假设。单份仅计一次米饭，不含无限续饭；非食堂实测化验值",
+        "ingredients": [
+          {
+            "name": "熟白米饭",
+            "portionG": 200,
+            "source": "中国疾控中心营养与健康所食物成分查询平台",
+            "foodCode": "01-2-401 (蒸米饭)",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/287.html",
+            "per100g": {
+              "energyKj": 493,
+              "energyKcal": 117.83,
+              "proteinG": 2.6,
+              "fatG": 0.3,
+              "carbG": 25.9,
+              "sodiumMg": 2.5
+            },
+            "portionValues": {
+              "energyKcal": 235.66,
+              "proteinG": 5.2,
+              "fatG": 0.6,
+              "carbG": 51.8,
+              "sodiumMg": 5
+            }
+          },
+          {
+            "name": "熟带皮烤鸭切块(去骨可食部)",
+            "portionG": 55,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Poultry and poultry products",
+            "itemDescription": "Roasted duck (燒鴨)",
+            "excelSheet": "Eng",
+            "rowIndex": 227,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 290,
+              "proteinG": 22,
+              "fatG": 22,
+              "carbG": 1.1,
+              "sodiumMg": 380
+            },
+            "portionValues": {
+              "energyKcal": 159.5,
+              "proteinG": 12.1,
+              "fatG": 12.1,
+              "carbG": 0.605,
+              "sodiumMg": 209
+            }
+          },
+          {
+            "name": "熟带皮白切鸡肉(带皮切块可食部)",
+            "portionG": 55,
+            "source": "美国农业部 USDA FoodData Central (SR Legacy)",
+            "ndbNumber": "05010",
+            "fdcId": 171051,
+            "itemDescription": "Chicken, broilers or fryers, meat and skin, cooked, stewed",
+            "portalUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171051/nutrients",
+            "per100g": {
+              "energyKcal": 219,
+              "energyKj": 916,
+              "proteinG": 24.68,
+              "fatG": 12.56,
+              "carbG": 0,
+              "sodiumMg": 71
+            },
+            "portionValues": {
+              "energyKcal": 120.45,
+              "proteinG": 13.574,
+              "fatG": 6.908,
+              "carbG": 0,
+              "sodiumMg": 39.05
+            }
+          },
+          {
+            "name": "卤蛋(去壳可食部)",
+            "portionG": 25,
+            "source": "中国疾控中心营养与健康所《中国食物成分表(标准版)》第6版第一册",
+            "foodCode": "06-1-101 (平台编码978, 鸡蛋均值)",
+            "category": "蛋类及制品",
+            "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/978.html",
+            "per100g": {
+              "energyKj": 599,
+              "energyKcal": 143,
+              "proteinG": 13.3,
+              "fatG": 8.8,
+              "carbG": 2.8,
+              "sodiumMg": 131.5
+            },
+            "portionValues": {
+              "energyKcal": 35.75,
+              "proteinG": 3.325,
+              "fatG": 2.2,
+              "carbG": 0.7,
+              "sodiumMg": 32.88
+            }
+          },
+          {
+            "name": "白灼菜心",
+            "portionG": 35,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Vegetables and vegetable products",
+            "itemDescription": "Boiled Chinese flowering cabbage",
+            "excelSheet": "Eng",
+            "rowIndex": 705,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 20,
+              "proteinG": 1.8,
+              "fatG": 0.91,
+              "carbG": 1.2,
+              "sodiumMg": 33
+            },
+            "portionValues": {
+              "energyKcal": 7,
+              "proteinG": 0.63,
+              "fatG": 0.3185,
+              "carbG": 0.42,
+              "sodiumMg": 11.55
+            }
+          },
+          {
+            "name": "烧味豉油浇汁",
+            "portionG": 15,
+            "source": "香港食物安全中心(CFS)食物研究化验所营养资料档案(FRL)",
+            "category": "Condiments and sauces",
+            "itemDescription": "Sauce for \"Siu Mei\"",
+            "excelSheet": "Eng",
+            "rowIndex": 85,
+            "portalUrl": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+            "per100g": {
+              "energyKcal": 63,
+              "proteinG": 1.7,
+              "fatG": 0.3,
+              "carbG": 13,
+              "sodiumMg": 1900
+            },
+            "portionValues": {
+              "energyKcal": 9.45,
+              "proteinG": 0.255,
+              "fatG": 0.045,
+              "carbG": 1.95,
+              "sodiumMg": 285
+            }
+          }
+        ]
+      },
+      "scenarios": {
+        "low": {
+          "description": "双拼肉各45g(共90g)+轻淋豉油(10g)",
+          "energyKcal": 514,
+          "proteinDg": 303,
+          "fatDg": 187,
+          "carbDg": 547
+        },
+        "central": {
+          "description": "标准出餐中央估算",
+          "energyKcal": 568,
+          "proteinDg": 351,
+          "fatDg": 222,
+          "carbDg": 555
+        },
+        "high": {
+          "description": "双拼肉各65g(共130g)+重淋豉油(20g)",
+          "energyKcal": 622,
+          "proteinDg": 398,
+          "fatDg": 256,
+          "carbDg": 562
+        }
+      },
+      "ingredients": null,
+      "verification": {
+        "rawCumulativeEnergyKcal": 567.81,
+        "atwater494EnergyKcal": 561.7795,
+        "absoluteDiffKcal": -6.0305,
+        "relativeDiffPercent": -1.06
+      }
+    }
+  ]
+}

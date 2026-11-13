@@ -1,0 +1,91 @@
+/* pages/menu/index.wxss — 菜单与备份页差异样式：模拟警示、多行文本、预检与对照表。
+   颜色一律走 app.wxss 的 --tk-* 令牌。 */
+
+.status-line {
+  margin-top: 24rpx;
+  padding: 16rpx 24rpx;
+  border-radius: 16rpx;
+  background: var(--tk-card-soft);
+}
+
+/* 模拟菜单说明性标注：用温和提示色，不使用错误红（§7.2 / §8）。 */
+.banner-sim {
+  display: flex;
+  align-items: flex-start;
+  gap: 10rpx;
+  margin-bottom: 12rpx;
+  padding: 16rpx 20rpx;
+  border-radius: 20rpx;
+  background: var(--tk-warn-bg);
+  border: 1rpx solid var(--tk-warn-line);
+  color: var(--tk-warn-text);
+  font-size: 28rpx;
+}
+
+/* 内置真实菜单入口：与预检面板同层级的浅色分组，不引入新的主题色。 */
+.west1-entry {
+  margin-top: 20rpx;
+  padding: 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+}
+.west1-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+}
+.west1-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+
+/* 长文本输入 */
+.textarea {
+  width: 100%;
+  min-height: 240rpx;
+  padding: 20rpx 24rpx;
+  box-sizing: border-box;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-field-line);
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  color: var(--tk-text);
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+/* 预检结果面板 */
+.preflight-panel {
+  margin-top: 20rpx;
+  padding: 24rpx;
+  border-radius: 20rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx dashed var(--tk-line);
+}
+
+/* 恢复后逐项对照 */
+.cmp-row {
+  margin-top: 16rpx;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  background: var(--tk-field-bg);
+  border: 1rpx solid var(--tk-line);
+}
+.cmp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rpx;
+}
+.cmp-label {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.cmp-values {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  word-break: break-all;
+}

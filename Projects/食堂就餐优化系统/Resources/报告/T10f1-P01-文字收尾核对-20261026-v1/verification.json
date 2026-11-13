@@ -1,0 +1,146 @@
+{
+  "manifestRows": 20,
+  "allManifestMatch": true,
+  "files": [
+    {
+      "file": "01-当前界面截图/01-user-v5-首页-新装方案.png",
+      "ok": true
+    },
+    {
+      "file": "01-当前界面截图/02-user-v5-菜单覆盖文案.png",
+      "ok": true
+    },
+    {
+      "file": "01-当前界面截图/03-user-v5-推荐方式页.png",
+      "ok": true
+    },
+    {
+      "file": "01-当前界面截图/04-user-v5-新增窗口选菜麻辣烫300g.png",
+      "ok": true
+    },
+    {
+      "file": "01-当前界面截图/05-user-v5-记录页.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-01-三算法机制对照-4K-浅色.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-01-三算法机制对照-4K-深色.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-01-三算法机制对照.html",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-01-三算法机制对照.svg",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-02-产品使用闭环-4K-浅色.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-02-产品使用闭环-4K-深色.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-02-产品使用闭环.html",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-02-产品使用闭环.svg",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-03-CPP与小程序架构-4K-浅色.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-03-CPP与小程序架构-4K-深色.png",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-03-CPP与小程序架构.html",
+      "ok": true
+    },
+    {
+      "file": "02-机制配图/T10d-03-CPP与小程序架构.svg",
+      "ok": true
+    },
+    {
+      "file": "03-数据与讲述/算法机制与答辩要点.md",
+      "ok": true
+    },
+    {
+      "file": "03-数据与讲述/DP性能数据.csv",
+      "ok": true
+    },
+    {
+      "file": "README.md",
+      "ok": true
+    }
+  ],
+  "pngs": [
+    {
+      "file": "T10d-01-三算法机制对照-4K-浅色.png",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "file": "T10d-01-三算法机制对照-4K-深色.png",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "file": "T10d-02-产品使用闭环-4K-浅色.png",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "file": "T10d-02-产品使用闭环-4K-深色.png",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "file": "T10d-03-CPP与小程序架构-4K-浅色.png",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "file": "T10d-03-CPP与小程序架构-4K-深色.png",
+      "size": [
+        3840,
+        2160
+      ]
+    }
+  ],
+  "zipFileCount": 21,
+  "zipBytes": 4474807,
+  "zipSha256": "912c1847666f0ea12be5c343db2b0bc04b2197ef8da5c07e16a7555649bf51f1",
+  "zipAllEntriesMatchLooseFiles": true,
+  "allThreeSvgBadVisibleLabelsAbsent": true,
+  "architectureActualToolchainAndScriptPresent": true,
+  "unchangedFromV2": [
+    "5 user-v5 simulator screenshots",
+    "DP CSV",
+    "algorithm notes"
+  ],
+  "visualReview": [
+    "all 3 light PNGs",
+    "architecture dark PNG"
+  ],
+  "softwareTestsRun": false
+}

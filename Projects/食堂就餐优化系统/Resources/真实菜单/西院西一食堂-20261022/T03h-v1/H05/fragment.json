@@ -1,0 +1,364 @@
+{
+  "window": {
+    "windowId": "w-yunnan-mixian",
+    "name": "云南米线与面",
+    "mealWindows": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  "dishes": [
+    {
+      "dishId": "dish-yn-zhaopai-roujiang-mixian-tang",
+      "name": "招牌肉酱米线(汤)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 480,
+        "proteinDg": 165,
+        "fatDg": 145,
+        "carbDg": 710
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "鲜米线约220g + 炒肉酱45g + 牛骨高汤 + 葱花青菜",
+        "estimated": true,
+        "note": "顶图与价格表同名合并，实拍价11元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-zhaopai-roujiang-mixian-gan",
+      "name": "招牌肉酱米线(干)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 495,
+        "proteinDg": 168,
+        "fatDg": 162,
+        "carbDg": 705
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "鲜米线约220g + 炒肉酱50g + 花生碎干拌",
+        "estimated": true,
+        "note": "实拍价11元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-shanye-paojiao-mixian",
+      "name": "山野泡椒肉酱米线",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 475,
+        "proteinDg": 158,
+        "fatDg": 138,
+        "carbDg": 720
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "鲜米线220g + 山野酸辣泡椒肉酱 + 玉米粒青菜高汤",
+        "estimated": true,
+        "note": "顶图大推介，实拍价11元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-jintang-mixian",
+      "name": "招牌金汤米线",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 440,
+        "proteinDg": 135,
+        "fatDg": 125,
+        "carbDg": 685
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "鲜米线220g + 金汤酸汤底料 + 青菜肉沫",
+        "estimated": true,
+        "note": "实拍价10元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-fanqie-mixian",
+      "name": "公主番茄米线",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 435,
+        "proteinDg": 130,
+        "fatDg": 110,
+        "carbDg": 710
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "鲜米线220g + 鲜浓番茄高汤 + 青菜肉丁",
+        "estimated": true,
+        "note": "实拍价10元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-roujiang-mian-tang",
+      "name": "招牌肉酱面(汤)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 510,
+        "proteinDg": 185,
+        "fatDg": 155,
+        "carbDg": 742
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "熟面条约250g + 炒肉酱 + 牛骨高汤",
+        "estimated": true,
+        "note": "顶图与价格表同名合并，实拍价11元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-roujiang-mian-gan",
+      "name": "招牌肉酱面(干)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 525,
+        "proteinDg": 188,
+        "fatDg": 172,
+        "carbDg": 738
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "熟面条约250g + 炒肉酱 + 花生碎葱花干拌",
+        "estimated": true,
+        "note": "顶图与价格表同名合并，实拍价11元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-xiandanhuang-mian-gan",
+      "name": "咸蛋黄面(干)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 545,
+        "proteinDg": 175,
+        "fatDg": 205,
+        "carbDg": 725
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "熟面条约250g + 咸蛋黄沙酱约45g拌面",
+        "estimated": true,
+        "note": "实拍价10元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-jiaoma-mian-gan",
+      "name": "椒麻面(干)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 465,
+        "proteinDg": 142,
+        "fatDg": 160,
+        "carbDg": 660
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "熟面条约250g + 特制椒麻红油拌汁",
+        "estimated": true,
+        "note": "实拍价9元/份"
+      }
+    },
+    {
+      "dishId": "dish-yn-congyou-mian-gan",
+      "name": "葱油面(干)",
+      "kind": "single",
+      "category": "staple",
+      "riceDish": false,
+      "riceIncluded": false,
+      "nutrition": {
+        "energyKcal": 450,
+        "proteinDg": 138,
+        "fatDg": 150,
+        "carbDg": 650
+      },
+      "nutritionBasis": {
+        "source": "照片7c697c5366aab426864f531adb2341ef与中国食物成分表",
+        "portionAssumption": "熟面条约250g + 现熬香葱油老抽生抽调和汁",
+        "estimated": true,
+        "note": "实拍价9元/份"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "offerId": "offer-yn-zhaopai-roujiang-mixian-tang",
+      "dishId": "dish-yn-zhaopai-roujiang-mixian-tang",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-zhaopai-roujiang-mixian-gan",
+      "dishId": "dish-yn-zhaopai-roujiang-mixian-gan",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-shanye-paojiao-mixian",
+      "dishId": "dish-yn-shanye-paojiao-mixian",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-jintang-mixian",
+      "dishId": "dish-yn-jintang-mixian",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-fanqie-mixian",
+      "dishId": "dish-yn-fanqie-mixian",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-roujiang-mian-tang",
+      "dishId": "dish-yn-roujiang-mian-tang",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-roujiang-mian-gan",
+      "dishId": "dish-yn-roujiang-mian-gan",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1100,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-xiandanhuang-mian-gan",
+      "dishId": "dish-yn-xiandanhuang-mian-gan",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 1000,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-jiaoma-mian-gan",
+      "dishId": "dish-yn-jiaoma-mian-gan",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 900,
+      "priceBasis": "unitPrice"
+    },
+    {
+      "offerId": "offer-yn-congyou-mian-gan",
+      "dishId": "dish-yn-congyou-mian-gan",
+      "windowId": "w-yunnan-mixian",
+      "mealWindows": [
+        "lunch",
+        "dinner"
+      ],
+      "portionCode": "full",
+      "portionRatioNum": 1,
+      "portionRatioDen": 1,
+      "priceCents": 900,
+      "priceBasis": "unitPrice"
+    }
+  ],
+  "metadata": {
+    "subtaskId": "H05",
+    "windowName": "云南米线与面",
+    "photoFiles": [
+      "7c697c5366aab426864f531adb2341ef.jpg"
+    ],
+    "itemCount": 10,
+    "priceEstimated": false,
+    "notes": "云南米线与面加急补录数据分包"
+  }
+}

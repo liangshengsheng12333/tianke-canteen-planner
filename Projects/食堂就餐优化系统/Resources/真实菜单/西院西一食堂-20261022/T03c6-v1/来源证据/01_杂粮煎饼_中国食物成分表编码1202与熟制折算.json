@@ -1,0 +1,45 @@
+{
+  "ingredientName": "现摊杂粮熟饼皮",
+  "dishId": "dish-shandong-pancake",
+  "sourceDatabase": "中国疾病预防控制中心营养与健康所《中国食物成分表》第6版第一册",
+  "category": "小吃、甜饼类",
+  "foodCode": "1202",
+  "officialName": "煎饼",
+  "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1202.html",
+  "officialOriginalPer100g": {
+    "waterG": 6.8,
+    "energyKj": 1498.0,
+    "energyKcal": 358.03,
+    "proteinG": 7.6,
+    "fatG": 0.7,
+    "carbG": 83.8,
+    "ashG": 1.1,
+    "sodiumMg": 85.5,
+    "edible": 100
+  },
+  "processAssumption": {
+    "description": "食堂现场为杂粮面糊现推烙熟，熟饼皮具有一定柔韧性而非风干脱水状态。假设熟饼皮含水率为50.0%（工艺假设，非现场实测）",
+    "rawDryMatterRate": 0.932,
+    "cookedWaterRate": 0.50,
+    "cookedDryMatterRate": 0.50,
+    "dryMatterFactor": 0.536480686695279
+  },
+  "convertedCookedPer100g": {
+    "waterG": 50.0,
+    "energyKj": 803.648,
+    "energyKcal": 192.0765,
+    "proteinG": 4.0773,
+    "fatG": 0.3755,
+    "carbG": 44.9571,
+    "sodiumMg": 45.8691
+  },
+  "portionAssumption": {
+    "portionG": 110.0,
+    "portionEnergyKcal": 211.2841,
+    "portionProteinG": 4.4850,
+    "portionFatG": 0.4131,
+    "portionCarbG": 49.4528,
+    "portionSodiumMg": 50.4560
+  },
+  "auditNote": "已纠正前版将1498kJ与P 8.5g、F 1.5g、C 77.6g拼接的错误，严格采用官方1202真实数值（P 7.6g、F 0.7g、C 83.8g）重新折算。"
+}

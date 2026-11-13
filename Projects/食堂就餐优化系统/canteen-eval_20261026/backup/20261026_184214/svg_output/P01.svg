@@ -1,0 +1,104 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="cover">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Subtle Structural Decor -->
+  <rect id="decor_side_panel" data-pptx-role="decoration" x="1200" y="0" width="720" height="1080" fill="#F4F4F5" />
+  <circle id="decor_circle_1" data-pptx-role="decoration" cx="1680" cy="180" r="320" fill="#2563EB" fill-opacity="0.04" />
+  <circle id="decor_circle_2" data-pptx-role="decoration" cx="1320" cy="880" r="240" fill="#10B981" fill-opacity="0.04" />
+  <line id="decor_divider_vert" data-pptx-role="decoration" x1="1200" y1="0" x2="1200" y2="1080" stroke="#E4E4E7" stroke-width="1.5" />
+  <rect id="decor_top_bar" data-pptx-role="decoration" x="100" y="0" width="280" height="6" fill="#2563EB" />
+
+  <!-- Header & Title Module -->
+  <g id="cover_title_block" data-pptx-bounds="100 140 1000 370">
+    <!-- Header Badge -->
+    <rect x="100" y="140" width="270" height="42" rx="21" fill="#2563EB" fill-opacity="0.1" />
+    <circle cx="122" cy="161" r="6" fill="#2563EB" />
+    <text x="138" y="168" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#2563EB">期末综合评测 · 答辩汇报</text>
+
+    <!-- Main Title -->
+    <text x="100" y="270" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="68" font-weight="bold" fill="#18181B">天科食客<tspan fill="#2563EB">.</tspan></text>
+    <text x="100" y="360" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#2563EB">基于 C++ 核心与 WASM 架构的<tspan x="100" dy="60" fill="#18181B">校园食堂智能选餐优化系统</tspan></text>
+
+    <!-- Subtitle -->
+    <text x="100" y="500" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">从真实就餐痛点出发 · 跨平台高效算法规划 · 离线秒级闭环体验</text>
+  </g>
+
+  <!-- Feature Pills -->
+  <g id="cover_feature_pills" data-pptx-bounds="100 560 768 44">
+    <!-- Pill 1 -->
+    <rect x="100" y="560" width="180" height="44" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <text x="190" y="588" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B" text-anchor="middle">C++17 跨平台内核</text>
+
+    <!-- Pill 2 -->
+    <rect x="296" y="560" width="180" height="44" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <text x="386" y="588" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B" text-anchor="middle">WebAssembly 引擎</text>
+
+    <!-- Pill 3 -->
+    <rect x="492" y="560" width="180" height="44" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <text x="582" y="588" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B" text-anchor="middle">微信小程序端落地</text>
+
+    <!-- Pill 4 -->
+    <rect x="688" y="560" width="180" height="44" rx="8" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <text x="778" y="588" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#18181B" text-anchor="middle">西一食堂真实场景</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line id="decor_divider_horiz" data-pptx-role="decoration" x1="100" y1="670" x2="1080" y2="670" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Integrated Meta Panel (Natural, Academic, Elegant) -->
+  <g id="cover_meta_panel" data-pptx-bounds="100 730 980 140">
+    <rect x="100" y="730" width="980" height="140" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- Col 1: 汇报人 -->
+    <text x="140" y="776" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" font-weight="bold" fill="#71717A">答辩汇报人</text>
+    <text x="140" y="818" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="30" font-weight="bold" fill="#18181B">任潇宇</text>
+    <text x="140" y="848" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#2563EB">算法设计与系统实现</text>
+
+    <!-- Divider 1 -->
+    <line x1="420" y1="760" x2="420" y2="840" stroke="#E4E4E7" stroke-width="1" />
+
+    <!-- Col 2: 评测性质 -->
+    <text x="460" y="776" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" font-weight="bold" fill="#71717A">评测考核性质</text>
+    <text x="460" y="816" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">期末综合评测答辩</text>
+    <text x="460" y="848" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">2026 年 10 月 · 天津</text>
+
+    <!-- Divider 2 -->
+    <line x1="720" y1="760" x2="720" y2="840" stroke="#E4E4E7" stroke-width="1" />
+
+    <!-- Col 3: 当前成果 -->
+    <text x="760" y="776" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" font-weight="bold" fill="#71717A">实际交付成果</text>
+    <text x="760" y="816" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#10B981">小程序已正式上线</text>
+    <text x="760" y="848" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">C++17 内核 / WASM 离线运行</text>
+  </g>
+
+  <!-- Right Highlight Showcase Cards -->
+  <g id="cover_highlights_block" data-pptx-bounds="1260 140 560 740">
+    <!-- Highlight Card 1 -->
+    <rect x="1260" y="140" width="560" height="220" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1296" y="176" width="48" height="48" rx="12" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1320" y="208" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#2563EB" text-anchor="middle">01</text>
+    <text x="1364" y="208" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">算法核心与工程架构</text>
+    <text x="1296" y="268" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">共享 C++17 纯算法内核，双工具链解耦支持<tspan x="1296" dy="34">Native CLI 电脑单体验证与 WASM 本地极速执行</tspan></text>
+    <rect x="1296" y="336" width="488" height="4" fill="#2563EB" rx="2" />
+
+    <!-- Highlight Card 2 -->
+    <rect x="1260" y="400" width="560" height="220" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1296" y="436" width="48" height="48" rx="12" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="1320" y="468" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#F59E0B" text-anchor="middle">02</text>
+    <text x="1364" y="468" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">真实食堂选餐场景落地</text>
+    <text x="1296" y="528" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">西院西一食堂现场照片转录，12 窗口全景覆盖<tspan x="1296" dy="34">166 个技术实体与 137 条真实可售报价精确建模</tspan></text>
+    <rect x="1296" y="596" width="488" height="4" fill="#F59E0B" rx="2" />
+
+    <!-- Highlight Card 3 -->
+    <rect x="1260" y="660" width="560" height="220" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1296" y="696" width="48" height="48" rx="12" fill="#10B981" fill-opacity="0.1" />
+    <text x="1320" y="728" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#10B981" text-anchor="middle">03</text>
+    <text x="1364" y="728" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="bold" fill="#18181B">两餐 DP 优化：性能百倍飞跃</text>
+    <text x="1296" y="788" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">消除状态重复扫描，PC 中位数 23.46s ➔ 71.00ms<tspan x="1296" dy="34">P01 独立复测 86.30ms，以严谨工科态度交代边界</tspan></text>
+    <rect x="1296" y="856" width="488" height="4" fill="#10B981" rx="2" />
+  </g>
+
+  <!-- Footer Watermark -->
+  <text id="decor_footer_watermark" data-pptx-role="decoration" x="100" y="990" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#A1A1AA">TIANKE SHIKE · CAMPUS DINING OPTIMIZATION SYSTEM · FINAL EVALUATION 2026</text>
+</svg>

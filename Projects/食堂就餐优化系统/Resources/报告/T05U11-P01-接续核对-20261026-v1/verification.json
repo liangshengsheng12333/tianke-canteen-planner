@@ -1,0 +1,35 @@
+{
+  "user": {
+    "fileCount": 78,
+    "bytes": 954372,
+    "treeDigest": "sha256:335955165e37946128088430f2578429f75f0f8612251207910f4ba3aaf6c868",
+    "manifestDigest": "sha256:335955165e37946128088430f2578429f75f0f8612251207910f4ba3aaf6c868",
+    "missing": [],
+    "extra": [],
+    "changed": []
+  },
+  "dev": {
+    "fileCount": 87,
+    "bytes": 1055036,
+    "treeDigest": "sha256:580b913342e56882717623c6295d6c8d3040bb199fb4d621ed191a00a29fec65",
+    "manifestDigest": "sha256:580b913342e56882717623c6295d6c8d3040bb199fb4d621ed191a00a29fec65",
+    "missing": [],
+    "extra": [],
+    "changed": []
+  },
+  "04-隔离与同源/algorithms-v3.json": {
+    "verdict": "PASS",
+    "problems": []
+  },
+  "05-用户场景/ui-state-v3.json": {
+    "verdict": "PASS",
+    "checkCount": 83,
+    "passed": 83,
+    "failed": 0,
+    "problems": []
+  },
+  "08-验证与未测清单/simulator-checks.json": {
+    "failed": 0,
+    "total": 22
+  }
+}

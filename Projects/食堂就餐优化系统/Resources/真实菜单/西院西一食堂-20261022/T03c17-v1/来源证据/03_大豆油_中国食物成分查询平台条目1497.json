@@ -1,0 +1,33 @@
+{
+  "ingredientName": "鏊子防粘烹调植物油(大豆油)",
+  "dishId": "dish-shandong-pancake",
+  "sourceDatabase": "中国疾病预防控制中心营养与健康所中国食物成分查询平台",
+  "category": "油脂类(植物油)",
+  "foodCode": "1497",
+  "officialName": "大豆油",
+  "portalUrl": "https://nlc.chinanutri.cn/fq/foodinfo/1497.html",
+  "officialOriginalPer100g": {
+    "edible": 100,
+    "waterG": 0.0,
+    "energyKj": 3696.0,
+    "energyKcal": 883.3652,
+    "proteinG": 0.0,
+    "fatG": 99.9,
+    "carbG": 0.0,
+    "sodiumMg": 0.0
+  },
+  "portionAssumption": {
+    "description": "摊煎饼前油刷在铁鏊子上轻刷1遍以防粘连，用量按中心估计值6g（波动范围4~8g）计；此项为工艺防粘用油估算假设，非现场实测称量",
+    "portionG": 6.0,
+    "portionEnergyKcal": 53.0019,
+    "portionProteinG": 0.0000,
+    "portionFatG": 5.9940,
+    "portionCarbG": 0.0000,
+    "portionSodiumMg": 0.0000
+  },
+  "auditCorrection": {
+    "historicalIssue": "T03c13中曾将豆油来源链接错填为1041.html（经P09现场打开核验，该页面标题实际为绿鳍马面豚）。且前版曾采用3761 kJ/899 kcal基准。",
+    "correctionDetails": "在T03c17中彻底纠正：修正官方直链为条目1497（https://nlc.chinanutri.cn/fq/foodinfo/1497.html），采用当前官方页面标定数据3696 kJ/100g、脂肪99.9 g/100g；按国标4.184换算能量为3696 / 4.184 = 883.3652 kcal/100g；6g大豆油重算贡献为能量53.0019 kcal、脂肪5.9940g。"
+  },
+  "auditNote": "此处油量仅为鏊子防粘底油；炸薄脆本身自带的油炸吸附油脂已完全包含在薄脆独立条目内，二者绝无重复计量。"
+}

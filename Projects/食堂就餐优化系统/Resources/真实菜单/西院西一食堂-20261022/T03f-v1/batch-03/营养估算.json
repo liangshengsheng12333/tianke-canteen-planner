@@ -1,0 +1,162 @@
+[
+  {
+    "dishId": "dish-hnjf-hongyou-jiaomaji-fan",
+    "name": "红油椒麻鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 654,
+      "proteinDg": 331,
+      "fatDg": 328,
+      "carbDg": 547
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 熟白切鸡肉(带皮切块可食部)110g + 淋汁红油椒麻复合味汁15g(植物红油10g+生抽酱汁5g) + 鸡饭辣椒酱10g + 姜葱蓉调料10g + 鲜黄瓜片25g(单份成品净重约370g)",
+      "estimated": true,
+      "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及TOP1红油椒麻鸡出餐配图推导；米饭计一次且不含无限续饭；红油汁为典型川味椒麻复合油配方工艺假设；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-ningmengji-fan",
+    "name": "柠檬鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 620,
+      "proteinDg": 339,
+      "fatDg": 188,
+      "carbDg": 765
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 炸鸡排(裹粉油炸熟重切条)115g + 香柠软鸡酱(浇淋)20g + 鲜黄瓜片20g + 泰式甜辣蘸酱10g(单份成品净重约365g)",
+      "estimated": true,
+      "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及TOP2柠檬鸡出餐配图推导；鸡排采用USDA炸鸡排熟重基准，柠檬酱采用李锦记法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-jinpai-kaorou-fan",
+    "name": "金牌烤肉饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 597,
+      "proteinDg": 355,
+      "fatDg": 203,
+      "carbDg": 659
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 熟烤肉切片(全精肥烤猪肉切片)110g + 浓郁烤肉酱汁(浇淋)20g + 鲜黄瓜片25g + 鸡饭辣椒酱10g(单份成品净重约365g)",
+      "estimated": true,
+      "note": "依据档口标牌'米饭鸡汤蒸 没菜也吃撑'及TOP3金牌烤肉饭'酱汁满满 口口浓郁'推导；烤肉采用USDA烤猪肉熟片基准，酱汁采用李锦记烤肉叉烧酱法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-hainan-jifan",
+    "name": "海南鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 562,
+      "proteinDg": 327,
+      "fatDg": 228,
+      "carbDg": 542
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(配方工艺假设: 熟白米饭197g + 通用烹调油3g) + 熟白切鸡肉(带皮切块可食部)110g + 姜葱蓉调料10g + 鸡饭辣椒酱10g + 连皮鲜黄瓜片25g(单份成品净重约355g)",
+      "estimated": true,
+      "note": "依据西院西一食堂海南鸡饭档口标牌'米饭鸡汤蒸 没菜也吃撑'及典型南洋海南鸡饭双味蘸料出餐推导；米饭计一次且不含无限续饭；非后厨化学送检实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-jipai-doufu-fan",
+    "name": "鸡排豆腐饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 621,
+      "proteinDg": 321,
+      "fatDg": 238,
+      "carbDg": 686
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 炸鸡排(裹粉熟重切条)60g + 炸豆腐块(油豆腐熟重已含吸油量)70g + 泰式甜辣酱15g + 鲜黄瓜片20g(单份成品净重约365g)",
+      "estimated": true,
+      "note": "依据招牌推荐及双拼搭配推导；炸鸡排采用USDA熟重基准，豆腐采用疾控中心油豆腐基准；米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-taishi-cuipiji-fan",
+    "name": "泰式脆皮鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 615,
+      "proteinDg": 382,
+      "fatDg": 210,
+      "carbDg": 663
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 熟脆皮鸡肉(熟带皮脆皮鸡肉切块可食部)115g + 泰式甜辣酱20g + 鲜黄瓜片25g(单份成品净重约360g)",
+      "estimated": true,
+      "note": "依据招牌推荐及炸脆皮鸡块出餐配图推导；脆皮鸡肉采用USDA熟带皮炸鸡基准，甜辣酱采用李锦记法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-taishi-doufu-fan",
+    "name": "泰式豆腐饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 633,
+      "proteinDg": 274,
+      "fatDg": 265,
+      "carbDg": 716
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(配方假设: 熟白米饭197g+通用烹调油3g) + 炸豆腐块(油豆腐熟重已含油炸吸油量)130g + 泰式甜辣酱汁25g + 连皮鲜黄瓜片20g(单份成品净重约375g)",
+      "estimated": true,
+      "note": "依据标牌10元出餐及炸豆腐裹泰式酸甜辣酱推导；油豆腐采用疾控中心官方查询页1018 kJ原值(243.3 kcal)，已包含油炸吸油量，不重复计入烹调油；米饭计一次且不含续饭；非食堂实测配方"
+    }
+  },
+  {
+    "dishId": "dish-hnjf-shala-jifan",
+    "name": "沙拉鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 642,
+      "proteinDg": 340,
+      "fatDg": 270,
+      "carbDg": 634
+    },
+    "nutritionBasis": {
+      "source": "照片与典型份量估算",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(熟白米饭197g+通用烹调油3g) + 炸鸡排(裹粉油炸熟重切条)115g + 香甜沙拉酱(浇淋)15g + 鲜黄瓜片20g(单份成品净重约350g)",
+      "estimated": true,
+      "note": "依据特色推荐沙拉鸡饭出餐配图推导；鸡排采用USDA炸鸡排熟重基准，沙拉酱采用丘比香甜味GB 28050法定标签基准；米饭计一次且不含无限续饭；非食堂实测配方"
+    }
+  }
+]

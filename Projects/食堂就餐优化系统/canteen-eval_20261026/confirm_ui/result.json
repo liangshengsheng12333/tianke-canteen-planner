@@ -1,0 +1,69 @@
+{
+  "primary_language": "zh-CN",
+  "canvas": "ppt169",
+  "audience": "课程答辩评审老师、期末评测考核小组",
+  "communication_intent": "全面展示《天科食客》系统从痛点到C++核心、WASM本地架构与小程序全流程成果，突出两餐DP关键优化与实测数据，交代客观边界",
+  "audience_outcome": "评审老师充分认可项目的算法工程深度、真实食堂落地闭环与严谨态度，评定优秀成绩",
+  "core_message": "真实食堂痛点出发，C++跨平台算法核心驱动，WASM本地闭环，硬核性能与客观边界兼备",
+  "delivery_context": "主要为期末现场投影答辩讲解，次要为关键节点唤起交互HTML演示与会后结项材料留存",
+  "artifact_afterlife": "作为大作业结项文档、课程优秀作品存档与答辩材料存档",
+  "content_divergence": "",
+  "delivery_purpose": "balanced",
+  "page_count": "12",
+  "mode": "custom",
+  "mode_behavior": "以结构化论证为主线，先亮出核心技术架构与闭环，再以实测数据和客观边界作为严密支撑。",
+  "visual_style": "custom",
+  "visual_style_behavior": "采用现代工程科技排版，清晰栅格与卡片微边框，留白舒适，层级分明。",
+  "color": {
+    "name": "清新活力",
+    "palette": {
+      "background": "#FAFAFA",
+      "secondary_bg": "#F4F4F5",
+      "primary": "#2563EB",
+      "accent": "#10B981",
+      "secondary_accent": "#F59E0B",
+      "body_text": "#18181B"
+    }
+  },
+  "icons": "lucide",
+  "typography": {
+    "name": "微软雅黑 + Segoe UI",
+    "heading": {
+      "css": "sans-serif",
+      "english": "Segoe UI",
+      "primary": "Microsoft YaHei",
+      "sample_primary": "",
+      "sample_english": ""
+    },
+    "body": {
+      "css": "sans-serif",
+      "english": "Calibri",
+      "primary": "Microsoft YaHei",
+      "sample_primary": "",
+      "sample_english": ""
+    },
+    "body_size": 24,
+    "sizes": {
+      "title": 42,
+      "subtitle": 32,
+      "annotation": 18
+    },
+    "note": "",
+    "body_size_unit": "px"
+  },
+  "image_usage": [
+    "provided"
+  ],
+  "image_notes": "优先采用已提供的4K浅色/深色算法与架构图、模拟器截图及食堂实拍。",
+  "proactive_speaker_notes": true,
+  "proactive_custom_animations": true,
+  "proactive_narration_audio": false,
+  "generation_mode": "continuous",
+  "refine_spec": false,
+  "design_spec_depth": "brief",
+  "stage": "final",
+  "status": "confirmed",
+  "stage1_sha256": "ac2d3e42a6eb44849c3376848881ed64333e0820f6a5ba4ed76776e0c31c39f2",
+  "selection_sha256": "3e1707b00d05bbb59cf5779c698ff31cfe2d14370e36e40e9dee9d26b8a11ae2",
+  "confirmed_at": "2026-10-26T17:40:35"
+}

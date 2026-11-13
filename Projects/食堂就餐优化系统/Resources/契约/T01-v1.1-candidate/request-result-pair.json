@@ -1,0 +1,631 @@
+{
+  "schema": "t01-request-result-pairs",
+  "contractVersion": "1.0",
+  "version": "t01-pairs-v1.1-candidate",
+  "note": "P01 营养收口 A–J 的请求/结果配对样例。每对为 ComputeNutritionTarget 的完整必要输入与输出；数值可自含复算，不代表已运行业务代码、算法、构建或真机，也不代表 P09 已复核。",
+  "recomputeNotes": [
+    "REE_mkcal = 10*weightGrams + 625*heightMm - 5000*ageYears + sexTerm (男+5000, 女-161000)。",
+    "TDEE_mkcal = round_half_up(REE_mkcal*activityFactorPermille, 1000)。",
+    "缺口_mkcal = min(round_half_up(TDEE_mkcal*fatLossDeficitPermille,1000), 300000)；目标 kcal = round_half_up(TDEE-缺口,1000)。",
+    "蛋白 dg = round_half_up(proteinMgPerKg*weightGrams,100000)；脂肪 kcal = round_half_up(目标kcal*fatEnergyPermille,1000)；脂肪 dg = round_half_up(脂肪kcal*10,9)；蛋白 kcal = round_half_up(蛋白dg*4,10)；碳水 kcal = 目标-蛋白-脂肪；碳水 dg = round_half_up(碳水kcal*10,4)。",
+    "宏量能量 tenths kcal = 4*proteinDg + 9*fatDg + 4*carbDg；比例判定用交叉相乘，显示 bp = round_half_up(component*10000,total)。",
+    "手动容差 tenths kcal = max(200, floor(targetEnergyKcal*10*2/100))；|宏量能量-声明能量| <= 容差为容差内。",
+    "BMI 比较：weightGrams*10000 < 185*heightMm*heightMm（未舍入）；显示 tenths 才舍入。"
+  ],
+  "nutritionConfig": {
+    "version": "nutrition-v1.1-candidate",
+    "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+    "formula": "mifflin-st-jeor",
+    "parameters": {
+      "fatLossDeficitPermille": 100,
+      "fatLossDeficitCapKcal": 300,
+      "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+      "proteinMgPerKgNormal": 1200,
+      "proteinMgPerKgTrainingPreference": 1500,
+      "fatEnergyPermille": 270,
+      "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+      "energyFloorKcal": {"male": 1500, "female": 1200}
+    },
+    "population": {
+      "ageMinYears": 18,
+      "ageMaxYears": 78,
+      "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+      "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+    },
+    "macroThresholds": {
+      "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+      "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+    },
+    "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+    "plannerSorting": {
+      "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+      "nutritionTierWidthBp": 1000
+    }
+  },
+  "pairs": [
+    {
+      "id": "BMI_18_4599_FATLOSS_UNDERWEIGHT",
+      "api": "ComputeNutritionTarget",
+      "purpose": "BMI 未舍入 18.4599（显示 18.5）仍判过轻；fatLoss 关闭自动目标。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-bmi-184599",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-bmi-184599",
+          "revision": 1,
+          "sex": "male",
+          "ageYears": 20,
+          "heightMm": 1700,
+          "weightGrams": 53349,
+          "bodyFatPermille": null,
+          "activityLevel": "moderate",
+          "goal": {"type": "fatLoss", "manualTargets": null},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-bmi-184599",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "AUTO_TARGET_DISABLED",
+          "applicability": {"eligible": false, "reasons": ["UNDERWEIGHT"], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 185, "underweightByUnrounded": true},
+          "targets": null,
+          "reference": null,
+          "computed": null,
+          "composition": null,
+          "manualTarget": null,
+          "warnings": []
+        }
+      }
+    },
+    {
+      "id": "BMI_18_5_FATLOSS_OK",
+      "api": "ComputeNutritionTarget",
+      "purpose": "BMI 恰为 18.5（533,490,000 < 534,650,000 不成立）不判过轻；fatLoss 自动目标通过。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-bmi-185",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-bmi-185",
+          "revision": 1,
+          "sex": "male",
+          "ageYears": 20,
+          "heightMm": 1700,
+          "weightGrams": 53465,
+          "bodyFatPermille": null,
+          "activityLevel": "light",
+          "goal": {"type": "fatLoss", "manualTargets": null},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-bmi-185",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "Ok",
+          "applicability": {"eligible": true, "reasons": [], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 185, "underweightByUnrounded": false},
+          "targets": {
+            "daily": {"energyKcal": 1859, "proteinDg": 642, "fatDg": 558, "carbDg": 2750},
+            "mealReference": {
+              "breakfast": {"energyKcal": 558, "proteinDg": 193, "fatDg": 167, "carbDg": 825},
+              "lunch": {"energyKcal": 744, "proteinDg": 257, "fatDg": 223, "carbDg": 1100},
+              "dinner": {"energyKcal": 558, "proteinDg": 193, "fatDg": 167, "carbDg": 825}
+            },
+            "source": {"formula": "mifflin-st-jeor", "formulaLabel": "估算静息能量消耗（REE）", "reeMkcal": 1502150, "tdeeMkcal": 2065456, "deficitMkcal": 206546, "activityFactorPermille": 1375, "goal": "fatLoss"}
+          },
+          "reference": null,
+          "computed": null,
+          "composition": {"ageBand": "19-78", "actualBp": {"protein": 1381, "fat": 2701, "carb": 5917}, "carbDg": 2750, "rangesBp": {"protein": [1000, 3500], "fat": [2000, 3500], "carb": [4500, 6500]}, "carbFloorDg": 1300, "passed": true},
+          "manualTarget": null,
+          "warnings": []
+        }
+      }
+    },
+    {
+      "id": "AGE_18_EXTRAPOLATION_WARNING",
+      "api": "ComputeNutritionTarget",
+      "purpose": "18 岁可使用自动目标但默认返回外推提示；按 18 岁宏量范围判定。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-age-18",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-age-18",
+          "revision": 1,
+          "sex": "male",
+          "ageYears": 18,
+          "heightMm": 1750,
+          "weightGrams": 70000,
+          "bodyFatPermille": null,
+          "activityLevel": "moderate",
+          "goal": {"type": "maintain", "manualTargets": null},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-age-18",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "Ok",
+          "applicability": {"eligible": true, "reasons": [], "ageBand": "18", "age18Extrapolation": true, "bmiDisplayTenths": 229, "underweightByUnrounded": false},
+          "targets": {
+            "daily": {"energyKcal": 2649, "proteinDg": 840, "fatDg": 794, "carbDg": 3995},
+            "mealReference": {
+              "breakfast": {"energyKcal": 795, "proteinDg": 252, "fatDg": 238, "carbDg": 1199},
+              "lunch": {"energyKcal": 1060, "proteinDg": 336, "fatDg": 318, "carbDg": 1598},
+              "dinner": {"energyKcal": 795, "proteinDg": 252, "fatDg": 238, "carbDg": 1199}
+            },
+            "source": {"formula": "mifflin-st-jeor", "formulaLabel": "估算静息能量消耗（REE）", "reeMkcal": 1708750, "tdeeMkcal": 2648563, "deficitMkcal": 0, "activityFactorPermille": 1550, "goal": "maintain"}
+          },
+          "reference": null,
+          "computed": null,
+          "composition": {"ageBand": "18", "actualBp": {"protein": 1269, "fat": 2698, "carb": 6033}, "carbDg": 3995, "rangesBp": {"protein": [1000, 3000], "fat": [2500, 3500], "carb": [4500, 6500]}, "carbFloorDg": null, "passed": true},
+          "manualTarget": null,
+          "warnings": ["AGE_18_EXTRAPOLATION"]
+        }
+      }
+    },
+    {
+      "id": "RISK_MANUAL_STORAGE_ONLY",
+      "api": "ComputeNutritionTarget",
+      "purpose": "孕哺风险状态关闭自动目标；professional manual 只存证不应用、不自动规划。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-risk-manual",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-risk-manual",
+          "revision": 1,
+          "sex": "female",
+          "ageYears": 30,
+          "heightMm": 1620,
+          "weightGrams": 55000,
+          "bodyFatPermille": null,
+          "activityLevel": "light",
+          "goal": {"type": "manual", "manualTargets": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2523, "sourceType": "professional", "sourceNote": "用户提供的既有专业目标", "derivedFields": []}},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": true, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-risk-manual",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "AUTO_TARGET_DISABLED",
+          "applicability": {"eligible": false, "reasons": ["PREGNANCY_OR_LACTATION"], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 210, "underweightByUnrounded": false},
+          "targets": null,
+          "reference": null,
+          "computed": null,
+          "composition": null,
+          "manualTarget": {"sourceType": "professional", "sourceNote": "用户提供的既有专业目标", "declared": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2523}, "stored": true, "applied": false, "reason": "AUTO_TARGET_DISABLED", "energyDiffTenthsKcal": 392, "toleranceTenthsKcal": 400, "withinTolerance": true, "derivedFields": []},
+          "warnings": ["AUTO_TARGET_DISABLED"]
+        }
+      }
+    },
+    {
+      "id": "FEMALE_1199_TARGET_REVIEW_REQUIRED",
+      "api": "ComputeNutritionTarget",
+      "purpose": "女性手动目标 1199 kcal 低于产品下限 1200；保存原值但不应用、不自动规划。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-female-1199",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-female-1199",
+          "revision": 1,
+          "sex": "female",
+          "ageYears": 25,
+          "heightMm": 1620,
+          "weightGrams": 55000,
+          "bodyFatPermille": null,
+          "activityLevel": "light",
+          "goal": {"type": "manual", "manualTargets": {"energyKcal": 1199, "proteinDg": 600, "fatDg": 360, "carbDg": 1588, "sourceType": "professional", "sourceNote": "", "derivedFields": []}},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-female-1199",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "TARGET_REVIEW_REQUIRED",
+          "applicability": {"eligible": true, "reasons": ["PRODUCT_ENERGY_FLOOR"], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 210, "underweightByUnrounded": false},
+          "targets": null,
+          "reference": null,
+          "computed": {"energyKcal": 1199, "proteinDg": 600, "fatDg": 360, "carbDg": 1588, "validForAutoPlanning": false},
+          "composition": {"ageBand": "19-78", "actualBp": {"protein": 2001, "fat": 2702, "carb": 5297}, "carbDg": 1588, "rangesBp": {"protein": [1000, 3500], "fat": [2000, 3500], "carb": [4500, 6500]}, "carbFloorDg": 1300, "passed": true},
+          "manualTarget": {"sourceType": "professional", "sourceNote": "", "declared": {"energyKcal": 1199, "proteinDg": 600, "fatDg": 360, "carbDg": 1588}, "stored": true, "applied": false, "reason": "PRODUCT_ENERGY_FLOOR", "energyDiffTenthsKcal": 2, "toleranceTenthsKcal": 239, "withinTolerance": true, "derivedFields": []},
+          "warnings": ["PRODUCT_ENERGY_FLOOR"]
+        }
+      }
+    },
+    {
+      "id": "MACRO_COMPOSITION_CONFLICT_FEMALE_1200",
+      "api": "ComputeNutritionTarget",
+      "purpose": "女性 1200 kcal、80kg、训练蛋白 1.5g/kg 压力例：1200 恰为女性产品下限，不触发低摄入；宏量比例/碳水量触发冲突，保留可查看值但不应用。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-macro-conflict",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-macro-conflict",
+          "revision": 1,
+          "sex": "female",
+          "ageYears": 30,
+          "heightMm": 1700,
+          "weightGrams": 80000,
+          "bodyFatPermille": null,
+          "activityLevel": "moderate",
+          "goal": {"type": "manual", "manualTargets": {"energyKcal": 1200, "proteinDg": 1200, "fatDg": 360, "carbDg": 990, "sourceType": "userEntered", "sourceNote": "按训练偏好录入的目标", "derivedFields": []}},
+          "trainingPreference": true,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-macro-conflict",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "TARGET_COMPOSITION_CONFLICT",
+          "applicability": {"eligible": true, "reasons": ["MACRO_COMPOSITION"], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 277, "underweightByUnrounded": false},
+          "targets": null,
+          "reference": null,
+          "computed": {"energyKcal": 1200, "proteinDg": 1200, "fatDg": 360, "carbDg": 990, "validForAutoPlanning": false},
+          "composition": {"ageBand": "19-78", "actualBp": {"protein": 4000, "fat": 2700, "carb": 3300}, "carbDg": 990, "rangesBp": {"protein": [1000, 3500], "fat": [2000, 3500], "carb": [4500, 6500]}, "carbFloorDg": 1300, "passed": false},
+          "manualTarget": {"sourceType": "userEntered", "sourceNote": "按训练偏好录入的目标", "declared": {"energyKcal": 1200, "proteinDg": 1200, "fatDg": 360, "carbDg": 990}, "stored": true, "applied": false, "reason": "MACRO_COMPOSITION", "energyDiffTenthsKcal": 0, "toleranceTenthsKcal": 240, "withinTolerance": true, "derivedFields": []},
+          "warnings": ["MACRO_COMPOSITION"]
+        }
+      }
+    },
+    {
+      "id": "MANUAL_TOLERANCE_WITHIN_2000",
+      "api": "ComputeNutritionTarget",
+      "purpose": "手动目标 2000 kcal：宏量能量 2039.2 kcal，差 39.2 ≤ 容差 40 kcal；比例/碳水均通过，应用为自动目标。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-manual-within",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-manual-within",
+          "revision": 1,
+          "sex": "female",
+          "ageYears": 30,
+          "heightMm": 1650,
+          "weightGrams": 60000,
+          "bodyFatPermille": null,
+          "activityLevel": "light",
+          "goal": {"type": "manual", "manualTargets": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2523, "sourceType": "professional", "sourceNote": "", "derivedFields": []}},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-manual-within",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "Ok",
+          "applicability": {"eligible": true, "reasons": [], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 220, "underweightByUnrounded": false},
+          "targets": {
+            "daily": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2523},
+            "mealReference": {
+              "breakfast": {"energyKcal": 600, "proteinDg": 300, "fatDg": 210, "carbDg": 757},
+              "lunch": {"energyKcal": 800, "proteinDg": 400, "fatDg": 280, "carbDg": 1009},
+              "dinner": {"energyKcal": 600, "proteinDg": 300, "fatDg": 210, "carbDg": 757}
+            },
+            "source": {"formula": null, "formulaLabel": null, "reeMkcal": null, "tdeeMkcal": null, "deficitMkcal": null, "activityFactorPermille": null, "goal": "manual", "manualSourceType": "professional"}
+          },
+          "reference": null,
+          "computed": null,
+          "composition": {"ageBand": "19-78", "actualBp": {"protein": 1962, "fat": 3089, "carb": 4949}, "carbDg": 2523, "rangesBp": {"protein": [1000, 3500], "fat": [2000, 3500], "carb": [4500, 6500]}, "carbFloorDg": 1300, "passed": true},
+          "manualTarget": {"sourceType": "professional", "sourceNote": "", "declared": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2523}, "stored": true, "applied": true, "reason": null, "energyDiffTenthsKcal": 392, "toleranceTenthsKcal": 400, "withinTolerance": true, "derivedFields": []},
+          "warnings": []
+        }
+      }
+    },
+    {
+      "id": "MANUAL_TOLERANCE_EXCEEDED_2000",
+      "api": "ComputeNutritionTarget",
+      "purpose": "手动目标 2000 kcal：仅碳水改为 252.8g，宏量能量 2041.2 kcal，差 41.2 > 容差 40 kcal；保存原值但不应用。",
+      "request": {
+        "contractVersion": "1.0",
+        "requestId": "req-manual-exceeded",
+        "profile": {
+          "contractVersion": "1.0",
+          "profileId": "p-manual-exceeded",
+          "revision": 1,
+          "sex": "female",
+          "ageYears": 30,
+          "heightMm": 1650,
+          "weightGrams": 60000,
+          "bodyFatPermille": null,
+          "activityLevel": "light",
+          "goal": {"type": "manual", "manualTargets": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2528, "sourceType": "professional", "sourceNote": "", "derivedFields": []}},
+          "trainingPreference": false,
+          "dietaryFlags": {"pregnancyOrLactation": false, "medicalDietManagement": false},
+          "tastes": []
+        },
+        "nutritionConfig": {
+          "version": "nutrition-v1.1-candidate",
+          "hash": "sha256:EXAMPLE_NOT_COMPUTED",
+          "formula": "mifflin-st-jeor",
+          "parameters": {
+            "fatLossDeficitPermille": 100,
+            "fatLossDeficitCapKcal": 300,
+            "activityFactorPermille": {"sedentary": 1200, "light": 1375, "moderate": 1550, "active": 1725, "veryActive": 1900},
+            "proteinMgPerKgNormal": 1200,
+            "proteinMgPerKgTrainingPreference": 1500,
+            "fatEnergyPermille": 270,
+            "mealSharePermille": {"breakfast": 300, "lunch": 400, "dinner": 300},
+            "energyFloorKcal": {"male": 1500, "female": 1200}
+          },
+          "population": {
+            "ageMinYears": 18,
+            "ageMaxYears": 78,
+            "pregnancyOrLactationPolicy": "disableAutoTargetsAndAutoPlanning",
+            "medicalDietPolicy": "disableAutoTargetsAndAutoPlanning"
+          },
+          "macroThresholds": {
+            "adult19To78": {"proteinBp": [1000, 3500], "fatBp": [2000, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": 130},
+            "age18": {"proteinBp": [1000, 3000], "fatBp": [2500, 3500], "carbBp": [4500, 6500], "carbFloorGPerDay": null}
+          },
+          "manualTargetRules": {"sourceTypes": ["professional", "userEntered"], "tolerance": "max(20kcal,2%)", "derivedFieldsAllowed": true},
+          "plannerSorting": {
+            "nutritionDeviationWeightsPermille": {"energy": 250, "protein": 250, "fat": 250, "carb": 250},
+            "nutritionTierWidthBp": 1000
+          }
+        }
+      },
+      "result": {
+        "contractVersion": "1.0",
+        "requestId": "req-manual-exceeded",
+        "ok": true,
+        "error": null,
+        "result": {
+          "status": "MANUAL_TARGET_INCONSISTENT",
+          "applicability": {"eligible": true, "reasons": ["ENERGY_MACRO_MISMATCH"], "ageBand": "19-78", "age18Extrapolation": false, "bmiDisplayTenths": 220, "underweightByUnrounded": false},
+          "targets": null,
+          "reference": null,
+          "computed": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2528, "validForAutoPlanning": false},
+          "composition": {"ageBand": "19-78", "actualBp": {"protein": 1960, "fat": 3086, "carb": 4954}, "carbDg": 2528, "rangesBp": {"protein": [1000, 3500], "fat": [2000, 3500], "carb": [4500, 6500]}, "carbFloorDg": 1300, "passed": true},
+          "manualTarget": {"sourceType": "professional", "sourceNote": "", "declared": {"energyKcal": 2000, "proteinDg": 1000, "fatDg": 700, "carbDg": 2528}, "stored": true, "applied": false, "reason": "ENERGY_MACRO_MISMATCH", "energyDiffTenthsKcal": 412, "toleranceTenthsKcal": 400, "withinTolerance": false, "derivedFields": []},
+          "warnings": ["ENERGY_MACRO_MISMATCH"]
+        }
+      }
+    }
+  ]
+}

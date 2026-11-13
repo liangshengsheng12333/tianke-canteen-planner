@@ -1,0 +1,58 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" data-pptx-page-role="content">
+  <!-- Background Canvas -->
+  <rect id="bg_canvas" data-pptx-role="background" x="0" y="0" width="1920" height="1080" fill="#FAFAFA" />
+
+  <!-- Structural Decorations -->
+  <rect id="decor_accent_bar" data-pptx-role="decoration" x="100" y="56" width="6" height="48" fill="#2563EB" rx="3" />
+  <line id="decor_divider_top" data-pptx-role="decoration" x1="100" y1="190" x2="1820" y2="190" stroke="#E4E4E7" stroke-width="1.5" />
+
+  <!-- Header Module -->
+  <g id="header_p05" data-pptx-bounds="100 60 1720 130">
+    <text x="124" y="96" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="#18181B">核心算法机制：时空自由度分析与剪枝控制</text>
+    <text x="124" y="146" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="24" fill="#71717A">多维决策自由度建模 · 时空复杂度推演 · 状态桶化截断与沙箱内存控制</text>
+    <rect x="1700" y="66" width="120" height="38" rx="8" fill="#F4F4F5" stroke="#E4E4E7" stroke-width="1" />
+    <text x="1760" y="92" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#71717A" text-anchor="middle">05 / 09</text>
+  </g>
+
+  <!-- Left: 4K 三算法机制图与交互横幅 -->
+  <g id="left_algo_diagram_p05" data-pptx-bounds="100 220 940 780">
+    <rect x="100" y="220" width="940" height="780" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+
+    <!-- 4K Algorithm Comparison Image Frame -->
+    <rect x="124" y="244" width="892" height="490" rx="12" fill="#F4F4F5" />
+    <image x="124" y="244" width="892" height="490" preserveAspectRatio="xMidYMid meet" href="../images/T10d-01-三算法机制对照-4K-浅色.png" />
+
+    <!-- Interactive HTML Banner -->
+    <rect x="124" y="754" width="892" height="222" rx="12" fill="#2563EB" fill-opacity="0.06" stroke="#2563EB" stroke-width="1.5" />
+    <rect x="148" y="780" width="48" height="48" rx="10" fill="#2563EB" />
+    <text x="172" y="812" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">⚙</text>
+    <text x="212" y="802" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB">配套原生交互 HTML 三算法机制对照演示入口</text>
+    <text x="212" y="834" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">支持贪心/DP/BnB 算法状态树高亮切换与单选执行走查：</text>
+    <text x="212" y="868" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="bold" fill="#18181B">images/T10d-01-三算法机制对照.html</text>
+    <text x="212" y="904" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="16" fill="#F59E0B">注：三种方法使用同一菜单候选与评分规则，搜索策略不同，单次择一运行而非并行投票</text>
+  </g>
+
+  <!-- Right: 时空自由度分析三大核心卡片 -->
+  <g id="right_dof_analysis_p05" data-pptx-bounds="1070 220 750 780">
+    <!-- Card 1: 决策空间多维自由度建模 -->
+    <rect x="1070" y="220" width="750" height="240" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1102" y="248" width="40" height="40" rx="8" fill="#2563EB" fill-opacity="0.1" />
+    <text x="1122" y="275" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#2563EB" text-anchor="middle">A</text>
+    <text x="1156" y="276" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">决策空间多维自由度建模（DoF）</text>
+    <text x="1102" y="324" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">• 决策变量维度：餐次组合 M ∈ {1,2,3}，菜品条目候选 C = 137<tspan x="1102" dy="28">• 原始自由度爆炸：三餐无约束全排列空间达 137³ ≈ 2.57 × 10⁶ 组合</tspan><tspan x="1102" dy="28">• 多目标自由度约束：通过预算硬限额与热量营养区间映射，</tspan><tspan x="1102" dy="28">  将求解空间大幅投影并收缩至可行域流形内，抑制组合发散。</tspan></text>
+
+    <!-- Card 2: 时间自由度与剪枝控制 -->
+    <rect x="1070" y="490" width="750" height="240" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1102" y="518" width="40" height="40" rx="8" fill="#F59E0B" fill-opacity="0.1" />
+    <text x="1122" y="545" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#F59E0B" text-anchor="middle">B</text>
+    <text x="1156" y="546" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">时间搜索自由度与剪枝降维</text>
+    <text x="1102" y="594" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">• 贪心策略：将搜索自由度坍缩为单步最优，时间复杂度 O(N log N)<tspan x="1102" dy="28">• 动态规划（DP）：消除两餐重复扫描；引入 20,000 状态桶化截断</tspan><tspan x="1102" dy="28">  将时间消耗从 23.46s 骤降至 71.00ms，消除冗余计算遍历自由度</tspan><tspan x="1102" dy="28">• 分支限界（BnB）：利用松弛上下界剪枝，动态收缩解空间指数树。</tspan></text>
+
+    <!-- Card 3: 空间自由度与 WASM 沙箱控制 -->
+    <rect x="1070" y="760" width="750" height="240" rx="16" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5" />
+    <rect x="1102" y="788" width="40" height="40" rx="8" fill="#10B981" fill-opacity="0.1" />
+    <text x="1122" y="815" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="bold" fill="#10B981" text-anchor="middle">C</text>
+    <text x="1156" y="816" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="bold" fill="#18181B">空间自由度截断与沙箱内存控制</text>
+    <text x="1102" y="864" font-family="Microsoft YaHei, Calibri, sans-serif" font-size="18" fill="#71717A">• 候选池硬性截断：候选集上限锁定 K ≤ 256，防止无界内存增长<tspan x="1102" dy="28">• WASM 线性内存控制：系统设定安全容量红线为 768 页（48 MB）</tspan><tspan x="1102" dy="28">• 实测峰值：PC 端 G2 实测峰值仅 562 页（约 35.1 MB），利用率 73.2%</tspan><tspan x="1102" dy="28">  严格保障微信小程序在单线程 WebAssembly 沙箱中平稳运行。</tspan></text>
+  </g>
+</svg>

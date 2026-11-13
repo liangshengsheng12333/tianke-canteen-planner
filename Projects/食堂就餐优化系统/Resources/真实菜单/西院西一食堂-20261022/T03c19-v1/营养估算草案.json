@@ -1,0 +1,22 @@
+[
+  {
+    "dishId": "dish-hnjf-hainan-jifan",
+    "name": "海南鸡饭",
+    "kind": "single",
+    "category": "staple",
+    "riceDish": true,
+    "riceIncluded": true,
+    "nutrition": {
+      "energyKcal": 562,
+      "proteinDg": 327,
+      "fatDg": 228,
+      "carbDg": 542
+    },
+    "nutritionBasis": {
+      "source": "官方中国食物成分查询平台条目287蒸米饭(493 kJ/100g=117.8298 kcal/100g)、官方中国食物成分查询平台条目1497豆油(3696 kJ/100g=883.3652 kcal/100g, 脂肪99.9g/100g，唯一定点通用烹调油工艺替代基准)、USDA FoodData Central SR Legacy NDB #05010 (FDC ID 171051, 熟带皮炖鸡肉219 kcal/100g)、香港食物安全中心CFS FRL(Row 86 姜葱蓉470 kcal/100g、Row 740 鲜黄瓜片14 kcal/100g)及Way牌海南鸡饭辣椒酱法定营养标签(502 kJ/100g)原料加权累加",
+      "portionAssumption": "黄姜鸡汤蒸米饭200g(配方工艺假设: 熟白米饭197g + 通用烹调油3g) + 熟白切鸡肉(带皮切块可食部)110g + 姜葱蓉调料10g + 鸡饭辣椒酱10g + 连皮鲜黄瓜片25g(单份成品净重约355g)",
+      "estimated": true,
+      "note": "依据西院西一食堂海南鸡饭档口标牌'米饭鸡汤蒸 没菜也吃撑'及典型南洋海南鸡饭双味蘸料出餐推导；200g米饭基底与3g通用烹调油为配方工艺假设而非现场称重证明，亦不代表后厨实际使用大豆油或纯鸡油；米饭计一次且不含无限续饭；非后厨化学送检实测配方；油脂基准彻底定点消除未定位禽脂与双基准混写；单款交付，严禁包含泰式豆腐饭"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "food_name": "薑蓉 / 姜葱蓉调料 (Ginger puree / Ginger and spring onion dip)",
+  "source_organization": "香港特别行政区政府食物安全中心 (CFS) 食物研究化验所 (FRL)",
+  "database": "营养资料查询系统 (NIIS) - 食物营养资料档案 (Nutrient Profiles FRL)",
+  "category": "Condiments and sauces - Condiments and sauces (佐料及醬料)",
+  "sheet_name": "Eng",
+  "official_row_index": 86,
+  "original_file": "Nutrient_profiles_FRL.xlsx (Row 86)",
+  "online_portal": "https://www.cfs.gov.hk/english/nutrient/index.shtml",
+  "access_date": "2026-10-23",
+  "per_amount": "100g 调味汁",
+  "nutrients_per_100g_final_selected": {
+    "energy_kcal": 470.0,
+    "protein_g": 1.0,
+    "fat_g": 50.0,
+    "carbohydrate_g": 4.5,
+    "sodium_mg": 2000.0,
+    "status": "本草案唯一确定采用组（严格用于JSON终值加权计算，不混写alt值）"
+  },
+  "nutrients_per_100g_alt_reference_only": {
+    "energy_kcal": 470.0,
+    "protein_g": 1.7,
+    "fat_g": 50.0,
+    "carbohydrate_g": 5.2,
+    "sodium_mg": 2000.0,
+    "status": "仅作历史档案备选对照参考，明确未用于本草案JSON计算"
+  },
+  "p09_review_status": "P09在T03V07报告中确认Row 86数值可定位，并要求明确最终选定组为 P 1.0g / C 4.5g，避免与备选值混淆。",
+  "single_portion_calculation_10g": {
+    "weight_g": 10.0,
+    "multiplier": 0.10,
+    "energy_kcal": 47.0000,
+    "protein_g": 0.1000,
+    "fat_g": 5.0000,
+    "carbohydrate_g": 0.4500,
+    "sodium_mg": 200.0
+  },
+  "assumption_note": "绿碟盛装姜葱蓉单份取 10g 为工艺假设，非现场称重证明。"
+}

@@ -1,0 +1,300 @@
+/* pages/self-pick/index.wxss — 自己选菜（T05S03）。只写布局差异，颜色全部走全局 .tk-* 令牌。 */
+
+/* 底部固定操作条占位：摘要 + 可展开明细 + 按钮 + 安全区，避免最后一张卡被压住。 */
+.page-selfpick {
+  padding-bottom: calc(340rpx + env(safe-area-inset-bottom));
+}
+
+/* 模拟菜单提示（与今日页同义，不复用页面样式以免跨页依赖）。 */
+.menu-flag {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+  margin-top: 16rpx;
+  flex-wrap: wrap;
+}
+.menu-flag-text {
+  padding: 2rpx 12rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 24rpx;
+}
+.menu-flag-note {
+  font-size: 24rpx;
+  opacity: 0.92;
+}
+
+/* 错误横幅（页面局部样式，与今日页同义）。 */
+.banner {
+  margin-top: 24rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.banner-err {
+  background: var(--tk-danger-bg);
+  border: 1rpx solid var(--tk-danger-line);
+  color: var(--tk-danger);
+}
+
+/* ===== 窗口切换 ===== */
+.win-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+  margin-top: 20rpx;
+}
+.win-tab {
+  flex: 1 1 260rpx;
+  min-width: 240rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-card-soft);
+  border: 2rpx solid var(--tk-line);
+}
+.win-tab.active {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.win-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  word-break: break-all;
+}
+.win-tab.active .win-name {
+  color: var(--tk-accent);
+}
+.win-meta {
+  font-size: 24rpx;
+  color: var(--tk-muted);
+}
+
+/* ===== 菜单行 ===== */
+.offer-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20rpx;
+  margin-top: 20rpx;
+  padding: 24rpx;
+  border-radius: 28rpx;
+  background: var(--tk-card-soft);
+  border: 2rpx solid var(--tk-line);
+}
+.offer-row.selected {
+  border-color: var(--tk-accent);
+  background: var(--tk-accent-soft);
+}
+.offer-row.disabled {
+  opacity: 0.6;
+}
+.offer-main {
+  flex: 1;
+  min-width: 0;
+}
+.offer-name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  /* 长菜名换行不裁切。 */
+  word-break: break-all;
+  white-space: normal;
+}
+.offer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-top: 10rpx;
+}
+.offer-tags .tag {
+  font-size: 24rpx;
+  line-height: 1.4;
+  word-break: break-all;
+}
+.offer-nutrition {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: var(--tk-muted);
+  word-break: break-all;
+}
+.offer-side {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10rpx;
+  max-width: 46%;
+}
+.offer-price {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  word-break: break-all;
+}
+.offer-action {
+  font-size: 24rpx;
+  color: var(--tk-muted);
+}
+
+/* 数量步进：可点区 ≥ 44px */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  padding: 2rpx;
+  border-radius: 999rpx;
+  background: var(--tk-card);
+  border: 1rpx solid var(--tk-line-strong);
+}
+.stepper-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 999rpx;
+  font-size: 34rpx;
+  color: var(--tk-accent);
+}
+.stepper-num {
+  min-width: 48rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+
+/* ===== 已选预览 ===== */
+.sel-row {
+  margin-top: 20rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 24rpx;
+  background: var(--tk-secondary);
+}
+.sel-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  word-break: break-all;
+}
+.sel-meta {
+  margin-top: 4rpx;
+  font-size: 26rpx;
+  color: var(--tk-muted);
+  word-break: break-all;
+}
+.sel-nutrition {
+  margin-top: 4rpx;
+  font-size: 24rpx;
+  color: var(--tk-muted);
+}
+
+/* ===== 底部固定操作条 ===== */
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16rpx 40rpx calc(24rpx + env(safe-area-inset-bottom));
+  background: var(--tk-tabbar);
+  backdrop-filter: blur(24rpx);
+  border-top: 1rpx solid var(--tk-line);
+  z-index: 20;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+/* 底部摘要：已选数量与“合计/已知合计/待补价格”都来自正式预览，颜色走主题令牌。 */
+.footer-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  padding-bottom: 12rpx;
+}
+.footer-summary-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+  word-break: break-all;
+}
+.footer-detail-toggle {
+  flex: 0 0 auto;
+  font-size: 26rpx;
+  color: var(--tk-accent);
+}
+/* 快速查看已选明细：只展开页面已有的预览行，面板向上长、内部可滚。 */
+.footer-detail {
+  margin-bottom: 12rpx;
+  padding: 16rpx 20rpx;
+  border-radius: 20rpx;
+  background: var(--tk-card);
+  border: 1rpx solid var(--tk-line);
+}
+.footer-detail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+}
+.footer-detail-title {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--tk-text);
+}
+.footer-detail-close {
+  font-size: 26rpx;
+  color: var(--tk-accent);
+}
+.footer-detail-scroll {
+  max-height: 40vh;
+}
+.footer-detail-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-top: 12rpx;
+}
+.footer-detail-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 26rpx;
+  color: var(--tk-text);
+  word-break: break-all;
+}
+.footer-detail-meta {
+  flex: 0 0 auto;
+  font-size: 26rpx;
+  color: var(--tk-muted);
+}
+.footer-detail-note {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  line-height: 1.4;
+  color: var(--tk-warn-text);
+}
+.footer-cancel {
+  flex: 0 0 200rpx;
+}
+.footer-confirm {
+  flex: 1;
+  height: 96rpx;
+  font-size: 32rpx;
+  border-radius: 28rpx;
+}
+/* 微信 button 内建禁用态（button[disabled]:not([type])）比全局 .btn[disabled] 更具体，
+ * 深色页上会留下近白色块。这里只在本页按主题令牌覆盖禁用外观，浅色/深色都跟随 --tk-*。 */
+.page-selfpick .footer-confirm[disabled] {
+  background: var(--tk-secondary);
+  color: var(--tk-muted);
+}

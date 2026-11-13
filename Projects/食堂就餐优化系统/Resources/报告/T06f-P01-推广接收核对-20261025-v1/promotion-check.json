@@ -1,0 +1,205 @@
+[
+  {
+    "path": "core\\cli\\main.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\api.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\base.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\catalog.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\contract.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\json.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\nutrition.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\planner.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\platform_native.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\platform_wasm.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\src\\sha256.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\tests\\test_core_main.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\tests\\test_json_main.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "core\\tests\\test_sha256_main.cpp",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "miniprogram\\src\\assets\\wasm\\mp_core.wasm",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "miniprogram\\src\\domain\\backup.ts",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "miniprogram\\src\\domain\\plan.ts",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "miniprogram\\src\\domain\\types.ts",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "miniprogram\\src\\utils\\core-runtime.ts",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\candidate-manifest.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\t05-test-helpers.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\test-t05-menu-default.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\test-t05-soldout-scope.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\test-t05-store.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\test-t05a01a-dp-chain.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\test-t05a01b-bnb-chain.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\test-t06c-unified.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "tools\\miniprogram\\verify-t05-integration.mjs",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  },
+  {
+    "path": "build\\native\\mp_cli.exe",
+    "sourceMatch": true,
+    "targetMatch": true,
+    "bytesMatch": true,
+    "backupMatch": true
+  }
+]
